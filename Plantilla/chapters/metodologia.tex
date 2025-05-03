@@ -1,1 +1,17 @@
 
+\section{CRISPDM}
+La metodología CRISP-DM (Cross-Industry Standard Process for Data Mining) es un marco de trabajo estandarizado para guiar proyectos de minería de datos y aprendizaje automático. Su estructura cíclica y flexible la hace aplicable en diversos dominios, desde marketing hasta ciberseguridad. Está compuesta por estas fases:
+
+1. Comprensión del Negocio: Esta fase inicial se centra en alinear los objetivos técnicos con las necesidades del negocio o problema a resolver. Implica definir requisitos, identificar métricas de éxito y comprender el contexto organizacional. Por ejemplo, en un proyecto de detección de fraude, se establecerían criterios para medir la eficacia del modelo (como reducir falsos negativos en un 20%).  
+
+2. Comprensión de los Datos: Aquí se recopilan y exploran los datos disponibles para evaluar su calidad, relevancia y limitaciones. Mediante análisis descriptivo y visualizaciones, se identifican patrones preliminares, valores atípicos o sesgos. En un sistema de recomendación, esto incluiría analizar el historial de compras de usuarios para garantizar que los datos reflejen comportamientos reales.  
+
+3. Preparación de los Datos: Fase crítica donde los datos brutos se transforman en un conjunto adecuado para modelado. Incluye limpieza (manejo de valores nulos), integración de fuentes diversas, normalización y creación de características (feature engineering). Por ejemplo, en predicción de fallos de hardware, se podrían generar variables derivadas como "horas de uso continuo" a partir de registros crudos.  
+
+4. Modelado: Se seleccionan y entrenan algoritmos (como redes neuronales o árboles de decisión) para resolver el problema definido. La elección del modelo depende de la naturaleza de los datos y los objetivos (clasificación, regresión, etc.). Se aplican técnicas de validación (como k-fold cross-validation) para evitar sobreajuste. En diagnóstico médico, podrían compararse modelos de random forest y SVM para predecir enfermedades con mayor precisión.  
+
+5. Evaluación: Los modelos se prueban con métricas rigurosas (precisión, recall, AUC-ROC) para determinar si cumplen los criterios de negocio establecidos en la Fase 1. También se valida su robustez en escenarios realistas. Un modelo de churn de clientes, por ejemplo, debería demostrar que identifica correctamente al 90% de los usuarios propensos a abandonar el servicio.  
+
+6. Despliegue: Una vez validado, el modelo se implementa en producción, integrado en sistemas operativos. Esto incluye monitorización continua, actualizaciones y documentación para usuarios finales. En agricultura inteligente, un modelo de predicción de cosechas podría desplegarse en una app móvil para que los agricultores reciban alertas en tiempo real.  
+
+CRISP-DM es iterativa: los resultados de fases posteriores pueden revelar la necesidad de ajustes en etapas anteriores (como recolectar más datos o redefinir objetivos). Su enfoque estructurado minimiza riesgos y maximiza el valor entregado, siendo especialmente útil en proyectos complejos donde la alineación entre técnica y negocio es esencial.

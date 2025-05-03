@@ -6,21 +6,22 @@
 \contentsline {chapter}{Lista de tablas}{XIII}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Explicación del problema}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Motivación}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Estrucutra de la memoria}{1}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Metodología}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Planificación}{5}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Entendimiento del problema}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{9}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Modelos}{11}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Test}{13}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{15}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{17}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{19}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{21}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{23}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{23}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{23}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{23}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{25}{appendix.Alph2}%
+\contentsline {section}{\numberline {1.2}Motivación}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Estrucutra de la memoria}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Metodología}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}CRISPDM}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Planificación}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Entendimiento del problema}{9}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Modelos}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Test}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{17}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{19}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{21}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{23}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Manuales}{25}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{25}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{25}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Manual de usuario}{25}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{27}{appendix.Alph2}%
