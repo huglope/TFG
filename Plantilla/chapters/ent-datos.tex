@@ -1,1 +1,62 @@
+\section{Origen de los datos}
+Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El dataset en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia.\cite{}
+
+
+El dataset utilizado es NF-UNSW-NB15-v3, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
+
+\section{Tipos de ataques registrados en los datos}
+
+El conjunto de datos consiste en un total de 2.365.424 flujos de datos, donde 127.639 (5,4\%) son muestras de ataque y 2.237.731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La siguiente tabla proporciona una distribución detallada del conjunto de datos:
+
+\begin{table}[H]
+\label{tab:attacks-tab}
+\begin{tabular}{|l|c|>{\RaggedRight}p{10cm}|} % Ajusta el ancho (8cm) según necesites
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Clase} & \textbf{Cantidad} & \textbf{Descripción} \\ \hline
+Benigno & 2.237.731 & Flujos normales no maliciosos. \\ \hline
+Fuzzers & 33.816 & Tipo de ataque en el que el atacante envía grandes cantidades de datos aleatorios que hacen que un sistema se bloquee y también apuntan a descubrir vulnerabilidades de seguridad en un sistema. \\ \hline
+Analysis & 2.381 & Un grupo que presenta una variedad de amenazas que se dirigen a aplicaciones web a través de puertos, correos electrónicos y scripts. \\ \hline
+Backdoor & 1.226 & Una técnica que tiene como objetivo eludir los mecanismos de seguridad respondiendo a aplicaciones específicas de clientes construidos. \\ \hline
+DoS & 5.980 & La denegación de servicio es un intento de sobrecargar los recursos de un sistema informático con el objetivo de evitar el acceso o la disponibilidad de sus datos. \\ \hline
+Exploits & 42.748 & Son secuencias de comandos que controlan el comportamiento de un host a través de una vulnerabilidad conocida. \\ \hline
+Generic & 19.651 & Un método que se dirige a la criptografía y causa una colisión con cada cifrado de bloques. \\ \hline
+Reconnaissance & 17.074 & Una técnica para recopilar información sobre un host de red, también se conoce como sonda. \\ \hline
+Shellcode & 4.659 & Un malware que penetra en un código para controlar el host de una víctima. \\ \hline
+Worms & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
+\end{tabular}
+\centering
+\caption{Clasificación de amenazas de seguridad}
+\end{table}
+
+\section{Parámetros de los datos}
+
+Los datos tienen en cuenta un total de 55 parámetros entre los que destacan:
+
+\textbf{¿Debería explicar todas las columnas del dataset o solo las más importantes?}
+
+\begin{itemize}
+\item \textbf{Label:} indica si cada dato es un ataque (valor = 1) o si es una conexión legítima (valor = 0).
+\item \textbf{Attack:} especifica el tipo de conexión, diferenciando entre los tipos mencionados anteriormente en \ref{tab:attacks-tab}.
+\item\textbf{FLOW\_START\_MILISECONDS:} timestamp en el que se inicia la conexión entre los sistemas.
+\item\textbf{FLOW\_END\_MILISECONDS:} timestamp en el que se finaliza la conexión entre los sistemas.
+\item\textbf{L4\_SRC\_PORT:} puerto de origen desde el que se inicia la conexión.
+\item\textbf{L4\_DST\_PORT:} puerto de destino al que se quiere conectar.
+\item\textbf{PROTOCOL:} protocolo que que define cómo los dispositivos interactúan para comunicarse, transmitir datos y compartir recursos.
+\item\textbf{IN\_BYTES}: número de bytes que envía el dispositivo que inicia la conexión.
+\item\textbf{OUT\_BYTES}: número de bytes que devuelve el dispositivo objetivo de la conexión.
+\item\textbf{TCP\_FLAG:} suma de los indicadores TCP.
+\end{itemize}
+
+
+\section{Patrones preliminares, valores atípicos y sesgos}
+
+Tras analizar los datos originales del dataset, se han encontrado características que afectarían de forma negativa al entrenamiento del modelo y por lo tanto a su correcto funcionamiento posteriormente. A continuación, se mencionan cuales han sido las característcas problematicas encontradas.
+
+
+Algunos parámetros presentan valores infinitos que no son aptos para evitar que estos datos produzcan errores en el ejecución del algoritmo para entrenar al modelo han sido eliminados.
+
+Los datos están sesgados por las direcciones IPv4 de los dispositivos origen. Solo se producen ataques desde las direcciones con máscara 175.45.176.255 por lo que este parámetro será ignorado para que los resultados del modelo no estén condicionados por dicho sesgo.
+
+
 
