@@ -1,10 +1,12 @@
-\section{Origen de los datos}
-Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El dataset en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia.\cite{}
+Este capítulo se corresponde con la segunda etapa de la metodología CRISP-DM, En el se explicará la naturaleza de los datos y sus características, así como los valores atípicos que presentan y sus sesgos.
+
+\section{Origen de los datos}  \label{sec.origen-datos}
+Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El dataset en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia.\cite{•}
 
 
 El dataset utilizado es NF-UNSW-NB15-v3, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
 
-\section{Tipos de ataques registrados en los datos}
+\section{Tipos de ataques registrados en los datos} \label{sec.tipo-ataques}
 
 El conjunto de datos consiste en un total de 2.365.424 flujos de datos, donde 127.639 (5,4\%) son muestras de ataque y 2.237.731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La siguiente tabla proporciona una distribución detallada del conjunto de datos:
 
@@ -29,27 +31,29 @@ Worms & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
 \caption{Clasificación de amenazas de seguridad}
 \end{table}
 
-\section{Parámetros de los datos}
+\section{Parámetros de los datos} \label{sec.param-datos}
 
 Los datos tienen en cuenta un total de 55 parámetros entre los que destacan:
 
 \textbf{¿Debería explicar todas las columnas del dataset o solo las más importantes?}
 
+\url{https://arxiv.org/pdf/2503.04404}
+
 \begin{itemize}
-\item \textbf{Label:} indica si cada dato es un ataque (valor = 1) o si es una conexión legítima (valor = 0).
-\item \textbf{Attack:} especifica el tipo de conexión, diferenciando entre los tipos mencionados anteriormente en \ref{tab:attacks-tab}.
-\item\textbf{FLOW\_START\_MILISECONDS:} timestamp en el que se inicia la conexión entre los sistemas.
-\item\textbf{FLOW\_END\_MILISECONDS:} timestamp en el que se finaliza la conexión entre los sistemas.
-\item\textbf{L4\_SRC\_PORT:} puerto de origen desde el que se inicia la conexión.
-\item\textbf{L4\_DST\_PORT:} puerto de destino al que se quiere conectar.
-\item\textbf{PROTOCOL:} protocolo que que define cómo los dispositivos interactúan para comunicarse, transmitir datos y compartir recursos.
+\item \textbf{Label}: indica si cada dato es un ataque (valor = 1) o si es una conexión legítima (valor = 0).
+\item \textbf{Attack}: especifica el tipo de conexión, diferenciando entre los tipos mencionados anteriormente en \ref{tab:attacks-tab}.
+\item\textbf{FLOW\_START\_MILISECONDS}: timestamp en el que se inicia la conexión entre los sistemas.
+\item\textbf{FLOW\_END\_MILISECONDS}: timestamp en el que se finaliza la conexión entre los sistemas.
+\item\textbf{L4\_SRC\_PORT}: puerto de origen desde el que se inicia la conexión.
+\item\textbf{L4\_DST\_PORT}: puerto de destino al que se quiere conectar.
+\item\textbf{PROTOCOL}: protocolo que que define cómo los dispositivos interactúan para comunicarse, transmitir datos y compartir recursos.
 \item\textbf{IN\_BYTES}: número de bytes que envía el dispositivo que inicia la conexión.
 \item\textbf{OUT\_BYTES}: número de bytes que devuelve el dispositivo objetivo de la conexión.
-\item\textbf{TCP\_FLAG:} suma de los indicadores TCP.
+\item\textbf{TCP\_FLAG}: suma de los indicadores TCP.
 \end{itemize}
 
 
-\section{Patrones preliminares, valores atípicos y sesgos}
+\section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
 
 Tras analizar los datos originales del dataset, se han encontrado características que afectarían de forma negativa al entrenamiento del modelo y por lo tanto a su correcto funcionamiento posteriormente. A continuación, se mencionan cuales han sido las característcas problematicas encontradas.
 

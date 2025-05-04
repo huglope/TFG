@@ -1,1 +1,38 @@
+En este capítulo trataremos en el entendimiento del problema. Se trata de la fase inicial de la metología CRISP-DM. A continuación, se alinean los objetivos técnicos con las necesidades del negocio o el problema a resolver. Se definen requisitos, se identifican métricas de éxito y se trata de dar comprensión sobre el contexto organizacional.
+ 
+\section{Requisitos}  \label{sec.requisitos} 
+Como se ha comentado en el punto \ref{sec.objetivos} \nameref{sec.objetivos}, 
+el principal objetivo del proyecto es desarrollar un modelo neuronal que detecte la presencia de ataques en una red informática y los clasifique según su tipo. Para cumplir con dicho objetivo, se considera imprescindible cumplir con los requisitos que se listan a continuación.
 
+\subsection{Requisitos Funcionales}   \label{sec.req-funcionales}
+\textbf{Primera versión de requisitos, no me convencen mucho}
+\begin{itemize}  
+    \item \textbf{RF-1}: El sistema deberá detectar cuales de las conexiones podrían ser potenciales intrusiones en la red.
+    \item \textbf{RF-2}: El sistema deberá clasificará las conexiones en 10 categorías predefinidas en \nameref{tab:attacks-tab}.  
+	\item \textbf{RF-3}: El sistem deberá ser capaz de procesar formatos estándar de logs como son Syslog, NetFlow y PCAP.
+	\item \textbf{RF-4}: El sistema deberá diferenciar entre ataques conocidos (basados en firmas) y desconocidos (basados en anomalías).
+	\item \textbf{RF-5}: El sistema deberá ofrecer API REST para conexión con SIEMs (Splunk, IBM QRadar)
+	\item \textbf{RF-6}: Generar alertas automatizadas con nivel de criticidad (bajo/medio/alto).
+	\item \textbf{RF-7}: Proveer recomendaciones de mitigación básicas (ej. bloquear IPs maliciosas)
+
+	
+	
+\textbf{¿Debería integrar el modelo en algún sistema o crear un script o alguna forma para comunicarme con él?}
+		
+\end{itemize}  
+
+\subsection{Requisitos No Funcionales}   \label{sec.req-no-funcionales}
+\begin{itemize}  
+    \item \textbf{RNF-1}: Latencia <50 ms en redes de 10Gbps (requisito crítico para SOC~\cite{nist2021ai}).  
+    \item \textbf{RNF-2}: Interfaz accesible para usuarios no técnicos (evaluado con test SUS~\cite{brooke1996sus}).  
+\end{itemize}  
+
+\subsection{Reglas de Negocio}   \label{sec.reglas-neogcio}
+\begin{itemize}  
+    \item \textbf{RB-1}: Coste operativo mensual no superará \$10,000 (aprobado por Comité de Seguridad).  
+    \item \textbf{RB-2}: Alertas de ransomware requerirán confirmación humana antes de aislamiento de red.  
+\end{itemize}  
+\section{Contexto organizacional} \label{sec.contexto-organizacional}
+
+
+\section{Objetivos del proyecto}

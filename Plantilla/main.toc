@@ -13,6 +13,12 @@
 \contentsline {section}{\numberline {2.1}CRISPDM}{5}{section.2.1}%
 \contentsline {chapter}{\numberline {3}Planificación}{7}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Entendimiento del problema}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Requisitos}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{10}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Reglas de Negocio}{10}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Contexto organizacional}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Objetivos del proyecto}{10}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{11}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Origen de los datos}{11}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos}{11}{section.5.2}%
