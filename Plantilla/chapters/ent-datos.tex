@@ -55,12 +55,12 @@ Los datos tienen en cuenta un total de 55 parámetros entre los que destacan:
 
 \section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
 
-Tras analizar los datos originales del dataset, se han encontrado características que afectarían de forma negativa al entrenamiento del modelo y por lo tanto a su correcto funcionamiento posteriormente. A continuación, se mencionan cuales han sido las característcas problematicas encontradas.
+Tras analizar los datos originales del dataset, se han encontrado características que afectarían de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento posteriormente. A continuación, se mencionan cuales han sido las característcas problematicas de los datos encontradas.
 
 
-Algunos parámetros presentan valores infinitos que no son aptos para evitar que estos datos produzcan errores en el ejecución del algoritmo para entrenar al modelo han sido eliminados.
+Algunos parámetros presentan valores infinitos que no son aptos. Para evitar que estos datos produzcan errores en la ejecución del algoritmo que entrena al modelo, se ha optado por eliminarlos.
 
-Los datos están sesgados por las direcciones IPv4 de los dispositivos origen. Solo se producen ataques desde las direcciones con máscara 175.45.176.255 por lo que este parámetro será ignorado para que los resultados del modelo no estén condicionados por dicho sesgo.
+En un principio, puede parecer que los datos están sesgados por las direcciones IPv4 de los dispositivos origen. Esto se debe a que solo se producen ataques desde las direcciones con máscara 175.45.176.255. Tras realizar pruebas excluyendo este parámetro del entrenamiento del modelo, se ha llegado a la conclusión de que este parámetro no recibe un peso muy alto y no altera los resultados de las métricas del modelo.
 
 
 

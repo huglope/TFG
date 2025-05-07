@@ -1,1 +1,72 @@
+\section{Métricas}  \label{sec.metricas}
+\subsection{Matriz de confusión} \label{sec.matriz-consfusion}
+Para evaluar el desempeño del modelo de detección y clasificación de ataques, se utilizan las siguientes métricas derivadas de la matriz de confusión.
 
+\begin{table}[h]
+\centering
+\label{tab:confusion_matrix}
+\begin{tabular}{l|cc}
+\hline
+ & \textbf{Predicción Positiva} & \textbf{Predicción Negativa} \\ \hline
+\textbf{Real Positivo} & Verdaderos Positivos (VP) & Falsos Negativos (FN) \\
+\textbf{Real Negativo} & Falsos Positivos (FP) & Verdaderos Negativos (VN) \\ \hline
+\end{tabular}
+\caption{Matriz de confusión para clasificación binaria.}
+\end{table}
+
+\subsection{Fórmulas e Interpretación}
+
+\begin{itemize}
+    \item \textbf{Exactitud (\textit{Accuracy})}: \label{met:Accuracy}
+    
+    \begin{equation}
+        \text{Accuracy} = \frac{VP + VN}{VP + FP + VN + FN}
+    \end{equation}
+    
+    \textit{Interpretación}: Proporción de predicciones correctas sobre el total. Útil cuando las clases están balanceadas, pero sensible a distribuciones desiguales.
+    
+
+    \item \textbf{Precisión (\textit{Precision})}: \label{met:Precision}
+    
+    \begin{equation}
+        \text{Precision} = \frac{VP}{VP + FP}
+    \end{equation}
+    
+    \textit{Interpretación}: Capacidad del modelo de no etiquetar como positivo un caso negativo. Crítica en escenarios donde los falsos positivos son costosos (ej.: bloquear tráfico ilegítimo).
+
+
+    \item \textbf{Sensibilidad (\textit{Recall})}: \label{met:Recall}
+    
+    \begin{equation}
+        \text{Recall} = \frac{VP}{VP + FN}
+    \end{equation}
+    
+    \textit{Interpretación}: Capacidad de detectar todos los casos positivos. Prioritario en seguridad, donde los falsos negativos (ataques no detectados) pueden tener consecuencias catastróficas.
+    
+
+    \item \textbf{Puntuación F1 (\textit{F1-Score})}: \label{met:F1-score}
+    
+    \begin{equation}
+        F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+    \end{equation}
+    
+    \textit{Interpretación}: Media armónica de precisión y recall. Balancea ambos métricas, ideal para clases desbalanceadas.
+    
+
+    \item \textbf{Puntuación F2 (\textit{F2-Score})}: \label{met:F2-score}
+    
+    \begin{equation}
+        F2 = 5 \times \frac{\text{Precision} \times \text{Recall}}{4 \times \text{Precision} + \text{Recall}}
+    \end{equation}
+    
+    \textit{Interpretación}: Versión ponderada del F1 que da más peso al recall (útil cuando omitir un ataque es más grave que generar falsas alertas).
+\end{itemize}
+
+
+\subsection{Aplicación en Seguridad}	\label{sec:apli-met-seg}
+En el contexto de detección de intrusiones:
+\begin{itemize}
+    \item Un recall alto (> 95\%) asegura que pocos ataques pasan desapercibidos.
+    \item La precisión debe optimizarse para reducir la carga operativa de analistas (falsos positivos < 10\%).
+    \item El F2-Score es preferible al F1 cuando la prioridad es minimizar riesgos de ataques no detectados.
+\end{itemize}

@@ -2,8 +2,8 @@
 \contentsline {chapter}{Agradecimientos}{III}{chapter*.3}%
 \contentsline {chapter}{Resumen}{V}{chapter*.4}%
 \contentsline {chapter}{Abstract}{VII}{chapter*.5}%
-\contentsline {chapter}{Lista de figuras}{XI}{chapter*.6}%
-\contentsline {chapter}{Lista de tablas}{XIII}{chapter*.7}%
+\contentsline {chapter}{Lista de figuras}{XIII}{chapter*.6}%
+\contentsline {chapter}{Lista de tablas}{XV}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Explicación del problema}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivación}{2}{section.1.2}%
@@ -25,6 +25,10 @@
 \contentsline {section}{\numberline {5.3}Parámetros de los datos}{12}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Patrones preliminares, valores atípicos y sesgos}{13}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Modelos}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Métricas}{15}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Matriz de confusión}{15}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Fórmulas e Interpretación}{15}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Aplicación en Seguridad}{16}{subsection.6.1.3}%
 \contentsline {chapter}{\numberline {7}Test}{17}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Despliegue}{19}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Tecnologías usadas}{21}{chapter.9}%
