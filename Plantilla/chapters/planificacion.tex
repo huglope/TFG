@@ -1,1 +1,82 @@
+Este capítulo aborda la organización detallada de un Trabajo de Fin de Grado, cubriendo desde su diseño inicial hasta la implementación y el seguimiento durante su desarrollo. Una planificación rigurosa resulta fundamental para sentar las bases del proyecto, ya que permite definir con claridad los objetivos, los recursos necesarios, los plazos de entrega y las actividades clave para alcanzar los resultados esperados.
 
+En primer lugar, se establece una planificación temporal preliminar, donde se estiman los tiempos requeridos para cada etapa. Este cronograma se estructura en torno a las fases de la metodología CRISP-DM, complementadas con etapas específicas propias de un Trabajo de Fin de Grado. A continuación, se realiza un análisis de riesgos exhaustivo, evaluando tanto la probabilidad como el impacto de cada posible contingencia.
+
+Además, se elabora un presupuesto detallado para las tareas del proyecto, abordado desde dos perspectivas. Por un lado, se incluye una estimación realista de los costes asociados a la ejecución del trabajo en el ámbito académico. Por otro lado, se plantea una proyección teórica de los gastos que implicaría un proyecto equivalente en un contexto profesional.
+
+Por último, se contrasta la planificación inicial con el desarrollo real del trabajo, lo que permite evaluar posibles desviaciones y los aprendizajes obtenidos durante el proceso.
+
+\section{Planificación temporal}
+
+La planificación temporal constituye un elemento fundamental en la ejecución de un proyecto fin de grado, ya que permite estructurar de manera sistemática todas las actividades necesarias para alcanzar los objetivos propuestos. En el contexto de un trabajo académico que combine el desarrollo de software con una metodología de investigación, como es el caso de CRISP-DM para el proceso analítico y SCRUM para la gestión del proyecto, una adecuada planificación garantiza la distribución equilibrada del tiempo disponible entre las distintas fases del trabajo. Esta organización temporal resulta especialmente relevante cuando se deben coordinar aspectos teóricos, desarrollo técnico y validación de resultados, asegurando que cada componente reciba la atención necesaria sin comprometer la calidad global del proyecto.
+
+El empleo de un diagrama de Gantt como herramienta de planificación ofrece ventajas significativas para visualizar la secuencia de actividades y su superposición temporal. Este tipo de representación gráfica facilita la identificación de hitos críticos y dependencias entre tareas, aspectos particularmente importantes cuando se combinan metodologías diferentes como CRISP-DM y SCRUM. La primera, con sus fases bien definidas, proporciona la estructura para el desarrollo del núcleo analítico del proyecto, mientras que SCRUM, con sus sprints iterativos, permite adaptar el trabajo a los descubrimientos que vayan surgiendo durante la investigación. La integración de ambas aproximaciones en un único cronograma exige una cuidadosa coordinación que el diagrama de Gantt ayuda a materializar de forma clara y comprensible.
+
+
+\begin{figure}[h]
+\centering
+\makebox[\linewidth][c]{%  % Centrado mejorado
+\begin{ganttchart}[
+    x unit=0.15cm,         % Aumentado para ocupar más ancho
+    y unit title=0.8cm,
+    y unit chart=0.6cm,
+    hgrid,
+    vgrid={*{1}{dotted}},
+    title/.style={draw=none},
+    title label font=\footnotesize,
+    bar/.style={fill=blue!30, rounded corners=2pt},
+    bar height=0.6,
+    group/.style={draw=black, fill=blue!10},
+    milestone/.style={fill=red, rounded corners=2pt},
+    bar label font=\scriptsize,
+    group label font=\small,
+    milestone label font=\scriptsize,
+    expand chart=\linewidth  % Ocupa todo el ancho disponible
+]{1}{90}
+    % Título principal centrado sobre semanas
+    \gantttitle{Diagrama de Gantt del Proyecto}{90} \\
+    
+    % Cabecera de semanas (13 semanas para 90 días)
+    \gantttitlelist{1,2,3,4,5,6,7,8,9,10,11,12,13}{7} \\
+    
+    % Fases y tareas (igual que antes pero ajustadas visualmente)
+    \ganttgroup{1. Comprensión Negocio}{1}{10} \\
+    \ganttbar{1.1 Definición objetivos}{1}{5} \\
+    \ganttbar{1.2 Análisis requisitos}{6}{10} \\
+    
+    \ganttgroup{2. Comprensión Datos}{11}{20} \\
+    \ganttbar{2.1 Recopilación datos}{11}{15} \\
+    \ganttbar{2.2 Análisis exploratorio}{16}{20} \\
+    
+    \ganttgroup{Sprint 1: Preparación}{21}{35} \\
+    \ganttbar{3.1 Limpieza datos}{21}{25} \\
+    \ganttbar{3.2 Feature engineering}{26}{30} \\
+    \ganttbar{3.3 Normalización}{31}{35} \\
+    \ganttmilestone{Hito 1}{35} \\
+    
+    \ganttgroup{Sprint 2: Modelado}{36}{60} \\
+    \ganttbar{4.1 Selección algoritmos}{36}{40} \\
+    \ganttbar{4.2 Entrenamiento inicial}{41}{50} \\
+    \ganttbar{4.3 Ajuste parámetros}{51}{60} \\
+    \ganttmilestone{Hito 2}{60} \\
+    
+    \ganttgroup{Sprint 3: Evaluación}{61}{80} \\
+    \ganttbar{5.1 Validación cruzada}{61}{65} \\
+    \ganttbar{5.2 Pruebas rendimiento}{66}{70} \\
+    \ganttbar{5.3 Análisis resultados}{71}{80} \\
+    \ganttmilestone{Hito 3}{80} \\
+    
+    \ganttgroup{6. Documentación}{81}{90} \\
+    \ganttbar{6.1 Redacción memoria}{81}{85} \\
+    \ganttbar{6.2 Preparación defensa}{86}{90} \\
+    \ganttmilestone{Entrega Final}{90}
+\end{ganttchart}
+}
+\caption{Diagrama de Gantt con planificación semanal y detalle diario}
+\label{fig:gantt}
+\end{figure}
+
+\section{Gestión de riesgos}
+\section{Estimación de costes}
+\subsection{Costes materiales}
+\subsection{Costes humanos}
