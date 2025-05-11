@@ -534,4 +534,151 @@ En esta sección se presenta la estimación de costes, que comprende la identifi
 La precisión en la estimación de costes facilita la elaboración de un presupuesto realista y la planificación financiera del proyecto. Permite anticipar las necesidades económicas, buscar posibles fuentes de financiación si fuese necesario y gestionar eficientemente los recursos disponibles. Una estimación detallada contribuye a evitar desviaciones presupuestarias y a asegurar la viabilidad económica del proyecto.
 
 \subsection{Costes materiales}
+A continuación, se hace un recuento de los costes materiales en hardware y software que han sido utilizados para el desarrollo de este proyecto.
+\subsection*{Hardware}
+El hardware comprende el conjunto de componentes físicos y tangibles que constituyen un sistema informático. Proporciona la infraestructura física necesaria para la ejecución del software y el procesamiento de la información.
+
+Para realizar este proyecto se han utilizado los siguientes componentes:
+\begin{itemize}
+\item \textbf{CPU}: AMD Ryzen 7 6800HS with Radeon Graphics (16) @ 4.785GHz
+\item \textbf{RAM}: 16GB SO-DIMM DDR5 4800MH
+\item \textbf{Memoria}: 512GB PCIe® 4.0 NVMe™ M.2 SSD
+\item \textbf{GPU1}: NVIDIA GeForce RTX 3050 Mobile 
+\item \textbf{GPU2}: AMD ATI Radeon 680M
+\end{itemize}
+
+Debido al tamaño del conjunto de datos, el componente que más ha ralentizado el proyecto es la RAM, que en ciertas ocasiones durante el entrenamiento de los modelos se quedaba algo escasa en capacidad.
+
+Teniendo en cuenta que el coste del ordenador en el momento de la compra fue de 829€, que la vida útil aproximada es de 8 años y que para el desarrollo de este proyecto se ha estado utilizando durante 3,5 meses, la amortización del hardware es:
+
+\begin{equation}
+	\text{Amortización del Hardware} = 829\,\euro \times \frac{1}{8} \times \frac{3.5}{12} = 30,22\,\euro
+\end{equation}
+
+\subsection*{Software}
+El software constituye el conjunto intangible de programas, datos e instrucciones que habilitan el funcionamiento de un sistema informático. Es el responsable de definir la funcionalidad, el comportamiento y la interacción del sistema con el usuario y con otros sistemas. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llccc}
+\toprule
+Funcionalidad & Software & Coste Mensual & Duración & Coste Total \\
+\midrule
+Sistema Operativo (SO) & Kubuntu 24.10 x86\_64  & 0\,€  & 3,5 meses & 0\,€ \\
+Lenguaje (memoria) & Latex &  0\,€ & 3 meses & 0\,€ \\
+Editor latex & TexMaker & 0\,€ & 3 meses & 0\,€ \\
+IDE  & MS Visual Studio Code & 0\,€ & 1 mes & 0\,€ \\
+Lenguaje (modelos) & Python & 0\,€ & 1 mes & 0\,€ \\
+IDE de Python & Jupyeter Notebooks & 0\,€ & 1 mes & 0\,€ \\
+Plataforma MLOps\footnote{Machine Learning Operations, son un conjunto de prácticas y principios que buscan gestionar de forma eficiente y escalable el ciclo de vida del aprendizaje automático} & Weights\&Biases & 0\,€ & 1 mes & 0\,€ \\
+Control de versiones & GitHub & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (código) & DeepSeek & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (memoria) & Gemini & 0\,€ & 2 mes & 0\,€ \\
+Comunicación 1 & MS Outlook & 0\,€ \footnote{licencia académica} & 3,5 mes & 0\,€ \\
+Comunicación 2 & MS Teams & 0\,€ & 3,5 mes & 0\,€ \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Software}
+\label{tab:costes_software}
+\end{table}
+
+Debido a que el proyecto se realiza en un ámbito académico, se han minimizado los costes software del proyecto utilizando exclusivamente herramientas cedidas por la entidad académica o bien herramientas con licencia open-source que no suponen un coste monetario para el desarrollo del proyecto.
+
+
 \subsection{Costes humanos}
+Como proyecto académico, los costes humanos representan el valor del tiempo y el esfuerzo personal invertido en la planificación, investigación, redacción y presentación del trabajo. Estos costes se manifiestan en las horas dedicadas al proyecto, el esfuerzo intelectual requerido, el aplazamiento o anulación de otras actividades personales o profesionales y el estrés asociado al proceso.
+
+En el caso de la simulación de los costes monetarios de un proyecto similar a este, sería necesario contar con personas cualificadas para los siguientes puestos:
+\begin{itemize}
+\item Ingeniero de Machine Learching
+\item Data Scientist
+\item Data Analyst
+\end{itemize}
+
+
+\subsubsection*{Fase 1: Definición y Preparación (75 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 12 & 504 \\
+Científico Datos & 34.5 & 38 & 1311 \\
+Analista Datos & 18.5 & 25 & 462.5 \\
+\midrule
+\textbf{Total Fase 1} & & \textbf{75} & \textbf{2277.5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 1}
+\label{tab:costes_fase1}
+\end{table}
+
+
+\subsubsection*{Fase 2: Desarrollo y Entrenamiento (150 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 95 & 3990 \\
+Científico Datos & 34.5 & 38 & 1311 \\
+Analista Datos & 18.5 & 17 & 314.5 \\
+\midrule
+\textbf{Total Fase 2} & & \textbf{150} & \textbf{5615,5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 2}
+\label{tab:costes_fase2}
+\end{table}
+
+
+\subsubsection*{Fase 3: Validación y Evaluación (75 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 30 & 1260 \\
+Científico Datos & 34.5 & 37 & 1276.5 \\
+Analista Datos & 18.5 & 8 & 148 \\
+\midrule
+\textbf{Total Fase 3} & & \textbf{75} & \textbf{2684.5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 3}
+\label{tab:costes_fase3}
+\end{table}
+
+\subsubsection*{Coste Total del Proyecto (300 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{lc}
+\toprule
+Profesional & Coste Total (€) \\
+\midrule
+Ingeniero ML & 5754 \\
+Científico Datos & 3898,5 \\
+Analista Datos & 925 \\
+\midrule
+\textbf{Coste Total del Proyecto} & \textbf{10577,5} \\
+\bottomrule
+\end{tabular}
+\caption{Coste Total por Profesional}
+\label{tab:coste_total_profesional}
+\end{table}
+
+
+Las estimaciones salariales proporcionadas se basan en los salarios en el sector tecnológico y de análisis de datos en España. Esta información se encuentra publicada en portales de empleo (Talent.com), escuelas de negocio (Aicad Business School, KSchool, Esden Business School) y noticias del sector (Tokio School). 
+
+
+
+
+
+
+
+
+
+

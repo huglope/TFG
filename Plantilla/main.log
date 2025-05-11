@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.5.3)  11 MAY 2025 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.5.3)  11 MAY 2025 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,7 +1409,13 @@ LaTeX Info: Redefining \% on input line 192.
 ] (./main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+
+
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+[15
+
+])
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
@@ -1417,25 +1423,17 @@ LaTeX Info: Redefining \% on input line 1.
 
 LaTeX Info: Redefining \. on input line 196.
 LaTeX Info: Redefining \% on input line 196.
-[15
-
-]
+[16]
 No file main.gls.
 
 
 LaTeX Info: Redefining \. on input line 200.
 LaTeX Info: Redefining \% on input line 200.
-[16
+[17
 
 ]
 No file main.acr.
 
-
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
-[17
-
-]
 
 LaTeX Info: Redefining \. on input line 204.
 LaTeX Info: Redefining \% on input line 204.
@@ -1463,19 +1461,18 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.10 
-      [1]
-Overfull \hbox (18.70572pt too wide) in paragraph at lines 20--21
+      [1
+
+]
+Overfull \hbox (18.70572pt too wide) in paragraph at lines 18--19
 []\OT1/cmr/m/n/10 https://www.wsj.com/articles/the-ai-effect-amazon-sees-nearly
 -1-billion-cyber-threats-a-day-
  []
 
 
-Underfull \vbox (badness 6173) has occurred while \output is active []
 
-
-
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -1489,12 +1486,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \item I
-            nvestigar las mejores opciones de arquitectura y de elección de...
-[2])
+l.32 \section
+             {Objetivos del proyecto} \label{sec.objetivos-pro} [2]
 
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -1503,13 +1499,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[3]
+[3])
 
 LaTeX Info: Redefining \. on input line 209.
 LaTeX Info: Redefining \% on input line 209.
-[4
-
-]
+[4]
 Cap\'{\i }tulo 2.
 (./chapters/metodologia.tex
 
@@ -1528,7 +1522,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[5]
+[5
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1862,7 +1858,66 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[25])
+[25]
+
+LaTeX Info: Redefining \. on input line 540.
+LaTeX Info: Redefining \% on input line 540.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[26]
+Overfull \hbox (26.42792pt too wide) in paragraph at lines 563--581
+ [][] 
+ []
+
+
+Underfull \vbox (badness 6094) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \. on input line 584.
+LaTeX Info: Redefining \% on input line 584.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[27]
+
+LaTeX Info: Redefining \. on input line 596.
+LaTeX Info: Redefining \% on input line 596.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \. on input line 654.
+LaTeX Info: Redefining \% on input line 654.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[29])
 
 LaTeX Info: Redefining \. on input line 215.
 LaTeX Info: Redefining \% on input line 215.
@@ -1874,7 +1929,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[26]
+[30]
 Cap\'{\i }tulo 4.
 (./chapters/ent-problema.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1891,11 +1946,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[27
+[31
 
 ]
 
-LaTeX Warning: Citation `nist2021ai' on page 28 undefined on input line 41.
+LaTeX Warning: Citation `nist2021ai' on page 32 undefined on input line 41.
 
 
 
@@ -1909,9 +1964,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[28]
+[32]
 
-LaTeX Warning: Citation `brooke1996sus' on page 29 undefined on input line 42.
+LaTeX Warning: Citation `brooke1996sus' on page 33 undefined on input line 42.
 
 )
 
@@ -1925,17 +1980,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[29]
+[33]
 
 LaTeX Info: Redefining \. on input line 218.
 LaTeX Info: Redefining \% on input line 218.
-[30
+[34
 
 ]
 Cap\'{\i }tulo 5.
 (./chapters/ent-datos.tex
 
-LaTeX Warning: Citation `•' on page 31 undefined on input line 4.
+LaTeX Warning: Citation `•' on page 35 undefined on input line 4.
 
 
 Overfull \hbox (34.4157pt too wide) in paragraph at lines 15--31
@@ -1957,13 +2012,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[31]
+[35]
 
 Package caption Warning: \label without proper reference on input line 14.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:attacks-tab' on page 32 undefined on input line 4
+LaTeX Warning: Reference `tab:attacks-tab' on page 36 undefined on input line 4
 4.
 
 
@@ -1978,7 +2033,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[32])
+[36])
 
 LaTeX Info: Redefining \. on input line 221.
 LaTeX Info: Redefining \% on input line 221.
@@ -1990,7 +2045,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[33]
+[37]
 
 LaTeX Info: Redefining \. on input line 221.
 LaTeX Info: Redefining \% on input line 221.
@@ -2002,7 +2057,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[34
+[38
 
 ]
 Cap\'{\i }tulo 6.
@@ -2018,7 +2073,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[35])
+[39])
 
 LaTeX Info: Redefining \. on input line 224.
 LaTeX Info: Redefining \% on input line 224.
@@ -2030,7 +2085,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[36]
+[40]
 Cap\'{\i }tulo 7.
 (./chapters/test.tex)
 
@@ -2044,11 +2099,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[37
+[41
 
 ]
 
-[38
+[42
 
 ]
 Cap\'{\i }tulo 8.
@@ -2064,9 +2119,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[39]
+[43]
 
-[40
+[44
 
 ]
 Cap\'{\i }tulo 9.
@@ -2082,9 +2137,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[41]
+[45]
 
-[42
+[46
 
 ]
 Cap\'{\i }tulo 10.
@@ -2100,9 +2155,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[43]
+[47]
 
-[44
+[48
 
 ]
 Cap\'{\i }tulo 11.
@@ -2118,9 +2173,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[45]
+[49]
 
-[46
+[50
 
 ]
 Ap\'{e}ndice A.
@@ -2136,11 +2191,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[47]
+[51]
 
 LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
-[48
+[52
 
 ]
 Ap\'{e}ndice B.
@@ -2156,9 +2211,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[49]
+[53]
 
-[50
+[54
 
 ]
 No file main.bbl.
@@ -2190,35 +2245,43 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: AEE7A8F43C7CB125BE62F35E0820DEA4;7971
-(rerunfilecheck)             After:  5771CB1B59470BF11075DF47D10B0AA8;8243.
+(rerunfilecheck)             Before: 5771CB1B59470BF11075DF47D10B0AA8;8243
+(rerunfilecheck)             After:  3F96A433D417F8D1A3C36FD439326920;8475.
  ) 
 Here is how much of TeX's memory you used:
- 35816 strings out of 475368
- 679435 string characters out of 5773207
- 1961905 words of memory out of 5000000
- 57672 multiletter control sequences out of 15000+600000
- 572240 words of font info for 65 fonts, out of 8000000 for 9000
+ 35863 strings out of 475368
+ 680030 string characters out of 5773207
+ 1962905 words of memory out of 5000000
+ 57693 multiletter control sequences out of 15000+600000
+ 574331 words of font info for 73 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 103i,13n,106p,2344b,986s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/hugo/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600p
-k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (70 pages, 358984 bytes).
+ 103i,17n,106p,2344b,986s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ </home/hugo/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on main.pdf (74 pages, 370179 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 820 PDF objects out of 1000 (max. 8388607)
+ 699 compressed objects within 7 object streams
+ 184 named destinations out of 1000 (max. 500000)
  426 words of extra memory for PDF output out of 10000 (max. 10000000)
 
