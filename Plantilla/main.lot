@@ -2,11 +2,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Cronograma de hitos y horas de trabajo}}{12}{table.caption.12}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Matriz Probabilidad-Impacto}}{14}{table.caption.15}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces R01: Problemas de salud que afecten la continuidad del trabajo}}{16}{table.caption.17}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces R02: Fallos hardware en equipos de desarrollo.}}{17}{table.caption.18}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces R03: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos.}}{18}{table.caption.19}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces R04: Pérdida o corrupción de los datasets.}}{19}{table.caption.20}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces R05: Disponibilidad limitada del tutor académico}}{20}{table.caption.21}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces R06: Desviaciones en la planificación temporal inicial.}}{21}{table.caption.22}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces R07: Cambios en los requisitos técnicos.}}{22}{table.caption.23}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces R08: Dependencia de tecnologías inestables o no documentadas. }}{23}{table.caption.24}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces R09: Dificultades en la integración de componentes.}}{24}{table.caption.25}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces R10: Problemas de licencia de software.}}{25}{table.caption.26}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces R11: Conflicto con periodos de exámenes y entregas de otras asignaturas.}}{26}{table.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Clasificación de amenazas de seguridad}}{16}{table.caption.11}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Clasificación de amenazas de seguridad}}{32}{table.caption.28}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusión para clasificación binaria.}}{19}{table.caption.12}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusión para clasificación binaria.}}{35}{table.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

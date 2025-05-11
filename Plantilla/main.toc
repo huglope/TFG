@@ -13,34 +13,40 @@
 \contentsline {section}{\numberline {2.1}CRISPDM}{5}{section.2.1}%
 \contentsline {chapter}{\numberline {3}Planificación}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Planificación temporal}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Gestión de riesgos}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Estimación de costes}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Costes materiales}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Costes humanos}{10}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Entendimiento del problema}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Requisitos}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{13}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{14}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Reglas de Negocio}{14}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Contexto organizacional}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Objetivos del proyecto}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Origen de los datos}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Parámetros de los datos}{16}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Patrones preliminares, valores atípicos y sesgos}{17}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Modelos}{19}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Métricas}{19}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Matriz de confusión}{19}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Fórmulas e Interpretación}{19}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Aplicación en Seguridad}{20}{subsection.6.1.3}%
-\contentsline {chapter}{\numberline {7}Test}{21}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{23}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{25}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{27}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{29}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{31}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{31}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{31}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{31}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{33}{appendix.Alph2}%
+\contentsline {section}{\numberline {3.2}Gestión de riesgos}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Estimación de costes}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Costes materiales}{26}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Costes humanos}{26}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Entendimiento del problema}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}¿Qué es un ataque a un sistema informático?}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tipos de ataque a sistemas informáticos}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}¿Qué es TCP?}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}¿Qué es un paquete TCP?}{28}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Importancia de protegerse frente a un ataque}{28}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Importancia de detectar los ataques rápidamente}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Requisitos}{28}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Requisitos Funcionales}{28}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Requisitos No Funcionales}{29}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Reglas de Negocio}{29}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Contexto organizacional}{29}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Objetivos del proyecto}{29}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Origen de los datos}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Parámetros de los datos}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Patrones preliminares, valores atípicos y sesgos}{33}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Modelos}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Métricas}{35}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Matriz de confusión}{35}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Fórmulas e Interpretación}{35}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Aplicación en Seguridad}{36}{subsection.6.1.3}%
+\contentsline {chapter}{\numberline {7}Test}{37}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{39}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{41}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{43}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{45}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Manuales}{47}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{47}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{47}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Manual de usuario}{47}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{49}{appendix.Alph2}%

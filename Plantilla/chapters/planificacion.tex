@@ -13,7 +13,8 @@ La planificación temporal constituye un elemento fundamental en la ejecución d
 El empleo de un diagrama de Gantt como herramienta de planificación ofrece ventajas significativas para visualizar la secuencia de actividades y su superposición temporal. Este tipo de representación gráfica facilita la identificación de hitos críticos y dependencias entre tareas, aspectos particularmente importantes cuando se combinan metodologías diferentes como CRISP-DM y SCRUM. La primera, con sus fases bien definidas, proporciona la estructura para el desarrollo del núcleo analítico del proyecto, mientras que SCRUM, con sus sprints iterativos, permite adaptar el trabajo a los descubrimientos que vayan surgiendo durante la investigación. La integración de ambas aproximaciones en un único cronograma exige una cuidadosa coordinación que el diagrama de Gantt ayuda a materializar de forma clara y comprensible.
 
 
-\begin{figure}[h]
+
+\begin{figure}[H]
 \centering
 \makebox[\linewidth][c]{%  % Centrado mejorado
 \begin{ganttchart}[
@@ -72,11 +73,465 @@ El empleo de un diagrama de Gantt como herramienta de planificación ofrece vent
     \ganttmilestone{Entrega Final}{90}
 \end{ganttchart}
 }
-\caption{Diagrama de Gantt con planificación semanal y detalle diario}
+\caption{Diagrama de Gantt para la planificación del proyecto.}
 \label{fig:gantt}
 \end{figure}
 
 \section{Gestión de riesgos}
+
+En este apartado se presentan los principales riesgos potenciales del proyecto junto con sus correspondientes planes de mitigación. De acuerdo con el \textit{PMBOK (Project Management Body of Knowledge)} \cite{pmbok}, los riesgos en gestión de proyectos se clasifican en las siguientes categorías:
+
+\subsection*{Hitos del Proyecto}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Hito} & \textbf{Horas hasta el hito} & \textbf{Horas acumuladas} \\ \hline
+Finalización de formación y trabajos previos & 20 & 20 \\ \hline
+Finalización de la planificación inicial & 30 & 50 \\ \hline
+Finalización de la comprensión de datos & 40 & 90 \\ \hline
+Finalización del modelado & 80 & 170 \\ \hline
+Obtención de modelos óptimos & 40 & 210 \\ \hline
+Finalización y entrega de la memoria & 90 & 300 \\ \hline
+\end{tabular}
+\caption{Cronograma de hitos y horas de trabajo}
+\label{tab:hitos}
+\end{table}
+
+\subsection*{Tipología de Riesgos}
+\begin{enumerate}
+    \item \textbf{Riesgos Técnicos:}
+    \begin{itemize}
+        \item Limitaciones en la infraestructura de hardware
+        \item Incompatibilidad entre sistemas o tecnologías
+        \item Problemas de rendimiento o escalabilidad        
+        \item Deficiencias en el diseño o implementación de software
+    \end{itemize}
+    
+    \item \textbf{Riesgos de Gestión:}
+    \begin{itemize}
+        \item Deficiencias en la comunicación entre los miembros del equipo
+        \item Modificaciones en los requisitos del proyecto        
+        \item Inestabilidad del equipo por conflictos internos o rotación de personal
+        \item Retrasos en la disponibilidad de recursos críticos
+
+    \end{itemize}
+    
+    \item \textbf{Riesgos de Mercado:}
+    \begin{itemize}
+        \item Aparición de competencia no anticipada
+        \item Variaciones en las condiciones del mercado que afectan la demanda
+        \item Cambios regulatorios que impactan la ejecución del proyecto
+    \end{itemize}
+    
+    \item \textbf{Riesgos Financieros:}
+    \begin{itemize}
+        \item Limitaciones en la disponibilidad de fondos<
+        \item Excesos presupuestarios no previstos
+        \item Fluctuaciones en los tipos de cambio
+    \end{itemize}
+    
+    \item \textbf{Riesgos Externos:}
+    \begin{itemize}
+        \item Fenómenos meteorológicos adversos
+        \item Interrupciones en la cadena de suministro
+        \item Eventos naturales catastróficos
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Metodología de Evaluación}
+La identificación y valoración de riesgos se realiza mediante criterios cualitativos, al no disponer de métricas cuantitativas suficientemente fiables para un análisis más exhaustivo. Este enfoque permite priorizar los riesgos según su impacto potencial y probabilidad de ocurrencia.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\hsize=1.1\hsize}c|>{\hsize=1.1\hsize}c|c|c|c|c|c|}
+\hline
+\rowcolor{gray!25}
+\multicolumn{2}{|c|}{\multirow{2}{*}{}} & \multicolumn{5}{c|}{\textbf{Impacto}} \\
+\cline{3-7}
+\multicolumn{2}{|c|}{} & \textbf{Mínimo} & \textbf{Bajo} & \textbf{Medio} & \textbf{Alto} & \textbf{Extremo} \\ \hline
+
+\multirow{6}{*}{\rotatebox{90}{\textbf{Probabilidad}}} 
+& \textbf{Extrema} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} & \cellcolor{redrisk} & \cellcolor{redrisk} \\ \cline{2-7}
+& \textbf{Alta} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} & \cellcolor{redrisk} \\ \cline{2-7}
+& \textbf{Media} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} \\ \cline{2-7}
+& \textbf{Baja} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} \\ \cline{2-7}
+& \textbf{Muy Baja} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor{gray!25}
+\textbf{Nivel de Riesgo} & \textbf{Color} \\ \hline
+Extremo & \cellcolor{redrisk} \\ \hline
+Alto & \cellcolor{orangerisk} \\ \hline
+Moderado & \cellcolor{yellowrisk} \\ \hline
+Bajo & \cellcolor{greenrisk} \\ \hline
+Mínimo & \cellcolor{bluerisk} \\ \hline
+\end{tabular}
+\label{tab:matriz_pi}
+\caption{Matriz Probabilidad-Impacto}
+\end{table}
+
+\begin{description}[leftmargin=1cm, style=nextline]
+
+\item[\textbf{Probabilidad}]
+Grado de posibilidad de que un riesgo se materialice. Se suele cuantificar en escala del 1 (muy improbable) al 5 (casi seguro). En la matriz, determina el eje vertical y se combina con el impacto para priorizar riesgos.
+
+\item[\textbf{Impacto}]
+Consecuencia o efecto potencial que tendría la materialización del riesgo. Se valora del 1 (impacto mínimo) al 5 (impacto catastrófico). Representa el eje horizontal en la matriz y mide la severidad del riesgo.
+
+\item[\textbf{Plan de Mitigación}]
+Acciones proactivas para reducir la probabilidad o impacto del riesgo antes de que ocurra. Incluye:
+\begin{itemize}
+\item Prevención: Eliminar las causas del riesgo.
+\item Reducción: Disminuir su probabilidad o impacto.
+\item Transferencia: Trasladar el riesgo a terceros.
+\end{itemize}
+
+\item[\textbf{Plan de Contingencia}]
+Medidas reactivas que se implementan cuando el riesgo se materializa. Contiene:
+\begin{itemize}
+\item Activación: Criterios para ejecutar el plan.
+\item Respuesta: Acciones específicas de contención.
+\item Recuperación: Cómo volver a la normalidad.
+\end{itemize}
+
+\item[\textbf{Nivel de Riesgo}]
+Resultado de multiplicar la probabilidad por el impacto. Clasifica riesgos en:
+\begin{itemize}
+\item Alto (15-25): Requieren acción inmediata.
+\item Medio (5-14): Necesitan monitoreo.
+\item Bajo (1-4): Aceptables con supervisión mínima.
+\end{itemize}
+
+\item[\textbf{Umbral de Riesgo}]
+Límite máximo aceptable de riesgo para el proyecto. Determina cuándo se deben implementar planes de mitigación o contingencia.
+
+\item[\textbf{Propietario del Riesgo}]
+Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes correspondientes.
+
+\end{description}
+
+
+\subsection*{Riesgos identificados}
+\begin{enumerate}
+    \item \textbf{R01}: Problemas de salud del estudiante que afecten a la continuidad del trabajo. \ref{tab:R01}
+    \item \textbf{R02}: Fallos hardware en equipos de desarrollo.\ref{tab:R02}
+    \item \textbf{R03}: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \ref{tab:R03}
+    \item \textbf{R04}: Pérdida o corrupción de los datasets. \ref{tab:R04}
+    \item \textbf{R05}: Disponibilidad limitada del tutor académico.\ref{tab:R05}
+    \item \textbf{R06}: Desviaciones en la planificación temporal inicial.\ref{tab:R06}
+    \item \textbf{R07}: Cambios en los requisitos técnicos.\ref{tab:R07}
+    \item \textbf{R08}: Dependencia de tecnologías inestables o no documentadas.\ref{tab:R08}
+    \item \textbf{R09}: Dificultades en la integración de componentes.\ref{tab:R09}
+    \item \textbf{R10}: Problemas de licencias de software.\ref{tab:R10}
+    \item \textbf{R11}: Conflicto con periodos de exámenes y entregas de otras asignaturas.\ref{tab:R11}
+\end{enumerate}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R01}} \\ \hline
+Título & Problemas de salud que afecten la continuidad del trabajo. \\ \hline
+Descripción & En caso de contraer una enfermedad incapacitante, el estudiante no puede cumplir con el desarrollo normal del proyecto. \\ \hline
+Probabilidad & 3 (Media) \\ \hline
+Impacto & 4 (Alto) \\ \hline
+Matriz P/I & Media/Alto (12) \\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Mantener hábitos saludables.
+\item Establecer horarios sostenibles.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Recuperar horas en periodos en los que no se sufran. enfermedades
+\item Priorizar tareas críticas.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R01: Problemas de salud que afecten la continuidad del trabajo}
+\label{tab:R01}
+\end{table}
+
+% Riesgo R02
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R02}} \\ \hline
+Título & Fallos hardware en equipos de desarrollo. \\ \hline
+Descripción & Problemas causados por el mal funcionamiento de los componentes físicos de un ordenador, como la placa base, la tarjeta gráfica, la memoria RAM, el disco duro o la fuente de alimentación en equipos de desarrollo. \\ \hline
+Probabilidad & 3 (Media) \\ \hline
+Impacto & 4 (Alto) \\ \hline
+Matriz P/I & Media/Alto (12)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Mantenimiento preventivo mensual
+\item Uso de equipos redundantes
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Utilizar equipos alternativos
+\item Acceder a laboratorios universitarios
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R02: Fallos hardware en equipos de desarrollo.}
+\label{tab:R02}
+\end{table}
+
+% Riesgo R03
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R03}} \\ \hline
+Título & Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \\ \hline
+Descripción & Restricciones de hardware (cálculo, memoria) que impactan la velocidad, viabilidad y calidad del entrenamiento, influyendo en el tamaño y complejidad de los modelos.\\ \hline
+Probabilidad & 4 (Alta) \\ \hline
+Impacto & 5 (Extremo) \\ \hline
+Matriz P/I & Alto/Extremo (20)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Optimización temprana del código.
+\item Uso de técnicas de muestreo.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Utilizar servicios en la nube académicos.
+\item Reducir complejidad de modelos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R03: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos.}
+\label{tab:R03}
+\end{table}
+
+% Riesgo R04
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R04}} \\ \hline
+Título & Pérdida o corrupción de los datasets. \\ \hline
+Descripción & Extraviación o daño en los conjuntos de datos del proyecto que se utilizan para en entrenamiento y la validación del modelo.\\ \hline
+Probabilidad & 2 (Baja) \\ \hline
+Impacto & 5 (Extremo) \\ \hline
+Matriz P/I & Baja/Extremo (10) \\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Almacenamiento redundante de los datos en distintos medios.
+\item Verificación de la inegridad de los datos con checksums.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Recuperar datasets desde backups externos.
+\item Regenerar datos sintéticos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R04: Pérdida o corrupción de los datasets.}
+\label{tab:R04}
+\end{table}
+
+% Riesgo R05
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R05}} \\ \hline
+Título & Disponibilidad limitada del tutor académico.\\ \hline
+Descripción & Restricciones de tiempo y acceso al profesor guía, afectando la frecuencia y profundidad de la retroalimentación y el apoyo al estudiante en su proceso de aprendizaje. \\ \hline
+Probabilidad & 3 (Media) \\ \hline
+Impacto & 3 (Media) \\ \hline
+Matriz P/I & Media/Media (9)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Agendar reuniones con anticipación.
+\item Preparar preguntas concretas.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Consultar con profesores alternativos.
+\item Usar foros académicos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R05: Disponibilidad limitada del tutor académico}
+\label{tab:R05}
+\end{table}
+
+% Riesgo R06
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R06}} \\ \hline
+Título & Desviaciones en la planificación temporal inicial. \\ \hline
+Descripción & Variaciones o retrasos respecto al cronograma original, impactando los plazos de entrega, la gestión del tiempo y la consecución de los objetivos previstos. \\ \hline
+Probabilidad & 4 (Alta) \\ \hline
+Impacto & 4 (Alto) \\ \hline
+Matriz P/I & Alto/Alto (16)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Incluir días asignados a descanso como días dedicados al proyecto.
+\item Revisiones semanales de progreso.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Reorganizar del diagrama de Gantt.
+\item Eliminar funcionalidades no críticas.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R06: Desviaciones en la planificación temporal inicial.}
+\label{tab:R06}
+\end{table}
+
+% Riesgo R07
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R07}} \\ \hline
+Título & Cambios en los requisitos técnicos. \\ \hline
+Descripción &  Modificaciones o alteraciones en las especificaciones necesarias para un proyecto o tarea, que pueden afectar al diseño, a la implementación, a los recursos y a los plazos \\ \hline
+Probabilidad & 4 (Alta) \\ \hline
+Impacto & 4 (Alto) \\ \hline
+Matriz P/I & Alto/Alto (16)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Documentar requisitos iniciales con precisión.
+\item Establecer procedimiento de cambio formal.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Revisar el alcance con tutor.
+\item Asignar tiempo adicional para cambios.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R07: Cambios en los requisitos técnicos.}
+\label{tab:R07}
+\end{table}
+
+% Riesgo R08
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R08}} \\ \hline
+Título & Dependencia de tecnologías inestables o no documentadas.  \\ \hline
+Descripción & Riesgos por la falta de fiabilidad, soporte o información clara, pudiendo generar problemas de funcionamiento, mantenimiento y escalabilidad del sistema. \\ \hline
+Probabilidad & 3 (Media) \\ \hline
+Impacto & 5 (Extremo) \\ \hline
+Matriz P/I & Media/Extremo (15) \\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Investigar alternativas estables.
+\item Aislar componentes críticos.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Implementar soluciones temporales.
+\item Buscar soporte comunitario.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R08: Dependencia de tecnologías inestables o no documentadas. }
+\label{tab:R08}
+\end{table}
+
+% Riesgo R09
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R09}} \\ \hline
+Título & Dificultades en la integración de componentes.\\ \hline
+Descripción & Problemas o complicaciones al combinar diferentes partes o sistemas, generando errores, incompatibilidades o un funcionamiento incorrecto del conjunto. \\ \hline
+Probabilidad & 3 (Media) \\ \hline
+Impacto & 4 (Alto) \\ \hline
+Matriz P/I & Media/Alto (12)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Definir interfaces claras desde el inicio.
+\item Pruebas unitarias frecuentes.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Desarrollar adaptadores o intermediarios.
+\item Reimplementar componentes críticos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R09: Dificultades en la integración de componentes.}
+\label{tab:R09}
+\end{table}
+
+% Riesgo R10
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R10}} \\ \hline
+Título & Problemas de licencia de software.\\ \hline
+Descripción & Inconvenientes o restricciones legales relacionadas con el uso, la distribución o la activación de software, pudiendo causar interrupciones, costos adicionales o incluso acciones legales. \\ \hline
+Probabilidad & 2 (Baja) \\ \hline
+Impacto & 3 (Media) \\ \hline
+Matriz P/I & Baja/Media (6)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Verificar licencias antes de usarlas para su implementación.
+\item Priorizar la utilización software open-source.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Buscar alternativas equivalentes.
+\item Solicitar licencias académicas.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R10: Problemas de licencia de software.}
+\label{tab:R10}
+\end{table}
+
+% Riesgo R11
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R11}} \\ \hline
+Título & Conflicto con periodos de exámenes y entregas de otras asignaturas.\\ \hline
+Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas, aumentando el estrés y la presión estudiantil. \\ \hline
+Probabilidad & 4 (Alta) \\ \hline
+Impacto & 3 (Media) \\ \hline
+Matriz P/I & Alta/Media (12)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Coordinar calendario académico anticipadamente.
+\item Avanzar trabajo en periodos de menor estrés.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Dedicar horas extra en los asuntos académicos.
+\item Reorganizar prioridades temporales.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R11: Conflicto con periodos de exámenes y entregas de otras asignaturas.}
+\label{tab:R11}
+\end{table}
+
 \section{Estimación de costes}
+En esta sección se presenta la estimación de costes, que comprende la identificación y valoración de los recursos necesarios para el desarrollo del proyecto. Este proceso implica la cuantificación de los gastos previsibles asociados a materiales, software específico y acceso a bases de datos. También se considera un coste el tiempo dedicado por el estudiante a la realización del trabajo..
+
+La precisión en la estimación de costes facilita la elaboración de un presupuesto realista y la planificación financiera del proyecto. Permite anticipar las necesidades económicas, buscar posibles fuentes de financiación si fuese necesario y gestionar eficientemente los recursos disponibles. Una estimación detallada contribuye a evitar desviaciones presupuestarias y a asegurar la viabilidad económica del proyecto.
+
 \subsection{Costes materiales}
 \subsection{Costes humanos}
