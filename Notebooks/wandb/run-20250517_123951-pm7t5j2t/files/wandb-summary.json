@@ -1,0 +1,1 @@
+{"precision":1,"_timestamp":1.747478479794205e+09,"_step":0,"_wandb":{"runtime":88},"true_positives":14705,"true_negatives":344164,"specificity":1,"_runtime":88.63669035,"f2":1,"loss":1.4593006025304728e-06,"false_negatives":0,"fold":2,"false_positives":0,"roc_auc":1,"f1":1,"recall":1,"accuracy":1}

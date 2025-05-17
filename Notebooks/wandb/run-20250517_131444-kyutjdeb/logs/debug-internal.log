@@ -1,0 +1,18 @@
+{"time":"2025-05-17T13:14:44.971110322+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250517_131444-kyutjdeb/logs/debug-core.log"}
+{"time":"2025-05-17T13:14:45.247224932+02:00","level":"INFO","msg":"created new stream","id":"kyutjdeb"}
+{"time":"2025-05-17T13:14:45.247272115+02:00","level":"INFO","msg":"stream: started","id":"kyutjdeb"}
+{"time":"2025-05-17T13:14:45.247282984+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:14:45.247299713+02:00","level":"INFO","msg":"handler: started","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:14:45.247312696+02:00","level":"INFO","msg":"sender: started","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:14:45.434567984+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T13:15:23.586010504+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/TFG_Hugo/TFG_BIN_CV_FOLDS/kyutjdeb/file_stream\": dial tcp 35.186.228.49:443: connect: no route to host"}
+{"time":"2025-05-17T13:15:44.447559878+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/TFG_Hugo/TFG_BIN_CV_FOLDS/kyutjdeb/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: read udp 127.0.0.1:46035->127.0.0.53:53: i/o timeout"}
+{"time":"2025-05-17T13:16:13.54584796+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T13:16:13.545912013+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T13:16:14.308600931+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T13:16:14.499758443+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-17T13:16:14.503242558+02:00","level":"INFO","msg":"stream: closing","id":"kyutjdeb"}
+{"time":"2025-05-17T13:16:14.503268935+02:00","level":"INFO","msg":"handler: closed","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:16:14.50328327+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:16:14.503290963+02:00","level":"INFO","msg":"sender: closed","stream_id":"kyutjdeb"}
+{"time":"2025-05-17T13:16:14.503352081+02:00","level":"INFO","msg":"stream: closed","id":"kyutjdeb"}

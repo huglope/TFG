@@ -1,0 +1,1 @@
+{"recall":1,"specificity":1,"roc_auc":1,"_wandb":{"runtime":89},"fold":2,"_runtime":89.535022496,"accuracy":1,"loss":2.5095268136333795e-06,"_timestamp":1.7474793977659788e+09,"f1":1,"false_positives":0,"true_positives":14705,"true_negatives":344164,"false_negatives":0,"precision":1,"_step":0,"f2":1}

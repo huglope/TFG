@@ -1,0 +1,3 @@
+
+Resultados promedio para bs=2000, lr=0.01, hs=25, e=10:
+  Loss: 0.0038 | Accuracy: 0.9997 | F1: 0.9963

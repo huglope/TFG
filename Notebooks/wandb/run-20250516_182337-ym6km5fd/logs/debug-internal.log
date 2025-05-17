@@ -1,0 +1,19 @@
+{"time":"2025-05-16T18:23:39.739635172+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250516_182337-ym6km5fd/logs/debug-core.log"}
+{"time":"2025-05-16T18:23:39.97643202+02:00","level":"INFO","msg":"created new stream","id":"ym6km5fd"}
+{"time":"2025-05-16T18:23:39.976474189+02:00","level":"INFO","msg":"stream: started","id":"ym6km5fd"}
+{"time":"2025-05-16T18:23:39.976526758+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:23:39.976570169+02:00","level":"INFO","msg":"handler: started","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:23:39.9765972+02:00","level":"INFO","msg":"sender: started","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:23:40.187272294+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-16T18:32:30.604286432+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-16T18:32:30.610475588+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-16T18:32:34.433257398+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-16T18:32:34.474153302+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-16T18:32:34.474204398+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-16T18:32:35.155553484+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-16T18:32:35.324240896+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-16T18:32:35.327422962+02:00","level":"INFO","msg":"stream: closing","id":"ym6km5fd"}
+{"time":"2025-05-16T18:32:35.327444533+02:00","level":"INFO","msg":"handler: closed","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:32:35.327460433+02:00","level":"INFO","msg":"sender: closed","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:32:35.327455804+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ym6km5fd"}
+{"time":"2025-05-16T18:32:35.327541394+02:00","level":"INFO","msg":"stream: closed","id":"ym6km5fd"}
