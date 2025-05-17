@@ -1,23 +1,23 @@
-2025-05-17 13:20:38,741 INFO    MainThread:13476 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /home/hugo/TFG/Notebooks/wandb/run-20250517_132038-v7ywi813/logs/debug.log
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /home/hugo/TFG/Notebooks/wandb/run-20250517_132038-v7ywi813/logs/debug-internal.log
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:monkeypatch_ipython():643] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fc0ac5e73b0>
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:init():852] calling init triggers
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
-config: {'batch_size': 2000, 'learning_rate': 0.01, 'hidden_size': 25, 'epochs': 20, 'fold': 1, '_wandb': {}}
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:init():893] starting backend
-2025-05-17 13:20:38,742 INFO    MainThread:13476 [wandb_init.py:init():897] sending inform_init request
-2025-05-17 13:20:38,743 INFO    MainThread:13476 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
-2025-05-17 13:20:38,743 INFO    MainThread:13476 [wandb_init.py:init():907] backend started and connected
-2025-05-17 13:20:38,745 INFO    MainThread:13476 [wandb_run.py:_label_probe_notebook():1369] probe notebook
-2025-05-17 13:20:38,746 INFO    MainThread:13476 [wandb_init.py:init():1002] updated telemetry
-2025-05-17 13:20:38,749 INFO    MainThread:13476 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
-2025-05-17 13:20:39,250 INFO    MainThread:13476 [wandb_init.py:init():1101] starting run threads in backend
-2025-05-17 13:20:39,390 INFO    MainThread:13476 [wandb_run.py:_console_start():2566] atexit reg
-2025-05-17 13:20:39,391 INFO    MainThread:13476 [wandb_run.py:_redirect():2414] redirect: wrap_raw
-2025-05-17 13:20:39,391 INFO    MainThread:13476 [wandb_run.py:_redirect():2483] Wrapping output streams.
-2025-05-17 13:20:39,391 INFO    MainThread:13476 [wandb_run.py:_redirect():2506] Redirects installed.
-2025-05-17 13:20:39,391 INFO    MainThread:13476 [wandb_init.py:init():1147] run started, returning control to user process
-2025-05-17 13:20:49,226 WARNING MsgRouterThr:13476 [router.py:message_loop():63] [no run ID] message_loop has been closed
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /home/hugo/TFG/Notebooks/wandb/run-20250517_135507-z0qmqm9x/logs/debug.log
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /home/hugo/TFG/Notebooks/wandb/run-20250517_135507-z0qmqm9x/logs/debug-internal.log
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:monkeypatch_ipython():643] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7dc10465cc80>
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:init():852] calling init triggers
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'batch_size': 2000, 'learning_rate': 0.01, 'hidden_size': 25, 'epochs': 10, 'fold': 2, '_wandb': {}}
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:init():893] starting backend
+2025-05-17 13:55:07,778 INFO    MainThread:19551 [wandb_init.py:init():897] sending inform_init request
+2025-05-17 13:55:07,779 INFO    MainThread:19551 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-17 13:55:07,779 INFO    MainThread:19551 [wandb_init.py:init():907] backend started and connected
+2025-05-17 13:55:07,781 INFO    MainThread:19551 [wandb_run.py:_label_probe_notebook():1369] probe notebook
+2025-05-17 13:55:07,782 INFO    MainThread:19551 [wandb_init.py:init():1002] updated telemetry
+2025-05-17 13:55:07,786 INFO    MainThread:19551 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
+2025-05-17 13:55:08,374 INFO    MainThread:19551 [wandb_init.py:init():1101] starting run threads in backend
+2025-05-17 13:55:08,518 INFO    MainThread:19551 [wandb_run.py:_console_start():2566] atexit reg
+2025-05-17 13:55:08,519 INFO    MainThread:19551 [wandb_run.py:_redirect():2414] redirect: wrap_raw
+2025-05-17 13:55:08,519 INFO    MainThread:19551 [wandb_run.py:_redirect():2483] Wrapping output streams.
+2025-05-17 13:55:08,519 INFO    MainThread:19551 [wandb_run.py:_redirect():2506] Redirects installed.
+2025-05-17 13:55:08,519 INFO    MainThread:19551 [wandb_init.py:init():1147] run started, returning control to user process
+2025-05-17 13:56:34,587 WARNING MsgRouterThr:19551 [router.py:message_loop():63] [no run ID] message_loop has been closed
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 27, in _read_message
     return self._sock_client.read_server_response(timeout=1)
@@ -38,11 +38,11 @@ Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 29, in _read_message
     raise MessageRouterClosedError from e
 wandb.sdk.interface.router.MessageRouterClosedError
-2025-05-17 13:20:49,227 INFO    MsgRouterThr:13476 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 7 handles.
-2025-05-17 13:20:49,584 INFO    MainThread:13476 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
-2025-05-17 13:30:49,331 INFO    MainThread:13476 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
-2025-05-17 13:30:49,331 INFO    MainThread:13476 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
-2025-05-17 13:30:49,332 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 13:56:34,589 INFO    MsgRouterThr:19551 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 2 handles.
+2025-05-17 13:56:35,298 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:12,193 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:12,193 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:12,194 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -97,7 +97,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,340 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:12,200 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -152,8 +152,118 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,828 INFO    MainThread:13476 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
-2025-05-17 13:30:49,828 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:12,826 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:12,826 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:12,831 INFO    MainThread:19551 [wandb_run.py:_finish():2314] finishing run TFG_Hugo/TFG_BIN_CV/z0qmqm9x
+2025-05-17 14:00:12,831 ERROR   MainThread:19551 [wandb_init.py:init():1660] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1650, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 873, in init
+    self._wl.finish_all_active_runs()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_setup.py", line 150, in finish_all_active_runs
+    run.finish()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 503, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 451, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2302, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2315, in _finish
+    with telemetry.context(run=self) as tel:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 821, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 834, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 60, in _publish_telemetry
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:13,293 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:13,294 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -208,7 +318,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,829 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:13,294 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -263,9 +373,9 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,865 INFO    MainThread:13476 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
-2025-05-17 13:30:49,865 INFO    MainThread:13476 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
-2025-05-17 13:30:49,865 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,363 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:39,364 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:39,364 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -320,7 +430,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,866 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,365 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -375,8 +485,8 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,891 INFO    MainThread:13476 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
-2025-05-17 13:30:49,892 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,403 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:39,403 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -431,7 +541,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:49,893 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,405 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -486,9 +596,9 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,034 INFO    MainThread:13476 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
-2025-05-17 13:30:50,034 INFO    MainThread:13476 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
-2025-05-17 13:30:50,034 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,468 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:39,468 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:39,468 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -543,7 +653,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,035 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,470 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -598,8 +708,8 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,062 INFO    MainThread:13476 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
-2025-05-17 13:30:50,062 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,509 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:39,509 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -654,7 +764,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,063 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,510 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -709,9 +819,9 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,101 INFO    MainThread:13476 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
-2025-05-17 13:30:50,101 INFO    MainThread:13476 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
-2025-05-17 13:30:50,102 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,558 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:39,559 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:39,559 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -766,7 +876,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,103 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,560 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -821,8 +931,8 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,136 INFO    MainThread:13476 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
-2025-05-17 13:30:50,137 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,599 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:39,599 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -877,7 +987,7 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,138 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,600 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -932,9 +1042,9 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,170 INFO    MainThread:13476 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
-2025-05-17 13:30:50,170 INFO    MainThread:13476 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
-2025-05-17 13:30:50,170 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,650 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:39,650 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:39,651 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
@@ -989,7 +1099,230 @@ Traceback (most recent call last):
     sent = self._sock.send(data)
            ^^^^^^^^^^^^^^^^^^^^^
 BrokenPipeError: [Errno 32] Broken pipe
-2025-05-17 13:30:50,171 ERROR   MainThread:13476 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+2025-05-17 14:00:39,652 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 603, in _pre_run_cell_hook
+    self.backend.interface.publish_pause()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_pause
+    self._publish_pause(pause)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 289, in _publish_pause
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:39,691 INFO    MainThread:19551 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-05-17 14:00:39,692 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 614, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 779, in publish_resume
+    self._publish_resume(resume)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 293, in _publish_resume
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:39,693 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 614, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 779, in publish_resume
+    self._publish_resume(resume)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 293, in _publish_resume
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:39,741 INFO    MainThread:19551 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-05-17 14:00:39,741 INFO    MainThread:19551 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-05-17 14:00:39,741 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 603, in _pre_run_cell_hook
+    self.backend.interface.publish_pause()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_pause
+    self._publish_pause(pause)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 289, in _publish_pause
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2487, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1632, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 763, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-17 14:00:39,743 ERROR   MainThread:19551 [redirect.py:_on_write():664] [no run ID] error in stdout callback
 Traceback (most recent call last):
   File "/home/hugo/anaconda3/lib/python3.12/site-packages/IPython/core/events.py", line 82, in trigger
     func(*args, **kwargs)
