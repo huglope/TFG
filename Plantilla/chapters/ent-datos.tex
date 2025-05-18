@@ -12,7 +12,6 @@ En esta sección se explican los tipos de datos presentes en el Dataset que se u
 El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 127\,639 (5,4\%) son muestras de ataque y 2\,237\,731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La siguiente tabla proporciona una distribución detallada del conjunto de datos:
 
 \begin{table}[H]
-\label{tab:attacks-tab}
 \begin{tabular}{|l|c|>{\RaggedRight}p{10cm}|} % Ajusta el ancho (8cm) según necesites
 \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -29,7 +28,8 @@ Shellcode & 4\,659 & Un malware que penetra en un código para controlar el host
 Worms & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
 \end{tabular}
 \centering
-\caption{Clasificación de amenazas de seguridad}
+\caption{Clasificación de amenazas de seguridad} 
+\label{tab:attacks-tab}
 \end{table}
 
 \section{Parámetros de los datos} \label{sec.param-datos}
@@ -38,73 +38,104 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
 \url{https://arxiv.org/pdf/2503.04404}
 
 \begin{itemize}
-    \item \textbf{IPV4\_SRC\_ADDR}: Dirección IPv4 de origen
-    \item \textbf{IPV4\_DST\_ADDR}: Dirección IPv4 de destino
-    \item \textbf{L4\_SRC\_PORT}: Número de puerto de origen de la capa 4
-    \item \textbf{L4\_DST\_PORT}: Número de puerto de destino de la capa 4
-    \item \textbf{PROTOCOL}: Byte identificador del protocolo IP
-    \item \textbf{L7\_PROTO}: Protocolo de aplicación (numérico) de la capa 7
-    \item \textbf{IN\_BYTES}: Número de bytes entrantes
-    \item \textbf{OUT\_BYTES}: Número de bytes salientes
-    \item \textbf{IN\_PKTS}: Número de paquetes entrantes
-    \item \textbf{OUT\_PKTS}: Número de paquetes salientes
-    \item \textbf{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos
-    \item \textbf{TCP\_FLAGS}: Acumulativo de todos los flags TCP
-    \item \textbf{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del cliente
-    \item \textbf{SERVER\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del servidor
-    \item \textbf{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg)
-    \item \textbf{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg)
-    \item \textbf{MIN\_TTL}: TTL mínimo del flujo
-    \item \textbf{MAX\_TTL}: TTL máximo del flujo
-    \item \textbf{LONGEST\_FLOW\_PKT}: Paquete más largo (bytes) del flujo
-    \item \textbf{SHORTEST\_FLOW\_PKT}: Paquete más corto (bytes) del flujo
-    \item \textbf{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado
-    \item \textbf{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado
-    \item \textbf{SRC\_TO\_DST\_SECOND\_BYTES}: Bytes/segundo de origen a destino
-    \item \textbf{DST\_TO\_SRC\_SECOND\_BYTES}: Bytes/segundo de destino a origen
-    \item \textbf{RETRANSMITTED\_IN\_BYTES}: Número de bytes TCP retransmitidos del flujo (src->dst)
-    \item \textbf{RETRANSMITTED\_IN\_PKTS}: Número de paquetes TCP retransmitidos del flujo (src->dst)
-    \item \textbf{RETRANSMITTED\_OUT\_BYTES}: Número de bytes TCP retransmitidos del flujo (dst->src)
-    \item \textbf{RETRANSMITTED\_OUT\_PKTS}: Número de paquetes TCP retransmitidos del flujo (dst->src)
-    \item \textbf{SRC\_TO\_DST\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de origen a destino (bps)
-    \item \textbf{DST\_TO\_SRC\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de destino a origen (bps)
-    \item \textbf{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es <= 128
-    \item \textbf{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es > 128 y <= 256
-    \item \textbf{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es > 256 y <= 512
-    \item \textbf{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es > 512 y <= 1024
-    \item \textbf{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es > 1024 y <= 1514
-    \item \textbf{TCP\_WIN\_MAX\_IN}: Ventana TCP máxima (src->dst)
-    \item \textbf{TCP\_WIN\_MAX\_OUT}: Ventana TCP máxima (dst->src)
-    \item \textbf{ICMP\_TYPE}: Tipo ICMP * 256 + Código ICMP
-    \item \textbf{ICMP\_IPV4\_TYPE}: Tipo ICMP
-    \item \textbf{DNS\_QUERY\_ID}: ID de transacción de la consulta DNS
-    \item \textbf{DNS\_QUERY\_TYPE}: Tipo de consulta DNS (ej., 1=A, 2=NS..)
-    \item \textbf{DNS\_TTL\_ANSWER}: TTL del primer registro A (si existe)
-    \item \textbf{FTP\_COMMAND\_RET\_CODE}: Código de retorno del comando del cliente FTP
-    \item \textbf{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en milisegundos
-    \item \textbf{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en milisegundos
-    \item \textbf{SRC\_TO\_DST\_IAT\_MIN}: IAT mínimo (src->dst)
-    \item \textbf{SRC\_TO\_DST\_IAT\_MAX}: IAT máximo (src->dst)
-    \item \textbf{SRC\_TO\_DST\_IAT\_AVG}: IAT promedio (src->dst)
-    \item \textbf{SRC\_TO\_DST\_IAT\_STDDEV}: Desviación estándar del IAT (src->dst)
-    \item \textbf{DST\_TO\_SRC\_IAT\_MIN}: IAT mínimo (dst->src)
-    \item \textbf{DST\_TO\_SRC\_IAT\_MAX}: IAT máximo (dst->src)
-    \item \textbf{DST\_TO\_SRC\_IAT\_AVG}: IAT promedio (dst->src)
-    \item \textbf{DST\_TO\_SRC\_IAT\_STDDEV}: Desviación estándar del IAT (dst->src)
+    \item \textbf{IPV4\_SRC\_ADDR}: Dirección IPv4 de origen.
+    \item \textbf{IPV4\_DST\_ADDR}: Dirección IPv4 de destino.
+    \item \textbf{L4\_SRC\_PORT}: Número de puerto de origen de la capa 4.
+    \item \textbf{L4\_DST\_PORT}: Número de puerto de destino de la capa 4.
+    \item \textbf{PROTOCOL}: Byte identificador del protocolo IP.
+    \item \textbf{L7\_PROTO}: Protocolo de aplicación (numérico) de la capa 7.
+    \item \textbf{IN\_BYTES}: Número de bytes entrantes.
+    \item \textbf{OUT\_BYTES}: Número de bytes salientes.
+    \item \textbf{IN\_PKTS}: Número de paquetes entrantes.
+    \item \textbf{OUT\_PKTS}: Número de paquetes salientes.
+    \item \textbf{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos.
+    \item \textbf{TCP\_FLAGS}: Acumulativo de todos los flags TCP.
+    \item \textbf{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del cliente.
+    \item \textbf{SERVER\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del servidor.
+    \item \textbf{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg).
+    \item \textbf{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg).
+    \item \textbf{MIN\_TTL}: TTL mínimo del flujo.
+    \item \textbf{MAX\_TTL}: TTL máximo del flujo.
+    \item \textbf{LONGEST\_FLOW\_PKT}: Paquete más largo (bytes) del flujo.
+    \item \textbf{SHORTEST\_FLOW\_PKT}: Paquete más corto (bytes) del flujo.
+    \item \textbf{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado.
+    \item \textbf{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado.
+    \item \textbf{SRC\_TO\_DST\_SECOND\_BYTES}: Bytes/segundo de origen a destino.
+    \item \textbf{DST\_TO\_SRC\_SECOND\_BYTES}: Bytes/segundo de destino a origen.
+    \item \textbf{RETRANSMITTED\_IN\_BYTES}: Número de bytes TCP retransmitidos del flujo (src a dst).
+    \item \textbf{RETRANSMITTED\_IN\_PKTS}: Número de paquetes TCP retransmitidos del flujo (src a dst).
+    \item \textbf{RETRANSMITTED\_OUT\_BYTES}: Número de bytes TCP retransmitidos del flujo (dst a src).
+    \item \textbf{RETRANSMITTED\_OUT\_PKTS}: Número de paquetes TCP retransmitidos del flujo (dst a src).
+    \item \textbf{SRC\_TO\_DST\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de origen a destino (bps).
+    \item \textbf{DST\_TO\_SRC\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de destino a origen (bps).
+    \item \textbf{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es <= 128.
+    \item \textbf{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es  > 128 y <= 256.
+    \item \textbf{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es > 256 y <= 512.
+    \item \textbf{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es > 512 y <= 1024.
+    \item \textbf{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es > 1024 y <= 1514.
+    \item \textbf{TCP\_WIN\_MAX\_IN}: Ventana TCP máxima (src a dst).
+    \item \textbf{TCP\_WIN\_MAX\_OUT}: Ventana TCP máxima (dst a src).
+    \item \textbf{ICMP\_TYPE}: Tipo ICMP * 256 + Código ICMP.
+    \item \textbf{ICMP\_IPV4\_TYPE}: Tipo ICMP.
+    \item \textbf{DNS\_QUERY\_ID}: ID de transacción de la consulta DNS.
+    \item \textbf{DNS\_QUERY\_TYPE}: Tipo de consulta DNS (ej., 1=A, 2=NS..).
+    \item \textbf{DNS\_TTL\_ANSWER}: TTL del primer registro A (si existe).
+    \item \textbf{FTP\_COMMAND\_RET\_CODE}: Código de retorno del comando del cliente FTP.
+    \item \textbf{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en milisegundos.
+    \item \textbf{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en milisegundos.
+    \item \textbf{SRC\_TO\_DST\_IAT\_MIN}: IAT mínimo (src a dst).
+    \item \textbf{SRC\_TO\_DST\_IAT\_MAX}: IAT máximo (src a dst).
+    \item \textbf{SRC\_TO\_DST\_IAT\_AVG}: IAT promedio (src a dst).
+    \item \textbf{SRC\_TO\_DST\_IAT\_STDDEV}: Desviación estándar del IAT (src a dst).
+    \item \textbf{DST\_TO\_SRC\_IAT\_MIN}: IAT mínimo (dst a src).
+    \item \textbf{DST\_TO\_SRC\_IAT\_MAX}: IAT máximo (dst a src).
+    \item \textbf{DST\_TO\_SRC\_IAT\_AVG}: IAT promedio (dst a src).
+    \item \textbf{DST\_TO\_SRC\_IAT\_STDDEV}: Desviación estándar del IAT (dst a src).
+    \item \textbf{Label}: Toma valor 0 si el flujo es benigno y 1 si se trata de un ataque.
+    \item \textbf{Attack}: Clase de flujo, perteneciente a las clases mencionadas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}
 \end{itemize}
 
 \section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
+En esta sección se comentan los patrones prelinimares, así como los valores y los sesgos presentes en el Dataset. La identificación de estas irregularidades es fundamental para el correcto desarrollo del proyecto.
 
-Tras analizar los datos originales del dataset, se han encontrado características que afectarían de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento posteriormente. A continuación, se mencionan cuales han sido las característcas problematicas de los datos encontradas.
+Al analizar los datos originales del dataset, se encuentran características que afectan de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento. A continuación, se mencionan cuales son las características problematicas de los datos que se utilizan.
 
 
 Tras estudiar los datos, se descubre que algunos parámetros presentan valores infinitos, estos valores alteran la distribución inherente de las variables, introduciendo sesgos significativos en el proceso de aprendizaje. Los algoritmos de entrenamiento, diseñados para operar con valores numéricos finitos, pueden comportarse de manera impredecible o inestable ante la presencia de infinitos, dificultando la convergencia hacia una solución óptima. Asimismo, la interpretación de las características con valores infinitos se vuelve ambigua, comprometiendo la capacidad del modelo para establecer relaciones significativas con otras variables y para generalizar correctamente a datos futuros que no contengan tales valores extremos. En consecuencia, la presencia de infinitos puede degradar sustancialmente el rendimiento y la fiabilidad del modelo entrenado.
 
-En un principio, puede parecer que los datos están sesgados por las direcciones IPv4 de los dispositivos origen. Esto se debe a que solo se producen ataques desde las direcciones con máscara 175.45.176.255. Tras realizar pruebas excluyendo este parámetro del entrenamiento del modelo, se ha llegado a la conclusión de que este parámetro no recibe un peso muy alto y no altera los resultados de las métricas del modelo.
+Como se comenta en la sección anterior \ref{sec.param-datos} \nameref{sec.param-datos}, existen dos parámetros que registran la IP origen y la IP destino de la conexión. En principio, si los datos no fuesen sintéticos, la dirección IP de la máquina que origina la comunicación sería aleatoria. En este conjunto de datos, se puede observar como todos los ataques provienen de IP con máscara 175.45.176.255, lo que no encaja con la realiadad. Independientemente de este patrón, que no se manifiesta de forma natural en las conexiones entre sistemas, el uso de las IPs de las máquinas en el entranamiento de los modelos provoca que el algoritmo encargado de este entrenamiento asigne pesos de manera incorrecta a un parámetro que no influye en la clasificación que se propone para este trabajo.
 
 
-\section{Preparación de los datos ¿SEPARAR EN OTRO CAPÍTULO?}\label{sec.preparacion-datos}
-En esta sección se modificarán los datos que presentan patronees, valores atípicos o sesgos que se comentan en la sección anterior. \ref{sec.segos-datos}
 
- Para evitar que estos datos produzcan errores en la ejecución del algoritmo que entrena al modelo, se ha optado por eliminarlos.
+\section{Preparación de los datos ¿SEPARAR EN OTRO CAPÍTULO?}\label{sec.prep-datos}
+En esta sección se modificarán los datos que presentan patrones, valores atípicos o sesgos que se comentan en la sección anterior.  \ref{sec.segos-datos} \nameref{sec.segos-datos}. Así como el tratamiento necesario de los datos para poder entrenar los modelos.
 
+Una de las características problemáticas, es la existencia de parámetros con valores infinito. Para tratar con esta problemática existen dos enfoques, o bien se sustituyen los valores infinitos por el máximo valor posible para ese parámetro, o bien, se elimina el flujo al que pertenece cada valor infinito. Para este trabajo, se opta por ...
+\section{DECIDIR SI ELIMINAR LOS DATOS CON VALORES INFINITOS O NO}
+
+Para entrenar un modelo es necesario que en primer lugar todos los parámetros sean numéricos. En los datos originales del dataset, se encuentran tres parámetros que no presentan un formato numérico: IPV4\_SRC\_ADDR, IPV4\_DST\_ADDR y Attack.
+
+\begin{itemize}
+	\item Para dar un formato correcto al parámetro Attack, se utiliza el codificador LabelEncoder de la biblioteca sklearn.preprocessing y el método fit\_transform de la biblioteca sklearn. La primera función, LabelEncoder codifica las etiquetas de características categóricas en valores numéricos entre 0 y el número de clases menos 1. Una vez se instancian las categorías del parámtero, el método fit\_transform nos permite entrenar el codificador y transformar el conjunto de datos en un único paso.
+	\item Las direcciones IPv4 están formadas por 4 octetos separados por puntos. Obviamnete este formato no es numérico, por ese motivo se opta por dividir las direcciones IPv4 en 4 parámetros diferentes, uno por cada octeto. De esta manera, si el valor de un flujo para el parámetro IPV4\_SRC\_ADDR es 175.45.176.23, se separa en cuatro nuevos valores que son: 175, 45, 176 y 23. Para realizar esta transformación se utiliza la función \ref{fig:funIPv4} \nameref{fig:funIPv4}.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/ent-datos/funIPv4.png}
+    \caption{Función de transformación para los parámetros IPv4}
+    \label{fig:funIPv4}
+\end{figure}
+
+\end{itemize}
+
+Una vez que todos los parámetros presentan valores numéricos, se separan los parámetros ente los que formarán parte de la entrada del modelo neuronal (a partir de ahora se les menciona X) y los que contienen el valor de la salida que debe proporcionar el modelo neuronal (a partir de ahora se les menciona Y).
+
+Los parámetros que pertenecen a Y son Label y Attack. Sin embargo, en función del modelo que se entrena se utiliza o bien Label, o bien Attack, pero nunca los dos al mismo tiempo.
+
+Por su parte, X la conforman el total de los parámetros del Dataseet a excepción de:
+\begin{itemize}
+	\item \textbf{Label y Attack}: Se tratan de los parámetros que conforman Y, si estos parámetros formasen parte de los datos de entrada del modelo, el algoritmo encargado de entrenarlo, les asignaría a estos parámetros unos pesos muy elevados y tendría una tasa teórica de éxito del 100\%, puesto que, se estaría introduciendo la respuesta al problema que se aborda directamente como entrada al modelo. En un sistema informático real esta práctica es imposible.
+	\item \textbf{IPV4\_SRC\_ADDR y IPV4\_DST\_ADDR}: Tal y como se menciona en la sección \ref{sec.param-datos} \nameref{sec.param-datos}, estos parámetros presentan un patrón irregular y sintético. Al introducir estos parámetros como entradas para el entrenamiento del modelo, de forma análoga a como sucede con los parámetros Label y Attack se estarían introduciendo valores que no se pueden obtener en una situación realista y condicionando el comportamiento del modelo. Esto implica como se menciona en los siguiente capítulos que el modelo resultante obtendría muy buenas métricas en validación pero muy malas al someterlo a datos que nunca ha visto durante su entrenamiento.
+	\item \textbf{FLOW\_START\_MILLISECONDS y FLOW\_END\_MILLISECONDS}: A diferencia de los anteriores parámetros, estos muestran valores que puedan condicionar el entrenamiento de los modelos ni sus resultados, pero se trata de parámetros que ofrecen información redundante, pues el parámetro FLOW\_DURATION\_MILLISECONDS es combinación lineal de estos dos. Al eliminar estos parámetros se agiliza el entrenamiento del modelo y su tiempo de respuesta una vez entrenado sin perjudicar su precisión.
+\end{itemize}
+
+Para finalizar con el tratamiento de los datos, se normalizan los valores de X para que no haya tanta varianza entre los parámetros que lo conforman. Para normalizar los valores se utiliza el escalador MinMaxScaler que forma parte de la biblioteca sklearn.preprocessing junto con el método fit\_transform que se menciona en la explicación de la transformación del parámetro Attck. Llamando a MinMaxScaler con un rango (0,1), tras haber tratado los datos con el método fit\_transform, se obtienen valores escalados en un rango entre 0 y 1, lo que facilita la comparación y el procesamiento por parte de los algoritmos de aprendizaje automático sin alterar las relaciones proporcionales inherentes en los datos originales.
