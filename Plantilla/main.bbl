@@ -1,7 +1,25 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{haya_crisp_dm}
+Pablo Haya.
+\newblock La metodología crisp-dm en ciencia de datos, noviembre 2021.
+\newblock Consultado el 18 de mayo de 2025.
+
+\bibitem{tcpprotocolionos}
+IONOS España.
+\newblock Tcp protocol: así funciona el protocolo de transmisión, 2020.
+
+\bibitem{tcpsegment}
+Vicente~González Ruiz.
+\newblock Tcp (transmission control protocol), December 2014.
+
+\bibitem{paqueteip}
+Vicente~González Ruiz.
+\newblock El ip (internet protocol), December 2014.
 
 \bibitem{chapman2000crisp}
-Pete Chapman et~al.
+Pete Chapman, Julian Clinton, Randy Kerber, Thomas Khabaza, Thomas Reinartz,
+  Colin Shearer, and Rüdiger Wirth.
 \newblock {\em CRISP-DM 1.0: Step-by-step data mining guide}.
 \newblock SPSS Inc., 2000.
 
@@ -10,5 +28,35 @@ Project~Management Institute.
 \newblock {\em A Guide to the Project Management Body of Knowledge (PMBOK
   Guide)}.
 \newblock Project Management Institute, 2021.
+
+\bibitem{cosmikal_firewall}
+Cosmikal.
+\newblock ¿qué es y cómo funciona un firewall? guía básica 2025, december
+  2024.
+
+\bibitem{geekflare_ids_ips}
+Geekflare.
+\newblock Ids vs ips: A comprehensive guide to network security solutions,
+  december 2024.
+
+\bibitem{paloaltonetworks_microsegmentation}
+Palo~Alto Networks.
+\newblock ¿qué es la microsegmentación?
+
+\bibitem{nist2021ai}
+National~Institute of~Standards and Technology (NIST).
+\newblock Adversarial machine learning: A taxonomy and terminology of attacks
+  and mitigations, 2021.
+
+\bibitem{brooke1996sus}
+John Brooke.
+\newblock {{SUS}}-{{A}} quick and dirty usability scale.
+\newblock {\em Usability evaluation in industry}, 189(194), 1996.
+
+\bibitem{luay2025NetFlowDatasetsV3}
+Majed Luay, Siamak Layeghy, Seyedehfaezeh Hosseininoorbin, Mohanad Sarhan, Nour
+  Moustafa, and Marius Portmann.
+\newblock Temporal analysis of netflow datasets for network intrusion detection
+  systems, 2025.
 
 \end{thebibliography}

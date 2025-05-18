@@ -218,7 +218,7 @@ Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes cor
 
 \subsection*{Riesgos identificados}
 \begin{enumerate}
-    \item \textbf{R01}: Problemas de salud del estudiante que afecten a la continuidad del trabajo. \ref{tab:R01}
+    \item \textbf{R01}: Conflicto con periodos de exámenes y entregas de otras asignaturas.\ref{tab:R01}
     \item \textbf{R02}: Fallos hardware en equipos de desarrollo.\ref{tab:R02}
     \item \textbf{R03}: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \ref{tab:R03}
     \item \textbf{R04}: Pérdida o corrupción de los datasets. \ref{tab:R04}
@@ -228,35 +228,35 @@ Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes cor
     \item \textbf{R08}: Dependencia de tecnologías inestables o no documentadas.\ref{tab:R08}
     \item \textbf{R09}: Dificultades en la integración de componentes.\ref{tab:R09}
     \item \textbf{R10}: Problemas de licencias de software.\ref{tab:R10}
-    \item \textbf{R11}: Conflicto con periodos de exámenes y entregas de otras asignaturas.\ref{tab:R11}
 \end{enumerate}
 
-
+% Riesgo R01
 \begin{table}[H]
 \centering
 \begin{tabular}{|>{\bfseries}l|p{10cm}|}
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R01}} \\ \hline
-Título & Problemas de salud que afecten la continuidad del trabajo. \\ \hline
-Descripción & En caso de contraer una enfermedad incapacitante, el estudiante no puede cumplir con el desarrollo normal del proyecto. \\ \hline
-Probabilidad & 3 (Media) \\ \hline
-Impacto & 4 (Alto) \\ \hline
-Matriz P/I & Media/Alto (12) \\ \hline
+Título & Conflicto con periodos de exámenes y entregas de otras asignaturas.\\ \hline
+Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas, aumentando el estrés y la presión estudiantil. \\ \hline
+Probabilidad & 4 (Alta) \\ \hline
+Impacto & 3 (Media) \\ \hline
+Matriz P/I & Alta/Media (12)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
-\item Mantener hábitos saludables.
-\item Establecer horarios sostenibles.
+\item Coordinar calendario académico anticipadamente.
+\item Avanzar trabajo en periodos de menor estrés.
 \end{itemize} \\ \hline
 Plan Contingencia & 
 \begin{itemize}
-\item Recuperar horas en periodos en los que no se sufran. enfermedades
-\item Priorizar tareas críticas.
+\item Dedicar horas extra en los asuntos académicos.
+\item Reorganizar prioridades temporales.
 \end{itemize} \\ \hline
 \end{tabular}
-\caption{R01: Problemas de salud que afecten la continuidad del trabajo}
+\caption{R01: Conflicto con periodos de exámenes y entregas de otras asignaturas.}
 \label{tab:R01}
 \end{table}
+
 
 % Riesgo R02
 \begin{table}[H]
@@ -501,32 +501,6 @@ Plan Contingencia &
 \label{tab:R10}
 \end{table}
 
-% Riesgo R11
-\begin{table}[H]
-\centering
-\begin{tabular}{|>{\bfseries}l|p{10cm}|}
-\hline
-\rowcolor{lightgray}
-\multicolumn{2}{|c|}{\textbf{Riesgo R11}} \\ \hline
-Título & Conflicto con periodos de exámenes y entregas de otras asignaturas.\\ \hline
-Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas, aumentando el estrés y la presión estudiantil. \\ \hline
-Probabilidad & 4 (Alta) \\ \hline
-Impacto & 3 (Media) \\ \hline
-Matriz P/I & Alta/Media (12)\\ \hline
-Plan Mitigación & 
-\begin{itemize}
-\item Coordinar calendario académico anticipadamente.
-\item Avanzar trabajo en periodos de menor estrés.
-\end{itemize} \\ \hline
-Plan Contingencia & 
-\begin{itemize}
-\item Dedicar horas extra en los asuntos académicos.
-\item Reorganizar prioridades temporales.
-\end{itemize} \\ \hline
-\end{tabular}
-\caption{R11: Conflicto con periodos de exámenes y entregas de otras asignaturas.}
-\label{tab:R11}
-\end{table}
 
 \section{Estimación de costes}
 En esta sección se presenta la estimación de costes, que comprende la identificación y valoración de los recursos necesarios para el desarrollo del proyecto. Este proceso implica la cuantificación de los gastos previsibles asociados a materiales, software específico y acceso a bases de datos. También se considera un coste el tiempo dedicado por el estudiante a la realización del trabajo..
@@ -552,7 +526,7 @@ Debido al tamaño del conjunto de datos, el componente que más ha ralentizado e
 Teniendo en cuenta que el coste del ordenador en el momento de la compra fue de 829€, que la vida útil aproximada es de 8 años y que para el desarrollo de este proyecto se ha estado utilizando durante 3,5 meses, la amortización del hardware es:
 
 \begin{equation}
-	\text{Amortización del Hardware} = 829\,\euro \times \frac{1}{8} \times \frac{3.5}{12} = 30,22\,\text{€}
+	\text{Amortización del Hardware} = 829\,\text{€} \times \frac{1}{8} \times \frac{3.5}{12} = 30,22\,\text{€}
 \end{equation}
 
 \subsection*{Software}
@@ -604,10 +578,10 @@ En el caso de la simulación de los costes monetarios de un proyecto similar a e
 Profesional & €/hora & Horas & Total (€) \\
 \midrule
 Ingeniero ML & 42 & 12 & 504 \\
-Científico Datos & 34.5 & 38 & 1311 \\
+Científico Datos & 34.5 & 38 & 1\,311 \\
 Analista Datos & 18.5 & 25 & 462.5 \\
 \midrule
-\textbf{Total Fase 1} & & \textbf{75} & \textbf{2277.5} \\
+\textbf{Total Fase 1} & & \textbf{75} & \textbf{2\,277.5} \\
 \bottomrule
 \end{tabular}
 \caption{Costes de Profesionales - Fase 1}
@@ -622,11 +596,11 @@ Analista Datos & 18.5 & 25 & 462.5 \\
 \toprule
 Profesional & €/hora & Horas & Total (€) \\
 \midrule
-Ingeniero ML & 42 & 95 & 3990 \\
-Científico Datos & 34.5 & 38 & 1311 \\
+Ingeniero ML & 42 & 95 & 3\,990 \\
+Científico Datos & 34.5 & 38 & 1\,311 \\
 Analista Datos & 18.5 & 17 & 314.5 \\
 \midrule
-\textbf{Total Fase 2} & & \textbf{150} & \textbf{5615,5} \\
+\textbf{Total Fase 2} & & \textbf{150} & \textbf{5\,615,5} \\
 \bottomrule
 \end{tabular}
 \caption{Costes de Profesionales - Fase 2}
@@ -641,11 +615,11 @@ Analista Datos & 18.5 & 17 & 314.5 \\
 \toprule
 Profesional & €/hora & Horas & Total (€) \\
 \midrule
-Ingeniero ML & 42 & 30 & 1260 \\
-Científico Datos & 34.5 & 37 & 1276.5 \\
+Ingeniero ML & 42 & 30 & 1\,260 \\
+Científico Datos & 34.5 & 37 & 1\,276.5 \\
 Analista Datos & 18.5 & 8 & 148 \\
 \midrule
-\textbf{Total Fase 3} & & \textbf{75} & \textbf{2684.5} \\
+\textbf{Total Fase 3} & & \textbf{75} & \textbf{2\,684.5} \\
 \bottomrule
 \end{tabular}
 \caption{Costes de Profesionales - Fase 3}
@@ -660,10 +634,10 @@ Analista Datos & 18.5 & 8 & 148 \\
 Profesional & Coste Total (€) \\
 \midrule
 Ingeniero ML & 5\,754 \\
-Científico Datos & 3898,5 \\
+Científico Datos & 3\,898,5 \\
 Analista Datos & 925 \\
 \midrule
-\textbf{Coste Total del Proyecto} & \textbf{10577,5} \\
+\textbf{Coste Total del Proyecto} & \textbf{10\,577,5} \\
 \bottomrule
 \end{tabular}
 \caption{Coste Total por Profesional}
