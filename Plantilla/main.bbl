@@ -17,6 +17,14 @@ Vicente~González Ruiz.
 Vicente~González Ruiz.
 \newblock El ip (internet protocol), December 2014.
 
+\bibitem{aprendeia2021deep}
+AprendeIA.
+\newblock ¿qué es deep learning?, 2021.
+
+\bibitem{uniteai2020cnn}
+Daniel~Nielson Unite.AI.
+\newblock ¿qué son las redes neuronales convolucionales (cnn)?, 2020.
+
 \bibitem{chapman2000crisp}
 Pete Chapman, Julian Clinton, Randy Kerber, Thomas Khabaza, Thomas Reinartz,
   Colin Shearer, and Rüdiger Wirth.
@@ -58,5 +66,25 @@ Majed Luay, Siamak Layeghy, Seyedehfaezeh Hosseininoorbin, Mohanad Sarhan, Nour
   Moustafa, and Marius Portmann.
 \newblock Temporal analysis of netflow datasets for network intrusion detection
   systems, 2025.
+
+\bibitem{bishop2006pattern}
+Christopher~M. Bishop.
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2006.
+
+\bibitem{haykin2009neural}
+Simon Haykin.
+\newblock {\em Neural Networks and Learning Machines}.
+\newblock Pearson, 2009.
+
+\bibitem{nielsen2015neural}
+Michael Nielsen.
+\newblock {\em Neural Networks and Deep Learning}.
+\newblock Determination Press, 2015.
+
+\bibitem{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
 
 \end{thebibliography}
