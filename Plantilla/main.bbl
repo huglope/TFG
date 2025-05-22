@@ -87,4 +87,26 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock {\em Deep Learning}.
 \newblock MIT Press, 2016.
 
+\bibitem{eitca_loss_function}
+{EITCA Academy}.
+\newblock ¿cuál es el papel de la función de pérdida en el aprendizaje
+  automático?
+\newblock Accedido: 2025-05-22.
+
+\bibitem{ultralytics_loss_function}
+{Ultralytics}.
+\newblock Función de pérdida.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{datacamp_loss_function}
+{DataCamp}.
+\newblock Explicación de las funciones de pérdida en el machine learning.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{bigdatafran_pytorch_classification}
+{BigDataFran}.
+\newblock 7. introducción problemas de clasificación — trabajando con
+  pytorch.
+\newblock Accedido: 2025-05-22.
+
 \end{thebibliography}
