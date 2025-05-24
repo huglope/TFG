@@ -25,6 +25,11 @@ AprendeIA.
 Daniel~Nielson Unite.AI.
 \newblock ¿qué son las redes neuronales convolucionales (cnn)?, 2020.
 
+\bibitem{msmk2023backpropagation}
+MSMK University.
+\newblock Red neuronal de retropropagación (backpropagation neural network),
+  2023.
+
 \bibitem{chapman2000crisp}
 Pete Chapman, Julian Clinton, Randy Kerber, Thomas Khabaza, Thomas Reinartz,
   Colin Shearer, and Rüdiger Wirth.
@@ -108,5 +113,15 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock 7. introducción problemas de clasificación — trabajando con
   pytorch.
 \newblock Accedido: 2025-05-22.
+
+\bibitem{bottou2010large}
+Léon Bottou.
+\newblock Large-scale machine learning with stochastic gradient descent.
+\newblock {\em Proceedings of COMPSTAT 2010}, pages 177--186, 2010.
+
+\bibitem{kingma2014adam}
+D.P. Kingma and J.B. Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
 
 \end{thebibliography}
