@@ -1,4 +1,3 @@
 # Ignorar la carpeta de los datasets
 /Datasets
-*.csv
 test
