@@ -124,4 +124,9 @@ D.P. Kingma and J.B. Ba.
 \newblock Adam: A method for stochastic optimization.
 \newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
 
+\bibitem{chollet2018deep}
+François Chollet.
+\newblock {\em Deep learning with Python}.
+\newblock Manning Publications Co., 2018.
+
 \end{thebibliography}
