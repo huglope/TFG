@@ -1,0 +1,16 @@
+{"time":"2025-05-26T21:18:59.59158995+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_211859-xtg86w3v/logs/debug-core.log"}
+{"time":"2025-05-26T21:18:59.983127059+02:00","level":"INFO","msg":"created new stream","id":"xtg86w3v"}
+{"time":"2025-05-26T21:18:59.98314878+02:00","level":"INFO","msg":"stream: started","id":"xtg86w3v"}
+{"time":"2025-05-26T21:18:59.983158859+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:18:59.983164299+02:00","level":"INFO","msg":"sender: started","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:18:59.983176472+02:00","level":"INFO","msg":"handler: started","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:19:00.309209628+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T21:19:44.635364766+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T21:19:44.635392728+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T21:19:45.637486023+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xtg86w3v-confusion_matrix_table","runtime_seconds":1.00560141}],"total_operations":1}}
+{"time":"2025-05-26T21:19:46.152801831+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T21:19:46.346127397+02:00","level":"INFO","msg":"stream: closing","id":"xtg86w3v"}
+{"time":"2025-05-26T21:19:46.346147755+02:00","level":"INFO","msg":"handler: closed","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:19:46.346170197+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:19:46.346216354+02:00","level":"INFO","msg":"sender: closed","stream_id":"xtg86w3v"}
+{"time":"2025-05-26T21:19:46.346229819+02:00","level":"INFO","msg":"stream: closed","id":"xtg86w3v"}

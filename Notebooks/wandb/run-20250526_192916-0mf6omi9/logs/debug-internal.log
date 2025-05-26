@@ -1,0 +1,16 @@
+{"time":"2025-05-26T19:29:16.586576965+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_192916-0mf6omi9/logs/debug-core.log"}
+{"time":"2025-05-26T19:29:16.901749729+02:00","level":"INFO","msg":"created new stream","id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:16.90177671+02:00","level":"INFO","msg":"stream: started","id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:16.901783562+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:16.90179845+02:00","level":"INFO","msg":"handler: started","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:16.901826814+02:00","level":"INFO","msg":"sender: started","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:17.12952307+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:29:25.262413529+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:29:25.262437794+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:29:26.264492723+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-0mf6omi9-confusion_matrix_table","runtime_seconds":1.005414923,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.397327323,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T19:29:27.408473324+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T19:29:27.615254826+02:00","level":"INFO","msg":"stream: closing","id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:27.615274353+02:00","level":"INFO","msg":"handler: closed","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:27.61528351+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:27.615292006+02:00","level":"INFO","msg":"sender: closed","stream_id":"0mf6omi9"}
+{"time":"2025-05-26T19:29:27.615360936+02:00","level":"INFO","msg":"stream: closed","id":"0mf6omi9"}

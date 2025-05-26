@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:37:42.608816529+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_203742-shdq9i3s/logs/debug-core.log"}
+{"time":"2025-05-26T20:37:42.878337467+02:00","level":"INFO","msg":"created new stream","id":"shdq9i3s"}
+{"time":"2025-05-26T20:37:42.878385047+02:00","level":"INFO","msg":"stream: started","id":"shdq9i3s"}
+{"time":"2025-05-26T20:37:42.878411897+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:37:42.878429971+02:00","level":"INFO","msg":"handler: started","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:37:42.878421796+02:00","level":"INFO","msg":"sender: started","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:37:43.06793767+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:38:25.871484454+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:38:25.871534909+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:38:26.873601845+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-shdq9i3s-confusion_matrix_table","runtime_seconds":1.004499293,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.100433032,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T20:38:27.868966681+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:38:28.167259723+02:00","level":"INFO","msg":"stream: closing","id":"shdq9i3s"}
+{"time":"2025-05-26T20:38:28.167299868+02:00","level":"INFO","msg":"handler: closed","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:38:28.167330796+02:00","level":"INFO","msg":"sender: closed","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:38:28.167323974+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"shdq9i3s"}
+{"time":"2025-05-26T20:38:28.167417549+02:00","level":"INFO","msg":"stream: closed","id":"shdq9i3s"}

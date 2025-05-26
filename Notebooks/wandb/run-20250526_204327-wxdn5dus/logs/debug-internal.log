@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:43:27.984657171+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_204327-wxdn5dus/logs/debug-core.log"}
+{"time":"2025-05-26T20:43:28.66831444+02:00","level":"INFO","msg":"created new stream","id":"wxdn5dus"}
+{"time":"2025-05-26T20:43:28.668350969+02:00","level":"INFO","msg":"stream: started","id":"wxdn5dus"}
+{"time":"2025-05-26T20:43:28.668371187+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:43:28.668381336+02:00","level":"INFO","msg":"sender: started","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:43:28.668396815+02:00","level":"INFO","msg":"handler: started","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:43:29.100003948+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:44:18.096907934+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:44:18.096938612+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:44:19.098891211+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-wxdn5dus-confusion_matrix_table","runtime_seconds":1.005106983}],"total_operations":1}}
+{"time":"2025-05-26T20:44:19.745928964+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:44:20.045650444+02:00","level":"INFO","msg":"stream: closing","id":"wxdn5dus"}
+{"time":"2025-05-26T20:44:20.045671554+02:00","level":"INFO","msg":"handler: closed","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:44:20.045683657+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:44:20.045703754+02:00","level":"INFO","msg":"sender: closed","stream_id":"wxdn5dus"}
+{"time":"2025-05-26T20:44:20.045785448+02:00","level":"INFO","msg":"stream: closed","id":"wxdn5dus"}

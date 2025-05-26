@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.14.0-15-generic-x86_64-with-glibc2.40",
+  "python": "CPython 3.12.7",
+  "startedAt": "2025-05-26T18:05:29.068848Z",
+  "program": "/home/hugo/TFG/Notebooks/TFG_HUGO_MUL.ipynb",
+  "codePath": "Notebooks/TFG_HUGO_MUL.ipynb",
+  "git": {
+    "remote": "git@github.com:huglope/TFG.git",
+    "commit": "6dcc3b54a8013b2af44f23b9078384a69003c7fb"
+  },
+  "email": "alv.lop.hugo@gmail.com",
+  "root": "/home/hugo/TFG/Notebooks",
+  "host": "hugo-ROG-Strix-G513RC-G513RC",
+  "executable": "/home/hugo/anaconda3/bin/python",
+  "codePathLocal": "TFG_HUGO_MUL.ipynb",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "124749635584",
+      "used": "101637484544"
+    }
+  },
+  "memory": {
+    "total": "15981527040"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal": "4294967296",
+      "cudaCores": 2048,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.8"
+}

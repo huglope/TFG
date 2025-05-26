@@ -1,0 +1,16 @@
+{"time":"2025-05-26T21:27:11.166598439+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_212711-oglonrok/logs/debug-core.log"}
+{"time":"2025-05-26T21:27:11.415706078+02:00","level":"INFO","msg":"created new stream","id":"oglonrok"}
+{"time":"2025-05-26T21:27:11.415741665+02:00","level":"INFO","msg":"stream: started","id":"oglonrok"}
+{"time":"2025-05-26T21:27:11.415751403+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:11.4157547+02:00","level":"INFO","msg":"sender: started","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:11.415778003+02:00","level":"INFO","msg":"handler: started","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:11.636315773+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T21:27:53.807365099+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T21:27:53.807395516+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T21:27:54.81000587+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-oglonrok-confusion_matrix_table","runtime_seconds":1.005087978}],"total_operations":1}}
+{"time":"2025-05-26T21:27:55.585070659+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T21:27:55.781925731+02:00","level":"INFO","msg":"stream: closing","id":"oglonrok"}
+{"time":"2025-05-26T21:27:55.781949226+02:00","level":"INFO","msg":"handler: closed","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:55.781965586+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:55.781986656+02:00","level":"INFO","msg":"sender: closed","stream_id":"oglonrok"}
+{"time":"2025-05-26T21:27:55.782045066+02:00","level":"INFO","msg":"stream: closed","id":"oglonrok"}

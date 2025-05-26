@@ -1,0 +1,23 @@
+{"time":"2025-05-26T19:17:59.229737892+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_191759-zvezrcb6/logs/debug-core.log"}
+{"time":"2025-05-26T19:17:59.710154163+02:00","level":"INFO","msg":"created new stream","id":"zvezrcb6"}
+{"time":"2025-05-26T19:17:59.71020075+02:00","level":"INFO","msg":"stream: started","id":"zvezrcb6"}
+{"time":"2025-05-26T19:17:59.710240905+02:00","level":"INFO","msg":"handler: started","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:17:59.7102326+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:17:59.710272123+02:00","level":"INFO","msg":"sender: started","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:17:59.928422833+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:24:37.509530295+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:24:37.948594972+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-26T19:24:48.483988921+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:24:48.487872082+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-26T19:24:49.755932233+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:24:49.760301235+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-26T19:25:01.762692511+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:25:01.803499062+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:25:01.803586055+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:25:02.782938488+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.210732933,"progress":"694B/694B"}],"total_operations":1}}
+{"time":"2025-05-26T19:25:02.861922934+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T19:25:03.094713575+02:00","level":"INFO","msg":"stream: closing","id":"zvezrcb6"}
+{"time":"2025-05-26T19:25:03.094727862+02:00","level":"INFO","msg":"handler: closed","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:25:03.094737029+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:25:03.094757377+02:00","level":"INFO","msg":"sender: closed","stream_id":"zvezrcb6"}
+{"time":"2025-05-26T19:25:03.094793114+02:00","level":"INFO","msg":"stream: closed","id":"zvezrcb6"}

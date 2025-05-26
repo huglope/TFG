@@ -1,0 +1,16 @@
+{"time":"2025-05-26T19:17:45.410698911+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_191745-ao8os2ep/logs/debug-core.log"}
+{"time":"2025-05-26T19:17:45.672050016+02:00","level":"INFO","msg":"created new stream","id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:45.672087145+02:00","level":"INFO","msg":"stream: started","id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:45.672095972+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:45.672104197+02:00","level":"INFO","msg":"sender: started","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:45.672117432+02:00","level":"INFO","msg":"handler: started","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:45.919832336+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:17:49.817466056+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:17:49.817509377+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:17:50.819185277+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ao8os2ep-confusion_matrix_table","runtime_seconds":1.004148838,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.40680611,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T19:17:52.013184801+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T19:17:52.216947247+02:00","level":"INFO","msg":"stream: closing","id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:52.216966052+02:00","level":"INFO","msg":"handler: closed","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:52.216981932+02:00","level":"INFO","msg":"sender: closed","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:52.216976912+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ao8os2ep"}
+{"time":"2025-05-26T19:17:52.217035251+02:00","level":"INFO","msg":"stream: closed","id":"ao8os2ep"}

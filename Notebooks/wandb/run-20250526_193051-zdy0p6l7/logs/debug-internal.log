@@ -1,0 +1,11 @@
+{"time":"2025-05-26T19:30:51.524710984+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_193051-zdy0p6l7/logs/debug-core.log"}
+{"time":"2025-05-26T19:30:51.80237562+02:00","level":"INFO","msg":"created new stream","id":"zdy0p6l7"}
+{"time":"2025-05-26T19:30:51.802400537+02:00","level":"INFO","msg":"stream: started","id":"zdy0p6l7"}
+{"time":"2025-05-26T19:30:51.802408562+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zdy0p6l7"}
+{"time":"2025-05-26T19:30:51.802417458+02:00","level":"INFO","msg":"sender: started","stream_id":"zdy0p6l7"}
+{"time":"2025-05-26T19:30:51.802441062+02:00","level":"INFO","msg":"handler: started","stream_id":"zdy0p6l7"}
+{"time":"2025-05-26T19:30:52.090815261+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:31:05.017253571+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:31:05.017295319+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:31:06.019023186+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zdy0p6l7-confusion_matrix_table","runtime_seconds":1.004873037}],"total_operations":1}}
+{"time":"2025-05-26T19:31:06.839403481+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

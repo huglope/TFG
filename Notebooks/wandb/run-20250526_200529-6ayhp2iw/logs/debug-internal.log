@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:05:29.068791525+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_200529-6ayhp2iw/logs/debug-core.log"}
+{"time":"2025-05-26T20:05:29.376020348+02:00","level":"INFO","msg":"created new stream","id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:29.376050685+02:00","level":"INFO","msg":"stream: started","id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:29.376067677+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:29.376075602+02:00","level":"INFO","msg":"handler: started","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:29.376098805+02:00","level":"INFO","msg":"sender: started","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:29.588385563+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:05:30.287769416+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:05:30.287809691+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:05:31.252089067+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-6ayhp2iw-avg_confusion_matrix","runtime_seconds":1.005896415,"subtasks":[{"desc":"avg_confusion_matrix.table.json","runtime_seconds":0.187167247,"progress":"1.7KB/1.7KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T20:05:32.611135783+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:05:32.886241949+02:00","level":"INFO","msg":"stream: closing","id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:32.886259332+02:00","level":"INFO","msg":"handler: closed","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:32.886268098+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:32.886283828+02:00","level":"INFO","msg":"sender: closed","stream_id":"6ayhp2iw"}
+{"time":"2025-05-26T20:05:32.886400225+02:00","level":"INFO","msg":"stream: closed","id":"6ayhp2iw"}

@@ -1,0 +1,3 @@
+
+Resultados promedio para bs=32, lr=1e-05, hs=128, e=30:
+  Loss: 2.2397 | Accuracy: 0.2873 | F1 Macro: 0.2137

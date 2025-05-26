@@ -1,0 +1,16 @@
+{"time":"2025-05-26T21:27:55.822726033+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_212755-sk4fqwvw/logs/debug-core.log"}
+{"time":"2025-05-26T21:27:56.096501225+02:00","level":"INFO","msg":"created new stream","id":"sk4fqwvw"}
+{"time":"2025-05-26T21:27:56.096522044+02:00","level":"INFO","msg":"stream: started","id":"sk4fqwvw"}
+{"time":"2025-05-26T21:27:56.096538184+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:27:56.096549936+02:00","level":"INFO","msg":"sender: started","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:27:56.096568361+02:00","level":"INFO","msg":"handler: started","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:27:56.339629468+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T21:28:35.950716424+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T21:28:35.950871525+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T21:28:36.95284007+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sk4fqwvw-confusion_matrix_table","runtime_seconds":1.004698343,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.008430515,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T21:28:37.980724884+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T21:28:38.319665568+02:00","level":"INFO","msg":"stream: closing","id":"sk4fqwvw"}
+{"time":"2025-05-26T21:28:38.31968807+02:00","level":"INFO","msg":"handler: closed","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:28:38.319700313+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:28:38.3197092+02:00","level":"INFO","msg":"sender: closed","stream_id":"sk4fqwvw"}
+{"time":"2025-05-26T21:28:38.319770415+02:00","level":"INFO","msg":"stream: closed","id":"sk4fqwvw"}

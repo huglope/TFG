@@ -1,0 +1,7 @@
+{"time":"2025-05-26T20:45:12.096583863+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_204512-2agwerno/logs/debug-core.log"}
+{"time":"2025-05-26T20:45:12.461854463+02:00","level":"INFO","msg":"created new stream","id":"2agwerno"}
+{"time":"2025-05-26T20:45:12.46189034+02:00","level":"INFO","msg":"stream: started","id":"2agwerno"}
+{"time":"2025-05-26T20:45:12.461903445+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"2agwerno"}
+{"time":"2025-05-26T20:45:12.461920186+02:00","level":"INFO","msg":"sender: started","stream_id":"2agwerno"}
+{"time":"2025-05-26T20:45:12.461940364+02:00","level":"INFO","msg":"handler: started","stream_id":"2agwerno"}
+{"time":"2025-05-26T20:45:12.742276891+02:00","level":"INFO","msg":"Starting system monitor"}

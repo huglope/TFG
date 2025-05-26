@@ -1,0 +1,123 @@
+2025-05-26 19:30:51,486 INFO    MainThread:7988 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /home/hugo/TFG/Notebooks/wandb/run-20250526_193051-zdy0p6l7/logs/debug.log
+2025-05-26 19:30:51,486 INFO    MainThread:7988 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /home/hugo/TFG/Notebooks/wandb/run-20250526_193051-zdy0p6l7/logs/debug-internal.log
+2025-05-26 19:30:51,487 INFO    MainThread:7988 [wandb_init.py:monkeypatch_ipython():643] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a013aaf8680>
+2025-05-26 19:30:51,487 INFO    MainThread:7988 [wandb_init.py:init():852] calling init triggers
+2025-05-26 19:30:51,487 INFO    MainThread:7988 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'batch_size': 256, 'learning_rate': 3e-05, 'hidden_size': 25, 'epochs': 30, 'fold': 3, '_wandb': {}}
+2025-05-26 19:30:51,487 INFO    MainThread:7988 [wandb_init.py:init():893] starting backend
+2025-05-26 19:30:51,487 INFO    MainThread:7988 [wandb_init.py:init():897] sending inform_init request
+2025-05-26 19:30:51,488 INFO    MainThread:7988 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-26 19:30:51,488 INFO    MainThread:7988 [wandb_init.py:init():907] backend started and connected
+2025-05-26 19:30:51,491 INFO    MainThread:7988 [wandb_run.py:_label_probe_notebook():1369] probe notebook
+2025-05-26 19:30:51,492 INFO    MainThread:7988 [wandb_init.py:init():1002] updated telemetry
+2025-05-26 19:30:51,496 INFO    MainThread:7988 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
+2025-05-26 19:30:52,089 INFO    MainThread:7988 [wandb_init.py:init():1101] starting run threads in backend
+2025-05-26 19:30:52,232 INFO    MainThread:7988 [wandb_run.py:_console_start():2566] atexit reg
+2025-05-26 19:30:52,232 INFO    MainThread:7988 [wandb_run.py:_redirect():2414] redirect: wrap_raw
+2025-05-26 19:30:52,232 INFO    MainThread:7988 [wandb_run.py:_redirect():2483] Wrapping output streams.
+2025-05-26 19:30:52,232 INFO    MainThread:7988 [wandb_run.py:_redirect():2506] Redirects installed.
+2025-05-26 19:30:52,233 INFO    MainThread:7988 [wandb_init.py:init():1147] run started, returning control to user process
+2025-05-26 19:31:04,760 INFO    MainThread:7988 [wandb_run.py:_config_callback():1429] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [wandb_run.py:_finish():2314] finishing run TFG_Hugo/TFG_MUL_CV_FOLDS/zdy0p6l7
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [jupyter.py:save_history():477] not saving jupyter history
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [jupyter.py:save_ipynb():401] not saving jupyter notebook
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [wandb_init.py:_jupyter_teardown():628] cleaning up jupyter logic
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [wandb_run.py:_atexit_cleanup():2531] got exitcode: 0
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [wandb_run.py:_restore():2513] restore
+2025-05-26 19:31:05,016 INFO    MainThread:7988 [wandb_run.py:_restore():2519] restore done
+2025-05-26 19:31:06,905 WARNING MsgRouterThr:7988 [router.py:message_loop():63] [no run ID] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 27, in _read_message
+    return self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 235, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 220, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/router.py", line 56, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/router_sock.py", line 29, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-05-26 19:31:06,907 INFO    MsgRouterThr:7988 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 36 handles.
+2025-05-26 19:53:53,031 ERROR   MainThread:7988 [wandb_init.py:init():1660] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1650, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1009, in init
+    backend.interface.publish_header()
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 97, in publish_header
+    self._publish_header(header)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 275, in _publish_header
+    self._publish(rec)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-26 19:55:24,669 ERROR   MainThread:7988 [wandb_init.py:init():1660] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1650, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 898, in init
+    service.inform_init(
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/service_connection.py", line 151, in inform_init
+    self._client.send_server_request(spb.ServerRequest(inform_init=request))
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-26 19:56:25,596 ERROR   MainThread:7988 [wandb_init.py:init():1660] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1650, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 898, in init
+    service.inform_init(
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/service_connection.py", line 151, in inform_init
+    self._client.send_server_request(spb.ServerRequest(inform_init=request))
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-26 19:57:04,915 ERROR   MainThread:7988 [wandb_init.py:init():1660] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1650, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 898, in init
+    service.inform_init(
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/service_connection.py", line 151, in inform_init
+    self._client.send_server_request(spb.ServerRequest(inform_init=request))
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/hugo/anaconda3/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:30:57.340918425+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_203057-4l31zfwx/logs/debug-core.log"}
+{"time":"2025-05-26T20:30:57.622885145+02:00","level":"INFO","msg":"created new stream","id":"4l31zfwx"}
+{"time":"2025-05-26T20:30:57.622928046+02:00","level":"INFO","msg":"stream: started","id":"4l31zfwx"}
+{"time":"2025-05-26T20:30:57.62293549+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:30:57.622940078+02:00","level":"INFO","msg":"sender: started","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:30:57.622962981+02:00","level":"INFO","msg":"handler: started","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:30:57.838092947+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:30:58.370763016+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:30:58.370799404+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:30:59.334433075+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-4l31zfwx-avg_confusion_matrix","runtime_seconds":0.918920574,"subtasks":[{"desc":"avg_confusion_matrix.table.json","runtime_seconds":0.230287617,"progress":"1.6KB/1.6KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T20:31:00.56224018+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:31:00.750816964+02:00","level":"INFO","msg":"stream: closing","id":"4l31zfwx"}
+{"time":"2025-05-26T20:31:00.750828676+02:00","level":"INFO","msg":"handler: closed","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:31:00.750840659+02:00","level":"INFO","msg":"sender: closed","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:31:00.750835058+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4l31zfwx"}
+{"time":"2025-05-26T20:31:00.750880073+02:00","level":"INFO","msg":"stream: closed","id":"4l31zfwx"}

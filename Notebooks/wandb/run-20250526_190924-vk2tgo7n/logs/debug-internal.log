@@ -1,0 +1,19 @@
+{"time":"2025-05-26T19:09:24.029422563+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_190924-vk2tgo7n/logs/debug-core.log"}
+{"time":"2025-05-26T19:09:24.360383046+02:00","level":"INFO","msg":"created new stream","id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:24.360436596+02:00","level":"INFO","msg":"stream: started","id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:24.360442157+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:24.360451013+02:00","level":"INFO","msg":"handler: started","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:24.360468867+02:00","level":"INFO","msg":"sender: started","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:24.676355139+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:09:40.871935453+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:09:40.879117797+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-26T19:09:44.495028855+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-26T19:09:44.522421696+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:09:44.522492038+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:09:45.328654653+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T19:09:45.525044458+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 0-1","runtime_seconds":0.196302891}],"total_operations":1}}
+{"time":"2025-05-26T19:09:45.630128345+02:00","level":"INFO","msg":"stream: closing","id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:45.630140478+02:00","level":"INFO","msg":"handler: closed","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:45.630149014+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:45.630159664+02:00","level":"INFO","msg":"sender: closed","stream_id":"vk2tgo7n"}
+{"time":"2025-05-26T19:09:45.630213485+02:00","level":"INFO","msg":"stream: closed","id":"vk2tgo7n"}

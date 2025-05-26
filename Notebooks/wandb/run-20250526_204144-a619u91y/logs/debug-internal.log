@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:41:44.076663697+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_204144-a619u91y/logs/debug-core.log"}
+{"time":"2025-05-26T20:41:44.388704544+02:00","level":"INFO","msg":"created new stream","id":"a619u91y"}
+{"time":"2025-05-26T20:41:44.388730332+02:00","level":"INFO","msg":"stream: started","id":"a619u91y"}
+{"time":"2025-05-26T20:41:44.388743156+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:41:44.388765819+02:00","level":"INFO","msg":"sender: started","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:41:44.388758756+02:00","level":"INFO","msg":"handler: started","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:41:44.79185045+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:42:33.183943589+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:42:33.183983464+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:42:34.185968349+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-a619u91y-confusion_matrix_table","runtime_seconds":1.004791906,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.349915291,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T20:42:35.252686546+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:42:35.769257052+02:00","level":"INFO","msg":"stream: closing","id":"a619u91y"}
+{"time":"2025-05-26T20:42:35.769274835+02:00","level":"INFO","msg":"handler: closed","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:42:35.76928257+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:42:35.769337964+02:00","level":"INFO","msg":"sender: closed","stream_id":"a619u91y"}
+{"time":"2025-05-26T20:42:35.769365806+02:00","level":"INFO","msg":"stream: closed","id":"a619u91y"}

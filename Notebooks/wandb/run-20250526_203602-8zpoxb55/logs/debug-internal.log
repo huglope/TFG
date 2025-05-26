@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:36:02.569842005+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_203602-8zpoxb55/logs/debug-core.log"}
+{"time":"2025-05-26T20:36:02.854254941+02:00","level":"INFO","msg":"created new stream","id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:02.854278134+02:00","level":"INFO","msg":"stream: started","id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:02.854284897+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:02.854342245+02:00","level":"INFO","msg":"handler: started","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:02.85433988+02:00","level":"INFO","msg":"sender: started","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:03.122231193+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:36:51.571279972+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:36:51.57131077+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:36:52.576276295+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8zpoxb55-confusion_matrix_table","runtime_seconds":1.007555878,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.333435263,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T20:36:54.029681115+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:36:54.325494736+02:00","level":"INFO","msg":"stream: closing","id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:54.32551822+02:00","level":"INFO","msg":"handler: closed","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:54.325529331+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:54.325540411+02:00","level":"INFO","msg":"sender: closed","stream_id":"8zpoxb55"}
+{"time":"2025-05-26T20:36:54.325599813+02:00","level":"INFO","msg":"stream: closed","id":"8zpoxb55"}

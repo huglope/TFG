@@ -1,0 +1,16 @@
+{"time":"2025-05-26T21:19:46.421642434+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_211946-7ytpovx8/logs/debug-core.log"}
+{"time":"2025-05-26T21:19:46.744686567+02:00","level":"INFO","msg":"created new stream","id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:46.744734857+02:00","level":"INFO","msg":"stream: started","id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:46.74476283+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:46.744782547+02:00","level":"INFO","msg":"handler: started","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:46.744810339+02:00","level":"INFO","msg":"sender: started","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:47.091600216+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T21:19:47.563817239+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T21:19:47.563868786+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T21:19:48.528748198+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-7ytpovx8-avg_confusion_matrix","runtime_seconds":0.824746687,"subtasks":[{"desc":"avg_confusion_matrix.table.json","runtime_seconds":0.14926245,"progress":"1.7KB/1.7KB"}]}],"total_operations":1}}
+{"time":"2025-05-26T21:19:49.457830945+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T21:19:49.727822738+02:00","level":"INFO","msg":"stream: closing","id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:49.727834179+02:00","level":"INFO","msg":"handler: closed","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:49.72784008+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:49.727846613+02:00","level":"INFO","msg":"sender: closed","stream_id":"7ytpovx8"}
+{"time":"2025-05-26T21:19:49.727886257+02:00","level":"INFO","msg":"stream: closed","id":"7ytpovx8"}

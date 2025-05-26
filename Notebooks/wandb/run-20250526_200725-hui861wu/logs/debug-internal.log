@@ -1,0 +1,16 @@
+{"time":"2025-05-26T20:07:25.156766063+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250526_200725-hui861wu/logs/debug-core.log"}
+{"time":"2025-05-26T20:07:25.433141412+02:00","level":"INFO","msg":"created new stream","id":"hui861wu"}
+{"time":"2025-05-26T20:07:25.433180024+02:00","level":"INFO","msg":"stream: started","id":"hui861wu"}
+{"time":"2025-05-26T20:07:25.43318832+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:25.433214579+02:00","level":"INFO","msg":"handler: started","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:25.433227573+02:00","level":"INFO","msg":"sender: started","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:25.673289414+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T20:07:26.112737996+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T20:07:26.112798961+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T20:07:27.076345951+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-hui861wu-avg_confusion_matrix","runtime_seconds":0.89004855},{"desc":"uploading config.yaml","runtime_seconds":0.333447675,"progress":"693B/693B"}],"total_operations":2}}
+{"time":"2025-05-26T20:07:28.093690227+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T20:07:28.31048986+02:00","level":"INFO","msg":"stream: closing","id":"hui861wu"}
+{"time":"2025-05-26T20:07:28.310509738+02:00","level":"INFO","msg":"handler: closed","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:28.310522271+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:28.310533222+02:00","level":"INFO","msg":"sender: closed","stream_id":"hui861wu"}
+{"time":"2025-05-26T20:07:28.310579538+02:00","level":"INFO","msg":"stream: closed","id":"hui861wu"}
