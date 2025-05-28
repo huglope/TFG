@@ -1,0 +1,16 @@
+{"time":"2025-05-27T18:46:32.109241192+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250527_184632-135qyos2/logs/debug-core.log"}
+{"time":"2025-05-27T18:46:32.389251776+02:00","level":"INFO","msg":"created new stream","id":"135qyos2"}
+{"time":"2025-05-27T18:46:32.389283004+02:00","level":"INFO","msg":"stream: started","id":"135qyos2"}
+{"time":"2025-05-27T18:46:32.389315776+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:32.389356853+02:00","level":"INFO","msg":"handler: started","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:32.389374085+02:00","level":"INFO","msg":"sender: started","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:32.596456669+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-27T18:46:33.382472587+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-27T18:46:33.382525787+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-27T18:46:34.351620192+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-135qyos2-avg_confusion_matrix","runtime_seconds":0.959867951}],"total_operations":1}}
+{"time":"2025-05-27T18:46:35.188752334+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-27T18:46:35.428899768+02:00","level":"INFO","msg":"stream: closing","id":"135qyos2"}
+{"time":"2025-05-27T18:46:35.428926618+02:00","level":"INFO","msg":"handler: closed","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:35.428986791+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:35.429028499+02:00","level":"INFO","msg":"sender: closed","stream_id":"135qyos2"}
+{"time":"2025-05-27T18:46:35.429091137+02:00","level":"INFO","msg":"stream: closed","id":"135qyos2"}

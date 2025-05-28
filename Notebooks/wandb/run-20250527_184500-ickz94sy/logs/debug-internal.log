@@ -1,0 +1,16 @@
+{"time":"2025-05-27T18:45:00.657441164+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250527_184500-ickz94sy/logs/debug-core.log"}
+{"time":"2025-05-27T18:45:00.937098004+02:00","level":"INFO","msg":"created new stream","id":"ickz94sy"}
+{"time":"2025-05-27T18:45:00.937136406+02:00","level":"INFO","msg":"stream: started","id":"ickz94sy"}
+{"time":"2025-05-27T18:45:00.937187031+02:00","level":"INFO","msg":"sender: started","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:00.937196779+02:00","level":"INFO","msg":"handler: started","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:00.93718139+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:01.188762888+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-27T18:45:44.454640978+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-27T18:45:44.45466338+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-27T18:45:45.456566174+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ickz94sy-confusion_matrix_table","runtime_seconds":1.004560478,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.310827247,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-27T18:45:46.612886444+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-27T18:45:46.880957045+02:00","level":"INFO","msg":"stream: closing","id":"ickz94sy"}
+{"time":"2025-05-27T18:45:46.880990367+02:00","level":"INFO","msg":"handler: closed","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:46.881011286+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:46.881020914+02:00","level":"INFO","msg":"sender: closed","stream_id":"ickz94sy"}
+{"time":"2025-05-27T18:45:46.881096155+02:00","level":"INFO","msg":"stream: closed","id":"ickz94sy"}

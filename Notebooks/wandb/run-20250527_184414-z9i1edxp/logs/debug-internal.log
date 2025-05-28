@@ -1,0 +1,16 @@
+{"time":"2025-05-27T18:44:14.726444015+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250527_184414-z9i1edxp/logs/debug-core.log"}
+{"time":"2025-05-27T18:44:15.063245274+02:00","level":"INFO","msg":"created new stream","id":"z9i1edxp"}
+{"time":"2025-05-27T18:44:15.063302331+02:00","level":"INFO","msg":"stream: started","id":"z9i1edxp"}
+{"time":"2025-05-27T18:44:15.063376329+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:44:15.063391889+02:00","level":"INFO","msg":"sender: started","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:44:15.063395074+02:00","level":"INFO","msg":"handler: started","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:44:15.291305248+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-27T18:44:58.142751211+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-27T18:44:58.142796837+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-27T18:44:59.14580876+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-z9i1edxp-confusion_matrix_table","runtime_seconds":1.005778593,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.332571126,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-05-27T18:45:00.359457424+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-27T18:45:00.615950192+02:00","level":"INFO","msg":"stream: closing","id":"z9i1edxp"}
+{"time":"2025-05-27T18:45:00.615979627+02:00","level":"INFO","msg":"handler: closed","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:45:00.615995446+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:45:00.616007018+02:00","level":"INFO","msg":"sender: closed","stream_id":"z9i1edxp"}
+{"time":"2025-05-27T18:45:00.616059837+02:00","level":"INFO","msg":"stream: closed","id":"z9i1edxp"}
