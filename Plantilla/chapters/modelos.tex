@@ -132,7 +132,7 @@ Los hiperparámetros son los valores que se configuran antes del entrenamiento y
 
 
 
-\section{Modelo neuronal de clasificación binaria}
+\section{Modelo neuronal de clasificación binaria} \label{sec.modBIN}
 En esta sección se describe tanto el proposito como los procedimientos empleados para el desarrollo del modelo de clasificación binaria. Se detalla el proceso de selección de hiperparámetros, así como las distintas arquitecturas diseñadas con el fin de identificar la combinación que optimiza el rendimiento del modelo. Además, se presenta una comparación entre las arquitecturas evaluadas para determinar la más adecuada.
 
 %Finalmente, se especifican las métricas utilizadas para la evaluación y selección de las mejores combinaciones de hiperparámetros.
@@ -179,7 +179,7 @@ la mitad del número de parámetros que recibe el modelo, el mismo número que p
 
 A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
-\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}
+\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIBIN25}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo.
 
 \paragraph{Ventajas (n/2)}
@@ -196,7 +196,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
 
-\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}
+\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIBIN49}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo.
 
 \paragraph{Ventajas (n)}
@@ -213,7 +213,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecera resultados significativamente positivos gracias a su equilibrio y balanceo.
 
-\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}
+\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIBIN98}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
 
 \paragraph{Ventajas (n*2)}
@@ -317,8 +317,25 @@ Esta métrica proporciona una evaluación equilibrada del rendimiento del modelo
 \end{equation}
 
 Esta variante de la puntuación F pondera la sensibilidad más que la precisión. En el ámbito de la detección de intrusiones, el F2-score resulta útil cuando las consecuencias de no detectar un ataque (falso negativo) se consideran significativamente más perjudiciales que generar una falsa alarma (falso positivo). Al asignar un mayor peso al recall, se prioriza la identificación de la mayor cantidad posible de actividades maliciosas, incluso a expensas de un posible aumento en las falsas alertas.
-\end{itemize}
 
+
+\item \textbf{Área bajo la curva (\textit{ROC AUC})}: \label{met:ROCAUC}
+\begin{equation}
+    \text{FPR} = \frac{FP}{FP + VN}
+\end{equation}
+\begin{equation}
+    \text{Recall}(\text{FPR}(t)) = \text{Recall}(t)
+\end{equation}
+\begin{equation}
+    \text{ROC AUC} = \int_{0}^{1} \text{Recall}(\text{FPR}) \, d(\text{FPR})
+\end{equation}
+
+
+
+El área bajo la curva ROC (Receiver Operating Characteristic) mide la capacidad del modelo neuronal para discriminar entre clases positivas y negativas a lo largo de todos los posibles umbrales de decisión. 
+En la curva ROC, la FPR (False Positive Rate) actúa como la variable del eje x, mientras que el Recall (o TPR, True Positive Rate) corresponde a la variable del eje y. En el contexto de la seguridad, un alto valor de AUC indica que el modelo asigna puntuaciones más altas a las intrusiones que al tráfico normal de manera consistente, lo que sugiere una buena capacidad de priorización de amenazas. Esta métrica es especialmente útil cuando se desea evaluar el rendimiento global del modelo sin depender de un umbral fijo. Un modelo con bajo AUC podría fallar al separar el tráfico malicioso, lo que aumentaría la probabilidad de errores en la clasificación y podría comprometer la eficacia general del sistema de detección.
+
+\end{itemize}
 
 \subsubsection{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}	\label{sec:apli-met-seg}
 En el contexto de detección de intrusiones:
@@ -330,41 +347,104 @@ En el contexto de detección de intrusiones:
 
 
 \subsection{Mejores hiperparámetros para cada arquitectura}
+En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disBIN} \nameref{sec:disBIN}.
 
+Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-bin} \nameref{sec.metricas-bin}. El objetivo del modelo es detectar intrusiones en redes informáticas, por este motivo, los falsos negativos, es decir cuando se produce un ataque o intrusión y no se detecta, pueden tener consecuencias muy catastróficas para el sistema. Teniendo esto en cuenta, la métrica más importante es recall, puesto que es la que se ve más afe4ctada por la presencia de falsos negativos.
+
+Otras métricas relevantes que se muestran en las siguientes figuras son:
+\begin{itemize}
+	\item \textbf{F1 score}: Equilibra entre precisión y recall. Ideal cuando se necesita rendimiento general en un contexto con mucho desbalanceo como el que se propone en este proyecto.
+	\item \textbf{Precisión}: Si es bajo implica que el modelo detectará muchos falsos positivos, lo que saturaria a los administradore de falsas alarmas y provocaría deconfianza en el modelo.
+	\item \textbf{ROC AUC}: Compara el rendimiento global del modelo, independientemente del umbral. Es especialmente útil para afinar la sensibilidad o recall.
+\end{itemize}
+
+En las siguientes figuras se hace referecncia a los posibles combinaciones de la matriz de confusión en inglés, es decir:
+\begin{itemize}
+	\item \textbf{tp}: Verdaderos positivos (VP), intrusiones que se han clasificado como intrusiones.
+	\item \textbf{tn}: Verdaderos negativos (VN), conexiónes legítimas identificadas como tal.
+	\item \textbf{fp}: Falsos positivos (FP), conexiones legítimas clasificadas como intrusiones.
+	\item \textbf{fn}: Falsos negativos (FN), intrusiones que se han clasificado como conexiones legítimas.
+\end{itemize}
+
+En la figura \ref{fig:BINhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 25 neuronas (n/2) en la capa oculta. Los resultados obtenidos superan lo esperado tras el análisis de la sección \ref{sec:VIBIN25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 15\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+Estos resultados no son definitivos, puesto que no se está evaluando la posibilidad de que el modelo haya sufrido sobreajuste incluso utilizando validación cruzada. Para obtener resultados reales del desempeño del modelo, se realizan pruebas, también conocidas como test, en las que se obtienen las métricas del modelo al recibir datos que no ha visto nunca. Este proceso y sus resultados se comentan en el capítulo \ref{cap.test} \nameref{cap.test}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs25.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas. }
+    \includegraphics[width=1\textwidth]{./img/modelo/BINhs25.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}
     \label{fig:BINhs25}
 \end{figure}
 
 
+
+La figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 49 neuronas (n) en la capa oculta. Los resultados medios obtenidos concuerdan con lo comentado en el análisis de la sección \ref{sec:VIBIN49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 20\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs49.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas. }
+    \includegraphics[width=1\textwidth]{./img/modelo/BINhs49.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}
     \label{fig:BINhs49}
 \end{figure}
 
 
+En la figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (n*2) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 20\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs98.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas. }
+    \includegraphics[width=1\textwidth]{./img/modelo/BINhs98.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}
     \label{fig:BINhs98}
 \end{figure}
 
-
+Estos resultados no son definitivos, puesto que no se está evaluando la posibilidad de que el modelo haya sufrido sobreajuste incluso utilizando validación cruzada. Para obtener resultados reales del desempeño del modelo, se realizan pruebas, también conocidas como test, en las que se obtienen las métricas del modelo al recibir datos que no ha visto nunca. Este proceso y sus resultados se comentan en el capítulo \ref{cap.test}.
 
 
 \subsection{Comparación de las arquitecturas}
+En esta sección se comaparan los resultados obtenidos entre las tres arquitecturas propuestas. Una vez comparadas, se desarrolla una posible explicación para comprender los resultados de los experimientos.
 
+Para comprender mejor los resultados globales de los experimentos, se han recogido en la figura \ref{fig:BINtop5}, las 5 configuraciones de hiperparámetros con mayor recall independientemente de su arquitectura.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{./img/modelo/BINtop5.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}
+    \label{fig:BINtop5}
+\end{figure}
+
+El problema para el que ha sido diseñado el modelo no presenta una relación lineal tras transformar los datos como se explica en el capítulo \ref{cap.ent-datos} \nameref{cap.ent-datos}. Por este motivo, se esperaba que el modelo con un tamaño de capa oculta mayor fuese capaz de converger mejor, tal y como se comenta en \ref{sec:VIBIN98}.
+
+Al observar los datos de la figura \ref{fig:BINtop5}, se puede apreciar que puntualmente, la mejor arquitectura ha sido la que tenía un tamaño de ventana oculta igual a 98. Cabe destacar que, la diferencia entre los valores de recall de los cinco mejores experimentos es muy pequeña y puede que se deba a factores externos, como el estado de la máquina en el momento en el que se entreno al modelo, o la inicialización aleatoria de los pesos. Por este motivo, los resultados pueden variar si se realizan los mismos experimentos.
+
+Ente los mejores resultados de los experimentos, detaca la presencia de la arquitectura con un tamaño de capa oculta igual al número de parámetros de entrada del modelo. Tal y como se comenta en las secciones anteriores, esta es la arquitectura más equilibrada. Gracias a este equilibrio ha sido capaz de ajustar sus pesos mejor que el rseto de arquitecturas para configuraciones de hiperparámetros diferentes.
+
+Al aumentar el número de épocas del entrenamiento de los modelos, estos tienden a sobreajustar los pesos. Este sobreajuste implica que el modelo obtiene unas métricas excepcionalmente positivas durante los experimentos. Sin embargo, aun que los valores de las métricas son muy positivos en los experimentos realizados, sorprende que el número de épocas del 80 \% de las 5 mejores configuraciones, es el menor de los valores con los que se han realizado los experimentos para el hiperparámetro epochs. Estos resultados reflejan que la probabilidad de que el modelo haya sobreajustado sus pesos es muy baja. Posiblemente, el uso de la validación cruzada que penaliza el sobreajuste de los pesos de los modelos, como se explica en secciones anteriores, sea el responsable de que los experimentos con un número de épocas más elevado hayan obtenido unos resultados peores.
+
+Finalmente, es destacable que el learning rate de la mayoría de los 5 mejores experimentos del global de las arquitecturas tenga el valor más alto de los que se han probado. Esto puede interpretarse de manera positiva o negativa.
+En el mejor de los casos, un learning rate alto muestra que los datos están bien estructurados y que el optimizador y las arquitecturas son robustos frente a valores altos de learning rate,
+En el peor de los casos, la convergencia se realiza rápidamente pero de manera inestable, los resultados dependan en gran medida de los valores iniciales de los pesos o se este sobreajustando el modelo. Este último caso es el más improbable debido a las técnicas utilizadas que se han descrito y a los resultados analizados en el párrafo anterior.
+
+Para conocer el verdadero desempeño del modelo y determinar si ha sufirdo sobreajuste de los pesos durante el entrenamiento, se realiza un test con datos que no ha visto el modelo durante el entrenamiento. Estas pruebas y análisis se describen en el capítulo \ref{cap.test} \nameref{cap.test}. Si los resultados obtenidos de estos test son similares a los resultados obtenidos de los experimentos, significa que el modelo converge correctamente hacia una solución real. En caso de que los resultados obtenidos de los test sean significativamente peores que los obtenidos durante los experimentos, el modelo habrá sobreajustado sus pesos. 
 
 \section{Modelo neuronal de clasificación multiclase}
 Esta sección aborda los objetivos y procedimientos aplicados en el desarrollo del modelo de clasificación multiclase. Se describe el proceso llevado a cabo para la selección de hiperparámetros, junto con las diversas arquitecturas propuestas, con el propósito de identificar la configuración que maximiza el desempeño del modelo. Asimismo, se realiza una comparación exhaustiva entre las arquitecturas implementadas para determinar la opción más eficiente.
 
-Por último, se detallan las métricas empleadas para la evaluación y la elección de las combinaciones óptimas de hiperparámetros
+Por último, se detallan las métricas empleadas para la evaluación y la elección de las combinaciones óptimas de hiperparámetros,de forma análoga a como se hace en la sección \ref{sec.modBIN} \nameref{sec.modBIN}.
 
 
 \subsection{Matriz de confusión para clasificación multiclase} \label{sec.matriz-consfusion-multi}
@@ -374,7 +454,7 @@ Como se explica en la sección anterior \ref{sec.matriz-consfusion}\nameref{sec.
 
 Para un modelo con múltiples clases, como es el caso del modelo de que se desarrolla en este docuimento,se debe tener en cuenta que en un modelo neuronal con 9 salidas, la matriz tiene las siguientes interpretaciones:
 \begin{itemize}
-	\item Diagonal principal: Cada celda de la diagonal principal de la matriz representa cuántas veces la clase real fue correctamente predicha como clase. Este es el caso de las instancias que fueron correctamente clasificadas, y es lo más cercano a un "verdadero positivo" para esa clase específica. Sin embargo, en clasificación multiclase, se suele hablar de "aciertos" o "instancias correctamente clasificadas" para cada clase.
+	\item Diagonal principal: Cada celda de la diagonal principal de la matriz representa cuántas veces la clase real fue correctamente predicha como clase. Este es el caso de las instancias que fueron correctamente clasificadas, y es lo más cercano a un "verdadero positivo" para esa clase específica. Sin embargo, en clasificación multiclase, se suele hablar de aciertos o instancias correctamente clasificadas para cada clase.
 
 	\item Fuera de la diagonal: Las celdas fuera de la diagonal representan falsas clasificaciones. Es decir, representan cuántas veces una instancia de la clase real fue predicha incorrectamente como otra clase.
 

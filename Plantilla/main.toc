@@ -61,19 +61,19 @@
 \contentsline {subsection}{\numberline {6.4.1}Matriz de confusión para clasificación binaria}{57}{subsection.6.4.1}%
 \contentsline {subsection}{\numberline {6.4.2}Métricas útiles en clasificación binaria}{58}{subsection.6.4.2}%
 \contentsline {subsubsection}{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}{60}{section*.57}%
-\contentsline {subsection}{\numberline {6.4.3}Mejores hiperparámetros para cada arquitectura}{60}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.4.4}Comparación de las arquitecturas}{61}{subsection.6.4.4}%
-\contentsline {section}{\numberline {6.5}Modelo neuronal de clasificación multiclase}{61}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Matriz de confusión para clasificación multiclase}{61}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Metricas útiles en clasificación multiclase}{62}{subsection.6.5.2}%
-\contentsline {chapter}{\numberline {7}Test}{65}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{67}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{69}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{71}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{73}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{75}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{75}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{75}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{75}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{77}{appendix.Alph2}%
-\contentsline {chapter}{Bibliografía}{79}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {6.4.3}Mejores hiperparámetros para cada arquitectura}{61}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Comparación de las arquitecturas}{63}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Modelo neuronal de clasificación multiclase}{65}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Matriz de confusión para clasificación multiclase}{65}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Metricas útiles en clasificación multiclase}{65}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Test}{69}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{71}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{73}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{75}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{77}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Manuales}{79}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{79}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{79}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Manual de usuario}{79}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{81}{appendix.Alph2}%
+\contentsline {chapter}{Bibliografía}{83}{appendix.Alph2}%
