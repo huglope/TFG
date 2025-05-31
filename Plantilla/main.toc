@@ -47,23 +47,33 @@
 \contentsline {section}{\numberline {6.3}Modelo neuronal de clasificación binaria}{52}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Proposito del modelo de clasificación binaria}{52}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Diseño del modelo e hiperparámetros seleccionados}{53}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Arquitecturas desarrolladas}{53}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Matriz de confusión para clasificación binaria}{53}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}Métricas útiles en clasificación binaria}{54}{subsection.6.3.5}%
-\contentsline {subsubsection}{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}{56}{section*.47}%
-\contentsline {subsection}{\numberline {6.3.6}Mejores hiperparámetros para cada arquitectura}{56}{subsection.6.3.6}%
-\contentsline {subsection}{\numberline {6.3.7}Comparación de las arquitecturas}{56}{subsection.6.3.7}%
-\contentsline {section}{\numberline {6.4}Modelo neuronal de clasificación multiclase}{56}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Matriz de confusión para clasificación multiclase}{56}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Metricas útiles en clasificación multiclase}{57}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Test}{61}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{63}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{65}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{67}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{69}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{71}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{71}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{71}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{71}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{73}{appendix.Alph2}%
-\contentsline {chapter}{Bibliografía}{75}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {6.3.3}Arquitecturas desarrolladas}{54}{subsection.6.3.3}%
+\contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{55}{section*.47}%
+\contentsline {paragraph}{Ventajas (n/2)}{55}{section*.48}%
+\contentsline {paragraph}{Inconvenientes(n/2)}{55}{section*.49}%
+\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{56}{section*.50}%
+\contentsline {paragraph}{Ventajas (n)}{56}{section*.51}%
+\contentsline {paragraph}{Inconvenientes(n)}{56}{section*.52}%
+\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{56}{section*.53}%
+\contentsline {paragraph}{Ventajas (n*2)}{57}{section*.54}%
+\contentsline {paragraph}{Inconvenientes(n*2)}{57}{section*.55}%
+\contentsline {section}{\numberline {6.4}CREAR E INSERTAR IMAGENES DE LAS ARQUITECTURAS}{57}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Matriz de confusión para clasificación binaria}{57}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Métricas útiles en clasificación binaria}{58}{subsection.6.4.2}%
+\contentsline {subsubsection}{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}{60}{section*.57}%
+\contentsline {subsection}{\numberline {6.4.3}Mejores hiperparámetros para cada arquitectura}{60}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Comparación de las arquitecturas}{61}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Modelo neuronal de clasificación multiclase}{61}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Matriz de confusión para clasificación multiclase}{61}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Metricas útiles en clasificación multiclase}{62}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Test}{65}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{67}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{69}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{71}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{73}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Manuales}{75}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{75}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{75}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Manual de usuario}{75}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{77}{appendix.Alph2}%
+\contentsline {chapter}{Bibliografía}{79}{appendix.Alph2}%

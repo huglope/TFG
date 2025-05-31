@@ -109,7 +109,7 @@ Sin embargo, el algoritmo más recomendado para entrenar un modelo de clasificac
 Aunque ambos algoritmos, Adam y AdamW, tienen un rendimiento destacado en tareas de clasificación binaria, AdamW se ha demostrado más eficaz en la prevención de sobreajuste en redes neuronales complejas. Esto se debe a su tratamiento explícito del weight decay, lo que permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto. Sin embargo, Adam sigue siendo una opción popular y efectiva, especialmente cuando se trabaja con redes neuronales menos complejas o cuando se desea una mayor estabilidad y rapidez de convergencia. En general, AdamW es preferido en situaciones donde la regularización adecuada es crucial, pero Adam sigue siendo una opción sólida y eficiente. \cite{kingma2014adam}.
 
 
-\section{Parámetros e hiperparámetros}
+\section{Parámetros e hiperparámetros}\label{sec:paramhiper}
 En este apartado se explica que son los parámetros y los hiperparámetros de un modelo neurnal. También se listan y describen los principales hiperparámetros que se deben de tener en cuenta al entrenar un modelo neuronal. 
 
 Los parámetros de un modelo neuronal son los valores ajustables que el modelo aprende a partir de los datos durante el proceso de entrenamiento. Estos parámetros incluyen los pesos y sesgos de las conexiones entre las neuronas de las diferentes capas de la red neuronal. Los pesos determinan la importancia de las entradas de cada neurona, mientras que los sesgos permiten ajustar la salida de cada neurona antes de la activación. Como se explica en los apartado anteriores, el aprendizaje de estos parámetros se realiza mediante algoritmos de optimización como el gradiente descendente, los cuales buscan minimizar la función de pérdida. \cite{goodfellow2016deep}
@@ -133,32 +133,105 @@ Los hiperparámetros son los valores que se configuran antes del entrenamiento y
 
 
 \section{Modelo neuronal de clasificación binaria}
-En esta sección se describe el proposito y los procedimientos empleados para el desarrollo del modelo de clasificación binaria. Se detalla el proceso de selección de hiperparámetros, así como las distintas arquitecturas diseñadas con el fin de identificar la combinación que optimiza el rendimiento del modelo. Además, se presenta una comparación entre las arquitecturas evaluadas para determinar la más adecuada.
+En esta sección se describe tanto el proposito como los procedimientos empleados para el desarrollo del modelo de clasificación binaria. Se detalla el proceso de selección de hiperparámetros, así como las distintas arquitecturas diseñadas con el fin de identificar la combinación que optimiza el rendimiento del modelo. Además, se presenta una comparación entre las arquitecturas evaluadas para determinar la más adecuada.
 
 %Finalmente, se especifican las métricas utilizadas para la evaluación y selección de las mejores combinaciones de hiperparámetros.
 
 \subsection{Proposito del modelo de clasificación binaria}
-El modelo de clasificación binaria se ha diseñado con el obtejivo de identificar de manera precisa y eficiente si una instancia de tráfico de red corresponde a una actividad legítima o a un comportamiento malicioso. Su función principal consiste en distinguir entre accesos normales y posibles intentos de intrusión, permitiendo así la detección temprana de ataques y contribuyendo a la protección proactiva de los sistemas informáticos.
+El modelo de clasificación binaria se ha diseñado con el objetivo de identificar de manera precisa y eficiente, si una instancia de tráfico de red corresponde a una actividad legítima o a un comportamiento malicioso. Su función principal consiste en distinguir entre accesos normales y posibles intentos de intrusión, permitiendo así la detección temprana de ataques y contribuyendo a la protección proactiva de los sistemas informáticos.
 
-\subsection{Diseño del modelo e hiperparámetros seleccionados}
+\subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disBIN}
+En esta sección se detalla cual es el diseño del modelo de clasificación binaria escogido, así como los valore de los hiperparámetros utilizados durante los experimentos en el entrenamiento del modelo y sus correspondientes justificaciones.
 
-El modelo de clasificación binaria se ha diseñado para utilizar 
+Para diseñarla arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
+
+Como se puede observar en la figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La capa1 tiene un número de entradas igual al número de parámetros que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la capa2 recibe como entrada el número de salidas de la capa1 y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
+
+Debido a que la función de pérdida utilizada para entrenar el modelo es BCEWithLogitsLoss(), que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/modeloBIN.png}
+    \caption{Estructura del modelo de clasificación binaria diseñada.}
+    \label{fig:modBIN}
+\end{figure}
+
+Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada k-fold. La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 folds y después validar el modelo entrenado con el fold que no se ha utilizado para entrenarlo. Este proceso se repite para los n folds y en cada iteración es un fold distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada fold durante la validación. Para entrenar el modelo de clasificación binaria, se ha utilizado StratifiedKFold() que como su nombre indica, estratifica los folds para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada fold y no se creen folds con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos datasets cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar validación cruzada StratifiedKFold con 5 folds o divisiones.
+
+Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, Ase ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otro algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
 
 Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación binaria diseñado son: el batch size, la tasa de aprendizaje (learning rate) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación binaria, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
 
-	COMO SE HA COMENTADO EN LA SECCIÓN ANTERIOR...
+Como se comenta en la sección \ref{sec:paramhiper} \refname{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo binario con el objetivo de encontrar la mejor combinación de ellos.
 
-El batch size determina la cantidad de muestras procesadas antes de actualizar los parámetros del modelo. Su elección afecta tanto la estabilidad como la velocidad de convergencia del entrenamiento. Tamaños pequeños pueden introducir mayor variabilidad en las actualizaciones, favoreciendo la generalización, mientras que tamaños grandes tienden a producir estimaciones más estables, pero con mayor coste computacional.
-
-La tasa de aprendizaje controla la magnitud de los ajustes realizados en los parámetros del modelo durante cada paso del algoritmo de optimización. Un valor inadecuado puede impedir la convergencia o provocar una convergencia lenta e ineficiente. Por tanto, ajustar este hiperparámetro de forma adecuada es esencial para alcanzar un equilibrio entre velocidad de entrenamiento y precisión final del modelo.
-
-El número de épocas define cuántas veces el modelo recorre el conjunto completo de datos durante el entrenamiento. Un número insuficiente puede resultar en un modelo subentrenado, mientras que un número excesivo puede inducir sobreajuste. Establecer este valor de manera adecuada permite asegurar que el modelo haya aprendido suficientemente sin comprometer su capacidad de generalización.
+\begin{itemize}
+	\item \textbf{Batch size}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo binario, se han considerado que los valores [2000, 10000, 15000, 20000], eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
+	\item \textbf{Learning rate}: Siguiendo los avisos de la sección anterior en la que se explicaba el propósito y características de cada hiperparámetro, se ha optado por elegir unos valores con los que se espera que el modelo converja sin sobreajustarse ni se exceda en el tiempo de obtención de una solución válida. Los valores elegidos han sido [0.01, 0.001, 0.0001].
+	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor exccesivamente bajo en el númeero de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo. Teniendo en cuenta las consideraciones mencionadas, los valores que se han probado para este hiperparámetro son [10, 20, 30].
+\end{itemize}
 
 \subsection{Arquitecturas desarrolladas}
+En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación binaria. Como se comenta en la sección anterior \ref{sec:disBIN} \nameref{sec:disBIN}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
 
+Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de ventana oculta igual a:
+la mitad del número de parámetros que recibe el modelo, el mismo número que parámetros que tiene el modelo y doble del número de parámetros. Esto equivale a un tamaño de la capa de venta oculta de 25, 49 y 98 respectivamente. Estos valores se obtienen de forma dinámica después de tratar los datos del csv  utilizado para los entrenamientos y las pruebas de este proyecto.
 
+A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
+
+\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo.
+
+\paragraph{Ventajas (n/2)}
+\begin{itemize}
+	\item El riesgo de sobreajuste es menor, esto es especialmente importante si no se utiliza validación cruzada o el conjunto de datos de entrenamiento es pequeño o simple.
+	\item  Al tener un número de neuronas menor, tanto la función  de pérdida como el algoritmo de optimización, tardan menos en realizar los cálculos de los ajustes de los pesos y sesgos del modelo. Este menor coste de cálculo se refleja directamente en el tiempo necesario para entrenar el modelo y en el tiempo de respuesta del mismo una vez entrenado.
+	\item Un número bajo de neuronas es especialmente útil cuando los datos son linealmente separables o poco complejos.
+\end{itemize}
+\paragraph{Inconvenientes(n/2)}
+\begin{itemize}
+	\item Si las relaciones entre los datos son demasiado complejas, el moelo puede sufrir underfitting o subajuste.
+	\item Sensibilidad alta a la inicialización de los pesos, lo que puede provocar que un porcentaje alto de neuronas no se utilicen por tener pesos iguales o muy cercanos a 0. Esto implica que parte de la capacidad de la red quede inutilizada, empeorando el rendimiento incluso en problemas simples.
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
+
+\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo.
+
+\paragraph{Ventajas (n)}
+\begin{itemize}
+	\item La capacidad y la generalización están balanceadas, esto significa que el modelo evita tanto el sobreajuste como el subajuste.
+	\item Es capaz de modelar relaciones más complejas entre conjuntos de datos que arquitecturas con un número de neuronas menor, lo que es especialmente útil en problemas con relaciones no lineales` entre sus datos.
+	\item Son computacionalemnte más eficientes que arquitecturas con un número elevado de neuronas en la capa oculta. 
+\end{itemize}
+\paragraph{Inconvenientes(n)}
+\begin{itemize}
+	\item Puede resultar insuficiente en problemas demasiado complejos o con un gran volumen de datos.
+	\item Si el conjunto de datos utilizado para entrenar el modelo es pequeño puede sobreajustar.
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecera resultados significativamente positivos gracias a su equilibrio y balanceo.
+
+\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
+
+\paragraph{Ventajas (n*2)}
+\begin{itemize}
+	\item Alta capacidad de aprendizaje, lo que se traduce como la posibilidad de capturar patrones de datos muy complejos que no son lineales ni perceptibles en un análisis superficial del problema.
+	\item Cuanto mayor es el conjunto de datos mejor se ajustan los pesos.
+	\item Es menos propenso a subajustar que otras arquitecutras.
+\end{itemize}
+\paragraph{Inconvenientes(n*2)}
+\begin{itemize}
+	\item El riesgo de sobreajuste es elevado, memorizando de esta manera ruido en vez de aprender los patrones generalizables.
+	\item Nivel computacional muy elevado, lo que se refleja en el tiempo necesario de entrenamiento de esta arquitectura y en su posterior tiempo de respuesta.
+	\item Si el número de muestras del conjunto de datos es bajo tiende a sobreajustar.
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
+
+\section{CREAR E INSERTAR IMAGENES DE LAS ARQUITECTURAS}
 
 
 \subsection{Matriz de confusión para clasificación binaria} \label{sec.matriz-consfusion}
@@ -257,6 +330,34 @@ En el contexto de detección de intrusiones:
 
 
 \subsection{Mejores hiperparámetros para cada arquitectura}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs25.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas. }
+    \label{fig:BINhs25}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs49.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas. }
+    \label{fig:BINhs49}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{./img/modelo/BINhs98.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas. }
+    \label{fig:BINhs98}
+\end{figure}
+
+
+
+
 \subsection{Comparación de las arquitecturas}
 
 
