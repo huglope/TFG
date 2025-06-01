@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:55:58.031771353+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_195557-w4iabh4o/logs/debug-core.log"}
+{"time":"2025-06-01T19:55:58.3145869+02:00","level":"INFO","msg":"created new stream","id":"w4iabh4o"}
+{"time":"2025-06-01T19:55:58.314635219+02:00","level":"INFO","msg":"stream: started","id":"w4iabh4o"}
+{"time":"2025-06-01T19:55:58.314707834+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:55:58.314747116+02:00","level":"INFO","msg":"sender: started","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:55:58.314773475+02:00","level":"INFO","msg":"handler: started","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:55:58.541645419+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:56:49.810763947+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:56:49.810791127+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:56:50.813551939+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-w4iabh4o-confusion_matrix_table","runtime_seconds":1.001741185,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.090879346,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:56:51.749031649+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:56:51.941668695+02:00","level":"INFO","msg":"stream: closing","id":"w4iabh4o"}
+{"time":"2025-06-01T19:56:51.941684214+02:00","level":"INFO","msg":"handler: closed","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:56:51.941692048+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:56:51.941702297+02:00","level":"INFO","msg":"sender: closed","stream_id":"w4iabh4o"}
+{"time":"2025-06-01T19:56:51.941761376+02:00","level":"INFO","msg":"stream: closed","id":"w4iabh4o"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:49:16.342682443+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_194916-6ngohxzy/logs/debug-core.log"}
+{"time":"2025-06-01T19:49:16.602812406+02:00","level":"INFO","msg":"created new stream","id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:16.602849826+02:00","level":"INFO","msg":"stream: started","id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:16.602914337+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:16.602932081+02:00","level":"INFO","msg":"sender: started","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:16.602931269+02:00","level":"INFO","msg":"handler: started","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:16.860506563+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:49:46.297161056+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:49:46.297210399+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:49:47.299417295+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-6ngohxzy-confusion_matrix_table","runtime_seconds":1.004665114,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.347398277,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:49:48.365997693+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:49:48.554472572+02:00","level":"INFO","msg":"stream: closing","id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:48.554490496+02:00","level":"INFO","msg":"handler: closed","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:48.554509582+02:00","level":"INFO","msg":"sender: closed","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:48.554500986+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6ngohxzy"}
+{"time":"2025-06-01T19:49:48.554564255+02:00","level":"INFO","msg":"stream: closed","id":"6ngohxzy"}

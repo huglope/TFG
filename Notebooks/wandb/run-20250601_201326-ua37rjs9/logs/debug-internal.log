@@ -1,0 +1,16 @@
+{"time":"2025-06-01T20:13:26.460791062+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_201326-ua37rjs9/logs/debug-core.log"}
+{"time":"2025-06-01T20:13:26.83601253+02:00","level":"INFO","msg":"created new stream","id":"ua37rjs9"}
+{"time":"2025-06-01T20:13:26.836049951+02:00","level":"INFO","msg":"stream: started","id":"ua37rjs9"}
+{"time":"2025-06-01T20:13:26.836076981+02:00","level":"INFO","msg":"sender: started","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:13:26.836073966+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:13:26.83610287+02:00","level":"INFO","msg":"handler: started","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:13:27.075343977+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:14:11.351095996+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:14:11.351122897+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:14:12.35313206+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ua37rjs9-confusion_matrix_table","runtime_seconds":1.004345476,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.004653189,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T20:14:13.919524655+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:14:14.239143543+02:00","level":"INFO","msg":"stream: closing","id":"ua37rjs9"}
+{"time":"2025-06-01T20:14:14.239164833+02:00","level":"INFO","msg":"handler: closed","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:14:14.239176685+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:14:14.23919+02:00","level":"INFO","msg":"sender: closed","stream_id":"ua37rjs9"}
+{"time":"2025-06-01T20:14:14.239256745+02:00","level":"INFO","msg":"stream: closed","id":"ua37rjs9"}

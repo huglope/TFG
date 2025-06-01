@@ -1,0 +1,16 @@
+{"time":"2025-06-01T20:12:10.691755668+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_201210-phpbrojc/logs/debug-core.log"}
+{"time":"2025-06-01T20:12:11.109076469+02:00","level":"INFO","msg":"created new stream","id":"phpbrojc"}
+{"time":"2025-06-01T20:12:11.109103109+02:00","level":"INFO","msg":"stream: started","id":"phpbrojc"}
+{"time":"2025-06-01T20:12:11.109139217+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:11.109176937+02:00","level":"INFO","msg":"handler: started","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:11.109156178+02:00","level":"INFO","msg":"sender: started","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:11.336054754+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:12:44.789982838+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:12:44.790035336+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:12:45.792026853+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-phpbrojc-confusion_matrix_table","runtime_seconds":1.004363945}],"total_operations":1}}
+{"time":"2025-06-01T20:12:46.572637996+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:12:46.860899811+02:00","level":"INFO","msg":"stream: closing","id":"phpbrojc"}
+{"time":"2025-06-01T20:12:46.860926972+02:00","level":"INFO","msg":"handler: closed","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:46.860941219+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:46.860967418+02:00","level":"INFO","msg":"sender: closed","stream_id":"phpbrojc"}
+{"time":"2025-06-01T20:12:46.861012202+02:00","level":"INFO","msg":"stream: closed","id":"phpbrojc"}

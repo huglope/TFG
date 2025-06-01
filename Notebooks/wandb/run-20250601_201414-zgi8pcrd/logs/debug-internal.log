@@ -1,0 +1,17 @@
+{"time":"2025-06-01T20:14:14.27977867+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_201414-zgi8pcrd/logs/debug-core.log"}
+{"time":"2025-06-01T20:14:14.647402109+02:00","level":"INFO","msg":"created new stream","id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:14.647430823+02:00","level":"INFO","msg":"stream: started","id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:14.647463424+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:14.647479183+02:00","level":"INFO","msg":"sender: started","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:14.64749324+02:00","level":"INFO","msg":"handler: started","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:15.010146596+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:14:54.792063184+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:14:54.792104001+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:14:55.794815472+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zgi8pcrd-confusion_matrix_table","runtime_seconds":1.00517887,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.19915946,"progress":"1.9KB/1.9KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.439819333,"progress":"2.0KB/2.0KB"}],"total_operations":2}}
+{"time":"2025-06-01T20:14:56.51820619+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:14:56.827333092+02:00","level":"INFO","msg":"stream: closing","id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:56.827361706+02:00","level":"INFO","msg":"handler: closed","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:56.827374029+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:56.827419805+02:00","level":"INFO","msg":"sender: closed","stream_id":"zgi8pcrd"}
+{"time":"2025-06-01T20:14:56.827428341+02:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: api: failed sending: POST https://api.wandb.ai/graphql giving up after 1 attempt(s): context canceled"}
+{"time":"2025-06-01T20:14:56.827487842+02:00","level":"INFO","msg":"stream: closed","id":"zgi8pcrd"}

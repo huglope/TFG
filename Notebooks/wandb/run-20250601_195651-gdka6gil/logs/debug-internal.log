@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:56:51.982889547+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_195651-gdka6gil/logs/debug-core.log"}
+{"time":"2025-06-01T19:56:52.251373672+02:00","level":"INFO","msg":"created new stream","id":"gdka6gil"}
+{"time":"2025-06-01T19:56:52.251448881+02:00","level":"INFO","msg":"stream: started","id":"gdka6gil"}
+{"time":"2025-06-01T19:56:52.251488314+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:56:52.251643602+02:00","level":"INFO","msg":"sender: started","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:56:52.251645715+02:00","level":"INFO","msg":"handler: started","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:56:52.490934553+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:57:43.832481882+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:57:43.832515334+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:57:44.834752962+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gdka6gil-confusion_matrix_table","runtime_seconds":1.005024381,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.407823187,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:57:45.868813718+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:57:46.075785917+02:00","level":"INFO","msg":"stream: closing","id":"gdka6gil"}
+{"time":"2025-06-01T19:57:46.075798941+02:00","level":"INFO","msg":"handler: closed","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:57:46.075807386+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:57:46.07582565+02:00","level":"INFO","msg":"sender: closed","stream_id":"gdka6gil"}
+{"time":"2025-06-01T19:57:46.075868389+02:00","level":"INFO","msg":"stream: closed","id":"gdka6gil"}

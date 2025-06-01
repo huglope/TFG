@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:41:04.58962841+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_194104-zpvzvu5t/logs/debug-core.log"}
+{"time":"2025-06-01T19:41:04.890000051+02:00","level":"INFO","msg":"created new stream","id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:04.890029045+02:00","level":"INFO","msg":"stream: started","id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:04.890032131+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:04.89004806+02:00","level":"INFO","msg":"sender: started","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:04.890079439+02:00","level":"INFO","msg":"handler: started","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:05.138083134+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:41:43.301258481+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:41:43.301302684+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:41:44.30379968+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-zpvzvu5t-confusion_matrix_table","runtime_seconds":1.004898422,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.425141856,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:41:45.385734179+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:41:45.587042548+02:00","level":"INFO","msg":"stream: closing","id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:45.587066934+02:00","level":"INFO","msg":"handler: closed","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:45.587078025+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:45.587104324+02:00","level":"INFO","msg":"sender: closed","stream_id":"zpvzvu5t"}
+{"time":"2025-06-01T19:41:45.58717171+02:00","level":"INFO","msg":"stream: closed","id":"zpvzvu5t"}

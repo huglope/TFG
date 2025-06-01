@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:30:50.784745356+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_193050-l53jhn5p/logs/debug-core.log"}
+{"time":"2025-06-01T19:30:51.073101289+02:00","level":"INFO","msg":"created new stream","id":"l53jhn5p"}
+{"time":"2025-06-01T19:30:51.073143369+02:00","level":"INFO","msg":"stream: started","id":"l53jhn5p"}
+{"time":"2025-06-01T19:30:51.073167735+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:30:51.073185248+02:00","level":"INFO","msg":"sender: started","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:30:51.073221106+02:00","level":"INFO","msg":"handler: started","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:30:51.389098665+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:31:23.365730103+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:31:23.365773746+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:31:24.367782565+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-l53jhn5p-confusion_matrix_table","runtime_seconds":0.996428176,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.391238265,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:31:25.461001098+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:31:25.690813266+02:00","level":"INFO","msg":"stream: closing","id":"l53jhn5p"}
+{"time":"2025-06-01T19:31:25.690831049+02:00","level":"INFO","msg":"handler: closed","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:31:25.690841399+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:31:25.690853893+02:00","level":"INFO","msg":"sender: closed","stream_id":"l53jhn5p"}
+{"time":"2025-06-01T19:31:25.690905891+02:00","level":"INFO","msg":"stream: closed","id":"l53jhn5p"}

@@ -21,10 +21,11 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{63}{figure.caption.61}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{66}{figure.caption.62}%
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{68}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}}{77}{figure.caption.78}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}}{78}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}}{78}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{79}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{77}{figure.caption.78}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{78}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{78}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{79}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{81}{figure.caption.82}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

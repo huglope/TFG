@@ -1,0 +1,16 @@
+{"time":"2025-06-01T19:55:01.036209211+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_195501-n8rbiurz/logs/debug-core.log"}
+{"time":"2025-06-01T19:55:01.306659416+02:00","level":"INFO","msg":"created new stream","id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:01.306708697+02:00","level":"INFO","msg":"stream: started","id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:01.306745214+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:01.306815544+02:00","level":"INFO","msg":"sender: started","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:01.306853864+02:00","level":"INFO","msg":"handler: started","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:01.515696257+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T19:55:02.214747768+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T19:55:02.214790216+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T19:55:03.181670489+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-n8rbiurz-avg_confusion_matrix","runtime_seconds":1.007412342,"subtasks":[{"desc":"avg_confusion_matrix.table.json","runtime_seconds":0.090348484,"progress":"1.7KB/1.7KB"}]}],"total_operations":1}}
+{"time":"2025-06-01T19:55:04.111032157+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T19:55:04.328365463+02:00","level":"INFO","msg":"stream: closing","id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:04.328400117+02:00","level":"INFO","msg":"handler: closed","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:04.328417739+02:00","level":"INFO","msg":"sender: closed","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:04.328413912+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"n8rbiurz"}
+{"time":"2025-06-01T19:55:04.328505421+02:00","level":"INFO","msg":"stream: closed","id":"n8rbiurz"}

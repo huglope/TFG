@@ -1,0 +1,16 @@
+{"time":"2025-06-01T20:10:58.749730077+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_201058-ctih1cbp/logs/debug-core.log"}
+{"time":"2025-06-01T20:10:59.021657417+02:00","level":"INFO","msg":"created new stream","id":"ctih1cbp"}
+{"time":"2025-06-01T20:10:59.021683936+02:00","level":"INFO","msg":"stream: started","id":"ctih1cbp"}
+{"time":"2025-06-01T20:10:59.021698634+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:10:59.021716678+02:00","level":"INFO","msg":"handler: started","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:10:59.021729922+02:00","level":"INFO","msg":"sender: started","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:10:59.254512485+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:11:32.648450099+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:11:32.648477631+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:11:33.650163319+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ctih1cbp-confusion_matrix_table","runtime_seconds":1.004468145}],"total_operations":1}}
+{"time":"2025-06-01T20:11:34.795846596+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T20:11:35.016885012+02:00","level":"INFO","msg":"stream: closing","id":"ctih1cbp"}
+{"time":"2025-06-01T20:11:35.016901102+02:00","level":"INFO","msg":"handler: closed","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:11:35.016909779+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:11:35.016926901+02:00","level":"INFO","msg":"sender: closed","stream_id":"ctih1cbp"}
+{"time":"2025-06-01T20:11:35.016970823+02:00","level":"INFO","msg":"stream: closed","id":"ctih1cbp"}

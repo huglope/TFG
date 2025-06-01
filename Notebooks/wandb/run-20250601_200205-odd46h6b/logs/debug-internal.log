@@ -1,0 +1,16 @@
+{"time":"2025-06-01T20:02:05.737240415+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250601_200205-odd46h6b/logs/debug-core.log"}
+{"time":"2025-06-01T20:02:06.026385629+02:00","level":"INFO","msg":"created new stream","id":"odd46h6b"}
+{"time":"2025-06-01T20:02:06.026474164+02:00","level":"INFO","msg":"stream: started","id":"odd46h6b"}
+{"time":"2025-06-01T20:02:06.026515371+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"odd46h6b"}
+{"time":"2025-06-01T20:02:06.026558131+02:00","level":"INFO","msg":"handler: started","stream_id":"odd46h6b"}
+{"time":"2025-06-01T20:02:06.026591874+02:00","level":"INFO","msg":"sender: started","stream_id":"odd46h6b"}
+{"time":"2025-06-01T20:02:06.218516155+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T20:02:43.583997182+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run odd46h6b was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-06-01T20:02:44.268569475+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T20:02:44.268625029+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T20:02:45.27099032+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":1.824248141,"error_status":"retrying HTTP 409: run odd46h6b was previously created and deleted; try a new run name"}],"total_operations":1}}
+{"time":"2025-06-01T20:02:46.223707556+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run odd46h6b was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-06-01T20:02:50.771818956+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run odd46h6b was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-06-01T20:03:00.653784333+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run odd46h6b was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-06-01T20:03:06.950495766+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/TFG_Hugo/PRUEBA_FINALES_FOLDS/odd46h6b/file_stream"}
+{"time":"2025-06-01T20:03:06.950569914+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/TFG_Hugo/PRUEBA_FINALES_FOLDS/odd46h6b/file_stream: {\"error\":\"run PRUEBA_FINALES_FOLDS/odd46h6b not found while streaming file\"}"}
