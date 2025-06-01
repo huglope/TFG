@@ -143,7 +143,7 @@ El modelo de clasificación binaria se ha diseñado con el objetivo de identific
 \subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disBIN}
 En esta sección se detalla cual es el diseño del modelo de clasificación binaria escogido, así como los valore de los hiperparámetros utilizados durante los experimentos en el entrenamiento del modelo y sus correspondientes justificaciones.
 
-Para diseñarla arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
+Para diseñar la arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
 
 Como se puede observar en la figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La capa1 tiene un número de entradas igual al número de parámetros que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la capa2 recibe como entrada el número de salidas de la capa1 y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
 
@@ -159,7 +159,7 @@ Debido a que la función de pérdida utilizada para entrenar el modelo es BCEWit
 
 Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada k-fold. La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 folds y después validar el modelo entrenado con el fold que no se ha utilizado para entrenarlo. Este proceso se repite para los n folds y en cada iteración es un fold distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada fold durante la validación. Para entrenar el modelo de clasificación binaria, se ha utilizado StratifiedKFold() que como su nombre indica, estratifica los folds para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada fold y no se creen folds con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos datasets cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar validación cruzada StratifiedKFold con 5 folds o divisiones.
 
-Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, Ase ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otro algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
+Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
 
 Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación binaria diseñado son: el batch size, la tasa de aprendizaje (learning rate) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación binaria, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
 
@@ -168,7 +168,7 @@ Como se comenta en la sección \ref{sec:paramhiper} \refname{sec:paramhiper}, lo
 \begin{itemize}
 	\item \textbf{Batch size}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo binario, se han considerado que los valores [2000, 10000, 15000, 20000], eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
 	\item \textbf{Learning rate}: Siguiendo los avisos de la sección anterior en la que se explicaba el propósito y características de cada hiperparámetro, se ha optado por elegir unos valores con los que se espera que el modelo converja sin sobreajustarse ni se exceda en el tiempo de obtención de una solución válida. Los valores elegidos han sido [0.01, 0.001, 0.0001].
-	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor exccesivamente bajo en el númeero de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo. Teniendo en cuenta las consideraciones mencionadas, los valores que se han probado para este hiperparámetro son [10, 20, 30].
+	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor excesivamente bajo en el número de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo. Teniendo en cuenta las consideraciones mencionadas, los valores que se han probado para este hiperparámetro son [10, 20, 30].
 \end{itemize}
 
 \subsection{Arquitecturas desarrolladas}
@@ -229,7 +229,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item Si el número de muestras del conjunto de datos es bajo tiende a sobreajustar.
 \end{itemize}
 
-Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual al doble de los parámetros del modelo, aparentemente, esta arquitectura obtendrá mejores resultados si los parámetros no tiene relaciones lineales. En cambio, si los datos presentan relaciones lineales tiene más probabilidades de sobreajustar los pesso del modelo, lo que implicaría que le modelo no ha sido capaz de converger a una solución genérica.
 
 \section{CREAR E INSERTAR IMAGENES DE LAS ARQUITECTURAS}
 
@@ -349,7 +349,7 @@ En el contexto de detección de intrusiones:
 \subsection{Mejores hiperparámetros para cada arquitectura}
 En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disBIN} \nameref{sec:disBIN}.
 
-Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-bin} \nameref{sec.metricas-bin}. El objetivo del modelo es detectar intrusiones en redes informáticas, por este motivo, los falsos negativos, es decir cuando se produce un ataque o intrusión y no se detecta, pueden tener consecuencias muy catastróficas para el sistema. Teniendo esto en cuenta, la métrica más importante es recall, puesto que es la que se ve más afe4ctada por la presencia de falsos negativos.
+Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-bin} \nameref{sec.metricas-bin}. El objetivo del modelo es detectar intrusiones en redes informáticas, por este motivo, los falsos negativos, es decir cuando se produce un ataque o intrusión y no se detecta, pueden tener consecuencias muy catastróficas para el sistema. Teniendo esto en cuenta, la métrica más importante es recall, puesto que es la que se ve más afectada por la presencia de falsos negativos.
 
 Otras métricas relevantes que se muestran en las siguientes figuras son:
 \begin{itemize}
@@ -445,6 +445,156 @@ Para conocer el verdadero desempeño del modelo y determinar si ha sufirdo sobre
 Esta sección aborda los objetivos y procedimientos aplicados en el desarrollo del modelo de clasificación multiclase. Se describe el proceso llevado a cabo para la selección de hiperparámetros, junto con las diversas arquitecturas propuestas, con el propósito de identificar la configuración que maximiza el desempeño del modelo. Asimismo, se realiza una comparación exhaustiva entre las arquitecturas implementadas para determinar la opción más eficiente.
 
 Por último, se detallan las métricas empleadas para la evaluación y la elección de las combinaciones óptimas de hiperparámetros,de forma análoga a como se hace en la sección \ref{sec.modBIN} \nameref{sec.modBIN}.
+
+\subsection{Proposito del modelo de clasificación multiclase}
+
+El modelo de clasificación multiclase se ha diseñado con el objetivo de identificar de manera precisa y eficiente, a que tipo de ataque corresponde una conexión maliciosa que ya se ha clasificado previamente como intrusiva. Su función principal consiste en distinguir entre 9 clases diferentes de ataques que se detallan en la sección \ref{sec.tipo-ataques} \nameref{sec.tipo-ataques}, contribuyendo a la protección proactiva de los sistemas informáticos.
+
+\subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disMUL}
+En esta sección se detalla cual es el diseño del modelo de clasificación multiclase escogido, así como los valore de los hiperparámetros utilizados durante los experimentos en el entrenamiento del modelo y sus correspondientes justificaciones.
+
+Para diseñar la arquitectura del modelo, se ha desarrollado la clase ModeloMulticlase. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
+
+Como se puede observar en la figura \ref{fig:modMUL}, el modelo está compuesto por dos capas. La capa1 tiene un número de entradas igual al número de parámetros que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Una vez que los datos pasan por la capa1, se utiliza la técnica Batch Normalization. 
+
+Batch Normalization es una técnica que normaliza las activaciones de una capa para que tengan media cercana a 0 y varianza cercana a 1, calculadas a partir del batch actual del entrenamiento del modelo. Aplicar BatchNorm tras la primera capa en un modelo de clasificación multiclase ayuda a estabilizar, acelerar y regularizar el entrenamiento, mejorando la capacidad del modelo para aprender buenas representaciones desde las primeras fases del entrenamiento.
+
+Las redes neuronales necesitan funciones no lineales para aprender relaciones complejas entre las entradas y salidas, por este motivo, se aplica la función de activación Rectified Linear Unit (ReLU) depués del batch normalization. Sin activaciones como ReLU, toda la red sería equivalente a una simple transformación lineal, sin capacidad de aprendizaje profundo. Que el modelo presente una alta capacidad de aprendizaje profundo es esencial para los modelos de clasifiación multiclase cuya complejidad es mucho mayor que la de los modelos de clasificación binaria.
+
+Para finalizar, la capa2 recibe como entrada el número de salidas de la capa1 y al tratarse de la capa final de un modelo de clasificación multiclase, esta capa tendrá una salda por cada clase que es capaz de identificar el modelo.
+
+Por lo general, en clasificación multiclase, la salida del modelo suele ser un vector de logits (valores sin escalar), uno por cada clase. La función de activación Softmax transforma esos logits en probabilidades, es decir, cada valor representa lo probable que es que los datos que han entrado al modelo, pertenezca a esa clase. Debido a que durante el entrenamiento, se utiliza el frameworks PyTorch, no es necesario aplicar softmax a la salida del modelo cuando se utiliza la función de pérdida CrossEntropyLoss La razón es que función CrossEntropyLoss, ya incluye softmax internamente por razones de eficiencia y estabilidad numérica.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/modeloMUL.png}
+    \caption{Estructura del modelo de clasificación multiclase diseñada.}
+    \label{fig:modMUL}
+\end{figure}
+
+Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada k-fold. Como se explica en la sección anterior \ref{sec:disBIN}, la validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 folds y después validar el modelo entrenado con el fold que no se ha utilizado para entrenarlo. Este proceso se repite para los n folds y en cada iteración es un fold distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada fold durante la validación. Para entrenar el modelo de clasificación multiclase, se ha utilizado StratifiedKFold() que como su nombre indica, estratifica los folds para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada fold y no se creen folds con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos datasets cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Concretamente, tras el tratamiento de los datos, existen 108 veces más muestras de la clase con mayor presencia en el dataset, que de la clase con menor presencias. Para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar validación cruzada StratifiedKFold con 5 folds o divisiones.
+
+Como algoritmo de optimización para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización.
+
+Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación multiclase diseñado son: el batch size, la tasa de aprendizaje (learning rate) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación multiclase, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
+
+Como se comenta en la sección \ref{sec:paramhiper} \refname{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo multiclase con el objetivo de encontrar la mejor combinación de ellos.
+
+\begin{itemize}
+	\item \textbf{Batch size}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo de clasificación multiclase, se han considerado que los valores [32, 64, 128, 256, 512], eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
+	\item \textbf{Learning rate}: Siguiendo los avisos de la sección anterior en la que se explicaba el propósito y características de cada hiperparámetro, se ha optado por elegir unos valores con los que se espera que el modelo converja sin sobreajustarse ni se exceda en el tiempo de obtención de una solución válida. Los valores elegidos han sido [0.01, 0.001, 0.0001, 0.00001].
+	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor excesivamente bajo en el número de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo. Teniendo en cuenta las consideraciones mencionadas, los valores que se han probado para este hiperparámetro son [30, 50, 80, 100].
+\end{itemize}
+
+La convergencia de los modelos de clasifcación multiclase es mucho más complicada que en los modelos de clasificación binaria. Esto se debe a que en los modelos de clasificación binaria hay 4 posibles respuestas (VP, VN, FP, FN), mientras que en el  modelo de clasificación multiclase que se propone en este proyecto hay 9 clases por 9 posibilidades de respuesta por clase, lo que suma un total de 81 posibles respuestas. Para encontrar una configuración de los hiperparámetros que se ajuste mejor a la complejidad de este problema, se han probado más combinaciones de valores de los hiperparámetros en el modelo de clasificación multiclase que en el modelo de clasificación binaria. El aumento del número de experimentos se ha realizado teniendo en cuenta que el número de muestras de conexciones maliciosas es mucho menor que el número total de conexiones que se ha utilizado para entrenar el modelo de clasifcación binaria. Esto se traduce en que el tiempo de ejecución de los experimentos de ambos modelos ha sido similar compensando el número de muestras con el número de experimentos.
+
+\subsection{Diseños del modelo de clasificación multiclase descartados}
+Debido a la complejidad del problema al resolver, se probaron otros diseños que finalmente fueron descartados por no obtner los resultados esperados. A continuación, se detalla cuales fueron estos diseños descartados, la motivación que llevo a probarlo y cuales fueron sus resultados.
+
+Durante las pruebas realizadas antes de ejecutar los experimentos para encontrar la combinación de hiperparámetros que mejor convergían para este modelo, se detectó que el desbalanceo de las clases afectaba de manera significativa a los resultados que se obtenían. Con el objetivo de reducir el impacto del desbalanceo en el entrenamiento del modelo, se optó por probar diferentes combinaciones que se muestran en la figura \ref{fig:MULpruebas}, junto con los resultados que obtuvieron estas combinaciones de funciones en la métrica F1 weighted.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{./img/modelo/MULPRUEBAS.pdf}
+    \caption{Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}
+    \label{fig:MULpruebas}
+\end{figure}
+
+SMOTE (Synthetic Minority Over-sampling Technique) es una técnica de sobremuestreo utilizada para abordar el problema del desbalance de clases en conjuntos de datos de clasificación. Su funcionamiento se basa en generar ejemplos sintéticos de las clases minoritarias, en lugar de replicar instancias existentes. En tareas de clasificación multiclase, SMOTE puede aplicarse a cada clase minoritaria de forma independiente, generando ejemplos sintéticos para aquellas clases con menor representación. La aplicación de esta técnica en modelos de clasificación multiclase muy desbalanceados:
+
+\begin{itemize}
+	\item Contribuye a reducir el sesgo del modelo hacia las clases mayoritarias.
+
+	\item Mejora el rendimiento en métricas como recall y F1-score macro, al equilibrar el conjunto de entrenamiento.
+
+	\item Favorece una mejor generalización en la predicción de clases minoritarias, al ampliar su representación en el espacio de características.
+\end{itemize}
+
+Sin embargo, tras realizar una serie de pruebas, el modelo diseñado que implementaba  SMOTE fue el que peores resultados dió. Por eso motivo, se combinó con la función Batch Normalization explicada en la sección \ref{sec:disMUL} \nameref{sec:disMUL}.
+
+Los resultados de Batch Normalization (bn1) y SMOTE fueron algo mejores que los valores obtenidos de las pruebas realizadas solo con SMOTE. Como se noto una mejora en el desempeño del modelo al utilizar bn1, pero los resultados obtenidos seguían sin ser los esperados,se probó con combinaciones de diseño utilizando bn1 con otras técnicas.
+
+Dropout es una técnica de regularización utilizada en redes neuronales para reducir el sobreajuste durante el entrenamiento. La función Dropout(), implementada en bibliotecas como TensorFlow y PyTorch, actúa introduciendo aleatoriamente una probabilidad de desactivación sobre las neuronas de una capa determinada. Durante cada iteración de entrenamiento, un subconjunto aleatorio de neuronas es temporalmente desactivado (es decir, sus salidas se anulan) con una probabilidad definida, denominada tasa de dropout (dropout rate), sin afectar la arquitectura del modelo ni sus pesos de forma permanente. Los principales beneficios de utilizar dropout en un modelo de clasificación multicase con unos datos de entrenamiento muy desbalanceados son:
+
+\begin{itemize}
+	\item Reduce el sobreajuste hacia las clases mayoritarias, evitando que el modelo memorice solo los patrones frecuentes y mejorando su comportamiento general.
+
+	\item Fomenta la generalización en clases minoritarias, al impedir dependencias excesivas entre neuronas y promover representaciones más robustas y diversas.
+
+	\item Mejora métricas sensibles al desbalance como el weighted F1-score o macro recall, al favorecer que el modelo aprenda también de clases con baja representación.
+\end{itemize}
+
+Con la implementación del dropout, los resultados mejoraron significativamente. Sin embargo, el diseño del modelo que solo utilizaba bn1 obtuvo mejores resultados de media que aquel que utilizaba bn1 y dropout. Por este motivo, el diseño utilizado en los experimentos solo implementa Batch Normalization. Además, tras realizar pruebas con valores altos para los hiperparámetros, se obtuvieron unos resultados con una convergencia mayor que la de las pruebas realizadas con valores menores, lo que incentivó a aumentar los valores de los hiperparámetros probados, tal y como se puede observar en la sección anterior.
+
+
+
+\subsection{Arquitecturas desarrolladas}
+En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación multiclase. Como se comenta en la sección anterior \ref{sec:disMUL} \nameref{sec:disMUL}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
+
+Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación multiclase con un tamaño de ventana oculta igual a:
+la mitad del número de parámetros que recibe el modelo, el mismo número que parámetros que tiene el modelo y doble del número de parámetros. Esto equivale a un tamaño de la capa de venta oculta de 25, 49 y 98 respectivamente, de forma análoga a como sucede con las arquitecturas del modelod de clasificación binaria. Estos valores se obtienen de forma dinámica después de tratar los datos del csv utilizado para los entrenamientos y las pruebas de este proyecto.
+
+A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
+
+\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIMUL25}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo.
+
+\paragraph{Ventajas (n/2)}
+\begin{itemize}
+	\item Un número reducido de neuronas en la capa oculta limita la capacidad del modelo para memorizar patrones dominantes, lo cual puede ayudar a mitigar el sobreajuste hacia las clases mayoritarias del conjunto de entrenamiento.
+	\item Al reducirse la complejidad del modelo, se disminuye el tiempo necesario para calcular los gradientes durante el entrenamiento y, en consecuencia, también el tiempo de respuesta durante la inferencia.
+	\item En presencia de clases desbalanceadas, un modelo menos expresivo puede favorecer una mayor estabilidad en el aprendizaje, evitando que la red se especialice únicamente en las clases más frecuentes.
+
+\end{itemize}
+\paragraph{Inconvenientes(n/2)}
+\begin{itemize}
+	\item Un número bajo de neuronas puede limitar la capacidad del modelo para aprender representaciones suficientes de las clases minoritarias, especialmente si estas presentan patrones complejos o poco diferenciados.
+	\item La capacidad reducida del modelo puede dificultar la separación entre clases en problemas multiclase, afectando negativamente al rendimiento en métricas sensibles al desbalance como el macro recall o el macro F1-score.
+	\item Si el número de parámetros de entrada es muy alto, una capa oculta con solo la mitad de neuronas podría actuar como un cuello de botella, perdiéndose información útil para distinguir correctamente entre clases poco representadas.
+
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables. Debido al alto desbalanceo entre clases, se espera que esta arquitectura proporcione resultados peores que su equivalente del modelo de clasificación binaria.
+
+\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIMUL49}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo.
+
+\paragraph{Ventajas (n)}
+\begin{itemize}
+	\item Un número de neuronas igual al de parámetros de entrada proporciona al modelo una capacidad representativa suficiente para capturar patrones relevantes tanto en clases frecuentes como en las minoritarias.
+	\item Esta configuración ofrece un equilibrio razonable entre complejidad y eficiencia computacional, manteniendo un coste de entrenamiento y de inferencia moderado sin comprometer la expresividad del modelo.
+	\item Permite al modelo adaptar sus pesos de manera más flexible, facilitando el aprendizaje de límites de decisión más precisos entre clases desbalanceadas sin riesgo inmediato de sobreajuste.
+
+\end{itemize}
+\paragraph{Inconvenientes(n)}
+\begin{itemize}
+	\item Aun sin ser excesivo, este tamaño puede generar cierta sobreadaptación a las clases mayoritarias si no se aplican mecanismos de regularización adecuados.
+	\item En conjuntos de datos muy desbalanceados, esta configuración puede no ser suficiente para compensar la escasa representación de clases minoritarias, especialmente si estas requieren una mayor capacidad para ser correctamente diferenciadas.
+	\item Si las características de entrada tienen una alta correlación entre sí, mantener el mismo número de neuronas puede introducir redundancia, afectando la eficiencia del aprendizaje y aumentando el riesgo de converger a soluciones deficientes.
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecera resultados significativamente positivos gracias a su equilibrio. Aun que, si las clases que tienen un número inferior de muestras, tienen relaciones complejas entre sus datos, esta arquitectura puede ser insuficiente para obtener un modelo capaz de distinguir entre algunas de las clases más minoritarias.
+
+\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIMUL98}
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
+
+\paragraph{Ventajas (n*2)}
+\begin{itemize}
+	\item Una capa oculta más amplia incrementa la capacidad del modelo para aprender representaciones complejas, lo que puede ser especialmente útil para distinguir correctamente clases minoritarias con patrones sutiles o poco definidos.
+	\item Esta configuración ofrece una mayor flexibilidad al modelo para aproximar funciones no lineales, favoreciendo una mejor separación entre clases en escenarios multiclase con alta variabilidad entre categorías.
+	\item Al disponer de más neuronas, el modelo tiene mayor margen para explorar combinaciones de características relevantes durante el entrenamiento, lo cual puede traducirse en una mejora de métricas como macro F1 o recall por clase.
+\end{itemize}
+
+\paragraph{Inconvenientes(n*2)}
+\begin{itemize}
+	\item El aumento en el número de parámetros incrementa el riesgo de sobreajuste, especialmente en presencia de clases mayoritarias dominantes o cuando el conjunto de entrenamiento es reducido
+	\item Un modelo con mayor complejidad requiere más recursos computacionales y tiempos de entrenamiento más prolongados, lo que puede dificultar su implementación en entornos con restricciones de capacidad o temporales.
+	\item Si no se utilizan mecanismos de control adecuados (como regularización o balanceo de clases), es posible que el modelo aprenda a ajustar principalmente las clases frecuentes, sin mejorar sustancialmente el rendimiento en las minoritarias.
+
+\end{itemize}
+
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual al doble de los parámetros del modelo, aparentemente, esta arqutectura será la que mejores resultados obtenga en la detección de clases minoritarias al tener la capacidad de aprender representaciones más complejas. Sin embargo, esta arquitectura es más propensa a sobreajustes debido la presencia de las clases mayoritarias.
 
 
 \subsection{Matriz de confusión para clasificación multiclase} \label{sec.matriz-consfusion-multi}
@@ -587,3 +737,92 @@ El enfoque One-vs-One calcula el AUC para cada par de clases, evaluando la capac
 El enfoque One-vs-Rest evalúa, para cada clase, la capacidad del modelo de distinguir dicha clase frente a todas las demás combinadas. Esta métrica permite examinar el rendimiento del modelo desde la perspectiva de cada clase individual y es adecuada para diagnósticos detallados en entornos multiclase.
 
 \end{itemize}
+
+
+\subsection{Mejores hiperparámetros para cada arquitectura}
+En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disMUL} \nameref{sec:disMUL}.
+
+Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-mul} \nameref{sec.metricas-mul}. El objetivo de este modelo es clasificar intrusiones en redes, ya detectadas en diferentes tipos específicos de ataque enumerados en la sección \ref{sec.tipo-ataques} para facilitar una respuesta adecuada. Aunque una clasificación incorrecta puede afectar la eficiencia de la mitigación, las consecuencias no son tan catastróficas como en el caso de falso negativo del modelo de clasificación binaria. Sin embargo, la precisión en la identificación del tipo de ataque sigue siendo clave para optimizar los recursos y la estrategia de defensa.
+Teniendo esto en cuenta, la métrica más importante es Weifhted F1 socre, ya que como se comenta en el apartado anterior, refleja el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados con datasets desbalanceados.
+
+Otras métricas relevantes que se muestran en las siguientes figuras son:
+\begin{itemize}
+	\item \textbf{ Macro F1 Score}: Indica un buen equilibrio entre precisión y recall promedio por clase, sin importar su frecuencia, lo que refleja buen rendimiento en todas las clases, incluidas las minoritarias.
+	\item \textbf{ Macro Recall}: Un valor alto significa que el modelo detecta correctamente una alta proporción de instancias reales en cada clase, lo que es crucial para no ignorar clases poco representadas.
+	\item \textbf{Macro Precision}: mide qué proporción de predicciones por clase son correctas. Un valor alto implica que el modelo no clasifica erróneamente otras clases como una clase minoritaria.
+\end{itemize}
+
+En la figura \ref{fig:MULhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 25 neuronas (n/2) en la capa oculta. Coinciden con lo esperado tras el análisis de la sección \ref{sec:VIBIN25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 15\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+Estos resultados no son definitivos, puesto que no se está evaluando la posibilidad de que el modelo haya sufrido sobreajuste incluso utilizando validación cruzada. Para obtener resultados reales del desempeño del modelo, se realizan pruebas, también conocidas como test, en las que se obtienen las métricas del modelo al recibir datos que no ha visto nunca. Este proceso y sus resultados se comentan en el capítulo \ref{cap.test} \nameref{cap.test}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/modelo/MULhs25.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}
+    \label{fig:MULhs25}
+\end{figure}
+
+
+
+La figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 49 neuronas (n) en la capa oculta. Los resultados medios obtenidos concuerdan con lo comentado en el análisis de la sección \ref{sec:VIBIN49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 20\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/modelo/MULhs49.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}
+    \label{fig:MULhs49}
+\end{figure}
+
+
+En la figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (n*2) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+\begin{itemize}
+	\item \textbf{Batch size}: 20\,000
+	\item \textbf{Epochs}: 10
+	\item \textbf{Learning rate}: 0,01
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/modelo/MULhs98.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}
+    \label{fig:MULhs98}
+\end{figure}
+
+Estos resultados no son definitivos, puesto que no se está evaluando la posibilidad de que el modelo haya sufrido sobreajuste incluso utilizando validación cruzada. Para obtener resultados reales del desempeño del modelo, se realizan pruebas, también conocidas como test, en las que se obtienen las métricas del modelo al recibir datos que no ha visto nunca. Este proceso y sus resultados se comentan en el capítulo \ref{cap.test}.
+
+
+\subsection{Comparación de las arquitecturas}
+En esta sección se comaparan los resultados obtenidos entre las tres arquitecturas propuestas. Una vez comparadas, se desarrolla una posible explicación para comprender los resultados de los experimientos.
+
+Para comprender mejor los resultados globales de los experimentos, se han recogido en la figura \ref{fig:BINtop5}, las 5 configuraciones de hiperparámetros con mayor recall independientemente de su arquitectura.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{./img/modelo/BINtop5.pdf}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}
+    \label{fig:BINtop5}
+\end{figure}
+
+El problema para el que ha sido diseñado el modelo no presenta una relación lineal tras transformar los datos como se explica en el capítulo \ref{cap.ent-datos} \nameref{cap.ent-datos}. Por este motivo, se esperaba que el modelo con un tamaño de capa oculta mayor fuese capaz de converger mejor, tal y como se comenta en \ref{sec:VIBIN98}.
+
+Al observar los datos de la figura \ref{fig:BINtop5}, se puede apreciar que puntualmente, la mejor arquitectura ha sido la que tenía un tamaño de ventana oculta igual a 98. Cabe destacar que, la diferencia entre los valores de recall de los cinco mejores experimentos es muy pequeña y puede que se deba a factores externos, como el estado de la máquina en el momento en el que se entreno al modelo, o la inicialización aleatoria de los pesos. Por este motivo, los resultados pueden variar si se realizan los mismos experimentos.
+
+Ente los mejores resultados de los experimentos, detaca la presencia de la arquitectura con un tamaño de capa oculta igual al número de parámetros de entrada del modelo. Tal y como se comenta en las secciones anteriores, esta es la arquitectura más equilibrada. Gracias a este equilibrio ha sido capaz de ajustar sus pesos mejor que el rseto de arquitecturas para configuraciones de hiperparámetros diferentes.
+
+Al aumentar el número de épocas del entrenamiento de los modelos, estos tienden a sobreajustar los pesos. Este sobreajuste implica que el modelo obtiene unas métricas excepcionalmente positivas durante los experimentos. Sin embargo, aun que los valores de las métricas son muy positivos en los experimentos realizados, sorprende que el número de épocas del 80 \% de las 5 mejores configuraciones, es el menor de los valores con los que se han realizado los experimentos para el hiperparámetro epochs. Estos resultados reflejan que la probabilidad de que el modelo haya sobreajustado sus pesos es muy baja. Posiblemente, el uso de la validación cruzada que penaliza el sobreajuste de los pesos de los modelos, como se explica en secciones anteriores, sea el responsable de que los experimentos con un número de épocas más elevado hayan obtenido unos resultados peores.
+
+Finalmente, es destacable que el learning rate de la mayoría de los 5 mejores experimentos del global de las arquitecturas tenga el valor más alto de los que se han probado. Esto puede interpretarse de manera positiva o negativa.
+En el mejor de los casos, un learning rate alto muestra que los datos están bien estructurados y que el optimizador y las arquitecturas son robustos frente a valores altos de learning rate,
+En el peor de los casos, la convergencia se realiza rápidamente pero de manera inestable, los resultados dependan en gran medida de los valores iniciales de los pesos o se este sobreajustando el modelo. Este último caso es el más improbable debido a las técnicas utilizadas que se han descrito y a los resultados analizados en el párrafo anterior.
+
+Para conocer el verdadero desempeño del modelo y determinar si ha sufirdo sobreajuste de los pesos durante el entrenamiento, se realiza un test con datos que no ha visto el modelo durante el entrenamiento. Estas pruebas y análisis se describen en el capítulo \ref{cap.test} \nameref{cap.test}. Si los resultados obtenidos de estos test son similares a los resultados obtenidos de los experimentos, significa que el modelo converge correctamente hacia una solución real. En caso de que los resultados obtenidos de los test sean significativamente peores que los obtenidos durante los experimentos, el modelo habrá sobreajustado sus pesos. 

@@ -64,16 +64,31 @@
 \contentsline {subsection}{\numberline {6.4.3}Mejores hiperparámetros para cada arquitectura}{61}{subsection.6.4.3}%
 \contentsline {subsection}{\numberline {6.4.4}Comparación de las arquitecturas}{63}{subsection.6.4.4}%
 \contentsline {section}{\numberline {6.5}Modelo neuronal de clasificación multiclase}{65}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Matriz de confusión para clasificación multiclase}{65}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Metricas útiles en clasificación multiclase}{65}{subsection.6.5.2}%
-\contentsline {chapter}{\numberline {7}Test}{69}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{71}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{73}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{75}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{77}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{79}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{79}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{79}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{79}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{81}{appendix.Alph2}%
-\contentsline {chapter}{Bibliografía}{83}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {6.5.1}Proposito del modelo de clasificación multiclase}{65}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Diseño del modelo e hiperparámetros seleccionados}{65}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Diseños del modelo de clasificación multiclase descartados}{68}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Arquitecturas desarrolladas}{69}{subsection.6.5.4}%
+\contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{70}{section*.64}%
+\contentsline {paragraph}{Ventajas (n/2)}{70}{section*.65}%
+\contentsline {paragraph}{Inconvenientes(n/2)}{70}{section*.66}%
+\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{71}{section*.67}%
+\contentsline {paragraph}{Ventajas (n)}{71}{section*.68}%
+\contentsline {paragraph}{Inconvenientes(n)}{71}{section*.69}%
+\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{72}{section*.70}%
+\contentsline {paragraph}{Ventajas (n*2)}{72}{section*.71}%
+\contentsline {paragraph}{Inconvenientes(n*2)}{72}{section*.72}%
+\contentsline {subsection}{\numberline {6.5.5}Matriz de confusión para clasificación multiclase}{72}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {6.5.6}Metricas útiles en clasificación multiclase}{73}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {6.5.7}Mejores hiperparámetros para cada arquitectura}{76}{subsection.6.5.7}%
+\contentsline {subsection}{\numberline {6.5.8}Comparación de las arquitecturas}{78}{subsection.6.5.8}%
+\contentsline {chapter}{\numberline {7}Test}{81}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{83}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{85}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{87}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{89}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Manuales}{91}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{91}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{91}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Manual de usuario}{91}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{93}{appendix.Alph2}%
+\contentsline {chapter}{Bibliografía}{95}{appendix.Alph2}%
