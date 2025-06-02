@@ -1,4 +1,4 @@
-Este capítulo aborda la organización detallada de un Trabajo de Fin de Grado, cubriendo desde su diseño inicial hasta la implementación y el seguimiento durante su desarrollo. Una planificación rigurosa resulta fundamental para sentar las bases del proyecto, ya que permite definir con claridad los objetivos, los recursos necesarios, los plazos de entrega y las actividades clave para alcanzar los resultados esperados.
+Este capítulo aborda la organización detallada del trabajo de fin de grado, cubriendo desde su diseño inicial hasta la implementación y el seguimiento durante su desarrollo. Una planificación rigurosa resulta fundamental para sentar las bases del proyecto, ya que permite definir con claridad los objetivos, los recursos necesarios, los plazos de entrega y las actividades clave para alcanzar los resultados esperados \cite{pmbok}.
 
 En primer lugar, se establece una planificación temporal preliminar, donde se estiman los tiempos requeridos para cada etapa. Este cronograma se estructura en torno a las fases de la metodología CRISP-DM, complementadas con etapas específicas propias de un Trabajo de Fin de Grado. A continuación, se realiza un análisis de riesgos exhaustivo, evaluando tanto la probabilidad como el impacto de cada posible contingencia.
 
@@ -8,9 +8,9 @@ Por último, se contrasta la planificación inicial con el desarrollo real del t
 
 \section{Planificación temporal}
 
-La planificación temporal constituye un elemento fundamental en la ejecución de un proyecto fin de grado, ya que permite estructurar de manera sistemática todas las actividades necesarias para alcanzar los objetivos propuestos. En el contexto de un trabajo académico que combine el desarrollo de software con una metodología de investigación, como es el caso de CRISP-DM para el proceso analítico y SCRUM para la gestión del proyecto, una adecuada planificación garantiza la distribución equilibrada del tiempo disponible entre las distintas fases del trabajo. Esta organización temporal resulta especialmente relevante cuando se deben coordinar aspectos teóricos, desarrollo técnico y validación de resultados, asegurando que cada componente reciba la atención necesaria sin comprometer la calidad global del proyecto.
+La planificación temporal constituye un elemento fundamental en la ejecución de un proyecto fin de grado, ya que permite estructurar de manera sistemática todas las actividades necesarias para alcanzar los objetivos propuestos. En el contexto de un trabajo académico que combine el desarrollo de software con una metodología de investigación, como es el caso de CRISP-DM para el modelo de proceso y SCRUM para la gestión del proyecto, una adecuada planificación garantiza la distribución equilibrada del tiempo disponible entre las distintas fases del trabajo. Esta organización temporal resulta especialmente relevante cuando se deben coordinar aspectos teóricos, desarrollo técnico y validación de resultados, asegurando que cada componente reciba la atención necesaria sin comprometer la calidad global del proyecto.
 
-El empleo de un diagrama de Gantt como herramienta de planificación ofrece ventajas significativas para visualizar la secuencia de actividades y su superposición temporal. Este tipo de representación gráfica facilita la identificación de hitos críticos y dependencias entre tareas, aspectos particularmente importantes cuando se combinan metodologías diferentes como CRISP-DM y SCRUM. La primera, con sus fases bien definidas, proporciona la estructura para el desarrollo del núcleo analítico del proyecto, mientras que SCRUM, con sus sprints iterativos, permite adaptar el trabajo a los descubrimientos que vayan surgiendo durante la investigación. La integración de ambas aproximaciones en un único cronograma exige una cuidadosa coordinación que el diagrama de Gantt ayuda a materializar de forma clara y comprensible.
+El empleo de un diagrama de Gantt como herramienta de planificación ofrece ventajas significativas para visualizar la secuencia de actividades y su superposición temporal. Este tipo de representación gráfica facilita la identificación de hitos críticos y dependencias entre tareas, aspectos particularmente importantes cuando se combinan metodologías diferentes como CRISP-DM y SCRUM. La primera, con sus fases bien definidas, proporciona la estructura para el desarrollo del núcleo analítico del proyecto, mientras que SCRUM, con sus sprints iterativos, permite adaptar el trabajo a los descubrimientos que vayan surgiendo durante la investigación. La integración de ambas aproximaciones en un único cronograma exige una cuidadosa coordinación que el diagrama de Gantt ayuda a materializar de forma clara y comprensible. El diagrama de Gantt utilizado para la planificación de este trabajo se muestra en la Figura \ref{fig:gantt}. Este diagrama tiene una duración de 300 horas, que corresponden con las horas de trabajo de alumno de los 12 créditos ECTS que exige el plan de estudios del Grado de Ingeniería Informática de la UVa para el TFG.
 
 
 
@@ -79,7 +79,7 @@ El empleo de un diagrama de Gantt como herramienta de planificación ofrece vent
 
 \section{Gestión de riesgos}
 
-En este apartado se presentan los principales riesgos potenciales del proyecto junto con sus correspondientes planes de mitigación. De acuerdo con el \textit{PMBOK (Project Management Body of Knowledge)} \cite{pmbok}, los riesgos en gestión de proyectos se clasifican en las siguientes categorías:
+En este apartado se presentan los principales riesgos potenciales del proyecto junto con sus correspondientes planes de mitigación. Además, en la Figura \ref{tab:hitos} se muestran las horas dedicadas al cumplimiento de cada hito del trabajo. De acuerdo con el PMBOK (\textit{Project Management Body of Knowledge}) \cite{pmbok}, los riesgos en gestión de proyectos se clasifican en las categorías de la sección \ref{subsec.tiprisks}.
 
 \subsection*{Hitos del Proyecto}
 \begin{table}[h]
@@ -94,53 +94,53 @@ Finalización del modelado & 80 & 170 \\ \hline
 Obtención de modelos óptimos & 40 & 210 \\ \hline
 Finalización y entrega de la memoria & 90 & 300 \\ \hline
 \end{tabular}
-\caption{Cronograma de hitos y horas de trabajo}
+\caption{Cronograma de hitos y horas de trabajo.}
 \label{tab:hitos}
 \end{table}
 
-\subsection*{Tipología de Riesgos}
+\subsection*{Tipología de Riesgos} \label{subsec.tiprisks}
 \begin{enumerate}
     \item \textbf{Riesgos Técnicos:}
     \begin{itemize}
-        \item Limitaciones en la infraestructura de hardware
-        \item Incompatibilidad entre sistemas o tecnologías
-        \item Problemas de rendimiento o escalabilidad        
-        \item Deficiencias en el diseño o implementación de software
+        \item Limitaciones en la infraestructura de hardware.
+        \item Incompatibilidad entre sistemas o tecnologías.
+        \item Problemas de rendimiento o escalabilidad.        
+        \item Deficiencias en el diseño o implementación de software.
     \end{itemize}
     
     \item \textbf{Riesgos de Gestión:}
     \begin{itemize}
-        \item Deficiencias en la comunicación entre los miembros del equipo
-        \item Modificaciones en los requisitos del proyecto        
-        \item Inestabilidad del equipo por conflictos internos o rotación de personal
-        \item Retrasos en la disponibilidad de recursos críticos
+        \item Deficiencias en la comunicación entre los miembros del equipo.
+        \item Modificaciones en los requisitos del proyecto.        
+        \item Inestabilidad del equipo por conflictos internos o rotación de personal.
+        \item Retrasos en la disponibilidad de recursos críticos.
 
     \end{itemize}
     
     \item \textbf{Riesgos de Mercado:}
     \begin{itemize}
-        \item Aparición de competencia no anticipada
-        \item Variaciones en las condiciones del mercado que afectan la demanda
-        \item Cambios regulatorios que impactan la ejecución del proyecto
+        \item Aparición de competencia no anticipada.
+        \item Variaciones en las condiciones del mercado que afectan la demanda.
+        \item Cambios regulatorios que impactan la ejecución del proyecto.
     \end{itemize}
     
     \item \textbf{Riesgos Financieros:}
     \begin{itemize}
-        \item Limitaciones en la disponibilidad de fondos<
-        \item Excesos presupuestarios no previstos
-        \item Fluctuaciones en los tipos de cambio
+        \item Limitaciones en la disponibilidad de fondos.
+        \item Excesos presupuestarios no previstos.
+        \item Fluctuaciones en los tipos de cambio.
     \end{itemize}
     
     \item \textbf{Riesgos Externos:}
     \begin{itemize}
-        \item Fenómenos meteorológicos adversos
-        \item Interrupciones en la cadena de suministro
-        \item Eventos naturales catastróficos
+        \item Fenómenos meteorológicos adversos.
+        \item Interrupciones en la cadena de suministro.
+        \item Eventos naturales catastróficos.
     \end{itemize}
 \end{enumerate}
 
 \subsection*{Metodología de Evaluación}
-La identificación y valoración de riesgos se realiza mediante criterios cualitativos, al no disponer de métricas cuantitativas suficientemente fiables para un análisis más exhaustivo. Este enfoque permite priorizar los riesgos según su impacto potencial y probabilidad de ocurrencia.
+La identificación y valoración de riesgos se realiza mediante criterios cualitativos, al no disponer de métricas cuantitativas suficientemente fiables para un análisis más exhaustivo. Este enfoque permite priorizar los riesgos según su impacto potencial y probabilidad de ocurrencia \cite{carmona2021gestion}.
 
 \begin{table}[H]
 \centering
@@ -178,10 +178,10 @@ Mínimo & \cellcolor{bluerisk} \\ \hline
 \begin{description}[leftmargin=1cm, style=nextline]
 
 \item[\textbf{Probabilidad}]
-Grado de posibilidad de que un riesgo se materialice. Se suele cuantificar en escala del 1 (muy improbable) al 5 (casi seguro). En la matriz, determina el eje vertical y se combina con el impacto para priorizar riesgos.
+Grado de posibilidad de que un riesgo se materialice. Se suele cuantificar en escala del 1 (muy improbable) al 5 (casi seguro). En la matriz que se muestra en la Figura \ref{tab:matriz_pi}, determina el eje vertical y se combina con el impacto para priorizar riesgos.
 
 \item[\textbf{Impacto}]
-Consecuencia o efecto potencial que tendría la materialización del riesgo. Se valora del 1 (impacto mínimo) al 5 (impacto catastrófico). Representa el eje horizontal en la matriz y mide la severidad del riesgo.
+Consecuencia o efecto potencial que tendría la materialización del riesgo. Se valora del 1 (impacto mínimo) al 5 (impacto catastrófico). Representa en la matriz que se muestra en la Figura \ref{tab:matriz_pi}, el eje horizontal en la matriz y mide la severidad del riesgo.
 
 \item[\textbf{Plan de Mitigación}]
 Acciones proactivas para reducir la probabilidad o impacto del riesgo antes de que ocurra. Incluye:
@@ -218,16 +218,15 @@ Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes cor
 
 \subsection*{Riesgos identificados}
 \begin{enumerate}
-    \item \textbf{R01}: Conflicto con periodos de exámenes y entregas de otras asignaturas.\ref{tab:R01}
-    \item \textbf{R02}: Fallos hardware en equipos de desarrollo.\ref{tab:R02}
-    \item \textbf{R03}: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \ref{tab:R03}
-    \item \textbf{R04}: Pérdida o corrupción de los datasets. \ref{tab:R04}
-    \item \textbf{R05}: Disponibilidad limitada del tutor académico.\ref{tab:R05}
-    \item \textbf{R06}: Desviaciones en la planificación temporal inicial.\ref{tab:R06}
-    \item \textbf{R07}: Cambios en los requisitos técnicos.\ref{tab:R07}
-    \item \textbf{R08}: Dependencia de tecnologías inestables o no documentadas.\ref{tab:R08}
-    \item \textbf{R09}: Dificultades en la integración de componentes.\ref{tab:R09}
-    \item \textbf{R10}: Problemas de licencias de software.\ref{tab:R10}
+    \item \textbf{R01}: Conflicto con periodos de exámenes y entregas de otras asignaturas (Tabla \ref{tab:R01}).
+    \item \textbf{R02}: Fallos hardware en equipos de desarrollo (Tabla \ref{tab:R02}).
+    \item \textbf{R03}: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos (Tabla \ref{tab:R03}).
+    \item \textbf{R04}: Pérdida o corrupción del código (Tabla \ref{tab:R04}).
+    \item \textbf{R05}: Disponibilidad limitada del tutor académico (Tabla \ref{tab:R05}).
+    \item \textbf{R06}: Desviaciones en la planificación temporal inicial (Tabla \ref{tab:R06}).
+    \item \textbf{R07}: Cambios en los requisitos técnicos (Tabla \ref{tab:R07}).
+    \item \textbf{R08}: Interpretación errónea de los resultados por falta de formazión en técnicas de aprendizaje automático. (Tabla \ref{tab:R08}).
+    \item \textbf{R09}: Problemas de licencias de software (Tabla \ref{tab:R09}).
 \end{enumerate}
 
 % Riesgo R01
@@ -238,14 +237,14 @@ Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes cor
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R01}} \\ \hline
 Título & Conflicto con periodos de exámenes y entregas de otras asignaturas.\\ \hline
-Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas, aumentando el estrés y la presión estudiantil. \\ \hline
-Probabilidad & 4 (Alta) \\ \hline
-Impacto & 3 (Media) \\ \hline
+Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas. \\ \hline
+Probabilidad & 4 (Alta) \cellcolor{orangerisk} \\ \hline
+Impacto & 3 (Media) \cellcolor{yellowrisk}\\ \hline
 Matriz P/I & Alta/Media (12)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
 \item Coordinar calendario académico anticipadamente.
-\item Avanzar trabajo en periodos de menor estrés.
+\item Avanzar trabajo en periodos de menor carga de trabajo.
 \end{itemize} \\ \hline
 Plan Contingencia & 
 \begin{itemize}
@@ -267,8 +266,8 @@ Plan Contingencia &
 \multicolumn{2}{|c|}{\textbf{Riesgo R02}} \\ \hline
 Título & Fallos hardware en equipos de desarrollo. \\ \hline
 Descripción & Problemas causados por el mal funcionamiento de los componentes físicos de un ordenador, como la placa base, la tarjeta gráfica, la memoria RAM, el disco duro o la fuente de alimentación en equipos de desarrollo. \\ \hline
-Probabilidad & 3 (Media) \\ \hline
-Impacto & 4 (Alto) \\ \hline
+Probabilidad & 3 (Media)   \cellcolor{yellowrisk}\\ \hline
+Impacto & 4 (Alto)   \cellcolor{orangerisk}\\ \hline
 Matriz P/I & Media/Alto (12)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -278,7 +277,7 @@ Plan Mitigación &
 Plan Contingencia & 
 \begin{itemize}
 \item Utilizar equipos alternativos.
-\item Acceder a laboratorios universitarios.
+\item Uso de máquinas virtuales del sistema de virtualización de la Escuela de Ingeniería de Informática de Valladolid.
 \end{itemize} \\ \hline
 \end{tabular}
 \caption{R02: Fallos hardware en equipos de desarrollo.}
@@ -294,8 +293,8 @@ Plan Contingencia &
 \multicolumn{2}{|c|}{\textbf{Riesgo R03}} \\ \hline
 Título & Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \\ \hline
 Descripción & Restricciones de hardware (cálculo, memoria) que impactan la velocidad, viabilidad y calidad del entrenamiento, influyendo en el tamaño y complejidad de los modelos.\\ \hline
-Probabilidad & 4 (Alta) \\ \hline
-Impacto & 5 (Extremo) \\ \hline
+Probabilidad & 4 (Alta)   \cellcolor{orangerisk}\\ \hline
+Impacto & 5 (Extremo)  \cellcolor{redrisk}\\ \hline
 Matriz P/I & Alto/Extremo (20)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -304,7 +303,7 @@ Plan Mitigación &
 \end{itemize} \\ \hline
 Plan Contingencia & 
 \begin{itemize}
-\item Utilizar servicios en la nube académicos.
+\item Utilizar sistema de virtualización de la escuela
 \item Reducir complejidad de modelos.
 \end{itemize} \\ \hline
 \end{tabular}
@@ -319,14 +318,14 @@ Plan Contingencia &
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R04}} \\ \hline
-Título & Pérdida o corrupción de los datasets. \\ \hline
+Título & Pérdida o corrupción del código. \\ \hline
 Descripción & Extraviación o daño en los conjuntos de datos del proyecto que se utilizan para en entrenamiento y la validación del modelo.\\ \hline
-Probabilidad & 2 (Baja) \\ \hline
-Impacto & 5 (Extremo) \\ \hline
+Probabilidad & 2 (Baja)  \cellcolor{greenrisk}\\ \hline
+Impacto & 5 (Extremo) \cellcolor{redrisk}\\ \hline
 Matriz P/I & Baja/Extremo (10) \\ \hline
 Plan Mitigación & 
 \begin{itemize}
-\item Almacenamiento redundante de los datos en distintos medios.
+\item Almacenamiento redundante de los datos en repositorios.
 \item Verificación de la inegridad de los datos con checksums.
 \end{itemize} \\ \hline
 Plan Contingencia & 
@@ -335,7 +334,7 @@ Plan Contingencia &
 \item Regenerar datos sintéticos.
 \end{itemize} \\ \hline
 \end{tabular}
-\caption{R04: Pérdida o corrupción de los datasets.}
+\caption{R04: Pérdida o corrupción del código.}
 \label{tab:R04}
 \end{table}
 
@@ -347,9 +346,9 @@ Plan Contingencia &
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R05}} \\ \hline
 Título & Disponibilidad limitada del tutor académico.\\ \hline
-Descripción & Restricciones de tiempo y acceso al profesor guía, afectando la frecuencia y profundidad de la retroalimentación y el apoyo al estudiante en su proceso de aprendizaje. \\ \hline
-Probabilidad & 3 (Media) \\ \hline
-Impacto & 3 (Media) \\ \hline
+Descripción & Restricciones de tiempo y acceso al tutor académico, afectando la frecuencia y profundidad de la retroalimentación y el apoyo al estudiante en su proceso de aprendizaje. \\ \hline
+Probabilidad & 3 (Media) \cellcolor{yellowrisk}\\ \hline
+Impacto & 3 (Media) \cellcolor{yellowrisk}\\ \hline
 Matriz P/I & Media/Media (9)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -362,7 +361,7 @@ Plan Contingencia &
 \item Usar foros académicos.
 \end{itemize} \\ \hline
 \end{tabular}
-\caption{R05: Disponibilidad limitada del tutor académico}
+\caption{R05: Disponibilidad limitada del tutor académico.}
 \label{tab:R05}
 \end{table}
 
@@ -375,8 +374,8 @@ Plan Contingencia &
 \multicolumn{2}{|c|}{\textbf{Riesgo R06}} \\ \hline
 Título & Desviaciones en la planificación temporal inicial. \\ \hline
 Descripción & Variaciones o retrasos respecto al cronograma original, impactando los plazos de entrega, la gestión del tiempo y la consecución de los objetivos previstos. \\ \hline
-Probabilidad & 4 (Alta) \\ \hline
-Impacto & 4 (Alto) \\ \hline
+Probabilidad & 4 (Alta) \cellcolor{orangerisk}\\ \hline
+Impacto & 4 (Alto) \cellcolor{orangerisk}\\ \hline
 Matriz P/I & Alto/Alto (16)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -402,8 +401,8 @@ Plan Contingencia &
 \multicolumn{2}{|c|}{\textbf{Riesgo R07}} \\ \hline
 Título & Cambios en los requisitos técnicos. \\ \hline
 Descripción &  Modificaciones o alteraciones en las especificaciones necesarias para un proyecto o tarea, que pueden afectar al diseño, a la implementación, a los recursos y a los plazos. \\ \hline
-Probabilidad & 4 (Alta) \\ \hline
-Impacto & 4 (Alto) \\ \hline
+Probabilidad & 4 (Alta)  \cellcolor{orangerisk}\\ \hline
+Impacto & 4 (Alto) \cellcolor{orangerisk}\\ \hline
 Matriz P/I & Alto/Alto (16)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -427,20 +426,20 @@ Plan Contingencia &
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R08}} \\ \hline
-Título & Dependencia de tecnologías inestables o no documentadas.  \\ \hline
-Descripción & Riesgos por la falta de fiabilidad, soporte o información clara, pudiendo generar problemas de funcionamiento, mantenimiento y escalabilidad del sistema. \\ \hline
-Probabilidad & 3 (Media) \\ \hline
-Impacto & 5 (Extremo) \\ \hline
+Título & Interpretación errónea de los resultados por falta de formazión en técnicas de aprendizaje automático.  \\ \hline
+Descripción & El desconocimiento de las métricas utilizadas para analizar los resutlados como precisión, recall, F1, puede llevar a confiar en modelos con bajo desempeño real o tomar decisiones equivocadas basadas en correlaciones espurias. \\ \hline
+Probabilidad & 3 (Media) \cellcolor{yellowrisk} \\ \hline
+Impacto & 5 (Extremo) \cellcolor{redrisk} \\ \hline
 Matriz P/I & Media/Extremo (15) \\ \hline
 Plan Mitigación & 
 \begin{itemize}
-\item Investigar alternativas estables.
-\item Aislar componentes críticos.
+\item Buscar alternativas para obtener una formación básica en técnicas de aprendizaje automático.
+\item Corroborar los resultados obtenidos con el tutor académico.
 \end{itemize} \\ \hline
 Plan Contingencia & 
 \begin{itemize}
-\item Implementar soluciones temporales.
-\item Buscar soporte comunitario.
+\item Suspender de manera inmediata las decisiones tomadas basadas en las salidas mal interpretadas del modelo.
+\item Reemplazar el modelo mal interpretado por una versión anterior o un modelo base.
 \end{itemize} \\ \hline
 \end{tabular}
 \caption{R08: Dependencia de tecnologías inestables o no documentadas.}
@@ -454,37 +453,10 @@ Plan Contingencia &
 \hline
 \rowcolor{lightgray}
 \multicolumn{2}{|c|}{\textbf{Riesgo R09}} \\ \hline
-Título & Dificultades en la integración de componentes.\\ \hline
-Descripción & Problemas o complicaciones al combinar diferentes partes o sistemas, generando errores, incompatibilidades o un funcionamiento incorrecto del conjunto. \\ \hline
-Probabilidad & 3 (Media) \\ \hline
-Impacto & 4 (Alto) \\ \hline
-Matriz P/I & Media/Alto (12)\\ \hline
-Plan Mitigación & 
-\begin{itemize}
-\item Definir interfaces claras desde el inicio.
-\item Pruebas unitarias frecuentes.
-\end{itemize} \\ \hline
-Plan Contingencia & 
-\begin{itemize}
-\item Desarrollar adaptadores o intermediarios.
-\item Reimplementar componentes críticos.
-\end{itemize} \\ \hline
-\end{tabular}
-\caption{R09: Dificultades en la integración de componentes.}
-\label{tab:R09}
-\end{table}
-
-% Riesgo R10
-\begin{table}[H]
-\centering
-\begin{tabular}{|>{\bfseries}l|p{10cm}|}
-\hline
-\rowcolor{lightgray}
-\multicolumn{2}{|c|}{\textbf{Riesgo R10}} \\ \hline
 Título & Problemas de licencia de software.\\ \hline
 Descripción & Inconvenientes o restricciones legales relacionadas con el uso, la distribución o la activación de software, pudiendo causar interrupciones, costos adicionales o incluso acciones legales. \\ \hline
-Probabilidad & 2 (Baja) \\ \hline
-Impacto & 3 (Media) \\ \hline
+Probabilidad & 2 (Baja) \cellcolor{greenrisk} \\ \hline
+Impacto & 3 (Media)  \cellcolor{yellowrisk}\\ \hline
 Matriz P/I & Baja/Media (6)\\ \hline
 Plan Mitigación & 
 \begin{itemize}
@@ -498,21 +470,21 @@ Plan Contingencia &
 \end{itemize} \\ \hline
 \end{tabular}
 \caption{R10: Problemas de licencia de software.}
-\label{tab:R10}
+\label{tab:R09}
 \end{table}
 
 
 \section{Estimación de costes}
-En esta sección se presenta la estimación de costes, que comprende la identificación y valoración de los recursos necesarios para el desarrollo del proyecto. Este proceso implica la cuantificación de los gastos previsibles asociados a materiales, software específico y acceso a bases de datos. También se considera un coste el tiempo dedicado por el estudiante a la realización del trabajo..
+En esta sección se presenta la estimación de costes, que comprende la identificación y valoración de los recursos necesarios para el desarrollo del proyecto. Este proceso implica la cuantificación de los gastos previsibles asociados a materiales y software específico utilizado. También se considera un coste el tiempo dedicado por el estudiante a la realización del trabajo.
 
-La precisión en la estimación de costes facilita la elaboración de un presupuesto realista y la planificación financiera del proyecto. Permite anticipar las necesidades económicas, buscar posibles fuentes de financiación si fuese necesario y gestionar eficientemente los recursos disponibles. Una estimación detallada contribuye a evitar desviaciones presupuestarias y a asegurar la viabilidad económica del proyecto.
+La precisión en la estimación de costes facilita la elaboración de un presupuesto realista y la planificación financiera del proyecto. Permite anticipar las necesidades económicas, buscar posibles fuentes de financiación si fuese necesario y gestionar eficientemente los recursos disponibles. Una estimación detallada contribuye a evitar desviaciones presupuestarias y a asegurar la viabilidad económica del proyecto \cite{oliveros2011gestion}.
 
 \subsection{Costes materiales}
 A continuación, se hace un recuento de los costes materiales en hardware y software que han sido utilizados para el desarrollo de este proyecto.
 \subsection*{Hardware}
 El hardware comprende el conjunto de componentes físicos y tangibles que constituyen un sistema informático. Proporciona la infraestructura física necesaria para la ejecución del software y el procesamiento de la información.
 
-Para realizar este proyecto se han utilizado los siguientes componentes:
+Para realizar este proyecto se ha utilizado un equipo informático con los siguientes componentes:
 \begin{itemize}
 \item \textbf{CPU}: AMD Ryzen 7 6800HS with Radeon Graphics (16) @ 4.785GHz
 \item \textbf{RAM}: 16GB SO-DIMM DDR5 4800MH
@@ -530,7 +502,7 @@ Teniendo en cuenta que el coste del ordenador en el momento de la compra fue de 
 \end{equation}
 
 \subsection*{Software}
-El software constituye el conjunto intangible de programas, datos e instrucciones que habilitan el funcionamiento de un sistema informático. Es el responsable de definir la funcionalidad, el comportamiento y la interacción del sistema con el usuario y con otros sistemas. 
+El software constituye el conjunto intangible de programas, datos e instrucciones que habilitan el funcionamiento de un sistema informático. Es el responsable de definir la funcionalidad, el comportamiento y la interacción del sistema con el usuario y con otros sistemas. En la Figura \ref{tab:costes_software} se detalla el coste del software utilizado para desarrollar este trabajo.
 
 \begin{table}[H]
 \centering
@@ -556,7 +528,7 @@ Comunicación 2 & MS Teams & 0\,€ & 3,5 mes & 0\,€ \\
 \label{tab:costes_software}
 \end{table}
 
-Debido a que el proyecto se realiza en un ámbito académico, se han minimizado los costes software del proyecto utilizando exclusivamente herramientas cedidas por la entidad académica o bien herramientas con licencia open-source que no suponen un coste monetario para el desarrollo del proyecto.
+Debido a que el proyecto se realiza en un ámbito académico, se han minimizado los costes software del proyecto utilizando exclusivamente herramientas cedidas por la entidad académica o bien herramientas con licencia open-source que no suponen un coste monetario para el desarrollo del proyecto. 
 
 
 \subsection{Costes humanos}
@@ -564,10 +536,19 @@ Como proyecto académico, los costes humanos representan el valor del tiempo y e
 
 En el caso de la simulación de los costes monetarios de un proyecto similar a este, sería necesario contar con personas cualificadas para los siguientes puestos:
 \begin{itemize}
-\item Ingeniero de Machine Learching
-\item Data Scientist
-\item Data Analyst
+\item Ingeniero de Aprendizaje Automático.
+\item Cientifico de Datos.
+\item Analista de Satos.
 \end{itemize}
+
+Los costes humanos se dividen en tres fases diferentes:
+\begin{enumerate}
+	\item Definición y Preparación: la Figura \ref{tab:costes_fase1} muestra los costes para esta fase.
+	\item Desarrollo y Entrenamiento: los costes para esta fase vienen desarrollados en la Figura \ref{tab:costes_fase2}.
+	\item Definición y Preparación: la Figura \ref{tab:costes_fase3} detalla los costes de esta fase del proyecto.
+\end{enumerate}
+
+Para obtener una visión de conjunto de los costes humanos del proyecto, la Figura \ref{tab:coste_total_profesional} refleja la suma de las fases comentadas.
 
 
 \subsubsection*{Fase 1: Definición y Preparación (75 horas)}
@@ -645,7 +626,7 @@ Analista Datos & 925 \\
 \end{table}
 
 
-Las estimaciones salariales proporcionadas se basan en los salarios en el sector tecnológico y de análisis de datos en España. Esta información se encuentra publicada en portales de empleo (Talent.com), escuelas de negocio (Aicad Business School, KSchool, Esden Business School) y noticias del sector (Tokio School). 
+Las estimaciones salariales proporcionadas se basan en los salarios en el sector tecnológico y de análisis de datos en España. Esta información se encuentra publicada en portales de empleo (Talent.com\footnote{https://es.talent.com/}), escuelas de negocio (Aicad Business School\footnote{https://www.aicad.es/}, KSchool\footnote{https://kschool.com/}, Esden Business School\footnote{https://esden.es/}) y noticias del sector (Tokio School\footnote{https://www.tokioschool.com/}). 
 
 
 
