@@ -6,27 +6,27 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt para la planificación del proyecto.}}{13}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema funcionamiento TCP. \cite {tcpprotocolionos}}}{32}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema segmento TCP \cite {tcpsegment}.}}{33}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Formato de la cabecera en IPv4. \cite {paqueteip}}}{34}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema del \textit {three way handshake} de TCP \cite {tcpprotocolionos}.}}{33}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema segmento TCP \cite {tcpsegment}.}}{34}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Formato de la cabecera en IPv4 \cite {paqueteip}.}}{35}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Función de transformación para los parámetros IPv4}}{42}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Función de transformación para los parámetros IPv4}}{44}{figure.caption.48}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de redes neuronales. \cite {aprendeia2021deep}}}{46}{figure.caption.43}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de redes neuronal convolucional. \cite {uniteai2020cnn}}}{47}{figure.caption.44}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Esquema de algoritmo de optimización usando los gradiente calculados por la retropropagación. \cite {msmk2023backpropagation}}}{50}{figure.caption.45}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Estructura del modelo de clasificación binaria diseñada.}}{53}{figure.caption.46}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}}{62}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}}{62}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}}{63}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{63}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{66}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{68}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{77}{figure.caption.78}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{78}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{78}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{79}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{81}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de redes neuronales. \cite {aprendeia2021deep}}}{48}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de redes neuronal convolucional. \cite {uniteai2020cnn}}}{49}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Esquema de algoritmo de optimización usando los gradiente calculados por la retropropagación. \cite {msmk2023backpropagation}}}{52}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Estructura del modelo de clasificación binaria diseñada.}}{55}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}}{64}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}}{64}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}}{65}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{65}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{68}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{70}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{79}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{80}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{80}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{81}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{83}{figure.caption.88}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

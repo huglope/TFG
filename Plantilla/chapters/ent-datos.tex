@@ -1,15 +1,15 @@
 Este capítulo se corresponde con la segunda etapa de la metodología CRISP-DM, En el se explicará la naturaleza de los datos y sus características, así como los valores atípicos que presentan y sus sesgos.
 
 \section{Origen de los datos}  \label{sec.origen-datos}
-Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El dataset en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia.\cite{luay2025NetFlowDatasetsV3}
+Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El \textit{dataset} en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia \cite{luay2025NetFlowDatasetsV3}.
 
 
-El dataset utilizado es NF-UNSW-NB15-v3, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
+El \textit{dataset} utilizado es NF-UNSW-NB15-v3, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
 
 \section{Tipos de ataques registrados en los datos} \label{sec.tipo-ataques}
-En esta sección se explican los tipos de datos presentes en el Dataset que se utiliza para entrenar a los modelos del proyecto. Se explica en que consiste cada tipo de ataque registrado así como el número exacto de ataques de cada tipo presente.
+En esta sección se explican los tipos de datos presentes en el \textit{dataset} que se utiliza para entrenar a los modelos del proyecto. Se explica en que consiste cada tipo de ataque registrado así como el número exacto de ataques de cada tipo presente.
 
-El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 127\,639 (5,4\%) son muestras de ataque y 2\,237\,731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La siguiente tabla proporciona una distribución detallada del conjunto de datos:
+El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 127\,639 (5,4\%) son muestras de ataque y 2\,237\,731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La Tabla \ref{tab:attacks-tab} proporciona una distribución detallada del conjunto de datos:
 
 \begin{table}[H]
 \begin{tabular}{|l|c|>{\RaggedRight}p{10cm}|} % Ajusta el ancho (8cm) según necesites
@@ -17,23 +17,23 @@ El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 
 \rowcolor[HTML]{C0C0C0} 
 \textbf{Clase} & \textbf{Cantidad} & \textbf{Descripción} \\ \hline
 Benigno & 2\,237\,731 & Flujos normales no maliciosos. \\ \hline
-Fuzzers & 33\,816 & Tipo de ataque en el que el atacante envía grandes cantidades de datos aleatorios que hacen que un sistema se bloquee y también apuntan a descubrir vulnerabilidades de seguridad en un sistema. \\ \hline
-Analysis & 2\,381 & Un grupo que presenta una variedad de amenazas que se dirigen a aplicaciones web a través de puertos, correos electrónicos y scripts. \\ \hline
-Backdoor & 1\,226 & Una técnica que tiene como objetivo eludir los mecanismos de seguridad respondiendo a aplicaciones específicas de clientes construidos. \\ \hline
+\textit{Fuzzers} & 33\,816 & Tipo de ataque en el que el atacante envía grandes cantidades de datos aleatorios que hacen que un sistema se bloquee y también apuntan a descubrir vulnerabilidades de seguridad en un sistema. \\ \hline
+\textit{Analysis} & 2\,381 & Un grupo que presenta una variedad de amenazas que se dirigen a aplicaciones web a través de puertos, correos electrónicos y \textit{scripts}. \\ \hline
+\textit{Backdoor} & 1\,226 & Una técnica que tiene como objetivo eludir los mecanismos de seguridad respondiendo a aplicaciones específicas de clientes construidos. \\ \hline
 DoS & 5\,980 & La denegación de servicio es un intento de sobrecargar los recursos de un sistema informático con el objetivo de evitar el acceso o la disponibilidad de sus datos. \\ \hline
-Exploits & 42\,748 & Son secuencias de comandos que controlan el comportamiento de un host a través de una vulnerabilidad conocida. \\ \hline
-Generic & 19\,651 & Un método que se dirige a la criptografía y causa una colisión con cada cifrado de bloques. \\ \hline
-Reconnaissance & 17\,074 & Una técnica para recopilar información sobre un host de red, también se conoce como sonda. \\ \hline
-Shellcode & 4\,659 & Un malware que penetra en un código para controlar el host de una víctima. \\ \hline
-Worms & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
+\textit{Exploits} & 42\,748 & Son secuencias de comandos que controlan el comportamiento de un \textit{host} a través de una vulnerabilidad conocida. \\ \hline
+\textit{Generic} & 19\,651 & Un método que se dirige a la criptografía y causa una colisión con cada cifrado de bloques. \\ \hline
+\textit{Reconnaissance} & 17\,074 & Una técnica para recopilar información sobre un \textit{host} de red, también se conoce como sonda. \\ \hline
+\textit{Shellcode} & 4\,659 & Un \textit{malware} que penetra en un código para controlar el \textit{host} de una víctima. \\ \hline
+\textit{Worms} & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
 \end{tabular}
 \centering
-\caption{Clasificación de amenazas de seguridad} 
+\caption{Clasificación de amenazas de seguridad.} 
 \label{tab:attacks-tab}
 \end{table}
 
 \section{Parámetros de los datos} \label{sec.param-datos}
-En esta sección se explicarán el significado de cada uno de los 55 parámetros que componen cada fila del Dataset seleccionado.
+En esta sección se explicarán el significado de cada uno de los 55 parámetros que componen cada fila del \textit{dataset} seleccionado.
 
 \url{https://arxiv.org/pdf/2503.04404}
 
@@ -49,9 +49,9 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
     \item \textbf{IN\_PKTS}: Número de paquetes entrantes.
     \item \textbf{OUT\_PKTS}: Número de paquetes salientes.
     \item \textbf{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos.
-    \item \textbf{TCP\_FLAGS}: Acumulativo de todos los flags TCP.
-    \item \textbf{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del cliente.
-    \item \textbf{SERVER\_TCP\_FLAGS}: Acumulativo de todos los flags TCP del servidor.
+    \item \textbf{TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP.
+    \item \textbf{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del cliente.
+    \item \textbf{SERVER\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del servidor.
     \item \textbf{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg).
     \item \textbf{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg).
     \item \textbf{MIN\_TTL}: TTL mínimo del flujo.
@@ -60,19 +60,19 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
     \item \textbf{SHORTEST\_FLOW\_PKT}: Paquete más corto (bytes) del flujo.
     \item \textbf{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado.
     \item \textbf{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado.
-    \item \textbf{SRC\_TO\_DST\_SECOND\_BYTES}: Bytes/segundo de origen a destino.
-    \item \textbf{DST\_TO\_SRC\_SECOND\_BYTES}: Bytes/segundo de destino a origen.
+    \item \textbf{SRC\_TO\_DST\_SECOND\_BYTES}: \textit{Bytes}/segundo de origen a destino.
+    \item \textbf{DST\_TO\_SRC\_SECOND\_BYTES}: \textit{Bytes}/segundo de destino a origen.
     \item \textbf{RETRANSMITTED\_IN\_BYTES}: Número de bytes TCP retransmitidos del flujo (src a dst).
     \item \textbf{RETRANSMITTED\_IN\_PKTS}: Número de paquetes TCP retransmitidos del flujo (src a dst).
     \item \textbf{RETRANSMITTED\_OUT\_BYTES}: Número de bytes TCP retransmitidos del flujo (dst a src).
     \item \textbf{RETRANSMITTED\_OUT\_PKTS}: Número de paquetes TCP retransmitidos del flujo (dst a src).
     \item \textbf{SRC\_TO\_DST\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de origen a destino (bps).
     \item \textbf{DST\_TO\_SRC\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de destino a origen (bps).
-    \item \textbf{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es <= 128.
-    \item \textbf{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es  > 128 y <= 256.
-    \item \textbf{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es > 256 y <= 512.
-    \item \textbf{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es > 512 y <= 1024.
-    \item \textbf{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es > 1024 y <= 1514.
+    \item \textbf{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es $ \leq $ 128.
+    \item \textbf{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es  $ > $ 128 y $ \leq $ 256.
+    \item \textbf{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 256 y $ \leq $ 512.
+    \item \textbf{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 512 y $ \leq $ 1024.
+    \item \textbf{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 1024 y $ \leq $ 1514.
     \item \textbf{TCP\_WIN\_MAX\_IN}: Ventana TCP máxima (src a dst).
     \item \textbf{TCP\_WIN\_MAX\_OUT}: Ventana TCP máxima (dst a src).
     \item \textbf{ICMP\_TYPE}: Tipo ICMP * 256 + Código ICMP.
@@ -96,7 +96,7 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
 \end{itemize}
 
 \section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
-En esta sección se comentan los patrones prelinimares, así como los valores y los sesgos presentes en el Dataset. La identificación de estas irregularidades es fundamental para el correcto desarrollo del proyecto.
+En esta sección se comentan los patrones prelinimares, así como los valores y los sesgos presentes en el \textit{dataset}. La identificación de estas irregularidades es fundamental para el correcto desarrollo del proyecto.
 
 Al analizar los datos originales del dataset, se encuentran características que afectan de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento. A continuación, se mencionan cuales son las características problematicas de los datos que se utilizan.
 
@@ -108,12 +108,11 @@ Como se comenta en la sección anterior \ref{sec.param-datos} \nameref{sec.param
 
 
 \section{Preparación de los datos ¿SEPARAR EN OTRO CAPÍTULO?}\label{sec.prep-datos}
-En esta sección se modificarán los datos que presentan patrones, valores atípicos o sesgos que se comentan en la sección anterior.  \ref{sec.segos-datos} \nameref{sec.segos-datos}. Así como el tratamiento necesario de los datos para poder entrenar los modelos.
+En esta sección se modificarán los datos que presentan patrones, valores atípicos o sesgos que se comentan en la sección anterior, \ref{sec.segos-datos} \nameref{sec.segos-datos}. Así como el tratamiento necesario de los datos para poder entrenar los modelos.
 
-Una de las características problemáticas, es la existencia de parámetros con valores infinito. Para tratar con esta problemática existen dos enfoques, o bien se sustituyen los valores infinitos por el máximo valor posible para ese parámetro, o bien, se elimina el flujo al que pertenece cada valor infinito. Para este trabajo, se opta por ...
-\section{DECIDIR SI ELIMINAR LOS DATOS CON VALORES INFINITOS O NO}
+Una de las características problemáticas, es la existencia de parámetros con valores infinito. Para tratar con esta problemática existen dos enfoques, o bien se sustituyen los valores infinitos por el máximo valor posible para ese parámetro, o bien, se elimina el flujo al que pertenece cada valor infinito. Para este trabajo, se opta por eliminar los datos con valores infinitos, ya que asginarles un valor falso, podría crear una relación sintética entre los datos y provocar que el modelo no converja en una solución real.
 
-Para entrenar un modelo es necesario que en primer lugar todos los parámetros sean numéricos. En los datos originales del dataset, se encuentran tres parámetros que no presentan un formato numérico: IPV4\_SRC\_ADDR, IPV4\_DST\_ADDR y Attack.
+Para entrenar un modelo es necesario que en primer lugar todos los parámetros sean numéricos. En los datos originales del \textit{dataset}, se encuentran tres parámetros que no presentan un formato numérico: IPV4\_SRC\_ADDR, IPV4\_DST\_ADDR y Attack.
 
 \begin{itemize}
 	\item Para dar un formato correcto al parámetro Attack, se utiliza el codificador LabelEncoder de la biblioteca sklearn.preprocessing y el método fit\_transform de la biblioteca sklearn. La primera función, LabelEncoder codifica las etiquetas de características categóricas en valores numéricos entre 0 y el número de clases menos 1. Una vez se instancian las categorías del parámtero, el método fit\_transform nos permite entrenar el codificador y transformar el conjunto de datos en un único paso.

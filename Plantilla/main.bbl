@@ -73,6 +73,21 @@ Miguel~Ángel Oliveros~Villegas and Haydeé~Cecilia Rincón~de Parra.
   mejores prácticas del project management institute.
 \newblock {\em Visión Gerencial}, 10(1):85--94, 2011.
 
+\bibitem{tanenbaum2009}
+A.~S. Tanenbaum.
+\newblock {\em Computer Networks}.
+\newblock Prentice Hall, 5th edition, 2009.
+
+\bibitem{scott2015}
+J.~Scott.
+\newblock A comprehensive study on denial of service attacks.
+\newblock {\em International Journal of Computer Science}, 12(4):45--60, 2015.
+
+\bibitem{cissp2018}
+International Information System Security~Certification Consortium.
+\newblock Phishing attacks and how to avoid them, 2018.
+\newblock https://www.isc2.org.
+
 \bibitem{cosmikal_firewall}
 Cosmikal.
 \newblock ¿qué es y cómo funciona un firewall? guía básica 2025, december

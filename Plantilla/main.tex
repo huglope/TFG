@@ -20,7 +20,7 @@
 \usepackage{ragged2e}
 \usepackage{tabularx}
 \usepackage{ifthen} % para la tabla de riesgos
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{eurosym} % para el euro
@@ -28,6 +28,12 @@
 \usepackage{framed}
 \usepackage{newfloat}
 \usepackage{caption}
+\usepackage{xurl}
+\usepackage[colorlinks]{hyperref}
+
+\hypersetup{
+	allcolors = {blue}
+}
 
 \usepackage[table,xcdraw]{xcolor} % Para colores en tablas
 \usepackage{array} % Para mayor control de columnas
@@ -113,7 +119,7 @@
 \begin{titlepage}
 
 \begin{center}
-\vspace*{-0.5in}\textsc{•}
+\vspace*{-0.5in}
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=5cm]{./img/uva}
