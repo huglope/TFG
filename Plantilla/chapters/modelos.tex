@@ -180,7 +180,14 @@ la mitad del número de parámetros que recibe el modelo, el mismo número que p
 A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
 \subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIBIN25}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosBIN}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnmediosBIN.pdf}
+    \caption{Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnmediosBIN}
+\end{figure}
 
 \paragraph{Ventajas (n/2)}
 \begin{itemize}
@@ -197,7 +204,14 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
 
 \subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIBIN49}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnBIN}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnBIN.pdf}
+    \caption{Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnBIN}
+\end{figure}
 
 \paragraph{Ventajas (n)}
 \begin{itemize}
@@ -214,15 +228,22 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecerá resultados significativamente positivos gracias a su equilibrio y balanceo.
 
 \subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIBIN98}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con el doble de neuronas en la capa oculta que parámetros recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnnBIN}.
 
-\paragraph{Ventajas (n*2)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnnBIN.pdf}
+    \caption{Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnnBIN}
+\end{figure}
+
+\paragraph{Ventajas (2n)}
 \begin{itemize}
 	\item Alta capacidad de aprendizaje, lo que se traduce como la posibilidad de capturar patrones de datos muy complejos que no son lineales ni perceptibles en un análisis superficial del problema.
 	\item Cuanto mayor es el conjunto de datos mejor se ajustan los pesos.
 	\item Es menos propenso a subajustar que otras arquitecutras.
 \end{itemize}
-\paragraph{Inconvenientes(n*2)}
+\paragraph{Inconvenientes(2n)}
 \begin{itemize}
 	\item El riesgo de sobreajuste es elevado, memorizando de esta manera ruido en vez de aprender los patrones generalizables.
 	\item Nivel computacional muy elevado, lo que se refleja en el tiempo necesario de entrenamiento de esta arquitectura y en su posterior tiempo de respuesta.
@@ -230,8 +251,6 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 \end{itemize}
 
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual al doble de los parámetros del modelo, aparentemente, esta arquitectura obtendrá mejores resultados si los parámetros no tiene relaciones lineales. En cambio, si los datos presentan relaciones lineales tiene más probabilidades de sobreajustar los pesso del modelo, lo que implicaría que le modelo no ha sido capaz de converger a una solución genérica.
-
-\section{CREAR E INSERTAR IMAGENES DE LAS ARQUITECTURAS}
 
 
 \subsection{Matriz de confusión para clasificación binaria} \label{sec.matriz-consfusion}
@@ -397,7 +416,7 @@ La Figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores con
 \end{figure}
 
 
-En la Figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (n*2) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (2n) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 20\,000
 	\item \textbf{\textit{Epochs}}: 10
@@ -578,14 +597,14 @@ Tras comentar cuales son las principales ventajas e inconvenientes de utilizar u
 \subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIMUL98}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
 
-\paragraph{Ventajas (n*2)}
+\paragraph{Ventajas (2n)}
 \begin{itemize}
 	\item Una capa oculta más amplia incrementa la capacidad del modelo para aprender representaciones complejas, lo que puede ser especialmente útil para distinguir correctamente clases minoritarias con patrones sutiles o poco definidos.
 	\item Esta configuración ofrece una mayor flexibilidad al modelo para aproximar funciones no lineales, favoreciendo una mejor separación entre clases en escenarios multiclase con alta variabilidad entre categorías.
 	\item Al disponer de más neuronas, el modelo tiene mayor margen para explorar combinaciones de características relevantes durante el entrenamiento, lo cual puede traducirse en una mejora de métricas como macro F1 o recall por clase.
 \end{itemize}
 
-\paragraph{Inconvenientes(n*2)}
+\paragraph{Inconvenientes(2n)}
 \begin{itemize}
 	\item El aumento en el número de parámetros incrementa el riesgo de sobreajuste, especialmente en presencia de clases mayoritarias dominantes o cuando el conjunto de entrenamiento es reducido
 	\item Un modelo con mayor complejidad requiere más recursos computacionales y tiempos de entrenamiento más prolongados, lo que puede dificultar su implementación en entornos con restricciones de capacidad o temporales.
@@ -782,7 +801,7 @@ La figura \ref{fig:MULhs49}, muestra la representación de las cinco mejores con
 \end{figure}
 
 
-En la Figura \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 neuronas (n*2) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Figura \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 neuronas (2n) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 256
 	\item \textbf{\textit{Epochs}}: 100

@@ -6,14 +6,8 @@
 
   <!-- Etiquetas -->
   <text x="125" y="265" font-size="16" text-anchor="middle" fill="black">Entradas (n)</text>
-  <text x="325" y="90" font-size="16" text-anchor="middle" fill="black">Capa oculta (n*2)</text>
+  <text x="325" y="90" font-size="16" text-anchor="middle" fill="black">Capa oculta (2n)</text>
   <text x="525" y="400" font-size="16" text-anchor="middle" fill="black">Salida</text>
-
-  <!-- 🔴 Círculo de salida alineado verticalmente -->
-  <g fill="red">
-    <circle cx="525" cy="450" r="10"/>
-  </g>
-
 
   <!-- Conexiones entradas → capa oculta -->
   <!-- Líneas desde cada círculo azul hacia todos los círculos verdes -->
@@ -102,6 +96,12 @@
 
     <!-- Último círculo -->
     <circle cx="325" cy="625.67" r="10"/>
+  </g>
+	
+
+  <!-- 🔴 Círculo de salida alineado verticalmente -->
+  <g fill="red">
+    <circle cx="525" cy="450" r="10"/>
   </g>
 
 </svg>

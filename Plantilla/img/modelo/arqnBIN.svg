@@ -9,6 +9,34 @@
   <text x="325" y="90" font-size="16" text-anchor="middle" fill="black">Capa oculta (n)</text>
   <text x="525" y="285" font-size="16" text-anchor="middle" fill="black">Salida</text>
 
+
+  <!-- Conexiones entradas → capa oculta -->
+  <line x1="125" y1="161.665" x2="325" y2="161.665" stroke="black"/>
+  <line x1="125" y1="161.665" x2="325" y2="213.335" stroke="black"/>
+  <line x1="125" y1="161.665" x2="325" y2="264.995" stroke="black"/>
+  <line x1="125" y1="161.665" x2="325" y2="388.335" stroke="black"/>
+  
+  <line x1="125" y1="213.335" x2="325" y2="161.665" stroke="black"/>
+  <line x1="125" y1="213.335" x2="325" y2="213.335" stroke="black"/>
+  <line x1="125" y1="213.335" x2="325" y2="264.995" stroke="black"/>
+  <line x1="125" y1="213.335" x2="325" y2="388.335" stroke="black"/>
+  
+  <line x1="125" y1="264.995" x2="325" y2="161.665" stroke="black"/>
+  <line x1="125" y1="264.995" x2="325" y2="213.335" stroke="black"/>
+  <line x1="125" y1="264.995" x2="325" y2="264.995" stroke="black"/>
+  <line x1="125" y1="264.995" x2="325" y2="388.335" stroke="black"/>
+  
+  <line x1="125" y1="388.335" x2="325" y2="161.665" stroke="black"/>
+  <line x1="125" y1="388.335" x2="325" y2="213.335" stroke="black"/>
+  <line x1="125" y1="388.335" x2="325" y2="264.995" stroke="black"/>
+  <line x1="125" y1="388.335" x2="325" y2="388.335" stroke="black"/>
+
+  <!-- Conexiones capa oculta → salida -->
+  <line x1="325" y1="161.665" x2="525" y2="300" stroke="black"/>
+  <line x1="325" y1="213.335" x2="525" y2="300" stroke="black"/>
+  <line x1="325" y1="264.995" x2="525" y2="300" stroke="black"/>
+  <line x1="325" y1="388.335" x2="525" y2="300" stroke="black"/>
+	
   <!-- 🔵 Círculos de entrada -->
   <g fill="blue">
     <circle cx="125" cy="161.665" r="10"/>
@@ -44,31 +72,5 @@
     <circle cx="525" cy="300" r="10"/>
   </g>
 
-  <!-- Conexiones entradas → capa oculta -->
-  <line x1="125" y1="161.665" x2="325" y2="161.665" stroke="black"/>
-  <line x1="125" y1="161.665" x2="325" y2="213.335" stroke="black"/>
-  <line x1="125" y1="161.665" x2="325" y2="264.995" stroke="black"/>
-  <line x1="125" y1="161.665" x2="325" y2="388.335" stroke="black"/>
-  
-  <line x1="125" y1="213.335" x2="325" y2="161.665" stroke="black"/>
-  <line x1="125" y1="213.335" x2="325" y2="213.335" stroke="black"/>
-  <line x1="125" y1="213.335" x2="325" y2="264.995" stroke="black"/>
-  <line x1="125" y1="213.335" x2="325" y2="388.335" stroke="black"/>
-  
-  <line x1="125" y1="264.995" x2="325" y2="161.665" stroke="black"/>
-  <line x1="125" y1="264.995" x2="325" y2="213.335" stroke="black"/>
-  <line x1="125" y1="264.995" x2="325" y2="264.995" stroke="black"/>
-  <line x1="125" y1="264.995" x2="325" y2="388.335" stroke="black"/>
-  
-  <line x1="125" y1="388.335" x2="325" y2="161.665" stroke="black"/>
-  <line x1="125" y1="388.335" x2="325" y2="213.335" stroke="black"/>
-  <line x1="125" y1="388.335" x2="325" y2="264.995" stroke="black"/>
-  <line x1="125" y1="388.335" x2="325" y2="388.335" stroke="black"/>
-
-  <!-- Conexiones capa oculta → salida -->
-  <line x1="325" y1="161.665" x2="525" y2="300" stroke="black"/>
-  <line x1="325" y1="213.335" x2="525" y2="300" stroke="black"/>
-  <line x1="325" y1="264.995" x2="525" y2="300" stroke="black"/>
-  <line x1="325" y1="388.335" x2="525" y2="300" stroke="black"/>
 
 </svg>

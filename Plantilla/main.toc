@@ -7,7 +7,7 @@
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contexto}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivación}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos del proyecto}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Objetivos del proyecto}{2}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Objetivos académicos}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Estrucutra de la memoria}{3}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Metodología}{5}{chapter.2}%
@@ -47,7 +47,7 @@
 \contentsline {chapter}{\numberline {6}Modelos}{47}{chapter.6}%
 \contentsline {section}{\numberline {6.1}¿Qué es un modelo neuronal?}{47}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}¿Qué tipos de modelos neuronales existen?}{48}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Función de perdida}{50}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Función de perdida}{49}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}Algoritmo de optimización}{51}{subsection.6.1.3}%
 \contentsline {section}{\numberline {6.2}Parámetros e hiperparámetros}{53}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Modelo neuronal de clasificación binaria}{54}{section.6.3}%
@@ -55,46 +55,40 @@
 \contentsline {subsection}{\numberline {6.3.2}Diseño del modelo e hiperparámetros seleccionados}{55}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}Arquitecturas desarrolladas}{56}{subsection.6.3.3}%
 \contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{57}{section*.53}%
-\contentsline {paragraph}{Ventajas (n/2)}{57}{section*.54}%
-\contentsline {paragraph}{Inconvenientes(n/2)}{57}{section*.55}%
-\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{58}{section*.56}%
-\contentsline {paragraph}{Ventajas (n)}{58}{section*.57}%
-\contentsline {paragraph}{Inconvenientes(n)}{58}{section*.58}%
-\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{58}{section*.59}%
-\contentsline {paragraph}{Ventajas (n*2)}{59}{section*.60}%
-\contentsline {paragraph}{Inconvenientes(n*2)}{59}{section*.61}%
-\contentsline {section}{\numberline {6.4}CREAR E INSERTAR IMAGENES DE LAS ARQUITECTURAS}{59}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Matriz de confusión para clasificación binaria}{59}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Métricas útiles en clasificación binaria}{60}{subsection.6.4.2}%
-\contentsline {subsubsection}{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}{62}{section*.63}%
-\contentsline {subsection}{\numberline {6.4.3}Mejores hiperparámetros para cada arquitectura}{63}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.4.4}Comparación de las arquitecturas}{65}{subsection.6.4.4}%
-\contentsline {section}{\numberline {6.5}Modelo neuronal de clasificación multiclase}{66}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Proposito del modelo de clasificación multiclase}{67}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Diseño del modelo e hiperparámetros seleccionados}{67}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}Diseños del modelo de clasificación multiclase descartados}{70}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}Arquitecturas desarrolladas}{71}{subsection.6.5.4}%
-\contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{72}{section*.70}%
-\contentsline {paragraph}{Ventajas (n/2)}{72}{section*.71}%
-\contentsline {paragraph}{Inconvenientes(n/2)}{72}{section*.72}%
-\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{73}{section*.73}%
-\contentsline {paragraph}{Ventajas (n)}{73}{section*.74}%
-\contentsline {paragraph}{Inconvenientes(n)}{73}{section*.75}%
-\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{73}{section*.76}%
-\contentsline {paragraph}{Ventajas (n*2)}{74}{section*.77}%
-\contentsline {paragraph}{Inconvenientes(n*2)}{74}{section*.78}%
-\contentsline {subsection}{\numberline {6.5.5}Matriz de confusión para clasificación multiclase}{74}{subsection.6.5.5}%
-\contentsline {subsection}{\numberline {6.5.6}Metricas útiles en clasificación multiclase}{75}{subsection.6.5.6}%
-\contentsline {subsection}{\numberline {6.5.7}Mejores hiperparámetros para cada arquitectura}{78}{subsection.6.5.7}%
-\contentsline {subsection}{\numberline {6.5.8}Comparación de las arquitecturas}{80}{subsection.6.5.8}%
-\contentsline {chapter}{\numberline {7}Test}{85}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{87}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{89}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{91}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{93}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Manuales}{95}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Manual de despliegue e instalación}{95}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Manual de mantenimiento}{95}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Manual de usuario}{95}{section.Alph1.3}%
-\contentsline {chapter}{\numberline {B}Resumen de enlaces adicionales}{97}{appendix.Alph2}%
-\contentsline {chapter}{Bibliografía}{99}{appendix.Alph2}%
+\contentsline {paragraph}{Ventajas (n/2)}{57}{section*.55}%
+\contentsline {paragraph}{Inconvenientes(n/2)}{58}{section*.56}%
+\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{58}{section*.57}%
+\contentsline {paragraph}{Ventajas (n)}{59}{section*.59}%
+\contentsline {paragraph}{Inconvenientes(n)}{59}{section*.60}%
+\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{60}{section*.61}%
+\contentsline {paragraph}{Ventajas (2n)}{61}{section*.63}%
+\contentsline {paragraph}{Inconvenientes(2n)}{61}{section*.64}%
+\contentsline {subsection}{\numberline {6.3.4}Matriz de confusión para clasificación binaria}{61}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Métricas útiles en clasificación binaria}{62}{subsection.6.3.5}%
+\contentsline {subsubsection}{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}{64}{section*.66}%
+\contentsline {subsection}{\numberline {6.3.6}Mejores hiperparámetros para cada arquitectura}{65}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}Comparación de las arquitecturas}{67}{subsection.6.3.7}%
+\contentsline {section}{\numberline {6.4}Modelo neuronal de clasificación multiclase}{68}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Proposito del modelo de clasificación multiclase}{69}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Diseño del modelo e hiperparámetros seleccionados}{69}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Diseños del modelo de clasificación multiclase descartados}{72}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Arquitecturas desarrolladas}{73}{subsection.6.4.4}%
+\contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{74}{section*.73}%
+\contentsline {paragraph}{Ventajas (n/2)}{74}{section*.74}%
+\contentsline {paragraph}{Inconvenientes(n/2)}{74}{section*.75}%
+\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{75}{section*.76}%
+\contentsline {paragraph}{Ventajas (n)}{75}{section*.77}%
+\contentsline {paragraph}{Inconvenientes(n)}{75}{section*.78}%
+\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{75}{section*.79}%
+\contentsline {paragraph}{Ventajas (2n)}{76}{section*.80}%
+\contentsline {paragraph}{Inconvenientes(2n)}{76}{section*.81}%
+\contentsline {subsection}{\numberline {6.4.5}Matriz de confusión para clasificación multiclase}{76}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.4.6}Metricas útiles en clasificación multiclase}{77}{subsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.4.7}Mejores hiperparámetros para cada arquitectura}{80}{subsection.6.4.7}%
+\contentsline {subsection}{\numberline {6.4.8}Comparación de las arquitecturas}{82}{subsection.6.4.8}%
+\contentsline {chapter}{\numberline {7}Test}{87}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{89}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{91}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{93}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{95}{chapter.11}%
+\contentsline {chapter}{Bibliografía}{97}{chapter.11}%
