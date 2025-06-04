@@ -1,0 +1,16 @@
+{"time":"2025-06-04T14:09:27.373821119+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_140927-xfezrufs/logs/debug-core.log"}
+{"time":"2025-06-04T14:09:27.743908373+02:00","level":"INFO","msg":"created new stream","id":"xfezrufs"}
+{"time":"2025-06-04T14:09:27.743959264+02:00","level":"INFO","msg":"stream: started","id":"xfezrufs"}
+{"time":"2025-06-04T14:09:27.743998536+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:09:27.74405039+02:00","level":"INFO","msg":"sender: started","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:09:27.744059443+02:00","level":"INFO","msg":"handler: started","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:09:28.001685894+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:10:31.424785989+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:10:31.424818345+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:10:32.428433023+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xfezrufs-test_confusion_matrix_table","runtime_seconds":1.007899882,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.118175167,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-04T14:10:33.972937896+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:10:34.269205245+02:00","level":"INFO","msg":"stream: closing","id":"xfezrufs"}
+{"time":"2025-06-04T14:10:34.269232188+02:00","level":"INFO","msg":"handler: closed","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:10:34.269248707+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:10:34.269261116+02:00","level":"INFO","msg":"sender: closed","stream_id":"xfezrufs"}
+{"time":"2025-06-04T14:10:34.269328503+02:00","level":"INFO","msg":"stream: closed","id":"xfezrufs"}

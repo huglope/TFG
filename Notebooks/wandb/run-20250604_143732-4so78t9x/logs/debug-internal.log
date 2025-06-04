@@ -1,0 +1,16 @@
+{"time":"2025-06-04T14:37:32.639651816+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_143732-4so78t9x/logs/debug-core.log"}
+{"time":"2025-06-04T14:37:32.979333418+02:00","level":"INFO","msg":"created new stream","id":"4so78t9x"}
+{"time":"2025-06-04T14:37:32.979354238+02:00","level":"INFO","msg":"stream: started","id":"4so78t9x"}
+{"time":"2025-06-04T14:37:32.979362514+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:37:32.979399735+02:00","level":"INFO","msg":"sender: started","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:37:32.979409473+02:00","level":"INFO","msg":"handler: started","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:37:33.224244993+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:38:14.910056981+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:38:14.910089112+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:38:15.911656307+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-4so78t9x-test_confusion_matrix_table","runtime_seconds":1.004235012}],"total_operations":1}}
+{"time":"2025-06-04T14:38:17.920867092+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:38:18.231911426+02:00","level":"INFO","msg":"stream: closing","id":"4so78t9x"}
+{"time":"2025-06-04T14:38:18.231926575+02:00","level":"INFO","msg":"handler: closed","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:38:18.231933959+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:38:18.231938939+02:00","level":"INFO","msg":"sender: closed","stream_id":"4so78t9x"}
+{"time":"2025-06-04T14:38:18.23197133+02:00","level":"INFO","msg":"stream: closed","id":"4so78t9x"}

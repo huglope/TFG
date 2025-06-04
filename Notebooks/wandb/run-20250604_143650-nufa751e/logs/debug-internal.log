@@ -1,0 +1,16 @@
+{"time":"2025-06-04T14:36:50.397740549+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_143650-nufa751e/logs/debug-core.log"}
+{"time":"2025-06-04T14:36:50.754067289+02:00","level":"INFO","msg":"created new stream","id":"nufa751e"}
+{"time":"2025-06-04T14:36:50.754089531+02:00","level":"INFO","msg":"stream: started","id":"nufa751e"}
+{"time":"2025-06-04T14:36:50.754106443+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:36:50.754121482+02:00","level":"INFO","msg":"handler: started","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:36:50.754138715+02:00","level":"INFO","msg":"sender: started","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:36:51.077487206+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:37:29.639112301+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:37:29.639142147+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:37:30.640761533+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-nufa751e-test_confusion_matrix_table","runtime_seconds":1.004317208,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.212980606,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-04T14:37:32.306627727+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:37:32.597772582+02:00","level":"INFO","msg":"stream: closing","id":"nufa751e"}
+{"time":"2025-06-04T14:37:32.597785657+02:00","level":"INFO","msg":"handler: closed","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:37:32.597793682+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:37:32.597802729+02:00","level":"INFO","msg":"sender: closed","stream_id":"nufa751e"}
+{"time":"2025-06-04T14:37:32.597863234+02:00","level":"INFO","msg":"stream: closed","id":"nufa751e"}

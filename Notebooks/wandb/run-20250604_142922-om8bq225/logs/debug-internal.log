@@ -1,0 +1,19 @@
+{"time":"2025-06-04T14:29:22.111643455+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_142922-om8bq225/logs/debug-core.log"}
+{"time":"2025-06-04T14:29:22.454845703+02:00","level":"INFO","msg":"created new stream","id":"om8bq225"}
+{"time":"2025-06-04T14:29:22.454871581+02:00","level":"INFO","msg":"stream: started","id":"om8bq225"}
+{"time":"2025-06-04T14:29:22.454890807+02:00","level":"INFO","msg":"handler: started","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:29:22.45488185+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:29:22.454900334+02:00","level":"INFO","msg":"sender: started","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:29:22.716434058+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:29:53.508063216+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:29:53.508099654+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:29:54.51007784+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-24, summary","runtime_seconds":16.233836385},{"desc":"uploading artifact run-om8bq225-test_confusion_matrix_table","runtime_seconds":1.004740884}],"total_operations":2}}
+{"time":"2025-06-04T14:29:55.808073067+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:30:54.570055778+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-24, summary","runtime_seconds":76.293812529}],"total_operations":1}}
+{"time":"2025-06-04T14:31:54.525555242+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/TFG_Hugo/TFG_MUL_EVAL_2/om8bq225/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-06-04T14:31:54.62766994+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-24, summary","runtime_seconds":136.351425519,"error_status":"retrying: Post \"https://api.wandb.ai/files/TFG_Hugo/TFG_MUL_EVAL_2/om8bq225/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}],"total_operations":1}}
+{"time":"2025-06-04T14:31:57.517215635+02:00","level":"INFO","msg":"stream: closing","id":"om8bq225"}
+{"time":"2025-06-04T14:31:57.517231145+02:00","level":"INFO","msg":"handler: closed","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:31:57.517238949+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:31:57.517256342+02:00","level":"INFO","msg":"sender: closed","stream_id":"om8bq225"}
+{"time":"2025-06-04T14:31:57.517315043+02:00","level":"INFO","msg":"stream: closed","id":"om8bq225"}

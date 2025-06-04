@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.5.19)  3 JUN 2025 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.5.19)  4 JUN 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1910,11 +1910,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [38]
 Cap\'{\i }tulo 5.
 (./chapters/ent-datos.tex
-Overfull \hbox (34.78873pt too wide) in paragraph at lines 15--31
- [][] 
- []
-
-
 
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
@@ -1929,8 +1924,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -1940,8 +1935,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [40]
 
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -2015,7 +2010,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Cap\'{\i }tulo 6.
 (./chapters/modelos.tex
-<./img/modelo/capas.png, id=966, 801.99625pt x 482.80376pt>
+<./img/modelo/capas.png, id=967, 801.99625pt x 482.80376pt>
 File: ./img/modelo/capas.png Graphic file (type png)
 <use ./img/modelo/capas.png>
 Package pdftex.def Info: ./img/modelo/capas.png  used on input line 14.
@@ -2043,7 +2038,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [48 <./img/modelo/capas.png>]
-<./img/modelo/CNN.png, id=987, 752.8125pt x 451.6875pt>
+<./img/modelo/CNN.png, id=988, 752.8125pt x 451.6875pt>
 File: ./img/modelo/CNN.png Graphic file (type png)
 <use ./img/modelo/CNN.png>
 Package pdftex.def Info: ./img/modelo/CNN.png  used on input line 39.
@@ -2071,7 +2066,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [50]
-<./img/modelo/retropropagacion.png, id=1011, 804.00375pt x 513.92pt>
+<./img/modelo/retropropagacion.png, id=1013, 804.00375pt x 513.92pt>
 File: ./img/modelo/retropropagacion.png Graphic file (type png)
 <use ./img/modelo/retropropagacion.png>
 Package pdftex.def Info: ./img/modelo/retropropagacion.png  used on input line 
@@ -2122,7 +2117,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [54]
-<./img/modelo/modeloBIN.png, id=1045, 1264.725pt x 674.52pt>
+<./img/modelo/modeloBIN.png, id=1047, 1264.725pt x 674.52pt>
 File: ./img/modelo/modeloBIN.png Graphic file (type png)
 <use ./img/modelo/modeloBIN.png>
 Package pdftex.def Info: ./img/modelo/modeloBIN.png  used on input line 155.
@@ -2202,7 +2197,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Info: Redefining \. on input line 351.
 LaTeX Info: Redefining \% on input line 351.
 [62]
-<./img/modelo/BINhs25.pdf, id=1117, 782.45082pt x 120.45pt>
+<./img/modelo/BINhs25.pdf, id=1119, 782.45082pt x 120.45pt>
 File: ./img/modelo/BINhs25.pdf Graphic file (type pdf)
 <use ./img/modelo/BINhs25.pdf>
 Package pdftex.def Info: ./img/modelo/BINhs25.pdf  used on input line 378.
@@ -2219,12 +2214,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [63]
-<./img/modelo/BINhs49.pdf, id=1125, 782.45082pt x 120.45pt>
+<./img/modelo/BINhs49.pdf, id=1127, 782.45082pt x 120.45pt>
 File: ./img/modelo/BINhs49.pdf Graphic file (type pdf)
 <use ./img/modelo/BINhs49.pdf>
 Package pdftex.def Info: ./img/modelo/BINhs49.pdf  used on input line 394.
 (pdftex.def)             Requested size: 401.18387pt x 61.75766pt.
-<./img/modelo/BINhs98.pdf, id=1128, 782.45082pt x 120.45pt>
+<./img/modelo/BINhs98.pdf, id=1130, 782.45082pt x 120.45pt>
 File: ./img/modelo/BINhs98.pdf Graphic file (type pdf)
 <use ./img/modelo/BINhs98.pdf>
 Package pdftex.def Info: ./img/modelo/BINhs98.pdf  used on input line 409.
@@ -2234,7 +2229,7 @@ Package pdftex.def Info: ./img/modelo/BINhs98.pdf  used on input line 409.
 LaTeX Info: Redefining \. on input line 413.
 LaTeX Info: Redefining \% on input line 413.
 [64 <./img/modelo/BINhs25.pdf> <./img/modelo/BINhs49.pdf>]
-<./img/modelo/BINtop5.pdf, id=1141, 355.65942pt x 120.45pt>
+<./img/modelo/BINtop5.pdf, id=1143, 355.65942pt x 120.45pt>
 File: ./img/modelo/BINtop5.pdf Graphic file (type pdf)
 <use ./img/modelo/BINtop5.pdf>
 Package pdftex.def Info: ./img/modelo/BINtop5.pdf  used on input line 424.
@@ -2273,7 +2268,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [67]
-<./img/modelo/modeloMUL.png, id=1173, 1383.1675pt x 712.6625pt>
+<./img/modelo/modeloMUL.png, id=1175, 1383.1675pt x 712.6625pt>
 File: ./img/modelo/modeloMUL.png Graphic file (type png)
 <use ./img/modelo/modeloMUL.png>
 Package pdftex.def Info: ./img/modelo/modeloMUL.png  used on input line 469.
@@ -2301,7 +2296,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [69]
-<./img/modelo/MULPRUEBAS.pdf, id=1189, 654.41339pt x 120.45pt>
+<./img/modelo/MULPRUEBAS.pdf, id=1191, 654.41339pt x 120.45pt>
 File: ./img/modelo/MULPRUEBAS.pdf Graphic file (type pdf)
 <use ./img/modelo/MULPRUEBAS.pdf>
 Package pdftex.def Info: ./img/modelo/MULPRUEBAS.pdf  used on input line 498.
@@ -2363,6 +2358,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [74]
 
+Package caption Warning: \label without proper reference on input line 615.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:confusion_matrix_9class' on page 75 undefined on 
+input line 610.
+
+
+
 LaTeX Info: Redefining \. on input line 655.
 LaTeX Info: Redefining \% on input line 655.
 
@@ -2415,12 +2419,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [78]
-<./img/modelo/MULhs25.pdf, id=1272, 597.50786pt x 120.45pt>
+<./img/modelo/MULhs25.pdf, id=1275, 597.50786pt x 120.45pt>
 File: ./img/modelo/MULhs25.pdf Graphic file (type pdf)
 <use ./img/modelo/MULhs25.pdf>
 Package pdftex.def Info: ./img/modelo/MULhs25.pdf  used on input line 763.
 (pdftex.def)             Requested size: 401.18387pt x 80.87383pt.
-<./img/modelo/MULhs49.pdf, id=1275, 597.50786pt x 120.45pt>
+<./img/modelo/MULhs49.pdf, id=1278, 597.50786pt x 120.45pt>
 File: ./img/modelo/MULhs49.pdf Graphic file (type pdf)
 <use ./img/modelo/MULhs49.pdf>
 Package pdftex.def Info: ./img/modelo/MULhs49.pdf  used on input line 779.
@@ -2437,7 +2441,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [79 <./img/modelo/MULhs25.pdf>]
-<./img/modelo/MULhs98.pdf, id=1285, 597.50786pt x 120.45pt>
+<./img/modelo/MULhs98.pdf, id=1288, 597.50786pt x 120.45pt>
 File: ./img/modelo/MULhs98.pdf Graphic file (type pdf)
 <use ./img/modelo/MULhs98.pdf>
 Package pdftex.def Info: ./img/modelo/MULhs98.pdf  used on input line 794.
@@ -2454,7 +2458,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [80 <./img/modelo/MULhs49.pdf> <./img/modelo/MULhs98.pdf>]
-<./img/modelo/MULtop10.pdf, id=1298, 426.79138pt x 220.825pt>
+<./img/modelo/MULtop10.pdf, id=1301, 426.79138pt x 220.825pt>
 File: ./img/modelo/MULtop10.pdf Graphic file (type pdf)
 <use ./img/modelo/MULtop10.pdf>
 Package pdftex.def Info: ./img/modelo/MULtop10.pdf  used on input line 809.
@@ -2480,7 +2484,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [81 <./img/modelo/MULtop10.pdf>]
-<./img/modelo/MCMUL.png, id=1311, 1003.75pt x 803.0pt>
+<./img/modelo/MCMUL.png, id=1314, 1003.75pt x 803.0pt>
 File: ./img/modelo/MCMUL.png Graphic file (type png)
 <use ./img/modelo/MCMUL.png>
 Package pdftex.def Info: ./img/modelo/MCMUL.png  used on input line 837.
@@ -2688,7 +2692,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  36931 strings out of 475002
  719259 string characters out of 5762004
- 1171287 words of memory out of 5000000
+ 1172285 words of memory out of 5000000
  58968 multiletter control sequences out of 15000+600000
  576362 words of font info for 76 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
@@ -2721,10 +2725,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvr8a.pfb>
-Output written on main.pdf (120 pages, 1926931 bytes).
+Output written on main.pdf (120 pages, 1933631 bytes).
 PDF statistics:
- 1574 PDF objects out of 1728 (max. 8388607)
- 1352 compressed objects within 14 object streams
+ 1577 PDF objects out of 1728 (max. 8388607)
+ 1355 compressed objects within 14 object streams
  361 named destinations out of 1000 (max. 500000)
  715 words of extra memory for PDF output out of 10000 (max. 10000000)
 

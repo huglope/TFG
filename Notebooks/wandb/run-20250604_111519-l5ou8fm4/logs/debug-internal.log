@@ -1,0 +1,19 @@
+{"time":"2025-06-04T11:15:19.472170025+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_111519-l5ou8fm4/logs/debug-core.log"}
+{"time":"2025-06-04T11:15:19.836406339+02:00","level":"INFO","msg":"created new stream","id":"l5ou8fm4"}
+{"time":"2025-06-04T11:15:19.836496485+02:00","level":"INFO","msg":"stream: started","id":"l5ou8fm4"}
+{"time":"2025-06-04T11:15:19.836539769+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:15:19.836634494+02:00","level":"INFO","msg":"handler: started","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:15:19.836656697+02:00","level":"INFO","msg":"sender: started","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:15:20.134843227+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T11:18:09.907168648+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T11:18:09.907215259+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T11:18:10.9098516+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 9-9","runtime_seconds":5.078154692},{"desc":"uploading Modelos/TFG_BIN_bs(15000)_lr(0.01)_hs(25)_e(10).pth","runtime_seconds":0.163613313,"progress":"7.9KB/7.9KB"}],"total_operations":2}}
+{"time":"2025-06-04T11:18:11.089100088+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T11:19:10.97377616+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 9-9","runtime_seconds":65.142079321}],"total_operations":1}}
+{"time":"2025-06-04T11:20:11.037524863+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 9-9","runtime_seconds":125.205827943}],"total_operations":1}}
+{"time":"2025-06-04T11:20:19.810404206+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/TFG_Hugo/TFG_BIN_EVAL/l5ou8fm4/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-06-04T11:20:22.766292242+02:00","level":"INFO","msg":"stream: closing","id":"l5ou8fm4"}
+{"time":"2025-06-04T11:20:22.76630734+02:00","level":"INFO","msg":"handler: closed","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:20:22.766317619+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:20:22.766360227+02:00","level":"INFO","msg":"sender: closed","stream_id":"l5ou8fm4"}
+{"time":"2025-06-04T11:20:22.766415299+02:00","level":"INFO","msg":"stream: closed","id":"l5ou8fm4"}

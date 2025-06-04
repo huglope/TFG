@@ -1,0 +1,16 @@
+{"time":"2025-06-04T14:25:18.3597937+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_142518-fvpdcejh/logs/debug-core.log"}
+{"time":"2025-06-04T14:25:18.707503242+02:00","level":"INFO","msg":"created new stream","id":"fvpdcejh"}
+{"time":"2025-06-04T14:25:18.707548468+02:00","level":"INFO","msg":"stream: started","id":"fvpdcejh"}
+{"time":"2025-06-04T14:25:18.707565681+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:25:18.70759092+02:00","level":"INFO","msg":"sender: started","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:25:18.707604886+02:00","level":"INFO","msg":"handler: started","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:25:19.074712635+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:26:59.784466895+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:26:59.784517317+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:27:00.786354221+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-fvpdcejh-test_confusion_matrix_table","runtime_seconds":1.004812016}],"total_operations":1}}
+{"time":"2025-06-04T14:27:02.384009376+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:27:02.72295414+02:00","level":"INFO","msg":"stream: closing","id":"fvpdcejh"}
+{"time":"2025-06-04T14:27:02.722966512+02:00","level":"INFO","msg":"handler: closed","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:27:02.722972974+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:27:02.72298694+02:00","level":"INFO","msg":"sender: closed","stream_id":"fvpdcejh"}
+{"time":"2025-06-04T14:27:02.723031301+02:00","level":"INFO","msg":"stream: closed","id":"fvpdcejh"}

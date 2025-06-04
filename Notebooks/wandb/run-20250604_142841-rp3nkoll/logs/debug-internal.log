@@ -1,0 +1,16 @@
+{"time":"2025-06-04T14:28:41.27163971+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_142841-rp3nkoll/logs/debug-core.log"}
+{"time":"2025-06-04T14:28:41.611342206+02:00","level":"INFO","msg":"created new stream","id":"rp3nkoll"}
+{"time":"2025-06-04T14:28:41.611369687+02:00","level":"INFO","msg":"stream: started","id":"rp3nkoll"}
+{"time":"2025-06-04T14:28:41.61139256+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:28:41.61142521+02:00","level":"INFO","msg":"sender: started","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:28:41.611433926+02:00","level":"INFO","msg":"handler: started","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:28:41.858416654+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T14:29:19.104468972+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T14:29:19.104496563+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T14:29:20.107181705+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-rp3nkoll-test_confusion_matrix_table","runtime_seconds":1.005608423}],"total_operations":1}}
+{"time":"2025-06-04T14:29:21.745842505+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T14:29:22.069713357+02:00","level":"INFO","msg":"stream: closing","id":"rp3nkoll"}
+{"time":"2025-06-04T14:29:22.069730459+02:00","level":"INFO","msg":"handler: closed","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:29:22.069738084+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:29:22.069754534+02:00","level":"INFO","msg":"sender: closed","stream_id":"rp3nkoll"}
+{"time":"2025-06-04T14:29:22.069814045+02:00","level":"INFO","msg":"stream: closed","id":"rp3nkoll"}

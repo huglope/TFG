@@ -1,4 +1,5 @@
 # Ignorar la carpeta de los datasets
 /Datasets
 *.csv
+*.pth
 test

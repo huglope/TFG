@@ -1,0 +1,31 @@
+{
+  "os": "Linux-6.14.0-15-generic-x86_64-with-glibc2.41",
+  "python": "CPython 3.12.7",
+  "startedAt": "2025-06-04T12:31:57.521479Z",
+  "program": "/home/hugo/TFG/Notebooks/TFG_HUGO_MUL_Evaluacion .ipynb",
+  "codePath": "Notebooks/TFG_HUGO_MUL_Evaluacion .ipynb",
+  "git": {
+    "remote": "git@github.com:huglope/TFG.git",
+    "commit": "7783571eedd292a12bb1cb9c5ba2867f356bb0eb"
+  },
+  "email": "alv.lop.hugo@gmail.com",
+  "root": "/home/hugo/TFG/Notebooks",
+  "host": "hugo-ROG-Strix-G513RC-G513RC",
+  "executable": "/home/hugo/anaconda3/bin/python",
+  "codePathLocal": "TFG_HUGO_MUL_Evaluacion .ipynb",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "124749635584",
+      "used": "101229604864"
+    }
+  },
+  "memory": {
+    "total": "15981531136"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}

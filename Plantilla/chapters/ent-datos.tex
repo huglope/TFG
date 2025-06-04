@@ -12,7 +12,7 @@ En esta sección se explican los tipos de datos presentes en el \textit{dataset}
 El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 127\,639 (5,4\%) son muestras de ataque y 2\,237\,731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La Tabla \ref{tab:attacks-tab} proporciona una distribución detallada del conjunto de datos:
 
 \begin{table}[H]
-\begin{tabular}{|l|c|>{\RaggedRight}p{10cm}|} % Ajusta el ancho (8cm) según necesites
+\begin{tabular}{|l|c|>{\RaggedRight}p{8cm}|} % Ajusta el ancho (8cm) según necesites
 \hline
 \rowcolor[HTML]{C0C0C0} 
 \textbf{Clase} & \textbf{Cantidad} & \textbf{Descripción} \\ \hline
@@ -38,61 +38,61 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
 \url{https://arxiv.org/pdf/2503.04404}
 
 \begin{itemize}
-    \item \textbf{IPV4\_SRC\_ADDR}: Dirección IPv4 de origen.
-    \item \textbf{IPV4\_DST\_ADDR}: Dirección IPv4 de destino.
-    \item \textbf{L4\_SRC\_PORT}: Número de puerto de origen de la capa 4.
-    \item \textbf{L4\_DST\_PORT}: Número de puerto de destino de la capa 4.
-    \item \textbf{PROTOCOL}: Byte identificador del protocolo IP.
-    \item \textbf{L7\_PROTO}: Protocolo de aplicación (numérico) de la capa 7.
-    \item \textbf{IN\_BYTES}: Número de bytes entrantes.
-    \item \textbf{OUT\_BYTES}: Número de bytes salientes.
-    \item \textbf{IN\_PKTS}: Número de paquetes entrantes.
-    \item \textbf{OUT\_PKTS}: Número de paquetes salientes.
-    \item \textbf{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos.
-    \item \textbf{TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP.
-    \item \textbf{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del cliente.
-    \item \textbf{SERVER\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del servidor.
-    \item \textbf{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg).
-    \item \textbf{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg).
-    \item \textbf{MIN\_TTL}: TTL mínimo del flujo.
-    \item \textbf{MAX\_TTL}: TTL máximo del flujo.
-    \item \textbf{LONGEST\_FLOW\_PKT}: Paquete más largo (bytes) del flujo.
-    \item \textbf{SHORTEST\_FLOW\_PKT}: Paquete más corto (bytes) del flujo.
-    \item \textbf{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado.
-    \item \textbf{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado.
-    \item \textbf{SRC\_TO\_DST\_SECOND\_BYTES}: \textit{Bytes}/segundo de origen a destino.
-    \item \textbf{DST\_TO\_SRC\_SECOND\_BYTES}: \textit{Bytes}/segundo de destino a origen.
-    \item \textbf{RETRANSMITTED\_IN\_BYTES}: Número de bytes TCP retransmitidos del flujo (src a dst).
-    \item \textbf{RETRANSMITTED\_IN\_PKTS}: Número de paquetes TCP retransmitidos del flujo (src a dst).
-    \item \textbf{RETRANSMITTED\_OUT\_BYTES}: Número de bytes TCP retransmitidos del flujo (dst a src).
-    \item \textbf{RETRANSMITTED\_OUT\_PKTS}: Número de paquetes TCP retransmitidos del flujo (dst a src).
-    \item \textbf{SRC\_TO\_DST\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de origen a destino (bps).
-    \item \textbf{DST\_TO\_SRC\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de destino a origen (bps).
-    \item \textbf{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es $ \leq $ 128.
-    \item \textbf{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es  $ > $ 128 y $ \leq $ 256.
-    \item \textbf{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 256 y $ \leq $ 512.
-    \item \textbf{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 512 y $ \leq $ 1024.
-    \item \textbf{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 1024 y $ \leq $ 1514.
-    \item \textbf{TCP\_WIN\_MAX\_IN}: Ventana TCP máxima (src a dst).
-    \item \textbf{TCP\_WIN\_MAX\_OUT}: Ventana TCP máxima (dst a src).
-    \item \textbf{ICMP\_TYPE}: Tipo ICMP * 256 + Código ICMP.
-    \item \textbf{ICMP\_IPV4\_TYPE}: Tipo ICMP.
-    \item \textbf{DNS\_QUERY\_ID}: ID de transacción de la consulta DNS.
-    \item \textbf{DNS\_QUERY\_TYPE}: Tipo de consulta DNS (ej., 1=A, 2=NS..).
-    \item \textbf{DNS\_TTL\_ANSWER}: TTL del primer registro A (si existe).
-    \item \textbf{FTP\_COMMAND\_RET\_CODE}: Código de retorno del comando del cliente FTP.
-    \item \textbf{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en milisegundos.
-    \item \textbf{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en milisegundos.
-    \item \textbf{SRC\_TO\_DST\_IAT\_MIN}: IAT mínimo (src a dst).
-    \item \textbf{SRC\_TO\_DST\_IAT\_MAX}: IAT máximo (src a dst).
-    \item \textbf{SRC\_TO\_DST\_IAT\_AVG}: IAT promedio (src a dst).
-    \item \textbf{SRC\_TO\_DST\_IAT\_STDDEV}: Desviación estándar del IAT (src a dst).
-    \item \textbf{DST\_TO\_SRC\_IAT\_MIN}: IAT mínimo (dst a src).
-    \item \textbf{DST\_TO\_SRC\_IAT\_MAX}: IAT máximo (dst a src).
-    \item \textbf{DST\_TO\_SRC\_IAT\_AVG}: IAT promedio (dst a src).
-    \item \textbf{DST\_TO\_SRC\_IAT\_STDDEV}: Desviación estándar del IAT (dst a src).
-    \item \textbf{Label}: Toma valor 0 si el flujo es benigno y 1 si se trata de un ataque.
-    \item \textbf{Attack}: Clase de flujo, perteneciente a las clases mencionadas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}
+    \item \texttt{IPV4\_SRC\_ADDR}: Dirección IPv4 de origen.
+    \item \texttt{IPV4\_DST\_ADDR}: Dirección IPv4 de destino.
+    \item \texttt{L4\_SRC\_PORT}: Número de puerto de origen de la capa 4.
+    \item \texttt{L4\_DST\_PORT}: Número de puerto de destino de la capa 4.
+    \item \texttt{PROTOCOL}: Byte identificador del protocolo IP.
+    \item \texttt{L7\_PROTO}: Protocolo de aplicación (numérico) de la capa 7.
+    \item \texttt{IN\_BYTES}: Número de bytes entrantes.
+    \item \texttt{OUT\_BYTES}: Número de bytes salientes.
+    \item \texttt{IN\_PKTS}: Número de paquetes entrantes.
+    \item \texttt{OUT\_PKTS}: Número de paquetes salientes.
+    \item \texttt{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos.
+    \item \texttt{TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP.
+    \item \texttt{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del cliente.
+    \item \texttt{SERVER\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del servidor.
+    \item \texttt{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg).
+    \item \texttt{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg).
+    \item \texttt{MIN\_TTL}: TTL mínimo del flujo.
+    \item \texttt{MAX\_TTL}: TTL máximo del flujo.
+    \item \texttt{LONGEST\_FLOW\_PKT}: Paquete más largo (\textit{bytes}) del flujo.
+    \item \texttt{SHORTEST\_FLOW\_PKT}: Paquete más corto (\textit{bytes}) del flujo.
+    \item \texttt{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado.
+    \item \texttt{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado.
+    \item \texttt{SRC\_TO\_DST\_SECOND\_BYTES}: \textit{Bytes}/segundo de origen a destino.
+    \item \texttt{DST\_TO\_SRC\_SECOND\_BYTES}: \textit{Bytes}/segundo de destino a origen.
+    \item \texttt{RETRANSMITTED\_IN\_BYTES}: Número de bytes TCP retransmitidos del flujo (src a dst).
+    \item \texttt{RETRANSMITTED\_IN\_PKTS}: Número de paquetes TCP retransmitidos del flujo (src a dst).
+    \item \texttt{RETRANSMITTED\_OUT\_BYTES}: Número de bytes TCP retransmitidos del flujo (dst a src).
+    \item \texttt{RETRANSMITTED\_OUT\_PKTS}: Número de paquetes TCP retransmitidos del flujo (dst a src).
+    \item \texttt{SRC\_TO\_DST\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de origen a destino (bps).
+    \item \texttt{DST\_TO\_SRC\_AVG\_THROUGHPUT}: Tasa de transferencia promedio de destino a origen (bps).
+    \item \texttt{NUM\_PKTS\_UP\_TO\_128\_BYTES}: Paquetes cuyo tamaño IP es $ \leq $ 128.
+    \item \texttt{NUM\_PKTS\_128\_TO\_256\_BYTES}: Paquetes cuyo tamaño IP es  $ > $ 128 y $ \leq $ 256.
+    \item \texttt{NUM\_PKTS\_256\_TO\_512\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 256 y $ \leq $ 512.
+    \item \texttt{NUM\_PKTS\_512\_TO\_1024\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 512 y $ \leq $ 1024.
+    \item \texttt{NUM\_PKTS\_1024\_TO\_1514\_BYTES}: Paquetes cuyo tamaño IP es $ > $ 1024 y $ \leq $ 1514.
+    \item \texttt{TCP\_WIN\_MAX\_IN}: Ventana TCP máxima (src a dst).
+    \item \texttt{TCP\_WIN\_MAX\_OUT}: Ventana TCP máxima (dst a src).
+    \item \texttt{ICMP\_TYPE}: Tipo ICMP * 256 + Código ICMP.
+    \item \texttt{ICMP\_IPV4\_TYPE}: Tipo ICMP.
+    \item \texttt{DNS\_QUERY\_ID}: ID de transacción de la consulta DNS.
+    \item \texttt{DNS\_QUERY\_TYPE}: Tipo de consulta DNS (ej., 1=A, 2=NS..).
+    \item \texttt{DNS\_TTL\_ANSWER}: TTL del primer registro A (si existe).
+    \item \texttt{FTP\_COMMAND\_RET\_CODE}: Código de retorno del comando del cliente FTP.
+    \item \texttt{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en milisegundos.
+    \item \texttt{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en milisegundos.
+    \item \texttt{SRC\_TO\_DST\_IAT\_MIN}: IAT mínimo (src a dst).
+    \item \texttt{SRC\_TO\_DST\_IAT\_MAX}: IAT máximo (src a dst).
+    \item \texttt{SRC\_TO\_DST\_IAT\_AVG}: IAT promedio (src a dst).
+    \item \texttt{SRC\_TO\_DST\_IAT\_STDDEV}: Desviación estándar del IAT (src a dst).
+    \item \texttt{DST\_TO\_SRC\_IAT\_MIN}: IAT mínimo (dst a src).
+    \item \texttt{DST\_TO\_SRC\_IAT\_MAX}: IAT máximo (dst a src).
+    \item \texttt{DST\_TO\_SRC\_IAT\_AVG}: IAT promedio (dst a src).
+    \item \texttt{DST\_TO\_SRC\_IAT\_STDDEV}: Desviación estándar del IAT (dst a src).
+    \item \texttt{Label}: Toma valor 0 si el flujo es benigno y 1 si se trata de un ataque.
+    \item \texttt{Attack}: Clase de flujo, perteneciente a las clases mencionadas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}
 \end{itemize}
 
 \section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
@@ -130,7 +130,7 @@ Una vez que todos los parámetros presentan valores numéricos, se separan los p
 
 Los parámetros que pertenecen a Y son Label y Attack. Sin embargo, en función del modelo que se entrena se utiliza o bien Label, o bien Attack, pero nunca los dos al mismo tiempo.
 
-Por su parte, X la conforman el total de los parámetros del Dataseet a excepción de:
+Por su parte, X la conforman el total de los parámetros del \textit{dataset} a excepción de:
 \begin{itemize}
 	\item \textbf{Label y Attack}: Se tratan de los parámetros que conforman Y, si estos parámetros formasen parte de los datos de entrada del modelo, el algoritmo encargado de entrenarlo, les asignaría a estos parámetros unos pesos muy elevados y tendría una tasa teórica de éxito del 100\%, puesto que, se estaría introduciendo la respuesta al problema que se aborda directamente como entrada al modelo. En un sistema informático real esta práctica es imposible.
 	\item \textbf{IPV4\_SRC\_ADDR y IPV4\_DST\_ADDR}: Tal y como se menciona en la sección \ref{sec.param-datos} \nameref{sec.param-datos}, estos parámetros presentan un patrón irregular y sintético. Al introducir estos parámetros como entradas para el entrenamiento del modelo, de forma análoga a como sucede con los parámetros Label y Attack se estarían introduciendo valores que no se pueden obtener en una situación realista y condicionando el comportamiento del modelo. Esto implica como se menciona en los siguiente capítulos que el modelo resultante obtendría muy buenas métricas en validación pero muy malas al someterlo a datos que nunca ha visto durante su entrenamiento.

@@ -1,0 +1,16 @@
+{"time":"2025-06-04T11:53:14.826498957+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_115313-7hscp87d/logs/debug-core.log"}
+{"time":"2025-06-04T11:53:15.188713183+02:00","level":"INFO","msg":"created new stream","id":"7hscp87d"}
+{"time":"2025-06-04T11:53:15.188753851+02:00","level":"INFO","msg":"stream: started","id":"7hscp87d"}
+{"time":"2025-06-04T11:53:15.188787336+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:53:15.188801092+02:00","level":"INFO","msg":"sender: started","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:53:15.188855768+02:00","level":"INFO","msg":"handler: started","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:53:15.526095104+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T11:55:09.383380608+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T11:55:09.383440964+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T11:55:10.351510547+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading Modelos/TFG_BIN_bs(2000)_lr(0.001)_hs(49)_e(10).pth","runtime_seconds":0.134629306,"progress":"12.6KB/12.6KB"}],"total_operations":1}}
+{"time":"2025-06-04T11:55:10.565224199+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T11:55:10.867430428+02:00","level":"INFO","msg":"stream: closing","id":"7hscp87d"}
+{"time":"2025-06-04T11:55:10.867458212+02:00","level":"INFO","msg":"handler: closed","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:55:10.867475695+02:00","level":"INFO","msg":"sender: closed","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:55:10.867470716+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7hscp87d"}
+{"time":"2025-06-04T11:55:10.86756624+02:00","level":"INFO","msg":"stream: closed","id":"7hscp87d"}

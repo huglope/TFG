@@ -1,0 +1,16 @@
+{"time":"2025-06-04T12:47:18.800180403+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/hugo/TFG/Notebooks/wandb/run-20250604_124718-vkf24xzw/logs/debug-core.log"}
+{"time":"2025-06-04T12:47:19.193280154+02:00","level":"INFO","msg":"created new stream","id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:19.193338905+02:00","level":"INFO","msg":"stream: started","id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:19.193364999+02:00","level":"INFO","msg":"handler: started","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:19.193406891+02:00","level":"INFO","msg":"sender: started","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:19.193396653+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:19.468450189+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T12:47:35.742738426+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T12:47:35.742806803+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T12:47:36.746137387+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-vkf24xzw-test_confusion_matrix_table","runtime_seconds":1.009896136,"subtasks":[{"desc":"test_confusion_matrix_table.table.json","runtime_seconds":0.201651802,"progress":"1.9KB/1.9KB"}]}],"total_operations":1}}
+{"time":"2025-06-04T12:47:38.374001947+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T12:47:38.721779304+02:00","level":"INFO","msg":"stream: closing","id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:38.721803846+02:00","level":"INFO","msg":"handler: closed","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:38.721814114+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:38.721893049+02:00","level":"INFO","msg":"sender: closed","stream_id":"vkf24xzw"}
+{"time":"2025-06-04T12:47:38.721923271+02:00","level":"INFO","msg":"stream: closed","id":"vkf24xzw"}
