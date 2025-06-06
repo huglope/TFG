@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {4.1}¿Qué es un ataque a un sistema informático?}{31}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Tipos de ataque a sistemas informáticos}{32}{section.4.2}%
 \contentsline {section}{\numberline {4.3}¿Qué es TCP?}{33}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}¿Qué es un segmento TCP?}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}¿Qué es un segmento TCP?}{34}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Importancia de protegerse frente a un ataque}{35}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Importancia de detectar los ataques rápidamente}{36}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Soluciones comerciales o actuales a estos problemas}{36}{section.4.6}%
@@ -34,8 +34,8 @@
 \contentsline {section}{\numberline {5.1}Origen de los datos}{39}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos}{39}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Parámetros de los datos}{40}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Patrones preliminares, valores atípicos y sesgos}{43}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Preparación de los datos ¿SEPARAR EN OTRO CAPÍTULO?}{43}{section.5.5}%
+\contentsline {section}{\numberline {5.4}Selección de atributos}{43}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Preparación de los datos ¿SEPARAR EN OTRO CAPÍTULO?}{44}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Modelos}{47}{chapter.6}%
 \contentsline {section}{\numberline {6.1}¿Qué es un modelo neuronal?}{47}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}¿Qué tipos de modelos neuronales existen?}{48}{subsection.6.1.1}%
@@ -66,21 +66,21 @@
 \contentsline {subsection}{\numberline {6.4.3}Diseños del modelo de clasificación multiclase descartados}{72}{subsection.6.4.3}%
 \contentsline {subsection}{\numberline {6.4.4}Arquitecturas desarrolladas}{73}{subsection.6.4.4}%
 \contentsline {subsubsection}{Capa oculta con la mitad de neuronas que parámetros de entrada}{74}{section*.67}%
-\contentsline {paragraph}{Ventajas (n/2)}{74}{section*.68}%
-\contentsline {paragraph}{Inconvenientes(n/2)}{74}{section*.69}%
-\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{75}{section*.70}%
-\contentsline {paragraph}{Ventajas (n)}{75}{section*.71}%
-\contentsline {paragraph}{Inconvenientes(n)}{75}{section*.72}%
-\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{75}{section*.73}%
-\contentsline {paragraph}{Ventajas (2n)}{76}{section*.74}%
-\contentsline {paragraph}{Inconvenientes(2n)}{76}{section*.75}%
-\contentsline {subsection}{\numberline {6.4.5}Matriz de confusión para clasificación multiclase}{76}{subsection.6.4.5}%
-\contentsline {subsection}{\numberline {6.4.6}Metricas útiles en clasificación multiclase}{77}{subsection.6.4.6}%
-\contentsline {subsection}{\numberline {6.4.7}Mejores hiperparámetros para cada arquitectura}{80}{subsection.6.4.7}%
-\contentsline {subsection}{\numberline {6.4.8}Comparación de las arquitecturas}{82}{subsection.6.4.8}%
-\contentsline {chapter}{\numberline {7}Test}{87}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Despliegue}{89}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{91}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{93}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{95}{chapter.11}%
-\contentsline {chapter}{Bibliografía}{97}{chapter.11}%
+\contentsline {paragraph}{Ventajas (n/2)}{74}{section*.69}%
+\contentsline {paragraph}{Inconvenientes(n/2)}{75}{section*.70}%
+\contentsline {subsubsection}{Capa oculta con el mismo número de neuronas que parámetros de entrada}{75}{section*.71}%
+\contentsline {paragraph}{Ventajas (n)}{76}{section*.73}%
+\contentsline {paragraph}{Inconvenientes(n)}{76}{section*.74}%
+\contentsline {subsubsection}{Capa oculta con el doble de neuronas que parámetros de entrada}{77}{section*.75}%
+\contentsline {paragraph}{Ventajas (2n)}{78}{section*.77}%
+\contentsline {paragraph}{Inconvenientes(2n)}{79}{section*.78}%
+\contentsline {subsection}{\numberline {6.4.5}Matriz de confusión para clasificación multiclase}{79}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.4.6}Metricas útiles en clasificación multiclase}{80}{subsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.4.7}Mejores hiperparámetros para cada arquitectura}{83}{subsection.6.4.7}%
+\contentsline {subsection}{\numberline {6.4.8}Comparación de las arquitecturas}{85}{subsection.6.4.8}%
+\contentsline {chapter}{\numberline {7}Test}{89}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Despliegue}{91}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Tecnologías usadas}{93}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{95}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{97}{chapter.11}%
+\contentsline {chapter}{Bibliografía}{99}{chapter.11}%

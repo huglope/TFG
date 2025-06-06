@@ -556,7 +556,14 @@ la mitad del número de parámetros que recibe el modelo, el mismo número que p
 A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
 \subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIMUL25}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosMUL}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnmediosMUL.pdf}
+    \caption{Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnmediosMUL}
+\end{figure}
 
 \paragraph{Ventajas (n/2)}
 \begin{itemize}
@@ -576,7 +583,14 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables. Debido al alto desbalanceo entre clases, se espera que esta arquitectura proporcione resultados peores que su equivalente del modelo de clasificación binaria.
 
 \subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIMUL49}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnMUL}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnMUL.pdf}
+    \caption{Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnMUL}
+\end{figure}
 
 \paragraph{Ventajas (n)}
 \begin{itemize}
@@ -595,7 +609,14 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecera resultados significativamente positivos gracias a su equilibrio. Aunque, si las clases que tienen un número inferior de muestras, tienen relaciones complejas entre sus datos, esta arquitectura puede ser insuficiente para obtener un modelo capaz de distinguir entre algunas de las clases más minoritarias.
 
 \subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIMUL98}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con el doble de neuronas en la capa oculta que parámetros recibe el modelo.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con el doble de neuronas en la capa oculta que parámetros recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnnMUL}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/arqnnMUL.pdf}
+    \caption{Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \label{fig:arqnnMUL}
+\end{figure}
 
 \paragraph{Ventajas (2n)}
 \begin{itemize}

@@ -14,6 +14,7 @@ Los ataques a sistemas informáticos se pueden clasificar de distintas maneras s
 \item{\textbf{Ataques de Denegación de Servicio (DoS)}}.
 Un ataque de Denegación de Servicio tiene como objetivo hacer que un sistema o red no esté disponible para sus usuarios legítimos, interrumpiendo su funcionamiento normal. Estos ataques se llevan a cabo sobrecargando los recursos de un servidor o red con una cantidad excesiva de solicitudes. Un ejemplo de este tipo de ataque es el Ataque de Denegación de Servicio Distribuido (DDoS), en el cual múltiples dispositivos comprometidos atacan al mismo tiempo un servidor, sobrecargándolo hasta que se vuelve inoperativo \cite{tanenbaum2009}.
 
+
 \item{\textbf{Ataques de Inyección}}.
 Los ataques de inyección ocurren cuando un atacante introduce código malicioso en un sistema que no valida correctamente las entradas de los usuarios. Un ejemplo común es la inyección SQL, donde un atacante puede insertar comandos SQL en una aplicación web para acceder, modificar o eliminar datos en una base de datos. Este tipo de ataque explota la falta de medidas de validación y filtrado en las entradas del sistema \cite{scott2015}.
 
@@ -23,11 +24,15 @@ El \textit{phishing} es un tipo de ataque en el que un atacante engaña a una pe
 \item{\textbf{Ataques de \textit{Malware}}}.
 El \textit{malware} es un software malicioso diseñado para dañar o robar información de un sistema informático. Entre los tipos más comunes de \textit{malware} se encuentran los virus, gusanos, troyanos y \textit{ransomware}. El \textit{ransomware}, por ejemplo, cifra los archivos de un sistema y exige un pago para liberar el acceso a los mismos. Los ataques de \textit{malware} pueden ser ejecutados a través de archivos adjuntos de correo electrónico, descargas de software malicioso o vulnerabilidades de seguridad.
 
+Los ataques de \textit{Malware} que se tratan en este trabajo son: \textit{Backdoor} y \textit{Worms}.
+
 \item{\textbf{Ataques \textit{Man-in-the-Middle} (MitM)}}.
 En un ataque \textit{Man-in-the-Middle} (de intermediario o de hombre en el medio), el atacante intercepta y, a veces, modifica la comunicación entre dos partes sin que ellas lo sepan. Estos ataques son comunes en redes no seguras, como las redes Wi-Fi públicas. El atacante puede obtener información confidencial, como contraseñas y datos de tarjetas de crédito, si no se utilizan medidas de seguridad adecuadas, como cifrado de las comunicaciones \cite{tanenbaum2009}.
 
 \item{\textbf{\textit{Exploits} de Vulnerabilidades}}.
 Un \textit{exploit} es un ataque que se aprovecha de una vulnerabilidad en el software o hardware de un sistema. Estos ataques se basan en el aprovechamiento de fallos conocidos en programas o dispositivos sin que el fabricante o el usuario los haya corregido. Los \textit{exploits} pueden permitir a los atacantes ejecutar código malicioso en un sistema, obtener acceso a información confidencial o incluso tomar control total de la máquina afectada \cite{cissp2018}.
+
+Aquellos ataques que pertenecen al tipo \textit{Exploits} de vulnerabilidades que el modelo de clasificación multiclase deberá distinguir son: \textit{Fuzzers}, \textit{Exploits} y \textit{Shellcode}.
 
 \end{itemize}
 

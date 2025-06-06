@@ -33,31 +33,29 @@ DoS & 5\,980 & La denegación de servicio es un intento de sobrecargar los recur
 \end{table}
 
 \section{Parámetros de los datos} \label{sec.param-datos}
-En esta sección se explicarán el significado de cada uno de los 55 parámetros que componen cada fila del \textit{dataset} seleccionado.
+En esta sección se explicarán el significado de cada uno de los 55 atributos que componen cada fila del \textit{dataset} seleccionado. El \textit{dataset}, que es de dominio público se puede descargar en formato .csv donde los atributos se encuentran separados por comas \cite{luay2025NetFlowDatasetsV3}.
 
-\url{https://arxiv.org/pdf/2503.04404}
-
-\begin{itemize}
+\begin{enumerate}
     \item \texttt{IPV4\_SRC\_ADDR}: Dirección IPv4 de origen.
     \item \texttt{IPV4\_DST\_ADDR}: Dirección IPv4 de destino.
     \item \texttt{L4\_SRC\_PORT}: Número de puerto de origen de la capa 4.
     \item \texttt{L4\_DST\_PORT}: Número de puerto de destino de la capa 4.
     \item \texttt{PROTOCOL}: Byte identificador del protocolo IP.
-    \item \texttt{L7\_PROTO}: Protocolo de aplicación (numérico) de la capa 7.
+    \item \texttt{L7\_PROTO}: Protocolo que opera en la capa 7 del Modelo OSI, también conocida como capa de aplicación.
     \item \texttt{IN\_BYTES}: Número de bytes entrantes.
     \item \texttt{OUT\_BYTES}: Número de bytes salientes.
     \item \texttt{IN\_PKTS}: Número de paquetes entrantes.
     \item \texttt{OUT\_PKTS}: Número de paquetes salientes.
-    \item \texttt{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en milisegundos.
-    \item \texttt{TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP.
-    \item \texttt{CLIENT\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del cliente.
-    \item \texttt{SERVER\_TCP\_FLAGS}: Acumulativo de todos los \textit{flags} TCP del servidor.
-    \item \texttt{DURATION\_IN}: Duración del flujo Cliente a Servidor (mseg).
-    \item \texttt{DURATION\_OUT}: Duración del flujo Cliente a Servidor (mseg).
-    \item \texttt{MIN\_TTL}: TTL mínimo del flujo.
-    \item \texttt{MAX\_TTL}: TTL máximo del flujo.
-    \item \texttt{LONGEST\_FLOW\_PKT}: Paquete más largo (\textit{bytes}) del flujo.
-    \item \texttt{SHORTEST\_FLOW\_PKT}: Paquete más corto (\textit{bytes}) del flujo.
+    \item \texttt{FLOW\_DURATION\_MILLISECONDS}: Duración del flujo en ms.
+    \item \texttt{TCP\_FLAGS}: \textit{Bits} dentro del encabezado TCP que indican el estado o la dirección de una conexión TCP.
+    \item \texttt{CLIENT\_TCP\_FLAGS}: \textit{Bits} dentro del encabezado TCP que indican el estado de la conexión TCP del cliente.
+    \item \texttt{SERVER\_TCP\_FLAGS}: \textit{Bits} dentro del encabezado TCP que indican el estado de la conexión TCP del servidor.
+    \item \texttt{DURATION\_IN}: Duración del flujo Cliente a Servidor (ms).
+    \item \texttt{DURATION\_OUT}: Duración del flujo Cliente a Servidor (ms).
+    \item \texttt{MIN\_TTL}: Mínimo valor del TTL (\textit{Time To Live}), que limita la duración de un paquete de datos en una red informática, durante la sesión TCP.
+    \item \texttt{MAX\_TTL}: Maximo valor del TTL (\textit{Time To Live}), que limita la duración de un paquete de datos en una red informática, durante la sesión TCP.
+    \item \texttt{LONGEST\_FLOW\_PKT}: Paquete de mayor tamaño enviado durante la conexión de los sistemas (bytes).
+    \item \texttt{SHORTEST\_FLOW\_PKT}: Paquete de menor tamaño enviado durante la conexión de los sistemas (bytes)
     \item \texttt{MIN\_IP\_PKT\_LEN}: Longitud del paquete IP más pequeño del flujo observado.
     \item \texttt{MAX\_IP\_PKT\_LEN}: Longitud del paquete IP más grande del flujo observado.
     \item \texttt{SRC\_TO\_DST\_SECOND\_BYTES}: \textit{Bytes}/segundo de origen a destino.
@@ -81,8 +79,8 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
     \item \texttt{DNS\_QUERY\_TYPE}: Tipo de consulta DNS (ej., 1=A, 2=NS..).
     \item \texttt{DNS\_TTL\_ANSWER}: TTL del primer registro A (si existe).
     \item \texttt{FTP\_COMMAND\_RET\_CODE}: Código de retorno del comando del cliente FTP.
-    \item \texttt{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en milisegundos.
-    \item \texttt{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en milisegundos.
+    \item \texttt{FLOW\_START\_MILLISECONDS}: Marca de tiempo de inicio del flujo en ms.
+    \item \texttt{FLOW\_END\_MILLISECONDS}: Marca de tiempo de fin del flujo en ms.
     \item \texttt{SRC\_TO\_DST\_IAT\_MIN}: IAT mínimo (src a dst).
     \item \texttt{SRC\_TO\_DST\_IAT\_MAX}: IAT máximo (src a dst).
     \item \texttt{SRC\_TO\_DST\_IAT\_AVG}: IAT promedio (src a dst).
@@ -91,14 +89,19 @@ En esta sección se explicarán el significado de cada uno de los 55 parámetros
     \item \texttt{DST\_TO\_SRC\_IAT\_MAX}: IAT máximo (dst a src).
     \item \texttt{DST\_TO\_SRC\_IAT\_AVG}: IAT promedio (dst a src).
     \item \texttt{DST\_TO\_SRC\_IAT\_STDDEV}: Desviación estándar del IAT (dst a src).
+\end{enumerate}
+
+Este conjunto de datos ya se encontraba previamente etiquetado, lo que permite realizar un trabajo como el propuesto en el tiempo establecido. Típicamente, los conjuntos de datos enfocados a la clasificación suelen tener una única etiqueta, pero este conjunto de datos tiene dos, lo que agiliza el tratamiento del conjunto de los datos para el entrenamiento y la evaluación de los modelos que se proponen en este proyecto.
+
+\begin{enumerate}
     \item \texttt{Label}: Toma valor 0 si el flujo es benigno y 1 si se trata de un ataque.
     \item \texttt{Attack}: Clase de flujo, perteneciente a las clases mencionadas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}
-\end{itemize}
+\end{enumerate}
 
-\section{Patrones preliminares, valores atípicos y sesgos} \label{sec.segos-datos}
-En esta sección se comentan los patrones prelinimares, así como los valores y los sesgos presentes en el \textit{dataset}. La identificación de estas irregularidades es fundamental para el correcto desarrollo del proyecto.
+\section{Selección de atributos}
+En esta sección se comentan los atributos prelinimares, así como los valores y los sesgos presentes en el \textit{dataset}. La identificación de estas irregularidades es fundamental para el correcto desarrollo del proyecto.
 
-Al analizar los datos originales del dataset, se encuentran características que afectan de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento. A continuación, se mencionan cuales son las características problematicas de los datos que se utilizan.
+Al analizar los datos originales del \textit{dataset}, se encuentran características que afectan de forma negativa al entrenamiento del modelo y por lo tanto, a su correcto funcionamiento. A continuación, se mencionan cuales son las características problematicas de los datos que se utilizan.
 
 
 Tras estudiar los datos, se descubre que algunos parámetros presentan valores infinitos, estos valores alteran la distribución inherente de las variables, introduciendo sesgos significativos en el proceso de aprendizaje. Los algoritmos de entrenamiento, diseñados para operar con valores numéricos finitos, pueden comportarse de manera impredecible o inestable ante la presencia de infinitos, dificultando la convergencia hacia una solución óptima. Asimismo, la interpretación de las características con valores infinitos se vuelve ambigua, comprometiendo la capacidad del modelo para establecer relaciones significativas con otras variables y para generalizar correctamente a datos futuros que no contengan tales valores extremos. En consecuencia, la presencia de infinitos puede degradar sustancialmente el rendimiento y la fiabilidad del modelo entrenado.
