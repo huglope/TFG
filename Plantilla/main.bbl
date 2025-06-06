@@ -73,6 +73,18 @@ Miguel~Ángel Oliveros~Villegas and Haydeé~Cecilia Rincón~de Parra.
   mejores prácticas del project management institute.
 \newblock {\em Visión Gerencial}, 10(1):85--94, 2011.
 
+\bibitem{ethical_hacking}
+David~Puche ACISSI, Marion~Agé.
+\newblock {\em Seguridad informática - Ethical Hacking: Conocer el ataque para
+  una mejor defensa}.
+\newblock Ediciones ENI, 2022.
+
+\bibitem{conataques}
+ServerNet.
+\newblock Consecuencias de ataques informáticos: reputación, daños y
+  pérdidas.
+\newblock {\em ServerNet Blog}, 2025.
+
 \bibitem{tanenbaum2009}
 A.~S. Tanenbaum.
 \newblock {\em Computer Networks}.
@@ -87,6 +99,42 @@ J.~Scott.
 International Information System Security~Certification Consortium.
 \newblock Phishing attacks and how to avoid them, 2018.
 \newblock https://www.isc2.org.
+
+\bibitem{Santos2020}
+Francisco Santos and María García.
+\newblock Impacto de los ciberataques en la continuidad operativa de las
+  empresas.
+\newblock {\em Revista de Ciberseguridad Empresarial}, 5:45--58, 2020.
+
+\bibitem{Ponemon2019}
+Ponemon Institute.
+\newblock {\em The Cost of a Data Breach Report 2019}.
+\newblock Ponemon Institute, Michigan, USA, 2019.
+
+\bibitem{Bada2017}
+Akin Bada and M.~Angela Sasse.
+\newblock The impact of data breaches on consumer trust and company reputation.
+\newblock {\em Journal of Cybersecurity and Digital Trust}, 1(3):123--134,
+  2017.
+
+\bibitem{anderson2020}
+Ross Anderson.
+\newblock Security engineering: A guide to building dependable distributed
+  systems.
+\newblock {\em Wiley}, 2020.
+
+\bibitem{RGPD2016}
+Parlamento~Europeo y~Consejo de~la Unión~Europea.
+\newblock Reglamento (ue) 2016/679 del parlamento europeo y del consejo de 27
+  de abril de 2016 relativo a la protección de las personas físicas en lo que
+  respecta al tratamiento de datos personales y a la libre circulación de
+  estos datos, 2016.
+
+\bibitem{Sommestad2019}
+Lars Sommestad, Mattias Ekstedt, and Per Johnson.
+\newblock The impact of proactive cybersecurity measures on organizational
+  reputation and trust.
+\newblock {\em Journal of Information Security}, 8(4):115--127, 2019.
 
 \bibitem{cosmikal_firewall}
 Cosmikal.

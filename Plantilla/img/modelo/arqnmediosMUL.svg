@@ -1,0 +1,106 @@
+<svg width="700" height="550" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Rectángulos -->
+  <rect x="50" y="100" width="150" height="350" fill="lightblue" stroke="blue" stroke-width="2" rx="10"/>
+  <rect x="250" y="187.5" width="150" height="175" fill="lightgreen" stroke="green" stroke-width="2" rx="10"/>
+
+  <!-- Etiquetas -->
+  <text x="125" y="90" font-size="16" text-anchor="middle" fill="black">Entradas (n)</text>
+  <text x="325" y="175" font-size="16" text-anchor="middle" fill="black">Capa oculta (n/2)</text>
+  <text x="550" y="50" font-size="16" text-anchor="middle" fill="black">Salidas</text>
+
+  <!-- Conexiones entradas → capa oculta -->
+  <line x1="125" y1="161.665" x2="325" y2="222.5" stroke="black"/>
+  <line x1="125" y1="161.665" x2="325" y2="249.5" stroke="black"/>
+  <line x1="125" y1="161.665" x2="325" y2="323.5" stroke="black"/>
+
+  <line x1="125" y1="213.335" x2="325" y2="222.5" stroke="black"/>
+  <line x1="125" y1="213.335" x2="325" y2="249.5" stroke="black"/>
+  <line x1="125" y1="213.335" x2="325" y2="323.5" stroke="black"/>
+
+  <line x1="125" y1="264.995" x2="325" y2="222.5" stroke="black"/>
+  <line x1="125" y1="264.995" x2="325" y2="249.5" stroke="black"/>
+  <line x1="125" y1="264.995" x2="325" y2="323.5" stroke="black"/>
+
+  <line x1="125" y1="388.335" x2="325" y2="222.5" stroke="black"/>
+  <line x1="125" y1="388.335" x2="325" y2="249.5" stroke="black"/>
+  <line x1="125" y1="388.335" x2="325" y2="323.5" stroke="black"/>
+
+  <!-- Conexiones capa oculta → salida (9 círculos rojos) -->
+  <g stroke="black">
+    <!-- 9 círculos rojos, todos conectados con los círculos verdes -->
+    <line x1="325" y1="222.5" x2="550" y2="68.32" />
+    <line x1="325" y1="222.5" x2="550" y2="119.99" />
+    <line x1="325" y1="222.5" x2="550" y2="171.66" />
+    <line x1="325" y1="222.5" x2="550" y2="223.33" />
+    <line x1="325" y1="222.5" x2="550" y2="275" />
+    <line x1="325" y1="222.5" x2="550" y2="326.67" />
+    <line x1="325" y1="222.5" x2="550" y2="378.34" />
+    <line x1="325" y1="222.5" x2="550" y2="430.01" />
+    <line x1="325" y1="222.5" x2="550" y2="481.68" />
+    
+    <line x1="325" y1="249.5" x2="550" y2="68.32" />
+    <line x1="325" y1="249.5" x2="550" y2="119.99" />
+    <line x1="325" y1="249.5" x2="550" y2="171.66" />
+    <line x1="325" y1="249.5" x2="550" y2="223.33" />
+    <line x1="325" y1="249.5" x2="550" y2="275" />
+    <line x1="325" y1="249.5" x2="550" y2="326.67" />
+    <line x1="325" y1="249.5" x2="550" y2="378.34" />
+    <line x1="325" y1="249.5" x2="550" y2="430.01" />
+    <line x1="325" y1="249.5" x2="550" y2="481.68" />
+    
+    <line x1="325" y1="323.5" x2="550" y2="68.32" />
+    <line x1="325" y1="323.5" x2="550" y2="119.99" />
+    <line x1="325" y1="323.5" x2="550" y2="171.66" />
+    <line x1="325" y1="323.5" x2="550" y2="223.33" />
+    <line x1="325" y1="323.5" x2="550" y2="275" />
+    <line x1="325" y1="323.5" x2="550" y2="326.67" />
+    <line x1="325" y1="323.5" x2="550" y2="378.34" />
+    <line x1="325" y1="323.5" x2="550" y2="430.01" />
+    <line x1="325" y1="323.5" x2="550" y2="481.68" />
+  </g>
+
+  <!-- 🔵 Círculos de entrada -->
+  <g fill="blue">
+    <circle cx="125" cy="161.665" r="10"/>
+    <circle cx="125" cy="213.335" r="10"/>
+    <circle cx="125" cy="264.995" r="10"/>
+    
+    <!-- Puntos -->
+    <text x="125" y="316" font-size="18" text-anchor="middle" fill="black">.</text>
+    <text x="125" y="326" font-size="18" text-anchor="middle" fill="black">.</text>
+    <text x="125" y="336" font-size="18" text-anchor="middle" fill="black">.</text>
+
+    <!-- Último círculo -->
+    <circle cx="125" cy="388.335" r="10"/>
+  </g>
+
+  <!-- 🟢 Círculos de capa oculta -->
+  <g fill="green">
+    <circle cx="325" cy="222.5" r="10"/>
+    <circle cx="325" cy="249.5" r="10"/>
+    
+    <!-- Puntos -->
+    <text x="325" y="276.5" font-size="18" text-anchor="middle" fill="black">.</text>
+    <text x="325" y="286.5" font-size="18" text-anchor="middle" fill="black">.</text>
+    <text x="325" y="296.5" font-size="18" text-anchor="middle" fill="black">.</text>
+
+    <!-- Último círculo -->
+    <circle cx="325" cy="323.5" r="10"/>
+  </g>
+
+  <!-- 🔴 Círculos de salida -->
+  <g fill="red">
+    <circle cx="550" cy="68.32" r="10"/>
+    <circle cx="550" cy="119.99" r="10"/>
+    <circle cx="550" cy="171.66" r="10"/>
+    <circle cx="550" cy="223.33" r="10"/>
+    <circle cx="550" cy="275" r="10"/> <!-- Este es el 5º círculo rojo -->
+    <circle cx="550" cy="326.67" r="10"/>
+    <circle cx="550" cy="378.34" r="10"/>
+    <circle cx="550" cy="430.01" r="10"/>
+    <circle cx="550" cy="481.68" r="10"/>
+  </g>
+
+</svg>
+

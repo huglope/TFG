@@ -1,10 +1,10 @@
 Este capítulo se corresponde con la segunda etapa de la metodología CRISP-DM, En el se explicará la naturaleza de los datos y sus características, así como los valores atípicos que presentan y sus sesgos.
 
 \section{Origen de los datos}  \label{sec.origen-datos}
-Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El \textit{dataset} en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia \cite{luay2025NetFlowDatasetsV3}.
+Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El conjunto de datos en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia \cite{luay2025NetFlowDatasetsV3}.
 
 
-El \textit{dataset} utilizado es NF-UNSW-NB15-v3, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
+El \textit{dataset} utilizado es \texttt{NF-UNSW-NB15-v3}, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
 
 \section{Tipos de ataques registrados en los datos} \label{sec.tipo-ataques}
 En esta sección se explican los tipos de datos presentes en el \textit{dataset} que se utiliza para entrenar a los modelos del proyecto. Se explica en que consiste cada tipo de ataque registrado así como el número exacto de ataques de cada tipo presente.
@@ -28,7 +28,7 @@ DoS & 5\,980 & La denegación de servicio es un intento de sobrecargar los recur
 \textit{Worms} & 158 & Ataques que se replican y se extienden a otros sistemas. \\ \hline
 \end{tabular}
 \centering
-\caption{Clasificación de amenazas de seguridad.} 
+\caption{Clasificación de amenazas de seguridad del dataset \texttt{NF-UNSW-NB15-v3}.} 
 \label{tab:attacks-tab}
 \end{table}
 

@@ -5,45 +5,45 @@ The style file: unsrt.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "nist2021ai" isn't style-file defined
 --line 78 of file bibliografia.bib
-You've used 34 entries,
+You've used 42 entries,
             1791 wiz_defined-function locations,
-            594 strings with 7619 characters,
-and the built_in function-call counts, 5248 in all, are:
-= -- 392
-> -- 247
+            639 strings with 8905 characters,
+and the built_in function-call counts, 6600 in all, are:
+= -- 508
+> -- 294
 < -- 1
-+ -- 102
-- -- 68
-* -- 185
-:= -- 833
-add.period$ -- 91
-call.type$ -- 34
-change.case$ -- 26
++ -- 122
+- -- 80
+* -- 251
+:= -- 1054
+add.period$ -- 114
+call.type$ -- 42
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 245
-empty$ -- 630
-format.name$ -- 68
-if$ -- 1200
+cite$ -- 42
+duplicate$ -- 313
+empty$ -- 783
+format.name$ -- 80
+if$ -- 1508
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 24
-newline$ -- 162
-num.names$ -- 34
-pop$ -- 207
+int.to.str$ -- 42
+missing$ -- 33
+newline$ -- 201
+num.names$ -- 42
+pop$ -- 236
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 124
+skip$ -- 149
 stack$ -- 0
-substring$ -- 66
-swap$ -- 43
+substring$ -- 123
+swap$ -- 51
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 40
-width$ -- 36
-write$ -- 320
+while$ -- 51
+width$ -- 44
+write$ -- 402
 (There was 1 warning)
