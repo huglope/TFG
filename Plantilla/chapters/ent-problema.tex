@@ -95,34 +95,34 @@ La capacidad de detectar rápidamente anomalías en el tráfico de red, accesos 
 
 En esta sección se comentan algunas de las soluciones y software que se utilizan en la actualiadad para detectar y neutralizar posibles ataques informáticos. Estas herramientas protegen los sistemas informáticos analizando y controlando el tráfico de la red.
 
-Los \textit{firewalls} o cortafuegos de próxima generación (NGFW) como Palo Alto Networks, Check Point o Cisco Firepower, inspeccionan el tráfico de red a un nivel profundo (\textit{Deep Packet Inspection}, DPI), analizando el contenido de los paquetes más allá de los puertos y protocolos tradicionales. Esto permite identificar y bloquear amenazas sofisticadas, \textit{malware}, y tráfico de aplicaciones maliciosas, además de ofrecer funcionalidades como prevención de intrusiones (IPS) y control de aplicaciones \cite{cosmikal_firewall}.
+Los \textit{firewalls} de próxima generación (NGFW) como Palo Alto Networks, Check Point o Cisco Firepower, inspeccionan el tráfico de red a un nivel profundo (Deep Packet Inspection - DPI), analizando el contenido de los paquetes más allá de los puertos y protocolos tradicionales. Este enfoque se sustenta en diversas tecnologías avanzadas, incluyendo técnicas de inteligencia artificial (IA) y aprendizaje automático (ML), que permiten una detección más precisa y dinámica de amenazas. Palo Alto Networks, por ejemplo, emplea IA a través de su sistema \textit{WildFire}, que utiliza análisis de comportamiento y \textit{sandboxing} para identificar \textit{malware} y amenazas avanzadas. Por su parte, Check Point implementa el uso de \textit{ThreatCloud}, una plataforma que aplica algoritmos de IA para la detección y prevención de amenazas, y que se beneficia de la inteligencia colectiva de miles de dispositivos conectados. Cisco Firepower se apoya en tecnologías de \textit{next-generation IPS} y \textit{URL filtering}, además de usar análisis de tráfico basado en IA para identificar patrones anómalos de tráfico y potenciales riesgos de seguridad. Estas herramientas permiten identificar y bloquear amenazas sofisticadas, \textit{malware}, y tráfico de aplicaciones maliciosas, además de ofrecer funcionalidades como prevención de intrusiones (IPS) y control de aplicaciones \cite{cosmikal_firewall}.
 
-Los sistemas de detección y prevención de intrusiones o IDS e IPS, como: Snort, Suricata o Trend Micro TippingPoint, monitorean el tráfico de red en tiempo real en busca de patrones sospechosos o firmas de ataques conocidos. Los IDS alertan sobre posibles intrusiones, mientras que los IPS tienen la capacidad de bloquear o mitigar activamente el tráfico malicioso detectado, interrumpiendo los ataques en curso \cite{geekflare_ids_ips}.
+
+Los sistemas de detección y prevención de intrusiones o IDS e IPS, como: \textit{Snort}, \textit{Suricata} o \textit{Trend Micro TippingPoint}, monitorean el tráfico de red en tiempo real en busca de patrones sospechosos o firmas de ataques conocidos. Los IDS alertan sobre posibles intrusiones, mientras que los IPS tienen la capacidad de bloquear o mitigar activamente el tráfico malicioso detectado, interrumpiendo los ataques en curso. Estas herramientas emplean diversas tecnologías para el análisis del tráfico y la detección de amenazas. \textit{Snort}, por ejemplo, se basa en un sistema de detección de firmas y anomalías, utilizando algoritmos de análisis de tráfico que, aunque tradicionalmente no utilizan IA, han sido extendidos con módulos que incorporan técnicas de aprendizaje automático para mejorar su capacidad de identificar ataques desconocidos. \textit{Suricata}, por su parte, también emplea un sistema de detección basado en firmas y análisis de flujo, pero se distingue por su capacidad para procesar grandes volúmenes de tráfico en paralelo, y su integración con herramientas de análisis de inteligencia de amenazas que utilizan IA para mejorar la precisión en la identificación de ataques avanzados. \textit{Trend Micro TippingPoint} utiliza un enfoque de prevención de intrusiones de próxima generación que integra tecnologías de inspección profunda de paquetes (\textit{DPI}) y análisis de tráfico en tiempo real, además de implementar IA y aprendizaje automático para detectar patrones de comportamiento anómalo y bloquear ataques sofisticados \cite{geekflare_ids_ips}.
 
 La microsegmentación de red con herramientas como VMware NSX, Cisco ACI o Illumio, divide la red en segmentos más pequeños y aislados, aplicando políticas de seguridad granular a cada segmento. Esto limita el movimiento lateral de los atacantes dentro de la red una vez que han comprometido un punto inicial. Al controlar el tráfico entre estos segmentos, se reduce la superficie de ataque y se contiene la propagación de las amenazas \cite{paloaltonetworks_microsegmentation}.
 
 \section{Requisitos}  \label{sec.requisitos} 
+En la fase de entendiemiento del problema de la metodología CRISP-DM es fundamental establecer claramente los requisitos que se deben cumplir durante el desarrollo del proyecto. Para definir los requisitos se ha utilizado el estándar ISO/IEC/IEEE 29148:2018 \cite{ISO29148} que trata sobre ingeniería de requisitos en sistemas y software. Este estándar especifica los procesos necesarios para desarrollar requisitos a lo largo del ciclo de vida de un proyecto o sistema.
+
 Como se ha comentado en la sección \ref{sec.objetivos-pro} \nameref{sec.objetivos-pro}, el principal objetivo del proyecto es desarrollar un modelo neuronal que detecte la presencia de ataques en una red informática y los clasifique según su tipo. Para cumplir con dicho objetivo, se considera imprescindible cumplir con los requisitos que se listan a continuación.
 
 \subsection{Requisitos Funcionales}   \label{sec.req-funcionales}
 \textbf{Primera versión de requisitos, no me convencen mucho}
 \begin{itemize}  
     \item \textbf{RF-1}: El sistema deberá detectar cuales de las conexiones podrían ser potenciales intrusiones en la red.
-    \item \textbf{RF-2}: El sistema deberá clasificará las conexiones en 10 categorías predefinidas en \nameref{tab:attacks-tab}.  
+    \item \textbf{RF-2}: El sistema deberá clasificará las conexiones en 10 categorías predefinidas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}.  
 	\item \textbf{RF-3}: El sistem deberá ser capaz de procesar formatos estándar de logs como son Syslog, NetFlow y PCAP.
 	\item \textbf{RF-4}: El sistema deberá diferenciar entre ataques conocidos (basados en firmas) y desconocidos (basados en anomalías).
-	\item \textbf{RF-5}: El sistema deberá ofrecer API REST para conexión con SIEMs (Splunk, IBM QRadar).
-	\item \textbf{RF-6}: Generar alertas automatizadas con nivel de criticidad (bajo/medio/alto).
-	\item \textbf{RF-7}: Proveer recomendaciones de mitigación básicas (ej. bloquear IPs maliciosas).
-
+	%\item \textbf{RF-5}: El sistema deberá ofrecer API REST para conexión con SIEMs (Splunk, IBM QRadar).
+	%\item \textbf{RF-6}: Generar alertas automatizadas con nivel de criticidad (bajo/medio/alto).
+	%\item \textbf{RF-7}: Proveer recomendaciones de mitigación básicas (ej. bloquear IPs maliciosas).
 	
-	
-\textbf{¿Debería integrar el modelo en algún sistema o crear un script o alguna forma para comunicarme con él?}
-		
 \end{itemize}  
 
 \subsection{Requisitos No Funcionales}   \label{sec.req-no-funcionales}
 \begin{itemize}  
-    \item \textbf{RNF-1}: Latencia <50 ms en redes de 10Gbps (requisito crítico para SOC~\cite{nist2021ai}).  
-    \item \textbf{RNF-2}: Interfaz accesible para usuarios no técnicos (evaluado con test SUS~\cite{brooke1996sus}).  
+    \item \textbf{RNF-1}: Latencia $<$50 ms en redes de 10Gbps (requisito crítico para SOC~\cite{nist2021ai}).  
+    \item \textbf{RNF-2}: Interfaz accesible para usuarios no técnicos (evaluado con test SUS~\cite{brooke1996sus}).
+    \item \textbf{RNF-3}: Se debe utilizar el \textit{dataset} \texttt{NF-UNSW-NB15-v3} para entrenar los modelos.  
 \end{itemize}  

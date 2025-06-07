@@ -22,8 +22,9 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Clasificación de amenazas de seguridad del dataset \texttt {NF-UNSW-NB15-v3}.}}{40}{table.caption.41}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusión para clasificación binaria.}}{62}{table.caption.59}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Matriz de confusión para clasificación con 9 clases.}}{80}{table.caption.79}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación binaria.}}{57}{table.caption.47}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Matriz de confusión para clasificación binaria.}}{63}{table.caption.60}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Matriz de confusión para clasificación con 9 clases.}}{80}{table.caption.80}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

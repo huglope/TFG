@@ -150,6 +150,11 @@ Geekflare.
 Palo~Alto Networks.
 \newblock ¿qué es la microsegmentación?
 
+\bibitem{ISO29148}
+ISO/IEC/IEEE.
+\newblock Systems and software engineering — life cycle processes —
+  requirements engineering, 2018.
+
 \bibitem{nist2021ai}
 National~Institute of~Standards and Technology (NIST).
 \newblock Adversarial machine learning: A taxonomy and terminology of attacks
@@ -166,6 +171,26 @@ Majed Luay, Siamak Layeghy, Seyedehfaezeh Hosseininoorbin, Mohanad Sarhan, Nour
 \newblock Temporal analysis of netflow datasets for network intrusion detection
   systems, 2025.
 
+\bibitem{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+
+\bibitem{leCun2015}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock {\em Nature}, 521(7553):436--444, 2015.
+
+\bibitem{mcculloch1943logical}
+Warren McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock {\em The Bulletin of Mathematical Biophysics}, 5(4):115--133, 1943.
+
+\bibitem{rosenblatt1958perceptron}
+Frank Rosenblatt.
+\newblock {\em The Perceptron: A Perceiving and Recognizing Automaton}.
+\newblock Cornell Aeronautical Laboratory, Buffalo, NY, 1958.
+
 \bibitem{bishop2006pattern}
 Christopher~M. Bishop.
 \newblock {\em Pattern Recognition and Machine Learning}.
@@ -180,11 +205,6 @@ Simon Haykin.
 Michael Nielsen.
 \newblock {\em Neural Networks and Deep Learning}.
 \newblock Determination Press, 2015.
-
-\bibitem{goodfellow2016deep}
-Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
-\newblock {\em Deep Learning}.
-\newblock MIT Press, 2016.
 
 \bibitem{eitca_loss_function}
 {EITCA Academy}.
@@ -222,5 +242,72 @@ D.P. Kingma and J.B. Ba.
 François Chollet.
 \newblock {\em Deep learning with Python}.
 \newblock Manning Publications Co., 2018.
+
+\bibitem{chollet2017deep}
+François Chollet.
+\newblock Deep learning with python.
+\newblock {\em Manning Publications}, 2017.
+
+\bibitem{ruck1996hidden}
+J.~R. Ruck, S.~J. Rogers, R.~K.~C. Yeung, and M.~M. Naylor.
+\newblock {\em The Effect of the Number of Hidden Neurons on the Performance of
+  Multilayer Networks}.
+\newblock IEEE, New York, 1996.
+
+\bibitem{glorot2010understanding}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock {\em Proceedings of the 13th International Conference on Artificial
+  Intelligence and Statistics (AISTATS)}, pages 249--256, 2010.
+
+\bibitem{zhang2016understanding}
+Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals.
+\newblock Understanding deep learning requires rethinking generalization.
+\newblock {\em ICLR 2017}, 2017.
+
+\bibitem{bengio2006greedy}
+Yoshua Bengio, Patrice Simard, and Paolo Frasconi.
+\newblock Learning long-term dependencies with gradient descent is difficult.
+\newblock {\em IEEE Transactions on Neural Networks}, 5(2):157--166, 2006.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{yamada2018understanding}
+Takeshi Yamada and Masashi Sugiyama.
+\newblock Understanding overfitting and generalization in deep learning.
+\newblock {\em Proceedings of the 35th International Conference on Machine
+  Learning}, pages 1617--1626, 2018.
+
+\bibitem{sun2017survey}
+D.~Sun, T.~Liao, and Y.~Wang.
+\newblock A survey of convolutional neural networks: Analysis, applications,
+  and prospects.
+\newblock {\em IEEE Access}, 5:4917--4930, 2017.
+
+\bibitem{overfitting2008}
+Pedro Domingos.
+\newblock A few useful things to know about machine learning.
+\newblock {\em Communications of the ACM}, 55(10):78--87, 2012.
+
+\bibitem{han2011data}
+Jiawei Han, Micheline Kamber, and Jian Pei.
+\newblock {\em Data Mining: Concepts and Techniques}.
+\newblock Morgan Kaufmann, San Francisco, 3rd edition, 2011.
+
+\bibitem{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer, New York, 2nd edition, 2009.
+
+\bibitem{fawcett2006introduction}
+Tom Fawcett.
+\newblock An introduction to roc analysis.
+\newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
+  2006.
 
 \end{thebibliography}

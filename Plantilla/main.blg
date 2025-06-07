@@ -5,45 +5,48 @@ The style file: unsrt.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "nist2021ai" isn't style-file defined
 --line 78 of file bibliografia.bib
-You've used 42 entries,
+Warning--entry type for "ISO29148" isn't style-file defined
+--line 591 of file bibliografia.bib
+Warning--can't use both volume and number fields in fawcett2006introduction
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            639 strings with 8905 characters,
-and the built_in function-call counts, 6600 in all, are:
-= -- 508
-> -- 294
-< -- 1
-+ -- 122
-- -- 80
-* -- 251
-:= -- 1054
-add.period$ -- 114
-call.type$ -- 42
-change.case$ -- 32
+            726 strings with 11244 characters,
+and the built_in function-call counts, 10285 in all, are:
+= -- 856
+> -- 432
+< -- 5
++ -- 175
+- -- 117
+* -- 479
+:= -- 1610
+add.period$ -- 161
+call.type$ -- 58
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 313
-empty$ -- 783
-format.name$ -- 80
-if$ -- 1508
+cite$ -- 59
+duplicate$ -- 487
+empty$ -- 1149
+format.name$ -- 117
+if$ -- 2347
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 33
-newline$ -- 201
-num.names$ -- 42
-pop$ -- 236
+int.to.str$ -- 58
+missing$ -- 52
+newline$ -- 280
+num.names$ -- 58
+pop$ -- 287
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 149
+skip$ -- 239
 stack$ -- 0
-substring$ -- 123
-swap$ -- 51
-text.length$ -- 1
+substring$ -- 383
+swap$ -- 99
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 51
-width$ -- 44
-write$ -- 402
-(There was 1 warning)
+warning$ -- 1
+while$ -- 88
+width$ -- 60
+write$ -- 576
+(There were 3 warnings)

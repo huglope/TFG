@@ -10,29 +10,29 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema segmento TCP \cite {tcpsegment}.}}{34}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Formato de la cabecera en IPv4 \cite {paqueteip}.}}{35}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Función de transformación para los parámetros IPv4}}{45}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Función de transformación para los parámetros IPv4.}}{45}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de redes neuronales. \cite {aprendeia2021deep}}}{48}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de redes neuronales \cite {aprendeia2021deep}.}}{48}{figure.caption.43}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de redes neuronal convolucional \cite {uniteai2020cnn}.}}{49}{figure.caption.44}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Esquema de algoritmo de optimización usando los gradiente calculados por la retropropagación \cite {msmk2023backpropagation}.}}{52}{figure.caption.45}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Estructura del modelo de clasificación binaria diseñada.}}{55}{figure.caption.46}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{57}{figure.caption.48}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{59}{figure.caption.52}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{60}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}}{66}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}}{66}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}}{67}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{67}{figure.caption.64}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{70}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{72}{figure.caption.66}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{74}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{76}{figure.caption.72}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{78}{figure.caption.76}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{84}{figure.caption.84}%
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{85}{figure.caption.85}%
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{85}{figure.caption.86}%
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{86}{figure.caption.87}%
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{88}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Definición de la clase del modelo de clasificación binaria.}}{56}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Arquitectura del modelo con $n/2$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{58}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Arquitectura del modelo con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{59}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Arquitectura del modelo con $2n$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{61}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas ($n/2$).}}{66}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas ($n$).}}{67}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas ($2n$).}}{67}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{68}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{71}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{73}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{75}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{76}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{78}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{84}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{85}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{85}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{86}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{88}{figure.caption.89}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

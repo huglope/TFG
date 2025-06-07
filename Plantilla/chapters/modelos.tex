@@ -1,37 +1,40 @@
 
 \section{¿Qué es un modelo neuronal?}
 
-En esta sección, se explica qué es un modelo neuronal, sus características y cómo funciona en el contexto de la inteligencia artificial. 
+%En esta sección, se explica qué es un modelo neuronal, sus características y cómo funciona en el contexto de la inteligencia artificial. 
 
-Los modelos neuronales son estructuras computacionales inspiradas en el cerebro humano, diseñadas para procesar información mediante una red de unidades interconectadas que imitan, de manera simplificada, la forma en que las neuronas biológicas se comunican entre sí cite{goodfellow2016deep}.
+Los modelos neuronales son estructuras computacionales inspiradas en el cerebro humano, diseñadas para procesar información mediante una red de unidades interconectadas que imitan, de manera simplificada, la forma en que las neuronas biológicas se comunican entre sí \cite{goodfellow2016deep}.
 
-Los descurbrimientos del Premio Nobel de biología español, Santiago Ramón y Cajal sobre la estructura y funcionamiento de las neuronas, proporcionaron las bases para la comprensión del sistema nervioso en el que se basan los modelos de inteligencia artificial. A finales del siglo XIX, Cajal formuló la teoría de que las neuronas son células individuales conectadas por sinapsis, una idea que revolucionó la neurociencia y sirvió de inspiración para los modelos computacionales de redes neuronales. Su trabajo permitió comprender cómo las señales eléctricas viajan entre las neuronas y cómo se pueden formar conexiones adaptativas, conceptos que más tarde serían adoptados en el diseño de redes neuronales artificiales.
+Los descurbrimientos del Premio Nobel de biología español, Santiago Ramón y Cajal sobre la estructura y funcionamiento de las neuronas, proporcionaron las bases para la comprensión del sistema nervioso en el que se basan los modelos de inteligencia artificial. A finales del siglo XIX, Cajal formuló la teoría de que las neuronas son células individuales conectadas por sinapsis, una idea que revolucionó la neurociencia y sirvió de inspiración para los modelos computacionales de redes neuronales. Su trabajo permitió comprender cómo las señales eléctricas viajan entre las neuronas y cómo se pueden formar conexiones adaptativas, conceptos que más tarde serían adoptados en el diseño de redes neuronales artificiales \cite{leCun2015}.
 
-Un modelo neuronal es una arquitectura matemática que busca resolver problemas complejos de aprendizaje mediante el procesamiento de datos. Está compuesto por una serie de unidades de procesamiento, conocidas como neuronas artificiales, organizadas en capas. Como muestra la Figura \ref{fig:esq-capas}, cada capa recibe la salida de la capa anterior, aplica una función matemática sobre los datos y transmite el resultado a la siguiente capa. Este proceso se repite de manera secuencial hasta que se alcanza la capa de salida, que proporciona el resultado final del modelo \cite{bishop2006pattern}.
+
+En 1943, los científicos Warren McCulloch y Walter Pitts propusieron el primer modelo matemático de una neurona artificial en su trabajo titulado \textit{A Logical Calculus of the Ideas Immanent in Nervous Activity}. Este modelo representaba las neuronas como unidades lógicas binarias, cuya función de activación dependía de la suma ponderada de las entradas, las cuales podían ser 0 o 1. Cuando la suma de las entradas superaba un umbral determinado, la neurona se activaba (produciendo una salida de 1), mientras que si no se alcanzaba ese umbral, permanecía inactiva (salida 0). Este enfoque permitió representar funciones lógicas complejas mediante un conjunto de neuronas artificiales. El trabajo de McCulloch y Pitts fue fundamental para el desarrollo de las redes neuronales artificiales, ya que sentó las bases para representar las redes neuronales en términos matemáticos y lógicos, lo que eventualmente inspiró el desarrollo de redes más complejas y la inteligencia artificial moderna \cite{mcculloch1943logical}.
+
+
+Frank Rosenblatt desempeñó un papel fundamental en el desarrollo de los modelos neuronales al crear el \textit{Perceptrón} en 1958, el primer modelo computacional de una red neuronal artificial. A diferencia del modelo lógico propuesto por McCulloch y Pitts, el \textit{Perceptrón} consistía en una red neuronal de una sola capa, en la que las neuronas estaban conectadas a través de pesos que podían ajustarse durante el proceso de entrenamiento. El algoritmo de aprendizaje supervisado del \textit{Perceptrón} permitía ajustar estos pesos para minimizar el error entre la salida producida por la red y la salida deseada. Este modelo de entrenamiento representó un avance importante en la teoría de redes neuronales, aunque su capacidad estaba limitada a resolver problemas lineales. A pesar de sus restricciones, el trabajo de Rosenblatt sentó las bases para el desarrollo de redes neuronales más complejas y la aparición del aprendizaje profundo en el futuro \cite{rosenblatt1958perceptron}.
+
+
+En la actualidad, en su configuración más básica, un modelo neuronal es una arquitectura matemática que busca resolver problemas complejos de aprendizaje mediante el procesamiento de datos. Está compuesto por una serie de unidades de procesamiento, conocidas como neuronas artificiales, organizadas en capas. Como muestra la Figura \ref{fig:esq-capas}, cada capa recibe la salida de la capa anterior, aplica una función matemática sobre los datos y transmite el resultado a la siguiente capa. Este proceso se repite de manera secuencial hasta que se alcanza la capa de salida, que proporciona el resultado final del modelo \cite{bishop2006pattern}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/modelo/capas.png}
-    \caption{Esquema de redes neuronales. \cite{aprendeia2021deep}}
+    \caption{Esquema de redes neuronales \cite{aprendeia2021deep}.}
     \label{fig:esq-capas}
 \end{figure}
 
-Las neuronas dentro de un modelo neuronal no operan de forma aislada, sino que están conectadas entre sí a través de enlaces denominados "pesos". Estos pesos determinan la importancia de la señal que se transmite de una neurona a otra. Durante el proceso de entrenamiento, los pesos se ajustan con el objetivo de minimizar el error en la salida del modelo, lo que permite que el modelo "aprenda" de los datos y mejore su capacidad para predecir o clasificar nueva información \cite{haykin2009neural}.
+Las neuronas dentro de un modelo neuronal no operan de forma aislada, sino que están conectadas entre sí a través de enlaces denominados pesos. Estos pesos determinan la importancia de la señal que se transmite de una neurona a otra. Durante el proceso de entrenamiento, los pesos se ajustan con el objetivo de minimizar el error en la salida del modelo, lo que permite que el modelo aprenda de los datos y mejore su capacidad para predecir o clasificar nueva información \cite{haykin2009neural}.
 
-El proceso de entrenamiento de un modelo neuronal implica la retroalimentación o backpropagation, donde el error de la predicción se calcula y se distribuye hacia atrás a través de la red para ajustar los pesos de manera que el modelo se optimice progresivamente. En este sentido, el modelo neuronal tiene la capacidad de adaptarse a distintos tipos de datos y mejorar su rendimiento con el tiempo \cite{nielsen2015neural}.
-
-A grandes rasgos, un modelo neuronal es una estructura computacional que imita el funcionamiento del cerebro humano para procesar y aprender de datos, y se utiliza en tareas como clasificación, predicción y reconocimiento de patrones.
+El proceso de entrenamiento de un modelo neuronal implica la retroalimentación o \textit{backpropagation}, donde el error de la predicción se calcula y se distribuye hacia atrás a través de la red para ajustar los pesos de manera que el modelo se optimice progresivamente, calculando los gradientes. En este sentido, el modelo neuronal tiene la capacidad de adaptarse a distintos tipos de datos y mejorar su rendimiento con el tiempo \cite{nielsen2015neural}.
 
 
 \subsection{¿Qué tipos de modelos neuronales existen?}
 
-En esta sección se explican cuales son tipos de modelos neuronales existen y sus características principales. 
+Los modelos neuronales pueden clasificarse según su estructura, la forma en que procesan la información y la aplicación específica a la que están destinados. Estos modelos neuronales son fundamentales para resolver una variedad de problemas en áreas relacionadas con la inteligencia artificial como la visión por computadora, el procesamiento del lenguaje natural y el reconocimiento de patrones \cite{bishop2006pattern}.
 
-Los modelos neuronales pueden clasificarse según su estructura, la forma en que procesan la información y la aplicación específica a la que están destinados. Estos modelos neuronales son fundamentales para resolver una variedad de problemas en áreas relacionadas con la inteligencia artificial como la visión por computadora, el procesamiento del lenguaje natural y el reconocimiento de patrones.
+Uno de los tipos más comunes de modelos neuronales es el perceptrón multicapa (\textit{Multilayer Perceptron}, MLP), que está formado por varias capas de neuronas organizadas en una estructura jerárquica. Cada capa en un MLP recibe la salida de la capa anterior y la procesa mediante una función de activación antes de pasar el resultado a la siguiente capa. Este tipo de red se utiliza principalmente para tareas de clasificación y regresión, y su entrenamiento se realiza utilizando algoritmos como el de retropropagación. Es el tipo de red que se utiliza en este proyecto para obtener un modelo capaz de detectar instrusiones en una red informática \cite{goodfellow2016deep}.
 
-Uno de los tipos más comunes de modelos neuronales es el perceptrón multicapa (MLP), que está formado por varias capas de neuronas organizadas en una estructura jerárquica. Cada capa en un MLP recibe la salida de la capa anterior y la procesa mediante una función de activación antes de pasar el resultado a la siguiente capa. Este tipo de red se utiliza principalmente para tareas de clasificación y regresión, y su entrenamiento se realiza utilizando algoritmos como el de retropropagación. Es el tipo de modelo que se utiliza en este proyecto para obtener un modelo capaz de detectar instrusiones en una red informática \cite{goodfellow2016deep}.
-
-Otro tipo importante de modelo neuronal es la red neuronal convolucional (CNN), que está diseñada específicamente para procesar datos con una estructura de cuadricula, como las imágenes. En una CNN, las neuronas están organizadas en capas convolucionales que aplican filtros a los datos de entrada para extraer características relevantes, como bordes, texturas o formas. Esta estructura permite que las CNN sean altamente eficaces para tareas como el reconocimiento de imágenes y la visión por computadora \cite{goodfellow2016deep}.
+Otro tipo importante de modelo neuronal es la red neuronal convolucional (\textit{Convolutional Neural Network}, CNN), que está diseñada específicamente para procesar datos con una estructura de cuadricula, como las imágenes. En una CNN, las neuronas están organizadas en capas convolucionales que aplican filtros a los datos de entrada para extraer características relevantes, como bordes, texturas o formas. Esta estructura permite que las CNN sean altamente eficaces para tareas como el reconocimiento de imágenes y la visión por computadora \cite{goodfellow2016deep}.
 
 
 \begin{figure}[H]
@@ -42,30 +45,16 @@ Otro tipo importante de modelo neuronal es la red neuronal convolucional (CNN), 
 \end{figure}
 
 
-Las redes neuronales recurrentes (RNN), por otro lado, son adecuadas para procesar secuencias de datos, como el texto o el audio. Las RNN son únicas porque sus neuronas tienen conexiones que permiten que la información fluya hacia atrás a lo largo del tiempo, lo que las hace útiles para modelar dependencias temporales en los datos. Este tipo de red es comúnmente utilizado en tareas de procesamiento de lenguaje natural y en modelos de predicción de series temporales \cite{haykin2009neural}.
+Por otra parte, las redes neuronales recurrentes (\textit{Recurrent Neural Network}, RNN), por otro lado, son adecuadas para procesar secuencias de datos, como el texto o el audio. Las neuronas de las RNN tienen conexiones que permiten que la información fluya hacia atrás a lo largo del tiempo, lo que las hace útiles para modelar dependencias temporales en los datos. Este tipo de red es comúnmente utilizado en tareas de procesamiento de lenguaje natural y en modelos de predicción de series temporales \cite{haykin2009neural}.
 
 En un enfoque más avanzado, existen las redes generativas antagónicas (GAN), que se componen de dos redes neuronales: un generador y un discriminador. El generador crea datos falsos a partir de ruido, mientras que el discriminador intenta diferenciar entre los datos reales y los generados. A través de un proceso de entrenamiento competitivo, ambas redes mejoran en sus respectivas tareas. Las GANs se utilizan principalmente en la generación de imágenes, música y otros tipos de contenido artístico \cite{nielsen2015neural}.
 
-\subsection{Función de perdida}
-En esta sección se explica que es una función de pérdida y su importancia en el proceso de entrenamiento de un modelo neuronal. También se justifica el uso de las funciones de pérdida que se emplean para el entrenamiento de los modelos de este trabajo.
-
+\subsection{Función de pérdida}
 Una función de pérdida es un componente fundamental en el entrenamiento de modelos de aprendizaje automático, cuya finalidad consiste en cuantificar la discrepancia entre las predicciones generadas por el modelo y los valores reales esperados. Esta medida permite guiar el proceso de optimización, ya que el objetivo durante el entrenamiento es minimizar dicha pérdida para mejorar la precisión del modelo \cite{eitca_loss_function}.
 
-Las funciones de pérdida desempeñan un papel central en la formulación matemática del aprendizaje supervisado, al establecer una métrica que penaliza el error cometido por el modelo. Esta penalización permite que los algoritmos de optimización, como el descenso por gradiente, ajusten iterativamente los parámetros del modelo en la dirección que reduce la pérdida total. Para que esta estrategia sea efectiva, la función de pérdida debe poseer ciertas propiedades fundamentales:
+Las funciones de pérdida desempeñan un papel central en la formulación matemática del aprendizaje supervisado, al establecer una métrica que penaliza el error cometido por el modelo. Esta penalización permite que los algoritmos de optimización, como el descenso por gradiente, ajusten iterativamente los parámetros del modelo en la dirección que reduce la pérdida total. Para que esta estrategia sea efectiva, la función de pérdida debe poseer ciertas propiedades fundamentales.
 
-\begin{itemize}
-
-    \item\textbf{Diferenciabilidad}: Permite el cálculo de gradientes necesarios para optimizar los parámetros mediante técnicas basadas en derivadas, como el descenso por gradiente.
-
-    \item\textbf{Convexidad (deseable)}: Favorece la convergencia hacia un mínimo global, aunque en la práctica, muchos modelos no lineales presentan funciones de pérdida no convexas.
-
-    \item\textbf{Estabilidad numérica}: Previene errores computacionales al manejar valores extremos o transformaciones exponenciales, manteniendo precisión durante el entrenamiento.
-
- 	\item\textbf{Sensibilidad al error}: Garantiza que los errores mayores se penalicen de forma más significativa, orientando el modelo hacia mejores predicciones.
-
-	\item\textbf{Escalabilidad}: Permite su aplicación eficiente en contextos con grandes volúmenes de datos y arquitecturas de red complejas.
-
-\end{itemize}
+Una de estas propiedades fundamentales es la diferenciabilidad, que permite el cálculo de gradientes, necesarios para optimizar los parámetros del modelo mediante técnicas basadas en derivadas, como el descenso por gradiente. Otra de las propiedades esenciales es la convexidad, aunque es deseable, favorece la convergencia hacia un mínimo global, esto se traduce en la práctica, en que muchos modelos no lineales presentan funciones de pérdida no convexas. La estabilidad numérica juega un papel crucial al prevenir errores computacionales derivados de valores extremos o transformaciones exponenciales, garantizando que la precisión se mantenga durante el entrenamiento. Por su parte, la sensibilidad al error como propiedad, asegura que los errores más grandes sean penalizados de manera más significativa, lo que orienta el modelo hacia mejores predicciones. por su parte, la escalabilidad es una característica clave que permite la aplicación eficiente del modelo en contextos con grandes volúmenes de datos y arquitecturas de red complejas.
 
 Estas propiedades aseguran que la función de pérdida cumpla su objetivo central, actuar como un mecanismo confiable y eficiente para guiar la actualización de los parámetros del modelo \cite{ultralytics_loss_function}.
 
@@ -81,9 +70,7 @@ Finalmente, permite trabajar directamente con \textit{logits}, lo cual simplific
 
 
 \subsection{Algoritmo de optimización}\label{sec:alg-opt}
-En esta sección se explica qué es un algoritmos de optimización,su funcionamiento, sus principales características, su importancia dentro del proceso de entrenamiento de modelos neuronales y algunos ejemplo de los algoritmos de optimización más utilizados.
-
-Un algoritmo de optimización es un conjunto de procedimientos matemáticos y computacionales cuyo propósito es encontrar el mejor valor posible (o el más cercano a este) para un conjunto de parámetros o variables dentro de un problema específico. Estos algoritmos buscan minimizar o maximizar una función objetivo, que representa el rendimiento del sistema o modelo a optimizar. En el contexto de entrenamiento de redes neuronales, la función objetivo comúnmente se refiere a una función de pérdida, que cuantifica la diferencia entre las predicciones del modelo y las etiquetas reales de los datos. Los algoritmos de optimización ajustan los parámetros (pesos y sesgos) de la red neuronal durante el proceso de entrenamiento con el fin de reducir dicha diferencia \cite{goodfellow2016deep}.
+Un algoritmo de optimización es un conjunto de procedimientos matemáticos y computacionales cuyo propósito es encontrar el mejor valor posible (o el más cercano a este) para un conjunto de parámetros o variables dentro de un problema específico. Estos algoritmos buscan minimizar o maximizar una función objetivo, que representa el rendimiento del sistema o modelo a optimizar. En el contexto de entrenamiento de redes neuronales, la función objetivo comúnmente se refiere a una función de pérdida, que cuantifica la diferencia entre las predicciones del modelo y las etiquetas reales de los datos. Los algoritmos de optimización ajustan los parámetros, pesos y sesgos, de la red neuronal durante el proceso de entrenamiento con el fin de reducir dicha diferencia \cite{goodfellow2016deep}.
 
 
 El funcionamiento de un algoritmo de optimización se basa en un proceso iterativo en el que se ajustan los parámetros de la red neuronal utilizando información acerca del gradiente de la función de pérdida con respecto a estos parámetros. En este contexto, la retropropagación juega un papel crucial, ya que es el método utilizado para calcular esos gradientes. A través de la retropropagación, el error de la red se propaga hacia atrás desde la capa de salida hasta las capas anteriores, permitiendo calcular cómo cada parámetro contribuye al error total. Posteriormente, tal y como se muestra en la Figura \ref{fig:esq-Optimizacion}, el algoritmo de optimización utiliza estos gradientes calculados por la retropropagación para actualizar los parámetros de la red en la dirección opuesta al gradiente, con el objetivo de reducir progresivamente la pérdida. Generalmente, se utilizan técnicas de descenso de gradiente para realizar estos ajustes. Durante cada iteración, el algoritmo calcula el gradiente de la función de pérdida a través de la retropropagación y lo utiliza para modificar los parámetros de manera eficiente, buscando alcanzar el mínimo global o local de la función de pérdida \cite{bottou2010large}.
@@ -97,22 +84,28 @@ El funcionamiento de un algoritmo de optimización se basa en un proceso iterati
 
 
 
-Las características clave de los algoritmos de optimización incluyen la tasa de aprendizaje, la capacidad para escapar de mínimos locales, y la convergencia en un tiempo razonable. La tasa de aprendizaje (\textit{learning rate} o lr) es un hiperparámetro crítico que determina la magnitud de los ajustes que se realizan en los parámetros del modelo durante cada iteración. Si el learning rate es muy alto, el algoritmo puede saltar el mínimo global, por otro lado, si es muy baja, el proceso puede volverse muy lento. Los métodos de optimización varían en cuanto a la forma en que gestionan estas características, algunos métodos mejoran la eficiencia utilizando técnicas como el momento, la normalización del gradiente, o el uso de segunda orden \cite{kingma2014adam}.
+Las características clave de los algoritmos de optimización incluyen la tasa de aprendizaje, la capacidad para escapar de mínimos locales, y la convergencia en un tiempo razonable. La tasa de aprendizaje (\textit{learning rate} o lr) es un hiperparámetro crítico que determina la magnitud de los ajustes que se realizan en los parámetros del modelo durante cada iteración. Si la tasa de aprendizaje es muy alta, el algoritmo puede saltar el mínimo global, por otro lado, si es muy baja, el proceso puede volverse muy lento. Los métodos de optimización varían en cuanto a la forma en que gestionan estas características, algunos métodos mejoran la eficiencia utilizando técnicas como el momento, la normalización del gradiente, o el uso de segunda orden \cite{kingma2014adam}.
 
 
-La importancia de los algoritmos de optimización en el entrenamiento de redes neuronales es fundamental, ya que la capacidad de un modelo para aprender de los datos y generalizar de manera efectiva depende en gran medida de cómo se optimizan los parámetros de la red. Un algoritmo de optimización bien elegido y configurado puede significar la diferencia entre un modelo con un rendimiento subóptimo y uno que logra altos niveles de precisión y eficiencia. De esta manera, la correcta selección y ajuste de estos algoritmos se considera un aspecto crucial para el desarrollo exitoso de modelos de aprendizaje profundo y redes neuronales \cite{goodfellow2016deep}.
+La importancia de los algoritmos de optimización en el entrenamiento de redes neuronales es fundamental, dado que la capacidad de un modelo para aprender de los datos y generalizar de manera efectiva depende en gran medida de la optimización adecuada de los parámetros de la red. Un algoritmo de optimización correctamente elegido y configurado puede determinar la diferencia entre un modelo con un rendimiento subóptimo y uno que alcanza altos niveles de precisión y eficiencia. En consecuencia, la selección y ajuste apropiado de estos algoritmos se considera un aspecto crucial para el desarrollo exitoso de modelos de aprendizaje profundo y redes neuronales. \cite{goodfellow2016deep}.
 
-Existen varios algoritmos de optimización ampliamente utilizados en el entrenamiento de redes neuronales. Entre los más comunes se encuentran el Descenso de Gradiente Estocástico (SGD), Momentum, Adagrad, RMSprop y Adam. El SGD es uno de los más simples y fundacionales, pero sufre de inestabilidad debido a su naturaleza estocástica y la falta de adaptación de la tasa de aprendizaje. Momentum ayuda a mejorar la convergencia al incorporar la información de los gradientes pasados, lo que permite que el modelo escape de los mínimos locales más fácilmente. Adagrad adapta la tasa de aprendizaje para cada parámetro, mientras que RMSprop ajusta la tasa de aprendizaje utilizando una media móvil del gradiente, lo que mejora la estabilidad \cite{bottou2010large}.
+Existen varios algoritmos de optimización ampliamente utilizados en el entrenamiento de redes neuronales. Entre los más comunes se encuentran el Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD), Momentum, Adagrad, RMSprop y Adam. El SGD es uno de los más simples y fundacionales, pero sufre de inestabilidad debido a su naturaleza estocástica y la falta de adaptación de la tasa de aprendizaje. Momentum ayuda a mejorar la convergencia al incorporar la información de los gradientes pasados, lo que permite que el modelo escape de los mínimos locales más fácilmente. Adagrad adapta la tasa de aprendizaje para cada parámetro, mientras que RMSprop ajusta la tasa de aprendizaje utilizando una media móvil del gradiente, lo que mejora la estabilidad \cite{bottou2010large}.
+
+El sobreajuste, o overfitting, ocurre cuando un modelo de aprendizaje, como una red neuronal, ajusta excesivamente los parámetros a los datos de entrenamiento, capturando no solo la señal subyacente sino también el ruido o las fluctuaciones aleatorias. Esto resulta en un modelo que tiene un rendimiento excelente en el conjunto de entrenamiento pero que pierde capacidad de generalización, es decir, muestra un rendimiento deficiente en datos no vistos previamente, como los del conjunto de prueba. El sobreajuste es un desafío común en el entrenamiento de modelos complejos y puede mitigarse mediante técnicas como la regularización, el uso de datos adicionales o el ajuste adecuado de los hiperparámetros \cite{bishop2006pattern}.
 
 Sin embargo, el algoritmo más recomendado para entrenar un modelo de clasificación binaria es Adam (Adaptive Moment Estimation). Adam combina las ventajas del descenso de gradiente estocástico y el momento, adaptando la tasa de aprendizaje de manera eficiente para cada parámetro del modelo. Esto lo hace particularmente adecuado para tareas de clasificación binaria, ya que garantiza una convergencia más rápida y estable, minimizando el riesgo de sobreajuste (\textit{overfitting}) mientras se optimizan los parámetros del modelo. Sin embargo, una variante reciente de Adam, conocida como AdamW, introduce un cambio importante en la forma en que se maneja la regularización de los parámetros. AdamW separa explícitamente la actualización de los pesos y la regularización (típicamente L2 o \textit{weight decay}), lo que mejora la eficacia de la regularización sin interferir con la adaptación de la tasa de aprendizaje.
 
+La regularización es una técnica utilizada en el entrenamiento de modelos de aprendizaje automático, como redes neuronales, para prevenir el sobreajuste. Consiste en agregar un término adicional a la función de pérdida que penaliza los valores de los parámetros del modelo, de manera que se favorezcan soluciones más simples y generalizables. Entre las formas más comunes de regularización se encuentran la regularización L1 (Lasso), que promueve la dispersión de los coeficientes hacia cero, y la regularización L2 (Ridge), que penaliza los grandes valores de los parámetros. La regularización actúa como un control de complejidad, ayudando al modelo a generalizar mejor a datos no vistos, lo que mejora su rendimiento en tareas de predicción y clasificación \cite{bishop2006pattern}.
+
 Aunque ambos algoritmos, Adam y AdamW, tienen un rendimiento destacado en tareas de clasificación binaria, AdamW se ha demostrado más eficaz en la prevención de sobreajuste en redes neuronales complejas. Esto se debe a su tratamiento explícito del \textit{weight decay}, lo que permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto. Sin embargo, Adam sigue siendo una opción popular y efectiva, especialmente cuando se trabaja con redes neuronales menos complejas o cuando se desea una mayor estabilidad y rapidez de convergencia. En general, AdamW es preferido en situaciones donde la regularización adecuada es crucial, pero Adam sigue siendo una opción sólida y eficiente \cite{kingma2014adam}.
+
+El conjunto de entrenamiento es fundamental en el proceso de desarrollo de un modelo de aprendizaje automático, ya que es sobre este conjunto de datos donde el modelo aprende a reconocer patrones y relaciones. Durante el entrenamiento, el modelo ajusta sus parámetros con el objetivo de minimizar el error en las predicciones, basándose en los ejemplos proporcionados en este conjunto. Un conjunto de entrenamiento bien diseñado y representativo de los datos reales es crucial para que el modelo sea capaz de generalizar correctamente a nuevos datos. Si el conjunto de entrenamiento es pequeño o no es representativo de la diversidad de situaciones que el modelo enfrentará, el rendimiento del modelo puede ser peor de lo esperado, incluso si tiene un buen desempeño en los datos de entrenamiento  \cite{bishop2006pattern}.
+
+Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada \textit{k-fold}. La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones, en este trabajo, se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación. Para entrenar el modelo de clasificación binaria, se ha utilizado \texttt{StratifiedKFold()} que como su nombre indica, estratifica los \textit{folds} para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada \textit{fold} y no se creen \textit{folds} con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos \textit{datasets} cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar validación cruzada \texttt{StratifiedKFold)} con 5 \textit{folds} o divisiones.
 
 
 \section{Parámetros e hiperparámetros}\label{sec:paramhiper}
-En este apartado se explica que son los parámetros y los hiperparámetros de un modelo neurnal. También se listan y describen los principales hiperparámetros que se deben de tener en cuenta al entrenar un modelo neuronal. 
-
-Los parámetros de un modelo neuronal son los valores ajustables que el modelo aprende a partir de los datos durante el proceso de entrenamiento. Estos parámetros incluyen los pesos y sesgos de las conexiones entre las neuronas de las diferentes capas de la red neuronal. Los pesos determinan la importancia de las entradas de cada neurona, mientras que los sesgos permiten ajustar la salida de cada neurona antes de la activación. Como se explica en los apartado anteriores, el aprendizaje de estos parámetros se realiza mediante algoritmos de optimización como el gradiente descendente, los cuales buscan minimizar la función de pérdida. \cite{goodfellow2016deep}
+Como se ha comentado previamente, los parámetros de un modelo neuronal son los valores ajustables que el modelo aprende a partir de los datos durante el proceso de entrenamiento. Estos parámetros incluyen los pesos y sesgos de las conexiones entre las neuronas de las diferentes capas de la red neuronal. Los pesos determinan la importancia de las entradas de cada neurona, mientras que los sesgos permiten ajustar la salida de cada neurona antes de la activación. Como se explica en los apartado anteriores, el aprendizaje de estos parámetros se realiza mediante algoritmos de optimización como el gradiente descendente, los cuales buscan minimizar la función de pérdida. \cite{goodfellow2016deep}
 
 
 Los hiperparámetros son los valores que se configuran antes del entrenamiento y no se ajustan directamente durante el proceso de aprendizaje. Este tipo de parámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. A diferencia de los parámetros, los hiperparámetros deben ser establecidos manualmente o mediante técnicas de optimización específicas, como la búsqueda en cuadrícula o la búsqueda aleatoria, técnicas que se aplcian en las siguientes secciones de este documento. Los hiperparámetros influyen en aspectos clave como la velocidad de aprendizaje, la regularización y la estructura de la red \cite{chollet2018deep}. Los más importantes son:
@@ -141,124 +134,141 @@ En esta sección se describe tanto el proposito como los procedimientos empleado
 El modelo de clasificación binaria se ha diseñado con el objetivo de identificar de manera precisa y eficiente, si una instancia de tráfico de red corresponde a una actividad legítima o a un comportamiento malicioso. Su función principal consiste en distinguir entre accesos normales y posibles intentos de intrusión, permitiendo así la detección temprana de ataques y contribuyendo a la protección proactiva de los sistemas informáticos.
 
 \subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disBIN}
-En esta sección se detalla cual es el diseño del modelo de clasificación binaria escogido, así como los valore de los hiperparámetros utilizados durante los experimentos en el entrenamiento del modelo y sus correspondientes justificaciones.
-
 Para diseñar la arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
 
-Como se puede observar en la Figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La capa1 tiene un número de entradas igual al número de parámetros que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la capa2 recibe como entrada el número de salidas de la capa1 y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
+Como se puede observar en la Figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La \texttt{capa1} tiene un número de entradas igual al número de parámetros que posee el \textit{dataset}, como se comenta en la sección \ref{sec.prep-datos}, el número de entradas del modelo es 49. El número de salidas depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la \texttt{capa1} será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la \texttt{capa2} recibe como entrada el número de salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
 
-Debido a que la función de pérdida utilizada para entrenar el modelo es BCEWithLogitsLoss(), que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
-
+Debido a que la función de pérdida utilizada para entrenar el modelo es \texttt{BCEWithLogitsLoss()}, que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/modelo/modeloBIN.png}
-    \caption{Estructura del modelo de clasificación binaria diseñada.}
+    \caption{Definición de la clase del modelo de clasificación binaria.}
     \label{fig:modBIN}
 \end{figure}
 
-Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada k-fold. La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación. Para entrenar el modelo de clasificación binaria, se ha utilizado StratifiedKFold() que como su nombre indica, estratifica los \textit{folds} para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada \textit{fold} y no se creen \textit{folds} con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos \textit{datasets} cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar validación cruzada StratifiedKFold con 5 \textit{folds} o divisiones.
-
-Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
+Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar \texttt{AdamW()}. Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
 
 Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación binaria diseñado son: el batch size, la tasa de aprendizaje (learning rate) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación binaria, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
 
-Como se comenta en la sección \ref{sec:paramhiper} \refname{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo binario con el objetivo de encontrar la mejor combinación de ellos.
+Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo binario con el objetivo de encontrar la mejor combinación de ellos.
 
 \begin{itemize}
-	\item \textbf{\textit{Batch size}}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo binario, se han considerado que los valores [2000, 10000, 15000, 20000], eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
-	\item \textbf{\textit{Learning rate}}: Siguiendo los avisos de la sección anterior en la que se explicaba el propósito y características de cada hiperparámetro, se ha optado por elegir unos valores con los que se espera que el modelo converja sin sobreajustarse ni se exceda en el tiempo de obtención de una solución válida. Los valores elegidos han sido [0.01, 0.001, 0.0001].
-	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor excesivamente bajo en el número de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo. Teniendo en cuenta las consideraciones mencionadas, los valores que se han probado para este hiperparámetro son [10, 20, 30].
+	\item \textbf{\textit{Batch size}}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo binario, se han considerado que los valores que se muestran en la Tabla \ref{tab:hiperBIN}, eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
+	\item \textbf{\textit{Learning rate}}: Siguiendo los avisos de la sección anterior en la que se explicaba el propósito y características de cada hiperparámetro, se ha optado por elegir unos valores con los que se espera que el modelo converja sin sobreajustarse ni se exceda en el tiempo de obtención de una solución válida.
+	\item \textbf{Épocas}: De forma similar a como sucede con la tase de aprendizaje, un valor excesivamente bajo en el número de épocas puede provocar que el modelo no converja. Sin embargo, un número demasiado alto de épocas provoca sobreajuste en el modelo.
 \end{itemize}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Hiperparámetro} & \textbf{Posibles valores} \\ \hline
+\textit{Batch size} & [2000, 10000, 15000, 20000] \\ \hline
+\textit{Learning rate} & [0.01, 0.001, 0.0001] \\ \hline
+Épocas & [10, 20, 30] \\ \hline
+\end{tabular}
+\caption{Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación binaria.}
+\label{tab:hiperBIN}
+\end{table}
 
 \subsection{Arquitecturas desarrolladas}
 En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación binaria. Como se comenta en la sección anterior \ref{sec:disBIN} \nameref{sec:disBIN}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
 
-Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de ventana oculta igual a:
-la mitad del número de parámetros que recibe el modelo, el mismo número que parámetros que tiene el modelo y doble del número de parámetros. Esto equivale a un tamaño de la capa de venta oculta de 25, 49 y 98 respectivamente. Estos valores se obtienen de forma dinámica después de tratar los datos del csv  utilizado para los entrenamientos y las pruebas de este proyecto.
+Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de capa oculta igual a:
+\begin{itemize}
 
-A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
+	\item \textbf{MCB35}: La mitad del número de atributos que recibe el modelo
+	\item \textbf{MCB49}: El mismo número que atributos que tiene el modelo.
+	\item \textbf{MCB98}: El doble del número de atributos. 
 
-\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIBIN25}
+\end{itemize}
+
+Esto equivale a un tamaño de la capa oculta de 25, 49 y 98 respectivamente. Estos valores se obtienen de forma dinámica después de tratar los datos del CSV utilizado para los entrenamientos y las pruebas de este proyecto.
+
+
+%A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
+
+\subsubsection{Capa oculta con la mitad de neuronas que atributos de entrada}\label{sec:VIBIN25}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosBIN}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/modelo/arqnmediosBIN.pdf}
-    \caption{Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \caption{Arquitectura del modelo con $n/2$ neuronas en la capa oculta siendo \textit{n} el número de parámetros de entrada.}
     \label{fig:arqnmediosBIN}
 \end{figure}
 
-\paragraph{Ventajas (n/2)}
+\paragraph{Ventajas (\textit{n/2})}
 \begin{itemize}
-	\item El riesgo de sobreajuste es menor, esto es especialmente importante si no se utiliza validación cruzada o el conjunto de datos de entrenamiento es pequeño o simple.
-	\item  Al tener un número de neuronas menor, tanto la función  de pérdida como el algoritmo de optimización, tardan menos en realizar los cálculos de los ajustes de los pesos y sesgos del modelo. Este menor coste de cálculo se refleja directamente en el tiempo necesario para entrenar el modelo y en el tiempo de respuesta del mismo una vez entrenado.
-	\item Un número bajo de neuronas es especialmente útil cuando los datos son linealmente separables o poco complejos.
+	\item El riesgo de sobreajuste es menor, esto es especialmente importante si no se utiliza validación cruzada o el conjunto de datos de entrenamiento es pequeño o simple \cite{chollet2017deep}.
+	\item  Al tener un número de neuronas menor, tanto la función  de pérdida como el algoritmo de optimización, tardan menos en realizar los cálculos de los ajustes de los pesos y sesgos del modelo. Este menor coste de cálculo se refleja directamente en el tiempo necesario para entrenar el modelo y en el tiempo de respuesta del mismo una vez entrenado \cite{goodfellow2016deep}.
+	\item Un número bajo de neuronas es especialmente útil cuando los datos son linealmente separables o poco complejos \cite{ruck1996hidden}.
 \end{itemize}
-\paragraph{Inconvenientes(n/2)}
+\paragraph{Inconvenientes(\textit{n/2})}
 \begin{itemize}
-	\item Si las relaciones entre los datos son demasiado complejas, el moelo puede sufrir underfitting o subajuste.
-	\item Sensibilidad alta a la inicialización de los pesos, lo que puede provocar que un porcentaje alto de neuronas no se utilicen por tener pesos iguales o muy cercanos a 0. Esto implica que parte de la capacidad de la red quede inutilizada, empeorando el rendimiento incluso en problemas simples.
+	\item Si las relaciones entre los datos son demasiado complejas, el moelo puede sufrir underfitting o subajuste \cite{goodfellow2016deep}.
+	\item Sensibilidad alta a la inicialización de los pesos, lo que puede provocar que un porcentaje alto de neuronas no se utilicen por tener pesos iguales o muy cercanos a 0. Esto implica que parte de la capacidad de la red quede inutilizada, empeorando el rendimiento incluso en problemas simples \cite{glorot2010understanding}.
 \end{itemize}
 
-Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los atributos del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
 
-\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIBIN49}
+\subsubsection{Capa oculta con el mismo número de neuronas que atributos de entrada}\label{sec:VIBIN49}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnBIN}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/modelo/arqnBIN.pdf}
-    \caption{Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \caption{Arquitectura del modelo con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de parámetros de entrada.}
     \label{fig:arqnBIN}
 \end{figure}
 
-\paragraph{Ventajas (n)}
+\paragraph{Ventajas (\textit{n})}
 \begin{itemize}
-	\item La capacidad y la generalización están balanceadas, esto significa que el modelo evita tanto el sobreajuste como el subajuste.
-	\item Es capaz de modelar relaciones más complejas entre conjuntos de datos que arquitecturas con un número de neuronas menor, lo que es especialmente útil en problemas con relaciones no lineales entre sus datos.
-	\item Son computacionalmente más eficientes que arquitecturas con un número elevado de neuronas en la capa oculta. 
+	\item La capacidad y la generalización están balanceadas, esto significa que el modelo evita tanto el sobreajuste como el subajuste \cite{zhang2016understanding}.
+	\item Es capaz de modelar relaciones más complejas entre conjuntos de datos que arquitecturas con un número de neuronas menor, lo que es especialmente útil en problemas con relaciones no lineales entre sus datos \cite{goodfellow2016deep}.
+	\item Son computacionalmente más eficientes que arquitecturas con un número elevado de neuronas en la capa oculta \cite{bengio2006greedy}. 
 \end{itemize}
-\paragraph{Inconvenientes(n)}
+\paragraph{Inconvenientes(\textit{n})}
 \begin{itemize}
-	\item Puede resultar insuficiente en problemas demasiado complejos o con un gran volumen de datos.
-	\item Si el conjunto de datos utilizado para entrenar el modelo es pequeño puede sobreajustar.
+	\item Puede resultar insuficiente en problemas demasiado complejos o con un gran volumen de datos \cite{hochreiter1997long}.
+	\item Si el conjunto de datos utilizado para entrenar el modelo es pequeño puede sobreajustar \cite{yamada2018understanding}.
 \end{itemize}
 
-Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecerá resultados significativamente positivos gracias a su equilibrio y balanceo.
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que entradas recibe el modelo, aparentemente, esta arquitectura ofrecerá resultados significativamente positivos gracias a su equilibrio y balanceo.
 
-\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIBIN98}
+\subsubsection{Capa oculta con el doble de neuronas que atributos de entrada}\label{sec:VIBIN98}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con el doble de neuronas en la capa oculta que parámetros recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnnBIN}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/modelo/arqnnBIN.pdf}
-    \caption{Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}
+    \caption{Arquitectura del modelo con $2n$ neuronas en la capa oculta siendo \textit{n} el número de parámetros de entrada.}
     \label{fig:arqnnBIN}
 \end{figure}
 
 \paragraph{Ventajas (2n)}
 \begin{itemize}
-	\item Alta capacidad de aprendizaje, lo que se traduce como la posibilidad de capturar patrones de datos muy complejos que no son lineales ni perceptibles en un análisis superficial del problema.
-	\item Cuanto mayor es el conjunto de datos mejor se ajustan los pesos.
-	\item Es menos propenso a subajustar que otras arquitecutras.
+	\item Alta capacidad de aprendizaje, lo que se traduce como la posibilidad de capturar patrones de datos muy complejos que no son lineales ni perceptibles en un análisis superficial del problema \cite{goodfellow2016deep}.
+	\item Cuanto mayor es el conjunto de datos mejor se ajustan los pesos \cite{sun2017survey}.
+	\item Es menos propenso a subajustar que otras arquitecutras \cite{bishop2006pattern}.
 \end{itemize}
 \paragraph{Inconvenientes(2n)}
 \begin{itemize}
-	\item El riesgo de sobreajuste es elevado, memorizando de esta manera ruido en vez de aprender los patrones generalizables.
-	\item Nivel computacional muy elevado, lo que se refleja en el tiempo necesario de entrenamiento de esta arquitectura y en su posterior tiempo de respuesta.
-	\item Si el número de muestras del conjunto de datos es bajo tiende a sobreajustar.
+	\item El riesgo de sobreajuste es elevado, memorizando de esta manera ruido en vez de aprender los patrones generalizables \cite{bishop2006pattern}.
+	\item Nivel computacional más elevado, lo que se refleja en el tiempo necesario de entrenamiento de esta arquitectura y en su posterior tiempo de respuesta \cite{goodfellow2016deep}.
+	\item Si el número de muestras del conjunto de datos es bajo tiende a sobreajustar \cite{overfitting2008}.
 \end{itemize}
 
-Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual al doble de los parámetros del modelo, aparentemente, esta arquitectura obtendrá mejores resultados si los parámetros no tiene relaciones lineales. En cambio, si los datos presentan relaciones lineales tiene más probabilidades de sobreajustar los pesso del modelo, lo que implicaría que le modelo no ha sido capaz de converger a una solución genérica.
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual al doble de los parámetros del modelo, aparentemente, esta arquitectura obtendrá mejores resultados si los parámetros no tiene relaciones lineales. En cambio, si los datos presentan relaciones lineales tiene más probabilidades de sobreajustar los pesos del modelo, lo que implicaría que le modelo no ha sido capaz de converger a una solución genérica.
 
 
 \subsection{Matriz de confusión para clasificación binaria} \label{sec.matriz-consfusion}
 En esta sección se explica en que consiste una matriz de confusión y las variaciones que existen de las matrices de confusión en función del tipo de modelo neuronal de clasificación que se entrene. Son una herramienta fundamental utilizada en el campo del aprendizaje automático y la clasificación, especialmente cuando se evalúan modelos de clasificación como el que se propone en este proyecto.
 
-La matriz de confusión es una representación tabular que permite evaluar el rendimiento de un modelo de clasificación. Esta matriz compara las predicciones del modelo con los valores reales (verdaderos) y proporciona una visión detallada sobre los errores cometidos. Esta matriz permite calcular diversas métricas de evaluación del modelo, que son esenciales para entender la efectividad del modelo en tareas de clasificación.
+La matriz de confusión es una representación tabular que permite evaluar el rendimiento de un modelo de clasificación. Esta matriz compara las predicciones del modelo con los valores reales (verdaderos) y proporciona una visión detallada sobre los errores cometidos. Esta matriz permite calcular diversas métricas de evaluación del modelo, que son esenciales para entender la efectividad del modelo en tareas de clasificación \cite{han2011data}.
 
-En el caso de los modelos neuronales de clasificación binaria, la matriz tiene una estructura 2x2, donde cada celda en la matriz representa la cantidad de veces que una combinación específica de clase real y clase predicha ocurrió. Los valores posibles para la clasificación binaria son: 
+En el caso de los modelos neuronales de clasificación binaria, la matriz tiene una estructura 2x2, donde cada celda en la matriz representa la cantidad de veces que una combinación específica de etiqueta y clase predicha ocurrió. Los valores posibles para la clasificación binaria son: 
 
 \begin{itemize}
 
@@ -287,9 +297,7 @@ En el caso de los modelos neuronales de clasificación binaria, la matriz tiene 
 \end{table}
 
 \subsection{Métricas útiles en clasificación binaria}  \label{sec.metricas-bin}
-En esta sección se define el concepto de métrica, se explica cual es su importancia en el proceso de obtención de un modelo neuronal bien entrenado y se enumeran las métricas que se utilizan pàra el estudio del modelo de clasificación binaria desarrollado en este proyecto explicando la importancia de cada una de ellas.
-
-Las métricas en el contexto de los modelos de aprendizaje automático son herramientas cuantitativas utilizadas para evaluar el rendimiento de un modelo entrenado. Estas métricas permiten medir si el modelo está realizando la tarea para la cual fue diseñado de manera correcta, comparando sus predicciones con los valores reales de los datos de prueba. Son fundamentales para comprender la efectividad del modelo y para identificar áreas de mejora, ya que proporcionan una evaluación objetiva y reproducible del comportamiento del modelo.
+Las métricas en el contexto de los modelos de aprendizaje automático son herramientas cuantitativas utilizadas para evaluar el rendimiento de un modelo entrenado. Estas métricas permiten medir si el modelo está realizando la tarea para la cual fue diseñado de manera correcta, comparando sus predicciones con los valores reales de los datos de prueba. Son fundamentales para comprender la efectividad del modelo y para identificar áreas de mejora, ya que proporcionan una evaluación objetiva y reproducible del comportamiento del modelo \cite{hastie2009elements}.
 
 El uso adecuado de las métricas es crucial, ya que guían las decisiones sobre el ajuste y la optimización del modelo. Sin métricas claras, el proceso de evaluación se vuelve subjetivo y difícil de manejar. Además, las métricas permiten realizar comparaciones entre diferentes modelos o configuraciones, facilitando la selección del modelo más adecuado para una tarea específica. Una interpretación correcta de las métricas ayuda a evitar problemas como el sobreajuste o el subajuste, y garantiza que el modelo generalice bien a nuevos datos \cite{goodfellow2016deep}.
 
@@ -303,7 +311,7 @@ Para evaluar el desempeño del modelo de detección y clasificación de ataques,
     \text{Accuracy} = \frac{VP + VN}{VP + FP + VN + FN}
 \end{equation}
 
-En el entrenamiento de modelos neuronales para la detección de intrusiones, esta métrica representa la proporción del total de las clasificaciones realizadas correctamente. Indica la capacidad general del modelo para distinguir entre tráfico normal e intrusivo. Si bien ofrece una visión global del rendimiento, su valor disminuye en escenarios donde la cantidad de tráfico normal supera significativamente al tráfico malicioso, ya que el modelo puede obtener una alta exactitud simplemente clasificando la mayoría de las instancias como normales.
+En el entrenamiento de modelos neuronales para la detección de intrusiones, esta métrica representa la proporción del total de las clasificaciones realizadas correctamente. En este trabajo, indica la capacidad general del modelo para distinguir entre tráfico normal e intrusivo. Si bien ofrece una visión global del rendimiento, su valor disminuye en escenarios donde la cantidad de tráfico normal supera significativamente al tráfico malicioso, ya que el modelo puede obtener una alta exactitud simplemente clasificando la mayoría de las instancias como normales.
 
 \item \textbf{Precisión (\textit{Precision})}: \label{met:Precision}
 
@@ -319,23 +327,23 @@ Esta métrica evalúa la capacidad del modelo neuronal para evitar la identifica
     \text{Recall} = \frac{VP}{VP + FN}
 \end{equation}
 
-La sensibilidad mide la habilidad del modelo neuronal para detectar todas las instancias de intrusión presentes en el tráfico de red. En el contexto de la seguridad, un alto recall es de suma importancia, ya que implica una menor probabilidad de que ataques reales pasen desapercibidos. Un modelo con baja sensibilidad puede tener consecuencias graves, permitiendo que actividades maliciosas se infiltren y comprometan la integridad y la confidencialidad de los sistemas.
+La sensibilidad mide la habilidad del modelo neuronal para detectar todas las instancias de intrusión presentes en el tráfico de red. En el contexto de la seguridad, un alto \textit{recall} es de suma importancia, ya que implica una menor probabilidad de que ataques reales pasen desapercibidos. Un modelo con baja sensibilidad puede tener consecuencias graves, permitiendo que actividades maliciosas se infiltren y comprometan la integridad y la confidencialidad de los sistemas.
 
 \item \textbf{Puntuación F1 (\textit{F1-Score})}: \label{met:F1-score}
 
 \begin{equation}
-    F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+    F1 = 2 \times \frac{\text{\textit{Precision}} \times \text{\textit{Recall}}}{\text{\textit{Precision}} + \text{\textit{Recall}}}
 \end{equation}
 
-Esta métrica proporciona una evaluación equilibrada del rendimiento del modelo neuronal al calcular la media armónica entre la precisión y el recall. En la detección de intrusiones, donde a menudo existe un desequilibrio entre el tráfico normal y el malicioso, el F1-score ofrece una métrica más robusta que la exactitud, ya que considera tanto la capacidad de evitar falsas alarmas como la de detectar todas las intrusiones. Un valor alto de F1-score indica un buen compromiso entre ambas capacidades.
+Esta métrica proporciona una evaluación equilibrada del rendimiento del modelo neuronal al calcular la media armónica entre la precisión y el \textit{recall}. En la detección de intrusiones, donde a menudo existe un desequilibrio entre el tráfico normal y el malicioso, el F1-score ofrece una métrica más robusta que la exactitud, ya que considera tanto la capacidad de evitar falsas alarmas como la de detectar todas las intrusiones. Un valor alto de F1-score indica un buen compromiso entre ambas capacidades.
 
 \item \textbf{Puntuación F2 (\textit{F2-Score})}: \label{met:F2-score}
 
 \begin{equation}
-    F2 = 5 \times \frac{\text{Precision} \times \text{Recall}}{4 \times \text{Precision} + \text{Recall}}
+    F2 = 5 \times \frac{\text{\textit{Precision}} \times \text{\textit{Recall}}}{4 \times \text{\textit{Precision}} + \text{\textit{Recall}}}
 \end{equation}
 
-Esta variante de la puntuación F pondera la sensibilidad más que la precisión. En el ámbito de la detección de intrusiones, el F2-score resulta útil cuando las consecuencias de no detectar un ataque (falso negativo) se consideran significativamente más perjudiciales que generar una falsa alarma (falso positivo). Al asignar un mayor peso al recall, se prioriza la identificación de la mayor cantidad posible de actividades maliciosas, incluso a expensas de un posible aumento en las falsas alertas.
+Esta variante de la puntuación F pondera la sensibilidad más que la precisión. En el ámbito de la detección de intrusiones, el F2-score resulta útil cuando las consecuencias de no detectar un ataque (FN) se consideran significativamente más perjudiciales que generar una falsa alarma (FP). Al asignar un mayor peso al \textit{recall}, se prioriza la identificación de la mayor cantidad posible de actividades maliciosas, incluso a expensas de un posible aumento en las falsas alertas.
 
 
 \item \textbf{Área bajo la curva (\textit{ROC AUC})}: \label{met:ROCAUC}
@@ -343,32 +351,32 @@ Esta variante de la puntuación F pondera la sensibilidad más que la precisión
     \text{FPR} = \frac{FP}{FP + VN}
 \end{equation}
 \begin{equation}
-    \text{Recall}(\text{FPR}(t)) = \text{Recall}(t)
+    \text{\textit{Recall}}(\text{FPR}(t)) = \text{\textit{Recall}}(t)
 \end{equation}
 \begin{equation}
-    \text{ROC AUC} = \int_{0}^{1} \text{Recall}(\text{FPR}) \, d(\text{FPR})
+    \text{ROC AUC} = \int_{0}^{1} \text{\textit{Recall}}(\text{FPR}) \, d(\text{FPR})
 \end{equation}
 
 
 
 El área bajo la curva ROC (Receiver Operating Characteristic) mide la capacidad del modelo neuronal para discriminar entre clases positivas y negativas a lo largo de todos los posibles umbrales de decisión. 
-En la curva ROC, la FPR (False Positive Rate) actúa como la variable del eje x, mientras que el Recall (o TPR, True Positive Rate) corresponde a la variable del eje y. En el contexto de la seguridad, un alto valor de AUC indica que el modelo asigna puntuaciones más altas a las intrusiones que al tráfico normal de manera consistente, lo que sugiere una buena capacidad de priorización de amenazas. Esta métrica es especialmente útil cuando se desea evaluar el rendimiento global del modelo sin depender de un umbral fijo. Un modelo con bajo AUC podría fallar al separar el tráfico malicioso, lo que aumentaría la probabilidad de errores en la clasificación y podría comprometer la eficacia general del sistema de detección.
+En la curva ROC, la FPR (False Positive Rate) actúa como la variable del eje X, mientras que el \textit{Recall} (o TPR, True Positive Rate) corresponde a la variable del eje Y. En el contexto de la seguridad, un alto valor de AUC indica que el modelo asigna puntuaciones más altas a las intrusiones que al tráfico normal de manera consistente, lo que sugiere una buena capacidad de priorización de amenazas. Esta métrica es especialmente útil cuando se desea evaluar el rendimiento global del modelo sin depender de un umbral fijo. Un modelo con bajo AUC podría fallar al separar el tráfico malicioso, lo que aumentaría la probabilidad de errores en la clasificación y podría comprometer la eficacia general del sistema de detección \cite{fawcett2006introduction}.
 
 \end{itemize}
 
 \subsubsection{REPASAR, NO TERMINA DE CONVENCERME Aplicación en Seguridad}	\label{sec:apli-met-seg}
 En el contexto de detección de intrusiones:
 \begin{itemize}
-    \item Un recall alto (> 95\%) asegura que pocos ataques pasan desapercibidos.
-    \item La precisión debe optimizarse para reducir la carga operativa de analistas (falsos positivos < 10\%).
+    \item Un recall alto ($>$ 95\%) asegura que pocos ataques pasan desapercibidos.
+    \item La precisión debe optimizarse para reducir la carga operativa de analistas (falsos positivos $<$ 10\%).
     \item El F2-Score es preferible al F1 cuando la prioridad es minimizar riesgos de ataques no detectados.
 \end{itemize}
 
 
-\subsection{Mejores hiperparámetros para cada arquitectura}
+\subsection{Selección de modelos}
 En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disBIN} \nameref{sec:disBIN}.
 
-Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-bin} \nameref{sec.metricas-bin}. El objetivo del modelo es detectar intrusiones en redes informáticas, por este motivo, los falsos negativos, es decir cuando se produce un ataque o intrusión y no se detecta, pueden tener consecuencias muy catastróficas para el sistema. Teniendo esto en cuenta, la métrica más importante es \textit{recall}, puesto que es la que se ve más afectada por la presencia de falsos negativos.
+Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-bin} \nameref{sec.metricas-bin}. El objetivo del modelo es detectar intrusiones en redes informáticas, por este motivo, los falsos negativos, es decir cuando se produce un ataque o intrusión y no se detecta, pueden tener consecuencias muy catastróficas para el sistema. Teniendo esto en cuenta, la métrica más importante es \textit{Recall}, puesto que es la que se ve más afectada por la presencia de falsos negativos.
 
 Otras métricas relevantes que se muestran en las siguientes figuras son:
 \begin{itemize}
@@ -395,7 +403,7 @@ En la Figura \ref{fig:BINhs25}, se encuentran representadas las cinco mejores co
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{./img/modelo/BINhs25.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas.}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas ($n/2$).}
     \label{fig:BINhs25}
 \end{figure}
 
@@ -411,7 +419,7 @@ La Figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores con
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{./img/modelo/BINhs49.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas.}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas ($n$).}
     \label{fig:BINhs49}
 \end{figure}
 
@@ -426,7 +434,7 @@ En la Figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores co
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{./img/modelo/BINhs98.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas.}
+    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas ($2n$).}
     \label{fig:BINhs98}
 \end{figure}
 
@@ -436,7 +444,7 @@ Estos resultados no son definitivos, puesto que no se está evaluando la posibil
 \subsection{Comparación de las arquitecturas} \label{sec:comp.BIN}
 En esta sección se comaparan los resultados obtenidos entre las tres arquitecturas propuestas. Una vez comparadas, se desarrolla una posible explicación para comprender los resultados de los experimientos.
 
-Para comprender mejor los resultados globales de los experimentos, se han recogido en la Figura \ref{fig:BINtop5}, las 5 configuraciones de hiperparámetros con mayor recall independientemente de su arquitectura.
+Para comprender mejor los resultados globales de los experimentos, se han recogido en la Figura \ref{fig:BINtop5}, las 5 configuraciones de hiperparámetros con mayor \textit{Recall} independientemente de su arquitectura.
 
 \begin{figure}[H]
     \centering
@@ -451,7 +459,7 @@ Al observar los datos de la figura \ref{fig:BINtop5}, se puede apreciar que punt
 
 Ente los mejores resultados de los experimentos, detaca la presencia de la arquitectura con un tamaño de capa oculta igual al número de parámetros de entrada del modelo. Tal y como se comenta en las secciones anteriores, esta es la arquitectura más equilibrada. Gracias a este equilibrio ha sido capaz de ajustar sus pesos mejor que el rseto de arquitecturas para configuraciones de hiperparámetros diferentes.
 
-Al aumentar el número de épocas del entrenamiento de los modelos, estos tienden a sobreajustar los pesos. Este sobreajuste implica que el modelo obtiene unas métricas excepcionalmente positivas durante los experimentos. Sin embargo, aunque los valores de las métricas son muy positivos en los experimentos realizados, sorprende que el número de épocas del 80 \% de las 5 mejores configuraciones, es el menor de los valores con los que se han realizado los experimentos para el hiperparámetro epochs. Estos resultados reflejan que la probabilidad de que el modelo haya sobreajustado sus pesos es muy baja. Posiblemente, el uso de la validación cruzada que penaliza el sobreajuste de los pesos de los modelos, como se explica en secciones anteriores, sea el responsable de que los experimentos con un número de épocas más elevado hayan obtenido unos resultados peores.
+Al aumentar el número de épocas del entrenamiento de los modelos, estos tienden a sobreajustar los pesos. Este sobreajuste implica que el modelo obtiene unas métricas excepcionalmente positivas durante los experimentos. Sin embargo, aunque los valores de las métricas son muy positivos en los experimentos realizados, sorprende que el número de épocas del 80 \% de las 5 mejores configuraciones, es el menor de los valores con los que se han realizado los experimentos para el hiperparámetro \textit{epochs}. Estos resultados reflejan que la probabilidad de que el modelo haya sobreajustado sus pesos es muy baja. Posiblemente, el uso de la validación cruzada que penaliza el sobreajuste de los pesos de los modelos, como se explica en secciones anteriores, sea el responsable de que los experimentos con un número de épocas más elevado hayan obtenido unos resultados peores.
 
 Finalmente, es destacable que el \textit{learning rate} de la mayoría de los 5 mejores experimentos del global de las arquitecturas tenga el valor más alto de los que se han probado. Esto puede interpretarse de manera positiva o negativa.
 En el mejor de los casos, un \textit{learning rate} alto muestra que los datos están bien estructurados y que el optimizador y las arquitecturas son robustos frente a valores altos de \textit{learning rate},
@@ -555,7 +563,7 @@ la mitad del número de parámetros que recibe el modelo, el mismo número que p
 
 A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
-\subsubsection{Capa oculta con la mitad de neuronas que parámetros de entrada}\label{sec:VIMUL25}
+\subsubsection{Capa oculta con la mitad de neuronas que atributos de entrada}\label{sec:VIMUL25}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosMUL}.
 
 \begin{figure}[H]
@@ -582,7 +590,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los parámetros del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables. Debido al alto desbalanceo entre clases, se espera que esta arquitectura proporcione resultados peores que su equivalente del modelo de clasificación binaria.
 
-\subsubsection{Capa oculta con el mismo número de neuronas que parámetros de entrada}\label{sec:VIMUL49}
+\subsubsection{Capa oculta con el mismo número de neuronas que atributos de entrada}\label{sec:VIMUL49}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnMUL}.
 
 \begin{figure}[H]
@@ -608,7 +616,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 
 Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con el mismo número de neuronas que parámetros recibe el modelo, aparentemente, esta arquitectura ofrecera resultados significativamente positivos gracias a su equilibrio. Aunque, si las clases que tienen un número inferior de muestras, tienen relaciones complejas entre sus datos, esta arquitectura puede ser insuficiente para obtener un modelo capaz de distinguir entre algunas de las clases más minoritarias.
 
-\subsubsection{Capa oculta con el doble de neuronas que parámetros de entrada}\label{sec:VIMUL98}
+\subsubsection{Capa oculta con el doble de neuronas que atributos de entrada}\label{sec:VIMUL98}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación multiclase con el doble de neuronas en la capa oculta que parámetros recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnnMUL}.
 
 \begin{figure}[H]
