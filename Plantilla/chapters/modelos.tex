@@ -99,6 +99,7 @@ La regularización es una técnica utilizada en el entrenamiento de modelos de a
 
 Aunque ambos algoritmos, Adam y AdamW, tienen un rendimiento destacado en tareas de clasificación binaria, AdamW se ha demostrado más eficaz en la prevención de sobreajuste en redes neuronales complejas. Esto se debe a su tratamiento explícito del \textit{weight decay}, lo que permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto. Sin embargo, Adam sigue siendo una opción popular y efectiva, especialmente cuando se trabaja con redes neuronales menos complejas o cuando se desea una mayor estabilidad y rapidez de convergencia. En general, AdamW es preferido en situaciones donde la regularización adecuada es crucial, pero Adam sigue siendo una opción sólida y eficiente \cite{kingma2014adam}.
 
+\subsection{Conjunto de datos de entrenamiento} \label{subsec:conjdatent}
 El conjunto de entrenamiento es fundamental en el proceso de desarrollo de un modelo de aprendizaje automático, ya que es sobre este conjunto de datos donde el modelo aprende a reconocer patrones y relaciones. Durante el entrenamiento, el modelo ajusta sus parámetros con el objetivo de minimizar el error en las predicciones, basándose en los ejemplos proporcionados en este conjunto. Un conjunto de entrenamiento bien diseñado y representativo de los datos reales es crucial para que el modelo sea capaz de generalizar correctamente a nuevos datos. Si el conjunto de entrenamiento es pequeño o no es representativo de la diversidad de situaciones que el modelo enfrentará, el rendimiento del modelo puede ser peor de lo esperado, incluso si tiene un buen desempeño en los datos de entrenamiento  \cite{bishop2006pattern}.
 
 Para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada \textit{k-fold}. La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones, en este trabajo, se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación. Para entrenar el modelo de clasificación binaria, se ha utilizado \texttt{StratifiedKFold()} que como su nombre indica, estratifica los \textit{folds} para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada \textit{fold} y no se creen \textit{folds} con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos \textit{datasets} cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar validación cruzada \texttt{StratifiedKFold)} con 5 \textit{folds} o divisiones.
@@ -178,7 +179,7 @@ En esta sección se abordan cuales son las arquitecturas a desarrollar para el m
 Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de capa oculta igual a:
 \begin{itemize}
 
-	\item \textbf{MCB35}: La mitad del número de atributos que recibe el modelo
+	\item \textbf{MCB25}: La mitad del número de atributos que recibe el modelo
 	\item \textbf{MCB49}: El mismo número que atributos que tiene el modelo.
 	\item \textbf{MCB98}: El doble del número de atributos. 
 
@@ -660,7 +661,6 @@ Rellenando una matriz con la información dada, se obtiene la matriz de confusi�
 
 \begin{table}[h]
 \centering
-\label{tab:confusion_matrix_9class}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -677,6 +677,7 @@ Rellenando una matriz con la información dada, se obtiene la matriz de confusi�
 \end{tabular}
 }
 \caption{Matriz de confusión para clasificación con 9 clases.}
+\label{tab:confusion_matrix_9class}
 \end{table}
 
 
