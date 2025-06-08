@@ -1,1 +1,23 @@
+Esta sección aborda la fase de despliegue de los modelos de clasificación binaria y multiclase desarrollados para la detección de conexiones malignas. La fase de despliegue en la metodología CRISP-DM implica la integración de los modelos entrenados en entornos operativos donde sus predicciones contribuyen a la toma de decisiones en tiempo real o en análisis periódicos, facilitando la detección automatizada y escalable de amenazas en redes como se comenta en capítulos anteriores \cite{wirth2000crisp}.
+
+\section{Integración en entornos operativos}
+
+Los modelos de clasificación binaria, orientados a distinguir conexiones malignas de benignas, y los modelos multiclase, diseñados para identificar diferentes categorías de conexiones malignas, deben ser implementados en plataformas que permitan la recepción continua de datos y procesamiento eficiente \cite{baylor2017tensorflow}. 
+
+Para ello, es recomendable desplegarlos mediante APIs o microservicios, asegurando compatibilidad con sistemas de monitorización y respuesta automatizada. En el caso del modelo multiclase, la alta desproporción entre las clases y la naturaleza específica de los datos requieren especial atención en la validación en entorno real, dado que durante la fase de evaluación correspondiente con el capítulo \ref{cap.evaluacion} se utiliza el conjunto completo de datos y puede observarse degradación en desempeño frente a la fase de búsqueda \cite{gama2014survey}.
+
+\section{Consideraciones técnicas}
+
+El uso de validación cruzada estratificada durante la fase de búsqueda garantiza la estabilidad en la estimación de rendimiento, pero el despliegue debe contemplar la variabilidad inherente a datos nuevos y no vistos, especialmente en contextos dinámicos como la detección de conexiones malignas \cite{reimers2017optimal}. 
+
+El ajuste adecuado de hiperparámetros, demostrado durante el capítulo \ref{cap.modelos}, debe ser preservado en producción, considerando limitaciones de hardware, latencia y volumen de datos. El control de versiones de los modelos es crucial para realizar actualizaciones y retrocesos en sus configuraciones de pesos, sin afectar a los resultados que devuelva el modelo \cite{peters2017machine}.
+
+\section{Monitorización y mantenimiento}
+Una vez desplegados, los modelos requieren monitorización continua para detectar posibles cambios en la distribución de los datos o en el comportamiento de las conexiones, que puedan afectar el rendimiento del modelo (\textit{data drift} y \textit{concept drift}) \cite{gama2014survey}. En particular, para el modelo multiclase que ha sido entrenado con clases muy desbalanceadas, la monitorización de métricas como el \textit{F1-Weighted} es esencial para asegurar la calidad del diagnóstico en todas las categorías.
+
+El mantenimiento de los modelos, incluye la recopilación de datos reales etiquetados, la reevaluación periódica del modelo y la posible reentrenamiento o ajuste de hiperparámetros para mantener la eficacia en la detección \cite{tsymbal2004problem}.
+
+\section{Impacto y aplicación en el mundo real}
+
+El despliegue efectivo de estos modelos contribuye a mejorar la seguridad en redes mediante la automatización de la detección de conexiones malignas, permitiendo respuestas rápidas y reducción de falsos positivos y negativos. La diferenciación entre múltiples tipos de conexiones malignas aporta un valor añadido para estrategias de mitigación específicas y optimización de recursos \cite{amershi2019software}.
 

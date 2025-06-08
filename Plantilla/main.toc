@@ -3,7 +3,7 @@
 \contentsline {chapter}{Resumen}{V}{chapter*.4}%
 \contentsline {chapter}{Abstract}{VII}{chapter*.5}%
 \contentsline {chapter}{Lista de figuras}{XIII}{chapter*.6}%
-\contentsline {chapter}{Lista de tablas}{XV}{chapter*.7}%
+\contentsline {chapter}{Lista de tablas}{XVII}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contexto}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivación}{2}{section.1.2}%
@@ -88,15 +88,16 @@
 \contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{94}{section*.92}%
 \contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{94}{section*.94}%
 \contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{95}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{95}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{95}{subsection.7.4.1}%
-\contentsline {subsubsection}{Fortalezas del modelo de clasificación binaria}{96}{section*.97}%
-\contentsline {subsubsection}{Debilidades del modelo de clasificación binaria}{96}{section*.98}%
-\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{96}{subsection.7.4.2}%
-\contentsline {subsubsection}{Fortalezas del modelo de clasificación multiclase}{96}{section*.99}%
-\contentsline {subsubsection}{Debilidades del modelo de clasificación multiclase}{96}{section*.100}%
-\contentsline {chapter}{\numberline {8}Despliegue}{97}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Tecnologías usadas}{99}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Seguimiento del proyecto}{101}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{103}{chapter.11}%
-\contentsline {chapter}{Bibliografía}{105}{chapter.11}%
+\contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{95}{section*.96}%
+\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{96}{section*.98}%
+\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{96}{section*.100}%
+\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{97}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{97}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{98}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Despliegue}{101}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Integración en Entornos Operativos}{101}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Consideraciones Técnicas}{101}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Monitorización y Mantenimiento}{102}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Impacto y Aplicación en el Mundo Real}{102}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{103}{chapter.9}%
+\contentsline {chapter}{Bibliografía}{105}{chapter.9}%

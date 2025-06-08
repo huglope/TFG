@@ -34,11 +34,13 @@
 \contentsline {figure}{\numberline {6.20}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{87}{figure.caption.88}%
 \contentsline {figure}{\numberline {6.21}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada para el modelo de clasificación multiclase.}}{89}{figure.caption.89}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultados de la evaluación del modelo con \textit {n/2} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{93}{figure.caption.91}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Resultados de la evaluación del modelo con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{94}{figure.caption.93}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de la evaluación del modelo con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{95}{figure.caption.95}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Cinco mejores modelos en la fase de evaluación del modelo de clasificación binaria.}}{95}{figure.caption.96}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultados de la evaluación del modelo de clasificación binaria con \textit {n/2} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{93}{figure.caption.91}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Resultados de la evaluación del modelo de clasificación binaria con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{94}{figure.caption.93}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de la evaluación del modelo de clasificación binaria con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{95}{figure.caption.95}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n/2} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{95}{figure.caption.97}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{96}{figure.caption.99}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{97}{figure.caption.101}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}}{98}{figure.caption.102}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}}{99}{figure.caption.103}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

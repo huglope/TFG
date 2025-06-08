@@ -23,8 +23,11 @@ Para comparar los resultados obtenidos en la fase de evaluación de las cinco me
 
 Con el objetivo de que la interpretación de los datos sea más sencilla, se ha añadido a las siguientes figuras una columna con la posición del \textit{ranking} que ocupó cada configuración en la fase anterior.
 
+
+
+
 \subsection{Resultados del modelo de clasificación binaria}
-La métrica utilizada para determinar el orden los siguientes \textit{rankings} de las configuraciones para los modelos de clasificación binaria es la misma que la utilizada en la fase anterior, el \textit{Recall}.
+La métrica utilizada para establecer el orden en los siguientes \textit{rankings} de configuraciones para los modelos de clasificación binaria es la misma empleada durante la fase previa de búsqueda de las mejores configuraciones de hiperparámetros: el \textit{Recall}.
 
 \subsubsection{MCB25: Modelo de clasifcación binaria con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}
 En la Figura \ref{fig:EVALMCB25}, se muestran los resultados obtenidos durante las evaluaciones de las cinco configuraciones de hiperparámetros con mejor desempeño durante la fase de búsqueda de las mejores configuraciones para la arquitectura del modelo de clasificación binaria que posee un tamaño de capa oculta de 25 neuronas.
@@ -32,7 +35,7 @@ En la Figura \ref{fig:EVALMCB25}, se muestran los resultados obtenidos durante l
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB25.pdf}
-    \caption{Resultados de la evaluación del modelo con \textit{n/2} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \caption{Resultados de la evaluación del modelo de  clasificación binaria con \textit{n/2} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB25}
 \end{figure}
 
@@ -44,7 +47,7 @@ En la Figura \ref{fig:EVALMCB49} se presentan los resultados obtenidos durante l
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB49.pdf}
-    \caption{Resultados de la evaluación del modelo con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \caption{Resultados de la evaluación del modelo de clasificación binaria con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB49}
 \end{figure}
 
@@ -56,25 +59,100 @@ La Figura \ref{fig:EVALMCB98} muestra los resultados obtenidos en las evaluacion
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB98.pdf}
-    \caption{Resultados de la evaluación del modelo con \textit{2n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \caption{Resultados de la evaluación del modelo de clasificación binaria con \textit{2n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB98}
 \end{figure}
 
 En las evaluaciones del modelo MCB98, los valores obtenidos para la métrica Recall fueron elevados en todas las configuraciones, con diferencias del orden de $1e-4$. Estas pequeñas variaciones pueden explicarse por factores no controlables, como el estado del sistema en el momento de la evaluación o la inicialización aleatoria de los pesos durante la ejecución de las pruebas.
 
+
+
+
+
+
 \subsection{Resultados del modelo de clasificación multiclase}
-\section{Análisis de los resultados obtenidos}
+Para determinar el orden de los \textit{rankings} presentados a continuación, se emplea la misma métrica utilizada en la fase anterior de búsqueda de configuraciones de hiperparámetros para los modelos de clasificación multiclase: el \textit{F1-weighted}.
+
+\subsubsection{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}
+
+En la Figura \ref{fig:EVALMCM25} se presentan los resultados obtenidos durante las evaluaciones de las cinco configuraciones de hiperparámetros con mejor rendimiento, identificadas durante la fase de búsqueda para la arquitectura del modelo de clasificación multiclase que cuenta con una capa oculta de 25 neuronas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM25.pdf}
+    \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{n/2} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \label{fig:EVALMCM25}
+\end{figure}
+
+La figura anterior evidencia una diferencia en los valores de la métrica de comparación considerablemente mayor que la observada para las mismas configuraciones durante la fase de búsqueda de hiperparámetros. En los cinco mejores experimentos representados en la figura, las diferencias en la métrica \textit{F1-weighted} durante la fase de búsqueda se encuentran en el orden de $1e-2$, mientras que en la fase de evaluación alcanzan un orden de $1e-1$, lo que indica una degradación clara en el desempeño de esta arquitectura. 
+
+
+\subsubsection{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}
+La Figura \ref{fig:EVALMCM49} presenta los resultados de las evaluaciones realizadas sobre las cinco configuraciones de hiperparámetros con mejor desempeño, seleccionadas durante la fase de búsqueda aplicada a la arquitectura del modelo de clasificación multiclase con una capa oculta compuesta por 49 neuronas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM49.pdf}
+    \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \label{fig:EVALMCM49}
+\end{figure}
+
+Al analizar los resultados obtenidos para esta arquitectura, destaca más allá del bajo rendimiento reflejado por la métrica \textit{F1-weighted}, el hecho de que el orden de las configuraciones se ha invertido respecto a lo observado en la fase de búsqueda. Las posibles causas de este comportamiento se detallan en la sección \ref{sec:analEVAL}.
+
+\subsubsection{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}
+En la Figura \ref{fig:EVALMCM98} se ilustran los resultados obtenidos durante las evaluaciones correspondientes a las cinco configuraciones de hiperparámetros con mayor rendimiento, seleccionadas en la etapa de búsqueda de configuraciones para la arquitectura del modelo de clasificación multiclase con una capa oculta de 98 neuronas..
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM98.pdf}
+    \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{2n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
+    \label{fig:EVALMCM98}
+\end{figure}
+
+Los resultados obtenidos durante la fase de evaluación de esta arquitectura fueron significativamente inferiores a los alcanzados en la fase de búsqueda. Por ejemplo, en la quinta mejor configuración de hiperparámetros, la diferencia entre los resultados experimentales y los obtenidos en la evaluación es del orden de $1e-1$. Esta diferencia implica una reducción del 10\% en la precisión, o bien, un mayor número de errores en las clases con menor cantidad de muestras en comparación con la fase anterior.
+
+\section{Análisis de los resultados obtenidos} \label{sec:analEVAL}
 \subsection{Modelo de clasificación binaria}
+
+Los resultados obtenidos durante la fase de búsqueda de las mejores configuraciones de hiperparámetros, empleando validación cruzada \textit{k-fold} con estratificación, muestran valores de \textit{Recall} consistentemente altos, todos por encima de $0{,}9985$, como se detalla en la Figura \ref{fig:BINtop5}. Este rendimiento indica una capacidad del modelo para identificar correctamente la clase mayoritaria de forma fiable y robusta en distintos subconjuntos de datos, lo cual respalda la estabilidad de las configuraciones seleccionadas durante esta fase de optimización \cite{bergstra2012random}.
+
+Sin embargo, al aplicar estas mismas configuraciones en la fase de evaluación sobre un conjunto independiente (Figura \ref{fig:top5EVALMCB}), se observa una inversión parcial en el orden del rendimiento de las configuraciones. Algunas de las configuraciones con mejor desempeño en la búsqueda no mantienen su posición, mientras que otras ascienden en el \textit{ranking}. Este comportamiento puede atribuirse a pequeñas variaciones aleatorias en los datos o a la sensibilidad del modelo frente a distribuciones ligeramente diferentes, aun cuando estas diferencias se hayan mitigado mediante estratificación \cite{reimers2017optimal}.
+
+A pesar de que las diferencias absolutas entre los valores de \textit{Recall} en ambas fases son reducidas (del orden de $1e-4$ a $1e-3$), su impacto puede ser relevante en tareas de clasificación binaria crítica, como la detección de conexiones maliciosas, donde incluso mínimas variaciones pueden traducirse en decisiones erróneas. La ligera degradación observada en algunos casos puede deberse a factores como la inicialización aleatoria de pesos o el estado del sistema durante la inferencia, más que a un verdadero sobreajuste, dado que el proceso de validación cruzada ya controla adecuadamente este riesgo \cite{goodfellow2016deep}.
+
+Asimismo, el análisis muestra que distintas combinaciones de \texttt{batch\_size}, \texttt{epochs}, \texttt{hidden\_size} y \texttt{learning\_rate} conducen a valores de \textit{Recall} muy próximos en evaluación. Esta convergencia en el rendimiento es coherente con estudios que sugieren que múltiples configuraciones en regiones planas del espacio de pérdida pueden llevar a modelos igualmente eficaces, especialmente en arquitecturas suficientemente expresivas como las utilizadas \cite{bouthillier2021sloppy}.
+
+La observación de que varias configuraciones producen valores prácticamente idénticos de \textit{Recall} en la evaluación sugiere la presencia de una región de estabilidad en el espacio de soluciones. Sin embargo, el hecho de que estas configuraciones no coincidan con las mejor posicionadas en la búsqueda indica que, aunque la validación cruzada estratificada proporciona una estimación robusta, puede no capturar completamente la variabilidad inherente del conjunto de evaluación, especialmente si este presenta ligeras desviaciones de la distribución global \cite{recht2019imagenet}.
+
+Los resultados reflejan un comportamiento coherente con lo esperado para modelos que han sido correctamente validados. Las diferencias encontradas entre fases no parecen ser estadísticamente significativas, pero sí lo suficientemente marcadas como para sugerir la conveniencia de utilizar estrategias complementarias de evaluación en futuros experimentos, como pruebas de sensibilidad o análisis de varianza.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./img/evaluacion/top5EVALMCB.pdf}
-    \caption{Cinco mejores modelos en la fase de evaluación del modelo de clasificación binaria.}
+    \caption{Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}
     \label{fig:top5EVALMCB}
 \end{figure}
 
-\subsubsection{Fortalezas del modelo de clasificación binaria}
-\subsubsection{Debilidades del modelo de clasificación binaria}
 \subsection{Modelo de clasificación multiclase}
-\subsubsection{Fortalezas del modelo de clasificación multiclase}
-\subsubsection{Debilidades del modelo de clasificación multiclase}
+
+Los resultados obtenidos durante la fase de búsqueda de hiperparámetros del modelo de clasificación multiclase (MCM), reflejados en la Figura \ref{fig:MULtop10}, indican valores moderados en las métricas utilizadas. En particular, el valor promedio de \textit{F1-weighted} se sitúa en torno a $0{,}57$, con ligeras variaciones entre las distintas configuraciones probadas. Este nivel de desempeño es coherente con la naturaleza desbalanceada del conjunto de datos, ya que el predominio de algunas clases afecta negativamente al promedio ponderado de precisión y \textit{Recall} \cite{he2009learning}.
+
+Las métricas \textit{F1-macro} y \textit{Precision-macro} presentan valores sustancialmente más bajos que sus contrapartes ponderadas, lo que confirma que el modelo no logra un rendimiento equilibrado entre clases minoritarias y mayoritarias. Esta brecha sugiere que las clases menos representadas no son detectadas con suficiente eficacia, un fenómeno frecuente en escenarios de desbalance como el que se presenta en este trabajo, incluso al aplicar validación cruzada estratificada \cite{johnson2019survey}.
+
+Al observar los resultados de la fase de evaluación (Figura \ref{fig:top5EVALMCM}), se constata que la métrica \textit{F1-weighted} no mejora significativamente respecto a la fase de búsqueda. De hecho, se observan valores incluso más bajos en algunas configuraciones, con un máximo de aproximadamente $0{,}568$ y un mínimo cercano a $0{,}509$. Este comportamiento sugiere que las configuraciones seleccionadas no generalizan adecuadamente al conjunto completo, a pesar de haber sido validadas mediante \textit{k-folds} \cite{reimers2017optimal}.
+
+El análisis también muestra que el orden de las configuraciones en términos de rendimiento cambia entre ambas fases. Configuraciones que ocupaban posiciones intermedias o bajas durante la búsqueda escalan posiciones en la evaluación y viceversa. Esto podría estar relacionado con la distribución específica de las clases en el conjunto completo usado para la evaluación, el cual puede no coincidir exactamente con la distribución estratificada de los pliegues empleados durante la validación por circunstancias no controlables \cite{buda2018systematic}.
+
+La pérdida de rendimiento observada puede explicarse también por el hecho de que, al entrenar con el conjunto completo en la evaluación, se pierde la ventaja del promedio sobre múltiples particiones que ofrece la validación cruzada. Esta situación puede inducir mayor varianza en los resultados y resaltar la sensibilidad del modelo a configuraciones particulares del entrenamiento \cite{dietterich1998approx}.
+
+Por otra parte, el hecho de que el mejor resultado de \textit{F1-weighted} en evaluación ($0{,}568$) sea comparable al mejor valor obtenido en la búsqueda sugiere que el modelo alcanza un rendimiento máximo limitado por la naturaleza del problema. La estructura altamente desbalanceada del conjunto impone un techo al rendimiento global del modelo \cite{japkowicz2002class}.
+
+El modelo de clasificación multiclase presenta un rendimiento aceptable dadas las condiciones desbalanceadas del problema, pero revela claras limitaciones en la detección equilibrada de clases. Las discrepancias entre búsqueda y evaluación reflejan la dificultad del modelo para mantener un rendimiento robusto al exponerse a la totalidad del conjunto, y sugieren la necesidad de introducir nuevas estrategias no probadas en la sección \ref{subsec:MCMdescart} \nameref{subsec:MCMdescart} orientadas al tratamiento explícito del desbalanceo de clases en futuras fases del desarrollo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/top5EVALMCM.pdf}
+    \caption{Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}
+    \label{fig:top5EVALMCM}
+\end{figure}
+

@@ -8,45 +8,45 @@ Warning--entry type for "nist2021ai" isn't style-file defined
 Warning--entry type for "ISO29148" isn't style-file defined
 --line 591 of file bibliografia.bib
 Warning--can't use both volume and number fields in fawcett2006introduction
-You've used 58 entries,
+You've used 74 entries,
             1791 wiz_defined-function locations,
-            726 strings with 11244 characters,
-and the built_in function-call counts, 10285 in all, are:
-= -- 856
-> -- 432
-< -- 5
-+ -- 175
-- -- 117
-* -- 479
-:= -- 1610
-add.period$ -- 161
-call.type$ -- 58
-change.case$ -- 46
+            814 strings with 14189 characters,
+and the built_in function-call counts, 14516 in all, are:
+= -- 1242
+> -- 624
+< -- 9
++ -- 245
+- -- 171
+* -- 763
+:= -- 2255
+add.period$ -- 210
+call.type$ -- 74
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 487
-empty$ -- 1149
-format.name$ -- 117
-if$ -- 2347
+cite$ -- 75
+duplicate$ -- 678
+empty$ -- 1550
+format.name$ -- 171
+if$ -- 3300
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 52
-newline$ -- 280
-num.names$ -- 58
-pop$ -- 287
+int.to.str$ -- 74
+missing$ -- 68
+newline$ -- 360
+num.names$ -- 74
+pop$ -- 332
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 239
+skip$ -- 346
 stack$ -- 0
-substring$ -- 383
-swap$ -- 99
-text.length$ -- 5
+substring$ -- 709
+swap$ -- 157
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 88
-width$ -- 60
-write$ -- 576
+while$ -- 131
+width$ -- 76
+write$ -- 749
 (There were 3 warnings)

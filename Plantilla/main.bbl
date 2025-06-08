@@ -310,4 +310,98 @@ Tom Fawcett.
 \newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
   2006.
 
+\bibitem{bergstra2012random}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock {\em Journal of Machine Learning Research}, 13(Feb):281--305, 2012.
+
+\bibitem{reimers2017optimal}
+Nils Reimers and Iryna Gurevych.
+\newblock Optimal hyperparameters for deep lstm-networks for sequence labeling
+  tasks.
+\newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1432--1437, 2017.
+
+\bibitem{bouthillier2021sloppy}
+Xavier Bouthillier, Pascal Vincent, and Laurent Dinh.
+\newblock Sloppy models, flat minima, and generalization in deep learning.
+\newblock {\em arXiv preprint arXiv:2106.10176}, 2021.
+
+\bibitem{recht2019imagenet}
+Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, and Vaishaal Shankar.
+\newblock Do imagenet classifiers generalize to imagenet?
+\newblock In {\em International Conference on Machine Learning}, pages
+  5389--5400. PMLR, 2019.
+
+\bibitem{he2009learning}
+Haibo He and Edwardo~A Garcia.
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284, 2009.
+
+\bibitem{johnson2019survey}
+Justin~M Johnson and Taghi~M Khoshgoftaar.
+\newblock A survey of data augmentation approaches for imbalanced
+  classification.
+\newblock {\em Journal of Big Data}, 6(1):1--54, 2019.
+
+\bibitem{buda2018systematic}
+Mateusz Buda, Atsuto Maki, and Maciej~A Mazurowski.
+\newblock A systematic study of the class imbalance problem in convolutional
+  neural networks.
+\newblock {\em Neural Networks}, 106:249--259, 2018.
+
+\bibitem{dietterich1998approx}
+Thomas~G Dietterich.
+\newblock Approximate statistical tests for comparing supervised classification
+  learning algorithms.
+\newblock {\em Neural computation}, 10(7):1895--1923, 1998.
+
+\bibitem{japkowicz2002class}
+Nathalie Japkowicz and Shaju Stephen.
+\newblock The class imbalance problem: Significance and strategies.
+\newblock {\em Proceedings of the 2002 International Conference on Artificial
+  Intelligence}, 56:111--117, 2002.
+
+\bibitem{wirth2000crisp}
+R.~Wirth and J.~Hipp.
+\newblock Crisp-dm: Towards a standard process model for data mining.
+\newblock {\em Proceedings of the 4th International Conference on the Practical
+  Applications of Knowledge Discovery and Data Mining}, pages 29--39, 2000.
+
+\bibitem{sculley2015hidden}
+D.~Sculley, G.~Holt, D.~Golovin, E.~Davydov, T.~Phillips, D.~Ebner,
+  V.~Chaudhary, M.~Young, J.F. Crespo, and D.~Dennison.
+\newblock Hidden technical debt in machine learning systems.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2015.
+
+\bibitem{baylor2017tensorflow}
+M.~Abadi et~al.
+\newblock Tensorflow: Large-scale machine learning on heterogeneous systems.
+\newblock {\em Software available from tensorflow.org}, 2017.
+
+\bibitem{gama2014survey}
+J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia.
+\newblock A survey on concept drift adaptation.
+\newblock {\em ACM Computing Surveys (CSUR)}, 46(4):44, 2014.
+
+\bibitem{peters2017machine}
+M.~Peters, S.J. Pan, and P.S. Yu.
+\newblock Machine learning model management.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  29(10):2245--2257, 2017.
+
+\bibitem{tsymbal2004problem}
+A.~Tsymbal.
+\newblock The problem of concept drift: definitions and related work.
+\newblock {\em Computer Science Department, Trinity College Dublin}, 2004.
+
+\bibitem{amershi2019software}
+S.~Amershi, A.~Begel, C.~Bird, R.~DeLine, H.~Gall, E.~Kamar, B.~Nushi,
+  A.~Selvin, J.~Suh, and T.~Zimmermann.
+\newblock Software engineering for machine learning: A case study.
+\newblock In {\em Proceedings of the 41st International Conference on Software
+  Engineering: Software Engineering in Practice}, pages 291--300, 2019.
+
 \end{thebibliography}
