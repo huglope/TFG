@@ -27,14 +27,14 @@ Vicente~González Ruiz.
 AprendeIA.
 \newblock ¿qué es deep learning?, 2021.
 
-\bibitem{uniteai2020cnn}
-Daniel~Nielson Unite.AI.
-\newblock ¿qué son las redes neuronales convolucionales (cnn)?, 2020.
-
 \bibitem{msmk2023backpropagation}
 MSMK University.
 \newblock Red neuronal de retropropagación (backpropagation neural network),
   2023.
+
+\bibitem{uniteai2020cnn}
+Daniel~Nielson Unite.AI.
+\newblock ¿qué son las redes neuronales convolucionales (cnn)?, 2020.
 
 \bibitem{rundle2024ai}
 James Rundle.
@@ -228,6 +228,13 @@ Michael Nielsen.
   pytorch.
 \newblock Accedido: 2025-05-22.
 
+\bibitem{paszke2019pytorch}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et~al.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~32, pages 8024--8035, 2019.
+
 \bibitem{bottou2010large}
 Léon Bottou.
 \newblock Large-scale machine learning with stochastic gradient descent.
@@ -238,10 +245,62 @@ D.P. Kingma and J.B. Ba.
 \newblock Adam: A method for stochastic optimization.
 \newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
 
+\bibitem{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer, New York, 2nd edition, 2009.
+
+\bibitem{nair2010relu}
+Vinod Nair and Geoffrey~E Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 807--814, 2010.
+
+\bibitem{ioffe2015batch}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock In {\em Proceedings of the 32nd International Conference on Machine
+  Learning (ICML-15)}, pages 448--456. PMLR, 2015.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock In {\em Journal of Machine Learning Research}, volume~15, pages
+  1929--1958, 2014.
+
+\bibitem{chawla2002smote}
+Nitesh~V. Chawla, Kevin~W. Bowyer, Lawrence~O. Hall, and W.~Philip Kegelmeyer.
+\newblock Smote: Synthetic minority over-sampling technique.
+\newblock {\em Journal of Artificial Intelligence Research}, 16:321--357, 2002.
+
 \bibitem{chollet2018deep}
 François Chollet.
 \newblock {\em Deep learning with Python}.
 \newblock Manning Publications Co., 2018.
+
+\bibitem{paszke2017automatic}
+Adam Paszke, Adam Lerer, Sam Gross, and Soumith Chintala.
+\newblock Automatic differentiation in pytorch.
+\newblock In {\em NIPS-W}, 2017.
+
+\bibitem{gross2021pytorchbook}
+Eli~Steven Gross, Brandon Lengerich, and Luca Dey.
+\newblock {\em Deep Learning with PyTorch}.
+\newblock Manning Publications, 2021.
+
+\bibitem{han2011data}
+Jiawei Han, Micheline Kamber, and Jian Pei.
+\newblock {\em Data Mining: Concepts and Techniques}.
+\newblock Morgan Kaufmann, San Francisco, 3rd edition, 2011.
+
+\bibitem{fawcett2006introduction}
+Tom Fawcett.
+\newblock An introduction to roc analysis.
+\newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
+  2006.
 
 \bibitem{chollet2017deep}
 François Chollet.
@@ -293,22 +352,13 @@ Pedro Domingos.
 \newblock A few useful things to know about machine learning.
 \newblock {\em Communications of the ACM}, 55(10):78--87, 2012.
 
-\bibitem{han2011data}
-Jiawei Han, Micheline Kamber, and Jian Pei.
-\newblock {\em Data Mining: Concepts and Techniques}.
-\newblock Morgan Kaufmann, San Francisco, 3rd edition, 2011.
+\bibitem{wandb_tracking}
+Machine learning experiment tracking with weights \& biases.
+\newblock Weights \& Biases website, 2025.
 
-\bibitem{hastie2009elements}
-Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
-\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
-  and Prediction}.
-\newblock Springer, New York, 2nd edition, 2009.
-
-\bibitem{fawcett2006introduction}
-Tom Fawcett.
-\newblock An introduction to roc analysis.
-\newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
-  2006.
+\bibitem{blackboard_architecture}
+Blackboard architecture.
+\newblock GeeksforGeeks, 2023.
 
 \bibitem{bergstra2012random}
 James Bergstra and Yoshua Bengio.
@@ -369,18 +419,6 @@ R.~Wirth and J.~Hipp.
 \newblock {\em Proceedings of the 4th International Conference on the Practical
   Applications of Knowledge Discovery and Data Mining}, pages 29--39, 2000.
 
-\bibitem{sculley2015hidden}
-D.~Sculley, G.~Holt, D.~Golovin, E.~Davydov, T.~Phillips, D.~Ebner,
-  V.~Chaudhary, M.~Young, J.F. Crespo, and D.~Dennison.
-\newblock Hidden technical debt in machine learning systems.
-\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
-  2015.
-
-\bibitem{baylor2017tensorflow}
-M.~Abadi et~al.
-\newblock Tensorflow: Large-scale machine learning on heterogeneous systems.
-\newblock {\em Software available from tensorflow.org}, 2017.
-
 \bibitem{gama2014survey}
 J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia.
 \newblock A survey on concept drift adaptation.
@@ -391,6 +429,16 @@ M.~Peters, S.J. Pan, and P.S. Yu.
 \newblock Machine learning model management.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
   29(10):2245--2257, 2017.
+
+\bibitem{neptune_ml_pipeline}
+Neptune.ai Team.
+\newblock Ml pipeline architecture design patterns (with examples).
+\newblock {\em Neptune.ai Blog}, 2023.
+
+\bibitem{gof_observer_pattern}
+Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
+\newblock Design patterns: Elements of reusable object‑oriented software.
+\newblock 1994.
 
 \bibitem{tsymbal2004problem}
 A.~Tsymbal.

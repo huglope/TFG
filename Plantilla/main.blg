@@ -7,46 +7,48 @@ Warning--entry type for "nist2021ai" isn't style-file defined
 --line 78 of file bibliografia.bib
 Warning--entry type for "ISO29148" isn't style-file defined
 --line 591 of file bibliografia.bib
+Warning--I didn't find a database entry for "baylor2017tensorflow"
 Warning--can't use both volume and number fields in fawcett2006introduction
-You've used 74 entries,
+Warning--empty journal in gof_observer_pattern
+You've used 83 entries,
             1791 wiz_defined-function locations,
-            814 strings with 14189 characters,
-and the built_in function-call counts, 14516 in all, are:
-= -- 1242
-> -- 624
-< -- 9
-+ -- 245
-- -- 171
-* -- 763
-:= -- 2255
-add.period$ -- 210
-call.type$ -- 74
-change.case$ -- 62
+            857 strings with 15630 characters,
+and the built_in function-call counts, 16938 in all, are:
+= -- 1468
+> -- 711
+< -- 15
++ -- 278
+- -- 195
+* -- 895
+:= -- 2577
+add.period$ -- 236
+call.type$ -- 83
+change.case$ -- 70
 chr.to.int$ -- 0
-cite$ -- 75
-duplicate$ -- 678
-empty$ -- 1550
-format.name$ -- 171
-if$ -- 3300
+cite$ -- 85
+duplicate$ -- 803
+empty$ -- 1800
+format.name$ -- 195
+if$ -- 3884
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 68
-newline$ -- 360
-num.names$ -- 74
-pop$ -- 332
+int.to.str$ -- 83
+missing$ -- 76
+newline$ -- 403
+num.names$ -- 81
+pop$ -- 381
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 346
+skip$ -- 433
 stack$ -- 0
-substring$ -- 709
-swap$ -- 157
-text.length$ -- 9
+substring$ -- 878
+swap$ -- 211
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 131
-width$ -- 76
-write$ -- 749
-(There were 3 warnings)
+warning$ -- 2
+while$ -- 152
+width$ -- 85
+write$ -- 842
+(There were 5 warnings)
