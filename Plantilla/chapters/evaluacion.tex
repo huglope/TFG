@@ -34,31 +34,52 @@ En la Figura \ref{fig:EVALMCB25}, se muestran los resultados obtenidos durante l
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB25.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCB25.pdf}
     \caption{Resultados de la evaluación del modelo de  clasificación binaria con \textit{n/2} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB25}
 \end{figure}
 
 Los valores de la métrica \textit{Recall} obtenidos en las evaluaciones del modelo MCB25, son muy altos para todas las configuraciones y la diferencia entre sus valores es del orden de $1e-4$. Estas diferencias pueden deberse a circunstancias no controlables como el estado en el que se encontraba la máquina cuando se realizó la evaluación de los modelos o los pesos aleatorios iniciales que se eligieron en esa ejecución de los \textit{test}.
 
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB25 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCB25}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCB25.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB25 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCB25}
+\end{figure}
+
+
 \subsubsection{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}
 En la Figura \ref{fig:EVALMCB49} se presentan los resultados obtenidos durante las evaluaciones de las cinco configuraciones de hiperparámetros con mejor desempeño, seleccionadas en la fase de búsqueda para la arquitectura del modelo de clasificación binaria que cuenta con una capa oculta de 49 neuronas.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB49.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCB49.pdf}
     \caption{Resultados de la evaluación del modelo de clasificación binaria con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB49}
 \end{figure}
 
 Los valores de la métrica \textit{Recall} obtenidos durante las evaluaciones del modelo MCB49 son consistentemente altos para todas las configuraciones, y las diferencias entre ellos se encuentran en el orden de magnitud de $1e-4$. Estas variaciones podrían atribuirse a factores no controlables, como el estado del sistema al momento de la evaluación o la aleatoriedad en la inicialización de los pesos durante la ejecución de las pruebas.
 
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB49 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCB49}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCB49.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB49 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCB49}
+\end{figure}
+
+
+
 \subsubsection{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}
 La Figura \ref{fig:EVALMCB98} muestra los resultados obtenidos en las evaluaciones correspondientes a las cinco configuraciones de hiperparámetros que presentaron el mejor desempeño durante la fase de búsqueda, aplicadas a la arquitectura del modelo de clasificación binaria con una capa oculta de 98 neuronas.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCB98.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCB98.pdf}
     \caption{Resultados de la evaluación del modelo de clasificación binaria con \textit{2n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCB98}
 \end{figure}
@@ -66,6 +87,14 @@ La Figura \ref{fig:EVALMCB98} muestra los resultados obtenidos en las evaluacion
 En las evaluaciones del modelo MCB98, los valores obtenidos para la métrica Recall fueron elevados en todas las configuraciones, con diferencias del orden de $1e-4$. Estas pequeñas variaciones pueden explicarse por factores no controlables, como el estado del sistema en el momento de la evaluación o la inicialización aleatoria de los pesos durante la ejecución de las pruebas.
 
 
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB98 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCB98}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCB98.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB98 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCB98}
+\end{figure}
 
 
 
@@ -79,7 +108,7 @@ En la Figura \ref{fig:EVALMCM25} se presentan los resultados obtenidos durante l
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM25.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCM25.pdf}
     \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{n/2} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCM25}
 \end{figure}
@@ -87,29 +116,100 @@ En la Figura \ref{fig:EVALMCM25} se presentan los resultados obtenidos durante l
 La figura anterior evidencia una diferencia en los valores de la métrica de comparación considerablemente mayor que la observada para las mismas configuraciones durante la fase de búsqueda de hiperparámetros. En los cinco mejores experimentos representados en la figura, las diferencias en la métrica \textit{F1-weighted} durante la fase de búsqueda se encuentran en el orden de $1e-2$, mientras que en la fase de evaluación alcanzan un orden de $1e-1$, lo que indica una degradación clara en el desempeño de esta arquitectura. 
 
 
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM25 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCM25}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCM25.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM25 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCM25}
+\end{figure}
+
+Dado que los datos empleados para entrenar el modelo de clasificación multiclase presentan un elevado desbalance entre clases, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la mostrada en la Figura \ref{fig:MC_EVAL_MCM25}. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, tal y como se puede apreciar en la Figura \ref{fig:MCNorm_EVAL_MCM25}.
+
+La normalización en WandB convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM25.pdf}
+    \caption{Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM25 durante la fase de evaluación.}
+    \label{fig:MCNorm_EVAL_MCM25}
+\end{figure}
+
+
+
 \subsubsection{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}
 La Figura \ref{fig:EVALMCM49} presenta los resultados de las evaluaciones realizadas sobre las cinco configuraciones de hiperparámetros con mejor desempeño, seleccionadas durante la fase de búsqueda aplicada a la arquitectura del modelo de clasificación multiclase con una capa oculta compuesta por 49 neuronas.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM49.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCM49.pdf}
     \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCM49}
 \end{figure}
 
 Al analizar los resultados obtenidos para esta arquitectura, destaca más allá del bajo rendimiento reflejado por la métrica \textit{F1-weighted}, el hecho de que el orden de las configuraciones se ha invertido respecto a lo observado en la fase de búsqueda. Las posibles causas de este comportamiento se detallan en la sección \ref{sec:analEVAL}.
 
+
+
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM49 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCM49}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCM49.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM49 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCM49}
+\end{figure}
+
+Dado que los datos empleados para entrenar el modelo de clasificación multiclase presentan un elevado desbalance entre clases, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la mostrada en la Figura \ref{fig:MC_EVAL_MCM49}. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, tal y como se puede apreciar en la Figura \ref{fig:MCNorm_EVAL_MCM49}.
+
+La normalización en \texttt{wandb} convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM49.pdf}
+    \caption{Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM49 durante la fase de evaluación.}
+    \label{fig:MCNorm_EVAL_MCM49}
+\end{figure}
+
+
+
+
 \subsubsection{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}
 En la Figura \ref{fig:EVALMCM98} se ilustran los resultados obtenidos durante las evaluaciones correspondientes a las cinco configuraciones de hiperparámetros con mayor rendimiento, seleccionadas en la etapa de búsqueda de configuraciones para la arquitectura del modelo de clasificación multiclase con una capa oculta de 98 neuronas..
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/EVALMCM98.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/EVALMCM98.pdf}
     \caption{Resultados de la evaluación del modelo de clasificación multiclase con \textit{2n} neuronas en la capa oculta siendo \textit{n} el número de atributos de entrada.}
     \label{fig:EVALMCM98}
 \end{figure}
 
 Los resultados obtenidos durante la fase de evaluación de esta arquitectura fueron significativamente inferiores a los alcanzados en la fase de búsqueda. Por ejemplo, en la quinta mejor configuración de hiperparámetros, la diferencia entre los resultados experimentales y los obtenidos en la evaluación es del orden de $1e-1$. Esta diferencia implica una reducción del 10\% en la precisión, o bien, un mayor número de errores en las clases con menor cantidad de muestras en comparación con la fase anterior.
+
+
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM98 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCM98}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/evaluacion/matrices_confusion/MC_EVAL_MCM98.png}
+    \caption{Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}
+    \label{fig:MC_EVAL_MCM98}
+\end{figure}
+
+Dado que los datos empleados para entrenar el modelo de clasificación multiclase presentan un elevado desbalance entre clases, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la mostrada en la Figura \ref{fig:MC_EVAL_MCM98}. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, tal y como se puede apreciar en la Figura \ref{fig:MCNorm_EVAL_MCM98}.
+
+La normalización en \texttt{wandb} convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf}
+    \caption{Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}
+    \label{fig:MCNorm_EVAL_MCM98}
+\end{figure}
+
+
+
 
 \section{Análisis de los resultados obtenidos} \label{sec:analEVAL}
 \subsection{Modelo de clasificación binaria}
@@ -128,7 +228,7 @@ Los resultados reflejan un comportamiento coherente con lo esperado para modelos
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/top5EVALMCB.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/top5EVALMCB.pdf}
     \caption{Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}
     \label{fig:top5EVALMCB}
 \end{figure}
@@ -151,7 +251,7 @@ El modelo de clasificación multiclase presenta un rendimiento aceptable dadas l
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{./img/evaluacion/top5EVALMCM.pdf}
+    \includegraphics[width=0.9\textwidth]{./img/evaluacion/resultados/top5EVALMCM.pdf}
     \caption{Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}
     \label{fig:top5EVALMCM}
 \end{figure}

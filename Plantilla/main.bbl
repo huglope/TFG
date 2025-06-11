@@ -352,6 +352,52 @@ Pedro Domingos.
 \newblock A few useful things to know about machine learning.
 \newblock {\em Communications of the ACM}, 55(10):78--87, 2012.
 
+\bibitem{han2015learning}
+Song Han, Jeff Pool, John Tran, and William~J Dally.
+\newblock Learning both weights and connections for efficient neural network.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~28, pages 1135--1143. Curran Associates, Inc., 2015.
+
+\bibitem{he2009learning}
+Haibo He and Edwardo~A Garcia.
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284, 2009.
+
+\bibitem{chawla2004editorial}
+Nitesh~V Chawla, Nathalie Japkowicz, and Aleksander Kotcz.
+\newblock Editorial: Special issue on learning from imbalanced data sets.
+\newblock In {\em ACM SIGKDD Explorations Newsletter}, volume~6, pages 1--6.
+  ACM, 2004.
+
+\bibitem{heaton2017deep}
+Jeff Heaton, Nicholas~G Polson, and Jan Witte.
+\newblock An empirical analysis of deep learning for credit card fraud
+  detection.
+\newblock {\em arXiv preprint arXiv:1703.05703}, 2017.
+\newblock Discute la influencia de la arquitectura, incluyendo la relación
+  entre entrada y tamaño de capas ocultas, en tareas con clases
+  desbalanceadas.
+
+\bibitem{bengio2013representation}
+Bengio.
+\newblock Representation learning: A review and new perspectives.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  35:1798--1828, 2013.
+
+\bibitem{liu2020deep}
+Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
+\newblock Deep learning for anomaly detection in cybersecurity: A survey.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  33(4):1542--1559, 2020.
+
+\bibitem{han2015deep}
+Song Han, Huizi Mao, and William~J Dally.
+\newblock Deep compression: Compressing deep neural networks with pruning,
+  trained quantization and huffman coding.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2016.
+
 \bibitem{wandb_tracking}
 Machine learning experiment tracking with weights \& biases.
 \newblock Weights \& Biases website, 2025.
@@ -382,12 +428,6 @@ Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, and Vaishaal Shankar.
 \newblock Do imagenet classifiers generalize to imagenet?
 \newblock In {\em International Conference on Machine Learning}, pages
   5389--5400. PMLR, 2019.
-
-\bibitem{he2009learning}
-Haibo He and Edwardo~A Garcia.
-\newblock Learning from imbalanced data.
-\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
-  21(9):1263--1284, 2009.
 
 \bibitem{johnson2019survey}
 Justin~M Johnson and Taghi~M Khoshgoftaar.

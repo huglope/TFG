@@ -25,6 +25,7 @@
 \contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusión para clasificación binaria.}}{59}{table.caption.55}%
 \contentsline {table}{\numberline {6.2}{\ignorespaces Matriz de confusión para clasificación con 9 clases.}}{62}{table.caption.57}%
 \contentsline {table}{\numberline {6.3}{\ignorespaces Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación binaria.}}{80}{table.caption.82}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación multiclase.}}{84}{table.caption.86}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

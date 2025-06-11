@@ -10,45 +10,45 @@ Warning--entry type for "ISO29148" isn't style-file defined
 Warning--I didn't find a database entry for "baylor2017tensorflow"
 Warning--can't use both volume and number fields in fawcett2006introduction
 Warning--empty journal in gof_observer_pattern
-You've used 83 entries,
+You've used 89 entries,
             1791 wiz_defined-function locations,
-            857 strings with 15630 characters,
-and the built_in function-call counts, 16938 in all, are:
-= -- 1468
-> -- 711
-< -- 15
-+ -- 278
-- -- 195
-* -- 895
-:= -- 2577
-add.period$ -- 236
-call.type$ -- 83
-change.case$ -- 70
+            891 strings with 16871 characters,
+and the built_in function-call counts, 18540 in all, are:
+= -- 1624
+> -- 773
+< -- 19
++ -- 301
+- -- 212
+* -- 999
+:= -- 2817
+add.period$ -- 257
+call.type$ -- 89
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 85
-duplicate$ -- 803
-empty$ -- 1800
-format.name$ -- 195
-if$ -- 3884
+cite$ -- 91
+duplicate$ -- 877
+empty$ -- 1952
+format.name$ -- 212
+if$ -- 4253
 int.to.chr$ -- 0
-int.to.str$ -- 83
-missing$ -- 76
-newline$ -- 403
-num.names$ -- 81
-pop$ -- 381
+int.to.str$ -- 89
+missing$ -- 82
+newline$ -- 434
+num.names$ -- 87
+pop$ -- 396
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 433
+skip$ -- 474
 stack$ -- 0
-substring$ -- 878
-swap$ -- 211
-text.length$ -- 15
+substring$ -- 996
+swap$ -- 237
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 152
-width$ -- 85
-write$ -- 842
+while$ -- 168
+width$ -- 91
+write$ -- 912
 (There were 5 warnings)

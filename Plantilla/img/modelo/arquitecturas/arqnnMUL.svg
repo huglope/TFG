@@ -1,0 +1,187 @@
+<svg width="700" height="900"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Rectángulos -->
+    <rect x="50" y="275" width="150" height="350" fill="lightblue" stroke="blue" stroke-width="2" rx="10"/>
+    <rect x="250" y="100" width="150" height="700" fill="lightgreen" stroke="green" stroke-width="2" rx="10"/>
+
+    <!-- Etiquetas -->
+    <text x="125" y="265" font-size="16" text-anchor="middle" fill="black">Entradas (n)</text>
+    <text x="325" y="90" font-size="16" text-anchor="middle" fill="black">Capa oculta (2n)</text>
+    <text x="525" y="230" font-size="16" text-anchor="middle" fill="black">Salidas</text>
+    <!-- Conexiones entradas → capa oculta -->
+    <!-- Líneas desde cada círculo azul hacia todos los círculos verdes -->
+    <line x1="125" y1="336.665" x2="325" y2="191.65" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="243.32" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="294.99" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="346.66" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="398.33" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="450" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="501.67" stroke="black"/>
+    <line x1="125" y1="336.665" x2="325" y2="625.67" stroke="black"/>
+
+    <line x1="125" y1="388.335" x2="325" y2="191.65" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="243.32" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="294.99" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="346.66" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="398.33" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="450" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="501.67" stroke="black"/>
+    <line x1="125" y1="388.335" x2="325" y2="625.67" stroke="black"/>
+
+    <line x1="125" y1="440.005" x2="325" y2="191.65" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="243.32" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="294.99" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="346.66" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="398.33" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="450" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="501.67" stroke="black"/>
+    <line x1="125" y1="440.005" x2="325" y2="625.67" stroke="black"/>
+
+    <line x1="125" y1="563.335" x2="325" y2="191.65" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="243.32" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="294.99" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="346.66" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="398.33" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="450" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="501.67" stroke="black"/>
+    <line x1="125" y1="563.335" x2="325" y2="625.67" stroke="black"/>
+
+    <!-- Conexiones capa oculta → salida -->
+    <!-- Desde el círculo verde 1 (cy=191.65) -->
+    <line x1="325" y1="191.65" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="191.65" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 2 (cy=243.32) -->
+    <line x1="325" y1="243.32" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="243.32" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 3 (cy=294.99) -->
+    <line x1="325" y1="294.99" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="294.99" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 4 (cy=346.66) -->
+    <line x1="325" y1="346.66" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="346.66" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 5 (cy=398.33) -->
+    <line x1="325" y1="398.33" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="398.33" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 6 (cy=450) -->
+    <line x1="325" y1="450" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="450" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 7 (cy=501.67) -->
+    <line x1="325" y1="501.67" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="501.67" x2="525" y2="656.68" stroke="black"/>
+
+    <!-- Desde el círculo verde 8 (cy=625.67) -->
+    <line x1="325" y1="625.67" x2="525" y2="245.32" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="296.99" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="348.66" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="400.33" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="450" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="501.67" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="553.34" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="605.01" stroke="black"/>
+    <line x1="325" y1="625.67" x2="525" y2="656.68" stroke="black"/>
+
+
+    <!-- 🔵 Círculos de entrada -->
+    <g fill="blue">
+        <circle cx="125" cy="336.665" r="10"/>
+        <circle cx="125" cy="388.335" r="10"/>
+        <circle cx="125" cy="440.005" r="10"/>
+
+        <!-- Puntos -->
+        <text x="125" y="491" font-size="18" text-anchor="middle" fill="black">.</text>
+        <text x="125" y="501" font-size="18" text-anchor="middle" fill="black">.</text>
+        <text x="125" y="511" font-size="18" text-anchor="middle" fill="black">.</text>
+
+        <circle cx="125" cy="563.335" r="10"/>
+    </g>
+
+    <!-- 🟢 Círculos de capa oculta -->
+    <g fill="green">
+        <circle cx="325" cy="191.65" r="10"/>
+        <circle cx="325" cy="243.32" r="10"/>
+        <circle cx="325" cy="294.99" r="10"/>
+        <circle cx="325" cy="346.66" r="10"/>
+        <circle cx="325" cy="398.33" r="10"/>
+        <circle cx="325" cy="450" r="10"/>
+        <circle cx="325" cy="501.67" r="10"/>
+
+        <!-- Puntos -->
+        <text x="325" y="553" font-size="18" text-anchor="middle" fill="black">.</text>
+        <text x="325" y="563" font-size="18" text-anchor="middle" fill="black">.</text>
+        <text x="325" y="573" font-size="18" text-anchor="middle" fill="black">.</text>
+
+        <circle cx="325" cy="625.67" r="10"/>
+    </g>
+
+    <!-- 🔴 Círculos de salida -->
+    <g fill="red">
+        <circle cx="525" cy="245.32" r="10"/>
+        <circle cx="525" cy="296.99" r="10"/>
+        <circle cx="525" cy="348.66" r="10"/>
+        <circle cx="525" cy="400.33" r="10"/>
+        <circle cx="525" cy="450" r="10"/>
+        <!-- El quinto círculo rojo -->
+        <circle cx="525" cy="501.67" r="10"/>
+        <circle cx="525" cy="553.34" r="10"/>
+        <circle cx="525" cy="605.01" r="10"/>
+        <circle cx="525" cy="656.68" r="10"/>
+    </g>
+
+
+</svg>
