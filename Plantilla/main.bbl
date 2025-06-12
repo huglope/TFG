@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{haya_crisp_dm}
 Pablo Haya.
@@ -302,6 +302,62 @@ Tom Fawcett.
 \newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
   2006.
 
+\bibitem{Sokolova2006}
+M.~Sokolova and G.~Lapalme.
+\newblock A systematic analysis of performance measures for classification
+  tasks.
+\newblock {\em Information Processing And Management}, 42(1):245--275, 2006.
+
+\bibitem{Japkowicz2002}
+N.~Japkowicz and S.~Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Intelligent Data Analysis}, 6(5):429--449, 2002.
+
+\bibitem{He2009}
+H.~He and E.~A. Garcia.
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284, 2009.
+
+\bibitem{powers2011evaluation}
+David M.~W. Powers.
+\newblock Evaluation: from precision, recall and f-measure to roc,
+  informedness, markedness and correlation.
+\newblock {\em Journal of Machine Learning Technologies}, 2(1):37--63, 2011.
+
+\bibitem{Chawla2003}
+N.~V. Chawla and W.~P. Kegelmeyer.
+\newblock Random under-sampling approaches for imbalanced datasets.
+\newblock {\em International Journal of Artificial Intelligence}, 8(6):63--72,
+  2003.
+
+\bibitem{Girosi2004}
+F.~Girosi, M.~Jones, and T.~Poggio.
+\newblock Support vector machines and their application to image
+  classification.
+\newblock {\em IEEE Transactions on Neural Networks}, 15(1):58--68, 2004.
+
+\bibitem{Japkowicz2000}
+N.~Japkowicz and S.~Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Proceedings of the 16th International Conference on Machine
+  Learning (ICML)}, pages 253--260, 2000.
+
+\bibitem{Liu2011}
+X.~Liu, L.~Wang, and J.~Yang.
+\newblock Class imbalance problem in multi-class classification: A review.
+\newblock {\em Pattern Recognition}, 44(7):1575--1587, 2011.
+
+\bibitem{Hsu2002}
+C.~W. Hsu and C.~J. Lin.
+\newblock A comparison of methods for multi-class support vector machines.
+\newblock {\em IEEE Transactions on Neural Networks}, 13(2):415--425, 2002.
+
+\bibitem{Rifkin2004}
+R.~Rifkin and A.~Klautau.
+\newblock In defense of one-vs-all classification.
+\newblock {\em Journal of Machine Learning Research}, 5:101--141, 2004.
+
 \bibitem{chollet2017deep}
 François Chollet.
 \newblock Deep learning with python.
@@ -458,6 +514,13 @@ R.~Wirth and J.~Hipp.
 \newblock Crisp-dm: Towards a standard process model for data mining.
 \newblock {\em Proceedings of the 4th International Conference on the Practical
   Applications of Knowledge Discovery and Data Mining}, pages 29--39, 2000.
+
+\bibitem{baylor2017tensorflow}
+T.~Baylor et~al.
+\newblock Tensorflow: A system for large-scale machine learning.
+\newblock In {\em Proceedings of the 12th USENIX Conference on Operating
+  Systems Design and Implementation (OSDI)}, pages 265--283. USENIX
+  Association, 2017.
 
 \bibitem{gama2014survey}
 J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia.

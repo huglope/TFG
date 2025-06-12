@@ -356,13 +356,13 @@ En el desarrollo de modelos neuronales para clasificación multiclase, es fundam
 \text{Accuracy} = \frac{1}{N} \sum_{i=1}^{N} \mathbf{1}_{\{y_i = \hat{y}_i\}}
 \end{equation}
 
-La exactitud cuantifica la proporción de predicciones correctas sobre el total de instancias evaluadas. En contextos de clasificación multiclase, proporciona una medida global del rendimiento del modelo. Sin embargo, su uso puede resultar limitado en escenarios donde las clases están desbalanceadas, ya que tiende a favorecer aquellas clases con mayor representación. En estos casos, una alta exactitud puede enmascarar un bajo rendimiento en clases minoritarias, lo que podría comprometer la robustez del modelo. Se considera una métrica de referencia general, pero insuficiente para evaluar en profundidad el comportamiento del modelo en todos los grupos de clase.
+La exactitud cuantifica la proporción de predicciones correctas sobre el total de instancias evaluadas. En contextos de clasificación multiclase, proporciona una medida global del rendimiento del modelo. Sin embargo, su uso puede resultar limitado en escenarios donde las clases están desbalanceadas, ya que tiende a favorecer aquellas clases con mayor representación. En estos casos, una alta exactitud puede enmascarar un bajo rendimiento en clases minoritarias, lo que podría comprometer la robustez del modelo. Se considera una métrica de referencia general, pero insuficiente para evaluar en profundidad el comportamiento del modelo en todos los grupos de clase \cite{Sokolova2006}.
 
 \end{itemize}
 
 \subsubsection*{Métricas Macro-promediadas}
 
-Las métricas macro-promediadas se calculan evaluando individualmente el rendimiento del modelo para cada clase y luego promediando estos resultados. Esta metodología asigna igual peso a todas las clases, independientemente de su frecuencia, lo que permite detectar deficiencias de desempeño en clases poco representadas. Son particularmente útiles en problemas de clasificación multiclase con desequilibrios significativos.
+Las métricas macro-promediadas se calculan evaluando individualmente el rendimiento del modelo para cada clase y luego promediando estos resultados. Esta metodología asigna igual peso a todas las clases, independientemente de su frecuencia, lo que permite detectar deficiencias de desempeño en clases poco representadas. Son particularmente útiles en problemas de clasificación multiclase con desequilibrios significativos \cite{Japkowicz2002}.
 
 \begin{itemize}
 
@@ -372,15 +372,15 @@ Las métricas macro-promediadas se calculan evaluando individualmente el rendimi
 \text{Precision}_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} \text{Precision}_c
 \end{equation}
 
-La precisión macro evalúa la proporción de verdaderos positivos entre todas las predicciones positivas, calculada individualmente para cada clase y promediada de forma equitativa. Esta métrica permite identificar si el modelo tiende a emitir predicciones incorrectas en ciertas clases, lo cual puede ser crítico en aplicaciones donde los falsos positivos resultan costosos. En entornos multiclase, su utilidad radica en evaluar la calidad de las predicciones para todas las clases de forma uniforme.
+La precisión macro evalúa la proporción de verdaderos positivos entre todas las predicciones positivas, calculada individualmente para cada clase y promediada de forma equitativa. Esta métrica permite identificar si el modelo tiende a emitir predicciones incorrectas en ciertas clases, lo cual puede ser crítico en aplicaciones donde los falsos positivos resultan costosos. En entornos multiclase, su utilidad radica en evaluar la calidad de las predicciones para todas las clases de forma uniforme \cite{He2009}.
 
-\item \textbf{Sensibilidad Macro (\textit{•}{Macro Recall})}:
+\item \textbf{Sensibilidad Macro (\textit{Macro Recall})}:
 
 \begin{equation}
 \text{Recall}_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} \text{Recall}_c
 \end{equation}
 
-La sensibilidad macro (o exhaustividad) mide la proporción de verdaderos positivos sobre el total de instancias reales de cada clase. Al promediarla sin ponderar por la frecuencia de clase, esta métrica refleja la capacidad del modelo de detectar correctamente todas las clases, incluidas aquellas menos frecuentes. Resulta esencial en situaciones donde los falsos negativos tienen consecuencias graves o donde se busca una cobertura completa del espacio de clases.
+La sensibilidad macro (o exhaustividad) mide la proporción de verdaderos positivos sobre el total de instancias reales de cada clase. Al promediarla sin ponderar por la frecuencia de clase, esta métrica refleja la capacidad del modelo de detectar correctamente todas las clases, incluidas aquellas menos frecuentes. Resulta esencial en situaciones donde los falsos negativos tienen consecuencias graves o donde se busca una cobertura completa del espacio de clases \cite{powers2011evaluation}.
 
 \item \textbf{F1 Macro (\textit{Macro F1 Score})}:
 
@@ -388,13 +388,13 @@ La sensibilidad macro (o exhaustividad) mide la proporción de verdaderos positi
 F1_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} F1_c
 \end{equation}
 
-El F1 macro se obtiene calculando el F1 score individual por clase (media armónica entre precisión y sensibilidad), y promediándolo uniformemente. Esta métrica proporciona una visión equilibrada del desempeño del modelo en todas las clases, y es especialmente útil cuando se busca un rendimiento homogéneo en un entorno multiclase, independientemente de la distribución de las muestras.
+El F1 macro se obtiene calculando el F1 score individual por clase (media armónica entre precisión y sensibilidad), y promediándolo uniformemente. Esta métrica proporciona una visión equilibrada del desempeño del modelo en todas las clases, y es especialmente útil cuando se busca un rendimiento homogéneo en un entorno multiclase, independientemente de la distribución de las muestras \cite{Sokolova2006}.
 
 \end{itemize}
 
 \subsubsection*{Métricas Ponderadas (\textit{Weighted})}
 
-Las métricas ponderadas (\textit{weighted}) también se calculan por clase, pero se ajustan según la frecuencia de aparición de cada clase en el conjunto de datos. Este enfoque permite obtener una representación más realista del rendimiento global del modelo, otorgando mayor peso a las clases con mayor número de instancias. Son adecuadas para obtener una evaluación que respete la distribución natural del conjunto de datos, sin perder información relevante de las clases menos representadas.
+Las métricas ponderadas (\textit{weighted}) también se calculan por clase, pero se ajustan según la frecuencia de aparición de cada clase en el conjunto de datos. Este enfoque permite obtener una representación más realista del rendimiento global del modelo, otorgando mayor peso a las clases con mayor número de instancias. Son adecuadas para obtener una evaluación que respete la distribución natural del conjunto de datos, sin perder información relevante de las clases menos representadas \cite{Chawla2003}.
 
 \begin{itemize}
 
@@ -404,7 +404,7 @@ Las métricas ponderadas (\textit{weighted}) también se calculan por clase, per
 \text{Precision}_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot \text{Precision}_c
 \end{equation}
 
-La precisión ponderada evalúa la calidad de las predicciones positivas, ajustada por la proporción de instancias de cada clase. Esta métrica resulta útil para capturar el rendimiento general del modelo en conjuntos de datos con distribución desigual, sin que las clases poco frecuentes dominen el resultado final.
+La precisión ponderada evalúa la calidad de las predicciones positivas, ajustada por la proporción de instancias de cada clase. Esta métrica resulta útil para capturar el rendimiento general del modelo en conjuntos de datos con distribución desigual, sin que las clases poco frecuentes dominen el resultado final \cite{Girosi2004}.
 
 \item \textbf{Sensibilidad Ponderada (\textit{Weighted Recall})}:
 
@@ -412,7 +412,7 @@ La precisión ponderada evalúa la calidad de las predicciones positivas, ajusta
 \text{Recall}_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot \text{Recall}_c
 \end{equation}
 
-La sensibilidad ponderada proporciona una medida del porcentaje de instancias reales correctamente identificadas, teniendo en cuenta la frecuencia de cada clase. En modelos de clasificación multiclase, permite analizar cómo se comporta el modelo con respecto a la cobertura general de los datos, favoreciendo una evaluación proporcional al tamaño de las clases.
+La sensibilidad ponderada proporciona una medida del porcentaje de instancias reales correctamente identificadas, teniendo en cuenta la frecuencia de cada clase. En modelos de clasificación multiclase, permite analizar cómo se comporta el modelo con respecto a la cobertura general de los datos, favoreciendo una evaluación proporcional al tamaño de las clases \cite{Japkowicz2000}.
 
 \item \textbf{F1 Ponderado (\textit{Weighted F1 Score})}:
 
@@ -420,7 +420,7 @@ La sensibilidad ponderada proporciona una medida del porcentaje de instancias re
 F1_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot F1_c
 \end{equation}
 
-El F1 ponderado combina precisión y sensibilidad ajustadas por la proporción de cada clase. Es una de las métricas más importantes cuando se desea evaluar un rendimiento global equilibrado que refleje el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados sobre \textit{datasets} desbalanceados.
+El F1 ponderado combina precisión y sensibilidad ajustadas por la proporción de cada clase. Es una de las métricas más importantes cuando se desea evaluar un rendimiento global equilibrado que refleje el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados sobre \textit{datasets} desbalanceados \cite{Liu2011}.
 
 \end{itemize}
 
@@ -436,7 +436,7 @@ El área bajo la curva ROC (AUC) mide la capacidad del modelo para distinguir en
 \text{AUC}_{\text{ovo}} = \frac{1}{C(C-1)/2} \sum_{i<j} \text{AUC}_{i,j}
 \end{equation}
 
-El enfoque \textit{One-vs-One} calcula el AUC para cada par de clases, evaluando la capacidad del modelo para distinguir una clase frente a otra. El resultado final se obtiene promediando los valores obtenidos para todos los pares posibles. Esta estrategia proporciona una evaluación detallada de la separabilidad entre clases específicas. Es útil cuando se quiere analizar el comportamiento del modelo en decisiones binarias dentro del espacio multiclase.
+El enfoque \textit{One-vs-One} calcula el AUC para cada par de clases, evaluando la capacidad del modelo para distinguir una clase frente a otra. El resultado final se obtiene promediando los valores obtenidos para todos los pares posibles. Esta estrategia proporciona una evaluación detallada de la separabilidad entre clases específicas. Es útil cuando se quiere analizar el comportamiento del modelo en decisiones binarias dentro del espacio multiclase \cite{Hsu2002}.
 
 \item \textbf{AUC \textit{One-vs-Rest} (OVR)}:
 
@@ -444,7 +444,7 @@ El enfoque \textit{One-vs-One} calcula el AUC para cada par de clases, evaluando
 \text{AUC}_{\text{ovr}} = \frac{1}{C} \sum_{c=1}^{C} \text{AUC}_c
 \end{equation}
 
-El enfoque \textit{One-vs-Rest} evalúa, para cada clase, la capacidad del modelo de distinguir dicha clase frente a todas las demás combinadas. Esta métrica permite examinar el rendimiento del modelo desde la perspectiva de cada clase individual y es adecuada para diagnósticos detallados en entornos multiclase.
+El enfoque \textit{One-vs-Rest} evalúa, para cada clase, la capacidad del modelo de distinguir dicha clase frente a todas las demás combinadas. Esta métrica permite examinar el rendimiento del modelo desde la perspectiva de cada clase individual y es adecuada para diagnósticos detallados en entornos multiclase \cite{Rifkin2004}.
 
 \end{itemize}
 
@@ -763,7 +763,7 @@ Como algoritmo de optimización para el entrenamiento del modelo de clasificaci�
 
 Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación multiclase diseñado son: el \textit{batch size}, la tasa de aprendizaje (\textit{learning rate}) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación multiclase, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
 
-Como se comenta en la sección \ref{sec:paramhiper} \refname{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo multiclase con el objetivo de encontrar la mejor combinación de ellos.
+Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo multiclase con el objetivo de encontrar la mejor combinación de ellos.
 
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: Teniendo en cuenta el tamaño de los datos que se utilizan para la fase de entrenamiento del modelo de clasificación multiclase, se han considerado que los valores que se muestan en la Tabla \ref{tab:hiperMUL}, eran apropiados y suficientemente dispares como para notar diferencias significativas en los resultados de la ejecución de los experimentos.
@@ -814,9 +814,9 @@ Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas de
 
 Otras métricas relevantes que se muestran en las siguientes figuras son:
 \begin{itemize}
-	\item \textbf{F1 score}: Equilibra entre precisión y \textit{recall}. Ideal cuando se necesita rendimiento general en un contexto con mucho desbalanceo como el que se propone en este proyecto.
-	\item \textbf{Precisión}: Si es bajo implica que el modelo detectará muchos falsos positivos, lo que saturaria a los administradores de falsas alarmas y provocaría desconfianza en el modelo.
-	\item \textbf{ROC AUC}: Compara el rendimiento global del modelo, independientemente del umbral. Es especialmente útil para afinar la sensibilidad o \textit{recall}.
+	\item \textbf{F1 score}%: Equilibra entre precisión y \textit{recall}. Ideal cuando se necesita rendimiento general en un contexto con mucho desbalanceo como el que se propone en este proyecto.
+	\item \textbf{Precisión}%: Si es bajo implica que el modelo detectará muchos falsos positivos, lo que saturaria a los administradores de falsas alarmas y provocaría desconfianza en el modelo.
+	\item \textbf{ROC AUC}%: Compara el rendimiento global del modelo, independientemente del umbral. Es especialmente útil para afinar la sensibilidad o \textit{recall}.
 \end{itemize}
 
 En las siguientes figuras se hace referencia a los posibles combinaciones de la matriz de confusión en inglés, es decir:
@@ -831,7 +831,7 @@ En la Figura \ref{fig:BINhs25}, se encuentran representadas las cinco mejores co
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 15\,000
 	\item \textbf{\textit{Epochs}}: 10
-	\item \textbf{\textit{Learning rate}}: 0,01
+	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
 \begin{figure}[H]
@@ -857,7 +857,7 @@ La Figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores con
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 20\,000
 	\item \textbf{\textit{Epochs}}: 10
-	\item \textbf{\textit{Learning rate}}: 0,01
+	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
 \begin{figure}[H]
@@ -881,7 +881,7 @@ En la Figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores co
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 20\,000
 	\item \textbf{\textit{Epochs}}: 10
-	\item \textbf{\textit{Learning rate}}: 0,01
+	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
 \begin{figure}[H]
@@ -936,21 +936,21 @@ Para conocer el verdadero desempeño del modelo y determinar si ha sufrido sobre
 \section{Selección de modelos de clasificación multiclase}
 En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disMUL} \nameref{sec:disMUL}.
 
-Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec.metricas-mul} \nameref{sec.metricas-mul}. El objetivo de este modelo es clasificar intrusiones en redes, ya detectadas en diferentes tipos específicos de ataque enumerados en la sección \ref{sec.tipo-ataques} para facilitar una respuesta adecuada. Aunque una clasificación incorrecta puede afectar la eficiencia de la mitigación, las consecuencias no son tan catastróficas como en el caso de falso negativo del modelo de clasificación binaria. Sin embargo, la precisión en la identificación del tipo de ataque sigue siendo clave para optimizar los recursos y la estrategia de defensa.
-Teniendo esto en cuenta, la métrica más importante es Weifhted F1 socre, ya que como se comenta en el apartado anterior, refleja el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados con datasets desbalanceados.
+Para medir la eficiencia y eficacia del modelo, se han obtenido las métricas derivadas de la matriz de confusión comentadas en la sección \ref{sec:metricas-mul} \nameref{sec:metricas-mul}. El objetivo de este modelo es clasificar intrusiones en redes, ya detectadas en diferentes tipos específicos de ataque enumerados en la sección \ref{sec.tipo-ataques} para facilitar una respuesta adecuada. Aunque una clasificación incorrecta puede afectar la eficiencia de la mitigación, las consecuencias no son tan catastróficas como en el caso de falso negativo del modelo de clasificación binaria. Sin embargo, la precisión en la identificación del tipo de ataque sigue siendo clave para optimizar los recursos y la estrategia de defensa.
+Teniendo esto en cuenta, la métrica más importante es \textit{Weifhted F1 score}, ya que como se comenta en el apartado anterior, refleja el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados con datasets desbalanceados.
 
 Otras métricas relevantes que se muestran en las siguientes figuras son:
 \begin{itemize}
-	\item \textbf{ Macro F1 Score}: Indica un buen equilibrio entre precisión y \textit{recall} promedio por clase, sin importar su frecuencia, lo que refleja buen rendimiento en todas las clases, incluidas las minoritarias.
-	\item \textbf{ Macro Recall}: Un valor alto significa que el modelo detecta correctamente una alta proporción de instancias reales en cada clase, lo que es crucial para no ignorar clases poco representadas.
-	\item \textbf{Macro Precision}: mide qué proporción de predicciones por clase son correctas. Un valor alto implica que el modelo no clasifica erróneamente otras clases como una clase minoritaria.
+	\item \textbf{ Macro F1 Score}%: Indica un buen equilibrio entre precisión y \textit{recall} promedio por clase, sin importar su frecuencia, lo que refleja buen rendimiento en todas las clases, incluidas las minoritarias.
+	\item \textbf{ Macro Recall}%: Un valor alto significa que el modelo detecta correctamente una alta proporción de instancias reales en cada clase, lo que es crucial para no ignorar clases poco representadas.
+	\item \textbf{Macro Precision}%: mide qué proporción de predicciones por clase son correctas. Un valor alto implica que el modelo no clasifica erróneamente otras clases como una clase minoritaria.
 \end{itemize}
 
-En la Figura \ref{fig:MULhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 25 neuronas (n/2) en la capa oculta. Coinciden con lo esperado tras el análisis de la sección \ref{sec:VIMUL25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Figura \ref{fig:MULhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 25 (n/2) neuronas (MCM25) en la capa oculta. Coinciden con lo esperado tras el análisis de la sección \ref{sec:VIMUL25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 64
 	\item \textbf{\textit{Epochs}}: 100
-	\item \textbf{\textit{Learning rate}}: 0,001
+	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
 \begin{figure}[H]
@@ -971,11 +971,11 @@ Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM25}, 
 
 
 
-La figura \ref{fig:MULhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 49 neuronas (n) en la capa oculta. Los resultados medios obtenidos son algo peores de lo comentado en el análisis de la sección \ref{sec:VIMUL49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+La figura \ref{fig:MULhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 49 (n) neuronas (MCM49) en la capa oculta. Los resultados medios obtenidos son algo peores de lo comentado en el análisis de la sección \ref{sec:VIMUL49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 256
 	\item \textbf{\textit{Epochs}}: 50
-	\item \textbf{\textit{Learning rate}}: 0,001
+	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
 \begin{figure}[H]
@@ -996,11 +996,11 @@ Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM49}, 
 
 
 
-En la Figura \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 neuronas (2n) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Figura \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 (2n) neuronas (MCM98) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 256
 	\item \textbf{\textit{Epochs}}: 100
-	\item \textbf{\textit{Learning rate}}: 0,001
+	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
 \begin{figure}[H]
@@ -1042,16 +1042,16 @@ Los resultados de la Figura \ref{fig:MULtop10} reflejan la complejidad del probl
 La dificultad del problema que el modelo debe resolver reside en tres características del mismo:
 
 \begin{enumerate}
-	\item \textbf{Clases muy desbalanceadas}: Al igual que en el mundo real, los datos utilizados para entrenar el modelo representan varios tipos de intrusiones informáticas a sistemas. Estos tipos de ataques no tienen los mismos objetivos, tal y como se comenta en el capítulo \ref{cap.ent-problema} \nameref{cap.ent-problema}. Como la finalidad de cada tipo de ataque es diferente, el número de ataques de cada clase que se realizan depende de lo que los usuarios que los lanzan deseen conseguir. Esta característica del problema se ve reflejada en la proporción de muestras de cada clase que contiene el \textit{dataset} utilizado. Para comprender la dimensión del problema, de las muestras utilizadas para el entrenamiento del modelo, 31\,052 pertenecen a ataques de tipo Exploits, mientras que solo 109 de las muestras son de tipo \textit{Worms}. Esto implica que el número de muestras que son Exploits es 284 veces mayor que el número de muestras de ataques \textit{Worms}.
+	\item \textbf{Clases muy desbalanceadas}: Al igual que en el mundo real, los datos utilizados para entrenar el modelo representan varios tipos de intrusiones informáticas a sistemas. Estos tipos de ataques no tienen los mismos objetivos, tal y como se comenta en el capítulo \ref{cap.ent.problema} \nameref{cap.ent.problema}. Como la finalidad de cada tipo de ataque es diferente, el número de ataques de cada clase que se realizan depende de lo que los usuarios que los lanzan deseen conseguir. Esta característica del problema se ve reflejada en la proporción de muestras de cada clase que contiene el \textit{dataset} utilizado. Para comprender la dimensión del problema, de las muestras utilizadas para el entrenamiento del modelo, 31\,052 pertenecen a ataques de tipo Exploits, mientras que solo 109 de las muestras son de tipo \textit{Worms}. Esto implica que el número de muestras que son Exploits es 284 veces mayor que el número de muestras de ataques \textit{Worms}.
 	
 	\item \textbf{Complejidad para relacionar los datos}: Como se comenta en varias de las secciones anteriores de este capítulo, las relaciones entre los datos que se utilizan para el entrenamiento del modelo no son lineales. La complejidad de los datos implica un mayor número de ajustes por retropropagación en cada época de entrenamiento. Esta característica además de aumentar el coste computacional del entrenamiento y el uso del modelo, requiere de poder ajustar los pesos de la red con mayor precisión que en modelos con una complejidad menor, como es el caso del modelo de clasificación binaria propuesto en este proyecto.
 	
 	\item \textbf{Número de clases elevado}: Cuanto mayor es el número de clases entre las que debe diferenciar un modelo de clasificación multiclase, mayor número de muestras de cada clase son necesarias para entrenar el modelo y mayor número de situaciones de clasificación erróneas existe. 
 	
-	El modelo que se ha diseñado debe identificar 9 clases distintas de intrusiones pero debido a la complejidad de obtener datos representativos de cada intrusión, el número de muestras utilizado para entrenar al modelo es de aproximadamente 72\,000. De ese número de muestras, 60\,000 pertenecen solo a 3 tipos de clases.
+	El modelo que se ha diseñado debe identificar nueve clases distintas de intrusiones pero debido a la complejidad de obtener datos representativos de cada intrusión, el número de muestras utilizado para entrenar al modelo es de aproximadamente 72\,000. De ese número de muestras, 60\,000 pertenecen solo a tres tipos de clases.
 	
-	Si tomamos de punto de partida la matriz de confusión del modelo de clasificación binaria, existen 4 posibles respuestas del modelo, de las cuales 2 de ellas son correctas. Esto implica que, en el hipotético caso, de que el modelo simplemente diese respuestas aleatorias, este daría la respuesta correcta 2 de cada 4 veces, o lo que es lo mismo el 50 \% de las ocasiones. En el caso del modelo de clasificación multiclase, la matriz de confusión tiene 81 posibilidades diferente. De estas posibilidades, solo las que pertenecen a la diagonal principal son respuestas correctas, lo que equivale a 9 respuestas correctas. Aplicando la misma lógica que se ha aplicado para el modelo de clasificación binaria, si el modelo de clasificación multiclase solo diese respuestas de manera aleatoria, acertaría en 9 de cada 81 ocasiones, lo que se traduce en una tasa de acierto del 11,1 \%. Estas tasas de acierto corresponden con la métrica de precisión de cada modelo. Sin embargo, las métricas utilizadas para evaluar que combinación de hiperparámetros es mejor para cada modelo, se ven especialmente afectadas por los falsos negativos y por la clasificación errónea de clases minoritarias, correspondientemente.
+	Si se toma de punto de partida la matriz de confusión del modelo de clasificación binaria, existen 4 posibles respuestas del modelo, de las cuales dos de ellas son correctas. Esto implica que, en el hipotético caso, de que el modelo simplemente diese respuestas aleatorias, este daría la respuesta correcta dos de cada cuatro veces, o lo que es lo mismo el 50 \% de las ocasiones. En el caso del modelo de clasificación multiclase, la matriz de confusión tiene 81 posibilidades diferente. De estas posibilidades, solo las que pertenecen a la diagonal principal son respuestas correctas, lo que equivale a nueve respuestas correctas. Aplicando la misma lógica que se ha aplicado para el modelo de clasificación binaria, si el modelo de clasificación multiclase solo diese respuestas de manera aleatoria, acertaría en 9 de cada 81 ocasiones, lo que se traduce en una tasa de acierto del 11,1 \%. Estas tasas de acierto corresponden con la métrica de precisión de cada modelo. Sin embargo, las métricas utilizadas para evaluar que combinación de hiperparámetros es mejor para cada modelo, se ven especialmente afectadas por los falsos negativos y por la clasificación errónea de clases minoritarias, correspondientemente.
 \end{enumerate}
 
-Todas estas características comentadas provocan que la matriz de confusión del modelo de clasificación multiclase sea la que se muestra en la Figura \ref{fig:MC_ENT_MCM98}. La figura muestra que de las nueve clases que el modelo es capaz de identificar, solo 3 de ellas se clasifican con exactitud en la mayoría de las ocasiones. Destaca el número de predicciones erróneas de las clases más minoritarias que han sido clasificadas como clase 3 (\textit{Exploits}). Esto se debe al desbalanceo presente en los datos comentado a lo largo de este capítulo.
+Todas estas características comentadas provocan que la matriz de confusión con los datos de entrenamiento del modelo de clasificación multiclase sea la que se muestra en la Figura \ref{fig:MC_ENT_MCM98}. La figura muestra que de las nueve clases que el modelo es capaz de identificar, solo tres de ellas se clasifican con exactitud en la mayoría de las ocasiones. Destaca el número de predicciones erróneas de las clases más minoritarias que han sido clasificadas como clase tres (\textit{Exploits}). Esto se debe al desbalanceo presente en los datos comentado a lo largo de este capítulo.
 

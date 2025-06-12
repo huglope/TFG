@@ -4,13 +4,13 @@ Esta sección aborda la fase de despliegue de los modelos de clasificación bina
 
 Los modelos de clasificación binaria, orientados a distinguir conexiones malignas de benignas, y los modelos multiclase, diseñados para identificar diferentes categorías de conexiones malignas, deben ser implementados en plataformas que permitan la recepción continua de datos y procesamiento eficiente \cite{baylor2017tensorflow}. 
 
-Para ello, es recomendable desplegarlos mediante APIs o microservicios, asegurando compatibilidad con sistemas de monitorización y respuesta automatizada. En el caso del modelo multiclase, la alta desproporción entre las clases y la naturaleza específica de los datos requieren especial atención en la validación en entorno real, dado que durante la fase de evaluación correspondiente con el capítulo \ref{cap.evaluacion} se utiliza el conjunto completo de datos y puede observarse degradación en desempeño frente a la fase de búsqueda \cite{gama2014survey}.
+Para ello, es recomendable desplegarlos mediante APIs o microservicios, asegurando compatibilidad con sistemas de monitorización y respuesta automatizada. En el caso del modelo multiclase, la alta desproporción entre las clases y la naturaleza específica de los datos requieren especial atención en la validación en entorno real, dado que durante la fase de evaluación correspondiente con el capítulo \ref{cap.test} \nameref{cap.test} se utiliza el conjunto completo de datos y puede observarse degradación en desempeño frente a la fase de búsqueda \cite{gama2014survey}.
 
 \section{Consideraciones técnicas}
 
 El uso de validación cruzada estratificada durante la fase de búsqueda garantiza la estabilidad en la estimación de rendimiento, pero el despliegue debe contemplar la variabilidad inherente a datos nuevos y no vistos, especialmente en contextos dinámicos como la detección de conexiones malignas \cite{reimers2017optimal}. 
 
-El ajuste adecuado de hiperparámetros, demostrado durante el capítulo \ref{cap.modelos}, debe ser preservado en producción, considerando limitaciones de hardware, latencia y volumen de datos. El control de versiones de los modelos es crucial para realizar actualizaciones y retrocesos en sus configuraciones de pesos, sin afectar a los resultados que devuelva el modelo \cite{peters2017machine}.
+El ajuste adecuado de hiperparámetros, demostrado durante el capítulo \ref{cap.modelos} \nameref{cap.modelos}, debe ser preservado en producción, considerando limitaciones de hardware, latencia y volumen de datos. El control de versiones de los modelos es crucial para realizar actualizaciones y retrocesos en sus configuraciones de pesos, sin afectar a los resultados que devuelva el modelo \cite{peters2017machine}.
 
 \subsection{Patrones arquitectónicos recomendados: Pipeline y Observador}
 

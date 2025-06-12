@@ -87,13 +87,13 @@
 \contentsline {subsection}{\numberline {6.5.1}Proposito del modelo de clasificación multiclase}{82}{subsection.6.5.1}%
 \contentsline {subsection}{\numberline {6.5.2}Diseño del modelo e hiperparámetros seleccionados}{82}{subsection.6.5.2}%
 \contentsline {section}{\numberline {6.6}Selección de modelos de clasificación binaria}{85}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación binaria}{90}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación binaria}{89}{subsection.6.6.1}%
 \contentsline {section}{\numberline {6.7}Selección de modelos de clasificación multiclase}{91}{section.6.7}%
 \contentsline {subsection}{\numberline {6.7.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación multiclase}{96}{subsection.6.7.1}%
 \contentsline {chapter}{\numberline {7}Evaluación}{99}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Conjunto de datos de prueba}{99}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Proceso de evaluación}{100}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Resultados de las métricas en el proceso de evaluación}{100}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Resultados de las métricas en el proceso de evaluación}{101}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Resultados del modelo de clasificación binaria}{101}{subsection.7.3.1}%
 \contentsline {subsubsection}{MCB25: Modelo de clasifcación binaria con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{101}{section*.102}%
 \contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{102}{section*.105}%
@@ -113,4 +113,4 @@
 \contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{117}{section.8.4}%
 \contentsline {chapter}{\numberline {9}Conclusiones}{119}{chapter.9}%
 \contentsline {chapter}{Bibliografía}{121}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Apéndice 1}{127}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Apéndice 1}{129}{chapter.10}%
