@@ -177,7 +177,12 @@ Tutor:\\ \textbf{Diego García Álvarez}\\
 \addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 \begin{flushleft}
-Resumen
+
+En la actualidad, las intrusiones en sistemas informáticos son cada día más frecuentes y variadas. Esto provoca que los equipos de defensa en ciberseguridad de los sistemas tengan que estar muy pendientes de los flujos de información que atraviesan sus redes. Una intrusión en un sistema puede suponer desde el espionaje empresarial, hasta el secuestro de datos, por lo que es fundamental actuar rápidamente en cuanto se detecta una intrusión.
+
+Los objetivos de este Trabajo Fin de Grado (TFG) son desarrollar modelo neuronal capaz de detectar y clasificar intrusiones en un sistema informático, y descubrir y comprender el funcionamiento de las redes neuronales y su potencia de cálculo para resolver problemas complejos. Para cumplir estos objetivos se comenta la evolución histórica de las redes neuronales, el funcionamiento básico de los modelos neuronales, tipos de modelos neuronales más utilizados y se proponen distintas arquitecturas que se comparan entre ellas para encontrar una solución que se ajuste mejor al problema que se intenta resolver. El modelo se divide en dos niveles de clasificación, un modelo dedicado a la clasificación binaria de los flujos de datos (como benignos o malignos) y un modelo de clasificación multiclase capaz de distinguir entre nueve tipos diferentes de ataques.
+
+Para que los modelos de clasificación converjan hacia una solución generalizada y eficaz, se emplean diferentes técnicas y herramientas que se descubren a lo largo de las fases de la metodología CRISP-DM que se sigue durante el desarrollo del proyecto.
 
 \end{flushleft}
 
@@ -241,6 +246,10 @@ Abstract
 \chapter{Conclusiones}\label{cap.conclusiones}
 \input{chapters/conclusiones}
 
+
+\chapter*{Apéndice}\label{cap:apendice}
+\input{chapters/apendice}
+
 %Esto es una cita: \cite{ej}. Tiene que hacer referencia a la etiqueta de un bibitem.
 
 %Esto es un enlace \href{www.enlace.net}{Enlace}
@@ -262,8 +271,5 @@ Abstract
 \bibliographystyle{unsrt}
 \bibliography{bibliografia}
 
-
-\chapter{Apéndice 1}\label{cap:apendice}
-\input{chapters/apendice}
 
 \end{document}

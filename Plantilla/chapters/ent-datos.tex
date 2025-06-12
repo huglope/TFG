@@ -1,12 +1,21 @@
 Este capítulo se corresponde con la segunda etapa de la metodología CRISP-DM, En el se explicará la naturaleza de los datos y sus características, así como los valores atípicos que presentan y sus sesgos.
 
 \section{Origen de los datos}  \label{sec.origen-datos}
-Los datos que se han utilizado para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El conjunto de datos en cuenstión  forma parte de un análisis realizado en la Universidad de Queensland, Australia \cite{luay2025NetFlowDatasetsV3}.
+Para elegir un conjunto de datos que se adapte a las necesidades de los modelos de clasificación que se desarrollan en este trabajo, se realizó una búsqueda y comparación entre diferentes \textit{datasets} que contienen datos de conexiones benignas y malignas a sistemas informáticos. Algunos de los datasets descartados son:
 
+\begin{itemize}
+	\item \texttt{KDD 1999}: es un conjunto de datos creado para la detección de intrusiones en redes, derivado de \texttt{DARPA 1998}. Este \textit{dataset} contiene tráfico simulado con etiquetas de ataques y tráfico normal. Su uso fue descartado para este trabajo por estár desactualizado, tener datos redundantes y no reflejar las amenazas modernas ni el tráfico real de las redes actuales. \href{https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection/data?select=Test_data.csv}{Ver el conjunto de datos}.
+	\item \texttt{CIC-IDS-2017}: es un conjunto de datos generado por la \href{https://www.unb.ca/cic/datasets/ids-2017.html}{Universidad de Brunswick}. El \textit{dataset} se divide 8 ficheros CSV y presenta una escasa variedad de tipos de ataques, lo que no es representativo del tráfico real actual. Además, en ciberseguridad, los tipos de ataques y su funcionamiento varian cada muy poco tiempo, lo que implica que un conjunto de datos con 8 años ya se considera desactualizado. \href{https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset}{Ver el conjunto de datos}.
+	\item \texttt{MIT-datasets}: el \href{https://www.ll.mit.edu/r-d/datasets?author=All&rdarea=All&rdgroup=All&keywords=cyber&tag=All&items_per_page=100}{Instituto de Tecnología de Massachusetts} (MIT) cuenta con varios \textit{dataset} con información sobre conexiones malignas en redes. Algunos de ellos se basan en \texttt{DARPA}. La mayoria de los conjuntos de datos son antiguos y no detallan como se obtuvo la información que los compone, por estos motivos, estos \textit{datasets} también fueron descartados. \href{https://archive.ll.mit.edu/ideval/index.html}{Ver el conjunto de datos}.
+\end{itemize}
 
-El \textit{dataset} utilizado es \texttt{NF-UNSW-NB15-v3}, este es una versión basada en NetFlow del conocido conjunto de datos UNSW-NB15, mejorada con características adicionales de NetFlow y etiquetada de acuerdo con sus respectivas categorías de ataque. 
+Tras comparar varios conjuntos de datos, los datos que se utilizan para desarrollar este trabajo, se han obtenido de  conjuntos de datos diseñados para entrenar Sistemas de Detección de Intrusión de Red (NIDS) basados en el aprendizaje automático. El conjunto de datos en cuenstión  forma parte de un análisis realizado en la \href{https://staff.itee.uq.edu.au/marius/NIDS_datasets/}{Universidad de Queensland}, Australia \cite{luay2025NetFlowDatasetsV3}.
 
-\section{Tipos de ataques registrados en los datos} \label{sec.tipo-ataques}
+El \textit{dataset} utilizado es \texttt{NF-UNSW-NB15-v3}, se trata de una versión basada en \texttt{NetFlow} del conjunto de datos \texttt{UNSW-NB15}, mejorado con características adicionales de \texttt{NetFlow} y etiquetada de acuerdo con sus respectivas categorías de ataque. Su última actualización es del año 2025 y cuenta con una gran variedad de tipos de ataques registrados entre sus datos.
+
+La Universidad de Queensland cuenta con otros \textit{datasets} con características similares, pero de entre los conjuntos de datos desarrollados por esta entidad el más completo y actualizado es el que finalmente se ha elegido para desarrollar los modelos de este proyecto.
+
+\section{Tipos de ataques registrados en los datos de \texttt{NF-UNSW-NB15-v3}} \label{sec.tipo-ataques}
 En esta sección se explican los tipos de datos presentes en el \textit{dataset} que se utiliza para entrenar a los modelos del proyecto. Se explica en que consiste cada tipo de ataque registrado así como el número exacto de ataques de cada tipo presente.
 
 El conjunto de datos consiste en un total de 2\,365\,424 flujos de datos, donde 127\,639 (5,4\%) son muestras de ataque y 2\,237\,731 (94,6\%) son benignos. Los flujos de ataque se clasifican en nueve clases, cada una representando una amenaza a la red distinta. La Tabla \ref{tab:attacks-tab} proporciona una distribución detallada del conjunto de datos:
@@ -119,7 +128,7 @@ Para entrenar un modelo es necesario que en primer lugar todos los parámetros s
 
 \begin{itemize}
 	\item Para dar un formato correcto al parámetro \texttt{Attack}, se utiliza el codificador \texttt{LabelEncoder} de la biblioteca sklearn.preprocessing y el método \texttt{fit\_transform} de la biblioteca \texttt{sklearn}. La primera función, \texttt{LabelEncoder} codifica las etiquetas de características categóricas en valores numéricos entre 0 y el número de clases menos 1. Una vez se instancian las categorías del parámtero, el método \texttt{fit\_transform} permite entrenar el codificador y transformar el conjunto de datos en un único paso.
-	\item Las direcciones IPv4 están formadas por 4 octetos separados por puntos. Obviamnete este formato no es numérico, por ese motivo se opta por dividir las direcciones IPv4 en 4 parámetros diferentes, uno por cada octeto. De esta manera, si el valor de un flujo para el parámetro \texttt{IPV4\_SRC\_ADDR} es 175.45.176.23, se separa en cuatro nuevos valores que son: 175, 45, 176 y 23. Para realizar esta transformación se utiliza la función \ref{fig:funIPv4} \nameref{fig:funIPv4}.
+	\item Las direcciones IPv4 están formadas por cuatro octetos separados por puntos. Obviamnete este formato no es numérico, por ese motivo se opta por dividir las direcciones IPv4 en 4 parámetros diferentes, uno por cada octeto. De esta manera, si el valor de un flujo para el parámetro \texttt{IPV4\_SRC\_ADDR} es 175.45.176.23, se separa en cuatro nuevos valores que son: 175, 45, 176 y 23. Para realizar esta transformación se utiliza la función \ref{fig:funIPv4} \nameref{fig:funIPv4}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{./img/ent-datos/funIPv4.png}
