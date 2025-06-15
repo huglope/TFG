@@ -2,7 +2,10 @@
 
 \bibitem{haya_crisp_dm}
 Pablo Haya.
-\newblock La metodología crisp-dm en ciencia de datos, noviembre 2021.
+\newblock La metodología {{CRISP-DM}} en ciencia de datos.
+\newblock
+  \url{https://www.iic.uam.es/innovacion/metodologia-crisp-dm-ciencia-de-datos/},
+  noviembre 2021.
 \newblock Consultado el 18 de mayo de 2025.
 
 \bibitem{schwaber2020scrum2}
@@ -10,31 +13,51 @@ Ken Schwaber and Jeff Sutherland.
 \newblock The scrum guide: The definitive guide to scrum – the rules of the
   game.
 \newblock \url{https://www.scrum.org/resources/scrum-guide}, 2020.
+\newblock Accedido: 2025-05-29.
 
 \bibitem{tcpprotocolionos}
 IONOS España.
-\newblock Tcp protocol: así funciona el protocolo de transmisión, 2020.
+\newblock Tcp protocol: así funciona el protocolo de transmisión.
+\newblock
+  \url{https://www.ionos.es/digitalguide/servidores/know-how/que-es-tcp-transport-control-protocol/},
+  2020.
+\newblock Accedido: 2025-06-02.
 
 \bibitem{tcpsegment}
 Vicente~González Ruiz.
-\newblock Tcp (transmission control protocol), December 2014.
+\newblock {{TCP}} (transmission control protocol).
+\newblock
+  \url{https://w3.ual.es/~vruiz/Docencia/Apuntes/Networking/Protocols/Level-4/05-TCP/index.html},
+  December 2014.
+\newblock Accedido: 2025-04-15.
 
 \bibitem{paqueteip}
 Vicente~González Ruiz.
-\newblock El ip (internet protocol), December 2014.
+\newblock El {{IP}} (internet protocol).
+\newblock
+  \url{https://w3.ual.es/~vruiz/Docencia/Apuntes/Networking/Protocols/Level-3/01-IP/index.html},
+  December 2014.
+\newblock Accedido: 2025-06-02.
 
 \bibitem{aprendeia2021deep}
 AprendeIA.
-\newblock ¿qué es deep learning?, 2021.
+\newblock ¿qué es deep learning?
+\newblock \url{https://aprendeia.com/2021/03/02/que-es-deep-learning/}, 2021.
+\newblock Accedido: 2025-04-04.
 
 \bibitem{msmk2023backpropagation}
 MSMK University.
-\newblock Red neuronal de retropropagación (backpropagation neural network),
+\newblock Red neuronal de retropropagación (backpropagation neural network).
+\newblock
+  \url{https://msmk.university/red-neuronal-de-retropropagacion-backpropagation-neural-network/},
   2023.
 
 \bibitem{uniteai2020cnn}
-Daniel~Nielson Unite.AI.
-\newblock ¿qué son las redes neuronales convolucionales (cnn)?, 2020.
+Daniel~Nielson Unite.~AI.
+\newblock ¿qué son las redes neuronales convolucionales ({{CNN}})?
+\newblock
+  \url{https://www.unite.ai/es/what-are-convolutional-neural-networks/}, 2020.
+\newblock Accedido: 2025-05-14.
 
 \bibitem{rundle2024ai}
 James Rundle.
@@ -54,6 +77,7 @@ Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham,
   Sutherland, and Dave Thomas.
 \newblock Manifesto for agile software development.
 \newblock \url{https://agilemanifesto.org/}, 2001.
+\newblock Accedido: 2025-05-29.
 
 \bibitem{pmbok}
 Project~Management Institute.
@@ -97,8 +121,9 @@ J.~Scott.
 
 \bibitem{cissp2018}
 International Information System Security~Certification Consortium.
-\newblock Phishing attacks and how to avoid them, 2018.
-\newblock https://www.isc2.org.
+\newblock Phishing attacks and how to avoid them.
+\newblock \url{https://www.isc2.org}, 2018.
+\newblock Accedido: 2025-04-16.
 
 \bibitem{Santos2020}
 Francisco Santos and María García.
@@ -128,7 +153,11 @@ Parlamento~Europeo y~Consejo de~la Unión~Europea.
 \newblock Reglamento (ue) 2016/679 del parlamento europeo y del consejo de 27
   de abril de 2016 relativo a la protección de las personas físicas en lo que
   respecta al tratamiento de datos personales y a la libre circulación de
-  estos datos, 2016.
+  estos datos.
+\newblock
+  \url{https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679},
+  2016.
+\newblock Accedido: 2025-04-16.
 
 \bibitem{Sommestad2019}
 Lars Sommestad, Mattias Ekstedt, and Per Johnson.
@@ -138,27 +167,39 @@ Lars Sommestad, Mattias Ekstedt, and Per Johnson.
 
 \bibitem{cosmikal_firewall}
 Cosmikal.
-\newblock ¿qué es y cómo funciona un firewall? guía básica 2025, december
-  2024.
+\newblock ¿qué es y cómo funciona un firewall? guía básica 2025.
+\newblock \url{https://www.cosmikal.es/que-es-y-como-funciona-un-firewall/},
+  december 2024.
+\newblock Accedido: 2025-05-25.
 
 \bibitem{geekflare_ids_ips}
 Geekflare.
-\newblock Ids vs ips: A comprehensive guide to network security solutions,
+\newblock Ids vs ips: A comprehensive guide to network security solutions.
+\newblock
+  \url{https://geekflare.com/es/ids-vs-ips-network-security-solutions/},
   december 2024.
+\newblock Accedido: 2025-05-30.
 
 \bibitem{paloaltonetworks_microsegmentation}
 Palo~Alto Networks.
 \newblock ¿qué es la microsegmentación?
+\newblock
+  \url{https://www.paloaltonetworks.es/cyberpedia/what-is-microsegmentation}.
+\newblock Accedido: 2025-05-19.
 
 \bibitem{ISO29148}
 ISO/IEC/IEEE.
 \newblock Systems and software engineering — life cycle processes —
-  requirements engineering, 2018.
+  requirements engineering.
+\newblock \url{https://www.iso.org/standard/72089.html}, 2018.
 
 \bibitem{nist2021ai}
 National~Institute of~Standards and Technology (NIST).
 \newblock Adversarial machine learning: A taxonomy and terminology of attacks
-  and mitigations, 2021.
+  and mitigations.
+\newblock \url{https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf},
+  2021.
+\newblock Accedido: 2025-05-10.
 
 \bibitem{brooke1996sus}
 John Brooke.
@@ -169,7 +210,9 @@ John Brooke.
 Majed Luay, Siamak Layeghy, Seyedehfaezeh Hosseininoorbin, Mohanad Sarhan, Nour
   Moustafa, and Marius Portmann.
 \newblock Temporal analysis of netflow datasets for network intrusion detection
-  systems, 2025.
+  systems.
+\newblock \url {https://arxiv.org/abs/2503.04404}, 2025.
+\newblock Accedido: 2025-04-22.
 
 \bibitem{goodfellow2016deep}
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
@@ -210,22 +253,29 @@ Michael Nielsen.
 {EITCA Academy}.
 \newblock ¿cuál es el papel de la función de pérdida en el aprendizaje
   automático?
+\newblock
+  \url{https://es.eitca.org/inteligencia-artificial/eitc-ai-tff-tensorflow-fundamentos/introducci%C3%B3n-a-tensorflow/fundamentos-del-aprendizaje-autom%C3%A1tico/examen-revisar-los-fundamentos-del-aprendizaje-autom%C3%A1tico/%C2%BFCu%C3%A1l-es-el-papel-de-la-funci%C3%B3n-de-p%C3%A9rdida-en-el-aprendizaje-autom%C3%A1tico%3F/}.
 \newblock Accedido: 2025-05-22.
 
 \bibitem{ultralytics_loss_function}
 {Ultralytics}.
 \newblock Función de pérdida.
+\newblock \url{https://www.ultralytics.com/es/glossary/loss-function}.
 \newblock Accedido: 2025-05-22.
 
 \bibitem{datacamp_loss_function}
 {DataCamp}.
 \newblock Explicación de las funciones de pérdida en el machine learning.
+\newblock
+  \url{https://www.datacamp.com/es/tutorial/loss-function-in-machine-learning}.
 \newblock Accedido: 2025-05-22.
 
 \bibitem{bigdatafran_pytorch_classification}
 {BigDataFran}.
 \newblock 7. introducción problemas de clasificación — trabajando con
   pytorch.
+\newblock
+  \url{https://bigdatafran.github.io/pytorch/jupyters/Tema_3_clasificacion.html}.
 \newblock Accedido: 2025-05-22.
 
 \bibitem{paszke2019pytorch}
@@ -455,12 +505,15 @@ Song Han, Huizi Mao, and William~J Dally.
   2016.
 
 \bibitem{wandb_tracking}
-Machine learning experiment tracking with weights \& biases.
-\newblock Weights \& Biases website, 2025.
+{Machine Learning Experiment Tracking with Weights \& Biases}.
+\newblock \url{https://wandb.ai/site}, 2025.
+\newblock Accedido: 2025-06-03.
 
 \bibitem{blackboard_architecture}
-Blackboard architecture.
-\newblock GeeksforGeeks, 2023.
+{Blackboard Architecture}.
+\newblock \url{https://www.geeksforgeeks.org/blackboard-architecture-in-ai/},
+  2023.
+\newblock Accedido: 2025-06-03.
 
 \bibitem{bergstra2012random}
 James Bergstra and Yoshua Bengio.

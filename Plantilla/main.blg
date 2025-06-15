@@ -4,23 +4,23 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "nist2021ai" isn't style-file defined
---line 78 of file bibliografia.bib
+--line 79 of file bibliografia.bib
 Warning--entry type for "ISO29148" isn't style-file defined
---line 591 of file bibliografia.bib
+--line 607 of file bibliografia.bib
 Warning--can't use both volume and number fields in fawcett2006introduction
 Warning--empty journal in gof_observer_pattern
 You've used 100 entries,
             1791 wiz_defined-function locations,
-            951 strings with 18359 characters,
-and the built_in function-call counts, 21389 in all, are:
-= -- 1914
+            994 strings with 21056 characters,
+and the built_in function-call counts, 21733 in all, are:
+= -- 2001
 > -- 863
 < -- 21
 + -- 335
 - -- 235
 * -- 1202
-:= -- 3242
-add.period$ -- 291
+:= -- 3329
+add.period$ -- 325
 call.type$ -- 100
 change.case$ -- 87
 chr.to.int$ -- 0
@@ -28,17 +28,17 @@ cite$ -- 102
 duplicate$ -- 997
 empty$ -- 2232
 format.name$ -- 235
-if$ -- 4892
+if$ -- 4979
 int.to.chr$ -- 0
 int.to.str$ -- 100
 missing$ -- 93
-newline$ -- 489
+newline$ -- 523
 num.names$ -- 98
-pop$ -- 413
+pop$ -- 397
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 538
+skip$ -- 501
 stack$ -- 0
 substring$ -- 1279
 swap$ -- 267
@@ -49,5 +49,5 @@ type$ -- 0
 warning$ -- 2
 while$ -- 203
 width$ -- 103
-write$ -- 1034
+write$ -- 1102
 (There were 4 warnings)
