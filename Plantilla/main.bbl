@@ -39,6 +39,14 @@ Vicente~González Ruiz.
   December 2014.
 \newblock Accedido: 2025-06-02.
 
+\bibitem{tomorrow2023peso}
+Tomorrow Bio.
+\newblock Peso a peso: cómo se fortalecen las redes neuronales.
+\newblock
+  \url{https://www.tomorrow.bio/es/post/peso-a-peso-como-se-fortalecen-las-redes-neuronales},
+  2023.
+\newblock Consultado: 2025-06-15.
+
 \bibitem{aprendeia2021deep}
 AprendeIA.
 \newblock ¿qué es deep learning?
@@ -233,6 +241,23 @@ Warren McCulloch and Walter Pitts.
 Frank Rosenblatt.
 \newblock {\em The Perceptron: A Perceiving and Recognizing Automaton}.
 \newblock Cornell Aeronautical Laboratory, Buffalo, NY, 1958.
+
+\bibitem{lederer2021activation}
+Johannes Lederer.
+\newblock Activation functions in artificial neural networks: A systematic
+  overview.
+\newblock {\em arXiv preprint arXiv:2101.09957}, 2021.
+
+\bibitem{dubey2021activation}
+Shiv~Ram Dubey, Satish~Kumar Singh, and Bidyut~Baran Chaudhuri.
+\newblock Activation functions in deep learning: A comprehensive survey and
+  benchmark.
+\newblock {\em arXiv preprint arXiv:2109.14545}, 2021.
+
+\bibitem{ramachandran2017searching}
+Prajit Ramachandran, Barret Zoph, and Quoc~V. Le.
+\newblock Searching for activation functions.
+\newblock {\em arXiv preprint arXiv:1710.05941}, 2017.
 
 \bibitem{bishop2006pattern}
 Christopher~M. Bishop.

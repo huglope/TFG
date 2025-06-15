@@ -9,45 +9,45 @@ Warning--entry type for "ISO29148" isn't style-file defined
 --line 607 of file bibliografia.bib
 Warning--can't use both volume and number fields in fawcett2006introduction
 Warning--empty journal in gof_observer_pattern
-You've used 100 entries,
+You've used 104 entries,
             1791 wiz_defined-function locations,
-            994 strings with 21056 characters,
-and the built_in function-call counts, 21733 in all, are:
-= -- 2001
-> -- 863
+            1014 strings with 21833 characters,
+and the built_in function-call counts, 22320 in all, are:
+= -- 2049
+> -- 893
 < -- 21
-+ -- 335
-- -- 235
-* -- 1202
-:= -- 3329
-add.period$ -- 325
-call.type$ -- 100
-change.case$ -- 87
++ -- 347
+- -- 243
+* -- 1222
+:= -- 3435
+add.period$ -- 338
+call.type$ -- 104
+change.case$ -- 91
 chr.to.int$ -- 0
-cite$ -- 102
-duplicate$ -- 997
-empty$ -- 2232
-format.name$ -- 235
-if$ -- 4979
+cite$ -- 106
+duplicate$ -- 1026
+empty$ -- 2292
+format.name$ -- 243
+if$ -- 5108
 int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 93
-newline$ -- 523
-num.names$ -- 98
-pop$ -- 397
+int.to.str$ -- 104
+missing$ -- 96
+newline$ -- 544
+num.names$ -- 102
+pop$ -- 412
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 501
+skip$ -- 512
 stack$ -- 0
 substring$ -- 1279
-swap$ -- 267
+swap$ -- 271
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 203
-width$ -- 103
-write$ -- 1102
+while$ -- 207
+width$ -- 107
+write$ -- 1144
 (There were 4 warnings)

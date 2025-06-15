@@ -32,87 +32,86 @@
 \contentsline {subsection}{\numberline {4.7.2}Requisitos No Funcionales}{38}{subsection.4.7.2}%
 \contentsline {chapter}{\numberline {5}Entendimiennto de los datos}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Origen de los datos}{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos de \texttt {NF-UNSW-NB15-v3}}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Tipos de ataques registrados en los datos de \texttt {NF-UNSW- NB15-v3}}{40}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Parámetros de los datos}{41}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Selección de atributos}{44}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Preparación de los datos}{45}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Modelos}{49}{chapter.6}%
 \contentsline {section}{\numberline {6.1}¿Qué es un modelo neuronal?}{49}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Origen de los modelos neuronales}{49}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Funcionamiento básico de una red neuronal}{50}{subsection.6.1.2}%
-\contentsline {subsubsection}{Función de pérdida}{51}{section*.44}%
-\contentsline {subsubsection}{Algoritmo de optimización}{53}{section*.45}%
-\contentsline {paragraph}{Sobreajuste}{55}{section*.47}%
-\contentsline {paragraph}{Regularización}{55}{section*.48}%
-\contentsline {subsection}{\numberline {6.1.3}¿Qué tipos de modelos neuronales existen?}{56}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Técnicas útiles para obtener modelos que converjan correctamente}{57}{subsection.6.1.4}%
-\contentsline {subsubsection}{Validación cruzada}{57}{section*.50}%
-\contentsline {subsubsection}{ReLU \textit {Rectified Linear Unit}}{57}{section*.51}%
-\contentsline {subsubsection}{Batch Normalization}{57}{section*.52}%
-\contentsline {subsubsection}{Dropout}{58}{section*.53}%
-\contentsline {subsubsection}{SMOTE}{58}{section*.54}%
-\contentsline {subsection}{\numberline {6.1.5}Conjunto de datos de entrenamiento}{58}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Parámetros e hiperparámetros}{59}{subsection.6.1.6}%
-\contentsline {subsection}{\numberline {6.1.7}PyTorch}{60}{subsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.1.8}Matriz de confusión para clasificación binaria}{60}{subsection.6.1.8}%
-\contentsline {subsection}{\numberline {6.1.9}Métricas útiles en clasificación binaria}{61}{subsection.6.1.9}%
-\contentsline {subsubsection}{Aplicación en Seguridad}{63}{section*.56}%
-\contentsline {subsection}{\numberline {6.1.10}Matriz de confusión para clasificación multiclase}{64}{subsection.6.1.10}%
-\contentsline {subsection}{\numberline {6.1.11}Metricas útiles en clasificación multiclase}{65}{subsection.6.1.11}%
-\contentsline {section}{\numberline {6.2}Estructura/Arquitectura de los modelos de clasificación binaria desarrollados}{68}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Capa oculta con la mitad de neuronas que atributos de entrada}{68}{subsection.6.2.1}%
-\contentsline {paragraph}{Ventajas (\textit {n/2})}{69}{section*.63}%
-\contentsline {paragraph}{Inconvenientes(\textit {n/2})}{69}{section*.64}%
-\contentsline {subsection}{\numberline {6.2.2}Capa oculta con el mismo número de neuronas que atributos de entrada}{70}{subsection.6.2.2}%
-\contentsline {paragraph}{Ventajas (\textit {n})}{70}{section*.66}%
-\contentsline {paragraph}{Inconvenientes(\textit {n})}{71}{section*.67}%
-\contentsline {subsection}{\numberline {6.2.3}Capa oculta con el doble de neuronas que atributos de entrada}{71}{subsection.6.2.3}%
-\contentsline {paragraph}{Ventajas (2n)}{72}{section*.69}%
-\contentsline {paragraph}{Inconvenientes(2n)}{73}{section*.70}%
-\contentsline {section}{\numberline {6.3}Estructura/Arquitecturas de los modelos de clasificación multiclase desarrollados}{73}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Capa oculta con la mitad de neuronas que atributos de entrada}{74}{subsection.6.3.1}%
-\contentsline {paragraph}{Ventajas (n/2)}{74}{section*.72}%
-\contentsline {paragraph}{Inconvenientes(n/2)}{75}{section*.73}%
-\contentsline {subsection}{\numberline {6.3.2}Capa oculta con el mismo número de neuronas que atributos de entrada}{75}{subsection.6.3.2}%
-\contentsline {paragraph}{Ventajas (n)}{76}{section*.75}%
-\contentsline {paragraph}{Inconvenientes(n)}{76}{section*.76}%
-\contentsline {subsection}{\numberline {6.3.3}Capa oculta con el doble de neuronas que atributos de entrada}{77}{subsection.6.3.3}%
-\contentsline {paragraph}{Ventajas (2n)}{78}{section*.78}%
-\contentsline {paragraph}{Inconvenientes(2n)}{79}{section*.79}%
-\contentsline {subsection}{\numberline {6.3.4}Diseños del modelo de clasificación multiclase descartados}{79}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}Implementación del modelo neuronal de clasificación binaria}{80}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Proposito del modelo de clasificación binaria}{80}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Diseño del modelo e hiperparámetros seleccionados}{81}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Implementación del modelo neuronal de clasificación multiclase}{84}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Proposito del modelo de clasificación multiclase}{84}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.1.2}Funcionamiento básico de una red neuronal}{51}{subsection.6.1.2}%
+\contentsline {subsubsection}{Función de pérdida}{52}{section*.45}%
+\contentsline {subsubsection}{Algoritmo de optimización}{54}{section*.46}%
+\contentsline {subsection}{\numberline {6.1.3}¿Qué tipos de modelos neuronales existen?}{57}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Técnicas útiles para obtener modelos que converjan correctamente}{58}{subsection.6.1.4}%
+\contentsline {subsubsection}{Validación cruzada}{58}{section*.49}%
+\contentsline {subsubsection}{ReLU \textit {Rectified Linear Unit}}{58}{section*.50}%
+\contentsline {subsubsection}{Batch Normalization}{58}{section*.51}%
+\contentsline {subsubsection}{Dropout}{59}{section*.52}%
+\contentsline {subsubsection}{SMOTE}{59}{section*.53}%
+\contentsline {subsection}{\numberline {6.1.5}Conjunto de datos de entrenamiento}{59}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Parámetros e hiperparámetros}{60}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}PyTorch}{61}{subsection.6.1.7}%
+\contentsline {section}{\numberline {6.2}Clasificación con redes neuronales}{62}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Matriz de confusión para clasificación binaria}{62}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Métricas útiles en clasificación binaria}{63}{subsection.6.2.2}%
+\contentsline {subsubsection}{Aplicación en Seguridad}{65}{section*.55}%
+\contentsline {subsection}{\numberline {6.2.3}Matriz de confusión para clasificación multiclase}{65}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Metricas útiles en clasificación multiclase}{67}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Arquitectura de los modelos de clasificación binaria desarrollados}{71}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Capa oculta con la mitad de neuronas que atributos de entrada}{72}{subsection.6.3.1}%
+\contentsline {paragraph}{Ventajas (\textit {n/2})}{72}{section*.62}%
+\contentsline {paragraph}{Inconvenientes (\textit {n/2})}{72}{section*.63}%
+\contentsline {subsection}{\numberline {6.3.2}Capa oculta con el mismo número de neuronas que atributos de entrada}{73}{subsection.6.3.2}%
+\contentsline {paragraph}{Ventajas (\textit {n})}{73}{section*.65}%
+\contentsline {paragraph}{Inconvenientes(\textit {n})}{74}{section*.66}%
+\contentsline {subsection}{\numberline {6.3.3}Capa oculta con el doble de neuronas que atributos de entrada}{74}{subsection.6.3.3}%
+\contentsline {paragraph}{Ventajas (2n)}{75}{section*.68}%
+\contentsline {paragraph}{Inconvenientes (2n)}{76}{section*.69}%
+\contentsline {section}{\numberline {6.4}Estructura/Arquitecturas de los modelos de clasificación multiclase desarrollados}{76}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Capa oculta con la mitad de neuronas que atributos de entrada}{77}{subsection.6.4.1}%
+\contentsline {paragraph}{Ventajas (n/2)}{77}{section*.71}%
+\contentsline {paragraph}{Inconvenientes (n/2)}{78}{section*.72}%
+\contentsline {subsection}{\numberline {6.4.2}Capa oculta con el mismo número de neuronas que atributos de entrada}{78}{subsection.6.4.2}%
+\contentsline {paragraph}{Ventajas (n)}{79}{section*.74}%
+\contentsline {paragraph}{Inconvenientes (n)}{79}{section*.75}%
+\contentsline {subsection}{\numberline {6.4.3}Capa oculta con el doble de neuronas que atributos de entrada}{80}{subsection.6.4.3}%
+\contentsline {paragraph}{Ventajas (2n)}{81}{section*.77}%
+\contentsline {paragraph}{Inconvenientes (2n)}{82}{section*.78}%
+\contentsline {subsection}{\numberline {6.4.4}Diseños del modelo de clasificación multiclase descartados}{82}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Implementación del modelo neuronal de clasificación binaria}{83}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Proposito del modelo de clasificación binaria}{83}{subsection.6.5.1}%
 \contentsline {subsection}{\numberline {6.5.2}Diseño del modelo e hiperparámetros seleccionados}{84}{subsection.6.5.2}%
-\contentsline {section}{\numberline {6.6}Selección de modelos de clasificación binaria}{87}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación binaria}{91}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Selección de modelos de clasificación multiclase}{93}{section.6.7}%
-\contentsline {subsection}{\numberline {6.7.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación multiclase}{98}{subsection.6.7.1}%
-\contentsline {chapter}{\numberline {7}Evaluación}{101}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conjunto de datos de prueba}{101}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Proceso de evaluación}{102}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Resultados de las métricas en el proceso de evaluación}{103}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Resultados del modelo de clasificación binaria}{103}{subsection.7.3.1}%
-\contentsline {subsubsection}{MCB25: Modelo de clasifcación binaria con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{103}{section*.102}%
-\contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{105}{section*.105}%
-\contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{107}{section*.108}%
-\contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{109}{subsection.7.3.2}%
-\contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{109}{section*.111}%
-\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{112}{section*.115}%
-\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{115}{section*.119}%
-\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{118}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{118}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{119}{subsection.7.4.2}%
-\contentsline {chapter}{\numberline {8}Despliegue}{121}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{121}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{121}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{122}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{122}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{123}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{125}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusiones}{125}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Trabajo futuro}{127}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Apéndice}{129}{chapter.10}%
-\contentsline {chapter}{Bibliografía}{131}{chapter.10}%
+\contentsline {section}{\numberline {6.6}Implementación del modelo neuronal de clasificación multiclase}{87}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Proposito del modelo de clasificación multiclase}{87}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Diseño del modelo e hiperparámetros seleccionados}{87}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.7}Selección de modelos de clasificación binaria}{90}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación binaria}{94}{subsection.6.7.1}%
+\contentsline {section}{\numberline {6.8}Selección de modelos de clasificación multiclase}{96}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Comparación de las arquitecturas seleccionadas de los modelos de clasificación multiclase}{101}{subsection.6.8.1}%
+\contentsline {chapter}{\numberline {7}Evaluación}{105}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conjunto de datos de prueba}{105}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Proceso de evaluación}{106}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Resultados de las métricas en el proceso de evaluación}{107}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Resultados del modelo de clasificación binaria}{107}{subsection.7.3.1}%
+\contentsline {subsubsection}{MCB25: Modelo de clasifcación binaria con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{107}{section*.101}%
+\contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{109}{section*.104}%
+\contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{111}{section*.107}%
+\contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{113}{subsection.7.3.2}%
+\contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{113}{section*.110}%
+\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{116}{section*.114}%
+\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{119}{section*.118}%
+\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{122}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{122}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{123}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Despliegue}{125}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{125}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{125}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{126}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{126}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{127}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{129}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{129}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Trabajo futuro}{131}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Apéndice}{133}{chapter.10}%
+\contentsline {chapter}{Bibliografía}{135}{chapter.10}%

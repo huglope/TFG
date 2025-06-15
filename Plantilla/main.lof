@@ -12,48 +12,49 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Función de transformación para los parámetros IPv4.}}{46}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de redes neuronales \cite {aprendeia2021deep}.}}{51}{figure.caption.43}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de algoritmo de optimización usando los gradiente calculados por la retropropagación \cite {msmk2023backpropagation}.}}{54}{figure.caption.46}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Esquema de redes neuronal convolucional \cite {uniteai2020cnn}.}}{56}{figure.caption.49}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Arquitectura del modelo con $n/2$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{69}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Arquitectura del modelo con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{70}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Arquitectura del modelo con $2n$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{72}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{74}{figure.caption.71}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{76}{figure.caption.74}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{78}{figure.caption.77}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{80}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Definición de la clase del modelo de clasificación binaria.}}{81}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Definición de la clase \texttt {DatasetTFG}.}}{83}{figure.caption.83}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Bucle de entrenamiento del modelo de clasificación binaria.}}{83}{figure.caption.84}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{85}{figure.caption.85}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Bucle de validación del modelo de clasificación multiclase.}}{87}{figure.caption.87}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas ($n/2$).}}{89}{figure.caption.88}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB25 durante la fase de búsqueda.}}{89}{figure.caption.89}%
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas ($n$).}}{90}{figure.caption.90}%
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB49 durante la fase de búsqueda.}}{90}{figure.caption.91}%
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas ($2n$).}}{91}{figure.caption.92}%
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB98 durante la fase de búsqueda.}}{91}{figure.caption.93}%
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{92}{figure.caption.94}%
-\contentsline {figure}{\numberline {6.23}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{94}{figure.caption.95}%
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM25.}}{95}{figure.caption.96}%
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{96}{figure.caption.97}%
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM49.}}{96}{figure.caption.98}%
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{97}{figure.caption.99}%
-\contentsline {figure}{\numberline {6.28}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM98.}}{98}{figure.caption.100}%
-\contentsline {figure}{\numberline {6.29}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{99}{figure.caption.101}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema del funcionamiento de una neurona artificial \cite {tomorrow2023peso}.}}{50}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de redes neuronales \cite {aprendeia2021deep}.}}{51}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Esquema de algoritmo de optimización usando los gradiente calculados por la retropropagación \cite {msmk2023backpropagation}.}}{55}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Esquema de redes neuronal convolucional \cite {uniteai2020cnn}.}}{57}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Arquitectura del modelo con $n/2$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{72}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Arquitectura del modelo con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{73}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Arquitectura del modelo con $2n$ neuronas en la capa oculta siendo \textit {n} el número de parámetros de entrada.}}{75}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Arquitectura del modelo con n/2 neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{77}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Arquitectura del modelo con n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{79}{figure.caption.73}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Arquitectura del modelo con 2n neuronas en la capa oculta siendo n el número de parámetros de entrada.}}{81}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}}{83}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Definición de la clase del modelo de clasificación binaria.}}{84}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Definición de la clase \texttt {DatasetTFG}.}}{86}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Bucle de entrenamiento del modelo de clasificación binaria.}}{86}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Estructura del modelo de clasificación multiclase diseñada.}}{88}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Bucle de validación del modelo de clasificación multiclase.}}{90}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas ($n/2$).}}{92}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB25 durante la fase de búsqueda.}}{92}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas ($n$).}}{93}{figure.caption.89}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB49 durante la fase de búsqueda.}}{93}{figure.caption.90}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas ($2n$).}}{94}{figure.caption.91}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el MCB98 durante la fase de búsqueda.}}{94}{figure.caption.92}%
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria.}}{95}{figure.caption.93}%
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}}{97}{figure.caption.94}%
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM25.}}{98}{figure.caption.95}%
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}}{99}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM49.}}{99}{figure.caption.97}%
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}}{100}{figure.caption.98}%
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM98.}}{101}{figure.caption.99}%
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{102}{figure.caption.100}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB25 durante la fase de evaluación.}}{105}{figure.caption.104}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 2º MCB49 durante la fase de evaluación.}}{107}{figure.caption.107}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB98 durante la fase de evaluación.}}{109}{figure.caption.110}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 3º MCM25 durante la fase de evaluación.}}{111}{figure.caption.113}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 3º MCM25 durante la fase de evaluación.}}{112}{figure.caption.114}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 5º MCM49 durante la fase de evaluación.}}{114}{figure.caption.117}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 5º MCM49 durante la fase de evaluación.}}{115}{figure.caption.118}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 4º MCM98 durante la fase de evaluación.}}{117}{figure.caption.121}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}}{118}{figure.caption.122}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}}{119}{figure.caption.123}%
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}}{120}{figure.caption.124}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB25 durante la fase de evaluación.}}{109}{figure.caption.103}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 2º MCB49 durante la fase de evaluación.}}{111}{figure.caption.106}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB98 durante la fase de evaluación.}}{113}{figure.caption.109}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 3º MCM25 durante la fase de evaluación.}}{115}{figure.caption.112}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 3º MCM25 durante la fase de evaluación.}}{116}{figure.caption.113}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 5º MCM49 durante la fase de evaluación.}}{118}{figure.caption.116}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 5º MCM49 durante la fase de evaluación.}}{119}{figure.caption.117}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 4º MCM98 durante la fase de evaluación.}}{121}{figure.caption.120}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}}{122}{figure.caption.121}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}}{123}{figure.caption.122}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}}{124}{figure.caption.123}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Ejemplo de despliegue de los modelos en un sistema informático.}}{123}{figure.caption.125}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Ejemplo de despliegue de los modelos en un sistema informático.}}{127}{figure.caption.124}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

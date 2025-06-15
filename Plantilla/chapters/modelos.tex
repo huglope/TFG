@@ -1,5 +1,5 @@
 
-Este capítulo correponde con la cuarta fase de la metodología CRISP-DM. En él se se explica como se crearon los primeros modelos, cual es el funcionamiento básico de las redes neuronales y algunos de los tipos de modelos más utilizados. Se detallan los modelos de redes neuronales desarrollados y entrenados. Se describe la arquitectura, la justificación de su elección, los hiperparámetros, la función de pérdida y el optimizador. Se incluye la estrategia de entrenamiento y las métricas de evaluación.
+Este capítulo correponde con la fase de modelado de la metodología CRISP-DM. En él se se explica como se crearon los primeros modelos, cual es el funcionamiento básico de las redes neuronales y algunos de los tipos de modelos más utilizados. Se detallan los modelos de redes neuronales desarrollados y entrenados. Se describe la arquitectura, la justificación de su elección, los hiperparámetros, la función de pérdida y el optimizador. Se incluye la estrategia de entrenamiento y las métricas de evaluación.
 
 \section{¿Qué es un modelo neuronal?}
 
@@ -8,13 +8,27 @@ Este capítulo correponde con la cuarta fase de la metodología CRISP-DM. En él
 Los modelos neuronales son estructuras computacionales inspiradas en el cerebro humano, diseñadas para procesar información mediante una red de unidades interconectadas que imitan, de manera simplificada, la forma en que las neuronas biológicas se comunican entre sí \cite{goodfellow2016deep}.
 
 \subsection{Origen de los modelos neuronales}
-Los descurbrimientos del Premio Nobel de biología español, Santiago Ramón y Cajal sobre la estructura y funcionamiento de las neuronas, proporcionaron las bases para la comprensión del sistema nervioso en el que se basan los modelos de inteligencia artificial. A finales del siglo XIX, Cajal formuló la teoría de que las neuronas son células individuales conectadas por sinapsis, una idea que revolucionó la neurociencia y sirvió de inspiración para los modelos computacionales de redes neuronales. Su trabajo permitió comprender cómo las señales eléctricas viajan entre las neuronas y cómo se pueden formar conexiones adaptativas, conceptos que más tarde serían adoptados en el diseño de redes neuronales artificiales \cite{leCun2015}.
+Los descurbrimientos del Premio Nobel Premio Nobel en Fisiología o Medicina español, Santiago Ramón y Cajal sobre la estructura y funcionamiento de las neuronas, proporcionaron las bases para la comprensión del sistema nervioso en el que se basan los modelos de inteligencia artificial. A finales del siglo XIX, Cajal formuló la teoría de que las neuronas son células individuales conectadas por sinapsis, una idea que revolucionó la neurociencia y sirvió de inspiración para los modelos computacionales de redes neuronales. Su trabajo permitió comprender cómo las señales eléctricas viajan entre las neuronas y cómo se pueden formar conexiones adaptativas, conceptos que más tarde serían adoptados en el diseño de redes neuronales artificiales \cite{leCun2015}.
 
 
-En 1943, los científicos Warren McCulloch y Walter Pitts propusieron el primer modelo matemático de una neurona artificial en su trabajo titulado \textit{A Logical Calculus of the Ideas Immanent in Nervous Activity}. Este modelo representaba las neuronas como unidades lógicas binarias, cuya función de activación dependía de la suma ponderada de las entradas, las cuales podían ser 0 o 1. Cuando la suma de las entradas superaba un umbral determinado, la neurona se activaba (produciendo una salida de 1), mientras que si no se alcanzaba ese umbral, permanecía inactiva (salida 0). Este enfoque permitió representar funciones lógicas complejas mediante un conjunto de neuronas artificiales. El trabajo de McCulloch y Pitts fue fundamental para el desarrollo de las redes neuronales artificiales, ya que sentó las bases para representar las redes neuronales en términos matemáticos y lógicos, lo que eventualmente inspiró el desarrollo de redes más complejas y la inteligencia artificial moderna \cite{mcculloch1943logical}.
+En 1943, los científicos Warren McCulloch y Walter Pitts propusieron el primer modelo matemático de una neurona artificial, como la que se muestra en la Figura \ref{fig:neu-art}, en su trabajo titulado \textit{A Logical Calculus of the Ideas Immanent in Nervous Activity}. Este modelo representaba las neuronas como unidades lógicas binarias, cuya función de activación dependía de la suma ponderada de las entradas, las cuales podían ser 0 o 1. Cuando la suma de las entradas superaba un umbral determinado, la neurona se activaba (produciendo una salida de 1), mientras que si no se alcanzaba ese umbral, permanecía inactiva (salida 0). Este enfoque permitió representar funciones lógicas complejas mediante un conjunto de neuronas artificiales. El trabajo de McCulloch y Pitts fue fundamental para el desarrollo de las redes neuronales artificiales, ya que sentó las bases para representar las redes neuronales en términos matemáticos y lógicos, lo que eventualmente inspiró el desarrollo de redes más complejas \cite{mcculloch1943logical}.
 
 
 Frank Rosenblatt desempeñó un papel fundamental en el desarrollo de los modelos neuronales al crear el \textit{Perceptrón} en 1958, el primer modelo computacional de una red neuronal artificial. A diferencia del modelo lógico propuesto por McCulloch y Pitts, el \textit{Perceptrón} consistía en una red neuronal de una sola capa, en la que las neuronas estaban conectadas a través de pesos que podían ajustarse durante el proceso de entrenamiento. El algoritmo de aprendizaje supervisado del \textit{Perceptrón} permitía ajustar estos pesos para minimizar el error entre la salida producida por la red y la salida deseada. Este modelo de entrenamiento representó un avance importante en la teoría de redes neuronales, aunque su capacidad estaba limitada a resolver problemas lineales. A pesar de sus restricciones, el trabajo de Rosenblatt sentó las bases para el desarrollo de redes neuronales más complejas y la aparición del aprendizaje profundo en el futuro \cite{rosenblatt1958perceptron}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./img/modelo/neuronaartificial.png}
+    \caption{Esquema del funcionamiento de una neurona artificial \cite{tomorrow2023peso}.}
+    \label{fig:neu-art}
+\end{figure}
+
+La función de transferencia, también conocida como función de activación, es un componente esencial en las redes neuronales artificiales. Su principal función es introducir no linealidades en el modelo, permitiendo que la red neuronal aprenda y represente relaciones complejas entre las entradas y las salidas. Sin esta función, la red se limitaría a realizar transformaciones lineales, incapaces de capturar patrones no lineales presentes en los datos reales \cite{lederer2021activation}.
+
+Entre las funciones de activación más utilizadas se encuentran la sigmoide, la tangente hiperbólica (tanh) y la unidad lineal rectificada (ReLU). La función sigmoide, definida como \( f(x) = \frac{1}{1 + e^{-x}} \), transforma sus entradas en un rango entre 0 y 1, lo que la hace adecuada para problemas de clasificación binaria. Sin embargo, esta función presenta el inconveniente del desvanecimiento del gradiente, lo cual puede dificultar el entrenamiento de redes profundas \cite{dubey2021activation}.
+
+Por otro lado, la función ReLU, expresada como \( f(x) = \max(0, x) \), ha ganado popularidad debido a su simplicidad y eficiencia computacional. Esta función devuelve cero para entradas negativas y la entrada misma para valores positivos, lo que facilita una convergencia más rápida durante el entrenamiento y mitiga el problema del desvanecimiento del gradiente \cite{ramachandran2017searching}.
 
 
 \subsection{Funcionamiento básico de una red neuronal}
@@ -27,39 +41,65 @@ En la actualidad, en su configuración más básica, un modelo neuronal es una a
     \label{fig:esq-capas}
 \end{figure}
 
-Las neuronas dentro de un modelo neuronal no operan de forma aislada, sino que están conectadas entre sí a través de enlaces denominados pesos. Estos pesos determinan la importancia de la señal que se transmite de una neurona a otra. Durante el proceso de entrenamiento, los pesos se ajustan con el objetivo de minimizar el error en la salida del modelo, lo que permite que el modelo aprenda de los datos y mejore su capacidad para predecir o clasificar nueva información \cite{haykin2009neural}.
+Las neuronas dentro de un modelo neuronal están interconectadas mediante enlaces ponderados, conocidos como pesos, los cuales determinan la influencia relativa de cada señal recibida. A estos pesos se les suma un parámetro adicional llamado \textit{bias} u \textit{offset}, que permite ajustar la salida de la neurona independientemente de las entradas recibidas. Este sesgo proporciona mayor flexibilidad al modelo al permitir que las funciones de activación se desplacen, lo cual facilita la representación de relaciones más complejas. Durante el proceso de entrenamiento, tanto los pesos como los valores de \textit{bias} se modifican con el fin de reducir el error de predicción, mejorando así la capacidad del modelo para aprender de los datos y generalizar sobre nuevas instancias \cite{haykin2009neural}.
 
-El proceso de entrenamiento de un modelo neuronal implica la retroalimentación o \textit{backpropagation}, donde el error de la predicción se calcula y se distribuye hacia atrás a través de la red para ajustar los pesos de manera que el modelo se optimice progresivamente, calculando los gradientes. En este sentido, el modelo neuronal tiene la capacidad de adaptarse a distintos tipos de datos y mejorar su rendimiento con el tiempo \cite{nielsen2015neural}.
+El entrenamiento de un modelo neuronal se basa en un mecanismo de retroalimentación conocido como \textit{backpropagation}, en el cual el error de salida se propaga hacia atrás a través de la red para ajustar los parámetros del modelo. Este procedimiento optimiza iterativamente los pesos y los \textit{bias} mediante el cálculo de los gradientes de error, permitiendo al modelo adaptarse progresivamente a los datos de entrada. Gracias a este proceso, las redes neuronales son capaces de mejorar su desempeño conforme se expone a mayores volúmenes de datos y tareas de diversa complejidad \cite{nielsen2015neural}.
+
 
 \subsubsection{Función de pérdida}
-Una función de pérdida es un componente fundamental en el entrenamiento de modelos de aprendizaje automático, cuya finalidad consiste en cuantificar la discrepancia entre las predicciones generadas por el modelo y los valores reales esperados. Esta medida permite guiar el proceso de optimización, ya que el objetivo durante el entrenamiento es minimizar dicha pérdida para mejorar la precisión del modelo \cite{eitca_loss_function}.
+Una función de pérdida es un componente fundamental en el entrenamiento de redes neuronales, cuya finalidad consiste en cuantificar la discrepancia entre las predicciones generadas por el modelo y los valores reales esperados. Esta medida permite guiar el proceso de optimización, ya que el objetivo durante el entrenamiento es minimizar dicha pérdida para mejorar la precisión del modelo \cite{eitca_loss_function}.
 
 Las funciones de pérdida desempeñan un papel central en la formulación matemática del aprendizaje supervisado, al establecer una métrica que penaliza el error cometido por el modelo. Esta penalización permite que los algoritmos de optimización, como el descenso por gradiente, ajusten iterativamente los parámetros del modelo en la dirección que reduce la pérdida total. Para que esta estrategia sea efectiva, la función de pérdida debe poseer ciertas propiedades fundamentales.
 
-Una de estas propiedades fundamentales es la diferenciabilidad, que permite el cálculo de gradientes, necesarios para optimizar los parámetros del modelo mediante técnicas basadas en derivadas, como el descenso por gradiente. Otra de las propiedades esenciales es la convexidad, aunque es deseable, favorece la convergencia hacia un mínimo global, esto se traduce en la práctica, en que muchos modelos no lineales presentan funciones de pérdida no convexas. La estabilidad numérica juega un papel crucial al prevenir errores computacionales derivados de valores extremos o transformaciones exponenciales, garantizando que la precisión se mantenga durante el entrenamiento. Por su parte, la sensibilidad al error como propiedad, asegura que los errores más grandes sean penalizados de manera más significativa, lo que orienta el modelo hacia mejores predicciones. por su parte, la escalabilidad es una característica clave que permite la aplicación eficiente del modelo en contextos con grandes volúmenes de datos y arquitecturas de red complejas.
+Una de estas propiedades fundamentales es la diferenciabilidad, que permite el cálculo de gradientes, necesarios para optimizar los parámetros del modelo mediante técnicas basadas en derivadas, como el descenso por gradiente. Otra de las propiedades esenciales es la convexidad, aunque es deseable, favorece la convergencia hacia un mínimo global, esto se traduce en la práctica, en que muchos modelos no lineales presentan funciones de pérdida no convexas. La estabilidad numérica juega un papel crucial al prevenir errores computacionales derivados de valores extremos o transformaciones exponenciales, garantizando que la precisión se mantenga durante el entrenamiento. Por su parte, la sensibilidad al error como propiedad, asegura que los errores más grandes sean penalizados de manera más significativa, lo que orienta el modelo hacia mejores predicciones. por su parte, la escalabilidad es una característica clave que permite la aplicación eficiente del modelo en contextos con grandes volúmenes de datos y arquitecturas de red complejas. Estas propiedades aseguran que la función de pérdida cumpla su objetivo central, actuar como un mecanismo confiable y eficiente para guiar la actualización de los parámetros del modelo \cite{ultralytics_loss_function}.
 
-Estas propiedades aseguran que la función de pérdida cumpla su objetivo central, actuar como un mecanismo confiable y eficiente para guiar la actualización de los parámetros del modelo \cite{ultralytics_loss_function}.
+En el caso específico del modelo de clasificación binaria, se usa la función \texttt{BCEWithLogitsLoss} (\textit{Binary Cross Entropy with Logits Loss}). Esta función combina en una sola operación dos pasos fundamentales: la aplicación de la función sigmoide y el cálculo de la entropía cruzada binaria. Al integrar ambos procedimientos en una única función, se obtienen varias ventajas prácticas \cite{datacamp_loss_function}. En primer lugar, se mejora la estabilidad numérica, ya que evita operaciones redundantes que podrían dar lugar a pérdidas de precisión, especialmente al manejar las salidas no normalizadas del modelo (\textit{logits}) con valores extremos. En segundo lugar, se optimiza el rendimiento computacional, al reducir el número de transformaciones necesarias antes del cálculo de la pérdida. Finalmente, permite trabajar directamente con \textit{logits}, lo cual simplifica la implementación y reduce errores potenciales derivados de transformaciones incorrectas \cite{bigdatafran_pytorch_classification}.
 
-En el caso específico del modelo de clasificación binaria, se opta por la función BCEWithLogitsLoss (\textit{Binary Cross Entropy with Logits Loss}), que está especialmente recomendada para utilizarse en entornos de aprendizaje automático como PyTorch, entorno utilizado en el desarrollo práctico de este proyecto. Esta función combina en una sola operación dos pasos fundamentales: la aplicación de la función sigmoide y el cálculo de la entropía cruzada binaria. Al integrar ambos procedimientos en una única función, se obtienen varias ventajas prácticas \cite{datacamp_loss_function}.
+La función \texttt{BCEWithLogitsLoss} se define como:
 
-En primer lugar, se mejora la estabilidad numérica, ya que evita operaciones redundantes que podrían dar lugar a pérdidas de precisión, especialmente al manejar las salidas no normalizadas del modelo (\textit{logits}) con valores extremos.
+\[
+\mathcal{L}(x, y) = - \frac{1}{N} \sum_{i=1}^{N} \left[ y_i \cdot \log \left( \sigma(x_i) \right) + (1 - y_i) \cdot \log \left( 1 - \sigma(x_i) \right) \right]
+\]
 
-En segundo lugar, se optimiza el rendimiento computacional, al reducir el número de transformaciones necesarias antes del cálculo de la pérdida. 
+donde \( \sigma(x_i) = \frac{1}{1 + e^{-x_i}} \) es la función sigmoide aplicada al valor \textit{logit} \( x_i \), y \( y_i \in \{0, 1\} \) es la etiqueta binaria correspondiente. Sin embargo, en la implementación práctica, para mejorar la estabilidad numérica, esta fórmula se reescribe como:
 
-Finalmente, permite trabajar directamente con \textit{logits}, lo cual simplifica la implementación y reduce errores potenciales derivados de transformaciones incorrectas \cite{bigdatafran_pytorch_classification}.
+\[
+\mathcal{L}(x, y) = \frac{1}{N} \sum_{i=1}^{N} \left[ \max(x_i, 0) - x_i y_i + \log \left( 1 + e^{-\lvert x_i \rvert} \right) \right]
+\]
+
 
 
 En el caso del modelo de clasificación multiclase, se emplea la función \texttt{CrossEntropyLoss}, recomendada específicamente para tareas donde el objetivo es predecir una única clase entre múltiples categorías posibles. Esta función de pérdida, integrada en el entorno de desarrollo \texttt{PyTorch}, combina de forma eficiente dos operaciones clave: la aplicación de la función \textit{Softmax} para normalizar los \textit{logits} del modelo en una distribución de probabilidad, y el cálculo de la entropía cruzada entre dicha distribución y las etiquetas verdaderas codificadas como enteros \cite{paszke2019pytorch}.
 
-Esta integración conlleva múltiples beneficios prácticos. En primer lugar, mejora la estabilidad numérica al evitar la explicitación separada del \textit{Softmax}, que podría introducir errores de redondeo o valores infinitos al procesar \textit{logits} extremos. En segundo lugar, incrementa la eficiencia computacional, al consolidar ambas operaciones en un único paso optimizado internamente por \textit{PyTorch}. Finalmente, facilita la implementación, ya que permite trabajar directamente con salidas no normalizadas del modelo y etiquetas enteras, sin requerir codificaciones adicionales como \textit{one-hot}, reduciendo así la probabilidad de errores en la fase de entrenamiento.
+La función de pérdida \texttt{CrossEntropyLoss} se define como:
+
+\[
+\mathcal{L}(x, y) = - \sum_{i=1}^{C} y_i \log \left( \frac{e^{x_i}}{\sum_{j=1}^{C} e^{x_j}} \right)
+\]
+
+donde:
+\begin{itemize}
+  \item \( C \) es el número total de clases,
+  \item \( x_i \) es el \textit{logit} correspondiente a la clase \( i \),
+  \item \( y_i \in \{0, 1\} \) es la etiqueta codificada en\textit{ one-hot} para la clase verdadera.
+\end{itemize}
+
+En la práctica, si se tiene una etiqueta \( y \in \{1, 2, \dots, C\} \) en lugar de codificación \textit{one-hot}, la pérdida se reescribe como:
+
+\[
+\mathcal{L}(x, y) = - \log \left( \frac{e^{x_{y}}}{\sum_{j=1}^{C} e^{x_j}} \right) = - x_{y} + \log \left( \sum_{j=1}^{C} e^{x_j} \right)
+\]
+
+
+Esta función conlleva múltiples beneficios prácticos. En primer lugar, mejora la estabilidad numérica al evitar la explicitación separada del \textit{Softmax}, que podría introducir errores de redondeo o valores infinitos al procesar \textit{logits} extremos. En segundo lugar, incrementa la eficiencia computacional, al consolidar ambas operaciones en un único paso optimizado internamente por \texttt{PyTorch}. Finalmente, facilita la implementación, ya que permite trabajar directamente con salidas no normalizadas del modelo y etiquetas enteras, sin requerir codificaciones adicionales como \textit{one-hot}, reduciendo así la probabilidad de errores en la fase de entrenamiento.
 
 
 
 \subsubsection{Algoritmo de optimización}\label{sec:alg-opt}
-Un algoritmo de optimización es un conjunto de procedimientos matemáticos y computacionales cuyo propósito es encontrar el mejor valor posible (o el más cercano a este) para un conjunto de parámetros o variables dentro de un problema específico. Estos algoritmos buscan minimizar o maximizar una función objetivo, que representa el rendimiento del sistema o modelo a optimizar. En el contexto de entrenamiento de redes neuronales, la función objetivo comúnmente se refiere a una función de pérdida, que cuantifica la diferencia entre las predicciones del modelo y las etiquetas reales de los datos. Los algoritmos de optimización ajustan los parámetros, pesos y sesgos, de la red neuronal durante el proceso de entrenamiento con el fin de reducir dicha diferencia \cite{goodfellow2016deep}.
+Un algoritmo de optimización es un conjunto de procedimientos matemáticos y computacionales cuyo propósito es encontrar el mejor valor posible (o el más cercano a este) de una función para un conjunto de parámetros o variables dentro de un problema específico. Estos algoritmos buscan minimizar o maximizar una función objetivo, que representa el rendimiento del sistema o modelo a optimizar. En el contexto de entrenamiento de redes neuronales, la función objetivo comúnmente se refiere a una función de pérdida, que cuantifica la diferencia entre las predicciones del modelo y las etiquetas reales de los datos. Los algoritmos de optimización ajustan los parámetros, pesos y sesgos, de la red neuronal durante el proceso de entrenamiento con el fin de reducir dicha diferencia \cite{goodfellow2016deep}.
 
 
-El funcionamiento de un algoritmo de optimización se basa en un proceso iterativo en el que se ajustan los parámetros de la red neuronal utilizando información acerca del gradiente de la función de pérdida con respecto a estos parámetros. En este contexto, la retropropagación juega un papel crucial, ya que es el método utilizado para calcular esos gradientes. A través de la retropropagación, el error de la red se propaga hacia atrás desde la capa de salida hasta las capas anteriores, permitiendo calcular cómo cada parámetro contribuye al error total. Posteriormente, tal y como se muestra en la Figura \ref{fig:esq-Optimizacion}, el algoritmo de optimización utiliza estos gradientes calculados por la retropropagación para actualizar los parámetros de la red en la dirección opuesta al gradiente, con el objetivo de reducir progresivamente la pérdida. Generalmente, se utilizan técnicas de descenso de gradiente para realizar estos ajustes. Durante cada iteración, el algoritmo calcula el gradiente de la función de pérdida a través de la retropropagación y lo utiliza para modificar los parámetros de manera eficiente, buscando alcanzar el mínimo global o local de la función de pérdida \cite{bottou2010large}.
+El funcionamiento de un algoritmo de optimización se basa en un proceso iterativo en el que se ajustan los pesos de la red neuronal utilizando información acerca del gradiente de la función de pérdida con respecto a estos parámetros. En este contexto, la retropropagación juega un papel crucial, ya que es el método utilizado para calcular esos gradientes. A través de la retropropagación, el error de la red se propaga hacia atrás desde la capa de salida hasta las capas anteriores, permitiendo calcular cómo cada parámetro contribuye al error total. Posteriormente, tal y como se muestra en la Figura \ref{fig:esq-Optimizacion}, el algoritmo de optimización utiliza estos gradientes calculados por la retropropagación para actualizar los parámetros de la red en la dirección opuesta al gradiente, con el objetivo de reducir progresivamente la pérdida. Generalmente, se utilizan técnicas de descenso de gradiente para realizar estos ajustes. Durante cada iteración, el algoritmo calcula el gradiente de la función de pérdida a través de la retropropagación y lo utiliza para modificar los parámetros de manera eficiente, buscando alcanzar el mínimo global o local de la función de pérdida \cite{bottou2010large}.
 
 \begin{figure}[H]
     \centering
@@ -72,26 +112,26 @@ El funcionamiento de un algoritmo de optimización se basa en un proceso iterati
 Las características clave de los algoritmos de optimización incluyen la tasa de aprendizaje, la capacidad para escapar de mínimos locales, y la convergencia en un tiempo razonable. La tasa de aprendizaje (\textit{learning rate} o lr) es un hiperparámetro crítico que determina la magnitud de los ajustes que se realizan en los parámetros del modelo durante cada iteración. Si la tasa de aprendizaje es muy alta, el algoritmo puede saltar el mínimo global, por otro lado, si es muy baja, el proceso puede volverse muy lento. Los métodos de optimización varían en cuanto a la forma en que gestionan estas características, algunos métodos mejoran la eficiencia utilizando técnicas como el momento, la normalización del gradiente, o el uso de segunda orden \cite{kingma2014adam}.
 
 
-La importancia de los algoritmos de optimización en el entrenamiento de redes neuronales es fundamental, dado que la capacidad de un modelo para aprender de los datos y generalizar de manera efectiva depende en gran medida de la optimización adecuada de los parámetros de la red. Un algoritmo de optimización correctamente elegido y configurado puede determinar la diferencia entre un modelo con un rendimiento subóptimo y uno que alcanza altos niveles de precisión y eficiencia. En consecuencia, la selección y ajuste apropiado de estos algoritmos se considera un aspecto crucial para el desarrollo exitoso de modelos de aprendizaje automático y redes neuronales. \cite{goodfellow2016deep}.
+La importancia de los algoritmos de optimización en el entrenamiento de redes neuronales es fundamental, dado que la capacidad de un modelo para aprender de los datos y generalizar de manera efectiva depende en gran medida de la optimización adecuada de los parámetros de la red. Un algoritmo de optimización correctamente elegido y configurado puede determinar la diferencia entre un modelo con un rendimiento subóptimo y uno que alcanza altos niveles de precisión y eficiencia. En consecuencia, la selección y ajuste apropiado de estos algoritmos se considera un aspecto crucial para el desarrollo exitoso de redes neuronales. \cite{goodfellow2016deep}.
 
-Existen varios algoritmos de optimización ampliamente utilizados en el entrenamiento de redes neuronales. Entre los más comunes se encuentran el Descenso de Gradiente Estocástico (Stochastic Gradient Descent, SGD), Momentum, Adagrad, RMSprop y Adam. El SGD es uno de los más simples y fundacionales, pero sufre de inestabilidad debido a su naturaleza estocástica y la falta de adaptación de la tasa de aprendizaje. Momentum ayuda a mejorar la convergencia al incorporar la información de los gradientes pasados, lo que permite que el modelo escape de los mínimos locales más fácilmente. Adagrad adapta la tasa de aprendizaje para cada parámetro, mientras que RMSprop ajusta la tasa de aprendizaje utilizando una media móvil del gradiente, lo que mejora la estabilidad \cite{bottou2010large}.
+Existen varios algoritmos de optimización ampliamente utilizados en el entrenamiento de redes neuronales. Entre los más comunes se encuentran el Descenso de Gradiente Estocástico (\textit{Stochastic Gradient Descent}, SGD), \textit{Momentum}, \textit{Adagrad}, \textit{RMSprop} y \textit{Adam}. El SGD es uno de los más simples y fundacionales, pero sufre de inestabilidad debido a su naturaleza estocástica y la falta de adaptación de la tasa de aprendizaje. \textit{Momentum} ayuda a mejorar la convergencia al incorporar la información de los gradientes pasados, lo que permite que el modelo escape de los mínimos locales más fácilmente. \textit{Adagrad} adapta la tasa de aprendizaje para cada parámetro, mientras que \textit{RMSprop} ajusta la tasa de aprendizaje utilizando una media móvil del gradiente, lo que mejora la estabilidad \cite{bottou2010large}.
 
-\paragraph{Sobreajuste}
+%\paragraph{Sobreajuste}
 El sobreajuste, o \textit{overfitting}, ocurre cuando un modelo de aprendizaje, como una red neuronal, ajusta excesivamente los parámetros a los datos de entrenamiento, capturando no solo la señal subyacente sino también el ruido o las fluctuaciones aleatorias. Esto resulta en un modelo que tiene un rendimiento excelente en el conjunto de entrenamiento pero que pierde capacidad de generalización, es decir, muestra un rendimiento deficiente en datos no vistos previamente, como los del conjunto de prueba. El sobreajuste es un desafío común en el entrenamiento de modelos complejos y puede mitigarse mediante técnicas como la regularización, el uso de datos adicionales o el ajuste adecuado de los hiperparámetros \cite{bishop2006pattern}.
 
 Sin embargo, el algoritmo más recomendado para entrenar un modelo de clasificación binaria es Adam (\textit{Adaptive Moment Estimation}). Adam combina las ventajas del descenso de gradiente estocástico y el momento, adaptando la tasa de aprendizaje de manera eficiente para cada parámetro del modelo. Esto lo hace particularmente adecuado para tareas de clasificación binaria, ya que garantiza una convergencia más rápida y estable, minimizando el riesgo de sobreajuste (\textit{overfitting}) mientras se optimizan los parámetros del modelo. Sin embargo, una variante reciente de Adam, conocida como AdamW, introduce un cambio importante en la forma en que se maneja la regularización de los parámetros. AdamW separa explícitamente la actualización de los pesos y la regularización (típicamente L2 o \textit{weight decay}), lo que mejora la eficacia de la regularización sin interferir con la adaptación de la tasa de aprendizaje.
 
-\paragraph{Regularización}
-La regularización es una técnica utilizada en el entrenamiento de modelos de aprendizaje automático, como redes neuronales, para prevenir el sobreajuste. Consiste en agregar un término adicional a la función de pérdida que penaliza los valores de los parámetros del modelo, de manera que se favorezcan soluciones más simples y generalizables. Entre las formas más comunes de regularización se encuentran la regularización L1 (Lasso), que promueve la dispersión de los coeficientes hacia cero, y la regularización L2 (Ridge), que penaliza los grandes valores de los parámetros. La regularización actúa como un control de complejidad, ayudando al modelo a generalizar mejor a datos no vistos, lo que mejora su rendimiento en tareas de predicción y clasificación \cite{bishop2006pattern}.
+%\paragraph{Regularización}
+La regularización es una técnica utilizada en el entrenamiento de redes neuronales, para prevenir el sobreajuste. Consiste en agregar un término adicional a la función de pérdida que penaliza los valores de los parámetros del modelo, de manera que se favorezcan soluciones más simples y generalizables. Entre las formas más comunes de regularización se encuentran la regularización L1 (Lasso) y la regularización L2 (Ridge). La regularización L1 añade a la función de pérdida una penalización proporcional a la suma de los valores absolutos de los pesos. Esto tiende a hacer que muchos pesos se vuelvan exactamente cero, lo que induce \textit{sparsity} (modelo más simple y con menos conexiones relevantes). Por su parte, la regularización L2, añade una penalización proporcional a la suma de los cuadrados de los pesos. No anula completamente los pesos, pero tiende a hacerlos más pequeños, distribuyendo la carga entre varias conexiones. Por lo que la regularización en general, actúa como un control de complejidad, ayudando al modelo a generalizar mejor a datos no vistos, lo que mejora su rendimiento en tareas de predicción y clasificación \cite{bishop2006pattern}.
 
-Aunque ambos algoritmos, Adam y AdamW, tienen un rendimiento destacado en tareas de clasificación binaria, AdamW se ha demostrado más eficaz en la prevención de sobreajuste en redes neuronales complejas. Esto se debe a su tratamiento explícito del \textit{weight decay}, lo que permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto. Sin embargo, Adam sigue siendo una opción popular y efectiva, especialmente cuando se trabaja con redes neuronales menos complejas o cuando se desea una mayor estabilidad y rapidez de convergencia. En general, AdamW es preferido en situaciones donde la regularización adecuada es crucial, pero Adam sigue siendo una opción sólida y eficiente \cite{kingma2014adam}.
+Aunque ambos algoritmos, \textit{Adam} y \textit{AdamW}, tienen un rendimiento destacado en tareas de clasificación binaria, \textit{AdamW} se ha demostrado más eficaz en la prevención de sobreajuste en redes neuronales complejas. Esto se debe a su tratamiento explícito del \textit{weight decay}, lo que permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto. Sin embargo, \textit{Adam} sigue siendo una opción popular y efectiva, especialmente cuando se trabaja con redes neuronales menos complejas o cuando se desea una mayor estabilidad y rapidez de convergencia. En general, \textit{AdamW} es preferido en situaciones donde la regularización adecuada es crucial, pero \textit{Adam} sigue siendo una opción sólida y eficiente \cite{kingma2014adam}.
 
 
 \subsection{¿Qué tipos de modelos neuronales existen?}\label{subsec.tiposmodel}
 
 Los modelos neuronales pueden clasificarse según su estructura, la forma en que procesan la información y la aplicación específica a la que están destinados. Estos modelos neuronales son fundamentales para resolver una variedad de problemas en áreas relacionadas con la inteligencia artificial como la visión por computadora, el procesamiento del lenguaje natural y el reconocimiento de patrones \cite{bishop2006pattern}.
 
-Uno de los tipos más comunes de modelos neuronales es el perceptrón multicapa (\textit{Multilayer Perceptron}, MLP), que está formado por varias capas de neuronas organizadas en una estructura jerárquica. Cada capa en un MLP recibe la salida de la capa anterior y la procesa mediante una función de activación antes de pasar el resultado a la siguiente capa. Este tipo de red se utiliza principalmente para tareas de clasificación y regresión, y su entrenamiento se realiza utilizando algoritmos como el de retropropagación. Es el tipo de red que se utiliza en este proyecto para obtener un modelo capaz de detectar instrusiones en una red informática \cite{goodfellow2016deep}.
+Uno de los tipos más comunes de modelos neuronales es el perceptrón multicapa (\textit{Multilayer Perceptron}, MLP), que está formado por varias capas de neuronas organizadas en una estructura jerárquica. Cada capa en un MLP, como el que se muestra en la Figura \ref{fig:esq-capas}, recibe la salida de la capa anterior y la procesa mediante una función de activación antes de pasar el resultado a la siguiente capa. Este tipo de red se utiliza principalmente para tareas de clasificación y regresión, y su entrenamiento se realiza utilizando algoritmos como el de retropropagación. Es el tipo de red que se utiliza en este proyecto para obtener un modelo capaz de detectar instrusiones en una red informática \cite{goodfellow2016deep}.
 
 Otro tipo importante de modelo neuronal es la red neuronal convolucional (\textit{Convolutional Neural Network}, CNN), que está diseñada específicamente para procesar datos con una estructura de cuadricula, como las imágenes. En una CNN, las neuronas están organizadas en capas convolucionales que aplican filtros a los datos de entrada para extraer características relevantes, como bordes, texturas o formas. Esta estructura permite que las CNN sean altamente eficaces para tareas como el reconocimiento de imágenes y la visión por computadora \cite{goodfellow2016deep}.
 
@@ -113,14 +153,14 @@ En un enfoque más avanzado, existen las redes generativas antagónicas (GAN), q
 \subsection{Técnicas útiles para obtener modelos que converjan correctamente}
 
 \subsubsection{Validación cruzada}
-La validación cruzada consiste en dividir los datos de entrenamiento en n folds que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones, en este trabajo, se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación \cite{hastie2009elements}.
+La validación cruzada consiste en dividir los datos de entrenamiento en n \textit{folds} que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones, en este trabajo, se extraen las medias de las métricas sobre los datos que no se han usado para entrenar, obtenidas con cada \textit{fold} durante la validación \cite{hastie2009elements}.
 
 \subsubsection{ReLU \textit{Rectified Linear Unit}}
 
-La ReLU es una función de activación ampliamente utilizada en redes neuronales profundas. Su definición matemática es sencilla: \textit{f(x) = max(0, x)}, lo que significa que devuelve el valor de entrada si este es positivo y cero en caso contrario. La principal utilidad de la ReLU radica en su capacidad para introducir no linealidades en los modelos, lo cual permite que las redes neuronales aprendan relaciones complejas entre los datos. A diferencia de funciones de activación anteriores desarrolladas previamente a la ReLU, como la sigmoide o la tangente hiperbólica, ReLU es computacionalmente eficiente y ayuda a mitigar el problema del \textit{vanishing gradient} (suceso por en el que los gradientes que se propagan hacia atrás a través de las capas se vuelven cada vez más pequeños a medida que se avanza hacia las primeras capas de la red), facilitando el entrenamiento de redes profundas. Es una de las funciones de activación más simples y con mejor rendimiento en la actualidad \cite{nair2010relu}.
+La función de activación ReLu (\textit{Rectified Linear Unit}) ampliamente utilizada en redes neuronales profundas. Su definición matemática es sencilla: \textit{f(x) = max(0, x)}, lo que significa que devuelve el valor de entrada si este es positivo y cero en caso contrario. La principal utilidad de la ReLU radica en su capacidad para introducir no linealidades en los modelos, lo cual permite que las redes neuronales aprendan relaciones complejas entre los datos. A diferencia de funciones de activación desarrolladas históricamemte antes de la ReLU, como la sigmoide o la tangente hiperbólica, ReLU es computacionalmente eficiente y ayuda a mitigar el problema del \textit{vanishing gradient} (suceso por en el que los gradientes que se propagan hacia atrás a través de las capas se vuelven cada vez más pequeños a medida que se avanza hacia las primeras capas de la red), facilitando el entrenamiento de redes profundas. Es una de las funciones de activación más simples y con mejor rendimiento en la actualidad \cite{nair2010relu}.
 
-\subsubsection{Batch Normalization}
-\textit{Batch Normalization} es una técnica que normaliza las activaciones de una capa para que tengan media cercana a 0 y varianza cercana a 1, calculadas a partir del \textit{batch} actual del entrenamiento del modelo. Aplicar \texttt{BatchNorm } tras la primera capa en un modelo de clasificación multiclase ayuda a estabilizar, acelerar y regularizar el entrenamiento, mejorando la capacidad del modelo para aprender buenas representaciones desde las primeras fases del entrenamiento \cite{ioffe2015batch}.
+\subsubsection{Batch Normalization}\label{subsubsection:bn}
+\textit{Batch Normalization} es una técnica que normaliza las activaciones de una capa para que tengan media cercana a 0 y varianza cercana a 1, calculadas a partir del \textit{batch} actual del entrenamiento del modelo. Aplicar \textit{Batch Normalization} tras la primera capa en un modelo de clasificación multiclase ayuda a estabilizar, acelerar y regularizar el entrenamiento, mejorando la capacidad del modelo para aprender buenas representaciones desde las primeras fases del entrenamiento \cite{ioffe2015batch}.
 
 \subsubsection{Dropout}
 \textit{Dropout} es una técnica de regularización utilizada en redes neuronales para reducir el sobreajuste durante el entrenamiento. La función \texttt{Dropout()}, implementada en bibliotecas como \texttt{TensorFlow} y \texttt{PyTorch}, actúa introduciendo aleatoriamente una probabilidad de desactivación sobre las neuronas de una capa determinada. Durante cada iteración de entrenamiento, un subconjunto aleatorio de neuronas es temporalmente desactivado (es decir, sus salidas se anulan) con una probabilidad definida, denominada tasa de \textit{dropout} (\textit{dropout rate}), sin afectar la arquitectura del modelo ni sus pesos de forma permanente \cite{srivastava2014dropout}. Los principales beneficios de utilizar \textit{dropout} en un modelo de clasificación multicase con unos datos de entrenamiento muy desbalanceados son:
@@ -140,7 +180,7 @@ La ReLU es una función de activación ampliamente utilizada en redes neuronales
 \begin{itemize}
 	\item Contribuye a reducir el sesgo del modelo hacia las clases mayoritarias.
 
-	\item Mejora el rendimiento en métricas como \textit{recall} y F1-score macro, al equilibrar el conjunto de entrenamiento.
+	\item Mejora el rendimiento en métricas como \textit{recall} y F1-score macro, explicadas en la Sección \ref{sec:metricas-mul}, al equilibrar el conjunto de entrenamiento. 
 
 	\item Favorece una mejor generalización en la predicción de clases minoritarias, al ampliar su representación en el espacio de características.
 \end{itemize}
@@ -156,7 +196,7 @@ Para evitar el sobreajuste del modelo y obtener valores de las predicciones más
 Como se ha comentado previamente, los parámetros de un modelo neuronal son los valores ajustables que el modelo aprende a partir de los datos durante el proceso de entrenamiento. Estos parámetros incluyen los pesos y sesgos de las conexiones entre las neuronas de las diferentes capas de la red neuronal. Los pesos determinan la importancia de las entradas de cada neurona, mientras que los sesgos permiten ajustar la salida de cada neurona antes de la activación. Como se explica en los apartado anteriores, el aprendizaje de estos parámetros se realiza mediante algoritmos de optimización como el gradiente descendente, los cuales buscan minimizar la función de pérdida. \cite{goodfellow2016deep}
 
 
-Los hiperparámetros son los valores que se configuran antes del entrenamiento y no se ajustan directamente durante el proceso de aprendizaje. Este tipo de parámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. A diferencia de los parámetros, los hiperparámetros deben ser establecidos manualmente o mediante técnicas de optimización específicas, como la búsqueda en cuadrícula o la búsqueda aleatoria, técnicas que se aplcian en las siguientes secciones de este documento. Los hiperparámetros influyen en aspectos clave como la velocidad de aprendizaje, la regularización y la estructura de la red \cite{chollet2018deep}. Los más importantes son:
+Los hiperparámetros son los valores que se configuran antes del entrenamiento y no se ajustan directamente durante el proceso de aprendizaje. Este tipo de parámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. A diferencia de los parámetros, los hiperparámetros deben ser establecidos manualmente o mediante técnicas de optimización específicas, como la búsqueda en cuadrícula o la búsqueda aleatoria, técnicas que se aplcian en las siguientes secciones de este documento. Los hiperparámetros influyen en aspectos clave como la velocidad de aprendizaje, la regularización y la estructura de la red \cite{chollet2018deep}. Los más importantes en el MLP son:
 
 \begin{itemize}
 
@@ -180,6 +220,12 @@ En el contexto del aprendizaje automático, \texttt{PyTorch} se utiliza principa
 
 Entre sus principales características se destacan la compatibilidad con aceleración por GPU, la construcción dinámica de modelos mediante el mecanismo de \textit{define-by-run}, la integración con bibliotecas como \texttt{TorchVision} para visión por computadora y \texttt{TorchText} para procesamiento de lenguaje natural, así como herramientas para la depuración y trazabilidad del entrenamiento. Además, \texttt{PyTorch} se integra con plataformas como \texttt{TensorBoard} y \texttt{Weights \& Biases} para monitorización avanzada del rendimiento de los modelos \cite{gross2021pytorchbook}.
 
+En el contexto del aprendizaje automático y el procesamiento de datos numéricos, un tensor es una estructura de datos multidimensional que generaliza los conceptos de escalares (tensores de orden 0), vectores (orden 1) y matrices (orden 2) a dimensiones superiores. Los tensores permiten representar datos complejos de forma compacta y eficiente, siendo fundamentales para operaciones algebraicas utilizadas en redes neuronales. Un tensor puede considerarse como una colección de elementos numéricos organizados en un espacio de \textit{n} dimensiones, lo cual posibilita la ejecución de operaciones paralelas en lotes de datos durante el entrenamiento de modelos \cite{goodfellow2016deep}.
+
+Desde la perspectiva de la programación orientada a objetos (POO), un tensor se implementa típicamente como una instancia de una clase que encapsula tanto los datos como los métodos que operan sobre ellos. Esta abstracción permite que las bibliotecas como \texttt{PyTorch} y \texttt{TensorFlow} ofrezcan una interfaz coherente para manipular tensores, incluyendo funciones como transposición, difusión, operaciones elementales y derivación automática. Gracias a este enfoque, los tensores no solo representan estructuras matemáticas, sino también objetos programables que responden a métodos y se integran con otros componentes del sistema de manera modular y extensible \cite{chollet2018deep}.
+
+\section{Clasificación con redes neuronales}
+La clasificación con redes neuronales es una técnica clave en el aprendizaje supervisado, utilizada para asignar etiquetas a nuevas instancias a partir de ejemplos previamente etiquetados. En esta sección, se exploran los métodos para evaluar la efectividad de los modelos de clasificación, incluyendo el uso de matrices de confusión, y se abordan las métricas más comunes para medir el rendimiento de modelos en tareas de clasificación binaria y multiclase.
 
 \subsection{Matriz de confusión para clasificación binaria} \label{sec.matriz-consfusion}
 En esta sección se explica en que consiste una matriz de confusión y las variaciones que existen de las matrices de confusión en función del tipo de modelo neuronal de clasificación que se entrene. Son una herramienta fundamental utilizada en el campo del aprendizaje automático y la clasificación, especialmente cuando se evalúan modelos de clasificación como el que se propone en este proyecto.
@@ -219,7 +265,7 @@ Las métricas en el contexto de los modelos de aprendizaje automático son herra
 
 El uso adecuado de las métricas es crucial, ya que guían las decisiones sobre el ajuste y la optimización del modelo. Sin métricas claras, el proceso de evaluación se vuelve subjetivo y difícil de manejar. Además, las métricas permiten realizar comparaciones entre diferentes modelos o configuraciones, facilitando la selección del modelo más adecuado para una tarea específica. Una interpretación correcta de las métricas ayuda a evitar problemas como el sobreajuste o el subajuste, y garantiza que el modelo generalice bien a nuevos datos \cite{goodfellow2016deep}.
 
-Para evaluar el desempeño del modelo de detección y clasificación de ataques, se utilizan las siguientes métricas derivadas de la matriz de confusión.
+Para evaluar el desempeño del modelo de detección y clasificación de ataques, se utilizan las siguientes métricas derivadas de la matriz de confusión que se explican en el contexto del principal objetivo de este proyecto, es decir, la detección de intrusiones en una red.
 
 
 \begin{itemize}
@@ -298,9 +344,9 @@ En el contexto de detección de intrusiones:
 Como se explica en la sección anterior \ref{sec.matriz-consfusion} \nameref{sec.matriz-consfusion}, la matriz de confusión es una representación tabular que permite evaluar el rendimiento de un modelo de clasificación. Esta matriz compara las predicciones del modelo con los valores reales (verdaderos) y proporciona una visión detallada sobre los errores cometidos. Esta matriz permite calcular diversas métricas de evaluación del modelo, que son esenciales para entender la efectividad del modelo en tareas de clasificación.
 
 
-Para un modelo con múltiples clases, como es el caso del modelo de que se desarrolla en este docuimento, se debe tener en cuenta que en un modelo neuronal con 9 salidas, la matriz tiene las siguientes interpretaciones:
+Para un modelo con múltiples clases, como es el caso del modelo de que se desarrolla en este docuimento, se debe tener en cuenta que en un modelo neuronal que clasifica nueve clases diferentes, la matriz tiene las siguientes interpretaciones:
 \begin{itemize}
-	\item Diagonal principal: Cada celda de la diagonal principal de la matriz representa cuántas veces la clase real fue correctamente predicha como clase. Este es el caso de las instancias que fueron correctamente clasificadas, y es lo más cercano a un "verdadero positivo" para esa clase específica. Sin embargo, en clasificación multiclase, se suele hablar de aciertos o instancias correctamente clasificadas para cada clase.
+	\item Diagonal principal: Cada celda de la diagonal principal de la matriz representa cuántas veces la clase real fue correctamente predicha. Este es el caso de las instancias que fueron correctamente clasificadas, y es lo más cercano a un <<verdadero positivo>> para esa clase específica. Sin embargo, en clasificación multiclase, se suele hablar de aciertos o instancias correctamente clasificadas para cada clase.
 	\item Fuera de la diagonal: Las celdas fuera de la diagonal representan falsas clasificaciones. Es decir, representan cuántas veces una instancia de la clase real fue predicha incorrectamente como otra clase.
 
 \end{itemize}
@@ -310,25 +356,26 @@ Rellenando una matriz con la información dada, se obtiene la matriz de confusi�
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|>{\raggedright\arraybackslash}m{2.5cm}|*{9}{>{\centering\arraybackslash}m{2cm}|}}
 \hline
- & \textbf{Predicción Clase 1} & \textbf{Predicción Clase 2} & \textbf{Predicción Clase 3} & \textbf{Predicción Clase 4} & \textbf{Predicción Clase 5} & \textbf{Predicción Clase 6} & \textbf{Predicción Clase 7} & \textbf{Predicción Clase 8} & \textbf{Predicción Clase 9} \\ \hline
-\textbf{Real Clase 1} & VP$_{1}$ & FP$_{12}$ & FP$_{13}$ & FP$_{14}$ & FP$_{15}$ & FP$_{16}$ & FP$_{17}$ & FP$_{18}$ & FP$_{19}$ \\ \hline
-\textbf{Real Clase 2} & FP$_{21}$ & VP$_{2}$ & FP$_{23}$ & FP$_{24}$ & FP$_{25}$ & FP$_{26}$ & FP$_{27}$ & FP$_{28}$ & FP$_{29}$ \\ \hline
-\textbf{Real Clase 3} & FP$_{31}$ & FP$_{32}$ & VP$_{3}$ & FP$_{34}$ & FP$_{35}$ & FP$_{36}$ & FP$_{37}$ & FP$_{38}$ & FP$_{39}$ \\ \hline
-\textbf{Real Clase 4} & FP$_{41}$ & FP$_{42}$ & FP$_{43}$ & VP$_{4}$ & FP$_{45}$ & FP$_{46}$ & FP$_{47}$ & FP$_{48}$ & FP$_{49}$ \\ \hline
-\textbf{Real Clase 5} & FP$_{51}$ & FP$_{52}$ & FP$_{53}$ & FP$_{54}$ & VP$_{5}$ & FP$_{56}$ & FP$_{57}$ & FP$_{58}$ & FP$_{59}$ \\ \hline
-\textbf{Real Clase 6} & FP$_{61}$ & FP$_{62}$ & FP$_{63}$ & FP$_{64}$ & FP$_{65}$ & VP$_{6}$ & FP$_{67}$ & FP$_{68}$ & FP$_{69}$ \\ \hline
-\textbf{Real Clase 7} & FP$_{71}$ & FP$_{72}$ & FP$_{73}$ & FP$_{74}$ & FP$_{75}$ & FP$_{76}$ & VP$_{7}$ & FP$_{78}$ & FP$_{79}$ \\ \hline
-\textbf{Real Clase 8} & FP$_{81}$ & FP$_{82}$ & FP$_{83}$ & FP$_{84}$ & FP$_{85}$ & FP$_{86}$ & FP$_{87}$ & VP$_{8}$ & FP$_{89}$ \\ \hline
-\textbf{Real Clase 9} & FP$_{91}$ & FP$_{92}$ & FP$_{93}$ & FP$_{94}$ & FP$_{95}$ & FP$_{96}$ & FP$_{97}$ & FP$_{98}$ & VP$_{9}$ \\ \hline
+  & \textbf{Predicción Clase 1} & \textbf{Predicción Clase 2} & \textbf{Predicción Clase 3} & \textbf{Predicción Clase 4} & \textbf{Predicción Clase 5} & \textbf{Predicción Clase 6} & \textbf{Predicción Clase 7} & \textbf{Predicción Clase 8} & \textbf{Predicción Clase 9} \\ \hline
+\textbf{Real Clase 1} & \cellcolor{green!20}VP$_{1}$ & FP$_{12}$ & FP$_{13}$ & FP$_{14}$ & FP$_{15}$ & FP$_{16}$ & FP$_{17}$ & FP$_{18}$ & FP$_{19}$ \\ \hline
+\textbf{Real Clase 2} & FP$_{21}$ & \cellcolor{green!20}VP$_{2}$ & FP$_{23}$ & FP$_{24}$ & FP$_{25}$ & FP$_{26}$ & FP$_{27}$ & FP$_{28}$ & FP$_{29}$ \\ \hline
+\textbf{Real Clase 3} & FP$_{31}$ & FP$_{32}$ & \cellcolor{green!20}VP$_{3}$ & FP$_{34}$ & FP$_{35}$ & FP$_{36}$ & FP$_{37}$ & FP$_{38}$ & FP$_{39}$ \\ \hline
+\textbf{Real Clase 4} & FP$_{41}$ & FP$_{42}$ & FP$_{43}$ & \cellcolor{green!20}VP$_{4}$ & FP$_{45}$ & FP$_{46}$ & FP$_{47}$ & FP$_{48}$ & FP$_{49}$ \\ \hline
+\textbf{Real Clase 5} & FP$_{51}$ & FP$_{52}$ & FP$_{53}$ & FP$_{54}$ & \cellcolor{green!20}VP$_{5}$ & FP$_{56}$ & FP$_{57}$ & FP$_{58}$ & FP$_{59}$ \\ \hline
+\textbf{Real Clase 6} & FP$_{61}$ & FP$_{62}$ & FP$_{63}$ & FP$_{64}$ & FP$_{65}$ & \cellcolor{green!20}VP$_{6}$ & FP$_{67}$ & FP$_{68}$ & FP$_{69}$ \\ \hline
+\textbf{Real Clase 7} & FP$_{71}$ & FP$_{72}$ & FP$_{73}$ & FP$_{74}$ & FP$_{75}$ & FP$_{76}$ & \cellcolor{green!20}VP$_{7}$ & FP$_{78}$ & FP$_{79}$ \\ \hline
+\textbf{Real Clase 8} & FP$_{81}$ & FP$_{82}$ & FP$_{83}$ & FP$_{84}$ & FP$_{85}$ & FP$_{86}$ & FP$_{87}$ & \cellcolor{green!20}VP$_{8}$ & FP$_{89}$ \\ \hline
+\textbf{Real Clase 9} & FP$_{91}$ & FP$_{92}$ & FP$_{93}$ & FP$_{94}$ & FP$_{95}$ & FP$_{96}$ & FP$_{97}$ & FP$_{98}$ & \cellcolor{green!20}VP$_{9}$ \\ \hline
 \end{tabular}
 }
 \caption{Matriz de confusión para clasificación con 9 clases.}
 \label{tab:confusion_matrix_9class}
 \end{table}
 
-Para facilitar la comprensión de los datos, en las siguientes secciones se utilizará la matriz de confusión con los datos obtenidos. En estas representaciones, las clases del modelo se encuentra codificadas de la siguiente manera:
+
+Para facilitar la comprensión de los datos, en las siguientes secciones se utilizará la matriz de confusión con los datos obtenidos. En estas representaciones, las clases del modelo, que se corresponden con las clases del \textit{dataset} utilizado y que se mencionan en la Sección \ref{sec.tipo-ataques}, se encuentra codificadas de la siguiente manera:
 
 \begin{itemize}
 	\item Clase 0: \textit{Analysis},
@@ -371,6 +418,11 @@ Las métricas macro-promediadas se calculan evaluando individualmente el rendimi
 \begin{equation}
 \text{Precision}_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} \text{Precision}_c
 \end{equation}
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases en el problema de clasificación.
+    \item \( \text{Precision}_c \) es la precisión calculada para la clase \( c \).
+\end{itemize}
 
 La precisión macro evalúa la proporción de verdaderos positivos entre todas las predicciones positivas, calculada individualmente para cada clase y promediada de forma equitativa. Esta métrica permite identificar si el modelo tiende a emitir predicciones incorrectas en ciertas clases, lo cual puede ser crítico en aplicaciones donde los falsos positivos resultan costosos. En entornos multiclase, su utilidad radica en evaluar la calidad de las predicciones para todas las clases de forma uniforme \cite{He2009}.
 
@@ -379,6 +431,15 @@ La precisión macro evalúa la proporción de verdaderos positivos entre todas l
 \begin{equation}
 \text{Recall}_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} \text{Recall}_c
 \end{equation}
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases en el problema de clasificación.
+    \item \( \text{Recall}_c \) es el recall calculado para la clase \( c \), que se define como:
+    \[
+    \text{Recall}_c = \frac{TP_c}{TP_c + FN_c}
+    \]
+    donde \( TP_c \) son los verdaderos positivos y \( FN_c \) son los falsos negativos para la clase \( c \).
+\end{itemize}
 
 La sensibilidad macro (o exhaustividad) mide la proporción de verdaderos positivos sobre el total de instancias reales de cada clase. Al promediarla sin ponderar por la frecuencia de clase, esta métrica refleja la capacidad del modelo de detectar correctamente todas las clases, incluidas aquellas menos frecuentes. Resulta esencial en situaciones donde los falsos negativos tienen consecuencias graves o donde se busca una cobertura completa del espacio de clases \cite{powers2011evaluation}.
 
@@ -387,6 +448,16 @@ La sensibilidad macro (o exhaustividad) mide la proporción de verdaderos positi
 \begin{equation}
 F1_{\text{macro}} = \frac{1}{C} \sum_{c=1}^{C} F1_c
 \end{equation}
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases en el problema de clasificación.
+    \item \( F1_c \) es la puntuación F1 calculada para la clase \( c \), que es la media armónica entre la precisión y el recall para la clase \( c \):
+    \[
+    F1_c = 2 \cdot \frac{\text{Precision}_c \cdot \text{Recall}_c}{\text{Precision}_c + \text{Recall}_c}
+    \]
+    donde \( \text{Precision}_c \) y \( \text{Recall}_c \) son la precisión y el recall de la clase \( c \), respectivamente.
+\end{itemize}
+
 
 El F1 macro se obtiene calculando el F1 score individual por clase (media armónica entre precisión y sensibilidad), y promediándolo uniformemente. Esta métrica proporciona una visión equilibrada del desempeño del modelo en todas las clases, y es especialmente útil cuando se busca un rendimiento homogéneo en un entorno multiclase, independientemente de la distribución de las muestras \cite{Sokolova2006}.
 
@@ -404,6 +475,19 @@ Las métricas ponderadas (\textit{weighted}) también se calculan por clase, per
 \text{Precision}_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot \text{Precision}_c
 \end{equation}
 
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases.
+    \item \( N_c \) es el número de muestras de la clase \( c \).
+    \item \( N \) es el número total de muestras.
+    \item \( \text{Precision}_c \) es la precisión de la clase \( c \), calculada como:
+    \[
+    \text{Precision}_c = \frac{TP_c}{TP_c + FP_c}
+    \]
+    donde \( TP_c \) son los verdaderos positivos y \( FP_c \) son los falsos positivos para la clase \( c \).
+\end{itemize}
+
+
 La precisión ponderada evalúa la calidad de las predicciones positivas, ajustada por la proporción de instancias de cada clase. Esta métrica resulta útil para capturar el rendimiento general del modelo en conjuntos de datos con distribución desigual, sin que las clases poco frecuentes dominen el resultado final \cite{Girosi2004}.
 
 \item \textbf{Sensibilidad Ponderada (\textit{Weighted Recall})}:
@@ -412,6 +496,18 @@ La precisión ponderada evalúa la calidad de las predicciones positivas, ajusta
 \text{Recall}_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot \text{Recall}_c
 \end{equation}
 
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases.
+    \item \( N_c \) es el número de muestras de la clase \( c \).
+    \item \( N \) es el número total de muestras.
+    \item \( \text{Recall}_c \) es el recall de la clase \( c \), calculado como:
+    \[
+    \text{Recall}_c = \frac{TP_c}{TP_c + FN_c}
+    \]
+    donde \( TP_c \) son los verdaderos positivos y \( FN_c \) son los falsos negativos para la clase \( c \).
+\end{itemize}
+
 La sensibilidad ponderada proporciona una medida del porcentaje de instancias reales correctamente identificadas, teniendo en cuenta la frecuencia de cada clase. En modelos de clasificación multiclase, permite analizar cómo se comporta el modelo con respecto a la cobertura general de los datos, favoreciendo una evaluación proporcional al tamaño de las clases \cite{Japkowicz2000}.
 
 \item \textbf{F1 Ponderado (\textit{Weighted F1 Score})}:
@@ -419,6 +515,17 @@ La sensibilidad ponderada proporciona una medida del porcentaje de instancias re
 \begin{equation}
 F1_{\text{weighted}} = \sum_{c=1}^{C} \frac{N_c}{N} \cdot F1_c
 \end{equation}
+
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases.
+    \item \( N_c \) es el número de muestras de la clase \( c \).
+    \item \( N \) es el número total de muestras.
+    \item \( F1_c \) es la puntuación F1 de la clase \( c \), calculada como:
+    \[
+    F1_c = 2 \cdot \frac{\text{Precision}_c \cdot \text{Recall}_c}{\text{Precision}_c + \text{Recall}_c}
+    \]
+\end{itemize}
 
 El F1 ponderado combina precisión y sensibilidad ajustadas por la proporción de cada clase. Es una de las métricas más importantes cuando se desea evaluar un rendimiento global equilibrado que refleje el impacto relativo de cada clase en el conjunto de datos, resultando especialmente útil para comparar modelos entrenados sobre \textit{datasets} desbalanceados \cite{Liu2011}.
 
@@ -434,7 +541,13 @@ El área bajo la curva ROC (AUC) mide la capacidad del modelo para distinguir en
 
 \begin{equation}
 \text{AUC}_{\text{ovo}} = \frac{1}{C(C-1)/2} \sum_{i<j} \text{AUC}_{i,j}
-\end{equation}
+\end{equation}\\
+
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases en el problema de clasificación.
+    \item \( \text{AUC}_{i,j} \) es el área bajo la curva (AUC) para la comparación entre las clases \( i \) y \( j \) (\textit{One-vs-One}). Esta métrica calcula la capacidad del modelo para distinguir entre todas las posibles parejas de clases en un problema multiclase.
+\end{itemize}
 
 El enfoque \textit{One-vs-One} calcula el AUC para cada par de clases, evaluando la capacidad del modelo para distinguir una clase frente a otra. El resultado final se obtiene promediando los valores obtenidos para todos los pares posibles. Esta estrategia proporciona una evaluación detallada de la separabilidad entre clases específicas. Es útil cuando se quiere analizar el comportamiento del modelo en decisiones binarias dentro del espacio multiclase \cite{Hsu2002}.
 
@@ -444,30 +557,37 @@ El enfoque \textit{One-vs-One} calcula el AUC para cada par de clases, evaluando
 \text{AUC}_{\text{ovr}} = \frac{1}{C} \sum_{c=1}^{C} \text{AUC}_c
 \end{equation}
 
+Donde:
+\begin{itemize}
+    \item \( C \) es el número total de clases en el problema de clasificación.
+    \item \( \text{AUC}_c \) es el área bajo la curva (AUC) para la clase \( c \), que mide la capacidad del modelo para distinguir entre la clase \( c \) y el resto de las clases (One-vs-Rest). Es un valor entre 0 y 1, donde 1 indica una clasificación perfecta y 0.5 indica una clasificación aleatoria.
+\end{itemize}
+
+
 El enfoque \textit{One-vs-Rest} evalúa, para cada clase, la capacidad del modelo de distinguir dicha clase frente a todas las demás combinadas. Esta métrica permite examinar el rendimiento del modelo desde la perspectiva de cada clase individual y es adecuada para diagnósticos detallados en entornos multiclase \cite{Rifkin2004}.
 
 \end{itemize}
 
 
-\section{Estructura/Arquitectura de los modelos de clasificación binaria desarrollados}
-En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación binaria. Como se comenta en la sección anterior \ref{sec:disBIN} \nameref{sec:disBIN}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
+\section{Arquitectura de los modelos de clasificación binaria desarrollados}
+En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación binaria. Como se comenta en la Sección \ref{sec:disBIN} \nameref{sec:disBIN}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
 
-Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de capa oculta igual a:
+Para el desarrollo de las diferentes arquitecturas, la red neuronal elegida es el MLP. Además, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación binaria con un tamaño de capa oculta igual a:
 \begin{itemize}
 
-	\item \textbf{MCB25}: La mitad del número de atributos que recibe el modelo
-	\item \textbf{MCB49}: El mismo número que atributos que tiene el modelo.
-	\item \textbf{MCB98}: El doble del número de atributos. 
+	\item \textbf{MCB25}: La mitad del número de atributos o entradas que recibe el modelo
+	\item \textbf{MCB49}: El mismo número que atributos o entradas que tiene el modelo.
+	\item \textbf{MCB98}: El doble del número de atributos o entradas. 
 
 \end{itemize}
 
-Esto equivale a un tamaño de la capa oculta de 25, 49 y 98 respectivamente. Estos valores se obtienen de forma dinámica después de tratar los datos del CSV utilizado para los entrenamientos y las pruebas de este proyecto.
+Esta configuraciones mencionadas, equivalen a un tamaño de la capa oculta de 25, 49 y 98 respectivamente. 
 
 
 %A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
 \subsection{Capa oculta con la mitad de neuronas que atributos de entrada}\label{sec:VIBIN25}
-En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosBIN}.
+En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria basado en MLP con un número de neuronas en la capa oculta igual a la mitad del número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnmediosBIN}.
 
 \begin{figure}[H]
     \centering
@@ -482,9 +602,9 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item  Al tener un número de neuronas menor, tanto la función  de pérdida como el algoritmo de optimización, tardan menos en realizar los cálculos de los ajustes de los pesos y sesgos del modelo. Este menor coste de cálculo se refleja directamente en el tiempo necesario para entrenar el modelo y en el tiempo de respuesta del mismo una vez entrenado \cite{goodfellow2016deep}.
 	\item Un número bajo de neuronas es especialmente útil cuando los datos son linealmente separables o poco complejos \cite{ruck1996hidden}.
 \end{itemize}
-\paragraph{Inconvenientes(\textit{n/2})}
+\paragraph{Inconvenientes (\textit{n/2})}
 \begin{itemize}
-	\item Si las relaciones entre los datos son demasiado complejas, el moelo puede sufrir underfitting o subajuste \cite{goodfellow2016deep}.
+	\item Si las relaciones entre los datos son demasiado complejas, el moelo puede sufrir \textit{underfitting} o subajuste \cite{goodfellow2016deep}.
 	\item Sensibilidad alta a la inicialización de los pesos, lo que puede provocar que un porcentaje alto de neuronas no se utilicen por tener pesos iguales o muy cercanos a 0. Esto implica que parte de la capacidad de la red quede inutilizada, empeorando el rendimiento incluso en problemas simples \cite{glorot2010understanding}.
 \end{itemize}
 
@@ -530,7 +650,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item Cuanto mayor es el conjunto de datos mejor se ajustan los pesos \cite{sun2017survey}.
 	\item Es menos propenso a subajustar que otras arquitecutras \cite{bishop2006pattern}.
 \end{itemize}
-\paragraph{Inconvenientes(2n)}
+\paragraph{Inconvenientes (2n)}
 \begin{itemize}
 	\item El riesgo de sobreajuste es elevado, memorizando de esta manera ruido en vez de aprender los patrones generalizables \cite{bishop2006pattern}.
 	\item Nivel computacional más elevado, lo que se refleja en el tiempo necesario de entrenamiento de esta arquitectura y en su posterior tiempo de respuesta \cite{goodfellow2016deep}.
@@ -543,7 +663,7 @@ Tras comentar cuales son las principales ventajas e inconvenientes de utilizar u
 
 
 \section{Estructura/Arquitecturas de los modelos de clasificación multiclase desarrollados}
-En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación multiclase. Como se comenta en la sección anterior \ref{sec:disMUL} \nameref{sec:disMUL}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
+En esta sección se abordan cuales son las arquitecturas a desarrollar para el modelo de clasificación multiclase. Como se comenta en la Sección \ref{sec:disMUL} \nameref{sec:disMUL}, la diferencia entre las arquitecturas radica en el tamaño de la capa oculta del modelo.
 
 Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar experimentos de entrenamiento del modelo de clasificación multiclase con un tamaño de ventana oculta igual a:
 
@@ -555,7 +675,7 @@ Para el desarrollo de las diferentes arquitecturas, se ha optado por realizar ex
 
 \end{itemize}
 
-Esto equivale a un tamaño de la capa de venta oculta de 25, 49 y 98 respectivamente, de forma análoga a como sucede con las arquitecturas del modelo de clasificación binaria. Estos valores se obtienen de forma dinámica después de tratar los datos del CSV utilizado para los entrenamientos y las pruebas de este proyecto.
+Esto equivale a un tamaño de la capa de venta oculta de 25, 49 y 98 respectivamente, de forma análoga a como sucede con las arquitecturas del modelo de clasificación binaria.
 
 A continuación, se comentan las posibles ventajas e inconvenientes de cada arquitectura que se esperan antes de realizar los experimentos.
 
@@ -576,7 +696,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item En presencia de clases desbalanceadas, un modelo menos expresivo puede favorecer una mayor estabilidad en el aprendizaje, evitando que la red se especialice únicamente en las clases más frecuentes \cite{he2009learning}.
 
 \end{itemize}
-\paragraph{Inconvenientes(n/2)}
+\paragraph{Inconvenientes (n/2)}
 \begin{itemize}
 	\item Un número bajo de neuronas puede limitar la capacidad del modelo para aprender representaciones suficientes de las clases minoritarias, especialmente si estas presentan patrones complejos o poco diferenciados \cite{chawla2004editorial}.
 	\item La capacidad reducida del modelo puede dificultar la separación entre clases en problemas multiclase, afectando negativamente al rendimiento en métricas sensibles al desbalance como el \textit{macro Recall} o el \textit{macro F1-score} \cite{he2009learning}.
@@ -603,7 +723,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item Permite al modelo adaptar sus pesos de manera más flexible, facilitando el aprendizaje de límites de decisión más precisos entre clases desbalanceadas sin riesgo inmediato de sobreajuste \cite{he2009learning}.
 
 \end{itemize}
-\paragraph{Inconvenientes(n)}
+\paragraph{Inconvenientes (n)}
 \begin{itemize}
 	\item Aun sin ser excesivo, este tamaño puede generar cierta sobreadaptación a las clases mayoritarias si no se aplican mecanismos de regularización adecuados \cite{goodfellow2016deep}.
 	\item En conjuntos de datos muy desbalanceados, esta configuración puede no ser suficiente para compensar la escasa representación de clases minoritarias, especialmente si estas requieren una mayor capacidad para ser correctamente diferenciadas \cite{he2009learning}.
@@ -629,7 +749,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item Al disponer de más neuronas, el modelo tiene mayor margen para explorar combinaciones de características relevantes durante el entrenamiento, lo cual puede traducirse en una mejora de métricas como macro F1 o recall por clase \cite{liu2020deep}.
 \end{itemize}
 
-\paragraph{Inconvenientes(2n)}
+\paragraph{Inconvenientes (2n)}
 \begin{itemize}
 	\item El aumento en el número de parámetros incrementa el riesgo de sobreajuste, especialmente en presencia de clases mayoritarias dominantes o cuando el conjunto de entrenamiento es reducido \cite{srivastava2014dropout}.
 	\item Un modelo con mayor complejidad requiere más recursos computacionales y tiempos de entrenamiento más prolongados, lo que puede dificultar su implementación en entornos con restricciones de capacidad o temporales \cite{han2015deep}.
@@ -653,7 +773,7 @@ Durante las pruebas realizadas antes de ejecutar los experimentos para encontrar
     \label{fig:MULpruebas}
 \end{figure}
 
-Sin embargo, tras realizar una serie de pruebas, el modelo diseñado que implementaba  \texttt{SMOTE} fue el que peores resultados dió. Por eso motivo, se combinó con la función \texttt{Batch Normalization} explicada en la sección \ref{sec:disMUL} \nameref{sec:disMUL}.
+Sin embargo, tras realizar una serie de pruebas, el modelo diseñado que implementaba  \texttt{SMOTE} fue el que peores resultados dió. Por eso motivo, se combinó con la función \texttt{Batch Normalization} explicada en la Sección \ref{subsubsection:bn} \nameref{subsubsection:bn}.
 
 Los resultados de \texttt{Batch Normalization} (bn1) y \texttt{SMOTE} mostrados en la Figura \ref{fig:MULpruebas} fueron algo mejores que los valores obtenidos de las pruebas realizadas solo con \texttt{SMOTE}. Como se noto una mejora en el desempeño del modelo al utilizar bn1, pero los resultados obtenidos seguían sin ser los esperados, se probó con combinaciones de diseño utilizando bn1 con otras técnicas.
 
@@ -671,9 +791,9 @@ En esta sección se describe tanto el proposito como los procedimientos empleado
 El modelo de clasificación binaria se ha diseñado con el objetivo de identificar de manera precisa y eficiente, si una instancia de tráfico de red corresponde a una actividad legítima o a un comportamiento malicioso. Su función principal consiste en distinguir entre accesos normales y posibles intentos de intrusión, permitiendo así la detección temprana de ataques y contribuyendo a la protección proactiva de los sistemas informáticos.
 
 \subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disBIN}
-Para diseñar la arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos funciones, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
+Para diseñar la arquitectura del modelo, se ha desarrollado la clase Modelo. Esta clase está conformada por dos métodos, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
 
-Como se puede observar en la Figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La \texttt{capa1} tiene un número de entradas igual al número de parámetros que posee el \textit{dataset}, como se comenta en la sección \ref{sec.prep-datos}, el número de entradas del modelo es 49. El número de salidas depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la \texttt{capa1} será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la \texttt{capa2} recibe como entrada el número de salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
+Como se puede observar en la Figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La \texttt{capa1} tiene un número de entradas igual al número de parámetros que posee el \textit{dataset}, como se comenta en la Sección \ref{sec.prep-datos}, el número de entradas del modelo es 49. El número de salidas depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la \texttt{capa1} será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la \texttt{capa2} recibe como entrada el número de salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
 
 Debido a que la función de pérdida utilizada para entrenar el modelo es \texttt{BCEWithLogitsLoss()}, que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
 
