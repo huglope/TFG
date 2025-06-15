@@ -42,23 +42,18 @@
 \contentsline {figure}{\numberline {6.28}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros encontrada en la fase de búsqueda para el MCM98.}}{98}{figure.caption.100}%
 \contentsline {figure}{\numberline {6.29}{\ignorespaces Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}}{99}{figure.caption.101}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB25 durante la fase de evaluación.}}{104}{figure.caption.103}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Resultados de la evaluación del modelo de clasificación binaria con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{105}{figure.caption.105}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 2º MCB49 durante la fase de evaluación.}}{106}{figure.caption.106}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Resultados de la evaluación del modelo de clasificación binaria con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{106}{figure.caption.108}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB98 durante la fase de evaluación.}}{107}{figure.caption.109}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n/2} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{108}{figure.caption.111}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 3º MCM25 durante la fase de evaluación.}}{109}{figure.caption.112}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 3º MCM25 durante la fase de evaluación.}}{110}{figure.caption.113}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{110}{figure.caption.115}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 5º MCM49 durante la fase de evaluación.}}{111}{figure.caption.116}%
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 5º MCM49 durante la fase de evaluación.}}{112}{figure.caption.117}%
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{112}{figure.caption.119}%
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 4º MCM98 durante la fase de evaluación.}}{113}{figure.caption.120}%
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}}{114}{figure.caption.121}%
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}}{115}{figure.caption.122}%
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}}{116}{figure.caption.123}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB25 durante la fase de evaluación.}}{105}{figure.caption.104}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 2º MCB49 durante la fase de evaluación.}}{107}{figure.caption.107}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 3º MCB98 durante la fase de evaluación.}}{109}{figure.caption.110}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 3º MCM25 durante la fase de evaluación.}}{111}{figure.caption.113}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 3º MCM25 durante la fase de evaluación.}}{112}{figure.caption.114}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida con en el 5º MCM49 durante la fase de evaluación.}}{114}{figure.caption.117}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el 5º MCM49 durante la fase de evaluación.}}{115}{figure.caption.118}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 4º MCM98 durante la fase de evaluación.}}{117}{figure.caption.121}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Matriz de confusión normalizada de la mejor configuración de hiperparámetros obtenida en el MCM98 durante la fase de evaluación.}}{118}{figure.caption.122}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación binaria.}}{119}{figure.caption.123}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Mejores cinco modelos en la fase de evaluación del modelo de clasificación multiclase.}}{120}{figure.caption.124}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Ejemplo de despliegue de los modelos en un sistema informático.}}{119}{figure.caption.124}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Ejemplo de despliegue de los modelos en un sistema informático.}}{123}{figure.caption.125}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

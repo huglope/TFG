@@ -96,23 +96,23 @@
 \contentsline {section}{\numberline {7.3}Resultados de las métricas en el proceso de evaluación}{103}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Resultados del modelo de clasificación binaria}{103}{subsection.7.3.1}%
 \contentsline {subsubsection}{MCB25: Modelo de clasifcación binaria con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{103}{section*.102}%
-\contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{105}{section*.104}%
-\contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{106}{section*.107}%
-\contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{107}{subsection.7.3.2}%
-\contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{107}{section*.110}%
-\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{110}{section*.114}%
-\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{112}{section*.118}%
-\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{114}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{114}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{115}{subsection.7.4.2}%
-\contentsline {chapter}{\numberline {8}Despliegue}{117}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{117}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{117}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{118}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{118}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{119}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{121}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusiones}{121}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Trabajo futuro}{123}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Apéndice}{125}{chapter.10}%
-\contentsline {chapter}{Bibliografía}{127}{chapter.10}%
+\contentsline {subsubsection}{MCB49: Modelo de clasifcación binaria con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{105}{section*.105}%
+\contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{107}{section*.108}%
+\contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{109}{subsection.7.3.2}%
+\contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{109}{section*.111}%
+\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{112}{section*.115}%
+\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{115}{section*.119}%
+\contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{118}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{118}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{119}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Despliegue}{121}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{121}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{121}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{122}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{122}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{123}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{125}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{125}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Trabajo futuro}{127}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Apéndice}{129}{chapter.10}%
+\contentsline {chapter}{Bibliografía}{131}{chapter.10}%
