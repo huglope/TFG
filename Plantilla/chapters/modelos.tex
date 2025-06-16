@@ -53,7 +53,11 @@ Las funciones de pérdida desempeñan un papel central en la formulación matem�
 
 Una de estas propiedades fundamentales es la diferenciabilidad, que permite el cálculo de gradientes, necesarios para optimizar los parámetros del modelo mediante técnicas basadas en derivadas, como el descenso por gradiente. Otra de las propiedades esenciales es la convexidad, aunque es deseable, favorece la convergencia hacia un mínimo global, esto se traduce en la práctica, en que muchos modelos no lineales presentan funciones de pérdida no convexas. La estabilidad numérica juega un papel crucial al prevenir errores computacionales derivados de valores extremos o transformaciones exponenciales, garantizando que la precisión se mantenga durante el entrenamiento. Por su parte, la sensibilidad al error como propiedad, asegura que los errores más grandes sean penalizados de manera más significativa, lo que orienta el modelo hacia mejores predicciones. por su parte, la escalabilidad es una característica clave que permite la aplicación eficiente del modelo en contextos con grandes volúmenes de datos y arquitecturas de red complejas. Estas propiedades aseguran que la función de pérdida cumpla su objetivo central, actuar como un mecanismo confiable y eficiente para guiar la actualización de los parámetros del modelo \cite{ultralytics_loss_function}.
 
-En el caso específico del modelo de clasificación binaria, se usa la función \texttt{BCEWithLogitsLoss} (\textit{Binary Cross Entropy with Logits Loss}). Esta función combina en una sola operación dos pasos fundamentales: la aplicación de la función sigmoide y el cálculo de la entropía cruzada binaria. Al integrar ambos procedimientos en una única función, se obtienen varias ventajas prácticas \cite{datacamp_loss_function}. En primer lugar, se mejora la estabilidad numérica, ya que evita operaciones redundantes que podrían dar lugar a pérdidas de precisión, especialmente al manejar las salidas no normalizadas del modelo (\textit{logits}) con valores extremos. En segundo lugar, se optimiza el rendimiento computacional, al reducir el número de transformaciones necesarias antes del cálculo de la pérdida. Finalmente, permite trabajar directamente con \textit{logits}, lo cual simplifica la implementación y reduce errores potenciales derivados de transformaciones incorrectas \cite{bigdatafran_pytorch_classification}.
+Las redes neuronales se utilizan principalmente para tareas de \textit{clustering}, clasificación y regresión. En el caso del \textit{clustering}, las redes neuronales permiten agrupar datos similares, como en la segmentación de clientes en \textit{marketing}. Para la clasificación, las redes asignan etiquetas a los datos, como en el reconocimiento de imágenes, donde se identifican categorías. En regresión, las redes predicen un valor continuo, como el precio de una propiedad. Cada una de estas tareas requiere una función de coste específica: para clasificación se emplea comúnmente la entropía cruzada, mientras que para regresión se utiliza el error cuadrático medio.
+
+En este proyecto, para resolver el problema objetivo de detectar intrusiones en redes, se emplea clasificación. La clasificación binaria consiste en asignar una de dos categorías posibles a una entrada, como la detección de correos electrónicos spam o no spam. Por otro lado, la clasificación multiclase se aplica cuando existen más de dos categorías, como en la clasificación de imágenes en diversas clases (por ejemplo, perro, gato, pájaro). Ambas tareas requieren que la red neuronal distinga entre las distintas categorías, aunque el enfoque y la arquitectura de la red pueden variar dependiendo de si el problema es binario o multiclase.
+
+En el caso específico del modelo de clasificación binaria de este trabajo, se usa la función \texttt{BCEWithLogitsLoss} (\textit{Binary Cross Entropy with Logits Loss}). Esta función combina en una sola operación dos pasos fundamentales: la aplicación de la función sigmoide y el cálculo de la entropía cruzada binaria. Al integrar ambos procedimientos en una única función, se obtienen varias ventajas prácticas \cite{datacamp_loss_function}. En primer lugar, se mejora la estabilidad numérica, ya que evita operaciones redundantes que podrían dar lugar a pérdidas de precisión, especialmente al manejar las salidas no normalizadas del modelo (\textit{logits}) con valores extremos. En segundo lugar, se optimiza el rendimiento computacional, al reducir el número de transformaciones necesarias antes del cálculo de la pérdida. Finalmente, permite trabajar directamente con \textit{logits}, lo cual simplifica la implementación y reduce errores potenciales derivados de transformaciones incorrectas \cite{bigdatafran_pytorch_classification}.
 
 La función \texttt{BCEWithLogitsLoss} se define como:
 
@@ -119,7 +123,9 @@ Existen varios algoritmos de optimización ampliamente utilizados en el entrenam
 %\paragraph{Sobreajuste}
 El sobreajuste, o \textit{overfitting}, ocurre cuando un modelo de aprendizaje, como una red neuronal, ajusta excesivamente los parámetros a los datos de entrenamiento, capturando no solo la señal subyacente sino también el ruido o las fluctuaciones aleatorias. Esto resulta en un modelo que tiene un rendimiento excelente en el conjunto de entrenamiento pero que pierde capacidad de generalización, es decir, muestra un rendimiento deficiente en datos no vistos previamente, como los del conjunto de prueba. El sobreajuste es un desafío común en el entrenamiento de modelos complejos y puede mitigarse mediante técnicas como la regularización, el uso de datos adicionales o el ajuste adecuado de los hiperparámetros \cite{bishop2006pattern}.
 
-Sin embargo, el algoritmo más recomendado para entrenar un modelo de clasificación binaria es Adam (\textit{Adaptive Moment Estimation}). Adam combina las ventajas del descenso de gradiente estocástico y el momento, adaptando la tasa de aprendizaje de manera eficiente para cada parámetro del modelo. Esto lo hace particularmente adecuado para tareas de clasificación binaria, ya que garantiza una convergencia más rápida y estable, minimizando el riesgo de sobreajuste (\textit{overfitting}) mientras se optimizan los parámetros del modelo. Sin embargo, una variante reciente de Adam, conocida como AdamW, introduce un cambio importante en la forma en que se maneja la regularización de los parámetros. AdamW separa explícitamente la actualización de los pesos y la regularización (típicamente L2 o \textit{weight decay}), lo que mejora la eficacia de la regularización sin interferir con la adaptación de la tasa de aprendizaje.
+El sobreajuste puede ser especialmente problemático cuando se entrenan redes neuronales complejas, ya que estos modelos tienen una gran capacidad para ajustarse a las fluctuaciones específicas de los datos de entrenamiento, lo que lleva a una pérdida de generalización. Para mitigar este riesgo, es fundamental utilizar algoritmos de optimización y técnicas que favorezcan una buena generalización. Además de las estrategias mencionadas, la selección adecuada del algoritmo de optimización es crucial, ya que un algoritmo eficiente puede ayudar a encontrar un buen equilibrio entre el ajuste al conjunto de entrenamiento y la capacidad de generalización en datos no vistos.
+
+El algoritmo más recomendado para entrenar un modelo de clasificación es \textit{Adam} (\textit{Adaptive Moment Estimation}). Adam combina las ventajas del descenso de gradiente estocástico y el momento, adaptando la tasa de aprendizaje de manera eficiente para cada parámetro del modelo. Esto lo hace particularmente adecuado para tareas de clasificación binaria, ya que garantiza una convergencia más rápida y estable, minimizando el riesgo de sobreajuste (\textit{overfitting}) mientras se optimizan los parámetros del modelo. Sin embargo, una variante reciente de \textit{Adam}, conocida como \textit{AdamW}, introduce un cambio importante en la forma en que se maneja la regularización de los parámetros. \textit{AdamW} separa explícitamente la actualización de los pesos y la regularización (típicamente L2 o \textit{weight decay}), lo que mejora la eficacia de la regularización sin interferir con la adaptación de la tasa de aprendizaje.
 
 %\paragraph{Regularización}
 La regularización es una técnica utilizada en el entrenamiento de redes neuronales, para prevenir el sobreajuste. Consiste en agregar un término adicional a la función de pérdida que penaliza los valores de los parámetros del modelo, de manera que se favorezcan soluciones más simples y generalizables. Entre las formas más comunes de regularización se encuentran la regularización L1 (Lasso) y la regularización L2 (Ridge). La regularización L1 añade a la función de pérdida una penalización proporcional a la suma de los valores absolutos de los pesos. Esto tiende a hacer que muchos pesos se vuelvan exactamente cero, lo que induce \textit{sparsity} (modelo más simple y con menos conexiones relevantes). Por su parte, la regularización L2, añade una penalización proporcional a la suma de los cuadrados de los pesos. No anula completamente los pesos, pero tiende a hacerlos más pequeños, distribuyendo la carga entre varias conexiones. Por lo que la regularización en general, actúa como un control de complejidad, ayudando al modelo a generalizar mejor a datos no vistos, lo que mejora su rendimiento en tareas de predicción y clasificación \cite{bishop2006pattern}.
@@ -151,8 +157,9 @@ En un enfoque más avanzado, existen las redes generativas antagónicas (GAN), q
 
 
 \subsection{Técnicas útiles para obtener modelos que converjan correctamente}
+Las técnicas para obtener modelos que converjan correctamente son fundamentales en el proceso de entrenamiento de las redes neuronales. Cuando los modelos tratan de resolver problemas complejos como el que se trata en este proyecto, la optimización eficiente y la prevención de problemas como el sobreajuste o la falta de convergencia se vuelven desafíos clave. En esta sección, se comentan diversas estrategias y herramientas que facilitan el ajuste adecuado de los parámetros, garantizando que los modelos no solo alcancen una buena precisión en el conjunto de entrenamiento, sino que también generalicen de manera correcta para los datos no vistos durante el entrenamiento.
 
-\subsubsection{Validación cruzada}
+\subsubsection{Validación cruzada} \label{subsubsection:cv}
 La validación cruzada consiste en dividir los datos de entrenamiento en n \textit{folds} que se utilizan para entrenar al modelo con n-1 \textit{folds} y después validar el modelo entrenado con el \textit{fold} que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones, en este trabajo, se extraen las medias de las métricas sobre los datos que no se han usado para entrenar, obtenidas con cada \textit{fold} durante la validación \cite{hastie2009elements}.
 
 \subsubsection{ReLU \textit{Rectified Linear Unit}}
@@ -608,7 +615,7 @@ En este apartado se comentan cuales son las principales ventajas e inconveniente
 	\item Sensibilidad alta a la inicialización de los pesos, lo que puede provocar que un porcentaje alto de neuronas no se utilicen por tener pesos iguales o muy cercanos a 0. Esto implica que parte de la capacidad de la red quede inutilizada, empeorando el rendimiento incluso en problemas simples \cite{glorot2010understanding}.
 \end{itemize}
 
-Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los atributos del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura y no se esperan resultados especialmente destacables.
+Tras comentar cuales son las principales ventajas e inconvenientes de utilizar una capa oculta con un número de neuronas igual a la mitad de los atributos del modelo, aparentemente, las propiedades del conjunto de datos que se utiliza para entrenar al modelo no son las idóneas para esta arquitectura dado que la complejidad de la red puede ser algo límitada para resolver un problema complejo como el de detectar intrusiones en sistemas informáticos. Por este motivo, no se esperan resultados especialmente destacables de esta arquitectura.
 
 \subsection{Capa oculta con el mismo número de neuronas que atributos de entrada}\label{sec:VIBIN49}
 En este apartado se comentan cuales son las principales ventajas e inconvenientes, a priori, de un modelo de clasificación binaria con un número de neuronas en la capa oculta igual al número de parámetros que recibe el modelo, como la que se muestra en la Figura \ref{fig:arqnBIN}.
@@ -763,21 +770,40 @@ Tras comentar cuales son las principales ventajas e inconvenientes de utilizar u
 
 Debido a la complejidad del problema al resolver, se probaron otros diseños diferentes a los finalmente utilizados que fueron descartados por no obtner los resultados esperados. A continuación, se detalla cuales fueron estos diseños descartados, la motivación que llevo a probarlo y cuales fueron sus resultados.
 
-Durante las pruebas realizadas antes de ejecutar los experimentos para encontrar la combinación de hiperparámetros que mejor convergían para este modelo, se detectó que el desbalanceo de las clases afectaba de manera significativa a los resultados que se obtenían. Con el objetivo de reducir el impacto del desbalanceo en el entrenamiento del modelo, se optó por ejecutar experimentos para sondear el desempeño de diferentes técnicas. Los resultados de estos experimentos se muestran en la Figura  \ref{fig:MULpruebas}, junto con los resultados que obtuvieron estas combinaciones de técnicas en la métrica \textit{F1 weighted}.
+Durante las pruebas realizadas antes de ejecutar los experimentos para encontrar la combinación de hiperparámetros que mejor convergían para este modelo, se detectó que el desbalanceo de las clases afectaba de manera significativa a los resultados que se obtenían. Con el objetivo de reducir el impacto del desbalanceo en el entrenamiento del modelo, se optó por ejecutar experimentos para sondear el desempeño de diferentes técnicas. Los resultados de estos experimentos se muestran en la Tabla  \ref{fig:MULpruebas}, junto con los resultados que obtuvieron estas combinaciones de técnicas en la métrica \textit{F1 weighted}.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{./img/modelo/resultados/MULPRUEBAS.pdf}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|>{\raggedright\arraybackslash}m{2.5cm}|*{5}{>{\centering\arraybackslash}m{2.5cm}|}}
+
+\hline
+\cellcolor[HTML]{E0FFFF} \textbf{Experimentos} & \textbf{Capa bn1 e hiperparámetros con valores altos} & 
+\textbf{Con capa bn1} & \textbf{Con capa bn1 y dropout} & 
+\textbf{Con SMOTE y capa bn1} & \textbf{Con SMOTE} \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}256 & \cellcolor[HTML]{66ffa8}32 & \cellcolor[HTML]{66ffa8}32 & \cellcolor[HTML]{66ffa8}32 & \cellcolor[HTML]{66ffa8}32 \\
+\hline
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}30 \\
+\hline
+\cellcolor[HTML]{E0FFFF}hidden\_size & 512 & 128 & 128 & 128 & 128 \\
+\hline
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}$10^{-2}$ & \cellcolor[HTML]{f99595}$10^{-5}$ & \cellcolor[HTML]{f99595}$10^{-5}$ & \cellcolor[HTML]{f99595}$10^{-5}$ & \cellcolor[HTML]{f99595}$10^{-5}$ \\
+\hline
+\cellcolor[HTML]{E0FFFF}avg\_f1\_weighted & 0.544441 & 0.467310 & 0.461414 & 0.369414 & 0.282888 \\
+\hline
+\end{tabular}
+}
     \caption{Resultados de los diferentes diseños probados para el modelo de clasifcación multiclase.}
     \label{fig:MULpruebas}
-\end{figure}
+\end{table}
 
 Sin embargo, tras realizar una serie de pruebas, el modelo diseñado que implementaba  \texttt{SMOTE} fue el que peores resultados dió. Por eso motivo, se combinó con la función \texttt{Batch Normalization} explicada en la Sección \ref{subsubsection:bn} \nameref{subsubsection:bn}.
 
-Los resultados de \texttt{Batch Normalization} (bn1) y \texttt{SMOTE} mostrados en la Figura \ref{fig:MULpruebas} fueron algo mejores que los valores obtenidos de las pruebas realizadas solo con \texttt{SMOTE}. Como se noto una mejora en el desempeño del modelo al utilizar bn1, pero los resultados obtenidos seguían sin ser los esperados, se probó con combinaciones de diseño utilizando bn1 con otras técnicas.
+Los resultados de \texttt{Batch Normalization} (bn1) y \texttt{SMOTE} mostrados en la Tabla \ref{fig:MULpruebas} fueron algo mejores que los valores obtenidos de las pruebas realizadas solo con \texttt{SMOTE}. Como se noto una mejora en el desempeño del modelo al utilizar bn1, pero los resultados obtenidos seguían sin ser los esperados, se probó con combinaciones de diseño utilizando bn1 con otras técnicas.
 
-Con la implementación del \texttt{Dropout}, los resultados mejoraron significativamente. Sin embargo, el diseño del modelo que solo utilizaba bn1 obtuvo mejores resultados de media que aquel que utilizaba bn1 y \textit{dropout}. Por este motivo, el diseño utilizado en los experimentos solo implementa \texttt{Batch Normalization}. Además, tras realizar pruebas con valores altos para los hiperparámetros, se obtuvieron unos resultados con una convergencia mayor que la de las pruebas realizadas con valores menores, tal y como puede observarse en la Figura \ref{fig:MULpruebas}, lo que incentivó a aumentar los valores de los hiperparámetros probados, tal y como se puede observar en la sección anterior.
+Con la implementación del \texttt{Dropout}, los resultados mejoraron significativamente. Sin embargo, el diseño del modelo que solo utilizaba bn1 obtuvo mejores resultados de media que aquel que utilizaba bn1 y \textit{dropout}. Por este motivo, el diseño utilizado en los experimentos solo implementa \texttt{Batch Normalization}. Además, tras realizar pruebas con valores altos para los hiperparámetros, se obtuvieron unos resultados con una convergencia mayor que la de las pruebas realizadas con valores menores, tal y como puede observarse en la Tabla \ref{fig:MULpruebas}, lo que incentivó a aumentar los valores de los hiperparámetros probados, tal y como se puede observar en la sección anterior.
 
 
 
@@ -806,7 +832,7 @@ Debido a que la función de pérdida utilizada para entrenar el modelo es \textt
 
 Como algoritmo de optimización para el entrenamiento del modelo de clasificación binaria, se ha optado por utilizar \texttt{AdamW()}. Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización. Además, permite una mejor generalización en problemas con grandes volúmenes de datos como el que se trata en este proyecto.
 
-Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación binaria diseñado son: el batch size, la tasa de aprendizaje (learning rate) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación binaria, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
+Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación binaria diseñado son: el batch size, la tasa de aprendizaje (\textit{learning rate}) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación binaria, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante. Los posibles valores de estos hiperparámetros con los que se van a realizar los experimentos son los que se muestran en la Tabla \ref{tab:hiperBIN}
 
 Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, los hiperparámetros controlan el comportamiento del proceso de entrenamiento y afectan la capacidad del modelo para aprender patrones complejos de los datos. Teniendo en cuenta las características de cada hiperparámetro, se han escogido los siguientes valores para los experimentos del entrenamiento del modelo binario con el objetivo de encontrar la mejor combinación de ellos.
 
@@ -822,7 +848,7 @@ Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, lo
 \hline
 \textbf{Hiperparámetro} & \textbf{Posibles valores} \\ \hline
 \textit{Batch size} & [2000, 10000, 15000, 20000] \\ \hline
-\textit{Learning rate} & [0.01, 0.001, 0.0001] \\ \hline
+\textit{Learning rate} & [$10^{-2}$, $10^{-3}$, $10^{-4}$] \\ \hline
 Épocas & [10, 20, 30] \\ \hline
 \end{tabular}
 \caption{Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación binaria.}
@@ -857,18 +883,16 @@ Esta sección aborda los objetivos y procedimientos aplicados en el desarrollo d
 
 \subsection{Proposito del modelo de clasificación multiclase}
 
-El modelo de clasificación multiclase se ha diseñado con el objetivo de identificar de manera precisa y eficiente, a que tipo de ataque corresponde una conexión maliciosa que el modelo de clasificación binaria ha clasificado previamente como intrusiva. Su función principal consiste en distinguir entre 9 clases diferentes de ataques que se detallan en la sección \ref{sec.tipo-ataques} \nameref{sec.tipo-ataques}, contribuyendo a la protección proactiva de los sistemas informáticos.
+El modelo de clasificación multiclase se ha diseñado con el objetivo de identificar de manera precisa y eficiente, a que tipo de ataque corresponde una conexión maliciosa que el modelo de clasificación binaria ha clasificado previamente como intrusiva. Se trata de un modelo  de clasificación jerárquica, ya que el problema se divide en varios niveles o capas (binaria y multiclase) y a medida que avanzamos por la jerarquía, las decisiones se vuelven más específica. La función principal de este modelo de clasificación multiclase consiste en distinguir entre 9 clases diferentes de ataques que se detallan en la sección \ref{sec.tipo-ataques} \nameref{sec.tipo-ataques}, contribuyendo a la protección proactiva de los sistemas informáticos.
 
 \subsection{Diseño del modelo e hiperparámetros seleccionados} \label{sec:disMUL}
 Para diseñar la arquitectura del modelo, se ha desarrollado la clase \texttt{ModeloMulticlase}. Esta clase está conformada por dos métodos, la primera corresponde con la inicialización de la clase, y la segunda con la arquitectura utilizada para este modelo.
 
-Como se puede observar en la Figura \ref{fig:modMUL}, el modelo está compuesto por dos capas. La capa1 tiene un número de entradas igual al número de atributos que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Una vez que los datos pasan por la \texttt{capa1}, se utiliza la técnica \texttt{Batch Normalization}. 
+Como se puede observar en la Figura \ref{fig:modMUL}, el modelo está compuesto por dos capas. La \texttt{capa1} tiene un número de entradas igual al número de atributos que poseen los datos utilizados para entrenar al modelo y un número de salidas que depende del parámetro \textit{ventanaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la capa1 será precisamente el que determine la arquitectura específica que se utiliza. Una vez que los datos pasan por la \texttt{capa1}, se utiliza la técnica \textit{Batch Normalization}. 
 
-Como se explica anteriormente, las redes neuronales necesitan funciones no lineales para aprender relaciones complejas entre las entradas y salidas, por este motivo, se aplica la función de activación ReLU depués del \textit{Batch Normalization}. Sin activaciones como ReLU, toda la red sería equivalente a una simple transformación lineal, sin capacidad de aprendizaje automático. Que el modelo presente una alta capacidad de aprendizaje automático es esencial para los modelos de clasifiación multiclase cuya complejidad es mucho mayor que la de los modelos de clasificación binaria.
+Como se explica anteriormente, las redes neuronales necesitan funciones no lineales para aprender relaciones complejas entre las entradas y salidas, por este motivo, se aplica la función de activación ReLU depués del \textit{Batch Normalization}. Sin activaciones como ReLU, toda la red sería equivalente a una simple transformación lineal, sin capacidad de aprendizaje automático. Que el modelo presente una alta capacidad de aprendizaje automático es esencial para los modelos de clasifiación multiclase cuya complejidad es mucho mayor que la de los modelos de clasificación binaria. Para finalizar, la \texttt{capa2} recibe como entrada las salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación multiclase, esta capa tendrá una salida por cada clase que es capaz de identificar el modelo.
 
-Para finalizar, la \texttt{capa2} recibe como entrada las salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación multiclase, esta capa tendrá una salida por cada clase que es capaz de identificar el modelo.
-
-Por lo general, en clasificación multiclase, la salida del modelo suele ser un vector de \textit{logits} (valores sin escalar), uno por cada clase. La función de activación Softmax transforma esos \textit{logits} en probabilidades, es decir, cada valor representa lo probable que es que los datos que han entrado al modelo, pertenezca a esa clase. Debido a que durante el entrenamiento, se utiliza el \textit{frameworks} PyTorch, no es necesario aplicar Softmax a la salida del modelo cuando se utiliza la función de pérdida \texttt{CrossEntropyLoss}. La razón es que función \texttt{CrossEntropyLoss}, ya incluye \texttt{Softmax} internamente por razones de eficiencia y estabilidad numérica.
+Por lo general, en clasificación multiclase, la salida del modelo suele ser un vector de \textit{logits} (valores sin escalar), uno por cada clase. La función de activación Softmax transforma esos \textit{logits} en probabilidades, es decir, cada valor representa lo probable que es que los datos que han entrado al modelo, pertenezca a esa clase. Debido a que durante el entrenamiento, se utiliza la biblioteca \texttt{PyTorch}, no es necesario aplicar Softmax a la salida del modelo cuando se utiliza la función de pérdida \texttt{CrossEntropyLoss}. La razón es que función \texttt{CrossEntropyLoss}, ya incluye \texttt{Softmax} internamente por razones de eficiencia y estabilidad numérica.
 
 \begin{figure}[H]
     \centering
@@ -877,9 +901,10 @@ Por lo general, en clasificación multiclase, la salida del modelo suele ser un 
     \label{fig:modMUL}
 \end{figure}
 
-Al igual que en el caso de la calsificación binaria para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada \texttt{k-fold}. Como se explica en la sección anterior, la validación cruzada consiste en dividir los datos de entrenamiento en n \textit{folds} que se utilizan para entrenar al modelo con $n-1$ \textit{folds} y después validar el modelo entrenado con el fold que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación. Para entrenar el modelo de clasificación multiclase, se ha utilizado StratifiedKFold() que como su nombre indica, estratifica los \textit{folds} para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada \textit{fold} y no se creen \textit{folds} con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos datasets cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Concretamente, tras el tratamiento de los datos, existen 284 veces más muestras de la clase con mayor presencia en el \textit{dataset}, que de la clase con menor presencias. Para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar validación cruzada \texttt{StratifiedKFold} con 5 \textit{folds} o divisiones.
+Al igual que en el caso de la calsificación binaria para evitar el sobreajuste del modelo y obtener valores de las predicciones más confiables que se utilizarán para la evaluación del rendimiento del modelo, se utiliza validación cruzada \texttt{k-fold} explicada en la Sección \ref{subsubsection:cv}.% Como se explica en la sección anterior, la validación cruzada consiste en dividir los datos de entrenamiento en n \textit{folds} que se utilizan para entrenar al modelo con $n-1$ \textit{folds} y después validar el modelo entrenado con el fold que no se ha utilizado para entrenarlo. Este proceso se repite para los n \textit{folds} y en cada iteración es un \textit{fold} distinto el que no se utiliza para el entrenamiento. Una vez completadas las iteraciones se extraen las medias de las métricas obtenidas con cada \textit{fold} durante la validación. %
+ Para entrenar el modelo de clasificación multiclase, se ha utilizado \texttt{StratifiedKFold} que como su nombre indica, estratifica los \textit{folds} para que las proporciones de las clases de los datos utilizados para el entrenamiento se mantengan similares en cada \textit{fold} y no se creen \textit{folds} con un único tipo de clase. Estratificar los datos es especialmente crítico para aquellos datasets cuyos datos están muy desbalanceados como es el caso de los datos utilizados para entrenar los modelos de este proyecto. Concretamente, tras el tratamiento de los datos, existen 284 veces más muestras de la clase con mayor presencia en el \textit{dataset}, que de la clase con menor presencias. Para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar validación cruzada \texttt{StratifiedKFold} con 5 \textit{folds} o divisiones.
 
-Como algoritmo de optimización para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar AdamW(). Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que AdamW es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización.
+Como algoritmo de optimización para el entrenamiento del modelo de clasificación multiclase, se ha optado por utilizar \textit{AdamW}. Como se comenta en la sección \ref{sec:alg-opt} \nameref{sec:alg-opt}, se ha demostrado que \textit{AdamW} es más eficaz en la prevención de sobreajuste en redes neuronales que otros algoritmos de optimización.
 
 Los hiperparámetros que han sido seleccionados para encontrar la mejor configuración para el modelo de clasificación multiclase diseñado son: el \textit{batch size}, la tasa de aprendizaje (\textit{learning rate}) y el número de épocas. Estos hiperparámetros resultan imprescindibles en el entrenamiento de modelos de clasificación multiclase, dado que influyen directamente en la eficiencia del proceso de optimización y en la calidad del modelo resultante.
 
@@ -897,7 +922,7 @@ Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, lo
 \hline
 \textbf{Hiperparámetro} & \textbf{Posibles valores} \\ \hline
 \textit{Batch size} & [32, 64, 128, 256, 512] \\ \hline
-\textit{Learning rate} & [$1e-2$, $1e-3$, $1e-4$, $1e-5$] \\ \hline
+\textit{Learning rate} & [$10^{-2}$, $10^{-3}$, $10^{-4}$, $10^{-5}$] \\ \hline
 Épocas & [30, 50, 80, 100] \\ \hline
 \end{tabular}
 \caption{Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación multiclase.}
@@ -907,7 +932,7 @@ Como se comenta en la sección \ref{sec:paramhiper} \nameref{sec:paramhiper}, lo
 
 Una vez definidos los valores de los hiperparámetros que se evaluarán durante el proceso de búsqueda de la mejor configuración, se procede a dividir el conjunto de entrenamiento en los correspondientes \textit{folds}, los cuales se emplean en la validación cruzada dentro del ciclo que recorre todas las combinaciones posibles de hiperparámetros. Posteriormente, se inicializa la herramienta \texttt{wandb} con el fin de registrar automáticamente los resultados de cada experimento ejecutado. A continuación, se instancian los objetos de la clase \texttt{DatasetTFG}, que serán utilizados por los respectivos \texttt{DataLoaders} tanto en la fase de entrenamiento como en la de validación del modelo multiclase. 
 
-Una vez inicializados todos los componentes necesarios, se procede al entrenamiento del modelo dentro del ciclo correspondiente, cuyo número de iteraciones está determinado por el hiperparámetro \textit{Epochs}. Para obtener las métricas que se almacenaran en la herramienta \texttt{wandb}, finalmente se ejecuta el bucle de validación con el \textit{fold} correspondiente tal y como se muestra en la Figura  \ref{fig:ValidacionCVMUL}.
+Una vez inicializados todos los componentes necesarios, se puede entrenar el modelo dentro del ciclo correspondiente, cuyo número de iteraciones está determinado por el hiperparámetro \textit{Epochs}. Para obtener las métricas que se almacenaran en la herramienta \texttt{wandb}, finalmente se ejecuta el bucle de validación con el \textit{fold} correspondiente tal y como se muestra en la Figura  \ref{fig:ValidacionCVMUL}.
 
 \begin{figure}[H]
     \centering
@@ -924,7 +949,7 @@ La convergencia de los modelos de clasifcación multiclase es mucho más complic
 
 
 \section{Selección de modelos de clasificación binaria}
-En esta sección se pueden observar los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disBIN} \nameref{sec:disBIN}.
+En esta sección se recogen los resultados de los experimentos realizados con los posibles valores de los hiperparámetros comentados en la sección \ref{sec:disBIN} \nameref{sec:disBIN}.
 
 La plataforma \textit{Weights \& Biases} (wandb) se emplea para el seguimiento de experimentos, registro de hiperparámetros, métricas y artefactos de los modelos desarrollados en este trabajo. Esta herramienta ofrece una interfaz visual e interconectada que permite comparar ejecuciones de entrenamiento en proyectos de clasificación binaria y multiclase. También permite iniciar ejecuciones, almacenar la configuración del experimento, registrar métricas como \textit{Recall} y \textit{F1-weighted}. Además, permite gestionar versiones del modelo y datasets desde su \texttt{API}, lo cual mejora la transparencia, reproducibilidad y eficiencia en el desarrollo de sistemas de detección de conexiones malintencionadas \cite{wandb_tracking}.
 
@@ -947,21 +972,39 @@ En las siguientes figuras se hace referencia a los posibles combinaciones de la 
 	\item \textbf{fn}: Falsos negativos (FN), intrusiones que se han clasificado como conexiones legítimas.
 \end{itemize}
 
-En la Figura \ref{fig:BINhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 25 neuronas (n/2) en la capa oculta. Los resultados obtenidos superan lo esperado tras el análisis de la sección \ref{sec:VIBIN25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Tabla \ref{fig:BINhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 25 neuronas (n/2) en la capa oculta. Los resultados obtenidos superan lo esperado tras el análisis de la Sección \ref{sec:VIBIN25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 15\,000
 	\item \textbf{\textit{Epochs}}: 10
 	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/BINhs25.pdf}
+
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCB25 & 2º-MCB25 & 3º-MCB25 & 4º-MCB25 & 5º-MCB25 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}2000 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}20 & \cellcolor[HTML]{b1bafb}10 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1 & 0.997914 & 0.997717 & 0.997791 & 0.998022 & 0.997791 \\
+\cellcolor[HTML]{E0FFFF}avg\_fn & 20.4 & 21.8 & 22 & 22.6 & 23 \\
+\cellcolor[HTML]{E0FFFF}avg\_fp & 41 & 45.4 & 43 & 35.6 & 42 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision & 0.997216 & 0.996918 & 0.99708 & 0.997581 & 0.997147 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall & 0.998613 & 0.998517 & 0.998504 & 0.998463 & 0.998436 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc & 0.999767 & 0.999779 & 0.999753 & 0.999776 & 0.999786 \\
+\cellcolor[HTML]{E0FFFF}avg\_tn & 344123.2 & 344118.8 & 344121.2 & 344128.6 & 344122.2 \\
+\cellcolor[HTML]{E0FFFF}avg\_tp & 14684.2 & 14682.8 & 14682.6 & 14682 & 14681.6 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 25 neuronas ($n/2$).}
     \label{fig:BINhs25}
-\end{figure}
+\end{table}
 
-La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 25 neuronas (MCB25), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB25}.
+
+
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 25 neuronas (MCB25), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB25}. Se observa que la cantidad de predicciones incorrectas es significativamente menor en comparación con las predicciones correctas. Además, el menor número de errores se da en el peor escenario, cuando el modelo clasifica una conexión maligna como benigna. Esto sugiere que el modelo ha logrado obtener buenos resultados.
 
 \begin{figure}[H]
     \centering
@@ -973,21 +1016,36 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
 
 
 
-La Figura \ref{fig:BINhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 49 neuronas (n) en la capa oculta. Los resultados medios obtenidos concuerdan con lo comentado en el análisis de la sección \ref{sec:VIBIN49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+La Tabla \ref{fig:BINhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 49 neuronas (n) en la capa oculta. Los resultados medios obtenidos concuerdan con lo comentado en el análisis de la Sección \ref{sec:VIBIN49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 20\,000
 	\item \textbf{\textit{Epochs}}: 10
 	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/BINhs49.pdf}
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCB49 & 2º-MCB49 & 3º-MCB49 & 4º-MCB49 & 5º-MCB49 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}2000 & \cellcolor[HTML]{66ffa8}2000 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}30 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.0001 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1 & 0.997900 & 0.997907 & 0.998036 & 0.998022 & 0.997649 \\
+\cellcolor[HTML]{E0FFFF}avg\_fn & 19.6 & 19.8 & 21 & 21.2 & 23.2 \\
+\cellcolor[HTML]{E0FFFF}avg\_fp & 42.2 & 41.8 & 36.8 & 37 & 46 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision & 0.997135 & 0.997162 & 0.997500 & 0.997486 & 0.996877 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall & 0.998667 & 0.998653 & 0.998572 & 0.998558 & 0.998422 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc & 0.999765 & 0.999780 & 0.999782 & 0.999769 & 0.999829 \\
+\cellcolor[HTML]{E0FFFF}avg\_tn & 344123 & 344122.4 & 344127.4 & 344127.2 & 344118.2 \\
+\cellcolor[HTML]{E0FFFF}avg\_tp & 14685 & 14684.8 & 14683.6 & 14683.4 & 14681.4 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 49 neuronas ($n$).}
     \label{fig:BINhs49}
-\end{figure}
+\end{table}
 
-La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 49 neuronas (MCB49), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB49}.
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 49 neuronas (MCB49), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB49}. Se puede notar que las predicciones incorrectas son considerablemente menos frecuentes que las correctas. Además, el menor número de errores ocurre en el caso más crítico, cuando el modelo clasifica incorrectamente una conexión maligna como benigna. Este comportamiento sugiere que el modelo ha obtenido un buen rendimiento.
 
 \begin{figure}[H]
     \centering
@@ -997,21 +1055,36 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
 \end{figure}
 
 
-En la Figura \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (2n) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Tabla \ref{fig:BINhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación binária con una arquitectura de 98 neuronas (2n) en la capa oculta. Los resultados obtenidos coindiden con lo esperado tras el análisis de la Sección \ref{sec:VIBIN98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 20\,000
 	\item \textbf{\textit{Epochs}}: 10
 	\item \textbf{\textit{Learning rate}}: 0.01
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/BINhs98.pdf}
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCB98 & 2º-MCB98 & 3º-MCB98 & 4º-MCB98 & 5º-MCB98 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}10000 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}30 & \cellcolor[HTML]{b1bafb}10 & \cellcolor[HTML]{b1bafb}20 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1 & 0.998124 & 0.997941 & 0.997771 & 0.998015 & 0.997730 \\
+\cellcolor[HTML]{E0FFFF}avg\_fn & 18.4 & 21.6 & 22 & 22.4 & 22.6 \\
+\cellcolor[HTML]{E0FFFF}avg\_fp & 36.8 & 39 & 43.6 & 36 & 44.2 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision & 0.997501 & 0.997351 & 0.997039 & 0.997554 & 0.996999 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall & 0.998749 & 0.998531 & 0.998504 & 0.998477 & 0.998463 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc & 0.999781 & 0.999777 & 0.999776 & 0.999773 & 0.999777 \\
+\cellcolor[HTML]{E0FFFF}avg\_tn & 344127.4 & 344125.2 & 344120.6 & 344128.2 & 344120 \\
+\cellcolor[HTML]{E0FFFF}avg\_tp & 14686.2 & 14683 & 14682.6 & 14682.2 & 14682 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación binaria con una capa oculta de 98 neuronas ($2n$).}
     \label{fig:BINhs98}
-\end{figure}
+\end{table}
 
-La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 49 neuronas (MCB98), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB98}.
+La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el Modelo de Clasificación Binaria de 98 neuronas (MCB98), es la que se muestra en la Figura \ref{fig:MC_ENT_MCB98}. Las predicciones erróneas son mucho menos frecuentes que las correctas. Además, los errores son más escasos en el peor de los casos, cuando el modelo clasifica una conexión maligna como benigna. Esto indica que el modelo ha alcanzado un buen nivel de desempeño.
 
 \begin{figure}[H]
     \centering
@@ -1061,24 +1134,40 @@ Teniendo esto en cuenta, la métrica más importante es \textit{Weifhted F1 scor
 
 Otras métricas relevantes que se muestran en las siguientes figuras son:
 \begin{itemize}
-	\item \textbf{ Macro F1 Score}%: Indica un buen equilibrio entre precisión y \textit{recall} promedio por clase, sin importar su frecuencia, lo que refleja buen rendimiento en todas las clases, incluidas las minoritarias.
-	\item \textbf{ Macro Recall}%: Un valor alto significa que el modelo detecta correctamente una alta proporción de instancias reales en cada clase, lo que es crucial para no ignorar clases poco representadas.
+	\item \textbf{Macro F1 Score}%: Indica un buen equilibrio entre precisión y \textit{recall} promedio por clase, sin importar su frecuencia, lo que refleja buen rendimiento en todas las clases, incluidas las minoritarias.
+	\item \textbf{Macro Recall}%: Un valor alto significa que el modelo detecta correctamente una alta proporción de instancias reales en cada clase, lo que es crucial para no ignorar clases poco representadas.
 	\item \textbf{Macro Precision}%: mide qué proporción de predicciones por clase son correctas. Un valor alto implica que el modelo no clasifica erróneamente otras clases como una clase minoritaria.
 \end{itemize}
 
-En la Figura \ref{fig:MULhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 25 (n/2) neuronas (MCM25) en la capa oculta. Coinciden con lo esperado tras el análisis de la sección \ref{sec:VIMUL25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Tabla \ref{fig:MULhs25}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 25 (n/2) neuronas (MCM25) en la capa oculta. Coinciden con lo esperado tras el análisis de la Sección \ref{sec:VIMUL25} para esta arquitectura. La mejor configuración para la arquitectura con la mitad de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 64
 	\item \textbf{\textit{Epochs}}: 100
 	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/MULhs25.pdf}
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCM25 & 2º-MCM25 & 3º-MCM25 & 4º-MCM25 & 5º-MCM25 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}64 & \cellcolor[HTML]{66ffa8}512 & \cellcolor[HTML]{66ffa8}128 & \cellcolor[HTML]{66ffa8}256 & \cellcolor[HTML]{66ffa8}128 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}100 & \cellcolor[HTML]{b1bafb}100 & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}50 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 \\
+\cellcolor[HTML]{E0FFFF}avg\_accuracy & 0.541490 & 0.545803 & 0.543123 & 0.537111 & 0.536840 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_macro & 0.376131 & 0.374716 & 0.376293 & 0.379411 & 0.368504 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_weighted & 0.554636 & 0.552154 & 0.551329 & 0.550053 & 0.547048 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_macro & 0.357461 & 0.371904 & 0.367818 & 0.364547 & 0.368754 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_weighted & 0.652805 & 0.656511 & 0.659467 & 0.654297 & 0.656738 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_macro & 0.550876 & 0.540895 & 0.551185 & 0.553603 & 0.535375 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_weighted & 0.541490 & 0.545803 & 0.543123 & 0.537111 & 0.536840 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovo & 0.813081 & 0.795706 & 0.805615 & 0.801453 & 0.798093 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovr & 0.781124 & 0.774298 & 0.775449 & 0.780476 & 0.771334 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 25 neuronas.}
     \label{fig:MULhs25}
-\end{figure}
+\end{table}
 
 Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM25}, es posible visualizar facilmente los resultados obtenidos durante la fase de búsqueda de las mejores configuraciones de los hiperparámetros para el MCM25, ofreciendo una visión aproximada del rendimiento alcanzado.
 
@@ -1091,19 +1180,35 @@ Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM25}, 
 
 
 
-La figura \ref{fig:MULhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 49 (n) neuronas (MCM49) en la capa oculta. Los resultados medios obtenidos son algo peores de lo comentado en el análisis de la sección \ref{sec:VIMUL49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+La Tabla \ref{fig:MULhs49}, muestra la representación de las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 49 (n) neuronas (MCM49) en la capa oculta. Los resultados medios obtenidos son algo peores de lo comentado en el análisis de la Sección \ref{sec:VIMUL49} para esta arquitectura. La mejor configuración para la arquitectura con la el mismo número de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 256
 	\item \textbf{\textit{Epochs}}: 50
 	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/MULhs49.pdf}
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCM49 & 2º-MCM49 & 3º-MCM49 & 4º-MCM49 & 5º-MCM49 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}256 & \cellcolor[HTML]{66ffa8}128 & \cellcolor[HTML]{66ffa8}128 & \cellcolor[HTML]{66ffa8}64 & \cellcolor[HTML]{66ffa8}256 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}50 & \cellcolor[HTML]{b1bafb}100 & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}50 & \cellcolor[HTML]{b1bafb}80 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 \\
+\cellcolor[HTML]{E0FFFF}avg\_accuracy & 0.561552 & 0.552671 & 0.552875 & 0.552154 & 0.535329 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_macro & 0.389355 & 0.393880 & 0.388328 & 0.382577 & 0.390220 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_weighted & 0.569816 & 0.565581 & 0.565403 & 0.561813 & 0.558702 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_macro & 0.369135 & 0.376647 & 0.375087 & 0.366740 & 0.378177 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_weighted & 0.656464 & 0.670506 & 0.664273 & 0.658986 & 0.675658 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_macro & 0.554809 & 0.562095 & 0.548626 & 0.550733 & 0.565014 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_weighted & 0.561552 & 0.552671 & 0.552875 & 0.552154 & 0.535329 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovo & 0.800611 & 0.811428 & 0.803724 & 0.803414 & 0.809392 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovr & 0.780406 & 0.779326 & 0.776840 & 0.773186 & 0.782339 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 49 neuronas.}
     \label{fig:MULhs49}
-\end{figure}
+\end{table}
 
 Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM49}, es posible visualizar facilmente los resultados obtenidos durante la fase de búsqueda de las mejores configuraciones de los hiperparámetros para el MCM49, ofreciendo una visión aproximada del rendimiento alcanzado.
 
@@ -1116,19 +1221,35 @@ Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM49}, 
 
 
 
-En la Figura \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 (2n) neuronas (MCM98) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
+En la Tabla \ref{fig:MULhs98}, se encuentran representadas las cinco mejores configuraciones de hiperparámetros para el modelo de clasificación multiclase con una arquitectura de 98 (2n) neuronas (MCM98) en la capa oculta. Los resultados obtenidos en esta arquitectura son los que más coindiden con lo explicado en el análisis de la Sección \ref{sec:VIMUL98} para esta arquitectura. La mejor configuración para la arquitectura con el doble de neuronas en la capa oculta que de parámetros de entrada tiene el modelo, ha sido:
 \begin{itemize}
 	\item \textbf{\textit{Batch size}}: 256
 	\item \textbf{\textit{Epochs}}: 100
 	\item \textbf{\textit{Learning rate}}: 0.001
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./img/modelo/resultados/MULhs98.pdf}
+\begin{table}[H]
+\begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
+\hline
+Posicion\_EXP & 1º-MCM98 & 2º-MCM98 & 3º-MCM98 & 4º-MCM98 & 5º-MCM98 \\
+\hline
+\cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}256 & \cellcolor[HTML]{66ffa8}256 & \cellcolor[HTML]{66ffa8}512 & \cellcolor[HTML]{66ffa8}64 & \cellcolor[HTML]{66ffa8}256 \\
+\cellcolor[HTML]{E0FFFF}epochs & \cellcolor[HTML]{b1bafb}100 & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}100 & \cellcolor[HTML]{b1bafb}80 & \cellcolor[HTML]{b1bafb}50 \\
+\cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 \\
+\cellcolor[HTML]{E0FFFF}avg\_accuracy & 0.569414 & 0.556057 & 0.556915 & 0.556969 & 0.562083 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_macro & 0.413180 & 0.406773 & 0.388808 & 0.398720 & 0.397308 \\
+\cellcolor[HTML]{E0FFFF}avg\_f1\_weighted & 0.583123 & 0.577553 & 0.574200 & 0.571020 & 0.569831 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_macro & 0.394898 & 0.385322 & 0.372836 & 0.377543 & 0.387029 \\
+\cellcolor[HTML]{E0FFFF}avg\_precision\_weighted & 0.681971 & 0.675326 & 0.674534 & 0.669836 & 0.669688 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_macro & 0.577069 & 0.564962 & 0.573083 & 0.566046 & 0.550391 \\
+\cellcolor[HTML]{E0FFFF}avg\_recall\_weighted & 0.569414 & 0.556057 & 0.556915 & 0.556969 & 0.562083 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovo & 0.813320 & 0.806782 & 0.809286 & 0.812789 & 0.800316 \\
+\cellcolor[HTML]{E0FFFF}avg\_roc\_auc\_ovr & 0.788041 & 0.784984 & 0.781135 & 0.782758 & 0.777422 \\
+\hline
+\end{tabular}
     \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase con una capa oculta de 98 neuronas.}
     \label{fig:MULhs98}
-\end{figure}
+\end{table}
 
 Gracias a la matriz de confusión mostrada en la Figura \ref{fig:MC_ENT_MCM98}, es posible visualizar facilmente los resultados obtenidos durante la fase de búsqueda de las mejores configuraciones de los hiperparámetros para el MCM98, ofreciendo una visión aproximada del rendimiento alcanzado.
 
@@ -1150,7 +1271,7 @@ Para comprender mejor los resultados globales de los experimentos, se han recogi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{./img/modelo/resultados/MULtop10.pdf}
+    \includegraphics[width=0.95\textwidth]{./img/modelo/resultados/MULtop10.pdf}
     \caption{Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}
     \label{fig:MULtop10}
 \end{figure}

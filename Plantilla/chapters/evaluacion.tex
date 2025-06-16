@@ -35,7 +35,7 @@ En la Tabla \ref{fig:EVALMCB25}, se muestran los resultados obtenidos durante la
 \begin{table}[H]
 \begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
 \hline
-Posicion\_EXP & 3º-BNC25 & 2º-BNC25 & 1º-BNC25 & 5º-BNC25 & 4º-BNC25 \\
+Posicion\_EXP & 3º-MCB25 & 2º-MCB25 & 1º-MCB25 & 5º-MCB25 & 4º-MCB25\\
 \hline
 \cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}2000 & \cellcolor[HTML]{66ffa8}20000 \\
 \cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 \\
@@ -74,7 +74,7 @@ En la Tabla \ref{fig:EVALMCB49} se presentan los resultados obtenidos durante la
 \begin{table}[H]
 \begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
 \hline
-Posicion\_EXP & 2º-BNC49 & 1º-BNC49 & 5º-BNC49 & 3º-BNC49 & 4º-BNC49 \\
+Posicion\_EXP & 2º-MCB49 & 1º-MCB49 & 5º-MCB49 & 3º-MCB49 & 4º-MCB49 \\
 \hline
 \cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}2000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}2000 \\
 \cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.0001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 \\
@@ -112,7 +112,7 @@ La Tabla \ref{fig:EVALMCB98} muestra los resultados obtenidos en las evaluacione
 \begin{table}[H]
 \begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
 \hline
-Posicion\_EXP & 3º-BNC98 & 5º-BNC98 & 1º-BNC98 & 4º-BNC98 & 2º-BNC98 \\
+Posicion\_EXP & 3º-MCB98 & 5º-MCB98 & 1º-MCB98 & 4º-MCB98 & 2º-MCB98 \\
 \hline
 \cellcolor[HTML]{E0FFFF}batch\_size & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}10000 & \cellcolor[HTML]{66ffa8}20000 & \cellcolor[HTML]{66ffa8}15000 & \cellcolor[HTML]{66ffa8}10000 \\
 \cellcolor[HTML]{E0FFFF}learning\_rate & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.001 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.01 & \cellcolor[HTML]{f99595}0.001 \\
@@ -186,7 +186,7 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
     \label{fig:MC_EVAL_MCM25}
 \end{figure}
 
-Dado que los datos empleados para entrenar el modelo de clasificación multiclase presentan un elevado desbalance entre clases, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la mostrada en la Figura \ref{fig:MC_EVAL_MCM25}. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, tal y como se puede apreciar en la Figura \ref{fig:MCNorm_EVAL_MCM25}.
+Dado que los datos empleados para entrenar el modelo de clasificación multiclase presentan un elevado desbalance entre clases, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la mostrada en la Figura \ref{fig:MC_EVAL_MCM25}. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, tal y como se puede apreciar en la Figura \ref{fig:MCNorm_EVAL_MCM25}. Al comparar ambas figuras, destaca la alto porcentaje de aciertos en la clase 0 y 8 en la Figura \ref{fig:MCNorm_EVAL_MCM25} y los resultados menos precisos para la clase 3.
 
 La normalización en \texttt{wandb} convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
 
@@ -237,7 +237,7 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
     \label{fig:MC_EVAL_MCM49}
 \end{figure}
 
-Dado el elevado desbalance entre clases en los datos utilizados para entrenar el modelo de clasificación multiclase, se emplea la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la presentada en la Figura \ref{fig:MC_EVAL_MCM49}. Esta técnica facilita la observación más clara del comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, como se puede observar en la Figura \ref{fig:MCNorm_EVAL_MCM49}.
+Dado el elevado desbalance entre clases en los datos utilizados para entrenar el modelo de clasificación multiclase, se emplea la funcionalidad de normalización de matrices de confusión de \texttt{wandb} para generar una representación visual más informativa que la presentada en la Figura \ref{fig:MC_EVAL_MCM49}. Esta técnica facilita la observación más clara del comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos, como se puede observar en la Figura \ref{fig:MCNorm_EVAL_MCM49}. Comparando la Figura \ref{fig:MCNorm_EVAL_MCM25} con la figura de los datos normalizados del MCM49, se observa que como consecuencia del cambio de arquitectura, las prácticamente las predicciones para todas las clases han empeorado, a excepción de la clase 5 que ha obtenido mejores resultados que en el MCM25.
 
 La normalización en \texttt{wandb} convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
 
@@ -289,9 +289,9 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
     \label{fig:MC_EVAL_MCM98}
 \end{figure}
 
-Debido al elevado desbalance entre clases en los datos utilizados para entrenar el modelo de clasificación multiclase, se recurre a la funcionalidad de normalización de matrices de confusión de \texttt{wandb}, con el fin de generar una representación visual más clara que la mostrada en la Figura \ref{fig:MC_EVAL_MCM98}. Esta técnica permite analizar de manera más precisa el comportamiento del modelo en cada clase, sin depender de su frecuencia en los datos, como se observa en la Figura \ref{fig:MCNorm_EVAL_MCM98}.
+Debido al desbalanceo significativo entre las clases del conjunto de datos utilizados para entrenar el modelo de clasificación multiclase, se opta por utilizar la funcionalidad de normalización de matrices de confusión de \texttt{wandb}. Esta técnica permite generar una representación visual más clara que la mostrada en la Figura \ref{fig:MC_EVAL_MCM98}, facilitando así un análisis más preciso del comportamiento del modelo en cada clase, sin que este dependa de la frecuencia de las clases en los datos. Al comparar la Figura \ref{fig:MCNorm_EVAL_MCM98}, que corresponde con la versión normalizada del MCM98,  con las figuras \ref{fig:MCNorm_EVAL_MCM49} y \ref{fig:MCNorm_EVAL_MCM25}, se percibe una mejora generalizada en la predicción de todas las clases. La única excepción es la clase 5, donde la arquitectura del MCM98 presenta peores resultados en comparación con el MCM25.
 
-La normalización en \texttt{wandb} convierte los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que facilita la comparación del rendimiento del modelo entre clases desbalanceadas.
+La normalización en \texttt{wandb} transforma los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que simplifica la comparación del rendimiento del modelo, especialmente en situaciones con clases muy desbalanceadas.
 
 \begin{figure}[H]
     \centering
