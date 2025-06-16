@@ -1,7 +1,7 @@
 Este capítulo se centra en la fase de evaluación de los modelos entrenados y correspondiente con la fase de evaluación de la metodología CRISP-DM. Se describe el conjunto de datos de prueba, el proceso de evaluación, la presentación de los resultados de las métricas y el análisis de las fortalezas y debilidades de los modelos.
 
 \section{Conjunto de datos de prueba}
-Para obtener el conjunto de datos para el entrenamiento de los modelos y el conjunto de datos de prueba, se ha de dividir el conjunto total de los datos, una vez que estos han sido preparados como siguiendo los pasos que se comentan en la sección anterior \ref{sec.prep-datos} \nameref{sec.prep-datos}. 
+Para obtener el conjunto de datos para el entrenamiento de los modelos y el conjunto de datos de prueba, se ha de dividir el conjunto total de los datos, una vez que estos han sido preparados como siguiendo los pasos que se comentan en la Sección \ref{sec.prep-datos} \nameref{sec.prep-datos}. 
 
 
 Al dividir el conjunto de datos, es crucial aplicar estratificación. Como se menciona en capítulos previos, esta técnica implica segmentar los datos de forma que se mantenga la misma distribución de clases en cada subconjunto. Esto resulta especialmente útil cuando las clases están desbalanceadas, ya que garantiza que todos los subconjuntos cuenten con una representación proporcional de cada clase, lo que mejora la precisión del modelo y minimiza los sesgos. Dado el desbalanceo observado en los datos de este trabajo, es esencial realizar una estratificación en cada división de los datos para evitar que algunas particiones contengan únicamente datos de una clase.
@@ -21,7 +21,7 @@ Una vez que se han encontrado los hiperparámetros óptimos, se utiliza todo el 
 El procesos de evaluación consiste en proporcionar a los modelos entrenados con las configuraciones comentadas en los párrafos anteriores, los datos de evaluación que no han visto durante la fase de entrenamiento. Durante este proceso se recogen los resultados que se obtienen en función de la matriz de confusión correspondiente a cada modelo para posteriormente obtener las métricas con las que comparar el desempeño de los modelos.
 
 \section{Resultados de las métricas en el proceso de evaluación}
-Para comparar los resultados obtenidos en la fase de evaluación de las cinco mejores configuraciones de hiperparámetros de cada arquitectura de cada modelo, se utilizan las mismas métricas comentadas en las secciones \ref{sec.metricas-bin} \nameref{sec.metricas-bin} y \ref{sec:metricas-mul} \nameref{sec:metricas-mul} correspondientemente.
+Para comparar los resultados obtenidos en la fase de evaluación de las cinco mejores configuraciones de hiperparámetros de cada arquitectura de cada modelo, se utilizan las mismas métricas comentadas en las Secciones \ref{sec.metricas-bin} \nameref{sec.metricas-bin} y \ref{sec:metricas-mul} \nameref{sec:metricas-mul} correspondientemente.
 
 Con el objetivo de que la interpretación de los datos sea más sencilla, se ha añadido a las siguientes figuras una columna con la posición del \textit{ranking} que ocupó cada configuración en la fase anterior.
 
@@ -226,7 +226,7 @@ Posicion\_EXP & 5º-MCM49 & 4º-MCM49 & 3º-MCM49 & 2º-MCM49 & 1º-MCM49 \\
     \label{fig:EVALMCM49}
 \end{table}
 
-Al analizar los resultados obtenidos para esta arquitectura, destaca más allá del bajo rendimiento reflejado por la métrica \textit{F1-weighted}, el hecho de que el orden de las configuraciones se ha invertido respecto a lo observado en la fase de búsqueda. Las posibles causas de este comportamiento se detallan en la sección \ref{sec:analEVAL}.
+Al analizar los resultados obtenidos para esta arquitectura, destaca más allá del bajo rendimiento reflejado por la métrica \textit{F1-weighted}, el hecho de que el orden de las configuraciones se ha invertido respecto a lo observado en la fase de búsqueda. Las posibles causas de este comportamiento se detallan en la Sección \ref{sec:analEVAL}.
 
 La matriz de confusión de la mejor configuración de hiperparámetros obtenida en el 5º MCM49 durante su evaluación, es la que se muestra en la Figura \ref{fig:MC_EVAL_MCM49}.
 
@@ -289,7 +289,7 @@ La matriz de confusión de la mejor configuración de hiperparámetros obtenida 
     \label{fig:MC_EVAL_MCM98}
 \end{figure}
 
-Debido al desbalanceo significativo entre las clases del conjunto de datos utilizados para entrenar el modelo de clasificación multiclase, se opta por utilizar la funcionalidad de normalización de matrices de confusión de \texttt{wandb}. Esta técnica permite generar una representación visual más clara que la mostrada en la Figura \ref{fig:MC_EVAL_MCM98}, facilitando así un análisis más preciso del comportamiento del modelo en cada clase, sin que este dependa de la frecuencia de las clases en los datos. Al comparar la Figura \ref{fig:MCNorm_EVAL_MCM98}, que corresponde con la versión normalizada del MCM98,  con las figuras \ref{fig:MCNorm_EVAL_MCM49} y \ref{fig:MCNorm_EVAL_MCM25}, se percibe una mejora generalizada en la predicción de todas las clases. La única excepción es la clase 5, donde la arquitectura del MCM98 presenta peores resultados en comparación con el MCM25.
+Debido al desbalanceo significativo entre las clases del conjunto de datos utilizados para entrenar el modelo de clasificación multiclase, se opta por utilizar la funcionalidad de normalización de matrices de confusión de \texttt{wandb}. Esta técnica permite generar una representación visual más clara que la mostrada en la Figura \ref{fig:MC_EVAL_MCM98}, facilitando así un análisis más preciso del comportamiento del modelo en cada clase, sin que este dependa de la frecuencia de las clases en los datos. Al comparar la Figura \ref{fig:MCNorm_EVAL_MCM98}, que corresponde con la versión normalizada del MCM98,  con las Figuras \ref{fig:MCNorm_EVAL_MCM49} y \ref{fig:MCNorm_EVAL_MCM25}, se percibe una mejora generalizada en la predicción de todas las clases. La única excepción es la clase 5, donde la arquitectura del MCM98 presenta peores resultados en comparación con el MCM25.
 
 La normalización en \texttt{wandb} transforma los conteos absolutos de la matriz de confusión en proporciones por clase real, lo que simplifica la comparación del rendimiento del modelo, especialmente en situaciones con clases muy desbalanceadas.
 
@@ -339,7 +339,10 @@ La pérdida de rendimiento observada puede explicarse también por el hecho de q
 
 Por otra parte, el hecho de que el mejor resultado de \textit{F1-weighted} en evaluación ($0{.}568$) sea comparable al mejor valor obtenido en la búsqueda sugiere que el modelo alcanza un rendimiento máximo limitado por la naturaleza del problema. La estructura altamente desbalanceada del conjunto impone un techo al rendimiento global del modelo \cite{japkowicz2002class}.
 
-El modelo de clasificación multiclase presenta un rendimiento aceptable dadas las condiciones desbalanceadas del problema, pero revela claras limitaciones en la detección equilibrada de clases. Las discrepancias entre búsqueda y evaluación reflejan la dificultad del modelo para mantener un rendimiento robusto al exponerse a la totalidad del conjunto, y sugieren la necesidad de introducir nuevas estrategias no probadas en la sección \ref{subsec:MCMdescart} \nameref{subsec:MCMdescart} orientadas al tratamiento explícito del desbalanceo de clases en futuras fases del desarrollo.
+A pesar de que el modelo 4º-MCM98 presenta una precisión global moderada (test\_accuracy $\approx$ 54.6 \%), sus valores de AUC, tanto en el enfoque \textit{One-vs-Rest} (0.8651) como en \textit{One-vs-One} (0.8884), indican una buena capacidad para distinguir entre las diferentes clases. Esto sugiere que el modelo, aunque no siempre acierta en la clase exacta, logra asignar puntuaciones de probabilidad adecuadas que reflejan correctamente la proximidad a la clase verdadera.
+
+
+El modelo de clasificación multiclase presenta un rendimiento aceptable dadas las condiciones desbalanceadas del problema, pero revela claras limitaciones en la detección equilibrada de clases. Las discrepancias entre búsqueda y evaluación reflejan la dificultad del modelo para mantener un rendimiento robusto al exponerse a la totalidad del conjunto, y sugieren la necesidad de introducir nuevas estrategias no probadas en la Sección \ref{subsec:MCMdescart} \nameref{subsec:MCMdescart} orientadas al tratamiento explícito del desbalanceo de clases en futuras fases del desarrollo.
 
 \begin{figure}[H]
     \centering
@@ -348,3 +351,68 @@ El modelo de clasificación multiclase presenta un rendimiento aceptable dadas l
     \label{fig:top5EVALMCM}
 \end{figure}
 
+\section{Comparación de los resultados obtenidos con proyectos similares}
+
+A continuación, se realiza una comparación entre los modelos propuestos en el presente trabajo y los desarrollados por \textit{Sarhan et al.}~\cite{sarhan2020netflow}, ambos aplicados a la detección de ataques en redes informáticas utilizando versiones del conjunto de datos \texttt{NF-UNSW-NB15-v3}.
+
+\begin{itemize}
+	\item Para el modelo de clasificación binaria, el respresentante de este trabajo será el que mejores resultados ha obtenido durante la fase de evaluación, el 3º-MCB98.
+	\item Para el modelo de clasificación multiclase,el respresentante de este trabajo será el que mejores resultados ha obtenido durante la fase de evaluación, el 4º-MCM98. 
+\end{itemize}
+
+
+\subsection{Comparación de los modelos de clasificación binaria}
+
+En la Tabla \ref{tab:compbin}, el modelo 3º-MCB98 evidencia una mejora sustancial en todas las métricas comparado con el modelo de \textit{Sarhan et al.}, destacando un aumento de $0.1479$ en el \textit{F1-Score} y más de cinco puntos porcentuales en el \textit{AUC}. Estas mejoras pueden atribuirse al uso de técnicas avanzadas de entrenamiento, ajuste de hiperparámetros y optimización de características.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Modelo} & \textbf{\textit{Accuracy}} & \textbf{\textit{AUC}} & \textbf{\textit{F1-Score}} & \textbf{\textit{Recall}} & \textbf{\textit{Precision}} & \textbf{\textit{Specificity}} \\
+\hline
+\textit{Sarhan et al.} & 98.62\% & 0.9485 & 0.85 & -- & -- & -- \\
+3º-MCB98 & 99.98\% & 0.9998 & 0.9979 & 0.9987 & 0.9971 & 0.9999 \\
+\hline
+\end{tabular}
+\caption{Comparación de modelos de clasificación binaria.}
+\label{tab:compbin}
+\end{table}
+
+\subsection{Comparación de los resultados por clase de los modelos de clasificación multiclase}
+
+A pesar de que el modelo 4º-MCM98 no supera al de \textit{Sarhan et al.} en clases como \textit{Exploits} y \textit{Generic}, presenta un desempeño significativamente superior en \textit{Analysis} y \textit{Worms}. Estas diferencias que se pueden observar en la Tabla \ref{tab:compmulclass} pueden estar relacionadas con el preprocesamiento, la selección de características y la estrategia de balanceo utilizada mencionadas en el Capítulo \ref{cap.modelos}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Clase} & \textbf{\textit{F1-Score} (\textit{Sarhan et al.})} & \textbf{\textit{F1-Score} (4º-MCM98)} \\
+\hline
+Analysis (0) & 0.15 & 0.97 \\
+Backdoor (1) & 0.17 & 0.20 \\
+DoS (2) & 0.41 & 0.25 \\
+Exploits (3) & 0.82 & 0.48 \\
+Fuzzers (4) & 0.55 & 0.75 \\
+Generic (5) & 0.66 & 0.28 \\
+Reconnaissance (6) & 0.82 & 0.56 \\
+Shellcode (7) & 0.75 & 0.72 \\
+Worms (8) & 0.55 & 0.92 \\
+\hline
+\end{tabular}
+\caption{Comparación de los valores obtenidos en \textit{F1-Score} por clase.}
+\label{tab:compmulclass}
+\end{table}
+
+
+\subsection{Evaluación comparativa del rendimiento}
+Tras observar las diferencias entre los valores de las métricas obtenidas en ambos proyectos, se puede asumir que:
+
+\begin{itemize}
+    \item El modelo 3º-MCB98 supera de forma consistente al modelo propuesto por \textit{Sarhan et al.} en todas las métricas evaluadas para la tarea de clasificación binaria.
+  \item El modelo 4º-MCM98 destaca en clases con un menor número de muestras en el conjunto de datos utilizado para el entrenamiento como \textit{Analysis} y \textit{Worms}, mientras que el modelo de \textit{Sarhan et al.} muestra mayor estabilidad en clases con una mayor población de muestras. Esta diferencia puede deberse al uso de la función de pérdida ajustada utilizada en los modelos desarrollados en este proyecto, que penaliza con mayor severidad los errores en clases poco representadas, tal como se discute a lo largo del presente trabajo.
+  
+\end{itemize}
+
+
+Los modelos desarrollados en este trabajo presentan mejoras notables en la clasificación binaria y un rendimiento competitivo en la clasificación multiclase. Aunque persisten desafíos en clases como \textit{Generic} y \textit{Exploits}, los resultados alcanzados en clases con relaciones de datos más complejas sugieren una mayor capacidad de generalización frente a los modelos publicados previamente.

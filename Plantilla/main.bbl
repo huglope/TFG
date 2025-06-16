@@ -587,6 +587,12 @@ Nathalie Japkowicz and Shaju Stephen.
 \newblock {\em Proceedings of the 2002 International Conference on Artificial
   Intelligence}, 56:111--117, 2002.
 
+\bibitem{sarhan2020netflow}
+Mohanad Sarhan, Rami Alsaqour, Mohammad Abdelhaq, and Shukor~Abd Razak.
+\newblock Netflow datasets for machine learning-based network intrusion
+  detection systems.
+\newblock {\em arXiv preprint arXiv:2011.09144}, 2020.
+
 \bibitem{wirth2000crisp}
 R.~Wirth and J.~Hipp.
 \newblock Crisp-dm: Towards a standard process model for data mining.

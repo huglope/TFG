@@ -40,6 +40,8 @@
 \contentsline {table}{\numberline {7.4}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n/2} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{120}{table.caption.111}%
 \contentsline {table}{\numberline {7.5}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{123}{table.caption.115}%
 \contentsline {table}{\numberline {7.6}{\ignorespaces Resultados de la evaluación del modelo de clasificación multiclase con \textit {2n} neuronas en la capa oculta siendo \textit {n} el número de atributos de entrada.}}{126}{table.caption.119}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Comparación de modelos de clasificación binaria.}}{131}{table.caption.124}%
+\contentsline {table}{\numberline {7.8}{\ignorespaces Comparación de los valores obtenidos en \textit {F1-Score} por clase.}}{132}{table.caption.125}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

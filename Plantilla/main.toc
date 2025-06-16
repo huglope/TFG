@@ -2,8 +2,8 @@
 \contentsline {chapter}{Agradecimientos}{III}{chapter*.3}%
 \contentsline {chapter}{Resumen}{V}{chapter*.4}%
 \contentsline {chapter}{Abstract}{VII}{chapter*.5}%
-\contentsline {chapter}{Lista de figuras}{XIII}{chapter*.6}%
-\contentsline {chapter}{Lista de tablas}{XVII}{chapter*.7}%
+\contentsline {chapter}{Lista de figuras}{XV}{chapter*.6}%
+\contentsline {chapter}{Lista de tablas}{XIX}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contexto}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivación}{2}{section.1.2}%
@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {6.3.3}Capa oculta con el doble de neuronas que atributos de entrada}{75}{subsection.6.3.3}%
 \contentsline {paragraph}{Ventajas (2n)}{76}{section*.68}%
 \contentsline {paragraph}{Inconvenientes (2n)}{77}{section*.69}%
-\contentsline {section}{\numberline {6.4}Estructura/Arquitecturas de los modelos de clasificación multiclase desarrollados}{77}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Arquitecturas de los modelos de clasificación multiclase desarrollados}{77}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Capa oculta con la mitad de neuronas que atributos de entrada}{78}{subsection.6.4.1}%
 \contentsline {paragraph}{Ventajas (n/2)}{78}{section*.71}%
 \contentsline {paragraph}{Inconvenientes (n/2)}{79}{section*.72}%
@@ -104,14 +104,18 @@
 \contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{128}{section.7.4}%
 \contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{128}{subsection.7.4.1}%
 \contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{129}{subsection.7.4.2}%
-\contentsline {chapter}{\numberline {8}Despliegue}{131}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{131}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{131}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{132}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{132}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{133}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{135}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusiones}{135}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Trabajo futuro}{137}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Apéndice}{139}{chapter.10}%
-\contentsline {chapter}{Bibliografía}{141}{chapter.10}%
+\contentsline {section}{\numberline {7.5}Comparación de los resultados obtenidos con proyectos similares}{131}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Comparación de los modelos de clasificación binaria}{131}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Comparación de los resultados por clase de los modelos de clasificación multiclase}{132}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Evaluación comparativa del rendimiento}{132}{subsection.7.5.3}%
+\contentsline {chapter}{\numberline {8}Despliegue}{135}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Integración en entornos operativos}{135}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Consideraciones técnicas}{135}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Patrones arquitectónicos recomendados: Pipeline y Observador}{136}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Monitorización y mantenimiento}{136}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Impacto y aplicación en el mundo real}{137}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{139}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{139}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Trabajo futuro}{141}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Apéndice}{143}{chapter.10}%
+\contentsline {chapter}{Bibliografía}{145}{chapter.10}%
