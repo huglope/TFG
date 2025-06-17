@@ -1,0 +1,282 @@
+\documentclass[openright,twoside,10pt]{book}
+\usepackage[b5paper,left=2cm,top=2.5cm,right=1.5cm,bottom=2.5cm]{geometry} 
+\usepackage[spanish]{babel} % espanol
+\usepackage[utf8]{inputenc} % acentos sin codigo
+\usepackage{graphicx} % gráficos
+\usepackage{pdflscape}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+
+
+%% Mis paquetes
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{ifthen} % para la tabla de riesgos
+%\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{eurosym} % para el euro
+\usepackage{listings}
+\usepackage{framed}
+\usepackage{newfloat}
+\usepackage{caption}
+\usepackage{xurl}
+\usepackage[colorlinks]{hyperref}
+
+\hypersetup{
+	allcolors = {blue}
+}
+
+\usepackage[table,xcdraw]{xcolor} % Para colores en tablas
+\usepackage{array} % Para mayor control de columnas
+\usepackage{pgfgantt}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\usepackage{tablefootnote}  % Paquete para footnotes en tablas
+
+
+
+\renewcommand{\arraystretch}{1.45}
+
+\definecolor{redrisk}{RGB}{255, 59, 48}     % Rojo intenso
+\definecolor{orangerisk}{RGB}{255, 149, 0}  % Naranja brillante
+\definecolor{yellowrisk}{RGB}{255, 204, 0}  % Amarillo vibrante
+\definecolor{greenrisk}{RGB}{52, 199, 89}   % Verde esmeralda
+\definecolor{bluerisk}{RGB}{0, 122, 255}    % Azul eléctrico
+\definecolor{purplerisk}{RGB}{175, 82, 222} % Púrpura intenso\\
+\definecolor{lightgray}{RGB}{230,230,230}
+
+
+
+\DeclareFloatingEnvironment[fileext=frm,placement={!ht},name=Fragmento de código]{codefragment}
+
+\captionsetup[codefragment]{labelfont=bf}
+
+\setlength{\parskip}{10pt plus 1pt minus 1pt}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % for ragged-right material
+\newcolumntype{Z}{>{\hsize=\dimexpr2\hsize-29\tabcolsep+\arrayrulewidth\relax}X}
+\newcolumntype{P}{p{0.22\textwidth}L p{0.78\textwidth}L}
+%\newcolumntype{C}{>{\centering\arraybackslash}X}   % for centered material
+
+\extrarowheight = +0.5ex
+
+ % creación del glosario de términos
+\makeglossaries % glosario de términos
+\input{chapters/glossary.tex}
+\setglossarystyle{altlisthypergroup}
+
+ % aqui definimos el encabezado de las paginas pares e impares.
+\rhead[]{}
+
+\renewcommand{\headrulewidth}{0.5pt}
+
+% aqui definimos el pie de pagina de las paginas pares e impares.
+\rfoot[\thepage]{\thepage}
+\cfoot[]{}
+\renewcommand{\footrulewidth}{0pt}
+
+%redefino el verbatim
+%\renewenvironment{verbatim}{\begin{Verbatim}[frame=single,fontsize=\small]}{\end{Verbatim}}
+
+
+% aqui definimos el encabezado y pie de pagina de la pagina inicial de un capitulo.
+\fancypagestyle{plain}{
+\fancyhead[R]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancy} % seleccionamos un estilo
+
+
+\renewcommand\spanishtablename{Tabla}
+\renewcommand{\spanishlisttablename}{Lista de Tablas} 
+\renewcommand{\spanishlistfigurename}{Lista de Figuras} 
+
+\date{2024-2025}
+\author{Hugo López Álvarez}
+
+\title{Diseño de un modelo neuronal para la detección y la clasificación de intrusiones en redes informáticas}
+
+
+\raggedbottom
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-0.5in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=5cm]{./img/uva}
+\end{center}
+\end{figure}
+%\begin{large}
+%\textbf{Universidad de Valladolid}
+%\end{large}
+
+\vspace*{0.3in}
+\huge
+{\fontfamily{phv}\selectfont Escuela de Ingeniería Informática}
+\\
+\vspace*{0.5in}
+\large
+{\fontfamily{phv}\selectfont \textbf{\textsc{\textsc{TRABAJO FIN DE GRADO}}}}
+
+	
+\vspace*{0.2in}
+\fontfamily{phv}\selectfont Grado en Ingeniería Informática\\
+\fontfamily{phv}\selectfont Mención en Tecnologías de la Información\\
+\vspace*{0.8in}
+\huge
+{\fontfamily{phv}\selectfont\textbf{Diseño de un modelo neuronal para la detección y la clasificación de intrusiones en redes informáticas}}
+\vspace*{1in}
+\begin{large}
+\begin{flushright}
+Alumno:\\\textbf{Hugo López Álvarez}\\
+\vspace*{0.3in}
+Tutor:\\ \textbf{Diego García Álvarez}\\
+\end{flushright}
+\end{large}
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\mbox{}	
+\thispagestyle{empty} % para que no se numere esta página
+
+\chapter*{}
+\pagenumbering{Roman} % para comenzar la numeración de paginas en números romanos
+\begin{flushright}
+\textit{%Dedicatoria,\\
+Al aprendizaje y a la informática, que parecen no tener límites.
+}
+\end{flushright}
+
+\chapter*{Agradecimientos} % si no queremos que añada la palabra "Capitulo"
+\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
+\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
+
+Mi más sincera gratitud a mi director de este Trabajo Fin de Grado, el Dr. D. Diego García Álvarez, por su dedicación docente, sus conocimientos compartidos y su inestimable guía para la comprensión del campo de estudio. Su paciencia, observaciones, apoyo, implicación y constructivos comentarios han sido cruciales en el desarrollo de este trabajo.
+
+Gracias a todos aquellos que me han enseñado a  enfrentar los desafíos que se me plantean en la vida.
+
+A mi familia le agradezco su apoyo en todo lo que me propongo, hacerme sentir protegido y valorado, despertar mi curiosidad por lo que me rodea y contribuir a que disfrute de cada instante de mi vida.
+
+Por último, mi agradecimiento a cada uno de los docentes que he tenido a lo largo de mis estudios por sus aportaciones a este fructífero viaje académico.
+
+
+\chapter*{Resumen} % Se pone * si no queremos que añada la palabra "Capitulo"
+\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
+\markboth{RESUMEN}{RESUMEN} % encabezado
+%\begin{flushleft}
+
+En la actualidad, las intrusiones en redes informáticas son cada día más frecuentes y variadas. Esto provoca que los equipos de defensa en ciberseguridad de los sistemas tengan que monitorizar los flujos de información que atraviesan sus redes. Una intrusión en un sistema puede suponer desde el espionaje empresarial hasta el secuestro de datos, por lo que es fundamental actuar rápidamente en cuanto se detecta una intrusión.
+
+El principal objetivo de este Trabajo Fin de Grado (TFG) es el desarrollo de modelos neuronales capaces de detectar y clasificar intrusiones en un sistema informático. El modelo propuesto se divide en dos niveles jerárquicos, un modelo dedicado a la clasificación binaria de los flujos de datos (como benignos o malignos) y una vez que se ha detectado un flujo maligno, un segundo modelo de clasificación multiclase capaz de distinguir entre nueve tipos diferentes de ataques entre los que este modelo clasifica el flujo.
+
+Puesto que el trabajo desarrollado se enmarca en un Grado en Ingeniería Informática, el proceso de desarrollo se ha guiado siguiendo CRISP-DM, una metodología específica para proyectos de minería de datos en la industria. Esta metodología abarca desde la comprensión del problema como en diseño de modelos útiles, hasta su evaluación en un entorno real.
+%\end{flushleft}
+
+
+\chapter*{Abstract} % Se pone * si no queremos que añada la palabra "Capitulo"
+\addcontentsline{toc}{chapter}{Abstract} % si queremos que aparezca en el índice
+\markboth{ABSTRACT}{ABSTRACT} % encabezado
+Nowadays, intrusions into computer networks are becoming more frequent and varied. This forces cybersecurity defense teams to monitor the information flows traversing their networks. An intrusion into a system can range from corporate espionage to data hijacking, making it essential to act quickly once an intrusion is detected.
+
+The main objective of this Bachelor's Thesis (TFG) is the development of neural models capable of detecting and classifying intrusions in a computer system. The proposed model is divided into two hierarchical levels: a model dedicated to the binary classification of data flows (as benign or malicious) and, once a malicious flow is detected, a second multiclass classification model capable of distinguishing between nine different types of attacks into which the model categorizes the flow.
+
+Since this work is part of a Degree in Computer Engineering, the development process has followed CRISP-DM, a specific methodology for data mining projects in the industry. This methodology covers everything from understanding the problem to designing useful models and evaluating them in a real environment.
+
+\tableofcontents % indice de contenidos
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+\listoffigures % indice de figuras
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+\listoftables % indice de tablas
+
+\clearpage
+
+\printglossary[title=Glosario de términos, toctitle=Glosario de términos]
+\glsaddall
+\clearpage
+
+\printglossary[type=\acronymtype]
+
+\chapter{Introducción}\label{cap.introduccion}
+\pagenumbering{arabic} % para empezar la numeración con números
+\input{chapters/introduccion}
+
+\chapter{Metodología}\label{cap.metodologia}
+\input{chapters/metodologia}
+
+\chapter{Planificación}\label{cap.req-planificacion}
+\input{chapters/planificacion}
+
+\chapter{Entendimiento del problema}\label{cap.ent.problema}
+\input{chapters/ent-problema}
+
+\chapter{Entendimiennto de los datos}\label{cap.ent-datos}
+\input{chapters/ent-datos}
+
+\chapter{Modelos}\label{cap.modelos}
+\input{chapters/modelos}
+
+\chapter{Evaluación}\label{cap.test}
+\input{chapters/evaluacion}
+
+\chapter{Despliegue}\label{cap.despliegue}
+\input{chapters/despliegue}
+
+%\chapter{Tecnologías usadas}\label{cap.tecnologias}
+%\input{chapters/tecnologias}
+
+
+\chapter{Conclusiones}\label{cap.conclusiones}
+\input{chapters/conclusiones}
+
+
+\chapter{Apéndice}\label{cap:apendice}
+\input{chapters/apendice}
+
+%Esto es una cita: \cite{ej}. Tiene que hacer referencia a la etiqueta de un bibitem.
+
+%Esto es un enlace \href{www.enlace.net}{Enlace}
+
+% Esto es una url \url{http://www.uva.es}
+
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}
+%\renewcommand\bibname{Referencias Web}
+ %\begin{thebibliography}{X}
+
+ %\bibitem{velostat} \textit{Velostat}, \\
+ %\textsc{ejemplo.com}.
+ %\\Recuperado a tal fecha, \\de \href{http://ejemplo.com}
+ %\end{thebibliography}
+ 
+%\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{bibliografia}
+
+
+\end{document}

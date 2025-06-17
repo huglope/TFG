@@ -1,0 +1,642 @@
+\begin{thebibliography}{100}
+
+\bibitem{haya_crisp_dm}
+Pablo Haya.
+\newblock La metodología {{CRISP-DM}} en ciencia de datos.
+\newblock
+  \url{https://www.iic.uam.es/innovacion/metodologia-crisp-dm-ciencia-de-datos/},
+  noviembre 2021.
+\newblock Consultado el 18 de mayo de 2025.
+
+\bibitem{schwaber2020scrum2}
+Ken Schwaber and Jeff Sutherland.
+\newblock The scrum guide: The definitive guide to scrum – the rules of the
+  game.
+\newblock \url{https://www.scrum.org/resources/scrum-guide}, 2020.
+\newblock Accedido: 2025-05-29.
+
+\bibitem{tcpprotocolionos}
+IONOS España.
+\newblock Tcp protocol: así funciona el protocolo de transmisión.
+\newblock
+  \url{https://www.ionos.es/digitalguide/servidores/know-how/que-es-tcp-transport-control-protocol/},
+  2020.
+\newblock Accedido: 2025-06-02.
+
+\bibitem{tcpsegment}
+Vicente~González Ruiz.
+\newblock {{TCP}} (transmission control protocol).
+\newblock
+  \url{https://w3.ual.es/~vruiz/Docencia/Apuntes/Networking/Protocols/Level-4/05-TCP/index.html},
+  December 2014.
+\newblock Accedido: 2025-04-15.
+
+\bibitem{paqueteip}
+Vicente~González Ruiz.
+\newblock El {{IP}} (internet protocol).
+\newblock
+  \url{https://w3.ual.es/~vruiz/Docencia/Apuntes/Networking/Protocols/Level-3/01-IP/index.html},
+  December 2014.
+\newblock Accedido: 2025-06-02.
+
+\bibitem{tomorrow2023peso}
+Tomorrow Bio.
+\newblock Peso a peso: cómo se fortalecen las redes neuronales.
+\newblock
+  \url{https://www.tomorrow.bio/es/post/peso-a-peso-como-se-fortalecen-las-redes-neuronales},
+  2023.
+\newblock Consultado: 2025-06-15.
+
+\bibitem{aprendeia2021deep}
+AprendeIA.
+\newblock ¿qué es deep learning?
+\newblock \url{https://aprendeia.com/2021/03/02/que-es-deep-learning/}, 2021.
+\newblock Accedido: 2025-04-04.
+
+\bibitem{msmk2023backpropagation}
+MSMK University.
+\newblock Red neuronal de retropropagación (backpropagation neural network).
+\newblock
+  \url{https://msmk.university/red-neuronal-de-retropropagacion-backpropagation-neural-network/},
+  2023.
+
+\bibitem{uniteai2020cnn}
+Daniel~Nielson Unite.~AI.
+\newblock ¿qué son las redes neuronales convolucionales ({{CNN}})?
+\newblock
+  \url{https://www.unite.ai/es/what-are-convolutional-neural-networks/}, 2020.
+\newblock Accedido: 2025-05-14.
+
+\bibitem{rundle2024ai}
+James Rundle.
+\newblock The ai effect: Amazon sees nearly 1 billion cyber threats a day.
+\newblock {\em The Wall Street Journal}, December 2024.
+
+\bibitem{chapman2000crisp}
+Pete Chapman, Julian Clinton, Randy Kerber, Thomas Khabaza, Thomas Reinartz,
+  Colin Shearer, and Rüdiger Wirth.
+\newblock {\em CRISP-DM 1.0: Step-by-step data mining guide}.
+\newblock SPSS Inc., 2000.
+
+\bibitem{beck2001manifesto}
+Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham,
+  Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon
+  Kern, Brian Marick, Robert~C. Martin, Steve Mellor, Ken Schwaber, Jeff
+  Sutherland, and Dave Thomas.
+\newblock Manifesto for agile software development.
+\newblock \url{https://agilemanifesto.org/}, 2001.
+\newblock Accedido: 2025-05-29.
+
+\bibitem{pmbok}
+Project~Management Institute.
+\newblock {\em A Guide to the Project Management Body of Knowledge (PMBOK
+  Guide)}.
+\newblock Project Management Institute, 2021.
+
+\bibitem{carmona2021gestion}
+Diego~Carmona Fernández and Silvia~Román Suero.
+\newblock {\em Gestión de Riesgos: Fundamentos sobre la gestión de riesgos en
+  los proyectos}.
+\newblock Universidad de Cádiz, 2021.
+
+\bibitem{oliveros2011gestion}
+Miguel~Ángel Oliveros~Villegas and Haydeé~Cecilia Rincón~de Parra.
+\newblock Gestión de costos en los proyectos: un abordaje teórico desde las
+  mejores prácticas del project management institute.
+\newblock {\em Visión Gerencial}, 10(1):85--94, 2011.
+
+\bibitem{ethical_hacking}
+David~Puche ACISSI, Marion~Agé.
+\newblock {\em Seguridad informática - Ethical Hacking: Conocer el ataque para
+  una mejor defensa}.
+\newblock Ediciones ENI, 2022.
+
+\bibitem{conataques}
+ServerNet.
+\newblock Consecuencias de ataques informáticos: reputación, daños y
+  pérdidas.
+\newblock {\em ServerNet Blog}, 2025.
+
+\bibitem{tanenbaum2009}
+A.~S. Tanenbaum.
+\newblock {\em Computer Networks}.
+\newblock Prentice Hall, 5th edition, 2009.
+
+\bibitem{scott2015}
+J.~Scott.
+\newblock A comprehensive study on denial of service attacks.
+\newblock {\em International Journal of Computer Science}, 12(4):45--60, 2015.
+
+\bibitem{cissp2018}
+International Information System Security~Certification Consortium.
+\newblock Phishing attacks and how to avoid them.
+\newblock \url{https://www.isc2.org}, 2018.
+\newblock Accedido: 2025-04-16.
+
+\bibitem{Santos2020}
+Francisco Santos and María García.
+\newblock Impacto de los ciberataques en la continuidad operativa de las
+  empresas.
+\newblock {\em Revista de Ciberseguridad Empresarial}, 5:45--58, 2020.
+
+\bibitem{Ponemon2019}
+Ponemon Institute.
+\newblock {\em The Cost of a Data Breach Report 2019}.
+\newblock Ponemon Institute, Michigan, USA, 2019.
+
+\bibitem{Bada2017}
+Akin Bada and M.~Angela Sasse.
+\newblock The impact of data breaches on consumer trust and company reputation.
+\newblock {\em Journal of Cybersecurity and Digital Trust}, 1(3):123--134,
+  2017.
+
+\bibitem{anderson2020}
+Ross Anderson.
+\newblock Security engineering: A guide to building dependable distributed
+  systems.
+\newblock {\em Wiley}, 2020.
+
+\bibitem{RGPD2016}
+Parlamento~Europeo y~Consejo de~la Unión~Europea.
+\newblock Reglamento (ue) 2016/679 del parlamento europeo y del consejo de 27
+  de abril de 2016 relativo a la protección de las personas físicas en lo que
+  respecta al tratamiento de datos personales y a la libre circulación de
+  estos datos.
+\newblock
+  \url{https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32016R0679},
+  2016.
+\newblock Accedido: 2025-04-16.
+
+\bibitem{Sommestad2019}
+Lars Sommestad, Mattias Ekstedt, and Per Johnson.
+\newblock The impact of proactive cybersecurity measures on organizational
+  reputation and trust.
+\newblock {\em Journal of Information Security}, 8(4):115--127, 2019.
+
+\bibitem{cosmikal_firewall}
+Cosmikal.
+\newblock ¿qué es y cómo funciona un firewall? guía básica 2025.
+\newblock \url{https://www.cosmikal.es/que-es-y-como-funciona-un-firewall/},
+  december 2024.
+\newblock Accedido: 2025-05-25.
+
+\bibitem{geekflare_ids_ips}
+Geekflare.
+\newblock Ids vs ips: A comprehensive guide to network security solutions.
+\newblock
+  \url{https://geekflare.com/es/ids-vs-ips-network-security-solutions/},
+  december 2024.
+\newblock Accedido: 2025-05-30.
+
+\bibitem{paloaltonetworks_microsegmentation}
+Palo~Alto Networks.
+\newblock ¿qué es la microsegmentación?
+\newblock
+  \url{https://www.paloaltonetworks.es/cyberpedia/what-is-microsegmentation}.
+\newblock Accedido: 2025-05-19.
+
+\bibitem{ISO29148}
+ISO/IEC/IEEE.
+\newblock Systems and software engineering — life cycle processes —
+  requirements engineering.
+\newblock \url{https://www.iso.org/standard/72089.html}, 2018.
+
+\bibitem{nist2021ai}
+National~Institute of~Standards and Technology (NIST).
+\newblock Adversarial machine learning: A taxonomy and terminology of attacks
+  and mitigations.
+\newblock \url{https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf},
+  2021.
+\newblock Accedido: 2025-05-10.
+
+\bibitem{brooke1996sus}
+John Brooke.
+\newblock {{SUS}}-{{A}} quick and dirty usability scale.
+\newblock {\em Usability evaluation in industry}, 189(194), 1996.
+
+\bibitem{luay2025NetFlowDatasetsV3}
+Majed Luay, Siamak Layeghy, Seyedehfaezeh Hosseininoorbin, Mohanad Sarhan, Nour
+  Moustafa, and Marius Portmann.
+\newblock Temporal analysis of netflow datasets for network intrusion detection
+  systems.
+\newblock \url {https://arxiv.org/abs/2503.04404}, 2025.
+\newblock Accedido: 2025-04-22.
+
+\bibitem{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+
+\bibitem{leCun2015}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock {\em Nature}, 521(7553):436--444, 2015.
+
+\bibitem{mcculloch1943logical}
+Warren McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock {\em The Bulletin of Mathematical Biophysics}, 5(4):115--133, 1943.
+
+\bibitem{rosenblatt1958perceptron}
+Frank Rosenblatt.
+\newblock {\em The Perceptron: A Perceiving and Recognizing Automaton}.
+\newblock Cornell Aeronautical Laboratory, Buffalo, NY, 1958.
+
+\bibitem{lederer2021activation}
+Johannes Lederer.
+\newblock Activation functions in artificial neural networks: A systematic
+  overview.
+\newblock {\em arXiv preprint arXiv:2101.09957}, 2021.
+
+\bibitem{dubey2021activation}
+Shiv~Ram Dubey, Satish~Kumar Singh, and Bidyut~Baran Chaudhuri.
+\newblock Activation functions in deep learning: A comprehensive survey and
+  benchmark.
+\newblock {\em arXiv preprint arXiv:2109.14545}, 2021.
+
+\bibitem{ramachandran2017searching}
+Prajit Ramachandran, Barret Zoph, and Quoc~V. Le.
+\newblock Searching for activation functions.
+\newblock {\em arXiv preprint arXiv:1710.05941}, 2017.
+
+\bibitem{bishop2006pattern}
+Christopher~M. Bishop.
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2006.
+
+\bibitem{haykin2009neural}
+Simon Haykin.
+\newblock {\em Neural Networks and Learning Machines}.
+\newblock Pearson, 2009.
+
+\bibitem{nielsen2015neural}
+Michael Nielsen.
+\newblock {\em Neural Networks and Deep Learning}.
+\newblock Determination Press, 2015.
+
+\bibitem{eitca_loss_function}
+{EITCA Academy}.
+\newblock ¿cuál es el papel de la función de pérdida en el aprendizaje
+  automático?
+\newblock
+  \url{https://es.eitca.org/inteligencia-artificial/eitc-ai-tff-tensorflow-fundamentos/introducci%C3%B3n-a-tensorflow/fundamentos-del-aprendizaje-autom%C3%A1tico/examen-revisar-los-fundamentos-del-aprendizaje-autom%C3%A1tico/%C2%BFCu%C3%A1l-es-el-papel-de-la-funci%C3%B3n-de-p%C3%A9rdida-en-el-aprendizaje-autom%C3%A1tico%3F/}.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{ultralytics_loss_function}
+{Ultralytics}.
+\newblock Función de pérdida.
+\newblock \url{https://www.ultralytics.com/es/glossary/loss-function}.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{datacamp_loss_function}
+{DataCamp}.
+\newblock Explicación de las funciones de pérdida en el machine learning.
+\newblock
+  \url{https://www.datacamp.com/es/tutorial/loss-function-in-machine-learning}.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{bigdatafran_pytorch_classification}
+{BigDataFran}.
+\newblock 7. introducción problemas de clasificación — trabajando con
+  pytorch.
+\newblock
+  \url{https://bigdatafran.github.io/pytorch/jupyters/Tema_3_clasificacion.html}.
+\newblock Accedido: 2025-05-22.
+
+\bibitem{paszke2019pytorch}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et~al.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~32, pages 8024--8035, 2019.
+
+\bibitem{bottou2010large}
+Léon Bottou.
+\newblock Large-scale machine learning with stochastic gradient descent.
+\newblock {\em Proceedings of COMPSTAT 2010}, pages 177--186, 2010.
+
+\bibitem{kingma2014adam}
+D.P. Kingma and J.B. Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer, New York, 2nd edition, 2009.
+
+\bibitem{nair2010relu}
+Vinod Nair and Geoffrey~E Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 807--814, 2010.
+
+\bibitem{ioffe2015batch}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock In {\em Proceedings of the 32nd International Conference on Machine
+  Learning (ICML-15)}, pages 448--456. PMLR, 2015.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock In {\em Journal of Machine Learning Research}, volume~15, pages
+  1929--1958, 2014.
+
+\bibitem{chawla2002smote}
+Nitesh~V. Chawla, Kevin~W. Bowyer, Lawrence~O. Hall, and W.~Philip Kegelmeyer.
+\newblock Smote: Synthetic minority over-sampling technique.
+\newblock {\em Journal of Artificial Intelligence Research}, 16:321--357, 2002.
+
+\bibitem{chollet2018deep}
+François Chollet.
+\newblock {\em Deep learning with Python}.
+\newblock Manning Publications Co., 2018.
+
+\bibitem{paszke2017automatic}
+Adam Paszke, Adam Lerer, Sam Gross, and Soumith Chintala.
+\newblock Automatic differentiation in pytorch.
+\newblock In {\em NIPS-W}, 2017.
+
+\bibitem{gross2021pytorchbook}
+Eli~Steven Gross, Brandon Lengerich, and Luca Dey.
+\newblock {\em Deep Learning with PyTorch}.
+\newblock Manning Publications, 2021.
+
+\bibitem{han2011data}
+Jiawei Han, Micheline Kamber, and Jian Pei.
+\newblock {\em Data Mining: Concepts and Techniques}.
+\newblock Morgan Kaufmann, San Francisco, 3rd edition, 2011.
+
+\bibitem{fawcett2006introduction}
+Tom Fawcett.
+\newblock An introduction to roc analysis.
+\newblock In {\em Pattern Recognition Letters}, volume~27, pages 861--874,
+  2006.
+
+\bibitem{Sokolova2006}
+M.~Sokolova and G.~Lapalme.
+\newblock A systematic analysis of performance measures for classification
+  tasks.
+\newblock {\em Information Processing And Management}, 42(1):245--275, 2006.
+
+\bibitem{Japkowicz2002}
+N.~Japkowicz and S.~Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Intelligent Data Analysis}, 6(5):429--449, 2002.
+
+\bibitem{He2009}
+H.~He and E.~A. Garcia.
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284, 2009.
+
+\bibitem{powers2011evaluation}
+David M.~W. Powers.
+\newblock Evaluation: from precision, recall and f-measure to roc,
+  informedness, markedness and correlation.
+\newblock {\em Journal of Machine Learning Technologies}, 2(1):37--63, 2011.
+
+\bibitem{Chawla2003}
+N.~V. Chawla and W.~P. Kegelmeyer.
+\newblock Random under-sampling approaches for imbalanced datasets.
+\newblock {\em International Journal of Artificial Intelligence}, 8(6):63--72,
+  2003.
+
+\bibitem{Girosi2004}
+F.~Girosi, M.~Jones, and T.~Poggio.
+\newblock Support vector machines and their application to image
+  classification.
+\newblock {\em IEEE Transactions on Neural Networks}, 15(1):58--68, 2004.
+
+\bibitem{Japkowicz2000}
+N.~Japkowicz and S.~Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Proceedings of the 16th International Conference on Machine
+  Learning (ICML)}, pages 253--260, 2000.
+
+\bibitem{Liu2011}
+X.~Liu, L.~Wang, and J.~Yang.
+\newblock Class imbalance problem in multi-class classification: A review.
+\newblock {\em Pattern Recognition}, 44(7):1575--1587, 2011.
+
+\bibitem{Hsu2002}
+C.~W. Hsu and C.~J. Lin.
+\newblock A comparison of methods for multi-class support vector machines.
+\newblock {\em IEEE Transactions on Neural Networks}, 13(2):415--425, 2002.
+
+\bibitem{Rifkin2004}
+R.~Rifkin and A.~Klautau.
+\newblock In defense of one-vs-all classification.
+\newblock {\em Journal of Machine Learning Research}, 5:101--141, 2004.
+
+\bibitem{chollet2017deep}
+François Chollet.
+\newblock Deep learning with python.
+\newblock {\em Manning Publications}, 2017.
+
+\bibitem{ruck1996hidden}
+J.~R. Ruck, S.~J. Rogers, R.~K.~C. Yeung, and M.~M. Naylor.
+\newblock {\em The Effect of the Number of Hidden Neurons on the Performance of
+  Multilayer Networks}.
+\newblock IEEE, New York, 1996.
+
+\bibitem{glorot2010understanding}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock {\em Proceedings of the 13th International Conference on Artificial
+  Intelligence and Statistics (AISTATS)}, pages 249--256, 2010.
+
+\bibitem{zhang2016understanding}
+Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals.
+\newblock Understanding deep learning requires rethinking generalization.
+\newblock {\em ICLR 2017}, 2017.
+
+\bibitem{bengio2006greedy}
+Yoshua Bengio, Patrice Simard, and Paolo Frasconi.
+\newblock Learning long-term dependencies with gradient descent is difficult.
+\newblock {\em IEEE Transactions on Neural Networks}, 5(2):157--166, 2006.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{yamada2018understanding}
+Takeshi Yamada and Masashi Sugiyama.
+\newblock Understanding overfitting and generalization in deep learning.
+\newblock {\em Proceedings of the 35th International Conference on Machine
+  Learning}, pages 1617--1626, 2018.
+
+\bibitem{sun2017survey}
+D.~Sun, T.~Liao, and Y.~Wang.
+\newblock A survey of convolutional neural networks: Analysis, applications,
+  and prospects.
+\newblock {\em IEEE Access}, 5:4917--4930, 2017.
+
+\bibitem{overfitting2008}
+Pedro Domingos.
+\newblock A few useful things to know about machine learning.
+\newblock {\em Communications of the ACM}, 55(10):78--87, 2012.
+
+\bibitem{han2015learning}
+Song Han, Jeff Pool, John Tran, and William~J Dally.
+\newblock Learning both weights and connections for efficient neural network.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~28, pages 1135--1143. Curran Associates, Inc., 2015.
+
+\bibitem{he2009learning}
+Haibo He and Edwardo~A Garcia.
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284, 2009.
+
+\bibitem{chawla2004editorial}
+Nitesh~V Chawla, Nathalie Japkowicz, and Aleksander Kotcz.
+\newblock Editorial: Special issue on learning from imbalanced data sets.
+\newblock In {\em ACM SIGKDD Explorations Newsletter}, volume~6, pages 1--6.
+  ACM, 2004.
+
+\bibitem{heaton2017deep}
+Jeff Heaton, Nicholas~G Polson, and Jan Witte.
+\newblock An empirical analysis of deep learning for credit card fraud
+  detection.
+\newblock {\em arXiv preprint arXiv:1703.05703}, 2017.
+\newblock Discute la influencia de la arquitectura, incluyendo la relación
+  entre entrada y tamaño de capas ocultas, en tareas con clases
+  desbalanceadas.
+
+\bibitem{bengio2013representation}
+Bengio.
+\newblock Representation learning: A review and new perspectives.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  35:1798--1828, 2013.
+
+\bibitem{liu2020deep}
+Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
+\newblock Deep learning for anomaly detection in cybersecurity: A survey.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  33(4):1542--1559, 2020.
+
+\bibitem{han2015deep}
+Song Han, Huizi Mao, and William~J Dally.
+\newblock Deep compression: Compressing deep neural networks with pruning,
+  trained quantization and huffman coding.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2016.
+
+\bibitem{wandb_tracking}
+{Machine Learning Experiment Tracking with Weights \& Biases}.
+\newblock \url{https://wandb.ai/site}, 2025.
+\newblock Accedido: 2025-06-03.
+
+\bibitem{blackboard_architecture}
+{Blackboard Architecture}.
+\newblock \url{https://www.geeksforgeeks.org/blackboard-architecture-in-ai/},
+  2023.
+\newblock Accedido: 2025-06-03.
+
+\bibitem{bergstra2012random}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock {\em Journal of Machine Learning Research}, 13(Feb):281--305, 2012.
+
+\bibitem{reimers2017optimal}
+Nils Reimers and Iryna Gurevych.
+\newblock Optimal hyperparameters for deep lstm-networks for sequence labeling
+  tasks.
+\newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1432--1437, 2017.
+
+\bibitem{bouthillier2021sloppy}
+Xavier Bouthillier, Pascal Vincent, and Laurent Dinh.
+\newblock Sloppy models, flat minima, and generalization in deep learning.
+\newblock {\em arXiv preprint arXiv:2106.10176}, 2021.
+
+\bibitem{recht2019imagenet}
+Benjamin Recht, Rebecca Roelofs, Ludwig Schmidt, and Vaishaal Shankar.
+\newblock Do imagenet classifiers generalize to imagenet?
+\newblock In {\em International Conference on Machine Learning}, pages
+  5389--5400. PMLR, 2019.
+
+\bibitem{johnson2019survey}
+Justin~M Johnson and Taghi~M Khoshgoftaar.
+\newblock A survey of data augmentation approaches for imbalanced
+  classification.
+\newblock {\em Journal of Big Data}, 6(1):1--54, 2019.
+
+\bibitem{buda2018systematic}
+Mateusz Buda, Atsuto Maki, and Maciej~A Mazurowski.
+\newblock A systematic study of the class imbalance problem in convolutional
+  neural networks.
+\newblock {\em Neural Networks}, 106:249--259, 2018.
+
+\bibitem{dietterich1998approx}
+Thomas~G Dietterich.
+\newblock Approximate statistical tests for comparing supervised classification
+  learning algorithms.
+\newblock {\em Neural computation}, 10(7):1895--1923, 1998.
+
+\bibitem{japkowicz2002class}
+Nathalie Japkowicz and Shaju Stephen.
+\newblock The class imbalance problem: Significance and strategies.
+\newblock {\em Proceedings of the 2002 International Conference on Artificial
+  Intelligence}, 56:111--117, 2002.
+
+\bibitem{sarhan2020netflow}
+Mohanad Sarhan, Rami Alsaqour, Mohammad Abdelhaq, and Shukor~Abd Razak.
+\newblock Netflow datasets for machine learning-based network intrusion
+  detection systems.
+\newblock {\em arXiv preprint arXiv:2011.09144}, 2020.
+
+\bibitem{wirth2000crisp}
+R.~Wirth and J.~Hipp.
+\newblock Crisp-dm: Towards a standard process model for data mining.
+\newblock {\em Proceedings of the 4th International Conference on the Practical
+  Applications of Knowledge Discovery and Data Mining}, pages 29--39, 2000.
+
+\bibitem{baylor2017tensorflow}
+T.~Baylor et~al.
+\newblock Tensorflow: A system for large-scale machine learning.
+\newblock In {\em Proceedings of the 12th USENIX Conference on Operating
+  Systems Design and Implementation (OSDI)}, pages 265--283. USENIX
+  Association, 2017.
+
+\bibitem{gama2014survey}
+J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia.
+\newblock A survey on concept drift adaptation.
+\newblock {\em ACM Computing Surveys (CSUR)}, 46(4):44, 2014.
+
+\bibitem{peters2017machine}
+M.~Peters, S.J. Pan, and P.S. Yu.
+\newblock Machine learning model management.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  29(10):2245--2257, 2017.
+
+\bibitem{neptune_ml_pipeline}
+Neptune.ai Team.
+\newblock Ml pipeline architecture design patterns (with examples).
+\newblock {\em Neptune.ai Blog}, 2023.
+
+\bibitem{gof_observer_pattern}
+Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
+\newblock Design patterns: Elements of reusable object‑oriented software.
+\newblock 1994.
+
+\bibitem{tsymbal2004problem}
+A.~Tsymbal.
+\newblock The problem of concept drift: definitions and related work.
+\newblock {\em Computer Science Department, Trinity College Dublin}, 2004.
+
+\bibitem{amershi2019software}
+S.~Amershi, A.~Begel, C.~Bird, R.~DeLine, H.~Gall, E.~Kamar, B.~Nushi,
+  A.~Selvin, J.~Suh, and T.~Zimmermann.
+\newblock Software engineering for machine learning: A case study.
+\newblock In {\em Proceedings of the 41st International Conference on Software
+  Engineering: Software Engineering in Practice}, pages 291--300, 2019.
+
+\end{thebibliography}

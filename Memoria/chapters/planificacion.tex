@@ -1,0 +1,656 @@
+Este capítulo aborda la organización detallada del trabajo de fin de grado, cubriendo desde su diseño inicial hasta la implementación y el seguimiento durante su desarrollo. Una planificación rigurosa resulta fundamental para sentar las bases del proyecto, ya que permite definir con claridad los objetivos, los recursos necesarios, los plazos de entrega y las actividades clave para alcanzar los resultados esperados \cite{pmbok}.
+
+En primer lugar, se establece una planificación temporal preliminar, donde se estiman los tiempos requeridos para cada etapa. Este cronograma se estructura en torno a las fases de la metodología CRISP-DM, complementadas con etapas específicas propias de un Trabajo de Fin de Grado. A continuación, se realiza un análisis de riesgos exhaustivo, evaluando tanto la probabilidad como el impacto de cada posible contingencia.
+
+Además, se elabora un presupuesto detallado para las tareas del proyecto, abordado desde dos perspectivas. Por un lado, se incluye una estimación realista de los costes asociados a la ejecución del trabajo en el ámbito académico. Por otro lado, se plantea una proyección teórica de los gastos que implicaría un proyecto equivalente en un contexto profesional.
+
+Por último, se contrasta la planificación inicial con el desarrollo real del trabajo, lo que permite evaluar posibles desviaciones y los aprendizajes obtenidos durante el proceso.
+
+\section{Planificación temporal}
+
+La planificación temporal constituye un elemento fundamental en la ejecución de un proyecto fin de grado, ya que permite estructurar de manera sistemática todas las actividades necesarias para alcanzar los objetivos propuestos. En el contexto de un trabajo académico que combine el desarrollo de software con una metodología de investigación, como es el caso de CRISP-DM para el modelo de proceso y SCRUM para la gestión del proyecto, una adecuada planificación garantiza la distribución equilibrada del tiempo disponible entre las distintas fases del trabajo. Esta organización temporal resulta especialmente relevante cuando se deben coordinar aspectos teóricos, desarrollo técnico y validación de resultados, asegurando que cada componente reciba la atención necesaria sin comprometer la calidad global del proyecto.
+
+El empleo de un diagrama de Gantt como herramienta de planificación ofrece ventajas significativas para visualizar la secuencia de actividades y su superposición temporal. Este tipo de representación gráfica facilita la identificación de hitos críticos y dependencias entre tareas, aspectos particularmente importantes cuando se combinan metodologías diferentes como CRISP-DM y SCRUM. La primera, con sus fases bien definidas, proporciona la estructura para el desarrollo del núcleo analítico del proyecto, mientras que SCRUM, con sus sprints iterativos, permite adaptar el trabajo a los descubrimientos que vayan surgiendo durante la investigación. La integración de ambas aproximaciones en un único cronograma exige una cuidadosa coordinación que el diagrama de Gantt ayuda a materializar de forma clara y comprensible. El diagrama de Gantt utilizado para la planificación de este trabajo se muestra en la Figura \ref{fig:gantt}. Este diagrama tiene una duración de 300 horas, que corresponden con las horas de trabajo de alumno de los 12 créditos ECTS que exige el plan de estudios del Grado de Ingeniería Informática de la UVa para el TFG.
+
+
+
+\begin{figure}[H]
+\centering
+\makebox[\linewidth][c]{%  % Centrado mejorado
+\begin{ganttchart}[
+    x unit=0.15cm,         % Aumentado para ocupar más ancho
+    y unit title=0.8cm,
+    y unit chart=0.6cm,
+    hgrid,
+    vgrid={*{1}{dotted}},
+    title/.style={draw=none},
+    title label font=\footnotesize,
+    bar/.style={fill=blue!30, rounded corners=2pt},
+    bar height=0.6,
+    group/.style={draw=black, fill=blue!10},
+    milestone/.style={fill=red, rounded corners=2pt},
+    bar label font=\scriptsize,
+    group label font=\small,
+    milestone label font=\scriptsize,
+    expand chart=\linewidth  % Ocupa todo el ancho disponible
+]{1}{90}
+    % Título principal centrado sobre semanas
+    \gantttitle{Diagrama de Gantt del Proyecto}{90} \\
+    
+    % Cabecera de semanas (13 semanas para 90 días)
+    \gantttitlelist{1,2,3,4,5,6,7,8,9,10,11,12,13}{7} \\
+    
+    % Fases y tareas (igual que antes pero ajustadas visualmente)
+    \ganttgroup{1. Comprensión Negocio}{1}{10} \\
+    \ganttbar{1.1 Definición objetivos}{1}{5} \\
+    \ganttbar{1.2 Análisis requisitos}{6}{10} \\
+    
+    \ganttgroup{2. Comprensión Datos}{11}{20} \\
+    \ganttbar{2.1 Recopilación datos}{11}{15} \\
+    \ganttbar{2.2 Análisis exploratorio}{16}{20} \\
+    
+    \ganttgroup{Sprint 1: Preparación}{21}{35} \\
+    \ganttbar{3.1 Limpieza datos}{21}{25} \\
+    \ganttbar{3.2 Feature engineering}{26}{30} \\
+    \ganttbar{3.3 Normalización}{31}{35} \\
+    \ganttmilestone{Hito 1}{35} \\
+    
+    \ganttgroup{Sprint 2: Modelado}{36}{60} \\
+    \ganttbar{4.1 Selección algoritmos}{36}{40} \\
+    \ganttbar{4.2 Entrenamiento inicial}{41}{50} \\
+    \ganttbar{4.3 Ajuste parámetros}{51}{60} \\
+    \ganttmilestone{Hito 2}{60} \\
+    
+    \ganttgroup{Sprint 3: Evaluación}{61}{80} \\
+    \ganttbar{5.1 Validación cruzada}{61}{65} \\
+    \ganttbar{5.2 Pruebas rendimiento}{66}{70} \\
+    \ganttbar{5.3 Análisis resultados}{71}{80} \\
+    \ganttmilestone{Hito 3}{80} \\
+    
+    \ganttgroup{6. Documentación}{81}{90} \\
+    \ganttbar{6.1 Redacción memoria}{81}{85} \\
+    \ganttbar{6.2 Preparación defensa}{86}{90} \\
+    \ganttmilestone{Entrega Final}{90}
+\end{ganttchart}
+}
+\caption{Diagrama de Gantt para la planificación del proyecto.}
+\label{fig:gantt}
+\end{figure}
+
+\section{Gestión de riesgos}
+
+En este apartado se presentan los principales riesgos potenciales del proyecto junto con sus correspondientes planes de mitigación. Además, en la Figura \ref{tab:hitos} se muestran las horas dedicadas al cumplimiento de cada hito del trabajo. De acuerdo con el PMBOK (\textit{Project Management Body of Knowledge}) \cite{pmbok}, los riesgos en gestión de proyectos se clasifican en las categorías de la Sección \ref{subsec.tiprisks}.
+
+\subsection*{Hitos del Proyecto}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Hito} & \textbf{Horas hasta el hito} & \textbf{Horas acumuladas} \\ \hline
+Finalización de formación y trabajos previos & 20 & 20 \\ \hline
+Finalización de la planificación inicial & 30 & 50 \\ \hline
+Finalización de la comprensión de datos & 40 & 90 \\ \hline
+Finalización del modelado & 80 & 170 \\ \hline
+Obtención de modelos óptimos & 40 & 210 \\ \hline
+Finalización y entrega de la memoria & 90 & 300 \\ \hline
+\end{tabular}
+\caption{Cronograma de hitos y horas de trabajo.}
+\label{tab:hitos}
+\end{table}
+
+\subsection*{Tipología de Riesgos} \label{subsec.tiprisks}
+\begin{enumerate}
+    \item \textbf{Riesgos Técnicos:}
+    \begin{itemize}
+        \item Limitaciones en la infraestructura de hardware.
+        \item Incompatibilidad entre sistemas o tecnologías.
+        \item Problemas de rendimiento o escalabilidad.        
+        \item Deficiencias en el diseño o implementación de software.
+    \end{itemize}
+    
+    \item \textbf{Riesgos de Gestión:}
+    \begin{itemize}
+        \item Deficiencias en la comunicación entre los miembros del equipo.
+        \item Modificaciones en los requisitos del proyecto.        
+        \item Inestabilidad del equipo por conflictos internos o rotación de personal.
+        \item Retrasos en la disponibilidad de recursos críticos.
+
+    \end{itemize}
+    
+    \item \textbf{Riesgos de Mercado:}
+    \begin{itemize}
+        \item Aparición de competencia no anticipada.
+        \item Variaciones en las condiciones del mercado que afectan la demanda.
+        \item Cambios regulatorios que impactan la ejecución del proyecto.
+    \end{itemize}
+    
+    \item \textbf{Riesgos Financieros:}
+    \begin{itemize}
+        \item Limitaciones en la disponibilidad de fondos.
+        \item Excesos presupuestarios no previstos.
+        \item Fluctuaciones en los tipos de cambio.
+    \end{itemize}
+    
+    \item \textbf{Riesgos Externos:}
+    \begin{itemize}
+        \item Fenómenos meteorológicos adversos.
+        \item Interrupciones en la cadena de suministro.
+        \item Eventos naturales catastróficos.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Metodología de Evaluación}
+La identificación y valoración de riesgos se realiza mediante criterios cualitativos, al no disponer de métricas cuantitativas suficientemente fiables para un análisis más exhaustivo. Este enfoque permite priorizar los riesgos según su impacto potencial y probabilidad de ocurrencia \cite{carmona2021gestion}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\hsize=1.1\hsize}c|>{\hsize=1.1\hsize}c|c|c|c|c|c|}
+\hline
+\rowcolor{gray!25}
+\multicolumn{2}{|c|}{\multirow{2}{*}{}} & \multicolumn{5}{c|}{\textbf{Impacto}} \\
+\cline{3-7}
+\multicolumn{2}{|c|}{} & \textbf{Mínimo} & \textbf{Bajo} & \textbf{Medio} & \textbf{Alto} & \textbf{Extremo} \\ \hline
+
+\multirow{6}{*}{\rotatebox{90}{\textbf{Probabilidad}}} 
+& \textbf{Extrema} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} & \cellcolor{redrisk} & \cellcolor{redrisk} \\ \cline{2-7}
+& \textbf{Alta} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} & \cellcolor{redrisk} \\ \cline{2-7}
+& \textbf{Media} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} & \cellcolor{orangerisk} \\ \cline{2-7}
+& \textbf{Baja} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} & \cellcolor{yellowrisk} \\ \cline{2-7}
+& \textbf{Muy Baja} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{bluerisk} & \cellcolor{greenrisk} & \cellcolor{greenrisk} \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor{gray!25}
+\textbf{Nivel de Riesgo} & \textbf{Color} \\ \hline
+Extremo & \cellcolor{redrisk} \\ \hline
+Alto & \cellcolor{orangerisk} \\ \hline
+Moderado & \cellcolor{yellowrisk} \\ \hline
+Bajo & \cellcolor{greenrisk} \\ \hline
+Mínimo & \cellcolor{bluerisk} \\ \hline
+\end{tabular}
+\caption{Matriz Probabilidad-Impacto.}
+\label{tab:matrizpi}
+\end{table}
+
+\begin{description}[leftmargin=1cm, style=nextline]
+
+\item[\textbf{Probabilidad}]
+Grado de posibilidad de que un riesgo se materialice. Se suele cuantificar en escala del 1 (muy improbable) al 5 (casi seguro). En la matriz que se muestra en la Tabla \ref{tab:matrizpi}, determina el eje vertical y se combina con el impacto para priorizar riesgos.
+
+\item[\textbf{Impacto}]
+Consecuencia o efecto potencial que tendría la materialización del riesgo. Se valora del 1 (impacto mínimo) al 5 (impacto catastrófico). Representa en la matriz que se muestra en la Tabla \ref{tab:matrizpi}, el eje horizontal en la matriz y mide la severidad del riesgo.
+
+\item[\textbf{Plan de Mitigación}]
+Acciones proactivas para reducir la probabilidad o impacto del riesgo antes de que ocurra. Incluye:
+\begin{itemize}
+\item Prevención: Eliminar las causas del riesgo.
+\item Reducción: Disminuir su probabilidad o impacto.
+\item Transferencia: Trasladar el riesgo a terceros.
+\end{itemize}
+
+\item[\textbf{Plan de Contingencia}]
+Medidas reactivas que se implementan cuando el riesgo se materializa. Contiene:
+\begin{itemize}
+\item Activación: Criterios para ejecutar el plan.
+\item Respuesta: Acciones específicas de contención.
+\item Recuperación: Cómo volver a la normalidad.
+\end{itemize}
+
+\item[\textbf{Nivel de Riesgo}]
+Resultado de multiplicar la probabilidad por el impacto. Clasifica riesgos en:
+\begin{itemize}
+\item Alto (15-25): Requieren acción inmediata.
+\item Medio (5-14): Necesitan monitoreo.
+\item Bajo (1-4): Aceptables con supervisión mínima.
+\end{itemize}
+
+\item[\textbf{Umbral de Riesgo}]
+Límite máximo aceptable de riesgo para el proyecto. Determina cuándo se deben implementar planes de mitigación o contingencia.
+
+\item[\textbf{Propietario del Riesgo}]
+Persona o equipo responsable de monitorear cada riesgo y ejecutar los planes correspondientes.
+
+\end{description}
+
+
+\subsection*{Riesgos identificados}
+\begin{enumerate}
+    \item \textbf{R01}: Conflicto con periodos de exámenes y entregas de otras asignaturas (Tabla \ref{tab:R01}).
+    \item \textbf{R02}: Fallos hardware en equipos de desarrollo (Tabla \ref{tab:R02}).
+    \item \textbf{R03}: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos (Tabla \ref{tab:R03}).
+    \item \textbf{R04}: Pérdida o corrupción del código (Tabla \ref{tab:R04}).
+    \item \textbf{R05}: Disponibilidad limitada del tutor académico (Tabla \ref{tab:R05}).
+    \item \textbf{R06}: Desviaciones en la planificación temporal inicial (Tabla \ref{tab:R06}).
+    \item \textbf{R07}: Cambios en los requisitos técnicos (Tabla \ref{tab:R07}).
+    \item \textbf{R08}: Interpretación errónea de los resultados por falta de formazión en técnicas de aprendizaje automático. (Tabla \ref{tab:R08}).
+    \item \textbf{R09}: Problemas de licencias de software (Tabla \ref{tab:R09}).
+\end{enumerate}
+
+% Riesgo R01
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R01}} \\ \hline
+Título & Conflicto con periodos de exámenes y entregas de otras asignaturas.\\ \hline
+Descripción & Sobrecarga académica que dificulta la dedicación y el rendimiento en todas las tareas. \\ \hline
+Probabilidad & 4 (Alta) \cellcolor{orangerisk} \\ \hline
+Impacto & 3 (Media) \cellcolor{yellowrisk}\\ \hline
+Matriz P/I & Alta/Media (12)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Coordinar calendario académico anticipadamente.
+\item Avanzar trabajo en periodos de menor carga de trabajo.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Dedicar horas extra en los asuntos académicos.
+\item Reorganizar prioridades temporales.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R01: Conflicto con periodos de exámenes y entregas de otras asignaturas.}
+\label{tab:R01}
+\end{table}
+
+
+% Riesgo R02
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R02}} \\ \hline
+Título & Fallos hardware en equipos de desarrollo. \\ \hline
+Descripción & Problemas causados por el mal funcionamiento de los componentes físicos de un ordenador, como la placa base, la tarjeta gráfica, la memoria RAM, el disco duro o la fuente de alimentación en equipos de desarrollo. \\ \hline
+Probabilidad & 3 (Media)   \cellcolor{yellowrisk}\\ \hline
+Impacto & 4 (Alto)   \cellcolor{orangerisk}\\ \hline
+Matriz P/I & Media/Alto (12)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Mantenimiento preventivo mensual.
+\item Uso de equipos redundantes.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Utilizar equipos alternativos.
+\item Uso de máquinas virtuales del sistema de virtualización de la Escuela de Ingeniería de Informática de Valladolid.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R02: Fallos hardware en equipos de desarrollo.}
+\label{tab:R02}
+\end{table}
+
+% Riesgo R03
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R03}} \\ \hline
+Título & Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos. \\ \hline
+Descripción & Restricciones de hardware (cálculo, memoria) que impactan la velocidad, viabilidad y calidad del entrenamiento, influyendo en el tamaño y complejidad de los modelos.\\ \hline
+Probabilidad & 4 (Alta)   \cellcolor{orangerisk}\\ \hline
+Impacto & 5 (Extremo)  \cellcolor{redrisk}\\ \hline
+Matriz P/I & Alto/Extremo (20)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Optimización temprana del código.
+\item Uso de técnicas de muestreo.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Utilizar sistema de virtualización de la escuela.
+\item Reducir complejidad de modelos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R03: Limitaciones de capacidad de procesamiento para el entrenamiento de los modelos.}
+\label{tab:R03}
+\end{table}
+
+% Riesgo R04
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R04}} \\ \hline
+Título & Pérdida o corrupción del código. \\ \hline
+Descripción & Extraviación o daño en los conjuntos de datos del proyecto que se utilizan para en entrenamiento y la validación del modelo.\\ \hline
+Probabilidad & 2 (Baja)  \cellcolor{greenrisk}\\ \hline
+Impacto & 5 (Extremo) \cellcolor{redrisk}\\ \hline
+Matriz P/I & Baja/Extremo (10) \\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Almacenamiento redundante de los datos en repositorios.
+\item Verificación de la inegridad de los datos con checksums.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Recuperar datasets desde backups externos.
+\item Regenerar datos sintéticos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R04: Pérdida o corrupción del código.}
+\label{tab:R04}
+\end{table}
+
+% Riesgo R05
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R05}} \\ \hline
+Título & Disponibilidad limitada del tutor académico.\\ \hline
+Descripción & Restricciones de tiempo y acceso al tutor académico, afectando la frecuencia y profundidad de la retroalimentación y el apoyo al estudiante en su proceso de aprendizaje. \\ \hline
+Probabilidad & 3 (Media) \cellcolor{yellowrisk}\\ \hline
+Impacto & 3 (Media) \cellcolor{yellowrisk}\\ \hline
+Matriz P/I & Media/Media (9)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Agendar reuniones con anticipación.
+\item Preparar preguntas concretas.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Consultar con profesores alternativos.
+\item Usar foros académicos.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R05: Disponibilidad limitada del tutor académico.}
+\label{tab:R05}
+\end{table}
+
+% Riesgo R06
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R06}} \\ \hline
+Título & Desviaciones en la planificación temporal inicial. \\ \hline
+Descripción & Variaciones o retrasos respecto al cronograma original, impactando los plazos de entrega, la gestión del tiempo y la consecución de los objetivos previstos. \\ \hline
+Probabilidad & 4 (Alta) \cellcolor{orangerisk}\\ \hline
+Impacto & 4 (Alto) \cellcolor{orangerisk}\\ \hline
+Matriz P/I & Alto/Alto (16)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Incluir días asignados a descanso como días dedicados al proyecto.
+\item Revisiones semanales de progreso.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Reorganizar del diagrama de Gantt.
+\item Eliminar funcionalidades no críticas.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R06: Desviaciones en la planificación temporal inicial.}
+\label{tab:R06}
+\end{table}
+
+% Riesgo R07
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R07}} \\ \hline
+Título & Cambios en los requisitos técnicos. \\ \hline
+Descripción &  Modificaciones o alteraciones en las especificaciones necesarias para un proyecto o tarea, que pueden afectar al diseño, a la implementación, a los recursos y a los plazos. \\ \hline
+Probabilidad & 4 (Alta)  \cellcolor{orangerisk}\\ \hline
+Impacto & 4 (Alto) \cellcolor{orangerisk}\\ \hline
+Matriz P/I & Alto/Alto (16)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Documentar requisitos iniciales con precisión.
+\item Establecer procedimiento de cambio formal.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Revisar el alcance con tutor.
+\item Asignar tiempo adicional para cambios.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R07: Cambios en los requisitos técnicos.}
+\label{tab:R07}
+\end{table}
+
+% Riesgo R08
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R08}} \\ \hline
+Título & Interpretación errónea de los resultados por falta de formazión en técnicas de aprendizaje automático.  \\ \hline
+Descripción & El desconocimiento de las métricas utilizadas para analizar los resutlados como precisión, recall, F1, puede llevar a confiar en modelos con bajo desempeño real o tomar decisiones equivocadas basadas en correlaciones espurias. \\ \hline
+Probabilidad & 3 (Media) \cellcolor{yellowrisk} \\ \hline
+Impacto & 5 (Extremo) \cellcolor{redrisk} \\ \hline
+Matriz P/I & Media/Extremo (15) \\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Buscar alternativas para obtener una formación básica en técnicas de aprendizaje automático.
+\item Corroborar los resultados obtenidos con el tutor académico.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Suspender de manera inmediata las decisiones tomadas basadas en las salidas mal interpretadas del modelo.
+\item Reemplazar el modelo mal interpretado por una versión anterior o un modelo base.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R08: Dependencia de tecnologías inestables o no documentadas.}
+\label{tab:R08}
+\end{table}
+
+% Riesgo R09
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\bfseries}l|p{10cm}|}
+\hline
+\rowcolor{lightgray}
+\multicolumn{2}{|c|}{\textbf{Riesgo R09}} \\ \hline
+Título & Problemas de licencia de software.\\ \hline
+Descripción & Inconvenientes o restricciones legales relacionadas con el uso, la distribución o la activación de software, pudiendo causar interrupciones, costos adicionales o incluso acciones legales. \\ \hline
+Probabilidad & 2 (Baja) \cellcolor{greenrisk} \\ \hline
+Impacto & 3 (Media)  \cellcolor{yellowrisk}\\ \hline
+Matriz P/I & Baja/Media (6)\\ \hline
+Plan Mitigación & 
+\begin{itemize}
+\item Verificar licencias antes de usarlas para su implementación.
+\item Priorizar la utilización software open-source.
+\end{itemize} \\ \hline
+Plan Contingencia & 
+\begin{itemize}
+\item Buscar alternativas equivalentes.
+\item Solicitar licencias académicas.
+\end{itemize} \\ \hline
+\end{tabular}
+\caption{R09: Problemas de licencia de software.}
+\label{tab:R09}
+\end{table}
+
+
+\section{Estimación de costes}\label{sec.estcostes}
+En esta sección se presenta la estimación de costes, que comprende la identificación y valoración de los recursos necesarios para el desarrollo del proyecto. Este proceso implica la cuantificación de los gastos previsibles asociados a materiales y software específico utilizado. También se considera un coste el tiempo dedicado por el estudiante a la realización del trabajo.
+
+La precisión en la estimación de costes facilita la elaboración de un presupuesto realista y la planificación financiera del proyecto. Permite anticipar las necesidades económicas, buscar posibles fuentes de financiación si fuese necesario y gestionar eficientemente los recursos disponibles. Una estimación detallada contribuye a evitar desviaciones presupuestarias y a asegurar la viabilidad económica del proyecto \cite{oliveros2011gestion}.
+
+\subsection{Costes materiales}
+A continuación, se hace un recuento de los costes materiales en hardware y software que han sido utilizados para el desarrollo de este proyecto.
+\subsubsection*{Hardware}
+El hardware comprende el conjunto de componentes físicos y tangibles que constituyen un sistema informático. Proporciona la infraestructura física necesaria para la ejecución del software y el procesamiento de la información.
+
+Para realizar este proyecto se ha utilizado un equipo informático con los siguientes componentes:
+\begin{itemize}
+\item \textbf{CPU}: AMD Ryzen 7 6800HS with Radeon Graphics (16) @ 4.785GHz.
+\item \textbf{RAM}: 16GB SO-DIMM DDR5 4800MH.
+\item \textbf{Memoria}: 512GB PCIe® 4.0 NVMe™ M.2 SSD.
+\item \textbf{GPU1}: NVIDIA GeForce RTX 3050 Mobile.
+\item \textbf{GPU2}: AMD ATI Radeon 680M.
+\end{itemize}
+
+Debido al tamaño del conjunto de datos, el componente que más ha ralentizado el proyecto es la RAM, que en ciertas ocasiones durante el entrenamiento de los modelos se quedaba algo escasa en capacidad.
+
+Teniendo en cuenta que el coste del ordenador en el momento de la compra fue de 829\,€, que la vida útil aproximada es de 8 años y que para el desarrollo de este proyecto se ha estado utilizando durante 3.5 meses, la amortización del hardware es:
+
+\begin{equation}
+	\text{Amortización del Hardware} = 829\,\text{€} \cdot \frac{1}{8} \cdot \frac{3.5}{12} = 30,22\,\text{€}
+\end{equation}
+
+
+Además, para la ejecución de los experimentos realizados en el Capítulo \ref{cap.modelos}, se ha utilizado una máquina virtual propiedad del grupo de investigación \textit{Grupo de Sistemas Inteligentes} al que pertenece el tutor de este trabajo D. Diego García Álvarez. La máquina física sobre la que está virtualizada la máquina utilizada, cuenta con las siguientes especificaciones:
+\begin{itemize}
+\item \textbf{CPU}: Dos Intel(R) Xeon(R) Silver 4310 CPU @ 2.10GHz (24 cores y 48 hilos).
+\item \textbf{RAM}: 8 Módulos de 16GB DDR4 a 3200 MT/s (128GB).
+\item \textbf{Memoria}: 14TB de discos SSD en raid 6 con 6 discos.
+\end{itemize}
+
+La máquina virtualiza utilizada posee:
+\begin{itemize}
+\item \textbf{CPU}: 8 cores.
+\item \textbf{RAM}: 16GiB.
+\item \textbf{Memoria}: 60GiB.
+\end{itemize}
+
+Por desgracia, debido al desconocimiento de la vida útil de la máquina física sobre la que se ejecuta la virtualización utilizada, no es posible calcular la amortización de esta parte del hardware utilizado en el desarrollo de este trabajo.
+
+\subsubsection*{Software}
+El software constituye el conjunto intangible de programas, datos e instrucciones que habilitan el funcionamiento de un sistema informático. Es el responsable de definir la funcionalidad, el comportamiento y la interacción del sistema con el usuario y con otros sistemas. En la Tabla \ref{tab:costes_software} se detalla el coste del software utilizado para desarrollar este trabajo.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|c|c|c|}
+\toprule
+Funcionalidad & Software & Coste Mensual & Duración & Coste Total \\
+\midrule
+Sistema Operativo (SO) & Kubuntu 24.10 x86\_64  & 0\,€  & 3,5 meses & 0\,€ \\
+Lenguaje (memoria) & Latex &  0\,€ & 3 meses & 0\,€ \\
+Editor latex & TexMaker & 0\,€ & 3 meses & 0\,€ \\
+IDE  & MS Visual Studio Code & 0\,€ & 1 mes & 0\,€ \\
+Lenguaje (modelos) & Python & 0\,€ & 1 mes & 0\,€ \\
+IDE de Python & Jupyeter Notebooks & 0\,€ & 1 mes & 0\,€ \\
+Plataforma MLOps\tablefootnote{\textit{Machine Learning Operations}, son un conjunto de prácticas y principios que buscan gestionar de forma eficiente y escalable el ciclo de vida del aprendizaje automático} & Weights\&Biases & 0\,€ & 1 mes & 0\,€ \\
+Control de versiones & GitHub & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (código) & DeepSeek & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (memoria) & Gemini & 0\,€ & 2 mes & 0\,€ \\
+Comunicación 1 & MS Outlook & 0\,€ \tablefootnote{licencia académica} & 3,5 mes & 0\,€ \\
+Comunicación 2 & MS Teams & 0\,€ & 3,5 mes & 0\,€ \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Software.}
+\label{tab:costes_software}
+\end{table}
+
+Debido a que el proyecto se realiza en un ámbito académico, se han minimizado los costes software del proyecto utilizando exclusivamente herramientas cedidas por la entidad académica o bien herramientas con licencia open-source que no suponen un coste monetario para el desarrollo del proyecto. 
+
+
+\subsection{Costes humanos} \label{subsec.costeshumanos}
+Como proyecto académico, los costes humanos representan el valor del tiempo y el esfuerzo personal invertido en la planificación, investigación, redacción y presentación del trabajo. Estos costes se manifiestan en las horas dedicadas al proyecto, el esfuerzo intelectual requerido, el aplazamiento o anulación de otras actividades personales o profesionales y el estrés asociado al proceso.
+
+En el caso de la simulación de los costes monetarios de un proyecto similar a este, sería necesario contar con personas cualificadas para los siguientes puestos:
+\begin{itemize}
+\item Ingeniero de Aprendizaje Automático.
+\item Cientifico de Datos.
+\item Analista de Satos.
+\end{itemize}
+
+Los costes humanos se dividen en tres fases diferentes:
+\begin{enumerate}
+	\item Definición y Preparación: la Tabla \ref{tab:costes_fase1} muestra los costes para esta fase.
+	\item Desarrollo y Entrenamiento: los costes para esta fase vienen desarrollados en la Tabla \ref{tab:costes_fase2}.
+	\item Definición y Preparación: la Tabla \ref{tab:costes_fase3} detalla los costes de esta fase del proyecto.
+\end{enumerate}
+
+Para obtener una visión de conjunto de los costes humanos del proyecto, la Tabla \ref{tab:coste_total_profesional} refleja la suma de las fases comentadas.
+
+
+\subsubsection*{Fase 1: Definición y Preparación (75 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 12 & 504 \\
+Científico Datos & 34,5 & 38 & 1\,311 \\
+Analista Datos & 18,5 & 25 & 462,5 \\
+\midrule
+\textbf{Total Fase 1} & & \textbf{75} & \textbf{2\,277,5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 1.}
+\label{tab:costes_fase1}
+\end{table}
+
+
+\subsubsection*{Fase 2: Desarrollo y Entrenamiento (150 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 95 & 3\,990 \\
+Científico Datos & 34,5 & 38 & 1\,311 \\
+Analista Datos & 18,5 & 17 & 314,5 \\
+\midrule
+\textbf{Total Fase 2} & & \textbf{150} & \textbf{5\,615,5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 2.}
+\label{tab:costes_fase2}
+\end{table}
+
+
+\subsubsection*{Fase 3: Validación y Evaluación (75 horas)}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\toprule
+Profesional & €/hora & Horas & Total (€) \\
+\midrule
+Ingeniero ML & 42 & 30 & 1\,260 \\
+Científico Datos & 34,5 & 37 & 1\,276,5 \\
+Analista Datos & 18,5 & 8 & 148 \\
+\midrule
+\textbf{Total Fase 3} & & \textbf{75} & \textbf{2\,684,5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de Profesionales - Fase 3.}
+\label{tab:costes_fase3}
+\end{table}
+
+\subsubsection*{Coste Total del Proyecto (300 horas)}\label{subsubsec.costpertotal}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\toprule
+Profesional & Coste Total (€) \\
+\midrule
+Ingeniero ML & 5\,754 \\
+Científico Datos & 3\,898,5 \\
+Analista Datos & 925 \\
+\midrule
+\textbf{Coste Total del Proyecto} & \textbf{10\,577,5} \\
+\bottomrule
+\end{tabular}
+\caption{Coste Total por Profesional.}
+\label{tab:coste_total_profesional}
+\end{table}
+
+Las estimaciones salariales proporcionadas se basan en los salarios en el sector tecnológico y de análisis de datos en España. Esta información se encuentra publicada en portales de empleo (Talent.com\footnote{\url{https://es.talent.com/}}), escuelas de negocio (Aicad Business School\footnote{\url{https://www.aicad.es/}}, KSchool\footnote{\url{https://kschool.com/}}, Esden Business School\footnote{\url{https://esden.es/}}) y noticias del sector (Tokio School\footnote{\url{https://www.tokioschool.com/}}). 
+
+
+
+
+
+
+
+
+
+
