@@ -1,0 +1,24 @@
+\begin{frame}
+    \begin{columns}[t]
+        \begin{column}{.45\textwidth}
+            \tableofcontents[sections={1-5},sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+        \end{column}
+        \begin{column}{.55\textwidth}
+            \tableofcontents[sections={6-10},sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+        \end{column}
+    \end{columns}
+\end{frame}
+\AtBeginSection[]{
+    \begin{frame}
+        \frametitle{Índice}
+        \begin{columns}[t]
+            \begin{column}{.45\textwidth}
+                \tableofcontents[currentsection, sections={1-5}, sectionstyle=show/shaded, subsectionstyle=show/shaded/hide, subsubsectionstyle=show/shaded/hide]
+            \end{column}
+            \hspace{0.05\textwidth}
+            \begin{column}{.55\textwidth}
+                \tableofcontents[currentsection, sections={6-10}, sectionstyle=show/shaded, subsectionstyle=show/shaded/hide, subsubsectionstyle=show/shaded/hide]
+            \end{column}
+        \end{columns}
+    \end{frame}
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.5.19)  17 JUN 2025 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.20)  20 JUN 2025 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,7 +55,7 @@ Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count274
 \U@D=\dimen150
-\l@unhyphenated=\language12
+\l@unhyphenated=\language38
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -2404,7 +2404,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [73]
-<./img/modelo/arquitecturas/arqnmediosBIN.pdf, id=1558, 425.4294pt x 309.79741p
+<./img/modelo/arquitecturas/arqnmediosBIN.pdf, id=1559, 425.4294pt x 309.79741p
 t>
 File: ./img/modelo/arquitecturas/arqnmediosBIN.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnmediosBIN.pdf>
@@ -2434,7 +2434,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [75 <./img/modelo/arquitecturas/arqnmediosBIN.pdf>]
-<./img/modelo/arquitecturas/arqnBIN.pdf, id=1587, 431.45189pt x 309.3156pt>
+<./img/modelo/arquitecturas/arqnBIN.pdf, id=1588, 431.45189pt x 309.3156pt>
 File: ./img/modelo/arquitecturas/arqnBIN.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnBIN.pdf>
 Package pdftex.def Info: ./img/modelo/arquitecturas/arqnBIN.pdf  used on input 
@@ -2452,7 +2452,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.07225pt}.
 
 [76 <./img/modelo/arquitecturas/arqnBIN.pdf>]
-<./img/modelo/arquitecturas/arqnnBIN.pdf, id=1607, 424.94759pt x 575.0283pt>
+<./img/modelo/arquitecturas/arqnnBIN.pdf, id=1608, 424.94759pt x 575.0283pt>
 File: ./img/modelo/arquitecturas/arqnnBIN.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnnBIN.pdf>
 Package pdftex.def Info: ./img/modelo/arquitecturas/arqnnBIN.pdf  used on input
@@ -2492,7 +2492,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [79]
-<./img/modelo/arquitecturas/arqnmediosMUL.pdf, id=1647, 466.1415pt x 363.75899p
+<./img/modelo/arquitecturas/arqnmediosMUL.pdf, id=1648, 466.1415pt x 363.75899p
 t>
 File: ./img/modelo/arquitecturas/arqnmediosMUL.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnmediosMUL.pdf>
@@ -2511,7 +2511,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.07225pt}.
 
 [80 <./img/modelo/arquitecturas/arqnmediosMUL.pdf>]
-<./img/modelo/arquitecturas/arqnMUL.pdf, id=1670, 432.17459pt x 366.89069pt>
+<./img/modelo/arquitecturas/arqnMUL.pdf, id=1671, 432.17459pt x 366.89069pt>
 File: ./img/modelo/arquitecturas/arqnMUL.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnMUL.pdf>
 Package pdftex.def Info: ./img/modelo/arquitecturas/arqnMUL.pdf  used on input 
@@ -2540,7 +2540,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.07225pt}.
 
 [82 <./img/modelo/arquitecturas/arqnMUL.pdf>]
-<./img/modelo/arquitecturas/arqnnMUL.pdf, id=1698, 452.6511pt x 570.6921pt>
+<./img/modelo/arquitecturas/arqnnMUL.pdf, id=1699, 452.6511pt x 570.6921pt>
 File: ./img/modelo/arquitecturas/arqnnMUL.pdf Graphic file (type pdf)
 <use ./img/modelo/arquitecturas/arqnnMUL.pdf>
 Package pdftex.def Info: ./img/modelo/arquitecturas/arqnnMUL.pdf  used on input
@@ -2591,13 +2591,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [86]
-Overfull \hbox (19.70467pt too wide) in paragraph at lines 824--825
+Overfull \hbox (9.20476pt too wide) in paragraph at lines 824--825
 []\OT1/cmr/m/n/10 Debido a que la fun-ci^^Son de p^^Serdi-da uti-li-za-da pa-ra
- en-tre-nar el mo-de-lo es \OT1/cmtt/m/n/10 BCEWithLogitsLoss()\OT1/cmr/m/n/10 
-,
+ en-tre-nar el mo-de-lo es \OT1/cmtt/m/n/10 BCEWithLogitsLoss\OT1/cmr/m/n/10 ,
  []
 
-<./img/modelo/codigo/modeloBIN.png, id=1741, 1264.725pt x 674.52pt>
+<./img/modelo/codigo/modeloBIN.png, id=1742, 1264.725pt x 674.52pt>
 File: ./img/modelo/codigo/modeloBIN.png Graphic file (type png)
 <use ./img/modelo/codigo/modeloBIN.png>
 Package pdftex.def Info: ./img/modelo/codigo/modeloBIN.png  used on input line 
@@ -2626,13 +2625,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [88]
-<./img/modelo/codigo/DatasetTFG.png, id=1759, 959.585pt x 598.235pt>
+<./img/modelo/codigo/DatasetTFG.png, id=1760, 959.585pt x 598.235pt>
 File: ./img/modelo/codigo/DatasetTFG.png Graphic file (type png)
 <use ./img/modelo/codigo/DatasetTFG.png>
 Package pdftex.def Info: ./img/modelo/codigo/DatasetTFG.png  used on input line
  863.
 (pdftex.def)             Requested size: 320.94832pt x 200.09276pt.
-<./img/modelo/codigo/EntrenamientoCVBIN.png, id=1761, 1212.53pt x 712.6625pt>
+<./img/modelo/codigo/EntrenamientoCVBIN.png, id=1762, 1212.53pt x 712.6625pt>
 File: ./img/modelo/codigo/EntrenamientoCVBIN.png Graphic file (type png)
 <use ./img/modelo/codigo/EntrenamientoCVBIN.png>
 Package pdftex.def Info: ./img/modelo/codigo/EntrenamientoCVBIN.png  used on in
@@ -2661,7 +2660,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.07225pt}.
 
 [90 <./img/modelo/codigo/EntrenamientoCVBIN.png>]
-<./img/modelo/codigo/modeloMUL.png, id=1776, 1383.1675pt x 712.6625pt>
+<./img/modelo/codigo/modeloMUL.png, id=1777, 1383.1675pt x 712.6625pt>
 File: ./img/modelo/codigo/modeloMUL.png Graphic file (type png)
 <use ./img/modelo/codigo/modeloMUL.png>
 Package pdftex.def Info: ./img/modelo/codigo/modeloMUL.png  used on input line 
@@ -2690,7 +2689,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.07225pt}.
 
 [92]
-<./img/modelo/codigo/ValidacionCVMUL.png, id=1796, 1449.415pt x 979.66pt>
+<./img/modelo/codigo/ValidacionCVMUL.png, id=1797, 1449.415pt x 979.66pt>
 File: ./img/modelo/codigo/ValidacionCVMUL.png Graphic file (type png)
 <use ./img/modelo/codigo/ValidacionCVMUL.png>
 Package pdftex.def Info: ./img/modelo/codigo/ValidacionCVMUL.png  used on input
@@ -2730,7 +2729,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [95]
-<./img/modelo/matrices_confusion/MC_ENT_MCB25.png, id=1822, 597.6729pt x 526.12
+<./img/modelo/matrices_confusion/MC_ENT_MCB25.png, id=1823, 597.6729pt x 526.12
 56pt>
 File: ./img/modelo/matrices_confusion/MC_ENT_MCB25.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCB25.png>
@@ -2760,7 +2759,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [97 <./img/modelo/matrices_confusion/MC_ENT_MCB25.png>]
-<./img/modelo/matrices_confusion/MC_ENT_MCB49.png, id=1836, 597.6729pt x 526.12
+<./img/modelo/matrices_confusion/MC_ENT_MCB49.png, id=1837, 597.6729pt x 526.12
 56pt>
 File: ./img/modelo/matrices_confusion/MC_ENT_MCB49.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCB49.png>
@@ -2790,7 +2789,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [99 <./img/modelo/matrices_confusion/MC_ENT_MCB49.png>]
-<./img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=1849, 597.6729pt x 526.12
+<./img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=1850, 597.6729pt x 526.12
 56pt>
 File: ./img/modelo/matrices_confusion/MC_ENT_MCB98.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCB98.png>
@@ -2809,7 +2808,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [100]
-<./img/modelo/resultados/BINtop5.pdf, id=1856, 426.79138pt x 120.45pt>
+<./img/modelo/resultados/BINtop5.pdf, id=1857, 426.79138pt x 120.45pt>
 File: ./img/modelo/resultados/BINtop5.pdf Graphic file (type pdf)
 <use ./img/modelo/resultados/BINtop5.pdf>
 Package pdftex.def Info: ./img/modelo/resultados/BINtop5.pdf  used on input lin
@@ -2853,7 +2852,7 @@ Overfull \hbox (14.22795pt too wide) in paragraph at lines 1150--1168
 [][] 
  []
 
-<./img/modelo/matrices_confusion/MC_ENT_MCM25.png, id=1890, 1003.75pt x 803.0pt
+<./img/modelo/matrices_confusion/MC_ENT_MCM25.png, id=1891, 1003.75pt x 803.0pt
 >
 File: ./img/modelo/matrices_confusion/MC_ENT_MCM25.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCM25.png>
@@ -2888,7 +2887,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [105 <./img/modelo/matrices_confusion/MC_ENT_MCM25.png>]
-<./img/modelo/matrices_confusion/MC_ENT_MCM49.png, id=1904, 1003.75pt x 803.0pt
+<./img/modelo/matrices_confusion/MC_ENT_MCM49.png, id=1905, 1003.75pt x 803.0pt
 >
 File: ./img/modelo/matrices_confusion/MC_ENT_MCM49.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCM49.png>
@@ -2923,7 +2922,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [107 <./img/modelo/matrices_confusion/MC_ENT_MCM49.png>]
-<./img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1917, 1003.75pt x 803.0pt
+<./img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1918, 1003.75pt x 803.0pt
 >
 File: ./img/modelo/matrices_confusion/MC_ENT_MCM98.png Graphic file (type png)
 <use ./img/modelo/matrices_confusion/MC_ENT_MCM98.png>
@@ -2942,7 +2941,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [108]
-<./img/modelo/resultados/MULtop10.pdf, id=1924, 426.79138pt x 220.825pt>
+<./img/modelo/resultados/MULtop10.pdf, id=1925, 426.79138pt x 220.825pt>
 File: ./img/modelo/resultados/MULtop10.pdf Graphic file (type pdf)
 <use ./img/modelo/resultados/MULtop10.pdf>
 Package pdftex.def Info: ./img/modelo/resultados/MULtop10.pdf  used on input li
@@ -3030,7 +3029,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [115]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCB25.png, id=1982, 597.6729pt x 5
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCB25.png, id=1983, 597.6729pt x 5
 26.1256pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCB25.png Graphic file (type 
 png)
@@ -3061,7 +3060,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [117 <./img/evaluacion/matrices_confusion/MC_EVAL_MCB25.png>]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCB49.png, id=1996, 597.6729pt x 5
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCB49.png, id=1997, 597.6729pt x 5
 26.1256pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCB49.png Graphic file (type 
 png)
@@ -3092,7 +3091,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [119 <./img/evaluacion/matrices_confusion/MC_EVAL_MCB49.png>]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCB98.png, id=2011, 597.6729pt x 5
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCB98.png, id=2012, 597.6729pt x 5
 26.1256pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCB98.png Graphic file (type 
 png)
@@ -3128,7 +3127,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [121 <./img/evaluacion/matrices_confusion/MC_EVAL_MCB98.png>]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCM25.png, id=2026, 1003.75pt x 80
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCM25.png, id=2027, 1003.75pt x 80
 3.0pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCM25.png Graphic file (type 
 png)
@@ -3148,7 +3147,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [122]
-<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM25.pdf, id=2034, 451.6875pt
+<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM25.pdf, id=2035, 451.6875pt
  x 225.84375pt>
 File: ./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM25.pdf Graphic file (t
 ype pdf)
@@ -3184,7 +3183,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [124 <./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM25.pdf>]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCM49.png, id=2062, 1003.75pt x 80
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCM49.png, id=2063, 1003.75pt x 80
 3.0pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCM49.png Graphic file (type 
 png)
@@ -3204,7 +3203,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [125]
-<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM49.pdf, id=2070, 451.6875pt
+<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM49.pdf, id=2071, 451.6875pt
  x 225.84375pt>
 File: ./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM49.pdf Graphic file (t
 ype pdf)
@@ -3240,7 +3239,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [127 <./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM49.pdf>]
-<./img/evaluacion/matrices_confusion/MC_EVAL_MCM98.png, id=2098, 1003.75pt x 80
+<./img/evaluacion/matrices_confusion/MC_EVAL_MCM98.png, id=2099, 1003.75pt x 80
 3.0pt>
 File: ./img/evaluacion/matrices_confusion/MC_EVAL_MCM98.png Graphic file (type 
 png)
@@ -3260,7 +3259,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [128]
-<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=2107, 451.6875pt
+<./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=2108, 451.6875pt
  x 225.84375pt>
 File: ./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf Graphic file (t
 ype pdf)
@@ -3291,7 +3290,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [130 <./img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf>]
-<./img/evaluacion/resultados/top5EVALMCB.pdf, id=2141, 426.79138pt x 120.45pt>
+<./img/evaluacion/resultados/top5EVALMCB.pdf, id=2142, 426.79138pt x 120.45pt>
 File: ./img/evaluacion/resultados/top5EVALMCB.pdf Graphic file (type pdf)
 <use ./img/evaluacion/resultados/top5EVALMCB.pdf>
 Package pdftex.def Info: ./img/evaluacion/resultados/top5EVALMCB.pdf  used on i
@@ -3314,7 +3313,7 @@ Overfull \hbox (5.27571pt too wide) in paragraph at lines 342--343
  -MCM98 pre-sen-ta una pre-ci-si^^Son glo-bal mo-de-ra-da (test[]accuracy
  []
 
-<./img/evaluacion/resultados/top5EVALMCM.pdf, id=2161, 426.79138pt x 120.45pt>
+<./img/evaluacion/resultados/top5EVALMCM.pdf, id=2162, 426.79138pt x 120.45pt>
 File: ./img/evaluacion/resultados/top5EVALMCM.pdf Graphic file (type pdf)
 <use ./img/evaluacion/resultados/top5EVALMCM.pdf>
 Package pdftex.def Info: ./img/evaluacion/resultados/top5EVALMCM.pdf  used on i
@@ -3402,7 +3401,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [138]
-<./img/despliegue/despliegue.pdf, id=2224, 718.60468pt x 211.7511pt>
+<./img/despliegue/despliegue.pdf, id=2225, 718.60468pt x 211.7511pt>
 File: ./img/despliegue/despliegue.pdf Graphic file (type pdf)
 <use ./img/despliegue/despliegue.pdf>
 Package pdftex.def Info: ./img/despliegue/despliegue.pdf  used on input line 39
@@ -3596,12 +3595,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EA1DB4320DB338274195EAB8C48A0510;22796.
  ) 
 Here is how much of TeX's memory you used:
- 37709 strings out of 475002
- 739095 string characters out of 5762004
- 1192894 words of memory out of 5000000
- 59484 multiletter control sequences out of 15000+600000
+ 37709 strings out of 474481
+ 739095 string characters out of 5750792
+ 1194363 words of memory out of 5000000
+ 59636 multiletter control sequences out of 15000+600000
  577980 words of font info for 83 fonts, out of 8000000 for 9000
- 107 hyphenation exceptions out of 8191
+ 357 hyphenation exceptions out of 8191
  103i,15n,106p,2371b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600p
@@ -3628,10 +3627,10 @@ public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 nts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/lat
 xfont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (178 pages, 5022802 bytes).
+Output written on main.pdf (178 pages, 5022789 bytes).
 PDF statistics:
- 2620 PDF objects out of 2984 (max. 8388607)
- 2251 compressed objects within 23 object streams
+ 2621 PDF objects out of 2984 (max. 8388607)
+ 2252 compressed objects within 23 object streams
  606 named destinations out of 1000 (max. 500000)
  975 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,62 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usetheme{default} 
+\usepackage[spanish]{babel} % espanol
+\usepackage[utf8]{inputenc} % acentos sin codigo
+\usepackage[T1]{fontenc}
+\usepackage{array}  % Necesario para el uso de m{} en tabular
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{pdfpages}
+\usepackage{adjustbox}% Necesario si usas imágenes en tu documento
+
+% A SISU beamer based on THU beamer.
+
+% other packages
+\usepackage{subcaption}
+
+
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+
+\setbeamertemplate{section in toc}[sections numbered]
+
+
+\begin{document}
+\AtBeginSection{\frame{\sectionpage}}
+
+\input{slides/portada}
+\input{slides/indice}
+
+\section{Introducción}
+\input{slides/introduccion}
+
+\section{Planificación y costes}
+\input{slides/planificacion}
+
+\section{Metodología}
+\input{slides/metodologias}
+
+\section{Entendimiento del problema}
+\input{slides/ent-problema}
+
+\section{Entendimiento de los datos}
+\input{slides/ent-datos}
+
+\section{Modelado}
+\input{slides/modelado}
+
+\section{Evaluación}
+\input{slides/evaluacion}
+
+\section{Despliegue}
+\input{slides/despliegue}
+
+\section{Conclusiones}
+\input{slides/conclusiones}
+
+
+
+\end{document}

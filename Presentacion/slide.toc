@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@sectionintoc {2}{Planificación y costes}{7}{0}{2}
+\beamer@sectionintoc {3}{Metodología}{8}{0}{3}
+\beamer@sectionintoc {4}{Entendimiento del problema}{11}{0}{4}
+\beamer@sectionintoc {5}{Entendimiento de los datos}{15}{0}{5}
+\beamer@subsectionintoc {5}{1}{Características de los datos}{16}{0}{5}
+\beamer@subsectionintoc {5}{2}{Preparación de los datos}{18}{0}{5}
+\beamer@sectionintoc {6}{Modelado}{20}{0}{6}
+\beamer@subsectionintoc {6}{1}{Origen de los modelos neuronales}{21}{0}{6}
+\beamer@subsectionintoc {6}{2}{Clasificación con redes neuronales}{23}{0}{6}
+\beamer@subsectionintoc {6}{3}{Arquitecturas desarrolladas}{25}{0}{6}
+\beamer@subsectionintoc {6}{4}{Implementación de los modelos}{27}{0}{6}
+\beamer@subsectionintoc {6}{5}{Selección de las configuraciones de los modelos}{29}{0}{6}
+\beamer@sectionintoc {7}{Evaluación}{33}{0}{7}
+\beamer@sectionintoc {8}{Despliegue}{34}{0}{8}
+\beamer@sectionintoc {9}{Conclusiones}{35}{0}{9}

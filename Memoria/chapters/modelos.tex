@@ -239,7 +239,7 @@ En esta sección se explica en que consiste una matriz de confusión y las varia
 
 La matriz de confusión es una representación tabular que permite evaluar el rendimiento de un modelo de clasificación. Esta matriz compara las predicciones del modelo con los valores reales (verdaderos) y proporciona una visión detallada sobre los errores cometidos. Esta matriz permite calcular diversas métricas de evaluación del modelo, que son esenciales para entender la efectividad del modelo en tareas de clasificación \cite{han2011data}.
 
-En el caso de los modelos neuronales de clasificación binaria, la matriz tiene una estructura 2x2, donde cada celda en la matriz representa la cantidad de veces que una combinación específica de etiqueta y clase predicha ocurrió. Los valores posibles para la clasificación binaria son: 
+En el caso de los modelos neuronales de clasificación binaria, la matriz tiene una estructura 2x2, como la que se muestra en la Tabla \ref{tab:confusion_matrix}, donde cada celda en la matriz representa la cantidad de veces que una combinación específica de etiqueta y clase predicha ocurrió. Los valores posibles para la clasificación binaria son: 
 
 \begin{itemize}
 
@@ -257,7 +257,6 @@ En el caso de los modelos neuronales de clasificación binaria, la matriz tiene 
 
 \begin{table}[h]
 \centering
-\label{tab:confusion_matrix}
 \begin{tabular}{|l|c|c|}
 \hline
  & \textbf{Predicción Positiva} & \textbf{Predicción Negativa} \\ \hline
@@ -265,6 +264,7 @@ En el caso de los modelos neuronales de clasificación binaria, la matriz tiene 
 \textbf{Real Negativo} & Falsos Positivos (FP) & Verdaderos Negativos (VN) \\ \hline
 \end{tabular}
 \caption{Matriz de confusión para clasificación binaria.}
+\label{tab:confusion_matrix}
 \end{table}
 
 \subsection{Métricas útiles en clasificación binaria}  \label{sec.metricas-bin}
@@ -821,7 +821,7 @@ Para diseñar la arquitectura del modelo, se ha desarrollado la clase Modelo. Es
 
 Como se puede observar en la Figura \ref{fig:modBIN}, el modelo está compuesto por dos capas. La \texttt{capa1} tiene un número de entradas igual al número de parámetros que posee el \textit{dataset}, como se comenta en la Sección \ref{sec.prep-datos}, el número de entradas del modelo es 49. El número de salidas depende del parámetro \textit{ventaOculta}, con el que se llama a la función de inicialización del modelo. El número de salidas de la \texttt{capa1} será precisamente el que determine la arquitectura específica que se utiliza. Por su parte, la \texttt{capa2} recibe como entrada el número de salidas de la \texttt{capa1} y al tratarse de la capa final de un modelo de clasificación binaria, esta capa tendrá una única salida.
 
-Debido a que la función de pérdida utilizada para entrenar el modelo es \texttt{BCEWithLogitsLoss()}, que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
+Debido a que la función de pérdida utilizada para entrenar el modelo es \texttt{BCEWithLogitsLoss}, que ya aplica la función sigmoidea, sería contraproducente aplicar la función sigmoidea sobre la salida del modelo para su entrenamiento.
 
 \begin{figure}[H]
     \centering
