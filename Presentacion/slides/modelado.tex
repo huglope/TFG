@@ -5,44 +5,56 @@
       	\item McCulloch/Pitts
       	\item Rosenblatt
     \end{itemize}
-      
-    	\begin{figure}[H]
-	    \centering
-	    \hbox{
-	    \begin{minipage}[b]{0.25\textwidth}
-	    		\centering
-		    \includegraphics[width=\linewidth]{./img/RyC.png}
-		    \caption{Ramón y Cajal.}
-		    \label{fig:RyC}
-	    \end{minipage}
-	    
-	    \hspace{1cm}
-	        
-	    \begin{minipage}[b]{0.65\textwidth}
-    			\centering
+    
+    \begin{figure}
+    \centering
 		    \includegraphics[width=\linewidth]{../Memoria/img/modelo/neuronaartificial.png}
-		    \caption{Esquema del funcionamiento de una neurona artificial 		\cite{tomorrow2023peso}.}
+		    \caption{Esquema del funcionamiento de una neurona artificial.}
 		    \label{fig:neu-art}
-	    \end{minipage}	
-	    }
-	\end{figure}
+    \end{figure}
+      
+%    	\begin{figure}[H]
+%	    \centering
+%	    \hbox{
+%	    \begin{minipage}[b]{0.25\textwidth}
+%	    		\centering
+%		    \includegraphics[width=\linewidth]{./img/RyC.png}
+%		    \caption{Ramón y Cajal.}
+%		    \label{fig:RyC}
+%	    \end{minipage}
+%	    
+%	    \hspace{1cm}
+%	        
+%	    \begin{minipage}[b]{0.65\textwidth}
+ %   			\centering
+%		    \includegraphics[width=\linewidth]{../Memoria/img/modelo/neuronaartificial.png}
+%		    \caption{Esquema del funcionamiento de una neurona artificial 	%	\cite{tomorrow2023peso}.}
+%		    \label{fig:neu-art}
+%	    \end{minipage}	
+%	    }
+%	\end{figure}
 	
 \end{frame}
 
 
 
 \begin{frame}{Parámetros e hiperparámetros}
-Los parámetros se ajustan através del algoritmo de optimización utilizando los cálculos de la función de pérdida durante la fase de entrenamiento de los modelos. Los parámetros de una red neuronal son:
+
 \begin{itemize}
-	\item Pesos
-	\item Bias o sesgos
+
+	\item Los parámetros se ajustan a través del algoritmo de optimización, utilizando los cálculos de la función de pérdida durante la fase de entrenamiento de los modelos. Los parámetros de una red neuronal son:
+\begin{itemize}
+	\item Pesos.
+	\item Bias o sesgos.
+\end{itemize}
+	
+	\item Los hiperparámetros son valores que se configuran antes de la fase de entrenamiento y son los responsables de controlar el comportamiento del proceso de entrenamiento. Algunos de los hiperparámetros más importantes son:
+\begin{itemize}
+	\item Tasa de aprendizaje (\textit{Learning rate}).
+	\item Épocas (\textit{Epochs}).
+	\item Tamaño de lote (\textit{Batch size}).
 \end{itemize}
 
-Los hiperparámetros son valores que se configuran antes de la fase de entrenamiento, que controlan el comportamiento del proceso de entrenamiento. Algunos de los hiperparámetros más importantes son:
-\begin{itemize}
-	\item Tasa de aprendizaje (\textit{Learning rate})
-	\item Épocas (\textit{Epochs})
-	\item Tamaño de lote (\textit{Batch size})
 \end{itemize}
 \end{frame}
 
@@ -50,10 +62,10 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \subsection{Clasificación con redes neuronales}
 \begin{frame}{Matrices de confusión para el MCB}
 \begin{itemize}
-	\item \small Verdaderos positivos (VP)
-    \item \small Falsos positivos (FP)
-    \item \small Falsos negativos (FN)
-    \item \small Verdaderos negativos (VN)
+	\item \small Verdaderos positivos (VP).
+    \item \small Falsos positivos (FP).
+    \item \small Falsos negativos (FN).
+    \item \small Verdaderos negativos (VN).
 \end{itemize}
 
 \begin{table}[H]
@@ -73,7 +85,7 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{
-\begin{tabular}{|>{\raggedright\arraybackslash}m{2.5cm}|*{9}{>{\centering\arraybackslash}m{2cm}|}}
+\begin{tabular}{|>{\raggedright\arraybackslash}m{2.6cm}|*{9}{>{\centering\arraybackslash}m{2cm}|}}
 \hline
   & \textbf{Predicción Clase 1} & \textbf{Predicción Clase 2} & \textbf{Predicción Clase 3} & \textbf{Predicción Clase 4} & \textbf{Predicción Clase 5} & \textbf{Predicción Clase 6} & \textbf{Predicción Clase 7} & \textbf{Predicción Clase 8} & \textbf{Predicción Clase 9} \\ \hline
 \textbf{Real Clase 1} & \cellcolor{green!20}VP$_{1}$ & FP$_{12}$ & FP$_{13}$ & FP$_{14}$ & FP$_{15}$ & FP$_{16}$ & FP$_{17}$ & FP$_{18}$ & FP$_{19}$ \\ \hline
@@ -87,7 +99,7 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \textbf{Real Clase 9} & FP$_{91}$ & FP$_{92}$ & FP$_{93}$ & FP$_{94}$ & FP$_{95}$ & FP$_{96}$ & FP$_{97}$ & FP$_{98}$ & \cellcolor{green!20}VP$_{9}$ \\ \hline
 \end{tabular}
 }
-\caption{Matriz de confusión para modelos de clasificación multiclase (9 clases).}
+\caption{Matriz de confusión para los modelos de clasificación multiclase.}
 \label{tab:confusion_matrix_9class}
 \end{table}
 \end{frame}
@@ -97,9 +109,9 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \begin{frame}{Arquitecturas desarrolladas para el MCB}
 \begin{itemize}
 
-	\item \textbf{MCB25}: La mitad del número de atributos o entradas que recibe el modelo
-	\item \textbf{MCB49}: El mismo número que atributos o entradas que tiene el modelo.
-	\item \textbf{MCB98}: El doble del número de atributos o entradas. 
+	\item \textbf{MCB25}: Número de neuronas en la capa oculta igual a la mitad del número de atributos o entradas que recibe el modelo.
+	\item \textbf{MCB49}: Número de neuronas en la capa oculta igual al mismo número de atributos o entradas que recibe el modelo.
+	\item \textbf{MCB98}: Número de neuronas en la capa oculta igual al doble del número de atributos o entradas que recibe el modelo. 
 
 \end{itemize}
 
@@ -135,10 +147,10 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \begin{frame}{Arquitecturas desarrolladas para el MCM}
 \begin{itemize}
 
-	\item \textbf{MCM25}: La mitad del número de atributos o entradas que recibe el modelo
-	\item \textbf{MCM49}: El mismo número que atributos o entradas que tiene el modelo.
-	\item \textbf{MCM98}: El doble del número de atributos o entradas. 
 
+	\item \textbf{MCM25}: Número de neuronas en la capa oculta igual a la mitad del número de atributos o entradas que recibe el modelo.
+	\item \textbf{MCM49}: Número de neuronas en la capa oculta igual al mismo número de atributos o entradas que recibe el modelo.
+	\item \textbf{MCM98}: Número de neuronas en la capa oculta igual al doble del número de atributos o entradas que recibe el modelo.
 \end{itemize}
     	\begin{figure}[H]
 	    \centering
@@ -198,7 +210,7 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 	\end{table}
 \end{frame}
 
-\begin{frame}{Implementación del MCB}
+\begin{frame}{Implementación del MCM}
 	\begin{itemize}
 		\item \textbf{Función de pérdida}: \texttt{CrossEntropyLoss}
 		\item \textbf{Algoritmo de optimización}: \texttt{AdamW}
@@ -232,7 +244,7 @@ Los hiperparámetros son valores que se configuran antes de la fase de entrenami
 \subsection{Selección de las configuraciones de los modelos}
 
 \begin{frame}{Selección de los mejores MCB}
-Los mejores resultados del MCB los obtuvo la arquitectura con el doble de neuronas en su capa oculta de atributos de entrada tiene el modelo.
+Los mejores resultados del MCB los obtuvo la arquitectura con el doble de neuronas en su capa oculta que atributos de entrada tiene el modelo.
 \begin{columns}[b]
 \begin{column}{0.7\textwidth}
 \begin{table}[H]
@@ -255,7 +267,7 @@ Posicion\_EXP & 1º-MCB98 & 2º-MCB98 & 3º-MCB98 & 4º-MCB98 & 5º-MCB98 \\
 \hline
 \end{tabular}
 }
-    \caption{Mejores cinco configuraciones para el MCM98.}
+    \caption{Mejores cinco configuraciones para el MCB98.}
     \label{fig:BINhs98}
 \end{table}
 \end{column}
@@ -264,7 +276,7 @@ Posicion\_EXP & 1º-MCB98 & 2º-MCB98 & 3º-MCB98 & 4º-MCB98 & 5º-MCB98 \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png}
-    \caption{Matriz de confusión 1º MCM98.}
+    \caption{Matriz de confusión 1º MCB98.}
     \label{fig:MC_ENT_MCB98}
 \end{figure}
 
@@ -287,8 +299,8 @@ En este modelo no se observa que la arquitectura influya especialmente en los re
 
 
 
-\begin{frame}{Selección de los mejores MCB}
-Al igual que en el MCB, los mejores resultados del MCM se han obtenido en la arquitectura con el doble de neuronas en su capa oculta de atributos de entrada tiene el modelo.
+\begin{frame}{Selección de los mejores MCM}
+Al igual que en el MCB, los mejores resultados del MCM se han obtenido en la arquitectura con el doble de neuronas en su capa oculta que atributos de entrada tiene el modelo.
 \begin{columns}[b]
 \begin{column}{0.7\textwidth}
 \begin{table}[H]
@@ -330,12 +342,12 @@ Posicion\_EXP & 1º-MCM98 & 2º-MCM98 & 3º-MCM98 & 4º-MCM98 & 5º-MCM98 \\
 \end{frame}
 
 
-\begin{frame}{Mejores 5 configuraciones del MCM}
+\begin{frame}{Mejores 10 configuraciones del MCM}
 En el caso del MCM, la arquitectura MCM98 ha obtenido en la fase de entrenamiento unos resultados muy superiores a las otras dos arquitecturas desarrolladas.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{../Memoria/img/modelo/resultados/MULtop10.pdf}
-    \caption{Mejores cinco configuraciones de hiperparámetros del modelo de clasificación multiclase.}
+    \caption{Mejores diez configuraciones de hiperparámetros del modelo de clasificación multiclase.}
     \label{fig:BINtop5}
 \end{figure}
 

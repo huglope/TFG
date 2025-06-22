@@ -99,8 +99,8 @@
 \contentsline {subsubsection}{MCB98: Modelo de clasifcación binaria con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{119}{section*.107}%
 \contentsline {subsection}{\numberline {7.3.2}Resultados del modelo de clasificación multiclase}{121}{subsection.7.3.2}%
 \contentsline {subsubsection}{MCM25: Modelo de clasifcación multiclase con un tamaño de capa oculta igual a la mitad del número de atributos de entrada que recibe el modelo}{121}{section*.110}%
-\contentsline {subsubsection}{MCB49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{124}{section*.114}%
-\contentsline {subsubsection}{MCB98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{127}{section*.118}%
+\contentsline {subsubsection}{MCM49: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al número de atributos de entrada que recibe el modelo}{124}{section*.114}%
+\contentsline {subsubsection}{MCM98: Modelo de clasifcación multiclase con un tamaño de capa oculta igual al doble del número de atributos de entrada que recibe el modelo}{127}{section*.118}%
 \contentsline {section}{\numberline {7.4}Análisis de los resultados obtenidos}{130}{section.7.4}%
 \contentsline {subsection}{\numberline {7.4.1}Modelo de clasificación binaria}{130}{subsection.7.4.1}%
 \contentsline {subsection}{\numberline {7.4.2}Modelo de clasificación multiclase}{131}{subsection.7.4.2}%

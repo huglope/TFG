@@ -1,0 +1,130 @@
+\subsection{Planificación}
+\begin{frame}{Planificación del proyecto}
+
+\begin{figure}[H]
+\centering
+\makebox[\linewidth][c]{%  % Centrado mejorado\\
+
+\resizebox{0.45\textwidth}{!}{
+\begin{ganttchart}[
+    x unit=0.15cm,         % Aumentado para ocupar más ancho
+    y unit title=0.8cm,
+    y unit chart=0.6cm,
+    hgrid,
+    vgrid={*{1}{dotted}},
+    title/.style={draw=none},
+    title label font=\footnotesize,
+    bar/.style={fill=blue!30, rounded corners=2pt},
+    bar height=0.6,
+    group/.style={draw=black, fill=blue!10},
+    milestone/.style={fill=red, rounded corners=2pt},
+    bar label font=\scriptsize,
+    group label font=\small,
+    milestone label font=\scriptsize,
+    expand chart=\linewidth  % Ocupa todo el ancho disponible
+]{1}{90}
+    % Título principal centrado sobre semanas
+    \gantttitle{Diagrama de Gantt del Proyecto}{90} \\
+    
+    % Cabecera de semanas (13 semanas para 90 días)
+    \gantttitlelist{1,2,3,4,5,6,7,8,9,10,11,12,13}{7} \\
+    
+    % Fases y tareas (igual que antes pero ajustadas visualmente)
+    \ganttgroup{1. Comprensión Negocio}{1}{10} \\
+    \ganttbar{1.1 Definición objetivos}{1}{5} \\
+    \ganttbar{1.2 Análisis requisitos}{6}{10} \\
+    
+    \ganttgroup{2. Comprensión Datos}{11}{20} \\
+    \ganttbar{2.1 Recopilación datos}{11}{15} \\
+    \ganttbar{2.2 Análisis exploratorio}{16}{20} \\
+    
+    \ganttgroup{Sprint 1: Preparación}{21}{35} \\
+    \ganttbar{3.1 Limpieza datos}{21}{25} \\
+    \ganttbar{3.2 Feature engineering}{26}{30} \\
+    \ganttbar{3.3 Normalización}{31}{35} \\
+    \ganttmilestone{Hito 1}{35} \\
+    
+    \ganttgroup{Sprint 2: Modelado}{36}{60} \\
+    \ganttbar{4.1 Selección algoritmos}{36}{40} \\
+    \ganttbar{4.2 Entrenamiento inicial}{41}{50} \\
+    \ganttbar{4.3 Ajuste parámetros}{51}{60} \\
+    \ganttmilestone{Hito 2}{60} \\
+    
+    \ganttgroup{Sprint 3: Evaluación}{61}{80} \\
+    \ganttbar{5.1 Validación cruzada}{61}{65} \\
+    \ganttbar{5.2 Pruebas rendimiento}{66}{70} \\
+    \ganttbar{5.3 Análisis resultados}{71}{80} \\
+    \ganttmilestone{Hito 3}{80} \\
+    
+    \ganttgroup{6. Documentación}{81}{90} \\
+    \ganttbar{6.1 Redacción memoria}{81}{85} \\
+    \ganttbar{6.2 Preparación defensa}{86}{90} \\
+    \ganttmilestone{Entrega Final}{90}
+\end{ganttchart}
+}
+}
+\caption{Diagrama de Gantt para la planificación del proyecto.}
+\label{fig:gantt}
+\end{figure}
+\end{frame}
+
+
+
+
+\subsection{Costes}
+\begin{frame}{Costes del proyecto}
+
+\begin{equation}
+	\text{Amortización del Hardware} = 829\,\text{€} \cdot \frac{1}{8} \cdot \frac{3.5}{12} = 30,22\,\text{€}
+\end{equation}
+
+\begin{table}[H]
+\centering
+
+\resizebox{0.7\textwidth}{!}{
+\begin{tabular}{|l|l|c|c|c|}
+\toprule
+Funcionalidad & Software & Coste Mensual & Duración & Coste Total \\
+\midrule
+Sistema Operativo (SO) & Kubuntu 24.10 x86\_64  & 0\,€  & 3,5 meses & 0\,€ \\
+Lenguaje (memoria) & Latex &  0\,€ & 3 meses & 0\,€ \\
+Editor latex & TexMaker & 0\,€ & 3 meses & 0\,€ \\
+IDE  & MS Visual Studio Code & 0\,€ & 1 mes & 0\,€ \\
+Lenguaje (modelos) & Python & 0\,€ & 1 mes & 0\,€ \\
+IDE de Python & Jupyeter Notebooks & 0\,€ & 1 mes & 0\,€ \\
+Plataforma MLOps & Weights\&Biases & 0\,€ & 1 mes & 0\,€ \\
+Control de versiones & GitHub & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (código) & DeepSeek & 0\,€ & 1 mes & 0\,€ \\
+IA generativa (memoria) & Gemini & 0\,€ & 2 mes & 0\,€ \\
+Comunicación 1 & MS Outlook & 0\,€  & 3,5 mes & 0\,€ \\
+Comunicación 2 & MS Teams & 0\,€ & 3,5 mes & 0\,€ \\
+\bottomrule
+\end{tabular}
+}
+\caption{Costes de Software.}
+\label{tab:costes_software}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{
+\begin{tabular}{|l|r|}
+\toprule
+Profesional & Coste Total (€) \\
+\midrule
+Ingeniero ML & 5\,754 \\
+Científico Datos & 3\,898,5 \\
+Analista Datos & 925 \\
+\midrule
+\textbf{Coste Total del Proyecto} & \textbf{10\,577,5} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Coste Total por Profesional.}
+\label{tab:coste_total_profesional}
+\end{table}
+
+
+\end{frame}
+

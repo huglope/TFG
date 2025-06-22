@@ -1,11 +1,18 @@
 \subsection{Características de los datos}
 \begin{frame}{Origen de los datos}
-El dataset utilizado en este trabajo es \texttt{NF-UNSW-NB15-v3}, desarrollado como parte de un análisis realizado en la Universidad de Queensland, Australia.
-Contiene 53 atributos que describen características del tráfico de red y que permiten clasificar las muestras de tráfico en nueve clases de ataques o como conexiones benignas. Algunos de los datos que recoge son:
+
+\begin{itemize}
+	\item El dataset utilizado en este trabajo es \texttt{NF-UNSW-NB15-v3}, desarrollado como parte de un análisis realizado en la Universidad de Queensland, Australia.
+	 \vspace{10mm}
+	\item Contiene 53 atributos que describen características del tráfico de red y que permiten clasificar las muestras de tráfico en nueve clases de ataques o como conexiones benignas. 
+	 \vspace{10mm}
+	\item Algunos de los datos que recoge, son:
 \begin{itemize}
 	\item La duración de la conexión.
 	\item Los bytes enviados y los recibidos.
 	\item Versiones de los protocolos utilizados.
+\end{itemize}
+
 \end{itemize}
 \end{frame}
 
@@ -13,7 +20,7 @@ Contiene 53 atributos que describen características del tráfico de red y que p
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|c|} 
+\begin{tabular}{|c|r|} 
 \hline
 \rowcolor[HTML]{f0f7ff}  
 \textbf{Clase} & \textbf{Cantidad} \\ \hline
@@ -28,7 +35,7 @@ DoS & 5\,980 \\ \hline
 \textit{Shellcode} & 4\,659 \\ \hline
 \textit{Worms} & 158 \\ \hline
 \end{tabular}
-\caption{Clasificación de amenazas de seguridad del dataset \texttt{NF-UNSW-NB15-v3}.}
+\caption{Clasificación de amenazas de seguridad del \textit{dataset} \texttt{NF-UNSW- NB15-v3}.}
 \label{tab:attacks-tab}
 \end{table}
 
@@ -37,7 +44,7 @@ DoS & 5\,980 \\ \hline
 \subsection{Preparación de los datos}
 
 \begin{frame}{Atributos}
-	Los atributos utilizados para desarrollar los modelos de este trabajo son los 53 atributos del conjunto de datos original, a excepción de los eliminados, que son:
+	Los atributos utilizados para desarrollar los modelos de este trabajo son los 53 atributos del conjunto de datos original, excepto los siguientes que han sido eliminados:
 	\begin{itemize}
 		\item \texttt{IPV4\_SRC\_ADDR}
 		\item \texttt{IPV4\_DST\_ADDR}
@@ -47,9 +54,11 @@ DoS & 5\,980 \\ \hline
 \end{frame}
 
 \begin{frame}{Etiquetas}
-	\begin{enumerate}
+	\begin{itemize}
+	
 		\item \texttt{Label}: Indica si se trata de una conexión benigna o maligna.
+		 \vspace{10mm}
 		\item \texttt{Attack}: Indica el tipo de ataque al que corresponde esa conexión.
-	\end{enumerate}
+	\end{itemize}
 \end{frame}
 
