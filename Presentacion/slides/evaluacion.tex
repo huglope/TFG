@@ -2,7 +2,7 @@
 \begin{itemize}
 
 	\item Los resultados obtenidos durante la fase de evaluación para las arquitecturas del MCB han sido mejores que los obtenidos durante la fase de entrenamiento.
-	\item Destaca la ausencia de la arquitectura MCB49 entre las cinco configuraciones con mejores resultados del MCB. Este hecho puede atribuirse a factores aleatorios no controlables como el estado de la máquina en el momento de la ejecución de la evaluación.
+	\item Destaca la ausencia de la arquitectura MCB49 entre las cinco configuraciones con mejores resultados del MCB. Este hecho puede atribuirse a factores aleatorios no controlables.
 \end{itemize}
 	\begin{figure}[H]
     \centering
@@ -17,7 +17,7 @@
 \begin{itemize}
 
 	\item Los resultados obtenidos durante la fase de evaluación para las arquitecturas del MCM han sido ligeramente peores que los obtenidos durante la fase de entrenamiento.
-	\item En comparación con el resto de arquitecturas, la arquitectura MCM25 ha obtenido unos resultados superiores en la fase de evaluación comparandolos con los resultados de la misma arquitectura en la fase de entrenamiento.
+	\item En la fase de evaluación la arquitectura MCB25 ha obtenido un resultado superior respecto al resto de las arquitecturas en comparación con los resultados de la fase de entrenamiento.
 \end{itemize}
 	\begin{figure}[H]
     \centering
@@ -28,7 +28,7 @@
 \end{frame}
 
 \begin{frame}{Matriz de confusión del MCM98 normalizada}
-Dado el desbalanceo existente entre el número de muestras de cada clase del conjunto de datos utilizado, se puede utilizar la técnica de normalización de la matriz de confusión. Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos. Para ello, se convierten los conteos absolutos de la matriz de confusión en proporciones por cada clase real.
+Dado el desbalanceo existente entre el número de muestras de cada clase del conjunto de datos utilizado, es recomendable aplicar la técnica de normalización de la matriz de confusión.% Esta técnica permite observar de forma más clara el comportamiento del modelo en cada clase, independientemente de su frecuencia en los datos. Para ello, se convierten los conteos absolutos de la matriz de confusión en proporciones por cada clase real.
 
 
 \begin{figure}[H]
@@ -41,9 +41,9 @@ Dado el desbalanceo existente entre el número de muestras de cada clase del con
 \end{frame}
 
 
-\begin{frame}{Comparación de los resultados con un trabajo similar}
+\begin{frame}{Comparación de los resultados con otros modelos}
 
-Los modelos desarrollados en este trabajo presentan mejoras notables en la clasificación binaria y un rendimiento competitivo en la clasificación multiclase. Aunque persisten desafíos en algunas clases, los resultados sugieren una mayor capacidad de generalización frente a los modelos publicados previamente.
+Los modelos desarrollados en este trabajo presentan mejoras notables en la clasificación binaria y un rendimiento competitivo en la clasificación multiclase frente a otros modelos publicados anteriormente.% Aunque persisten desafíos en algunas clases, los resultados sugieren una mayor capacidad de generalización frente a los modelos publicados previamente.
 
 
 \begin{table}[H]

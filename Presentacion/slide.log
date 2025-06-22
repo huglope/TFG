@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.20)  22 JUN 2025 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.20)  22 JUN 2025 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,7 +1434,7 @@ Package caption Info: End \AtBeginDocument code.
 (./slides/portada.tex
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 3.
+(hyperref)                setting the option has no effect on input line 2.
 
 Package epstopdf Info: Source file: <img/uva.eps>
 (epstopdf)                    date: 2024-07-12 10:42:00
@@ -1535,7 +1535,7 @@ LaTeX Info: Redefining \% on input line 1.
 [8
 
 ]
-Overfull \vbox (7.09839pt too high) detected at line 129
+Overfull \vbox (15.15079pt too high) detected at line 129
  []
 
 
@@ -1890,18 +1890,10 @@ Package pdftex.def Info: ../Memoria/img/evaluacion/matrices_confusion/MCNorm_EV
 AL_MCM98.pdf  used on input line 41.
 (pdftex.def)             Requested size: 291.92444pt x 145.96962pt.
 
-Overfull \vbox (44.32643pt too high) detected at line 41
- []
-
-
 
 [36
 
  <../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf>]
-Overfull \vbox (11.0023pt too high) detected at line 89
- []
-
-
 
 [37
 
@@ -1941,6 +1933,25 @@ LaTeX Info: Redefining \% on input line 1.
 [41
 
 ])
+Package epstopdf Info: Source file: <img/uva.eps>
+(epstopdf)                    date: 2024-07-12 10:42:00
+(epstopdf)                    size: 859940 bytes
+(epstopdf)             Output file: <img/uva-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-20 08:59:15
+(epstopdf)                    size: 76640 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/uva-eps-converted-to.p
+df img/uva.eps>
+(epstopdf)             \includegraphics on input line 71.
+Package epstopdf Info: Output file is already uptodate.
+File: img/uva-eps-converted-to.pdf Graphic file (type pdf)
+<use img/uva-eps-converted-to.pdf>
+Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 71.
+(pdftex.def)             Requested size: 76.82246pt x 45.75946pt.
+
+
+[42
+
+]
 \tf@nav=\write6
 \openout6 = `slide.nav'.
 
@@ -1966,14 +1977,15 @@ Package rerunfilecheck Info: File `slide.out' has not changed.
 (rerunfilecheck)             Checksum: 3D6922E79FEE7276DAFA811A4AE7AFCB;2921.
  ) 
 Here is how much of TeX's memory you used:
- 36550 strings out of 474481
- 711073 string characters out of 5750792
- 1143857 words of memory out of 5000000
+ 36553 strings out of 474481
+ 711086 string characters out of 5750792
+ 1143899 words of memory out of 5000000
  58825 multiletter control sequences out of 15000+600000
- 582842 words of font info for 96 fonts, out of 8000000 for 9000
+ 583613 words of font info for 97 fonts, out of 8000000 for 9000
  357 hyphenation exceptions out of 8191
- 101i,14n,131p,475b,1063s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsx1095.600p
+ 101i,14n,131p,482b,1063s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecso1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600p
@@ -1992,10 +2004,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slide.pdf (41 pages, 2794239 bytes).
+Output written on slide.pdf (42 pages, 2801646 bytes).
 PDF statistics:
- 1941 PDF objects out of 2073 (max. 8388607)
- 1369 compressed objects within 14 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 1987 PDF objects out of 2073 (max. 8388607)
+ 1397 compressed objects within 14 object streams
+ 125 named destinations out of 1000 (max. 500000)
  292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
