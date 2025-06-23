@@ -1,26 +1,27 @@
 \subsection{Planificación}
 \begin{frame}{Planificación del proyecto}
 
+
 \begin{figure}[H]
 \centering
 \makebox[\linewidth][c]{%  % Centrado mejorado\\
 
-\resizebox{0.45\textwidth}{!}{
+\resizebox{1\textwidth}{0.8\textheight}{  % Ajustamos la altura sin distorsionar las proporciones
 \begin{ganttchart}[
-    x unit=0.15cm,         % Aumentado para ocupar más ancho
-    y unit title=0.8cm,
-    y unit chart=0.6cm,
+    x unit=0.15cm,         % Mantener el tamaño de las unidades en el eje X
+    y unit title=0.35cm,   % Mantener la altura de los títulos
+    y unit chart=0.35cm,   % Ajustamos la altura de las filas para que no se vea tan comprimido
     hgrid,
     vgrid={*{1}{dotted}},
     title/.style={draw=none},
-    title label font=\footnotesize,
+    title label font=\scriptsize,  % Reducimos el tamaño de la fuente del título
     bar/.style={fill=blue!30, rounded corners=2pt},
-    bar height=0.6,
+    bar height=0.3,         % Ajustamos la altura de las barras sin cambiar demasiado el espacio entre ellas
     group/.style={draw=black, fill=blue!10},
     milestone/.style={fill=red, rounded corners=2pt},
-    bar label font=\scriptsize,
-    group label font=\small,
-    milestone label font=\scriptsize,
+    bar label font=\tiny,           % Reducimos aún más el tamaño de las etiquetas de las barras
+    group label font=\footnotesize, % Reducimos el tamaño de las etiquetas de los grupos
+    milestone label font=\tiny,     % Reducimos el tamaño de las etiquetas de los hitos
     expand chart=\linewidth  % Ocupa todo el ancho disponible
 ]{1}{90}
     % Título principal centrado sobre semanas
@@ -66,6 +67,9 @@
 \caption{Diagrama de Gantt para la planificación del proyecto.}
 \label{fig:gantt}
 \end{figure}
+
+
+
 \end{frame}
 
 
@@ -75,13 +79,13 @@
 \begin{frame}{Costes de la puesta en marcha del proyecto}
 
 \begin{equation}
-	\text{Amortización del Hardware} = 829\,\text{€} \cdot \frac{1}{8} \cdot \frac{3.5}{12} = 30,22\,\text{€}
+	\text{Amortización del Hardware} = 829\,\text{€} \cdot \frac{1}{8} \cdot \frac{3.5}{12} = 30,22\,\text{€} \nonumber
 \end{equation}
 
 \begin{table}[H]
 \centering
 
-\resizebox{0.7\textwidth}{!}{
+\resizebox{0.9\textwidth}{!}{
 \begin{tabular}{|l|l|c|c|c|}
 \toprule
 Funcionalidad & Software & Coste Mensual & Duración & Coste Total \\
@@ -101,30 +105,33 @@ Comunicación 2 & MS Teams & 0\,€ & 3,5 mes & 0\,€ \\
 \bottomrule
 \end{tabular}
 }
-\caption{Costes de Software.}
+\caption{Costes del Software.}
 \label{tab:costes_software}
-\end{table}
-
-
-\begin{table}[H]
-\centering
-\resizebox{0.4\textwidth}{!}{
-\begin{tabular}{|l|r|}
-\toprule
-Profesional & Coste Total (€) \\
-\midrule
-Ingeniero ML & 5\,754,0 \\
-Científico Datos & 3\,898,5 \\
-Analista Datos & 925,0 \\
-\midrule
-\textbf{Coste Total MOD} & \textbf{10\,577,5} \\
-\bottomrule
-\end{tabular}
-}
-\caption{Coste Total de la mano de obra directa..}
-\label{tab:coste_total_profesional}
 \end{table}
 
 
 \end{frame}
 
+
+
+
+\begin{frame}{Costes de la puesta en marcha del proyecto}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|r|r|}
+\toprule
+\textbf{Profesional} & \textbf{Horas Totales} & \textbf{€/hora} & \textbf{Total (€)} \\
+\midrule
+Ingeniero ML & 137 & 42 & 5\,754,0 \\
+Científico de Datos & 113 & 34,5 & 3\,898,5 \\
+Analista de Datos & 50 & 18,5 & 925,0 \\
+\midrule
+\textbf{Costes MOD} & 300 & & \textbf{10\,577,5} \\
+\bottomrule
+\end{tabular}
+\caption{Costes de la mano de obra directa.}
+\label{tab:costes_totales}
+\end{table}
+
+\end{frame}

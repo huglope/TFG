@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.20)  22 JUN 2025 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  23 JUN 2025 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,7 +690,7 @@ Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count345
 \U@D=\dimen295
-\l@unhyphenated=\language38
+\l@unhyphenated=\language12
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
@@ -1249,9 +1249,6 @@ LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 
 
-LaTeX Warning: Label `fig:modBIN' multiply defined.
-
-
 LaTeX Warning: Label `tab:hiperBIN' multiply defined.
 
 
@@ -1263,24 +1260,24 @@ LaTeX Warning: Label `fig:top5EVALMCB' multiply defined.
 )
 \openout1 = `slide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1338,54 +1335,54 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (./slide.out) (./slide.out)
 \@outlinefile=\write5
 \openout5 = `slide.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 26.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 28.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 28.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 28.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1411,8 +1408,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1530,19 +1527,29 @@ LaTeX Info: Redefining \% on input line 1.
 
 [7
 
-] (./slides/planificacion.tex
+] (./slides/metodologias.tex
+<../Memoria/img/metodologia/crispdm.jpeg, id=324, 493.845pt x 473.51906pt>
+File: ../Memoria/img/metodologia/crispdm.jpeg Graphic file (type jpg)
+<use ../Memoria/img/metodologia/crispdm.jpeg>
+Package pdftex.def Info: ../Memoria/img/metodologia/crispdm.jpeg  used on input
+ line 14.
+(pdftex.def)             Requested size: 215.10196pt x 206.24644pt.
+
 
 [8
 
-]
-Overfull \vbox (15.15079pt too high) detected at line 129
- []
-
+ <../Memoria/img/metodologia/crispdm.jpeg>]
+<../Memoria/img/metodologia/scrum.jpg, id=351, 2007.5pt x 1204.5pt>
+File: ../Memoria/img/metodologia/scrum.jpg Graphic file (type jpg)
+<use ../Memoria/img/metodologia/scrum.jpg>
+Package pdftex.def Info: ../Memoria/img/metodologia/scrum.jpg  used on input li
+ne 24.
+(pdftex.def)             Requested size: 276.559pt x 165.92711pt.
 
 
 [9
 
-]) (./slide.toc
+ <../Memoria/img/metodologia/scrum.jpg>]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) (./slide.toc
@@ -1552,53 +1559,21 @@ LaTeX Info: Redefining \% on input line 1.
 
 [10
 
-] (./slides/metodologias.tex
-<../Memoria/img/metodologia/crispdm.jpeg, id=420, 493.845pt x 473.51906pt>
-File: ../Memoria/img/metodologia/crispdm.jpeg Graphic file (type jpg)
-<use ../Memoria/img/metodologia/crispdm.jpeg>
-Package pdftex.def Info: ../Memoria/img/metodologia/crispdm.jpeg  used on input
- line 14.
-(pdftex.def)             Requested size: 169.01036pt x 162.04924pt.
-
-Overfull \vbox (8.60603pt too high) detected at line 14
+] (./slides/planificacion.tex
+Overfull \vbox (4.35179pt too high) detected at line 73
  []
 
 
 
 [11
 
- <../Memoria/img/metodologia/crispdm.jpeg>]) (./slide.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) (./slide.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
+]
 
 [12
 
-] (./slides/ent-problema.tex
-<../Memoria/img/ent-problema/SegmentoTCP.png, id=481, 763.85374pt x 580.1675pt>
-
-File: ../Memoria/img/ent-problema/SegmentoTCP.png Graphic file (type png)
-<use ../Memoria/img/ent-problema/SegmentoTCP.png>
-Package pdftex.def Info: ../Memoria/img/ent-problema/SegmentoTCP.png  used on i
-nput line 29.
-(pdftex.def)             Requested size: 138.2795pt x 105.02762pt.
-<../Memoria/img/ent-problema/PaqueteIP.png, id=483, 939.51pt x 479.7925pt>
-File: ../Memoria/img/ent-problema/PaqueteIP.png Graphic file (type png)
-<use ../Memoria/img/ent-problema/PaqueteIP.png>
-Package pdftex.def Info: ../Memoria/img/ent-problema/PaqueteIP.png  used on inp
-ut line 29.
-(pdftex.def)             Requested size: 153.64493pt x 78.45952pt.
-
+]
 
 [13
-
- <../Memoria/img/ent-problema/SegmentoTCP.png> <../Memoria/img/ent-problema/Paq
-ueteIP.png>]
-
-[14
 
 ]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1608,13 +1583,38 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
+[14
+
+] (./slides/ent-problema.tex
+<../Memoria/img/ent-problema/SegmentoTCP.png, id=536, 763.85374pt x 580.1675pt>
+
+File: ../Memoria/img/ent-problema/SegmentoTCP.png Graphic file (type png)
+<use ../Memoria/img/ent-problema/SegmentoTCP.png>
+Package pdftex.def Info: ../Memoria/img/ent-problema/SegmentoTCP.png  used on i
+nput line 29.
+(pdftex.def)             Requested size: 138.2795pt x 105.02762pt.
+<../Memoria/img/ent-problema/PaqueteIP.png, id=538, 939.51pt x 479.7925pt>
+File: ../Memoria/img/ent-problema/PaqueteIP.png Graphic file (type png)
+<use ../Memoria/img/ent-problema/PaqueteIP.png>
+Package pdftex.def Info: ../Memoria/img/ent-problema/PaqueteIP.png  used on inp
+ut line 29.
+(pdftex.def)             Requested size: 153.64493pt x 78.45952pt.
+
+
 [15
 
-] (./slides/ent-datos.tex
+ <../Memoria/img/ent-problema/SegmentoTCP.png> <../Memoria/img/ent-problema/Paq
+ueteIP.png>]) (./slide.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) (./slide.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 
 [16
 
-]
+] (./slides/ent-datos.tex
 
 [17
 
@@ -1626,6 +1626,10 @@ LaTeX Info: Redefining \% on input line 1.
 
 [19
 
+]
+
+[20
+
 ]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1634,24 +1638,20 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
-[20
+[21
 
 ] (./slides/modelado.tex
-<../Memoria/img/modelo/neuronaartificial.png, id=726, 863.225pt x 437.635pt>
+<../Memoria/img/modelo/neuronaartificial.png, id=755, 863.225pt x 437.635pt>
 File: ../Memoria/img/modelo/neuronaartificial.png Graphic file (type png)
 <use ../Memoria/img/modelo/neuronaartificial.png>
 Package pdftex.def Info: ../Memoria/img/modelo/neuronaartificial.png  used on i
-nput line 37.
-(pdftex.def)             Requested size: 307.28987pt x 155.78554pt.
+nput line 65.
+(pdftex.def)             Requested size: 230.46739pt x 116.84082pt.
 
-
-[21
-
- <../Memoria/img/modelo/neuronaartificial.png>]
 
 [22
 
-]
+ <../Memoria/img/modelo/neuronaartificial.png>]
 
 [23
 
@@ -1660,27 +1660,27 @@ nput line 37.
 [24
 
 ]
-<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=830, 425.4294pt x 30
+<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=834, 425.4294pt x 30
 9.79741pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf 
- used on input line 144.
+ used on input line 150.
 (pdftex.def)             Requested size: 92.1879pt x 67.12985pt.
-<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=831, 431.45189pt x 309.315
+<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=835, 431.45189pt x 309.315
 6pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf  used 
-on input line 144.
+on input line 150.
 (pdftex.def)             Requested size: 92.1879pt x 66.09093pt.
-<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=832, 424.94759pt x 575.02
+<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=836, 424.94759pt x 575.02
 83pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf  used
- on input line 144.
+ on input line 150.
 (pdftex.def)             Requested size: 92.1879pt x 124.743pt.
 
 
@@ -1698,27 +1698,27 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnBIN.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=878, 466.1415pt x 36
+<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=882, 466.1415pt x 36
 3.75899pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf 
- used on input line 181.
+ used on input line 187.
 (pdftex.def)             Requested size: 92.1879pt x 71.94012pt.
-<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=879, 432.17459pt x 366.890
+<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=883, 432.17459pt x 366.890
 69pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf  used 
-on input line 181.
+on input line 187.
 (pdftex.def)             Requested size: 92.1879pt x 78.25854pt.
-<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=880, 452.6511pt x 570.692
+<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=884, 452.6511pt x 570.692
 1pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf  used
- on input line 181.
+ on input line 187.
 (pdftex.def)             Requested size: 92.1879pt x 116.22632pt.
 
 
@@ -1736,101 +1736,73 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnMUL.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<../Memoria/img/modelo/codigo/modeloBIN.png, id=924, 1264.725pt x 674.52pt>
-File: ../Memoria/img/modelo/codigo/modeloBIN.png Graphic file (type png)
-<use ../Memoria/img/modelo/codigo/modeloBIN.png>
-Package pdftex.def Info: ../Memoria/img/modelo/codigo/modeloBIN.png  used on in
-put line 211.
-(pdftex.def)             Requested size: 184.3758pt x 98.33295pt.
-
-Overfull \vbox (7.90434pt too high) detected at line 211
- []
-
-
 
 [27
 
- <../Memoria/img/modelo/codigo/modeloBIN.png>]
-<../Memoria/img/modelo/codigo/modeloMUL.png, id=955, 1383.1675pt x 712.6625pt>
-File: ../Memoria/img/modelo/codigo/modeloMUL.png Graphic file (type png)
-<use ../Memoria/img/modelo/codigo/modeloMUL.png>
-Package pdftex.def Info: ../Memoria/img/modelo/codigo/modeloMUL.png  used on in
-put line 240.
-(pdftex.def)             Requested size: 184.3758pt x 94.98735pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:modBIN}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.240 \end{frame}
-                 
+]
 pdfTeX warning (ext4): destination with the same identifier (name{tab:hiperBIN}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.240 \end{frame}
+l.246 \end{frame}
                  
-Overfull \vbox (7.3118pt too high) detected at line 240
- []
-
-
 
 [28
 
- <../Memoria/img/modelo/codigo/modeloMUL.png>]
-<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=981, 597.6729pt 
+]
+<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=980, 597.6729pt 
 x 526.1256pt>
 File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.
-png  used on input line 285.
+png  used on input line 291.
 (pdftex.def)             Requested size: 92.1879pt x 81.14722pt.
 
 
 [29
 
  <../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png>]
-<../Memoria/img/modelo/resultados/BINtop5.pdf, id=1011, 426.79138pt x 120.45pt>
+<../Memoria/img/modelo/resultados/BINtop5.pdf, id=1010, 426.79138pt x 120.45pt>
 
 File: ../Memoria/img/modelo/resultados/BINtop5.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/BINtop5.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/BINtop5.pdf  used on 
-input line 297.
+input line 303.
 (pdftex.def)             Requested size: 261.19826pt x 73.71698pt.
 
 
 [30
 
  <../Memoria/img/modelo/resultados/BINtop5.pdf>]
-<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1042, 1003.75pt 
+<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1041, 1003.75pt 
 x 803.0pt>
 File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.
-png  used on input line 342.
-(pdftex.def)             Requested size: 92.1879pt x 73.74947pt.
+png  used on input line 348.
+(pdftex.def)             Requested size: 169.01036pt x 135.2094pt.
 
 
 [31
 
  <../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png>]
-<../Memoria/img/modelo/resultados/MULtop10.pdf, id=1071, 426.79138pt x 220.825p
+<../Memoria/img/modelo/resultados/MULtop10.pdf, id=1070, 426.79138pt x 220.825p
 t>
 File: ../Memoria/img/modelo/resultados/MULtop10.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/MULtop10.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/MULtop10.pdf  used on
- input line 354.
+ input line 360.
 (pdftex.def)             Requested size: 307.28987pt x 158.99724pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:BINtop5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.354 \end{frame}
+l.360 \end{frame}
                  
-Overfull \vbox (2.95403pt too high) detected at line 354
+Overfull \vbox (2.95403pt too high) detected at line 360
  []
 
 
@@ -1849,7 +1821,7 @@ LaTeX Info: Redefining \% on input line 1.
 [33
 
 ] (./slides/evaluacion.tex
-<../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf, id=1134, 426.79138pt x 1
+<../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf, id=1133, 426.79138pt x 1
 20.45pt>
 File: ../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf Graphic file (type p
 df)
@@ -1862,7 +1834,7 @@ used on input line 13.
 [34
 
  <../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf>]
-<../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf, id=1165, 426.79138pt x 1
+<../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf, id=1164, 426.79138pt x 1
 20.45pt>
 File: ../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf Graphic file (type p
 df)
@@ -1881,7 +1853,7 @@ l.28 \end{frame}
 [35
 
  <../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf>]
-<../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=1194, 4
+<../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=1193, 4
 51.6875pt x 225.84375pt>
 File: ../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf Graphi
 c file (type pdf)
@@ -1908,7 +1880,7 @@ LaTeX Info: Redefining \% on input line 1.
 [38
 
 ] (./slides/despliegue.tex
-<../Memoria/img/despliegue/despliegue.pdf, id=1298, 718.60468pt x 211.7511pt>
+<../Memoria/img/despliegue/despliegue.pdf, id=1296, 718.60468pt x 211.7511pt>
 File: ../Memoria/img/despliegue/despliegue.pdf Graphic file (type pdf)
 <use ../Memoria/img/despliegue/despliegue.pdf>
 Package pdftex.def Info: ../Memoria/img/despliegue/despliegue.pdf  used on inpu
@@ -1941,11 +1913,11 @@ Package epstopdf Info: Source file: <img/uva.eps>
 (epstopdf)                    size: 76640 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/uva-eps-converted-to.p
 df img/uva.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 File: img/uva-eps-converted-to.pdf Graphic file (type pdf)
 <use img/uva-eps-converted-to.pdf>
-Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 71.
+Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 70.
 (pdftex.def)             Requested size: 76.82246pt x 45.75946pt.
 
 
@@ -1974,28 +1946,29 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `slide.out' has not changed.
-(rerunfilecheck)             Checksum: 3D6922E79FEE7276DAFA811A4AE7AFCB;2921.
+(rerunfilecheck)             Checksum: 785F7485A6E5D6172DA4F2A2ECB73606;2905.
  ) 
 Here is how much of TeX's memory you used:
- 36553 strings out of 474481
- 711086 string characters out of 5750792
- 1143899 words of memory out of 5000000
- 58825 multiletter control sequences out of 15000+600000
+ 36554 strings out of 475002
+ 710920 string characters out of 5762004
+ 1142445 words of memory out of 5000000
+ 58674 multiletter control sequences out of 15000+600000
  583613 words of font info for 97 fonts, out of 8000000 for 9000
- 357 hyphenation exceptions out of 8191
+ 107 hyphenation exceptions out of 8191
  101i,14n,131p,482b,1063s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600p
-k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecso1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600p
-k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600p
@@ -2004,10 +1977,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slide.pdf (42 pages, 2801646 bytes).
+Output written on slide.pdf (42 pages, 2699235 bytes).
 PDF statistics:
- 1987 PDF objects out of 2073 (max. 8388607)
- 1397 compressed objects within 14 object streams
+ 2007 PDF objects out of 2073 (max. 8388607)
+ 1401 compressed objects within 15 object streams
  125 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 

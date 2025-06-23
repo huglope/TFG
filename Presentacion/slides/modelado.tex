@@ -1,17 +1,17 @@
 \subsection{Origen de los modelos neuronales}
-\begin{frame}{Origen de los modelos neuronales}
-	\begin{itemize}
-      	\item Ramón y Cajal
-      	\item McCulloch/Pitts
-      	\item Rosenblatt
-    \end{itemize}
+%\begin{frame}{Origen de los modelos neuronales}
+%	\begin{itemize}
+%      	\item Ramón y Cajal
+%      	\item McCulloch/Pitts
+%      	\item Rosenblatt
+%    \end{itemize}
     
-    \begin{figure}
-    \centering
-		    \includegraphics[width=\linewidth]{../Memoria/img/modelo/neuronaartificial.png}
-		    \caption{Esquema del funcionamiento de una neurona artificial.}
-		    \label{fig:neu-art}
-    \end{figure}
+%    \begin{figure}
+%    \centering
+%		    \includegraphics[width=\linewidth]{../Memoria/img/modelo/neuronaartificial.png}
+%		    \caption{Esquema del funcionamiento de una neurona artificial.}
+%		    \label{fig:neu-art}
+%    \end{figure}
       
 %    	\begin{figure}[H]
 %	    \centering
@@ -34,28 +34,34 @@
 %	    }
 %	\end{figure}
 	
-\end{frame}
+%\end{frame}
 
 
 
 \begin{frame}{Parámetros e hiperparámetros}
 
-\begin{itemize}
-
-	\item Los parámetros se ajustan a través del algoritmo de optimización, utilizando los cálculos de la función de pérdida durante la fase de entrenamiento de los modelos. Los parámetros de una red neuronal son:
-\begin{itemize}
-	\item Pesos.
-	\item Bias o sesgos.
-\end{itemize}
+%\begin{itemize}
 	
-	\item Los hiperparámetros son valores que se configuran antes de la fase de entrenamiento y son los responsables de controlar el comportamiento del proceso de entrenamiento. Algunos de los hiperparámetros más importantes son:
+%	\item Los parámetros se ajustan a través del algoritmo de optimización, utilizando los cálculos de la función de pérdida durante la fase de entrenamiento de los modelos. Los parámetros de una red neuronal son:
+%\begin{itemize}
+%	\item Pesos.
+%	\item Bias o sesgos.
+%\end{itemize}
+	 Los hiperparámetros son los responsables de controlar el comportamiento del proceso de entrenamiento. Algunos de los hiperparámetros más importantes son:
 \begin{itemize}
 	\item Tasa de aprendizaje (\textit{Learning rate}).
 	\item Épocas (\textit{Epochs}).
 	\item Tamaño de lote (\textit{Batch size}).
 \end{itemize}
 
-\end{itemize}
+%\end{itemize}
+    \begin{figure}
+    \centering
+		    \includegraphics[width=0.75\linewidth]{../Memoria/img/modelo/neuronaartificial.png}
+		    \caption{Esquema del funcionamiento de una neurona artificial.}
+		    \label{fig:neu-art}
+    \end{figure}
+
 \end{frame}
 
 
@@ -187,12 +193,12 @@
 		\item \textbf{Algoritmo de optimización}: \texttt{AdamW}
 	\end{itemize}
 	
-	\begin{figure}[H]
-	    \centering
-	    \includegraphics[width=0.6\textwidth]{../Memoria/img/modelo/codigo/modeloBIN.png}
-	    	\caption{Definición de la clase del modelo de clasificación binaria.}
-    		\label{fig:modBIN}
-	\end{figure}
+%	\begin{figure}[H]
+%	    \centering
+%	    \includegraphics[width=0.6\textwidth]{../Memoria/img/modelo/codigo/modeloBIN.png}
+%	    	\caption{Definición de la clase del modelo de clasificación binaria.}
+%   		\label{fig:modBIN}
+%	\end{figure}
 	
 	\begin{table}[H]
 		\centering 
@@ -216,12 +222,12 @@
 		\item \textbf{Algoritmo de optimización}: \texttt{AdamW}
 	\end{itemize}
 	
-	\begin{figure}[H]
-	    \centering
-	    \includegraphics[width=0.6\textwidth]{../Memoria/img/modelo/codigo/modeloMUL.png}
-	    	\caption{Definición de la clase del modelo de clasificación multiclase.}
-    		\label{fig:modBIN}
-	\end{figure}
+%	\begin{figure}[H]
+%	    \centering
+%	    \includegraphics[width=0.6\textwidth]{../Memoria/img/modelo/codigo/modeloMUL.png}
+%	    	\caption{Definición de la clase del modelo de clasificación multiclase.}
+%    		\label{fig:modBIN}
+%	\end{figure}
 	
 	\begin{table}[H]
 		\centering 
@@ -302,7 +308,7 @@ En este modelo no se observa que la arquitectura influya especialmente en los re
 \begin{frame}{Selección de los mejores MCM}
 Al igual que en el MCB, los mejores resultados del MCM se han obtenido en la arquitectura con el doble de neuronas en su capa oculta que atributos de entrada tiene el modelo.
 \begin{columns}[b]
-\begin{column}{0.7\textwidth}
+\begin{column}{0.6\textwidth}
 \begin{table}[H]
 		\resizebox{1\textwidth}{!}{
 \begin{tabular}{|>{\columncolor[HTML]{E0FFFF}}l|c|c|c|c|c|}
@@ -329,7 +335,7 @@ Posicion\_EXP & 1º-MCM98 & 2º-MCM98 & 3º-MCM98 & 4º-MCM98 & 5º-MCM98 \\
 \end{table}
 \end{column}
 
-\begin{column}{0.3\textwidth}
+\begin{column}{0.55\textwidth}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png}

@@ -15,62 +15,62 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\beamer@sectionpages {3}{6}}
 \headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\sectionentry {2}{Planificación y costes}{7}{Planificación y costes}{0}}
+\headcommand {\sectionentry {2}{Enfoques}{7}{Enfoques}{0}}
 \headcommand {\slideentry {2}{0}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Planificación}}
-\headcommand {\slideentry {2}{1}{1}{8/8}{Planificación}{0}}
+\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Costes}}
-\headcommand {\slideentry {2}{2}{1}{9/9}{Costes}{0}}
+\headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\sectionentry {3}{Metodología}{10}{Metodología}{0}}
+\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\sectionentry {3}{Planificación y costes}{10}{Planificación y costes}{0}}
 \headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{11}{Planificación}}
+\headcommand {\slideentry {3}{1}{1}{11/11}{Planificación}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {10}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\sectionentry {4}{Entendimiento del problema}{12}{Entendimiento del problema}{0}}
-\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{12}{Costes}}
+\headcommand {\slideentry {3}{2}{1}{12/12}{Costes}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{13/13}{Costes}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {4}{0}{3}{14/14}{}{0}}
+\headcommand {\beamer@sectionpages {10}{13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\sectionentry {4}{Entendimiento del problema}{14}{Entendimiento del problema}{0}}
+\headcommand {\slideentry {4}{0}{1}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@sectionpages {12}{14}}
-\headcommand {\beamer@subsectionpages {12}{14}}
-\headcommand {\sectionentry {5}{Entendimiento de los datos}{15}{Entendimiento de los datos}{0}}
-\headcommand {\slideentry {5}{0}{1}{15/15}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{16}{Características de los datos}}
-\headcommand {\slideentry {5}{1}{1}{16/16}{Características de los datos}{0}}
+\headcommand {\beamer@sectionpages {14}{15}}
+\headcommand {\beamer@subsectionpages {14}{15}}
+\headcommand {\sectionentry {5}{Entendimiento de los datos}{16}{Entendimiento de los datos}{0}}
+\headcommand {\slideentry {5}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {5}{1}{2}{17/17}{Características de los datos}{0}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{17}{Características de los datos}}
+\headcommand {\slideentry {5}{1}{1}{17/17}{Características de los datos}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@subsectionpages {16}{17}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{18}{Preparación de los datos}}
-\headcommand {\slideentry {5}{2}{1}{18/18}{Preparación de los datos}{0}}
+\headcommand {\slideentry {5}{1}{2}{18/18}{Características de los datos}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {5}{2}{2}{19/19}{Preparación de los datos}{0}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{19}{Preparación de los datos}}
+\headcommand {\slideentry {5}{2}{1}{19/19}{Preparación de los datos}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@sectionpages {15}{19}}
-\headcommand {\beamer@subsectionpages {18}{19}}
-\headcommand {\sectionentry {6}{Modelado}{20}{Modelado}{0}}
-\headcommand {\slideentry {6}{0}{1}{20/20}{}{0}}
+\headcommand {\slideentry {5}{2}{2}{20/20}{Preparación de los datos}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@subsectionpages {20}{20}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{21}{Origen de los modelos neuronales}}
-\headcommand {\slideentry {6}{1}{1}{21/21}{Origen de los modelos neuronales}{0}}
+\headcommand {\beamer@sectionpages {16}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\sectionentry {6}{Modelado}{21}{Modelado}{0}}
+\headcommand {\slideentry {6}{0}{1}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {6}{1}{2}{22/22}{Origen de los modelos neuronales}{0}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{22}{Origen de los modelos neuronales}}
+\headcommand {\slideentry {6}{1}{1}{22/22}{Origen de los modelos neuronales}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
 \headcommand {\beamer@subsectionentry {0}{6}{2}{23}{Clasificación con redes neuronales}}
 \headcommand {\slideentry {6}{2}{1}{23/23}{Clasificación con redes neuronales}{0}}
 \headcommand {\beamer@framepages {23}{23}}
@@ -98,7 +98,7 @@
 \headcommand {\beamer@framepages {31}{31}}
 \headcommand {\slideentry {6}{5}{4}{32/32}{Selección de las configuraciones de los modelos}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@sectionpages {20}{32}}
+\headcommand {\beamer@sectionpages {21}{32}}
 \headcommand {\beamer@subsectionpages {29}{32}}
 \headcommand {\sectionentry {7}{Evaluación}{33}{Evaluación}{0}}
 \headcommand {\slideentry {7}{0}{1}{33/33}{}{0}}
