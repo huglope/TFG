@@ -46,41 +46,75 @@
 \definecolor{Shellcode}{RGB}{255,220,240}
 \definecolor{Worms}{RGB}{255,235,205}
 
+\usepackage{etoolbox}
+
+% Bandera para mostrar u ocultar numeración
+\newif\ifshownumber
+\shownumbertrue
+
+\setbeamertemplate{footline}{
+  \ifshownumber
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[anchor=south east, text=blue, font=\large, yshift=10pt, xshift=-10pt]
+        at (current page.south east) {\insertframenumber};
+    \end{tikzpicture}
+  \fi
+}
+
+
 
 \begin{document}
 \AtBeginSection{\frame{\sectionpage}}
-
+\shownumberfalse
 \input{slides/portada}
 \input{slides/indice}
 
 \section{Introducción}
+\shownumbertrue
 \input{slides/introduccion}
 
-
+\shownumberfalse
 \section{Enfoques}
+\shownumbertrue
 \input{slides/metodologias}
 
+\shownumberfalse
 \section{Planificación y costes}
+\shownumbertrue
 \input{slides/planificacion}
 
+\shownumberfalse
 \section{Entendimiento del problema}
+\shownumbertrue
 \input{slides/ent-problema}
 
+\shownumberfalse
 \section{Entendimiento de los datos}
+\shownumbertrue
 \input{slides/ent-datos}
 
+\shownumberfalse
 \section{Modelado}
+\shownumbertrue
 \input{slides/modelado}
 
+\shownumberfalse
 \section{Evaluación}
+\shownumbertrue
 \input{slides/evaluacion}
 
+\shownumberfalse
 \section{Despliegue}
+\shownumbertrue
 \input{slides/despliegue}
 
+\shownumberfalse
 \section{Conclusiones}
+\shownumbertrue
 \input{slides/conclusiones}
 
+\shownumberfalse
+\label{ultima}
 \begin{frame}
 \begin{center}
         {\Huge Muchas gracias por su atención.}
