@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  23 JUN 2025 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  24 JUN 2025 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,7 +1003,142 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \gtt@calendar@startofweek=\count395
 \gtt@left@slot=\count396
 \gtt@right@slot=\count397
-) (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip72
+\multirow@cntb=\count398
+\multirow@dima=\skip73
+\bigstrutjot=\dimen341
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen342
+\lightrulewidth=\dimen343
+\cmidrulewidth=\dimen344
+\belowrulesep=\dimen345
+\belowbottomsep=\dimen346
+\aboverulesep=\dimen347
+\abovetopsep=\dimen348
+\cmidrulesep=\dimen349
+\cmidrulekern=\dimen350
+\defaultaddspace=\dimen351
+\@cmidla=\count399
+\@cmidlb=\count400
+\@aboverulesep=\dimen352
+\@belowrulesep=\dimen353
+\@thisruleclass=\count401
+\@lastruleclass=\count402
+\@thisrulewidth=\dimen354
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen355
+\pgfdecoratedremainingdistance=\dimen356
+\pgfdecoratedinputsegmentcompleteddistance=\dimen357
+\pgfdecoratedinputsegmentremainingdistance=\dimen358
+\pgf@decorate@distancetomove=\dimen359
+\pgf@decorate@repeatstate=\count403
+\pgfdecorationsegmentamplitude=\dimen360
+\pgfdecorationsegmentlength=\dimen361
+)
+\tikz@lib@dec@box=\box91
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/home/hugo/texmf/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/06/04 version 6.6.0 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks58
+\verbatim@line=\toks59
+\verbatim@in@stream=\read4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box92
+\tcb@upperbox=\box93
+\tcb@lowerbox=\box94
+\tcb@phantombox=\box95
+\c@tcbbreakpart=\count404
+\c@tcblayer=\count405
+\c@tcolorbox@number=\count406
+\l__tcobox_tmpa_box=\box96
+\l__tcobox_tmpa_dim=\dimen362
+\tcb@temp=\box97
+\tcb@temp=\box98
+\tcb@temp=\box99
+\tcb@temp=\box100
+)
+(/home/hugo/texmf/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.6.0'
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count407
+\lst@gtempboxa=\box101
+\lst@token=\toks60
+\lst@length=\count408
+\lst@currlwidth=\dimen363
+\lst@column=\count409
+\lst@pos=\count410
+\lst@lostspace=\dimen364
+\lst@width=\dimen365
+\lst@newlines=\count411
+\lst@lineno=\count412
+\lst@maxwidth=\dimen366
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count413
+\lst@skipnumbers=\count414
+\lst@framebox=\box102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/home/hugo/texmf/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.6.0'
+(/home/hugo/texmf/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.6.0'
+)
+\c@tcblisting=\count415
+)) (/home/hugo/texmf/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.6.0'
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.te
+x
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box103
+)) (/home/hugo/texmf/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.6.0'
+)) (/home/hugo/texmf/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.6.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box104
+\tcb@totalupperbox=\box105
+\tcb@totallowerbox=\box106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
@@ -1011,44 +1146,28 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count398
-\mult@box=\box91
-\multicol@leftmargin=\dimen341
-\c@unbalance=\count399
-\c@collectmore=\count400
-\doublecol@number=\count401
-\multicoltolerance=\count402
-\multicolpretolerance=\count403
-\full@width=\dimen342
-\page@free=\dimen343
-\premulticols=\dimen344
-\postmulticols=\dimen345
-\multicolsep=\skip72
-\multicolbaselineskip=\skip73
-\partial@page=\box92
-\last@line=\box93
-\mc@boxedresult=\box94
-\maxbalancingoverflow=\dimen346
-\mult@rightbox=\box95
-\mult@grightbox=\box96
-\mult@firstbox=\box97
-\mult@gfirstbox=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
+\c@tracingmulticols=\count416
+\mult@box=\box107
+\multicol@leftmargin=\dimen367
+\c@unbalance=\count417
+\c@collectmore=\count418
+\doublecol@number=\count419
+\multicoltolerance=\count420
+\multicolpretolerance=\count421
+\full@width=\dimen368
+\page@free=\dimen369
+\premulticols=\dimen370
+\postmulticols=\dimen371
+\multicolsep=\skip74
+\multicolbaselineskip=\skip75
+\partial@page=\box108
+\last@line=\box109
+\mc@boxedresult=\box110
+\maxbalancingoverflow=\dimen372
+\mult@rightbox=\box111
+\mult@grightbox=\box112
+\mult@firstbox=\box113
+\mult@gfirstbox=\box114
 \@tempa=\box115
 \@tempa=\box116
 \@tempa=\box117
@@ -1069,35 +1188,31 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box132
 \@tempa=\box133
 \@tempa=\box134
-\c@minrows=\count404
-\c@columnbadness=\count405
-\c@finalcolumnbadness=\count406
-\last@try=\dimen347
-\multicolovershoot=\dimen348
-\multicolundershoot=\dimen349
-\mult@nat@firstbox=\box135
-\colbreak@box=\box136
-\mc@col@check@num=\count407
-)
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen350
-\lightrulewidth=\dimen351
-\cmidrulewidth=\dimen352
-\belowrulesep=\dimen353
-\belowbottomsep=\dimen354
-\aboverulesep=\dimen355
-\abovetopsep=\dimen356
-\cmidrulesep=\dimen357
-\cmidrulekern=\dimen358
-\defaultaddspace=\dimen359
-\@cmidla=\count408
-\@cmidlb=\count409
-\@aboverulesep=\dimen360
-\@belowrulesep=\dimen361
-\@thisruleclass=\count410
-\@lastruleclass=\count411
-\@thisrulewidth=\dimen362
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\@tempa=\box143
+\@tempa=\box144
+\@tempa=\box145
+\@tempa=\box146
+\@tempa=\box147
+\@tempa=\box148
+\@tempa=\box149
+\@tempa=\box150
+\c@minrows=\count422
+\c@columnbadness=\count423
+\c@finalcolumnbadness=\count424
+\last@try=\dimen373
+\multicolovershoot=\dimen374
+\multicolundershoot=\dimen375
+\mult@nat@firstbox=\box151
+\colbreak@box=\box152
+\mc@col@check@num=\count425
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fundus-calligra/calligra.sty
 Package: calligra 2012/04/10 v1.9 LaTeX package calligra
@@ -1111,73 +1226,73 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.06, 2020/11/20 (hv)
-\pstFP@xs=\count412
-\pstFP@xia=\count413
-\pstFP@xib=\count414
-\pstFP@xfa=\count415
-\pstFP@xfb=\count416
-\pstFP@rega=\count417
-\pstFP@regb=\count418
-\pstFP@regs=\count419
-\pstFP@times=\count420
+\pstFP@xs=\count426
+\pstFP@xia=\count427
+\pstFP@xib=\count428
+\pstFP@xfa=\count429
+\pstFP@xfb=\count430
+\pstFP@rega=\count431
+\pstFP@regb=\count432
+\pstFP@regs=\count433
+\pstFP@times=\count434
 )
-\psLoopIndex=\count421
+\psLoopIndex=\count435
 
 `PSTricks' v3.21  <2024/11/16> (tvz,hv)
-\pst@dima=\dimen363
-\pst@dimb=\dimen364
-\pst@dimc=\dimen365
-\pst@dimd=\dimen366
-\pst@dimg=\dimen367
-\pst@dimh=\dimen368
-\pst@dimm=\dimen369
-\pst@dimn=\dimen370
-\pst@dimo=\dimen371
-\pst@dimp=\dimen372
-\pst@hbox=\box137
-\pst@ibox=\box138
-\pst@boxg=\box139
-\pst@cnta=\count422
-\pst@cntb=\count423
-\pst@cntc=\count424
-\pst@cntd=\count425
-\pst@cntg=\count426
-\pst@cnth=\count427
-\pst@cntm=\count428
-\pst@cntn=\count429
-\pst@cnto=\count430
-\pst@cntp=\count431
-\@zero=\count432
-\pst@toks=\toks58
+\pst@dima=\dimen376
+\pst@dimb=\dimen377
+\pst@dimc=\dimen378
+\pst@dimd=\dimen379
+\pst@dimg=\dimen380
+\pst@dimh=\dimen381
+\pst@dimm=\dimen382
+\pst@dimn=\dimen383
+\pst@dimo=\dimen384
+\pst@dimp=\dimen385
+\pst@hbox=\box153
+\pst@ibox=\box154
+\pst@boxg=\box155
+\pst@cnta=\count436
+\pst@cntb=\count437
+\pst@cntc=\count438
+\pst@cntd=\count439
+\pst@cntg=\count440
+\pst@cnth=\count441
+\pst@cntm=\count442
+\pst@cntn=\count443
+\pst@cnto=\count444
+\pst@cntp=\count445
+\@zero=\count446
+\pst@toks=\toks61
 --- We are running latex or xelatex ---
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
-\psunit=\dimen373
-\psxunit=\dimen374
-\psyunit=\dimen375
-\pst@C@@rType=\count433
-\pslinewidth=\dimen376
-\psk@startLW=\dimen377
-\psk@endLW=\dimen378
+\psunit=\dimen386
+\psxunit=\dimen387
+\psyunit=\dimen388
+\pst@C@@rType=\count447
+\pslinewidth=\dimen389
+\psk@startLW=\dimen390
+\psk@endLW=\dimen391
 
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex
-\pshooklength=\dimen379
-\pshookwidth=\dimen380
+\pshooklength=\dimen392
+\pshookwidth=\dimen393
 )
-\pst@customdefs=\toks59
+\pst@customdefs=\toks62
 
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
-\pslinearc=\dimen381
-\pst@symbolStep=\dimen382
-\pst@symbolWidth=\dimen383
-\pst@symbolLinewidth=\dimen384
-\everypsbox=\toks60
-\psframesep=\dimen385
-\pslabelsep=\dimen386
-\sh@wgridXunit=\dimen387
-\sh@wgridYunit=\dimen388
-\pst@shift=\dimen389
-\ps@imagectr=\count434
+\pslinearc=\dimen394
+\pst@symbolStep=\dimen395
+\pst@symbolWidth=\dimen396
+\pst@symbolLinewidth=\dimen397
+\everypsbox=\toks63
+\psframesep=\dimen398
+\pslabelsep=\dimen399
+\sh@wgridXunit=\dimen400
+\sh@wgridYunit=\dimen401
+\pst@shift=\dimen402
+\ps@imagectr=\count448
 
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con))
 File: pstricks.tex 2024/11/16 v3.21 `PSTricks' (tvz,hv)
@@ -1186,63 +1301,35 @@ File: pstricks.tex 2024/11/16 v3.21 `PSTricks' (tvz,hv)
 `pst-fp' v0.06, 2020/11/20 (hv))
 File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count435
-\lst@gtempboxa=\box140
-\lst@token=\toks61
-\lst@length=\count436
-\lst@currlwidth=\dimen390
-\lst@column=\count437
-\lst@pos=\count438
-\lst@lostspace=\dimen391
-\lst@width=\dimen392
-\lst@newlines=\count439
-\lst@lineno=\count440
-\lst@maxwidth=\dimen393
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count441
-\lst@skipnumbers=\count442
-\lst@framebox=\box141
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
-))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
-
 (/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
 Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
 ways
 
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_cnt_foreach_nest=\count443
-\loi_nestcnt=\count444
+\loi_cnt_foreach_nest=\count449
+\loi_nestcnt=\count450
 )
 Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified 
 sep char (CT)
 )
-\c@@stackindex=\count445
-\@boxshift=\skip74
-\stack@tmplength=\skip75
-\temp@stkl=\skip76
-\@stackedboxwidth=\skip77
-\@addedbox=\box142
-\@anchorbox=\box143
-\@insetbox=\box144
-\se@backgroundbox=\box145
-\stackedbox=\box146
-\@centerbox=\box147
-\c@ROWcellindex@=\count446
+\c@@stackindex=\count451
+\@boxshift=\skip76
+\stack@tmplength=\skip77
+\temp@stkl=\skip78
+\@stackedboxwidth=\skip79
+\@addedbox=\box156
+\@anchorbox=\box157
+\@insetbox=\box158
+\se@backgroundbox=\box159
+\stackedbox=\box160
+\@centerbox=\box161
+\c@ROWcellindex@=\count452
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count447
-\l__pdf_internal_box=\box148
+\l__color_backend_stack_int=\count453
+\l__pdf_internal_box=\box162
 )
 (./slide.aux
 LaTeX Info: Redefining \. on input line 12.
@@ -1260,24 +1347,24 @@ LaTeX Warning: Label `fig:top5EVALMCB' multiply defined.
 )
 \openout1 = `slide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1315,17 +1402,17 @@ LaTeX Font Info:    ... okay on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count448
-\scratchdimen=\dimen394
-\scratchbox=\box149
-\nofMPsegments=\count449
-\nofMParguments=\count450
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count451
-\MPscratchDim=\dimen395
-\MPnumerator=\count452
-\makeMPintoPDFobject=\count453
-\everyMPtoPDFconversion=\toks63
+\scratchcounter=\count454
+\scratchdimen=\dimen403
+\scratchbox=\box163
+\nofMPsegments=\count455
+\nofMParguments=\count456
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count457
+\MPscratchDim=\dimen404
+\MPnumerator=\count458
+\makeMPintoPDFobject=\count459
+\everyMPtoPDFconversion=\toks65
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1335,54 +1422,54 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 50.
 
 (./slide.out) (./slide.out)
 \@outlinefile=\write5
 \openout5 = `slide.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 26.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 50.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 50.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 26.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 26.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 26.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 26.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 26.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 26.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 50.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 50.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 26.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 26.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1408,8 +1495,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1426,7 +1513,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count454
+\c@lstlisting=\count460
  (./slide.nav)
 (./slides/portada.tex
 
@@ -1443,7 +1530,7 @@ Package epstopdf Info: Source file: <img/uva.eps>
 df img/uva.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
-<img/uva-eps-converted-to.pdf, id=85, 230.8625pt x 137.51375pt>
+<img/uva-eps-converted-to.pdf, id=77, 230.8625pt x 137.51375pt>
 File: img/uva-eps-converted-to.pdf Graphic file (type pdf)
 <use img/uva-eps-converted-to.pdf>
 Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 11.
@@ -1528,7 +1615,7 @@ LaTeX Info: Redefining \% on input line 1.
 [7
 
 ] (./slides/metodologias.tex
-<../Memoria/img/metodologia/crispdm.jpeg, id=324, 493.845pt x 473.51906pt>
+<../Memoria/img/metodologia/crispdm.jpeg, id=316, 493.845pt x 473.51906pt>
 File: ../Memoria/img/metodologia/crispdm.jpeg Graphic file (type jpg)
 <use ../Memoria/img/metodologia/crispdm.jpeg>
 Package pdftex.def Info: ../Memoria/img/metodologia/crispdm.jpeg  used on input
@@ -1539,7 +1626,7 @@ Package pdftex.def Info: ../Memoria/img/metodologia/crispdm.jpeg  used on input
 [8
 
  <../Memoria/img/metodologia/crispdm.jpeg>]
-<../Memoria/img/metodologia/scrum.jpg, id=351, 2007.5pt x 1204.5pt>
+<../Memoria/img/metodologia/scrum.jpg, id=343, 2007.5pt x 1204.5pt>
 File: ../Memoria/img/metodologia/scrum.jpg Graphic file (type jpg)
 <use ../Memoria/img/metodologia/scrum.jpg>
 Package pdftex.def Info: ../Memoria/img/metodologia/scrum.jpg  used on input li
@@ -1586,14 +1673,14 @@ LaTeX Info: Redefining \% on input line 1.
 [14
 
 ] (./slides/ent-problema.tex
-<../Memoria/img/ent-problema/SegmentoTCP.png, id=536, 763.85374pt x 580.1675pt>
+<../Memoria/img/ent-problema/SegmentoTCP.png, id=528, 763.85374pt x 580.1675pt>
 
 File: ../Memoria/img/ent-problema/SegmentoTCP.png Graphic file (type png)
 <use ../Memoria/img/ent-problema/SegmentoTCP.png>
 Package pdftex.def Info: ../Memoria/img/ent-problema/SegmentoTCP.png  used on i
 nput line 29.
 (pdftex.def)             Requested size: 138.2795pt x 105.02762pt.
-<../Memoria/img/ent-problema/PaqueteIP.png, id=538, 939.51pt x 479.7925pt>
+<../Memoria/img/ent-problema/PaqueteIP.png, id=530, 939.51pt x 479.7925pt>
 File: ../Memoria/img/ent-problema/PaqueteIP.png Graphic file (type png)
 <use ../Memoria/img/ent-problema/PaqueteIP.png>
 Package pdftex.def Info: ../Memoria/img/ent-problema/PaqueteIP.png  used on inp
@@ -1615,22 +1702,34 @@ LaTeX Info: Redefining \% on input line 1.
 [16
 
 ] (./slides/ent-datos.tex
+Overfull \hbox (10.52927pt too wide) in paragraph at lines 49--49
+[][]  
+ []
+
+
 
 [17
 
 ]
+Overfull \hbox (10.52927pt too wide) in paragraph at lines 135--135
+[][]  
+ []
+
+
 
 [18
 
 ]
+<./img/particion.png, id=647, 903.375pt x 474.27188pt>
+File: ./img/particion.png Graphic file (type png)
+<use ./img/particion.png>
+Package pdftex.def Info: ./img/particion.png  used on input line 145.
+(pdftex.def)             Requested size: 307.28987pt x 161.32991pt.
+
 
 [19
 
-]
-
-[20
-
-]) (./slide.toc
+ <./img/particion.png>]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) (./slide.toc
@@ -1638,10 +1737,10 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
-[21
+[20
 
 ] (./slides/modelado.tex
-<../Memoria/img/modelo/neuronaartificial.png, id=755, 863.225pt x 437.635pt>
+<../Memoria/img/modelo/neuronaartificial.png, id=720, 863.225pt x 437.635pt>
 File: ../Memoria/img/modelo/neuronaartificial.png Graphic file (type png)
 <use ../Memoria/img/modelo/neuronaartificial.png>
 Package pdftex.def Info: ../Memoria/img/modelo/neuronaartificial.png  used on i
@@ -1649,42 +1748,63 @@ nput line 65.
 (pdftex.def)             Requested size: 230.46739pt x 116.84082pt.
 
 
-[22
+[21
 
  <../Memoria/img/modelo/neuronaartificial.png>]
+
+[22
+
+]
 
 [23
 
 ]
+<../Memoria/img/modelo/capas.png, id=803, 801.99625pt x 482.80376pt>
+File: ../Memoria/img/modelo/capas.png Graphic file (type png)
+<use ../Memoria/img/modelo/capas.png>
+Package pdftex.def Info: ../Memoria/img/modelo/capas.png  used on input line 16
+0.
+(pdftex.def)             Requested size: 307.28987pt x 184.9923pt.
+
 
 [24
 
-]
-<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=834, 425.4294pt x 30
+ <../Memoria/img/modelo/capas.png>]
+<./img/wandb.png, id=830, 1402.48969pt x 718.93594pt>
+File: ./img/wandb.png Graphic file (type png)
+<use ./img/wandb.png>
+Package pdftex.def Info: ./img/wandb.png  used on input line 171.
+(pdftex.def)             Requested size: 307.28987pt x 157.51917pt.
+
+
+[25
+
+ <./img/wandb.png (PNG copy)>]
+<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=856, 425.4294pt x 30
 9.79741pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf 
- used on input line 150.
+ used on input line 212.
 (pdftex.def)             Requested size: 92.1879pt x 67.12985pt.
-<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=835, 431.45189pt x 309.315
+<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=857, 431.45189pt x 309.315
 6pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf  used 
-on input line 150.
+on input line 212.
 (pdftex.def)             Requested size: 92.1879pt x 66.09093pt.
-<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=836, 424.94759pt x 575.02
+<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=858, 424.94759pt x 575.02
 83pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf  used
- on input line 150.
+ on input line 212.
 (pdftex.def)             Requested size: 92.1879pt x 124.743pt.
 
 
-[25
+[26
 
  <../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf> <../Memoria/img/modelo
 /arquitecturas/arqnBIN.pdf
@@ -1698,31 +1818,31 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnBIN.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=882, 466.1415pt x 36
+<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=903, 466.1415pt x 36
 3.75899pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf 
- used on input line 187.
+ used on input line 249.
 (pdftex.def)             Requested size: 92.1879pt x 71.94012pt.
-<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=883, 432.17459pt x 366.890
+<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=904, 432.17459pt x 366.890
 69pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf  used 
-on input line 187.
+on input line 249.
 (pdftex.def)             Requested size: 92.1879pt x 78.25854pt.
-<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=884, 452.6511pt x 570.692
+<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=905, 452.6511pt x 570.692
 1pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf  used
- on input line 187.
+ on input line 249.
 (pdftex.def)             Requested size: 92.1879pt x 116.22632pt.
 
 
-[26
+[27
 
  <../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf> <../Memoria/img/modelo
 /arquitecturas/arqnMUL.pdf
@@ -1736,78 +1856,88 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnMUL.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
+<./img/stratifiedkfolds.png, id=950, 707.64375pt x 380.92313pt>
+File: ./img/stratifiedkfolds.png Graphic file (type png)
+<use ./img/stratifiedkfolds.png>
+Package pdftex.def Info: ./img/stratifiedkfolds.png  used on input line 261.
+(pdftex.def)             Requested size: 307.28987pt x 165.4154pt.
 
-[27
+
+[28
+
+ <./img/stratifiedkfolds.png>]
+
+[29
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{tab:hiperBIN}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \end{frame}
+l.319 \end{frame}
                  
 
-[28
+[30
 
 ]
-<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=980, 597.6729pt 
-x 526.1256pt>
+<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png, id=1029, 597.6729pt
+ x 526.1256pt>
 File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.
-png  used on input line 291.
+png  used on input line 364.
 (pdftex.def)             Requested size: 92.1879pt x 81.14722pt.
 
 
-[29
+[31
 
  <../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png>]
-<../Memoria/img/modelo/resultados/BINtop5.pdf, id=1010, 426.79138pt x 120.45pt>
+<../Memoria/img/modelo/resultados/BINtop5.pdf, id=1061, 426.79138pt x 120.45pt>
 
 File: ../Memoria/img/modelo/resultados/BINtop5.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/BINtop5.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/BINtop5.pdf  used on 
-input line 303.
+input line 376.
 (pdftex.def)             Requested size: 261.19826pt x 73.71698pt.
 
 
-[30
+[32
 
  <../Memoria/img/modelo/resultados/BINtop5.pdf>]
-<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1041, 1003.75pt 
+<../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png, id=1091, 1003.75pt 
 x 803.0pt>
 File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.
-png  used on input line 348.
+png  used on input line 421.
 (pdftex.def)             Requested size: 169.01036pt x 135.2094pt.
 
 
-[31
+[33
 
  <../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png>]
-<../Memoria/img/modelo/resultados/MULtop10.pdf, id=1070, 426.79138pt x 220.825p
+<../Memoria/img/modelo/resultados/MULtop10.pdf, id=1119, 426.79138pt x 220.825p
 t>
 File: ../Memoria/img/modelo/resultados/MULtop10.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/MULtop10.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/MULtop10.pdf  used on
- input line 360.
+ input line 433.
 (pdftex.def)             Requested size: 307.28987pt x 158.99724pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:BINtop5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.360 \end{frame}
+l.433 \end{frame}
                  
-Overfull \vbox (2.95403pt too high) detected at line 360
+Overfull \vbox (2.95403pt too high) detected at line 433
  []
 
 
 
-[32
+[34
 
  <../Memoria/img/modelo/resultados/MULtop10.pdf>]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1818,10 +1948,10 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
-[33
+[35
 
 ] (./slides/evaluacion.tex
-<../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf, id=1133, 426.79138pt x 1
+<../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf, id=1183, 426.79138pt x 1
 20.45pt>
 File: ../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf Graphic file (type p
 df)
@@ -1831,10 +1961,10 @@ used on input line 13.
 (pdftex.def)             Requested size: 276.559pt x 78.05263pt.
 
 
-[34
+[36
 
  <../Memoria/img/evaluacion/resultados/top5EVALMCB.pdf>]
-<../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf, id=1164, 426.79138pt x 1
+<../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf, id=1213, 426.79138pt x 1
 20.45pt>
 File: ../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf Graphic file (type p
 df)
@@ -1850,10 +1980,10 @@ CB}) has been already used, duplicate ignored
 l.28 \end{frame}
                 
 
-[35
+[37
 
  <../Memoria/img/evaluacion/resultados/top5EVALMCM.pdf>]
-<../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=1193, 4
+<../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf, id=1243, 4
 51.6875pt x 225.84375pt>
 File: ../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf Graphi
 c file (type pdf)
@@ -1863,11 +1993,11 @@ AL_MCM98.pdf  used on input line 41.
 (pdftex.def)             Requested size: 291.92444pt x 145.96962pt.
 
 
-[36
+[38
 
  <../Memoria/img/evaluacion/matrices_confusion/MCNorm_EVAL_MCM98.pdf>]
 
-[37
+[39
 
 ]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1877,10 +2007,10 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
-[38
+[40
 
 ] (./slides/despliegue.tex
-<../Memoria/img/despliegue/despliegue.pdf, id=1296, 718.60468pt x 211.7511pt>
+<../Memoria/img/despliegue/despliegue.pdf, id=1345, 718.60468pt x 211.7511pt>
 File: ../Memoria/img/despliegue/despliegue.pdf Graphic file (type pdf)
 <use ../Memoria/img/despliegue/despliegue.pdf>
 Package pdftex.def Info: ../Memoria/img/despliegue/despliegue.pdf  used on inpu
@@ -1888,7 +2018,7 @@ t line 11.
 (pdftex.def)             Requested size: 307.28987pt x 90.54713pt.
 
 
-[39
+[41
 
  <../Memoria/img/despliegue/despliegue.pdf>]) (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1898,11 +2028,11 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 
-[40
+[42
 
 ] (./slides/conclusiones.tex
 
-[41
+[43
 
 ])
 Package epstopdf Info: Source file: <img/uva.eps>
@@ -1913,15 +2043,15 @@ Package epstopdf Info: Source file: <img/uva.eps>
 (epstopdf)                    size: 76640 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/uva-eps-converted-to.p
 df img/uva.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 File: img/uva-eps-converted-to.pdf Graphic file (type pdf)
 <use img/uva-eps-converted-to.pdf>
-Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 70.
+Package pdftex.def Info: img/uva-eps-converted-to.pdf  used on input line 94.
 (pdftex.def)             Requested size: 76.82246pt x 45.75946pt.
 
 
-[42
+[44
 
 ]
 \tf@nav=\write6
@@ -1946,22 +2076,24 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `slide.out' has not changed.
-(rerunfilecheck)             Checksum: 785F7485A6E5D6172DA4F2A2ECB73606;2905.
+(rerunfilecheck)             Checksum: B8A6FCA6C05B1A8EA33FDE203A1C687B;2503.
  ) 
 Here is how much of TeX's memory you used:
- 36554 strings out of 475002
- 710920 string characters out of 5762004
- 1142445 words of memory out of 5000000
- 58674 multiletter control sequences out of 15000+600000
- 583613 words of font info for 97 fonts, out of 8000000 for 9000
+ 40877 strings out of 475002
+ 833656 string characters out of 5762004
+ 1284582 words of memory out of 5000000
+ 62933 multiletter control sequences out of 15000+600000
+ 584075 words of font info for 97 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  101i,14n,131p,482b,1063s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecso1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600p
-k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600p
-k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0600.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0800.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600p
@@ -1972,15 +2104,17 @@ k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600p
-k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slide.pdf (42 pages, 2699235 bytes).
+k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on slide.pdf (44 pages, 3497799 bytes).
 PDF statistics:
- 2007 PDF objects out of 2073 (max. 8388607)
- 1401 compressed objects within 15 object streams
- 125 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2128 PDF objects out of 2487 (max. 8388607)
+ 1452 compressed objects within 15 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
