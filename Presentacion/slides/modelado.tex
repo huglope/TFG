@@ -78,9 +78,9 @@
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
- & \textbf{Predicción Positiva} & \textbf{Predicción Negativa} \\ \hline
-\textbf{Real Positivo} & VP & FN \\ \hline
-\textbf{Real Negativo} & FP & VN \\ \hline
+ & \textbf{Predicción Negativa} & \textbf{Predicción Positiva} \\ \hline
+\textbf{Real Negativo} & VN & FP \\ \hline
+\textbf{Real Positivo} & FN & VP \\ \hline
 \end{tabular}
 \caption{Matriz de confusión para modelos de clasificación binaria.}
 \label{tab:confusion_matrix}
@@ -94,9 +94,6 @@
     $\displaystyle \text{Recall} = \frac{VP}{VP + FN}$
   \end{tabular}
 }
-
-
-
 
 
 
@@ -158,18 +155,6 @@ Donde:
     		\caption{Esquema del perceptrón multicapa.}
 	\end{figure}
 \end{frame}
-
-
-
-
-\begin{frame}{Patrón pizarra y Weights\&Biases}
-	\begin{figure}
-		\centering
-	    \includegraphics[width=\linewidth]{./img/wandb.png}
-    		\caption{Ejemplo de utilización de Weights\&Biases como pizarra.}
-	\end{figure}
-\end{frame}
-
 
 
 
@@ -255,10 +240,23 @@ Donde:
 	\begin{figure}
 		\centering
 	    \includegraphics[width=\linewidth]{./img/stratifiedkfolds.png}
-    		\caption{Esquema de la validación cruzada (\textit{Stratificate k-fold} (5 \textit{folds}).}
+    		\caption{Esquema de la validación cruzada (\textit{Stratificate k-fold} (5 \textit{folds})).}
 	\end{figure}
 
 \end{frame}
+
+
+
+
+\begin{frame}{Patrón pizarra y Weights\&Biases}
+	\begin{figure}
+		\centering
+	    \includegraphics[width=\linewidth]{./img/wandb.png}
+    		\caption{Ejemplo de utilización de Weights\&Biases como pizarra.}
+	\end{figure}
+\end{frame}
+
+
 
 \begin{frame}{Implementación del MCB}
 	\begin{itemize}
@@ -287,6 +285,9 @@ Donde:
 		\caption{Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación binaria.}
 		\label{tab:hiperBIN}
 	\end{table}
+	\begin{itemize}
+		\item \textbf{Número total de experimentos}: 108
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Implementación del MCM}
@@ -316,6 +317,9 @@ Donde:
 		\caption{Valores de los hiperparámetros utilizados en los experimentos del modelo de clasificación multiclase.}
 		\label{tab:hiperBIN}
 	\end{table}
+	\begin{itemize}
+		\item \textbf{Número total de experimentos}: 240
+	\end{itemize}
 \end{frame}
 
 

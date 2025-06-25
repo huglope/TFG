@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  24 JUN 2025 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  25 JUN 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1599,19 +1599,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 (./slides/introduccion.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 20
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
@@ -1620,20 +1620,20 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <./img/ciberia.png, id=204, 417.81094pt x 234.8775pt>
 File: ./img/ciberia.png Graphic file (type png)
 <use ./img/ciberia.png>
-Package pdftex.def Info: ./img/ciberia.png  used on input line 20.
+Package pdftex.def Info: ./img/ciberia.png  used on input line 25.
 (pdftex.def)             Requested size: 107.55333pt x 60.46101pt.
 <./img/iavsia.png, id=206, 677.53125pt x 451.6875pt>
 File: ./img/iavsia.png Graphic file (type png)
 <use ./img/iavsia.png>
-Package pdftex.def Info: ./img/iavsia.png  used on input line 20.
+Package pdftex.def Info: ./img/iavsia.png  used on input line 25.
 (pdftex.def)             Requested size: 107.55333pt x 71.69942pt.
 <./img/atacados.png, id=207, 1156.32pt x 770.88pt>
 File: ./img/atacados.png Graphic file (type png)
 <use ./img/atacados.png>
-Package pdftex.def Info: ./img/atacados.png  used on input line 20.
+Package pdftex.def Info: ./img/atacados.png  used on input line 25.
 (pdftex.def)             Requested size: 107.55333pt x 71.69345pt.
 
-Overfull \hbox (8.63925pt too wide) in paragraph at lines 20--20
+Overfull \hbox (8.63925pt too wide) in paragraph at lines 25--25
 [][]  
  []
 
@@ -1680,7 +1680,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 (./slides/metodologias.tex
-<../Memoria/img/metodologia/crispdm.jpeg, id=298, 493.845pt x 473.51906pt>
+<../Memoria/img/metodologia/crispdm.jpeg, id=299, 493.845pt x 473.51906pt>
 File: ../Memoria/img/metodologia/crispdm.jpeg Graphic file (type jpg)
 <use ../Memoria/img/metodologia/crispdm.jpeg>
 Package pdftex.def Info: ../Memoria/img/metodologia/crispdm.jpeg  used on input
@@ -1920,52 +1920,42 @@ nput line 65.
 [22
 
 ]
-<../Memoria/img/modelo/capas.png, id=785, 801.99625pt x 482.80376pt>
+<../Memoria/img/modelo/capas.png, id=784, 801.99625pt x 482.80376pt>
 File: ../Memoria/img/modelo/capas.png Graphic file (type png)
 <use ../Memoria/img/modelo/capas.png>
-Package pdftex.def Info: ../Memoria/img/modelo/capas.png  used on input line 16
-0.
+Package pdftex.def Info: ../Memoria/img/modelo/capas.png  used on input line 15
+7.
 (pdftex.def)             Requested size: 307.28987pt x 184.9923pt.
 
 
 [23
 
  <../Memoria/img/modelo/capas.png>]
-<./img/wandb.png, id=811, 1402.48969pt x 718.93594pt>
-File: ./img/wandb.png Graphic file (type png)
-<use ./img/wandb.png>
-Package pdftex.def Info: ./img/wandb.png  used on input line 171.
-(pdftex.def)             Requested size: 307.28987pt x 157.51917pt.
-
-
-[24
-
- <./img/wandb.png (PNG copy)>]
-<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=837, 425.4294pt x 30
+<../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf, id=810, 425.4294pt x 30
 9.79741pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf 
- used on input line 212.
+ used on input line 197.
 (pdftex.def)             Requested size: 92.1879pt x 67.12985pt.
-<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=838, 431.45189pt x 309.315
+<../Memoria/img/modelo/arquitecturas/arqnBIN.pdf, id=811, 431.45189pt x 309.315
 6pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnBIN.pdf  used 
-on input line 212.
+on input line 197.
 (pdftex.def)             Requested size: 92.1879pt x 66.09093pt.
-<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=839, 424.94759pt x 575.02
+<../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf, id=812, 424.94759pt x 575.02
 83pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnBIN.pdf  used
- on input line 212.
+ on input line 197.
 (pdftex.def)             Requested size: 92.1879pt x 124.743pt.
 
 
-[25
+[24
 
  <../Memoria/img/modelo/arquitecturas/arqnmediosBIN.pdf> <../Memoria/img/modelo
 /arquitecturas/arqnBIN.pdf
@@ -1979,31 +1969,31 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnBIN.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=885, 466.1415pt x 36
+<../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf, id=858, 466.1415pt x 36
 3.75899pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf Graphic file (type 
 pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf 
- used on input line 249.
+ used on input line 234.
 (pdftex.def)             Requested size: 92.1879pt x 71.94012pt.
-<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=886, 432.17459pt x 366.890
+<../Memoria/img/modelo/arquitecturas/arqnMUL.pdf, id=859, 432.17459pt x 366.890
 69pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnMUL.pdf  used 
-on input line 249.
+on input line 234.
 (pdftex.def)             Requested size: 92.1879pt x 78.25854pt.
-<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=887, 452.6511pt x 570.692
+<../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf, id=860, 452.6511pt x 570.692
 1pt>
 File: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/arquitecturas/arqnnMUL.pdf  used
- on input line 249.
+ on input line 234.
 (pdftex.def)             Requested size: 92.1879pt x 116.22632pt.
 
 
-[26
+[25
 
  <../Memoria/img/modelo/arquitecturas/arqnmediosMUL.pdf> <../Memoria/img/modelo
 /arquitecturas/arqnMUL.pdf
@@ -2017,16 +2007,26 @@ pdfTeX warning: /usr/bin/pdflatex (file ../Memoria/img/modelo/arquitecturas/arq
 nnMUL.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<./img/stratifiedkfolds.png, id=931, 707.64375pt x 380.92313pt>
+<./img/stratifiedkfolds.png, id=905, 707.64375pt x 380.92313pt>
 File: ./img/stratifiedkfolds.png Graphic file (type png)
 <use ./img/stratifiedkfolds.png>
-Package pdftex.def Info: ./img/stratifiedkfolds.png  used on input line 261.
+Package pdftex.def Info: ./img/stratifiedkfolds.png  used on input line 246.
 (pdftex.def)             Requested size: 307.28987pt x 165.4154pt.
+
+
+[26
+
+ <./img/stratifiedkfolds.png>]
+<./img/wandb.png, id=934, 1402.48969pt x 718.93594pt>
+File: ./img/wandb.png Graphic file (type png)
+<use ./img/wandb.png>
+Package pdftex.def Info: ./img/wandb.png  used on input line 257.
+(pdftex.def)             Requested size: 307.28987pt x 157.51917pt.
 
 
 [27
 
- <./img/stratifiedkfolds.png>]
+ <./img/wandb.png (PNG copy)>]
 
 [28
 
@@ -2035,7 +2035,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tab:hiperBIN}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.319 \end{frame}
+l.323 \end{frame}
                  
 
 [29
@@ -2047,7 +2047,7 @@ File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCB98.
-png  used on input line 364.
+png  used on input line 368.
 (pdftex.def)             Requested size: 92.1879pt x 81.14722pt.
 
 
@@ -2059,7 +2059,7 @@ png  used on input line 364.
 File: ../Memoria/img/modelo/resultados/BINtop5.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/BINtop5.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/BINtop5.pdf  used on 
-input line 376.
+input line 380.
 (pdftex.def)             Requested size: 261.19826pt x 73.71698pt.
 
 
@@ -2072,7 +2072,7 @@ File: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png Graphic file (t
 ype png)
 <use ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.png>
 Package pdftex.def Info: ../Memoria/img/modelo/matrices_confusion/MC_ENT_MCM98.
-png  used on input line 421.
+png  used on input line 425.
 (pdftex.def)             Requested size: 169.01036pt x 135.2094pt.
 
 
@@ -2084,16 +2084,16 @@ t>
 File: ../Memoria/img/modelo/resultados/MULtop10.pdf Graphic file (type pdf)
 <use ../Memoria/img/modelo/resultados/MULtop10.pdf>
 Package pdftex.def Info: ../Memoria/img/modelo/resultados/MULtop10.pdf  used on
- input line 433.
+ input line 437.
 (pdftex.def)             Requested size: 307.28987pt x 158.99724pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:BINtop5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.433 \end{frame}
+l.437 \end{frame}
                  
-Overfull \vbox (2.95403pt too high) detected at line 433
+Overfull \vbox (2.95403pt too high) detected at line 437
  []
 
 
@@ -2308,16 +2308,16 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `slide.out' has not changed.
-(rerunfilecheck)             Checksum: 3422340C6355234728BAFD6CB90CC921;2503.
+(rerunfilecheck)             Checksum: 2C3FB729AE8103C5F23AE73F57B350D1;2503.
  ) 
 Here is how much of TeX's memory you used:
- 41005 strings out of 475002
- 836823 string characters out of 5762004
- 1286486 words of memory out of 5000000
- 63061 multiletter control sequences out of 15000+600000
+ 41031 strings out of 475002
+ 837647 string characters out of 5762004
+ 1286481 words of memory out of 5000000
+ 63087 multiletter control sequences out of 15000+600000
  584845 words of font info for 98 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 101i,16n,131p,482b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,131p,483b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss2488.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecso1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600p
@@ -2332,9 +2332,9 @@ k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600p
-k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600p
+k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
@@ -2344,9 +2344,9 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slide.pdf (43 pages, 7755102 bytes).
+Output written on slide.pdf (43 pages, 7756005 bytes).
 PDF statistics:
- 2123 PDF objects out of 2487 (max. 8388607)
+ 2125 PDF objects out of 2487 (max. 8388607)
  1433 compressed objects within 15 object streams
  125 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
