@@ -103,12 +103,12 @@ Los sistemas de detección y prevención de intrusiones o IDS e IPS, como: \text
 La microsegmentación de red con herramientas como VMware NSX, Cisco ACI o Illumio, divide la red en segmentos más pequeños y aislados, aplicando políticas de seguridad granular a cada segmento. Esto limita el movimiento lateral de los atacantes dentro de la red una vez que han comprometido un punto inicial. Al controlar el tráfico entre estos segmentos, se reduce la superficie de ataque y se contiene la propagación de las amenazas \cite{paloaltonetworks_microsegmentation}.
 
 \section{Requisitos}  \label{sec.requisitos} 
-En la fase de entendiemiento del problema de la metodología CRISP-DM es fundamental establecer claramente los requisitos que se deben cumplir durante el desarrollo del proyecto. Para definir los requisitos se ha utilizado el estándar ISO/IEC/IEEE 29148:2018 \cite{ISO29148} que trata sobre ingeniería de requisitos en sistemas y software. Este estándar especifica los procesos necesarios para desarrollar requisitos a lo largo del ciclo de vida de un proyecto o sistema.
+En la fase de entendimiento del problema de la metodología CRISP-DM es fundamental establecer claramente los requisitos que se deben cumplir durante el desarrollo del proyecto. Para definir los requisitos se ha utilizado el estándar ISO/IEC/IEEE 29148:2018 \cite{ISO29148} que trata sobre ingeniería de requisitos en sistemas y software. Este estándar especifica los procesos necesarios para desarrollar requisitos a lo largo del ciclo de vida de un proyecto o sistema.
 
 Como se ha comentado en la Sección \ref{sec.objetivos-pro} \nameref{sec.objetivos-pro}, el principal objetivo del proyecto es desarrollar un modelo neuronal que detecte la presencia de ataques en una red informática y los clasifique según su tipo. Para cumplir con dicho objetivo, se considera imprescindible cumplir con los requisitos que se listan a continuación.
 
 \subsection{Requisitos Funcionales}   \label{sec.req-funcionales}
-\textbf{Primera versión de requisitos, no me convencen mucho}
+
 \begin{itemize}  
     \item \textbf{RF-1}: El sistema deberá detectar cuales de las conexiones podrían ser potenciales intrusiones en la red.
     \item \textbf{RF-2}: El sistema deberá clasificará las conexiones en 10 categorías predefinidas en \ref{tab:attacks-tab} \nameref{tab:attacks-tab}.  

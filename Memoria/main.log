@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.20)  22 JUN 2025 13:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.23)  27 JUN 2025 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,7 +55,7 @@ Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count274
 \U@D=\dimen150
-\l@unhyphenated=\language38
+\l@unhyphenated=\language12
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -1966,8 +1966,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38]
 
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -2134,8 +2134,8 @@ Package pdftex.def Info: ./img/modelo/neuronaartificial.png  used on input line
 (pdftex.def)             Requested size: 320.94832pt x 162.71039pt.
 
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -2144,7 +2144,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [52 <./img/modelo/neuronaartificial.png>]
-<./img/modelo/capas.png, id=1330, 801.99625pt x 482.80376pt>
+<./img/modelo/capas.png, id=1331, 801.99625pt x 482.80376pt>
 File: ./img/modelo/capas.png Graphic file (type png)
 <use ./img/modelo/capas.png>
 Package pdftex.def Info: ./img/modelo/capas.png  used on input line 39.
@@ -2173,8 +2173,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [54]
 
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.07225pt, for example:
@@ -3592,15 +3592,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EA1DB4320DB338274195EAB8C48A0510;22796.
+(rerunfilecheck)             Checksum: 2B05EFC75D274C1951EBE2D2A9BA9A8A;22796.
  ) 
 Here is how much of TeX's memory you used:
- 37709 strings out of 474481
- 739095 string characters out of 5750792
- 1194363 words of memory out of 5000000
- 59636 multiletter control sequences out of 15000+600000
+ 37709 strings out of 475002
+ 739095 string characters out of 5762004
+ 1191853 words of memory out of 5000000
+ 59484 multiletter control sequences out of 15000+600000
  577980 words of font info for 83 fonts, out of 8000000 for 9000
- 357 hyphenation exceptions out of 8191
+ 107 hyphenation exceptions out of 8191
  103i,15n,106p,2371b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1000.600p
 k> </home/hugo/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600p
@@ -3627,7 +3627,7 @@ public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 nts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/lat
 xfont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (178 pages, 5022791 bytes).
+Output written on main.pdf (178 pages, 5022806 bytes).
 PDF statistics:
  2621 PDF objects out of 2984 (max. 8388607)
  2252 compressed objects within 23 object streams
